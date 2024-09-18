@@ -47,9 +47,19 @@ export class ClientDump {
 
     static async ReadFromDirectory(dir: string): Promise<ClientDump> {
         var clientDump: ClientDump = new ClientDump();
+        if (!fs.existsSync(dir))
+        {
+            return clientDump;
+        }
+        
+
         //clientDump.eMsgList = JSON.parse(fs.readFileSync(dir + "/emsg_list.json").toString())
-        clientDump.eMsgList = [];
-        clientDump.callbacks = JSON.parse(fs.readFileSync(dir + "/callbacks.json").toString())
+        
+        if (fs.existsSync(dir + "/callbacks.json"))
+        {
+            clientDump.callbacks = JSON.parse(fs.readFileSync(dir + "/callbacks.json").toString())
+        }
+        
         for (var file of fs.readdirSync(dir)) {
             if (file.endsWith("Map.json") && file.startsWith("IClient") || file.startsWith("IRegistry")) {
                 var asJson = JSON.parse(fs.readFileSync(dir+file).toString());

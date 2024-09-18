@@ -35,10 +35,9 @@ export class CppVirtualHeader {
     private lastClassLine = -1;
     public functions: CppVirtualFunction[] = [];
 
-    // Creates stub file and returns the line number of "abstract_class ClassName"
+    // Creates stub file and returns the line number of "class ClassName"
     private static CreateStubFile(path: string, classname: string): number {
         var fullText = "";
-        var includeGuard = `${classname.toUpperCase()}_H`
         var ret: number = 0;
         fullText += "//==========================  AUTO-GENERATED FILE  ================================\n"
         fullText += "//\n"
@@ -58,8 +57,6 @@ export class CppVirtualHeader {
         fullText += "{\n"
         fullText += "public:\n"
         fullText += "};\n"
-        fullText += "\n"
-        fullText += `#endif // ${includeGuard}\n`
         fs.writeFileSync(path, fullText);
         return ret;
     }
@@ -228,7 +225,7 @@ export class CppVirtualHeader {
             console.group();
 
             // Find the first line where the interface is
-            if (header.firstClassLine == -1 && textTrimmed.startsWith(`abstract_class ${abstract_class_name}`)) {
+            if (header.firstClassLine == -1 && textTrimmed.startsWith(`class ${abstract_class_name}`)) {
                 header.firstClassLine = line;
                 currentlyInHeader = true;
                 DEBUG_LOG("classdef starts at " + line)
