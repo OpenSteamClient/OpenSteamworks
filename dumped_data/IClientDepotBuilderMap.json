@@ -1,0 +1,102 @@
+{
+    "name": "IClientDepotBuilderMap",
+    "functions": [ 
+        {
+            "name": "BGetDepotBuildStatus",
+            "argc": "6",
+            "interfaceid": "16",
+            "functionid": "4119064764",
+            "fencepost": "4160647358",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "boolean",
+                "bytes4",
+                "bytes8",
+                "bytes8"
+            ]
+        },
+        {
+            "name": "VerifyChunkStore",
+            "argc": "4",
+            "interfaceid": "16",
+            "functionid": "3857174055",
+            "fencepost": "3898837294",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "Unknown_2",
+            "argc": "0",
+            "interfaceid": "0",
+            "functionid": "0",
+            "fencepost": "0",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "DownloadChunk",
+            "argc": "4",
+            "interfaceid": "16",
+            "functionid": "4125622603",
+            "fencepost": "4167318100",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+                "bytes4",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "StartDepotBuild",
+            "argc": "5",
+            "interfaceid": "16",
+            "functionid": "3870246557",
+            "fencepost": "3912038828",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "CommitAppBuild",
+            "argc": "7",
+            "interfaceid": "16",
+            "functionid": "297107457",
+            "fencepost": "339044889",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4",
+                "bytes_length_from_reg",
+                "bytes_length_from_reg",
+                "string",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        }
+    ]
+}

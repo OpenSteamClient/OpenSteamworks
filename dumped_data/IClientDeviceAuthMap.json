@@ -1,0 +1,166 @@
+{
+    "name": "IClientDeviceAuthMap",
+    "functions": [ 
+        {
+            "name": "AuthorizeLocalDevice",
+            "argc": "3",
+            "interfaceid": "28",
+            "functionid": "737163818",
+            "fencepost": "810715614",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "DeauthorizeDevice",
+            "argc": "3",
+            "interfaceid": "28",
+            "functionid": "2368639903",
+            "fencepost": "2442207828",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "RequestAuthorizationInfos",
+            "argc": "1",
+            "interfaceid": "28",
+            "functionid": "1856542232",
+            "fencepost": "1930948865",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetDeviceAuthorizations",
+            "argc": "4",
+            "interfaceid": "28",
+            "functionid": "4064381099",
+            "fencepost": "4138029669",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "GetDeviceAuthorizationInfo",
+            "argc": "14",
+            "interfaceid": "28",
+            "functionid": "3706533473",
+            "fencepost": "3780440107",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes1",
+                "bytes_length_from_mem",
+                "bytes_length_from_mem",
+                "bytes_length_from_mem",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetAuthorizedBorrowers",
+            "argc": "3",
+            "interfaceid": "28",
+            "functionid": "913741904",
+            "fencepost": "987858215",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "GetLocalUsers",
+            "argc": "3",
+            "interfaceid": "28",
+            "functionid": "1356911087",
+            "fencepost": "1431124172",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "GetBorrowerInfo",
+            "argc": "5",
+            "interfaceid": "28",
+            "functionid": "1571807289",
+            "fencepost": "1646149406",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes_length_from_mem",
+                "bytes1"
+            ]
+        },
+        {
+            "name": "UpdateAuthorizedBorrowers",
+            "argc": "4",
+            "interfaceid": "28",
+            "functionid": "3677155496",
+            "fencepost": "3751658903",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes_length_from_reg",
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetSharedLibraryOwners",
+            "argc": "3",
+            "interfaceid": "28",
+            "functionid": "4175162658",
+            "fencepost": "4249762839",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        }
+    ]
+}

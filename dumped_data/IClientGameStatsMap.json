@@ -1,0 +1,210 @@
+{
+    "name": "IClientGameStatsMap",
+    "functions": [ 
+        {
+            "name": "GetNewSession",
+            "argc": "6",
+            "interfaceid": "21",
+            "functionid": "2976233944",
+            "fencepost": "3038349390",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1",
+                "bytes8",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "EndSession",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "1994798949",
+            "fencepost": "2056930524",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes2"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "AddSessionAttributeInt",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "2358451801",
+            "fencepost": "2420599505",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddSessionAttributeString",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "2118974423",
+            "fencepost": "2181138256",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddSessionAttributeFloat",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "3310814768",
+            "fencepost": "3372994730",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddNewRow",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "2766611312",
+            "fencepost": "2828920306",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes8"
+            ]
+        },
+        {
+            "name": "CommitRow",
+            "argc": "3",
+            "interfaceid": "21",
+            "functionid": "2450363362",
+            "fencepost": "2512720743",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "CommitOutstandingRows",
+            "argc": "3",
+            "interfaceid": "21",
+            "functionid": "191135310",
+            "fencepost": "253508820",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddRowAttributeInt",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "274344612",
+            "fencepost": "336540703",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddRowAttributeString",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "4184974888",
+            "fencepost": "4247187108",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddRowAttributeFloat",
+            "argc": "5",
+            "interfaceid": "21",
+            "functionid": "2397086989",
+            "fencepost": "2459315338",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddSessionAttributeInt64",
+            "argc": "6",
+            "interfaceid": "21",
+            "functionid": "3358827054",
+            "fencepost": "3421232822",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddRowAttributeInt64",
+            "argc": "6",
+            "interfaceid": "21",
+            "functionid": "2554807439",
+            "fencepost": "2617197078",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        }
+    ]
+}

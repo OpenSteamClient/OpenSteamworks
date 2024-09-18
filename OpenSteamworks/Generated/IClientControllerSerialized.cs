@@ -297,43 +297,42 @@ public unsafe interface IClientControllerSerialized
     public unknown_ret ResetControllerEnableCache();  // argc: 0, index: 136, ipc args: [], ipc returns: []
     // WARNING: Arguments are unknown!
     public unknown_ret GetControllerEnableSupport();  // argc: 1, index: 137, ipc args: [bytes4], ipc returns: [bytes4]
-    public unknown_ret BInputGenerated();  // argc: 0, index: 138, ipc args: [], ipc returns: [boolean]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetControllerActivityByType();  // argc: 1, index: 139, ipc args: [bytes4], ipc returns: [bytes4]
-    public unknown_ret GetLastActiveControllerVID();  // argc: 0, index: 140, ipc args: [], ipc returns: [bytes2]
-    public unknown_ret GetLastActiveControllerPID();  // argc: 0, index: 141, ipc args: [], ipc returns: [bytes2]
+    public unknown_ret GetControllerActivityByType();  // argc: 1, index: 138, ipc args: [bytes4], ipc returns: [bytes4]
+    public unknown_ret GetLastActiveControllerVID();  // argc: 0, index: 139, ipc args: [], ipc returns: [bytes2]
+    public unknown_ret GetLastActiveControllerPID();  // argc: 0, index: 140, ipc args: [], ipc returns: [bytes2]
     // WARNING: Arguments are unknown!
-    public unknown_ret LoadControllerPersonalizationFile();  // argc: 4, index: 142, ipc args: [bytes4, string, bytes1, bytes1], ipc returns: []
-    // WARNING: Arguments are unknown!
-    [BlacklistedInCrossProcessIPC]
-    public unknown_ret SaveControllerPersonalizationFile();  // argc: 3, index: 143, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes1]
-    // WARNING: Arguments are unknown!
-    public unknown_ret LoadRemotePlayControllerPersonalizationVDF();  // argc: 2, index: 144, ipc args: [string, string], ipc returns: []
-    // WARNING: Arguments are unknown!
-    public unknown_ret FindControllerByPath();  // argc: 1, index: 145, ipc args: [string], ipc returns: [bytes4]
+    public unknown_ret LoadControllerPersonalizationFile();  // argc: 4, index: 141, ipc args: [bytes4, string, bytes1, bytes1], ipc returns: []
     // WARNING: Arguments are unknown!
     [BlacklistedInCrossProcessIPC]
-    public unknown_ret GetControllerPath();  // argc: 2, index: 146, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
+    public unknown_ret SaveControllerPersonalizationFile();  // argc: 3, index: 142, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes1]
+    // WARNING: Arguments are unknown!
+    public unknown_ret LoadRemotePlayControllerPersonalizationVDF();  // argc: 2, index: 143, ipc args: [string, string], ipc returns: []
+    // WARNING: Arguments are unknown!
+    public unknown_ret FindControllerByPath();  // argc: 1, index: 144, ipc args: [string], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     [BlacklistedInCrossProcessIPC]
-    public unknown_ret GetControllerProductName();  // argc: 2, index: 147, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
-    // WARNING: Arguments are unknown!
-    public unknown_ret SetControllerHapticsSetting();  // argc: 2, index: 148, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
-    // WARNING: Arguments are unknown!
-    public unknown_ret SetControllerName();  // argc: 2, index: 149, ipc args: [bytes4, string], ipc returns: [bytes1]
-    // WARNING: Arguments are unknown!
-    public unknown_ret SetControllerRumbleSetting();  // argc: 2, index: 150, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
-    // WARNING: Arguments are unknown!
-    public unknown_ret SetControllerNintendoLayoutSetting();  // argc: 2, index: 151, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
-    public unknown_ret SetControllerUseUniversalFaceButtonGlyphs();  // argc: 2, index: 152, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
-    // WARNING: Arguments are unknown!
-    public bool BGetTouchConfigData(uint unk, uint unk1, out UInt64 unk2, out uint unk3, CUtlBuffer* unk4, CUtlBuffer* unk5);  // argc: 6, index: 153, ipc args: [bytes4, bytes4], ipc returns: [boolean, bytes8, bytes4, unknown, unknown]
+    public unknown_ret GetControllerPath();  // argc: 2, index: 145, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
     [BlacklistedInCrossProcessIPC]
-    public unknown_ret BSaveTouchConfigLayout();  // argc: 3, index: 154, ipc args: [bytes4, bytes4, bytes4], ipc returns: [boolean]
+    public unknown_ret GetControllerProductName();  // argc: 2, index: 146, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret SetGyroOn();  // argc: 3, index: 155, ipc args: [bytes4, bytes8], ipc returns: []
+    public unknown_ret SetControllerHapticsSetting();  // argc: 2, index: 147, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret ForceSimpleHapticEvent();  // argc: 5, index: 156, ipc args: [bytes4, bytes1, bytes1, bytes1, bytes1], ipc returns: []
-    public unknown_ret GetControllerMacAddr();  // argc: 3, index: 157, ipc args: [bytes4, string, string], ipc returns: [bytes1, bytes13, bytes13]
+    public unknown_ret SetControllerName();  // argc: 2, index: 148, ipc args: [bytes4, string], ipc returns: [bytes1]
+    // WARNING: Arguments are unknown!
+    public unknown_ret SetControllerRumbleSetting();  // argc: 2, index: 149, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
+    // WARNING: Arguments are unknown!
+    public unknown_ret SetControllerNintendoLayoutSetting();  // argc: 2, index: 150, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
+    public unknown_ret SetControllerUseUniversalFaceButtonGlyphs();  // argc: 2, index: 151, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
+    // WARNING: Arguments are unknown!
+    public bool BGetTouchConfigData(uint unk, uint unk1, out UInt64 unk2, out uint unk3, CUtlBuffer* unk4, CUtlBuffer* unk5);  // argc: 6, index: 152, ipc args: [bytes4, bytes4], ipc returns: [boolean, bytes8, bytes4, unknown, unknown]
+    // WARNING: Arguments are unknown!
+    [BlacklistedInCrossProcessIPC]
+    public unknown_ret BSaveTouchConfigLayout();  // argc: 3, index: 153, ipc args: [bytes4, bytes4, bytes4], ipc returns: [boolean]
+    // WARNING: Arguments are unknown!
+    public unknown_ret SetGyroOn();  // argc: 3, index: 154, ipc args: [bytes4, bytes8], ipc returns: []
+    // WARNING: Arguments are unknown!
+    public unknown_ret ForceSimpleHapticEvent();  // argc: 5, index: 155, ipc args: [bytes4, bytes1, bytes1, bytes1, bytes1], ipc returns: []
+    public unknown_ret GetControllerMacAddr();  // argc: 3, index: 156, ipc args: [bytes4, string, string], ipc returns: [bytes1, bytes13, bytes13]
 }

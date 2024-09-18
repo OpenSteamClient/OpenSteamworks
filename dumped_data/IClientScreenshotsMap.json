@@ -1,0 +1,597 @@
+{
+    "name": "IClientScreenshotsMap",
+    "functions": [ 
+        {
+            "name": "GetShortcutDisplayName",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "2094781153",
+            "fencepost": "2154235568",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "SetShortcutDisplayName",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "2240540172",
+            "fencepost": "2300010716",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "string"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "SendScreenshotStartedNotification",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "3917650563",
+            "fencepost": "3977137236",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "WriteScreenshot",
+            "argc": "9",
+            "interfaceid": "23",
+            "functionid": "124728230",
+            "fencepost": "184440709",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes1",
+                "bytes8",
+                "bytes_length_from_mem"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "AddScreenshotToLibrary",
+            "argc": "8",
+            "interfaceid": "23",
+            "functionid": "1823090530",
+            "fencepost": "1882835267",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "string",
+                "string",
+                "string",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "TriggerScreenshot",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "2954246954",
+            "fencepost": "3014007820",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "RequestScreenshotFromGame",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "3775109071",
+            "fencepost": "3834886066",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "SetLocation",
+            "argc": "4",
+            "interfaceid": "23",
+            "functionid": "599106245",
+            "fencepost": "659044530",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "TagUser",
+            "argc": "5",
+            "interfaceid": "23",
+            "functionid": "3168743311",
+            "fencepost": "3228697725",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "uint64"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "TagPublishedFile",
+            "argc": "5",
+            "interfaceid": "23",
+            "functionid": "3009192283",
+            "fencepost": "3069162826",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "ResolvePath",
+            "argc": "6",
+            "interfaceid": "23",
+            "functionid": "879595655",
+            "fencepost": "939485553",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes_length_from_mem"
+            ]
+        },
+        {
+            "name": "GetSizeOnDisk",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "1428812284",
+            "fencepost": "1488798956",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetSizeInCloud",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "1939222335",
+            "fencepost": "1999225136",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "IsPersisted",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "2982744111",
+            "fencepost": "3042763041",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "GetNumGamesWithLocalScreenshots",
+            "argc": "1",
+            "interfaceid": "23",
+            "functionid": "333991017",
+            "fencepost": "394026076",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetGameWithLocalScreenshots",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "3184840917",
+            "fencepost": "3244892105",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetLocalScreenshotCount",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "187845432",
+            "fencepost": "247912749",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetLocalScreenshot",
+            "argc": "13",
+            "interfaceid": "23",
+            "functionid": "195016829",
+            "fencepost": "255309952",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes8",
+                "bytes_length_from_mem",
+                "bytes1",
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetLocalScreenshotByHandle",
+            "argc": "12",
+            "interfaceid": "23",
+            "functionid": "3092741131",
+            "fencepost": "3153405221",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes8",
+                "bytes_length_from_mem",
+                "bytes1",
+                "bytes8"
+            ]
+        },
+        {
+            "name": "SetLocalScreenshotCaption",
+            "argc": "4",
+            "interfaceid": "23",
+            "functionid": "2646597950",
+            "fencepost": "2707423330",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "SetLocalScreenshotPrivacy",
+            "argc": "4",
+            "interfaceid": "23",
+            "functionid": "3253669725",
+            "fencepost": "3314511234",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "SetLocalScreenshotSpoiler",
+            "argc": "4",
+            "interfaceid": "23",
+            "functionid": "3487342089",
+            "fencepost": "3548199727",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "GetLocalLastScreenshot",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "3514520093",
+            "fencepost": "3575458376",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes8",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "StartBatch",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "1644355396",
+            "fencepost": "1705374324",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "AddToBatch",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "2149043727",
+            "fencepost": "2210078784",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "UploadBatch",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "3495610095",
+            "fencepost": "3556661281",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "DeleteBatch",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "727756349",
+            "fencepost": "788823664",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "CancelBatch",
+            "argc": "1",
+            "interfaceid": "23",
+            "functionid": "4241007332",
+            "fencepost": "7123480",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "RecoverOldScreenshots",
+            "argc": "1",
+            "interfaceid": "23",
+            "functionid": "3567732469",
+            "fencepost": "3628832042",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GetTaggedUserCount",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "2558819513",
+            "fencepost": "2619951344",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetTaggedUser",
+            "argc": "5",
+            "interfaceid": "23",
+            "functionid": "660849510",
+            "fencepost": "721997470",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "uint64"
+            ]
+        },
+        {
+            "name": "GetLocation",
+            "argc": "5",
+            "interfaceid": "23",
+            "functionid": "692548436",
+            "fencepost": "753825428",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes_length_from_mem"
+            ]
+        },
+        {
+            "name": "GetTaggedPublishedFileCount",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "3809294060",
+            "fencepost": "3870458149",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetTaggedPublishedFile",
+            "argc": "4",
+            "interfaceid": "23",
+            "functionid": "2326780841",
+            "fencepost": "2387961059",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetScreenshotVRType",
+            "argc": "3",
+            "interfaceid": "23",
+            "functionid": "184860689",
+            "fencepost": "246331229",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "SetScreenshotTimelineData",
+            "argc": "6",
+            "interfaceid": "23",
+            "functionid": "198238279",
+            "fencepost": "259563658",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "string",
+                "bytes8"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "BQueryScreenshotsByTimeline",
+            "argc": "4",
+            "interfaceid": "23",
+            "functionid": "782994923",
+            "fencepost": "844400947",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+                "bytes8",
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BGetUserScreenshotDirectory",
+            "argc": "2",
+            "interfaceid": "23",
+            "functionid": "2331706362",
+            "fencepost": "2393160773",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        }
+    ]
+}

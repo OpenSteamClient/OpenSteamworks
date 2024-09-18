@@ -1,0 +1,129 @@
+{
+    "name": "IClientParentalSettingsMap",
+    "functions": [ 
+        {
+            "name": "BIsParentalLockEnabled",
+            "argc": "1",
+            "interfaceid": "27",
+            "functionid": "1037289487",
+            "fencepost": "1110244383",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BIsParentalLockLocked",
+            "argc": "1",
+            "interfaceid": "27",
+            "functionid": "1743084823",
+            "fencepost": "1816055848",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BIsAppBlocked",
+            "argc": "2",
+            "interfaceid": "27",
+            "functionid": "3328855150",
+            "fencepost": "3401842304",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BIsAppInBlockList",
+            "argc": "2",
+            "interfaceid": "27",
+            "functionid": "460900037",
+            "fencepost": "533903320",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BIsFeatureBlocked",
+            "argc": "2",
+            "interfaceid": "27",
+            "functionid": "1806474458",
+            "fencepost": "1879493870",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BIsFeatureInBlockList",
+            "argc": "2",
+            "interfaceid": "27",
+            "functionid": "2637634325",
+            "fencepost": "2710669866",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BGetSerializedParentalSettings",
+            "argc": "2",
+            "interfaceid": "27",
+            "functionid": "3905112050",
+            "fencepost": "3978195978",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean",
+                "unknown"
+            ]
+        },
+        {
+            "name": "BGetRecoveryEmail",
+            "argc": "3",
+            "interfaceid": "27",
+            "functionid": "2386796290",
+            "fencepost": "2459993121",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean",
+                "bytes_length_from_mem"
+            ]
+        },
+        {
+            "name": "BIsLockFromSiteLicense",
+            "argc": "1",
+            "interfaceid": "27",
+            "functionid": "1829347338",
+            "fencepost": "1902608685",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        }
+    ]
+}

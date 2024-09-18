@@ -1,0 +1,334 @@
+{
+    "name": "IClientVRMap",
+    "functions": [ 
+        {
+            "name": "GetCurrentHmd",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "3314328129",
+            "fencepost": "3405913671",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetCompositor",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "3044474457",
+            "fencepost": "3136076128",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetOverlay",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "3792889306",
+            "fencepost": "3884507106",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetSettings",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "4117870191",
+            "fencepost": "4209504120",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetProperties",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "1343220563",
+            "fencepost": "1434870621",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetPaths",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "2947276063",
+            "fencepost": "3038942250",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "IsHmdPresent",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "2488295335",
+            "fencepost": "2579977651",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "UpdateHmdStatus",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "150169902",
+            "fencepost": "241868347",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "IsVRModeActive",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "1755772062",
+            "fencepost": "1847486636",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "InitVR",
+            "argc": "4",
+            "interfaceid": "40",
+            "functionid": "3006200503",
+            "fencepost": "3097995722",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "StartSteamVR",
+            "argc": "2",
+            "interfaceid": "40",
+            "functionid": "63095617",
+            "fencepost": "154955352",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "CleanupVR",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "1294880891",
+            "fencepost": "1386756755",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "QuitAllVR",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "3315847064",
+            "fencepost": "3407739057",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "QuitApplication",
+            "argc": "2",
+            "interfaceid": "40",
+            "functionid": "1631735442",
+            "fencepost": "1723643564",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GetStringForHmdError",
+            "argc": "2",
+            "interfaceid": "40",
+            "functionid": "45218465",
+            "fencepost": "137142716",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "LaunchApplication",
+            "argc": "2",
+            "interfaceid": "40",
+            "functionid": "2921129953",
+            "fencepost": "3013070333",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "GetSteamVRAppId",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "772581547",
+            "fencepost": "864538056",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetWebSecret",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "1497597953",
+            "fencepost": "1589570591",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "BGetMutualCapabilities",
+            "argc": "2",
+            "interfaceid": "40",
+            "functionid": "3809641920",
+            "fencepost": "3901662945",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean",
+                "unknown"
+            ]
+        },
+        {
+            "name": "BSteamCanMakeVROverlays",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "319466064",
+            "fencepost": "411535476",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BServeVRGamepadUIOverlay",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "3953200096",
+            "fencepost": "4045285637",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "BServeVRGamepadUIViaGamescope",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "815765751",
+            "fencepost": "907867421",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "SetVRConnectionParams",
+            "argc": "2",
+            "interfaceid": "40",
+            "functionid": "94557323",
+            "fencepost": "186675122",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GetVRConnectionParams",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "4019831174",
+            "fencepost": "4111965102",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "BVRDeviceSeenRecently",
+            "argc": "1",
+            "interfaceid": "40",
+            "functionid": "3564968865",
+            "fencepost": "3657118922",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        }
+    ]
+}

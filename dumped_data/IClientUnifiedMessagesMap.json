@@ -1,0 +1,85 @@
+{
+    "name": "IClientUnifiedMessagesMap",
+    "functions": [ 
+        {
+            "name": "SendMethod",
+            "argc": "6",
+            "interfaceid": "25",
+            "functionid": "981623296",
+            "fencepost": "1053981165",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string",
+                "bytes4",
+                "bytes_length_from_mem",
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetMethodResponseInfo",
+            "argc": "5",
+            "interfaceid": "25",
+            "functionid": "772621611",
+            "fencepost": "845092383",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetMethodResponseData",
+            "argc": "6",
+            "interfaceid": "25",
+            "functionid": "278951674",
+            "fencepost": "351583736",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8",
+                "bytes4",
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes_length_from_mem"
+            ]
+        },
+        {
+            "name": "ReleaseMethod",
+            "argc": "3",
+            "interfaceid": "25",
+            "functionid": "2788112630",
+            "fencepost": "2860809208",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "SendNotification",
+            "argc": "4",
+            "interfaceid": "25",
+            "functionid": "72229832",
+            "fencepost": "145023184",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string",
+                "bytes4",
+                "bytes_length_from_mem"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        }
+    ]
+}

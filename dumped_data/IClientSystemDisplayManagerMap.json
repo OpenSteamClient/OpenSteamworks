@@ -1,0 +1,87 @@
+{
+    "name": "IClientSystemDisplayManagerMap",
+    "functions": [ 
+        {
+            "name": "IsInterfaceValid",
+            "argc": "1",
+            "interfaceid": "60",
+            "functionid": "862245967",
+            "fencepost": "907753496",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "GetState",
+            "argc": "2",
+            "interfaceid": "60",
+            "functionid": "2169953890",
+            "fencepost": "2215525935",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "unknown"
+            ]
+        },
+        {
+            "name": "SetMode",
+            "argc": "2",
+            "interfaceid": "60",
+            "functionid": "2139887766",
+            "fencepost": "2185556585",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "protobuf"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "ClearModeOverride",
+            "argc": "2",
+            "interfaceid": "60",
+            "functionid": "3934404336",
+            "fencepost": "3980121542",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "SetCompatibilityMode",
+            "argc": "2",
+            "interfaceid": "60",
+            "functionid": "206061318",
+            "fencepost": "251794653",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "SetGameResolutionGlobal",
+            "argc": "2",
+            "interfaceid": "60",
+            "functionid": "4025867423",
+            "fencepost": "4071616887",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string"
+            ],
+            "serializedreturns": [
+            ]
+        }
+    ]
+}

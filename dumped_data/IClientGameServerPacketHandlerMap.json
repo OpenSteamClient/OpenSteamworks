@@ -1,0 +1,39 @@
+{
+    "name": "IClientGameServerPacketHandlerMap",
+    "functions": [ 
+        {
+            "name": "HandleIncomingPacket",
+            "argc": "5",
+            "interfaceid": "53",
+            "functionid": "1084551784",
+            "fencepost": "1101913319",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes_length_from_mem",
+                "bytes4",
+                "bytes2"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "GetNextOutgoingPacket",
+            "argc": "5",
+            "interfaceid": "53",
+            "functionid": "4015585514",
+            "fencepost": "4033092210",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg",
+                "bytes4",
+                "bytes2"
+            ]
+        }
+    ]
+}

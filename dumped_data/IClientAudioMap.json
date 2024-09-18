@@ -1,0 +1,167 @@
+{
+    "name": "IClientAudioMap",
+    "functions": [ 
+        {
+            "name": "StartVoiceRecording",
+            "argc": "1",
+            "interfaceid": "24",
+            "functionid": "196600135",
+            "fencepost": "260715958",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "StopVoiceRecording",
+            "argc": "1",
+            "interfaceid": "24",
+            "functionid": "800767974",
+            "fencepost": "864899926",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "ResetVoiceRecording",
+            "argc": "1",
+            "interfaceid": "24",
+            "functionid": "3411068552",
+            "fencepost": "3475216633",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GetAvailableVoice",
+            "argc": "4",
+            "interfaceid": "24",
+            "functionid": "1699851991",
+            "fencepost": "1764193620",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes4",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetVoice",
+            "argc": "10",
+            "interfaceid": "24",
+            "functionid": "4197387126",
+            "fencepost": "4261922303",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1",
+                "bytes4",
+                "bytes1",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes4",
+                "bytes_length_from_reg",
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "GetCompressedVoice",
+            "argc": "4",
+            "interfaceid": "24",
+            "functionid": "3599373738",
+            "fencepost": "3663586335",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes4",
+                "bytes_length_from_mem"
+            ]
+        },
+        {
+            "name": "DecompressVoice",
+            "argc": "7",
+            "interfaceid": "24",
+            "functionid": "3124153072",
+            "fencepost": "3188946313",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes_length_from_mem",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "GetVoiceOptimalSampleRate",
+            "argc": "1",
+            "interfaceid": "24",
+            "functionid": "2366627088",
+            "fencepost": "2431500974",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "BAppUsesVoice",
+            "argc": "2",
+            "interfaceid": "24",
+            "functionid": "3319740877",
+            "fencepost": "3384647021",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "GetGameSystemVolume",
+            "argc": "1",
+            "interfaceid": "24",
+            "functionid": "622953438",
+            "fencepost": "687891840",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "SetGameSystemVolume",
+            "argc": "2",
+            "interfaceid": "24",
+            "functionid": "1008938614",
+            "fencepost": "1073909274",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+            ]
+        }
+    ]
+}

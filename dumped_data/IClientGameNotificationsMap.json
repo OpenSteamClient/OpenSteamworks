@@ -1,0 +1,77 @@
+{
+    "name": "IClientGameNotificationsMap",
+    "functions": [ 
+        {
+            "name": "EnumerateNotifications",
+            "argc": "2",
+            "interfaceid": "37",
+            "functionid": "1374609442",
+            "fencepost": "1463146222",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetNotificationCount",
+            "argc": "2",
+            "interfaceid": "37",
+            "functionid": "2971933175",
+            "fencepost": "3060486084",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetNotification",
+            "argc": "4",
+            "interfaceid": "37",
+            "functionid": "2154781729",
+            "fencepost": "2243415283",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4124"
+            ]
+        },
+        {
+            "name": "RemoveSession",
+            "argc": "4",
+            "interfaceid": "37",
+            "functionid": "1416988426",
+            "fencepost": "1505670367",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes8"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "UpdateSession",
+            "argc": "4",
+            "interfaceid": "37",
+            "functionid": "138145684",
+            "fencepost": "226843754",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes8"
+            ],
+            "serializedreturns": [
+            ]
+        }
+    ]
+}

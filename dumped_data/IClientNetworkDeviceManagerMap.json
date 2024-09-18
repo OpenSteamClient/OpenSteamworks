@@ -1,0 +1,634 @@
+{
+    "name": "IClientNetworkDeviceManagerMap",
+    "functions": [ 
+        {
+            "name": "IsInterfaceValid",
+            "argc": "1",
+            "interfaceid": "29",
+            "functionid": "862246267",
+            "fencepost": "904330511",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "RefreshDevices",
+            "argc": "1",
+            "interfaceid": "29",
+            "functionid": "204270088",
+            "fencepost": "246386590",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GetNetworkDevicesData",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1605408269",
+            "fencepost": "1649250574",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "unknown"
+            ]
+        },
+        {
+            "name": "ConnectToDevice",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "3466733783",
+            "fencepost": "3510156734",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "protobuf"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "DisconnectFromDevice",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1937755345",
+            "fencepost": "1981097651",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "SetWifiEnabled",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "4056239330",
+            "fencepost": "4100146151",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "SetWifiScanningEnabled",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "2864475783",
+            "fencepost": "2908398733",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "ForgetWirelessEndpoint",
+            "argc": "3",
+            "interfaceid": "29",
+            "functionid": "2990506099",
+            "fencepost": "3034009695",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "SetWirelessEndpointAutoconnect",
+            "argc": "4",
+            "interfaceid": "29",
+            "functionid": "3433173810",
+            "fencepost": "3476661277",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4",
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "SetCustomIPSettings",
+            "argc": "7",
+            "interfaceid": "29",
+            "functionid": "4224139965",
+            "fencepost": "4267498400",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GetCustomIPSettings",
+            "argc": "7",
+            "interfaceid": "29",
+            "functionid": "2232493380",
+            "fencepost": "2276174395",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "SetProxyInfo",
+            "argc": "5",
+            "interfaceid": "29",
+            "functionid": "2125554967",
+            "fencepost": "2169494046",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "string",
+                "bytes4",
+                "bytes1"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "GetProxyInfo",
+            "argc": "6",
+            "interfaceid": "29",
+            "functionid": "1753516361",
+            "fencepost": "1797568343",
+            "cannotcallincrossprocess": "1",
+            "serializedargs": [
+                "bytes4",
+                "bytes4",
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes_length_from_mem"
+            ]
+        },
+        {
+            "name": "GetObviousConnectivityProblem",
+            "argc": "1",
+            "interfaceid": "29",
+            "functionid": "2486180474",
+            "fencepost": "2530296972",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "TEST_SetFakeLocalSystemStateSetting",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "3124155183",
+            "fencepost": "3168303939",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "TEST_GetFakeLocalSystemStateSetting",
+            "argc": "1",
+            "interfaceid": "29",
+            "functionid": "3991147046",
+            "fencepost": "4035311931",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "TEST_GetFakeLocalSystemEffectiveState",
+            "argc": "1",
+            "interfaceid": "29",
+            "functionid": "2827969656",
+            "fencepost": "2872150670",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "TEST_SetEmulateSingleWirelessDevice",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "4281374465",
+            "fencepost": "30604312",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "TEST_GetEmulateSingleWirelessDevice",
+            "argc": "1",
+            "interfaceid": "29",
+            "functionid": "1505303242",
+            "fencepost": "1549516514",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "LEGACY_EnumerateNetworkDevices",
+            "argc": "3",
+            "interfaceid": "29",
+            "functionid": "540232285",
+            "fencepost": "582429432",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDeviceType",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1329109043",
+            "fencepost": "1371370706",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "LEGACY_IsCurrentDevice",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "999423147",
+            "fencepost": "1041700939",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "LEGACY_IsCurrentlyConnected",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1416212376",
+            "fencepost": "1458506297",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDeviceIP4",
+            "argc": "4",
+            "interfaceid": "29",
+            "functionid": "2397137979",
+            "fencepost": "2439528674",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDeviceBroadcastIP4",
+            "argc": "4",
+            "interfaceid": "29",
+            "functionid": "2446937402",
+            "fencepost": "2489457129",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDeviceIPV6InterfaceIndex",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1074849867",
+            "fencepost": "1117417981",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDeviceVendor",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "882809211",
+            "fencepost": "925409583",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDeviceProduct",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "3274063253",
+            "fencepost": "3316679754",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "LEGACY_GetMacAddress",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "106361546",
+            "fencepost": "148994176",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "LEGACY_GetSubnetMaskBitCount",
+            "argc": "4",
+            "interfaceid": "29",
+            "functionid": "620703022",
+            "fencepost": "663432426",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "LEGACY_GetRouterAddressIP4",
+            "argc": "4",
+            "interfaceid": "29",
+            "functionid": "832177869",
+            "fencepost": "875036305",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDNSResolversIP4",
+            "argc": "4",
+            "interfaceid": "29",
+            "functionid": "1813144674",
+            "fencepost": "1856132142",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDeviceState",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1920544175",
+            "fencepost": "1963596159",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "LEGACY_GetDevicePluggedState",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1721739860",
+            "fencepost": "1764807973",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "LEGACY_EnumerateWirelessEndpoints",
+            "argc": "4",
+            "interfaceid": "29",
+            "functionid": "2767202359",
+            "fencepost": "2810367246",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_reg"
+            ]
+        },
+        {
+            "name": "LEGACY_GetConnectedWirelessEndpointSSID",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "4250432270",
+            "fencepost": "4293661673",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "LEGACY_GetWirelessSecurityCapabilities",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1667146973",
+            "fencepost": "1710392505",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "LEGACY_GetWirelessEndpointSSIDUserDisplayString",
+            "argc": "3",
+            "interfaceid": "29",
+            "functionid": "3848320182",
+            "fencepost": "3891581843",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "LEGACY_GetWirelessEndpointStrength",
+            "argc": "3",
+            "interfaceid": "29",
+            "functionid": "3194434171",
+            "fencepost": "3237711961",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "LEGACY_IsSecurityRequired",
+            "argc": "3",
+            "interfaceid": "29",
+            "functionid": "3582894832",
+            "fencepost": "3626188751",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "LEGACY_GetCachedWirelessCredentials",
+            "argc": "3",
+            "interfaceid": "29",
+            "functionid": "3372568409",
+            "fencepost": "3415878457",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "string"
+            ]
+        },
+        {
+            "name": "LEGACY_IsWirelessEndpointForgettable",
+            "argc": "3",
+            "interfaceid": "29",
+            "functionid": "2348981236",
+            "fencepost": "2392452574",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "LEGACY_IsUsingDHCP",
+            "argc": "2",
+            "interfaceid": "29",
+            "functionid": "1533064849",
+            "fencepost": "1576600703",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        }
+    ]
+}

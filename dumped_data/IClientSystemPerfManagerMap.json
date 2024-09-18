@@ -1,0 +1,87 @@
+{
+    "name": "IClientSystemPerfManagerMap",
+    "functions": [ 
+        {
+            "name": "IsInterfaceValid",
+            "argc": "1",
+            "interfaceid": "57",
+            "functionid": "862246388",
+            "fencepost": "906608377",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "boolean"
+            ]
+        },
+        {
+            "name": "GetDiagnosticInfo",
+            "argc": "2",
+            "interfaceid": "57",
+            "functionid": "3335933435",
+            "fencepost": "3380359940",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "unknown"
+            ]
+        },
+        {
+            "name": "GetState",
+            "argc": "2",
+            "interfaceid": "57",
+            "functionid": "3491444299",
+            "fencepost": "3535967578",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "unknown"
+            ]
+        },
+        {
+            "name": "UpdateSettings",
+            "argc": "2",
+            "interfaceid": "57",
+            "functionid": "3086517259",
+            "fencepost": "3131137312",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "protobuf"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "SetRefreshRateExternallyManaged",
+            "argc": "2",
+            "interfaceid": "57",
+            "functionid": "3999721312",
+            "fencepost": "4044389752",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes1"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GetLegacySettings",
+            "argc": "2",
+            "interfaceid": "57",
+            "functionid": "33780492",
+            "fencepost": "78513448",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "unknown"
+            ]
+        }
+    ]
+}

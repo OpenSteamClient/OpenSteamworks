@@ -1,0 +1,184 @@
+{
+    "name": "IClientGameServerStatsMap",
+    "functions": [ 
+        {
+            "name": "RequestUserStats",
+            "argc": "4",
+            "interfaceid": "20",
+            "functionid": "4286444723",
+            "fencepost": "9157351",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "GetUserStat",
+            "argc": "6",
+            "interfaceid": "20",
+            "functionid": "1255083825",
+            "fencepost": "1272876652",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetUserStat",
+            "argc": "6",
+            "interfaceid": "20",
+            "functionid": "2919882746",
+            "fencepost": "2937820734",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "GetUserAchievement",
+            "argc": "7",
+            "interfaceid": "20",
+            "functionid": "3299260765",
+            "fencepost": "3317360043",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1",
+                "bytes1",
+                "bytes4"
+            ]
+        },
+        {
+            "name": "SetUserStat",
+            "argc": "6",
+            "interfaceid": "20",
+            "functionid": "3205090938",
+            "fencepost": "3223270861",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "SetUserStat",
+            "argc": "6",
+            "interfaceid": "20",
+            "functionid": "1792940455",
+            "fencepost": "1811136507",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string",
+                "bytes4"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "UpdateUserAvgRateStat",
+            "argc": "7",
+            "interfaceid": "20",
+            "functionid": "3675028800",
+            "fencepost": "3693240981",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string",
+                "bytes4",
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "SetUserAchievement",
+            "argc": "5",
+            "interfaceid": "20",
+            "functionid": "4021600216",
+            "fencepost": "4039828526",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "ClearUserAchievement",
+            "argc": "5",
+            "interfaceid": "20",
+            "functionid": "2754240094",
+            "fencepost": "2772484533",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes1"
+            ]
+        },
+        {
+            "name": "StoreUserStats",
+            "argc": "4",
+            "interfaceid": "20",
+            "functionid": "2660856875",
+            "fencepost": "2679117443",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "uint64",
+                "bytes8"
+            ],
+            "serializedreturns": [
+                "bytes8"
+            ]
+        },
+        {
+            "name": "SetMaxStatsLoaded",
+            "argc": "2",
+            "interfaceid": "20",
+            "functionid": "2833452854",
+            "fencepost": "2851745680",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4"
+            ],
+            "serializedreturns": [
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "name": "IClientNetworkingUtilsSerializedMap",
+    "functions": [ 
+        {
+            "name": "GetNetworkConfigJSON_DEPRECATED",
+            "argc": "4",
+            "interfaceid": "50",
+            "functionid": "687842835",
+            "fencepost": "786542536",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "string"
+            ],
+            "serializedreturns": [
+                "bytes4",
+                "bytes_length_from_mem"
+            ]
+        },
+        {
+            "name": "GetLauncherType",
+            "argc": "1",
+            "interfaceid": "50",
+            "functionid": "2850033652",
+            "fencepost": "2948781740",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+                "bytes4"
+            ]
+        },
+        {
+            "name": "TEST_ClearCachedNetworkConfig",
+            "argc": "1",
+            "interfaceid": "50",
+            "functionid": "3061613483",
+            "fencepost": "3160458345",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "PostConnectionStateMsg",
+            "argc": "3",
+            "interfaceid": "50",
+            "functionid": "3774977862",
+            "fencepost": "3873790466",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "bytes4",
+                "bytes_length_from_mem"
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "PostConnectionStateUpdatesForAllConnections",
+            "argc": "1",
+            "interfaceid": "50",
+            "functionid": "2261759012",
+            "fencepost": "2360620003",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "PostAppSummaryUpdates",
+            "argc": "1",
+            "interfaceid": "50",
+            "functionid": "37822568",
+            "fencepost": "136699688",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+            ],
+            "serializedreturns": [
+            ]
+        },
+        {
+            "name": "GotLocationString",
+            "argc": "2",
+            "interfaceid": "50",
+            "functionid": "2020165469",
+            "fencepost": "2119058718",
+            "cannotcallincrossprocess": "0",
+            "serializedargs": [
+                "string"
+            ],
+            "serializedreturns": [
+            ]
+        }
+    ]
+}
