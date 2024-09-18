@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>OpenSteamworks.ConCommands</PackageId>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/OpenSteamClient/OpenSteamworks</RepositoryUrl>
+
+    <!-- Update the version here when you make changes -->
+    <VersionPrefix>1.0.0</VersionPrefix>
+
+	<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+	<IsAotCompatible>true</IsAotCompatible>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="../OpenSteamworks/OpenSteamworks.csproj" />
+  </ItemGroup>
+
+</Project>

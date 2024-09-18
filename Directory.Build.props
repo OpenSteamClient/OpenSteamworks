@@ -1,0 +1,20 @@
+<Project>
+    <PropertyGroup>
+        <CommonNetVersion>net8.0</CommonNetVersion>
+        <ProjectRootDir>$(MSBuildThisFileDirectory)</ProjectRootDir>
+        <PublishTrimmed>true</PublishTrimmed>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
+    </PropertyGroup>
+
+	<!-- Working towards NativeAOT and trimming. Note that this is a long term goal, and not something we can reasonably accomplish soon, due to extensive usage of reflection and runtime type generation. -->
+	<PropertyGroup Condition="'$(MSBuildProjectExtension)'=='.csproj'">
+		<!-- <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault> -->
+		<EnableAotAnalyzer>true</EnableAotAnalyzer>
+		<EnableSingleFileAnalyzer>true</EnableSingleFileAnalyzer>
+		<EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+	</PropertyGroup>
+</Project>

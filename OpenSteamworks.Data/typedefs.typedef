@@ -1,0 +1,32 @@
+// This is not a c header file, only its typedef syntax is supported.
+// All the typedefs given here will have typed structs generated.
+// Use C# types.
+
+namespace OpenSteamworks.Data;
+
+// Handle types
+typedef Int32 HSteamPipe;
+typedef Int32 HSteamUser;
+typedef UInt32 HImage;
+typedef UInt32 HHTMLBrowser;
+typedef UInt32 HImage;
+typedef UInt32 HSharedConnection;
+
+// _t types
+typedef Int32 LibraryFolder_t;
+typedef UInt32 AppId_t {
+	public static readonly AppId_t Invalid = new(0);
+}
+
+typedef UInt32 RTime32 {
+	public static explicit operator DateTime(RTime32 me) {
+        return DateTimeOffset.FromUnixTimeSeconds(me.m_value).DateTime;
+    }
+}
+
+typedef UInt32 DepotId_t;
+typedef UInt32 AccountID_t;
+typedef UInt32 RemotePlaySessionID_t;
+typedef UInt64 GID_t;
+typedef UInt64 SteamAPICall_t;
+typedef UInt64 UGCFileWriteStreamHandle_t;
