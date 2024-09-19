@@ -1,6 +1,11 @@
 #!/bin/sh
 set -e
 
+cd OpenSteamworks.Protobuf
+BuiltVersion_OSWProtobuf="$(dotnet msbuild -getproperty:Version)"
+dotnet pack -c Release
+cd ..
+
 cd OpenSteamworks.Data
 BuiltVersion_OSWData="$(dotnet msbuild -getproperty:Version)"
 dotnet pack -c Release
@@ -9,6 +14,7 @@ cd ..
 cd artifacts/package
 mkdir -p pkgsrc
 nuget add ./release/OpenSteamworks.Data.$BuiltVersion_OSWData.nupkg -Source ./pkgsrc/
+nuget add ./release/OpenSteamworks.Protobuf.$BuiltVersion_OSWProtobuf.nupkg -Source ./pkgsrc/
 cd ../..
 
 cd OpenSteamworks
@@ -23,3 +29,4 @@ cd ../..
 
 cd OpenSteamworks.Messaging
 dotnet pack -c Release
+cd ..

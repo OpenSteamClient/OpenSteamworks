@@ -15,6 +15,7 @@ on:
       - "**.cpp"
       - "**.h"
       - "**.hpp"
+      - "**.sh"
       - ".github/workflows/dotnet.yaml"
       - "Directory.Build.props"
   pull_request:
