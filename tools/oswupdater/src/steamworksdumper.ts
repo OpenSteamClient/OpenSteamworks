@@ -1,5 +1,4 @@
 import fs from "fs"
-import clone from "git-clone/promise"
 import { execWrap, mkdir } from "./util";
 
 export class SteamworksDumper {
@@ -37,7 +36,7 @@ export class SteamworksDumper {
         
         console.info("Downloading Rosentti/steamworks_dumper git repo")
         try {
-            await clone("https://github.com/Rosentti/steamworks_dumper.git", "steamworks_dumper");
+            await execWrap("git clone https://github.com/Rosentti/steamworks_dumper.git", {});
         } catch (e) {
             throw "Failed to download Rosentti/steamworks_dumper " + e;
         } finally {

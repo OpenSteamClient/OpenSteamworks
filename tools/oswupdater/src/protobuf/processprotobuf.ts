@@ -1,12 +1,11 @@
 import path from 'path';
 import fs from 'fs';
-import clone from 'git-clone/promise';
 import { execWrap, mkdir } from '../util';
 
 export async function ProcessProtobuf(projdir: string, workdir: string, targetdircsharp: string, targetdircpp: string) {
     console.info("Downloading SteamDatabase/Protobufs git repo")
     try {
-        await clone("https://github.com/SteamDatabase/Protobufs.git", workdir);
+        await execWrap("git clone https://github.com/SteamDatabase/Protobufs.git", { cwd: workdir });
     } catch (e) {
         throw "Failed to download SteamDatabase/Protobufs " + e;
     } finally {
@@ -39,7 +38,7 @@ export async function ProcessProtobuf(projdir: string, workdir: string, targetdi
         }
     });
 
-    // The growing list of erroring files is worrying... Seriously.
+    // TODO: Fix this. The growing list of erroring files is worrying... Seriously.
     const blacklistedFiles: string[] = ["service_steamvrvoicechat.proto", "service_steamvrwebrtc.proto", "service_cloud.proto", "service_transportvalidation.proto", "service_accountcart.proto", "service_checkout.proto"];
 
     webuiFilesRelative.forEach(file => {
