@@ -11,15 +11,18 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/OpenSteamClient/OpenSteamworks</RepositoryUrl>
 
-    <!-- Update the version here when you make changes -->
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <!-- Update the version in Directory.Build.props when you make changes -->
+    <VersionPrefix>$(CommonVersion)</VersionPrefix>
 
-	<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
-	<IsAotCompatible>true</IsAotCompatible>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
 
   <ItemGroup>
-	<ProjectReference Include="../OpenSteamworks/OpenSteamworks.csproj" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
+  <ItemGroup>
+	  <PackageReference Include="OpenSteamworks" Version="*"/>
+  </ItemGroup>
 </Project>

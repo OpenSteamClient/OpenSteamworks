@@ -1,6 +1,3 @@
 [submodule "OpenSteamworks.Native"]
 	path = OpenSteamworks.Native
 	url = git@github.com:OpenSteamClient/OpenSteamworks.Native.git
-[submodule "OpenSteamworks.Protobuf"]
-	path = OpenSteamworks.Protobuf
-	url = git@github.com:OpenSteamClient/OpenSteamworks.Protobuf.git

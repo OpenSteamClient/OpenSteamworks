@@ -8,8 +8,8 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
 
-    <!-- Update the version here AND in the .nuspec when you make changes. Blame .NET -->
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <!-- Update the version in Directory.Build.props when you make changes -->
+    <VersionPrefix>$(CommonVersion)</VersionPrefix>
 
     <!-- To check the validity of generated code, look in obj/Debug/net8.0/generated -->
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
