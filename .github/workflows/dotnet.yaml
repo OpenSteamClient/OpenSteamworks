@@ -7,6 +7,10 @@ on:
     paths:
       - "**.cs"
       - "**.csproj"
+      - "**.nativeproj"
+      - "**.proj"
+      - "**.props"
+      - "**.targets"
       - "**.axaml"
       - "**.cpp"
       - "**.h"
