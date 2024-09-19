@@ -1,7 +1,0 @@
-build
-.cache
-bin
-obj
-.vs
-.idea
-artifacts
