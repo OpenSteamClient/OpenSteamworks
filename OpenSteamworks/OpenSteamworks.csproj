@@ -37,9 +37,9 @@
     </ProjectReference>
 
     <!-- When you change any of these, you MUST also update the .nuspec file manually. Blame .NET -->
-    <PackageReference Include="OpenSteamworks.Data" Version="1.0.0"/>
+    <PackageReference Include="OpenSteamworks.Data" Version="$(CommonVersion)"/>
     <PackageReference Include="OpenSteamClient.Logging" Version="1.0.2"/>
-    <PackageReference Include="OpenSteamworks.Protobuf" Version="1.0.7"/>
+    <PackageReference Include="OpenSteamworks.Protobuf" Version="$(CommonVersion)"/>
     <PackageReference Include="OpenSteamworks.Native" Version="1.1.4"/>
     <PackageReference Include="OpenSteamworks.KeyValue" Version="1.0.6"/>
     <PackageReference Include="OpenSteamworks.Utils" Version="1.0.2"/>

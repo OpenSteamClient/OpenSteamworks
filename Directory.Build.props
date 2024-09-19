@@ -5,7 +5,8 @@
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
 
         <!-- Due to the added complexity of versioning all the OSW components separately, we have one common version. -->
-        <CommonVersion>1.1.0</CommonVersion>
+        <!-- This also allows for a semi-monolithic design. -->
+        <CommonVersion>1.1.1</CommonVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(OutputType)' == 'Library'">

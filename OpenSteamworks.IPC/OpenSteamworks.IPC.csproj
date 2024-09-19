@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<ProjectReference Include="../OpenSteamworks/OpenSteamworks.csproj" />
+	  <PackageReference Include="OpenSteamworks" Version="$(CommonVersion)"/>
   </ItemGroup>
 
 </Project>
