@@ -25,9 +25,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Download repo and submodules
-      run: | 
-        git submodule update --init --recursive
+    - name: Download repo
       
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
