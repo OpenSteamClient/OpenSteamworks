@@ -2,11 +2,15 @@
     <PropertyGroup>
         <CommonNetVersion>net8.0</CommonNetVersion>
         <ProjectRootDir>$(MSBuildThisFileDirectory)</ProjectRootDir>
-        <PublishTrimmed>true</PublishTrimmed>
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(OutputType)' == 'Library'">
+        <PublishTrimmed>true</PublishTrimmed>
+    </PropertyGroup>
+
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
         <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
     </PropertyGroup>
 

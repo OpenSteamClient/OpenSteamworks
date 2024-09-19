@@ -159,8 +159,6 @@ public class NativeClassSourceGenerator : ISourceGenerator
 		if (managedFunction.HasAttribute(CROSSPROC_IPC_BLOCKED_ATTRIBUTE_NAME)) {
 			extraStatements.Add($"SteamClient.ThrowIfRemotePipe();");
 		}
-
-		extraStatements.Add($"using var _ = CProfiler.CurrentProfiler?.EnterScope(\"{$"{managedFunction.ContainingType.Name}.{managedFunction.Name}"}\");");
 		
 		foreach (var item in managedFunction.Parameters)
 		{
@@ -371,7 +369,6 @@ using System.Runtime.InteropServices;
 using OpenSteamworks.Native;
 using OpenSteamworks.Utils;
 using OpenSteamworks.Data;
-using Profiler;
 
 namespace {interfaceSymbol.ContainingNamespace.ToDisplayString()};
 

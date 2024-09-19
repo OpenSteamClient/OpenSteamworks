@@ -1,0 +1,67 @@
+name: .NET Build
+
+# Trigger the workflow on push or pull request
+on:
+  push:
+    branches: ["master"]
+    paths:
+      - "**.cs"
+      - "**.csproj"
+      - "**.axaml"
+      - "**.cpp"
+      - "**.h"
+      - "**.hpp"
+      - ".github/workflows/dotnet.yaml"
+      - "Directory.Build.props"
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Download repo and submodules
+      run: | 
+        git submodule update --init --recursive
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Build and pack release
+      run: ./package-osw.sh
+
+    - name: Set version envs
+      run: |
+        cd OpenSteamworks.Data 
+        echo "BuiltVersion_OSWData=$(dotnet msbuild -getproperty:Version)" >> $GITHUB_ENV
+        cd ../OpenSteamworks 
+        echo "BuiltVersion_OSW=$(dotnet msbuild -getproperty:Version)" >> $GITHUB_ENV
+
+    - name: Upload to nuget repo
+      run: |
+        git config --global user.name "Github Actions Bot"
+        git config --global user.email "<>"
+        git config --global credential.helper cache
+        git clone https://${{secrets.ACCESS_TOKEN}}@github.com/OpenSteamClient/nuget
+        mkdir -p nuget/flatcontainer/opensteamworks/${{ env.BuiltVersion_OSW }}
+        mkdir -p nuget/flatcontainer/opensteamworks.data/${{ env.BuiltVersion_OSWData }}
+        cp ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.${{ env.BuiltVersion_OSW }}.nupkg nuget/flatcontainer/opensteamworks/${{ env.BuiltVersion_OSW }}/opensteamworks.${{ env.BuiltVersion_OSW }}.nupkg -f
+        cp ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Data.${{ env.BuiltVersion_OSWData }}.nupkg nuget/flatcontainer/opensteamworks.data/${{ env.BuiltVersion_OSWData }}/opensteamworks.data.${{ env.BuiltVersion_OSWData }}.nupkg -f
+        cd nuget
+        cd updatetool
+        node index.js OpenSteamworks ${{ env.BuiltVersion_OSW }}
+        node index.js OpenSteamworks.Data ${{ env.BuiltVersion_OSWData }}
+        cd ..
+        git add flatcontainer/opensteamworks/index.json
+        git add flatcontainer/opensteamworks.data/index.json
+        git add flatcontainer/opensteamworks/${{ env.BuiltVersion_OSW }}/opensteamworks.${{ env.BuiltVersion_OSW }}.nupkg
+        git add flatcontainer/opensteamworks.data/${{ env.BuiltVersion_OSWData }}/opensteamworks.data.${{ env.BuiltVersion_OSWData }}.nupkg
+        git commit -m "$(date)"
+        git push

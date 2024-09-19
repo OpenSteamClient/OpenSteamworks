@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Profiler\Profiler.csproj" />
+    <PackageReference Include="OpenSteamworks" Version="*"/>
   </ItemGroup>
 
   <PropertyGroup>
