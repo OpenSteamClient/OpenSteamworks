@@ -241,8 +241,8 @@ public class SteamClient : ISteamClient
 
         progress.Report("Shutting down native client");
         this.CallbackManager.Dispose();
-        this.NativeClient.native_Steam_ReleaseUser(this.NativeClient.Pipe, this.NativeClient.User);
-        this.NativeClient.native_Steam_BReleaseSteamPipe(this.NativeClient.Pipe);
+        this.NativeClient.IClientEngine.ReleaseUser(this.NativeClient.Pipe, this.NativeClient.User);
+        this.NativeClient.IClientEngine.BReleaseSteamPipe(this.NativeClient.Pipe);
         this.IClientEngine.BShutdownIfAllPipesClosed();
         this.NativeClient.Unload();
         instance = null;
