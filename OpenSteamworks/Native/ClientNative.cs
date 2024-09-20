@@ -22,23 +22,6 @@ namespace OpenSteamworks.Native;
 struct NativeFuncs {
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate IntPtr CreateInterface(string name, IntPtr error);
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate HSteamPipe Steam_CreateSteamPipe();
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate HSteamUser Steam_ConnectToGlobalUser(HSteamPipe steamPipe);
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate HSteamUser Steam_CreateGlobalUser(HSteamPipe steamPipe);
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate HSteamUser Steam_CreateLocalUser(HSteamPipe steamPipe, EAccountType eAccountType);
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate void Steam_ReleaseUser(HSteamPipe steamPipe, HSteamUser steamUser);
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate bool Steam_BReleaseSteamPipe(HSteamPipe steamPipe);
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate bool Steam_BGetCallback(HSteamPipe steamPipe, IntPtr pCallbackMsg);
@@ -63,12 +46,6 @@ public partial class ClientNative {
     [SupportedOSPlatform("windows")]
     public readonly NativeLibraryEx? VStdLib;
     internal NativeFuncs.CreateInterface native_CreateInterface;
-    internal NativeFuncs.Steam_CreateSteamPipe native_Steam_CreateSteamPipe;
-    internal NativeFuncs.Steam_ConnectToGlobalUser native_Steam_ConnectToGlobalUser;
-    internal NativeFuncs.Steam_CreateGlobalUser native_Steam_CreateGlobalUser;
-    internal NativeFuncs.Steam_CreateLocalUser native_Steam_CreateLocalUser;
-    internal NativeFuncs.Steam_ReleaseUser native_Steam_ReleaseUser;
-    internal NativeFuncs.Steam_BReleaseSteamPipe native_Steam_BReleaseSteamPipe;
     internal NativeFuncs.Steam_BGetCallback native_Steam_BGetCallback;
     internal NativeFuncs.Steam_FreeLastCallback native_Steam_FreeLastCallback;
 
@@ -169,22 +146,10 @@ public partial class ClientNative {
     }
 
     [MemberNotNull(nameof(native_CreateInterface))]
-    [MemberNotNull(nameof(native_Steam_CreateSteamPipe))]
-    [MemberNotNull(nameof(native_Steam_ConnectToGlobalUser))]
-    [MemberNotNull(nameof(native_Steam_CreateGlobalUser))]
-    [MemberNotNull(nameof(native_Steam_CreateLocalUser))]
-    [MemberNotNull(nameof(native_Steam_ReleaseUser))]
-    [MemberNotNull(nameof(native_Steam_BReleaseSteamPipe))]
     [MemberNotNull(nameof(native_Steam_BGetCallback))]
     [MemberNotNull(nameof(native_Steam_FreeLastCallback))]
     private void loadNativeFunctions() {
         tryLoadNativeFunc("CreateInterface", out native_CreateInterface);
-        tryLoadNativeFunc("Steam_CreateSteamPipe", out native_Steam_CreateSteamPipe);
-        tryLoadNativeFunc("Steam_ConnectToGlobalUser", out native_Steam_ConnectToGlobalUser);
-        tryLoadNativeFunc("Steam_CreateGlobalUser", out native_Steam_CreateGlobalUser);
-        tryLoadNativeFunc("Steam_CreateLocalUser", out native_Steam_CreateLocalUser);
-        tryLoadNativeFunc("Steam_ReleaseUser", out native_Steam_ReleaseUser);
-        tryLoadNativeFunc("Steam_BReleaseSteamPipe", out native_Steam_BReleaseSteamPipe);
         tryLoadNativeFunc("Steam_BGetCallback", out native_Steam_BGetCallback);
         tryLoadNativeFunc("Steam_FreeLastCallback", out native_Steam_FreeLastCallback);
     }

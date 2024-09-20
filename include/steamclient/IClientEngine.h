@@ -82,7 +82,7 @@ public:
     virtual HSteamUser CreatePipeToLocalUser(HSteamUser user, HSteamPipe *pipeToUser) = 0;
 
     virtual void ReleaseUser(HSteamPipe pipe, HSteamUser user) = 0;
-    virtual bool IsValidHSteamUserPipe(HSteamPipe pipe, HSteamUser user);
+    virtual bool IsValidHSteamUserPipe(HSteamPipe pipe, HSteamUser user) = 0;
     
     virtual IClientUser *GetIClientUser( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientGameServerInternal *GetIClientGameServerInternal( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
