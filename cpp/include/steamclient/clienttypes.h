@@ -3,7 +3,7 @@
 #include <cstdint>
 #include "enums.h"
 #include <steam/steamid.h>
-#include <steam/utlbuf.h>
+#include <tier1/utlbuffer.h>
 
 // Handle types
 typedef int32_t HSteamPipe;
@@ -31,3 +31,10 @@ typedef void*   (*CreateInterfaceFn)( const char *pName, int *pReturnCode );
 typedef void    (*SteamAPIWarningMessageHook_t)(HSteamPipe pipe, const char *message);
 typedef bool    (*SteamBGetCallbackFn)( HSteamPipe pipe, void *pCallbackMsg );
 typedef void    (*SteamFreeLastCallbackFn)( HSteamPipe pipe );
+
+struct CallbackMsg_t {
+    HSteamUser m_hSteamUser;
+	int m_iCallback;
+	void* m_pubParam;
+	int m_cubParam;
+};
