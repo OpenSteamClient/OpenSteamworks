@@ -43,10 +43,42 @@ public class SteamClient : ISteamClient
     public const int Pack = 4;
 #endif
 
-    public ClientApps ClientApps { get; private set; }
-    public ClientConfigStore ClientConfigStore { get; private set; }
-    public ClientRemoteStorage ClientRemoteStorage { get; private set; }
-    public DownloadManager DownloadManager { get; private set; }
+    private ClientApps? clientApps;
+    public ClientApps ClientApps
+    {
+        get {
+            InitializeManagedInterfaces();
+            return clientApps;
+        }
+    }
+
+    private ClientConfigStore? clientConfigStore;
+    public ClientConfigStore ClientConfigStore
+    {
+        get {
+            InitializeManagedInterfaces();
+            return clientConfigStore;
+        }
+    }
+
+    private ClientRemoteStorage? clientRemoteStorage;
+    public ClientRemoteStorage ClientRemoteStorage
+    {
+        get {
+            InitializeManagedInterfaces();
+            return clientRemoteStorage;
+        }
+    }
+
+    private DownloadManager? downloadManager;
+    public DownloadManager DownloadManager
+    {
+        get {
+            InitializeManagedInterfaces();
+            return downloadManager;
+        }
+    }
+
     public CallbackManager CallbackManager { get; private set; }
 
     private ClientNative NativeClient;
@@ -112,10 +144,6 @@ public class SteamClient : ISteamClient
     public IClientVR IClientVR => NativeClient.IClientVR;
     public IClientTimeline IClientTimeline => NativeClient.IClientTimeline;
 
-    // #if !_WINDOWS
-    //     public ClientShortcuts IPCClientShortcuts { get; init; }
-    // #endif
-
     internal static readonly IPlatform platform;
     private ClientAPI_WarningMessageHook_t warningMessageHook;
 
@@ -138,7 +166,7 @@ public class SteamClient : ISteamClient
     }
 
 	/// <summary>
-	/// Constructs a OpenSteamworks.Client. 
+	/// Constructs a OpenSteamworks.SteamClient. 
 	/// </summary>
 	public SteamClient(string steamclientLibPath, ConnectionType connectionType, LoggingSettings loggingSettings)
     {
@@ -178,8 +206,12 @@ public class SteamClient : ISteamClient
 		}
 
 		this.IClientEngine.SetWarningMessageHook(warningMessageHook);
+		this.CallbackManager.Start();
+	}
 
-		// Sets this process as the UI process
+    public void SetUIProcessIfNewClient()
+    {
+        // Sets this process as the UI process
 		// Doing this with an existing client causes the windows to disappear, and never reappear (since VGUI support has been dropped)
 		if (this.NativeClient.ConnectedWith == ConnectionType.NewClient)
 		{
@@ -188,19 +220,24 @@ public class SteamClient : ISteamClient
 			this.IClientUtils.SetCurrentUIMode(EUIMode.VGUI);
 			this.IClientUtils.SetClientUIProcess();
 		}
+    }
 
-        this.ClientApps = new ClientApps(this);
-        this.ClientConfigStore = new ClientConfigStore(this);
-        this.ClientRemoteStorage = new ClientRemoteStorage(this);
-        this.DownloadManager = new DownloadManager(this);
+    [MemberNotNull(nameof(clientApps))]
+    [MemberNotNull(nameof(clientConfigStore))]
+    [MemberNotNull(nameof(clientRemoteStorage))]
+    [MemberNotNull(nameof(downloadManager))]
+    private void InitializeManagedInterfaces()
+    {
+        if (this.clientApps != null && clientConfigStore != null && clientRemoteStorage != null && downloadManager != null)
+        {
+            return;
+        }
 
-		this.CallbackManager.Start();
-
-		// #if !_WINDOWS
-		//             this.IPCClient = new("Steam3Master", OpenSteamworks.IPCClient.IPCClient.IPCConnectionType.Client);
-		//             this.IPCClientShortcuts = new ClientShortcuts(this.IPCClient, (uint)(int)this.NativeClient.User);
-		// #endif
-	}
+        this.clientApps = new ClientApps(this);
+        this.clientConfigStore = new ClientConfigStore(this);
+        this.clientRemoteStorage = new ClientRemoteStorage(this);
+        this.downloadManager = new DownloadManager(this);
+    }
 
     /// <summary>
     /// Does trickery to allow running an external steamservice on Linux. Unused on Windows, as it's the default configuration there.
