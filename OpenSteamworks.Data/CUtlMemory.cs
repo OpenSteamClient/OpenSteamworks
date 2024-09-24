@@ -104,14 +104,6 @@ public unsafe struct CUtlMemory<T> where T : unmanaged {
         return bytes;
     }
 
-    [StructLayout(LayoutKind.Sequential)]
-    public unsafe struct Iterator_t {
-        public int index;
-        public static Iterator_t InvalidIterator() {
-            return new Iterator_t() { index = -1 };
-        }
-    }
-
     public readonly int NumAllocated()
     {
         return m_nAllocationCount;

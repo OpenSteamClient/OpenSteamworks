@@ -73,9 +73,9 @@ public interface ISteamClient {
 
     public ClientApps ClientApps { get; }
     public ClientConfigStore ClientConfigStore { get; }
-    public CallbackManager CallbackManager { get; }
     public ClientRemoteStorage ClientRemoteStorage { get; }
     public DownloadManager DownloadManager { get; }
+    public CallbackManager CallbackManager { get; }
     
     public ConnectionType ConnectedWith { get; }
 
