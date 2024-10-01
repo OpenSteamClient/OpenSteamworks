@@ -14,6 +14,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdint.h>
+#include <tier0/dbg.h>
 
 #if defined(_MSC_VER)
 	#define FMTFUNCTION( x, y )
@@ -89,35 +90,6 @@
 #else
 	#define COMPILE_TIME_ASSERT( pred ) static_assert( pred, "Compile time assert constraint is not true: " #pred )
 #endif
-
-#define Assert( x ) assert( x )
-#define DbgAssert( x ) assert( x ) // a1ba: this should raise under debugger only?
-
-#ifndef NDEBUG
-inline void AssertMsg( int pred, const char *fmt, ... )
-{
-	char buf[1024];
-	va_list va;
-	va_start( va, fmt );
-	_vsnprintf( buf, sizeof( buf ), fmt, va );
-	va_end( va );
-
-	assert( pred && fmt );
-}
-
-#define AssertMsg1( x, msg, msg1 ) AssertMsg( x, msg, msg1 )
-#define DbgAssertMsg1( x, msg, msg1 ) AssertMsg( x, msg, msg1 )
-#define AssertMsg2( x, msg, msg1, msg2 ) AssertMsg( x, msg, msg1, msg2 )
-#define AssertEquals( _exp, _expectedValue ) AssertMsg2( (_exp) == (_expectedValue), "Expected %d but got %d!", (_expectedValue), (_exp) )
-#else
-#define AssertMsg( x, msg ) ( x )
-#define AssertMsg1( x, msg, msg1 ) ( x )
-#define DbgAssertMsg1( x, msg, msg1 ) ( x )
-#define AssertMsg2( x, msg, msg1, msg2 ) ( x )
-#define AssertEquals( x, y ) ( x )
-#endif
-
-#define VerifyEquals( x, y ) AssertEquals( x, y )
 
 #define PvAlloc   malloc
 #define PvRealloc realloc

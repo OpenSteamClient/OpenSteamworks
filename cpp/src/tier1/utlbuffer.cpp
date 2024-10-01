@@ -914,7 +914,7 @@ bool CUtlBuffer::SeekGet( SeekType_t type, int offset )
 //-----------------------------------------------------------------------------
 int CUtlBuffer::VaScanf( const char* pFmt, va_list list )
 {
-	Assert( pFmt );
+	Assert( pFmt != nullptr );
 	if ( m_Error || !IsText() )
 		return 0;
 	
@@ -1098,7 +1098,7 @@ int CUtlBuffer::Scanf( const char* pFmt, ... )
 //-----------------------------------------------------------------------------
 bool CUtlBuffer::GetToken( const char *pToken )
 {
-	Assert( pToken );
+	Assert( pToken != nullptr );
 
 	// Look for the token
 	int nLen = V_strlen( pToken );

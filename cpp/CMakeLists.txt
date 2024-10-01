@@ -36,6 +36,7 @@ add_library(tier1_s ${tier1_s_BUILD_TYPE}
     src/tier1/utlstring.cpp)
 
 add_library(tier0_s ${tier0_s_BUILD_TYPE} 
+    src/tier0/dbg.cpp
     src/tier0/platform.cpp)
 
 set_target_properties(tier1_s PROPERTIES CXX_STANDARD 20)

@@ -356,8 +356,8 @@ public class IPCClient {
 
             reader.ReadByte();
             hUser = reader.ReadUInt32();
-            if (hUser+1 < 2) {
-                throw new Exception($"ConnectToGlobalUser returned invalid HSteamUserEngine={hUser+1}");
+            if (hUser < 1) {
+                throw new Exception($"ConnectToGlobalUser returned invalid HSteamUserEngine={hUser}");
             }
 
             Logging.IPCLogger.Info("Got HSteamUser " + hUser);

@@ -186,7 +186,7 @@ void CVariableBitStringBase::AllocInts( int numInts )
 //-----------------------------------------------------------------------------
 void CVariableBitStringBase::ReallocInts( int numInts )
 {
-	Assert( GetInts() );
+	Assert( GetInts() != nullptr );
 	if ( numInts == 0)
 	{
 		FreeInts();

@@ -20,3 +20,13 @@ uint32_t ThreadGetCurrentProcessId()
     return getpid();
 #endif
 }
+
+uint32_t ThreadGetCurrentId()
+{
+#ifdef _WIN32
+    return (uint32_t)GetCurrentThreadId();
+#else
+    return gettid();
+#endif
+}
+
