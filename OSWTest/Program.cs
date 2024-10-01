@@ -1,5 +1,20 @@
-﻿using OpenSteamworks;
+﻿using System.Diagnostics;
+using OpenSteamworks;
 
-// See https://aka.ms/new-console-template for more information
-var sc = new SteamClient("../../clientdll/build_l64/steamclient.so", ConnectionType.ExistingClient, new LoggingSettings());
-sc.IClientAppDisableUpdate.SetAppUpdateDisabledSecondsRemaining(730, 9000);
+// Simple test app for testing OSW functionality. 
+var sc = new SteamClient(Environment.GetEnvironmentVariable("CLIENTDLL_PATH") ?? throw new ArgumentException("CLIENTDLL_PATH envvar must be set."), ConnectionType.ExistingClient, new LoggingSettings());
+
+// Init these interfaces here so the timer is more accurately measuring only function calls
+var iface = sc.IClientAppDisableUpdate;
+var iface2 = sc.IClientUtils;
+Stopwatch sw = new();
+sw.Start();
+iface.SetAppUpdateDisabledSecondsRemaining(730, 9000);
+sw.Stop();
+Console.WriteLine($"SetAppUpdateDisabledSecondsRemaining took {sw.Elapsed.TotalMilliseconds}ms");
+
+sw.Start();
+string installPath = iface2.GetInstallPath();
+sw.Stop();
+Console.WriteLine($"InstallPath: {installPath}");
+Console.WriteLine($"GetInstallPath took {sw.Elapsed.TotalMilliseconds}ms");

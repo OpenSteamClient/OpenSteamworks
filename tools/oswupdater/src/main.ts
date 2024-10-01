@@ -11,6 +11,7 @@ import { ProcessProtobuf } from './protobuf/processprotobuf';
 import { InterfaceConsts } from './csharp/interfaceconsts';
 import { ShimVersionInfo } from './cpp/shimversion';
 import { CppVirtualHeader } from './cpp/virtualheader';
+import { InterfaceConstsCpp } from './cpp/interfaceconsts';
     
 export async function Main(protobufonly: boolean = false): Promise<number> {
     console.info("Starting OSWUpdater");
@@ -238,6 +239,12 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
         }
         InterfaceConsts.CreateInterfaceConstsFileFromManifest(interfaceConstsFilePath, newDump.interfaces);
 
+        console.info("Generating new interfaceconsts.h")
+        var interfaceConstsCppFilePath = `${projectDir}/cpp/include/steamclient/interfaceconsts.h`;
+        if (fs.existsSync(interfaceConstsCppFilePath)) {
+            fs.rmSync(interfaceConstsCppFilePath);
+        }
+        InterfaceConstsCpp.CreateInterfaceConstsFileFromManifest(interfaceConstsCppFilePath, newDump.interfaces);
 
         console.info("Generating new version.h")
         var versionHeader = `${projectDir}/OpenSteamworks.Native/bootstrappershim/version.h`;
