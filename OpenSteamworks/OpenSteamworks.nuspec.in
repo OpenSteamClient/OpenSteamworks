@@ -6,17 +6,17 @@
 		<version>${OSW_VERSION}</version>
 		<description>OpenSteamworks</description>
 		<authors>Rosentti</authors>
-		<license type="expression">MIT</license>
+		<license type="file">LICENSE</license>
 		<projectUrl>https://github.com/OpenSteamClient/OpenSteamworks</projectUrl>
 		<repository type="git" url="https://github.com/OpenSteamClient/OpenSteamworks.git"/>
 		<dependencies>
 			<group targetFramework="net8.0">
 				<dependency id="OpenSteamworks.Data" version="${OSW_VERSION}" exclude="Build,Analyzers" />
-				<dependency id="OpenSteamClient.Logging" version="1.0.2" exclude="Build,Analyzers" />
+				<dependency id="OpenSteamClient.Logging" version="1.0.3" exclude="Build,Analyzers" />
 				<dependency id="OpenSteamworks.Protobuf" version="${OSW_VERSION}" exclude="Build,Analyzers" />
-				<dependency id="OpenSteamworks.Native" version="1.1.4" exclude="Build,Analyzers" />
-				<dependency id="OpenSteamworks.KeyValue" version="1.0.6" exclude="Build,Analyzers" />
-				<dependency id="OpenSteamworks.Utils" version="1.0.2" exclude="Build,Analyzers" />
+				<dependency id="OpenSteamworks.Native" version="1.1.5" exclude="Build,Analyzers" />
+				<dependency id="OpenSteamworks.KeyValue" version="1.0.7" exclude="Build,Analyzers" />
+				<dependency id="OpenSteamworks.Utils" version="1.0.3" exclude="Build,Analyzers" />
 				<dependency id="System.IO.Hashing" version="8.0.0" exclude="Build,Analyzers" />
 				<dependency id="Microsoft.Extensions.FileProviders.Embedded" version="7.0.8" exclude="Build,Analyzers" />
 			</group>
@@ -29,6 +29,7 @@
 	</metadata>
 	<files>
 		<file src="README.md" target="README.md"/>
+		<file src="LICENSE" target="LICENSE"/>
         
 		<!-- We need to pick something as the reference assembly. This is what gets shown to the editor, so try to pick the one with the most API surface (for example, OS-specific functions). And no, there is no way to do platform-specific reference assemblies. -->
 		<file src="..\artifacts\obj\OpenSteamworks\release_linux-x64\refint\OpenSteamworks.dll" target="lib\net8.0\OpenSteamworks.dll"/>

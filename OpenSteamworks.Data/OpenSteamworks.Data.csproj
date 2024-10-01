@@ -8,6 +8,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageId>OpenSteamworks.Data</PackageId>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/OpenSteamClient/OpenSteamworks</RepositoryUrl>
@@ -18,6 +19,7 @@
 
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE" Pack="true" PackagePath=""/>
   </ItemGroup>
 
   <ItemGroup>

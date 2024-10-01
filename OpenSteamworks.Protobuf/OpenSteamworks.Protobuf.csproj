@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageId>OpenSteamworks.Protobuf</PackageId>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/OpenSteamClient/OpenSteamworks.Protobuf</RepositoryUrl>
@@ -20,5 +21,6 @@
 
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE" Pack="true" PackagePath=""/>
   </ItemGroup>
 </Project>
