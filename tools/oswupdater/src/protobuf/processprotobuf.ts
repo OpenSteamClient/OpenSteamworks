@@ -5,7 +5,7 @@ import { execWrap, mkdir } from '../util';
 export async function ProcessProtobuf(projdir: string, workdir: string, targetdircsharp: string, targetdircpp: string) {
     console.info("Downloading SteamDatabase/Protobufs git repo")
     try {
-        await execWrap("git clone https://github.com/SteamDatabase/Protobufs.git", { cwd: workdir });
+        await execWrap("git clone https://github.com/SteamDatabase/Protobufs.git", { cwd: path.resolve(workdir, "..") });
     } catch (e) {
         throw "Failed to download SteamDatabase/Protobufs " + e;
     } finally {

@@ -6,7 +6,7 @@
 
         <!-- Due to the added complexity of versioning all the OSW components separately, we have one common version. -->
         <!-- This also allows for a semi-monolithic design. -->
-        <CommonVersion>1.1.4</CommonVersion>
+        <CommonVersion>1.1.6</CommonVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(OutputType)' == 'Library'">

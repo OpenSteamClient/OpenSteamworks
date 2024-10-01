@@ -64,7 +64,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "ZW1zX1JlcXVlc3QSEQoJcGFja2FnZWlkGAEgAygNEiQKB2NvbnRleHQYAiAB",
             "KAsyEy5TdG9yZUJyb3dzZUNvbnRleHQiUwomQ1N0b3JlQnJvd3NlX0dldEhh",
             "cmR3YXJlSXRlbXNfUmVzcG9uc2USKQoHZGV0YWlscxgBIAMoCzIYLkNIYXJk",
-            "d2FyZVBhY2thZ2VEZXRhaWxzIlIKJ0NTdG9yZUJyb3dzZV9HZXRTdG9yZUNh",
+            "d2FyZVBhY2thZ2VEZXRhaWxzIlEKIkNTdG9yZUJyb3dzZV9HZXRQcmljZVN0",
+            "b3BzX1JlcXVlc3QSFAoMY291bnRyeV9jb2RlGAEgASgJEhUKDWN1cnJlbmN5",
+            "X2NvZGUYAiABKAkigQEKI0NTdG9yZUJyb3dzZV9HZXRQcmljZVN0b3BzX1Jl",
+            "c3BvbnNlEkMKC3ByaWNlX3N0b3BzGAEgAygLMi4uQ1N0b3JlQnJvd3NlX0dl",
+            "dFByaWNlU3RvcHNfUmVzcG9uc2VfUHJpY2VTdG9wEhUKDWN1cnJlbmN5X2Nv",
+            "ZGUYAiABKAkiYgotQ1N0b3JlQnJvd3NlX0dldFByaWNlU3RvcHNfUmVzcG9u",
+            "c2VfUHJpY2VTdG9wEhgKEGZvcm1hdHRlZF9hbW91bnQYASABKAkSFwoPYW1v",
+            "dW50X2luX2NlbnRzGAIgASgDIlIKJ0NTdG9yZUJyb3dzZV9HZXRTdG9yZUNh",
             "dGVnb3JpZXNfUmVxdWVzdBIQCghsYW5ndWFnZRgBIAEoCRIVCgllbGFuZ3Vh",
             "Z2UYAiABKAU6Ai0xInIKKENTdG9yZUJyb3dzZV9HZXRTdG9yZUNhdGVnb3Jp",
             "ZXNfUmVzcG9uc2USRgoKY2F0ZWdvcmllcxgBIAMoCzIyLkNTdG9yZUJyb3dz",
@@ -73,7 +80,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "cnkSEgoKY2F0ZWdvcnlpZBgBIAEoDRIWCgR0eXBlGAIgASgFQgiCtRgEZW51",
             "bRIVCg1pbnRlcm5hbF9uYW1lGAMgASgJEhQKDGRpc3BsYXlfbmFtZRgEIAEo",
             "CRIRCglpbWFnZV91cmwYBSABKAkSFgoOc2hvd19pbl9zZWFyY2gYBiABKAgS",
-            "EAoIY29tcHV0ZWQYByABKAgy7gMKC1N0b3JlQnJvd3NlEloKDUdldERMQ0Zv",
+            "EAoIY29tcHV0ZWQYByABKAgyygQKC1N0b3JlQnJvd3NlEloKDUdldERMQ0Zv",
             "ckFwcHMSIy5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc19SZXF1ZXN0GiQu",
             "Q1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNfUmVzcG9uc2USZgoRR2V0RExD",
             "Rm9yQXBwc1NvbHISJy5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc1NvbHJf",
@@ -82,10 +89,12 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "cmR3YXJlSXRlbXNfUmVxdWVzdBonLkNTdG9yZUJyb3dzZV9HZXRIYXJkd2Fy",
             "ZUl0ZW1zX1Jlc3BvbnNlEksKCEdldEl0ZW1zEh4uQ1N0b3JlQnJvd3NlX0dl",
             "dEl0ZW1zX1JlcXVlc3QaHy5DU3RvcmVCcm93c2VfR2V0SXRlbXNfUmVzcG9u",
-            "c2USaQoSR2V0U3RvcmVDYXRlZ29yaWVzEiguQ1N0b3JlQnJvd3NlX0dldFN0",
-            "b3JlQ2F0ZWdvcmllc19SZXF1ZXN0GikuQ1N0b3JlQnJvd3NlX0dldFN0b3Jl",
-            "Q2F0ZWdvcmllc19SZXNwb25zZUIgqgIdT3BlblN0ZWFtd29ya3MuUHJvdG9i",
-            "dWYuV2ViVUk="));
+            "c2USWgoNR2V0UHJpY2VTdG9wcxIjLkNTdG9yZUJyb3dzZV9HZXRQcmljZVN0",
+            "b3BzX1JlcXVlc3QaJC5DU3RvcmVCcm93c2VfR2V0UHJpY2VTdG9wc19SZXNw",
+            "b25zZRJpChJHZXRTdG9yZUNhdGVnb3JpZXMSKC5DU3RvcmVCcm93c2VfR2V0",
+            "U3RvcmVDYXRlZ29yaWVzX1JlcXVlc3QaKS5DU3RvcmVCcm93c2VfR2V0U3Rv",
+            "cmVDYXRlZ29yaWVzX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90",
+            "b2J1Zi5XZWJVSQ=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -99,6 +108,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetDLCForAppsSolr_Response_DLCList), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetDLCForAppsSolr_Response_DLCList.Parser, new[]{ "ParentAppid", "DlcAppids" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetHardwareItems_Request), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetHardwareItems_Request.Parser, new[]{ "Packageid", "Context" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetHardwareItems_Response), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetHardwareItems_Response.Parser, new[]{ "Details" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Request), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Request.Parser, new[]{ "CountryCode", "CurrencyCode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response.Parser, new[]{ "PriceStops", "CurrencyCode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop.Parser, new[]{ "FormattedAmount", "AmountInCents" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Request), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Request.Parser, new[]{ "Language", "Elanguage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response.Parser, new[]{ "Categories" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response_Category), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response_Category.Parser, new[]{ "Categoryid", "Type", "InternalName", "DisplayName", "ImageUrl", "ShowInSearch", "Computed" }, null, null, null, null)
@@ -3733,6 +3745,773 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStoreBrowse_GetPriceStops_Request : pb::IMessage<CStoreBrowse_GetPriceStops_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStoreBrowse_GetPriceStops_Request> _parser = new pb::MessageParser<CStoreBrowse_GetPriceStops_Request>(() => new CStoreBrowse_GetPriceStops_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStoreBrowse_GetPriceStops_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Request(CStoreBrowse_GetPriceStops_Request other) : this() {
+      countryCode_ = other.countryCode_;
+      currencyCode_ = other.currencyCode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Request Clone() {
+      return new CStoreBrowse_GetPriceStops_Request(this);
+    }
+
+    /// <summary>Field number for the "country_code" field.</summary>
+    public const int CountryCodeFieldNumber = 1;
+    private readonly static string CountryCodeDefaultValue = "";
+
+    private string countryCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryCode {
+      get { return countryCode_ ?? CountryCodeDefaultValue; }
+      set {
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "country_code" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCountryCode {
+      get { return countryCode_ != null; }
+    }
+    /// <summary>Clears the value of the "country_code" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCountryCode() {
+      countryCode_ = null;
+    }
+
+    /// <summary>Field number for the "currency_code" field.</summary>
+    public const int CurrencyCodeFieldNumber = 2;
+    private readonly static string CurrencyCodeDefaultValue = "";
+
+    private string currencyCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CurrencyCode {
+      get { return currencyCode_ ?? CurrencyCodeDefaultValue; }
+      set {
+        currencyCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "currency_code" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCurrencyCode {
+      get { return currencyCode_ != null; }
+    }
+    /// <summary>Clears the value of the "currency_code" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCurrencyCode() {
+      currencyCode_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStoreBrowse_GetPriceStops_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStoreBrowse_GetPriceStops_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CountryCode != other.CountryCode) return false;
+      if (CurrencyCode != other.CurrencyCode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasCountryCode) hash ^= CountryCode.GetHashCode();
+      if (HasCurrencyCode) hash ^= CurrencyCode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasCountryCode) {
+        output.WriteRawTag(10);
+        output.WriteString(CountryCode);
+      }
+      if (HasCurrencyCode) {
+        output.WriteRawTag(18);
+        output.WriteString(CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasCountryCode) {
+        output.WriteRawTag(10);
+        output.WriteString(CountryCode);
+      }
+      if (HasCurrencyCode) {
+        output.WriteRawTag(18);
+        output.WriteString(CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasCountryCode) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
+      }
+      if (HasCurrencyCode) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStoreBrowse_GetPriceStops_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasCountryCode) {
+        CountryCode = other.CountryCode;
+      }
+      if (other.HasCurrencyCode) {
+        CurrencyCode = other.CurrencyCode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 18: {
+            CurrencyCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 18: {
+            CurrencyCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStoreBrowse_GetPriceStops_Response : pb::IMessage<CStoreBrowse_GetPriceStops_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStoreBrowse_GetPriceStops_Response> _parser = new pb::MessageParser<CStoreBrowse_GetPriceStops_Response>(() => new CStoreBrowse_GetPriceStops_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStoreBrowse_GetPriceStops_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Response(CStoreBrowse_GetPriceStops_Response other) : this() {
+      priceStops_ = other.priceStops_.Clone();
+      currencyCode_ = other.currencyCode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Response Clone() {
+      return new CStoreBrowse_GetPriceStops_Response(this);
+    }
+
+    /// <summary>Field number for the "price_stops" field.</summary>
+    public const int PriceStopsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop> _repeated_priceStops_codec
+        = pb::FieldCodec.ForMessage(10, global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop> priceStops_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop> PriceStops {
+      get { return priceStops_; }
+    }
+
+    /// <summary>Field number for the "currency_code" field.</summary>
+    public const int CurrencyCodeFieldNumber = 2;
+    private readonly static string CurrencyCodeDefaultValue = "";
+
+    private string currencyCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CurrencyCode {
+      get { return currencyCode_ ?? CurrencyCodeDefaultValue; }
+      set {
+        currencyCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "currency_code" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCurrencyCode {
+      get { return currencyCode_ != null; }
+    }
+    /// <summary>Clears the value of the "currency_code" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCurrencyCode() {
+      currencyCode_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStoreBrowse_GetPriceStops_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStoreBrowse_GetPriceStops_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!priceStops_.Equals(other.priceStops_)) return false;
+      if (CurrencyCode != other.CurrencyCode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= priceStops_.GetHashCode();
+      if (HasCurrencyCode) hash ^= CurrencyCode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      priceStops_.WriteTo(output, _repeated_priceStops_codec);
+      if (HasCurrencyCode) {
+        output.WriteRawTag(18);
+        output.WriteString(CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      priceStops_.WriteTo(ref output, _repeated_priceStops_codec);
+      if (HasCurrencyCode) {
+        output.WriteRawTag(18);
+        output.WriteString(CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += priceStops_.CalculateSize(_repeated_priceStops_codec);
+      if (HasCurrencyCode) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CurrencyCode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStoreBrowse_GetPriceStops_Response other) {
+      if (other == null) {
+        return;
+      }
+      priceStops_.Add(other.priceStops_);
+      if (other.HasCurrencyCode) {
+        CurrencyCode = other.CurrencyCode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            priceStops_.AddEntriesFrom(input, _repeated_priceStops_codec);
+            break;
+          }
+          case 18: {
+            CurrencyCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            priceStops_.AddEntriesFrom(ref input, _repeated_priceStops_codec);
+            break;
+          }
+          case 18: {
+            CurrencyCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStoreBrowse_GetPriceStops_Response_PriceStop : pb::IMessage<CStoreBrowse_GetPriceStops_Response_PriceStop>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStoreBrowse_GetPriceStops_Response_PriceStop> _parser = new pb::MessageParser<CStoreBrowse_GetPriceStops_Response_PriceStop>(() => new CStoreBrowse_GetPriceStops_Response_PriceStop());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStoreBrowse_GetPriceStops_Response_PriceStop> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Response_PriceStop() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Response_PriceStop(CStoreBrowse_GetPriceStops_Response_PriceStop other) : this() {
+      _hasBits0 = other._hasBits0;
+      formattedAmount_ = other.formattedAmount_;
+      amountInCents_ = other.amountInCents_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreBrowse_GetPriceStops_Response_PriceStop Clone() {
+      return new CStoreBrowse_GetPriceStops_Response_PriceStop(this);
+    }
+
+    /// <summary>Field number for the "formatted_amount" field.</summary>
+    public const int FormattedAmountFieldNumber = 1;
+    private readonly static string FormattedAmountDefaultValue = "";
+
+    private string formattedAmount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string FormattedAmount {
+      get { return formattedAmount_ ?? FormattedAmountDefaultValue; }
+      set {
+        formattedAmount_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "formatted_amount" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFormattedAmount {
+      get { return formattedAmount_ != null; }
+    }
+    /// <summary>Clears the value of the "formatted_amount" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFormattedAmount() {
+      formattedAmount_ = null;
+    }
+
+    /// <summary>Field number for the "amount_in_cents" field.</summary>
+    public const int AmountInCentsFieldNumber = 2;
+    private readonly static long AmountInCentsDefaultValue = 0L;
+
+    private long amountInCents_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long AmountInCents {
+      get { if ((_hasBits0 & 1) != 0) { return amountInCents_; } else { return AmountInCentsDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        amountInCents_ = value;
+      }
+    }
+    /// <summary>Gets whether the "amount_in_cents" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAmountInCents {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "amount_in_cents" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAmountInCents() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStoreBrowse_GetPriceStops_Response_PriceStop);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStoreBrowse_GetPriceStops_Response_PriceStop other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (FormattedAmount != other.FormattedAmount) return false;
+      if (AmountInCents != other.AmountInCents) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasFormattedAmount) hash ^= FormattedAmount.GetHashCode();
+      if (HasAmountInCents) hash ^= AmountInCents.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasFormattedAmount) {
+        output.WriteRawTag(10);
+        output.WriteString(FormattedAmount);
+      }
+      if (HasAmountInCents) {
+        output.WriteRawTag(16);
+        output.WriteInt64(AmountInCents);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasFormattedAmount) {
+        output.WriteRawTag(10);
+        output.WriteString(FormattedAmount);
+      }
+      if (HasAmountInCents) {
+        output.WriteRawTag(16);
+        output.WriteInt64(AmountInCents);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasFormattedAmount) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(FormattedAmount);
+      }
+      if (HasAmountInCents) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(AmountInCents);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStoreBrowse_GetPriceStops_Response_PriceStop other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasFormattedAmount) {
+        FormattedAmount = other.FormattedAmount;
+      }
+      if (other.HasAmountInCents) {
+        AmountInCents = other.AmountInCents;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            FormattedAmount = input.ReadString();
+            break;
+          }
+          case 16: {
+            AmountInCents = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            FormattedAmount = input.ReadString();
+            break;
+          }
+          case 16: {
+            AmountInCents = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CStoreBrowse_GetStoreCategories_Request : pb::IMessage<CStoreBrowse_GetStoreCategories_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3748,7 +4527,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[10]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4013,7 +4792,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[11]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4201,7 +4980,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[12]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStorebrowseReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

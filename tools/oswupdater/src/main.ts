@@ -192,9 +192,9 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
                 await header.OverwriteOldFile();
             }
 
-            if (fs.existsSync(`${projectDir}/include/steamclient/${iface.name}.h`)) {
+            if (fs.existsSync(`${projectDir}/cpp/include/steamclient/${iface.name}.h`)) {
                 console.info(`${iface.name}: Reading previous header for type information (1/3) (header ${index}/${newDump.interfaces.length})`)
-                var cheader: CppVirtualHeader = await CppVirtualHeader.LoadFromFile(`${projectDir}/include/steamclient/${iface.name}.h`, iface.name);
+                var cheader: CppVirtualHeader = await CppVirtualHeader.LoadFromFile(`${projectDir}/cpp/include/steamclient/${iface.name}.h`, iface.name);
 
                 console.info(`${iface.name}: Patching header with new info (2/3) (header ${index}/${newDump.interfaces.length})`)
                 cheader.PatchWithDump(iface);
@@ -203,7 +203,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
                 await cheader.OverwriteOldFile();
             } else {
                 console.info(`${iface.name}: Creating new header based on dump (1/2) (header ${index}/${newDump.interfaces.length})`)
-                var cheader: CppVirtualHeader = await CppVirtualHeader.CreateFromDump(`${projectDir}/include/steamclient/${iface.name}.h`, iface);
+                var cheader: CppVirtualHeader = await CppVirtualHeader.CreateFromDump(`${projectDir}/cpp/include/steamclient/${iface.name}.h`, iface);
 
                 console.info(`${iface.name}: Writing new header to disk (2/2) (header ${index}/${newDump.interfaces.length})`)
                 await cheader.OverwriteOldFile();
@@ -252,7 +252,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
             fs.rmSync(versionHeader);
         }
 
-        var versionHeader2 = `${projectDir}/include/steamclient/version.h`;
+        var versionHeader2 = `${projectDir}/cpp/include/steamclient/version.h`;
         if (fs.existsSync(versionHeader2)) {
             fs.rmSync(versionHeader2);
         }
