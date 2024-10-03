@@ -8,11 +8,14 @@ var sc = new SteamClient(Environment.GetEnvironmentVariable("CLIENTDLL_PATH") ??
 var iface = sc.IClientAppDisableUpdate;
 var iface2 = sc.IClientUtils;
 Stopwatch sw = new();
+
+Console.WriteLine("call SetAppUpdateDisabledSecondsRemaining");
 sw.Start();
 iface.SetAppUpdateDisabledSecondsRemaining(730, 9000);
 sw.Stop();
 Console.WriteLine($"SetAppUpdateDisabledSecondsRemaining took {sw.Elapsed.TotalMilliseconds}ms");
 
+Console.WriteLine("call GetInstallPath");
 sw.Start();
 string installPath = iface2.GetInstallPath();
 sw.Stop();

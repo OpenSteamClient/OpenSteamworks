@@ -38,7 +38,7 @@ public:
     virtual unknown_ret AllocPendingAPICallHandle() = 0; //argc: 0, index 22
     virtual unknown_ret IsAPICallCompleted() = 0; //argc: 3, index 23
     virtual unknown_ret GetAPICallFailureReason() = 0; //argc: 2, index 24
-    virtual unknown_ret GetAPICallResult() = 0; //argc: 6, index 25
+    virtual bool GetAPICallResult(SteamAPICall_t hSteamAPICall, void* pCallback, int cubCallback, int iCallbackExpected, bool* pbFailed) = 0; //argc: 6, index 25
     virtual unknown_ret SetAPICallResultWithoutPostingCallback() = 0; //argc: 5, index 26
     virtual unknown_ret SignalAppsToShutDown() = 0; //argc: 0, index 27
     virtual unknown_ret SignalServiceAppsToDisconnect() = 0; //argc: 0, index 28
@@ -124,7 +124,7 @@ public:
     virtual unknown_ret SteamRuntimeSystemInfo() = 0; //argc: 1, index 108
     virtual unknown_ret DumpHTTPClients() = 0; //argc: 1, index 109
     virtual unknown_ret BGetMachineID() = 0; //argc: 1, index 110
-    virtual unknown_ret NotifyMissingInterface() = 0; //argc: 1, index 111
+    virtual void NotifyMissingInterface(const char *name) = 0; //argc: 1, index 111
     virtual unknown_ret IsSteamInTournamentMode() = 0; //argc: 0, index 112
     virtual unknown_ret DesktopLockedStateChanged() = 0; //argc: 1, index 113
 };
