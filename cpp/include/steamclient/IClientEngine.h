@@ -153,12 +153,12 @@ public:
 	virtual IClientShortcuts *GetIClientShortcuts( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientUGC *GetIClientUGC( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientInventory *GetIClientInventory( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
-	virtual IClientVR *GetIClientVR( int32_t ) = 0;
+	virtual IClientVR *GetIClientVR( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientGameNotifications *GetIClientGameNotifications( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientHTMLSurface *GetIClientHTMLSurface( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientTimeline *GetIClientTimeline( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
     virtual IClientVideo *GetIClientVideo( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
-	virtual IClientControllerSerialized *GetIClientControllerSerialized( int32_t ) = 0;
+	virtual IClientControllerSerialized *GetIClientControllerSerialized( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientAppDisableUpdate *GetIClientAppDisableUpdate( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	
     virtual unknown_ret Set_ClientAPI_CPostAPIResultInProcess( void(*)(uint64_t ulUnk, void * pUnk, uint32_t uUnk, int32_t iUnk) ) = 0;

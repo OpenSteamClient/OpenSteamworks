@@ -7,6 +7,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 option(STATIC_TIER0 "Build tier0 statically" ON)
 option(STATIC_TIER1 "Build tier1 statically" ON)
 option(STATIC_VSTDLIB "Build vstdlib statically" ON)
+option(WITH_STEAMPROTO "Build with steamclient protobuf" OFF)
 
 if (STATIC_TIER0)
 set(tier0_s_BUILD_TYPE STATIC)
@@ -38,6 +39,17 @@ add_library(tier1_s ${tier1_s_BUILD_TYPE}
 add_library(tier0_s ${tier0_s_BUILD_TYPE} 
     src/tier0/dbg.cpp
     src/tier0/platform.cpp)
+
+if (WITH_STEAMPROTO)
+    include("../OpenSteamworks.Native/cmake/protobuf_external.cmake")
+    file(GLOB_RECURSE steamproto_sources CONFIGURE_DEPENDS "../OpenSteamworks.Native/protobufhack/generated/*.cc")
+
+    add_library(steamproto STATIC ${steamproto_sources})
+    set_target_properties(steamproto PROPERTIES CXX_STANDARD 14)
+    target_link_libraries(steamproto ${Protobuf_LIBRARIES})
+
+    target_include_directories(steamproto PUBLIC "../OpenSteamworks.Native/protobufhack/generated/")
+endif()
 
 set_target_properties(tier1_s PROPERTIES CXX_STANDARD 20)
 set_target_properties(tier0_s PROPERTIES CXX_STANDARD 20)
