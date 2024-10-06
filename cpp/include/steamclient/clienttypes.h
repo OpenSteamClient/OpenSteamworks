@@ -4,6 +4,7 @@
 #include "enums.h"
 #include <steam/steamid.h>
 #include <tier1/utlbuffer.h>
+#include <steam/ipaddr.h>
 
 // Handle types
 typedef int32_t HSteamPipe;
@@ -27,10 +28,12 @@ typedef uint64_t SteamAPICall_t;
 typedef uint64_t UGCFileWriteStreamHandle_t;
 
 // Function pointers
-typedef void*   (*CreateInterfaceFn)( const char *pName, int *pReturnCode );
-typedef void    (*SteamAPIWarningMessageHook_t)(HSteamPipe pipe, const char *message);
-typedef bool    (*SteamBGetCallbackFn)( HSteamPipe pipe, void *pCallbackMsg );
-typedef void    (*SteamFreeLastCallbackFn)( HSteamPipe pipe );
+extern "C" typedef void*    (*CreateInterfaceFn)( const char *pName, int *pReturnCode );
+extern "C" typedef void     (*SteamAPIWarningMessageHook_t)(HSteamPipe pipe, const char *message);
+extern "C" typedef void     (*SteamAPIPostAPIResultInProcess_t )(SteamAPICall_t callHandle, void *pBuf, uint32_t unCallbackSize, int iCallbackNum);
+extern "C" typedef uint32_t (*SteamAPICheckCallbackRegistered_t )( int iCallbackNum );
+extern "C" typedef bool     (*SteamBGetCallbackFn)( HSteamPipe pipe, void *pCallbackMsg );
+extern "C" typedef void     (*SteamFreeLastCallbackFn)( HSteamPipe pipe );
 
 struct CallbackMsg_t {
     HSteamUser m_hSteamUser;

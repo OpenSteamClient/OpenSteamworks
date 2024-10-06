@@ -65,8 +65,6 @@ class IClientVideo;
 class IClientVR;
 class IRegistryInterface;
 
-class SteamIPAddress_t;
-
 class IConCommandBaseAccessor;
 
 class IClientEngine
@@ -161,14 +159,14 @@ public:
 	virtual IClientControllerSerialized *GetIClientControllerSerialized( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientAppDisableUpdate *GetIClientAppDisableUpdate( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	
-    virtual unknown_ret Set_ClientAPI_CPostAPIResultInProcess( void(*)(uint64_t ulUnk, void * pUnk, uint32_t uUnk, int32_t iUnk) ) = 0;
+    virtual void Set_ClientAPI_CPostAPIResultInProcess( SteamAPIPostAPIResultInProcess_t pFunction ) = 0;
 	
 	virtual IClientSharedConnection *GetIClientSharedConnection( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientShader *GetIClientShader( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientNetworkingSocketsSerialized *GetIClientNetworkingSocketsSerialized( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientCompat *GetIClientCompat( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	
-    virtual unknown_ret SetClientCommandLine( int32_t argc, char** argv ) = 0; 
+    virtual void SetClientCommandLine( int32_t argc, char** argv ) = 0; 
 	
     virtual IClientParties *GetIClientParties( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
 	virtual IClientNetworkingMessages *GetIClientNetworkingMessages( HSteamUser hSteamUser, HSteamPipe hSteamPipe ) = 0;
