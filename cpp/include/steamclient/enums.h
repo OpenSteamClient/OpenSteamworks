@@ -23,6 +23,64 @@ enum EAccountType {
     EAccountType_Max
 };
 
+enum ESteamAPICallFailure
+{
+	ESteamAPICallFailure_None = -1,			// no failure
+	ESteamAPICallFailure_SteamGone = 0,		// the local Steam process has gone away
+	ESteamAPICallFailure_NetworkFailure = 1,	// the network connection to Steam has been broken, or was already broken
+	// SteamServersDisconnected_t callback will be sent around the same time
+	// SteamServersConnected_t will be sent when the client is able to talk to the Steam servers again
+	ESteamAPICallFailure_InvalidHandle = 2,	// the SteamAPICall_t handle passed in no longer exists
+	ESteamAPICallFailure_MismatchedCallback = 3,// GetAPICallResult() was called with the wrong callback type for this API call
+};
+
+// Input modes for the Big Picture gamepad text entry
+enum EGamepadTextInputMode
+{
+	k_EGamepadTextInputModeNormal = 0,
+	k_EGamepadTextInputModePassword = 1
+};
+
+// Controls number of allowed lines for the Big Picture gamepad text entry
+enum EGamepadTextInputLineMode
+{
+	k_EGamepadTextInputLineModeSingleLine = 0,
+	k_EGamepadTextInputLineModeMultipleLines = 1
+};
+
+// The context where text filtering is being done
+enum ETextFilteringContext
+{
+	k_ETextFilteringContextUnknown = 0,	// Unknown context
+	k_ETextFilteringContextGameContent = 1,	// Game content, only legally required filtering is performed
+	k_ETextFilteringContextChat = 2,	// Chat from another player
+	k_ETextFilteringContextName = 3,	// Character or item name
+};
+
+enum ESteamIPv6ConnectivityProtocol
+{
+	k_ESteamIPv6ConnectivityProtocol_Invalid = 0,
+	k_ESteamIPv6ConnectivityProtocol_HTTP = 1,		// because a proxy may make this different than other protocols
+	k_ESteamIPv6ConnectivityProtocol_UDP = 2,		// test UDP connectivity. Uses a port that is commonly needed for other Steam stuff. If UDP works, TCP probably works. 
+};
+
+// For the above transport protocol, what do we think the local machine's connectivity to the internet over ipv6 is like
+enum ESteamIPv6ConnectivityState
+{
+	k_ESteamIPv6ConnectivityState_Unknown = 0,	// We haven't run a test yet
+	k_ESteamIPv6ConnectivityState_Good = 1,		// We have recently been able to make a request on ipv6 for the given protocol
+	k_ESteamIPv6ConnectivityState_Bad = 2,		// We failed to make a request, either because this machine has no ipv6 address assigned, or it has no upstream connectivity
+};
+
+enum EFloatingGamepadTextInputMode
+{
+	k_EFloatingGamepadTextInputModeModeSingleLine = 0,		// Enter dismisses the keyboard
+	k_EFloatingGamepadTextInputModeModeMultipleLines = 1,	// User needs to explictly close the keyboard
+	k_EFloatingGamepadTextInputModeModeEmail = 2,			// Keyboard layout is email, enter dismisses the keyboard
+	k_EFloatingGamepadTextInputModeModeNumeric = 3,			// Keyboard layout is numeric, enter dismisses the keyboard
+};
+
+
 enum EUniverse
 {
 	EUniverse_Invalid = 0,

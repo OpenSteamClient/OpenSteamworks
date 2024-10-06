@@ -165,16 +165,8 @@ int UtlMemory_CalcNewAllocationCount( int nAllocationCount, int nGrowSize, int n
 		int nMaxGrowStep = Max( 1, 256*1024*1024 / ( nBytesItem > 0 ? nBytesItem : 1 ) );
 		while (nAllocationCount < nNewSize)
 		{
-#ifndef _XBOX
 			// Grow by doubling, but at most 256 MB at a time.
 			nAllocationCount += Min( nAllocationCount, nMaxGrowStep );
-#else
-			int nNewAllocationCount = ( nAllocationCount * 9) / 8; // 12.5 %
-			if ( nNewAllocationCount > nAllocationCount )
-				nAllocationCount = nNewAllocationCount;
-			else
-				nAllocationCount *= 2;
-#endif
 		}
 	}
 

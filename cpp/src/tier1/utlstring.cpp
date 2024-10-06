@@ -122,21 +122,6 @@ size_t CUtlString::FormatV( const char *pFormat, va_list args )
 	FreePv( m_pchString );
 	m_pchString = (char *)PvAlloc( len + 1 );
 	strcpy( m_pchString, buf );
-#elif defined ( _PS3 )
-
-	// ignore the PS3 documentation about vsnprintf returning -1 when the string is too small. vsprintf seems to do the right thing (least at time of
-	// implementation) and returns the number of characters needed when you pass in a buffer that is too small
-
-	FreePv( m_pchString );
-	m_pchString = NULL;	
-
-	len = vsnprintf( NULL, 0, pFormat, args );
-	if ( len > 0 )
-	{
-		m_pchString = (char*) PvAlloc( len + 1 );
-		len = vsnprintf( m_pchString, len + 1, pFormat, args );
-	}
-
 #else
 
 	char *buf = NULL;
@@ -171,20 +156,6 @@ size_t CUtlString::VAppendFormat( const char *pFormat, va_list args )
 
 	Assert( len >= 0 );
 	Assert( len < sizeof( pstrFormatted ));
-
-#elif defined ( _PS3 )
-	char *pstrFormatted = NULL;
-
-	// ignore the PS3 documentation about vsnprintf returning -1 when the string is too small. vsprintf seems to do the right thing (least at time of
-	// implementation) and returns the number of characters needed when you pass in a buffer that is too small
-
-	len = vsnprintf( NULL, 0, pFormat, args );
-	if ( len > 0 )
-	{
-		pstrFormatted = (char*) PvAlloc( len + 1 );
-		len = vsnprintf( pstrFormatted, len + 1, pFormat, args );
-	}
-
 #else
 	char *pstrFormatted = NULL;
 	len = vasprintf( &pstrFormatted, pFormat, args );
@@ -196,8 +167,6 @@ size_t CUtlString::VAppendFormat( const char *pFormat, va_list args )
 		Append( pstrFormatted, len );
 #if defined( _WIN32 ) || defined __WATCOMC__
 		// no need to free a buffer on stack
-#elif defined( _PS3 )
-		FreePv( pstrFormatted );
 #else
 		free( pstrFormatted );
 #endif

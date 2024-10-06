@@ -27,6 +27,14 @@ typedef uint64_t GID_t;
 typedef uint64_t SteamAPICall_t;
 typedef uint64_t UGCFileWriteStreamHandle_t;
 
+typedef uint8_t uint8;
+typedef uint16_t uint16;
+typedef uint32_t uint32;
+typedef uint64_t uint64;
+
+#define STEAM_CALL_RESULT(x)
+#define STEAM_PRIVATE_API(x) x
+
 // Function pointers
 extern "C" typedef void*    (*CreateInterfaceFn)( const char *pName, int *pReturnCode );
 extern "C" typedef void     (*SteamAPIWarningMessageHook_t)(HSteamPipe pipe, const char *message);
