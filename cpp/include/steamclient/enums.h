@@ -23,6 +23,82 @@ enum EAccountType {
     EAccountType_Max
 };
 
+// results from BeginAuthSession
+enum EBeginAuthSessionResult
+{
+	k_EBeginAuthSessionResultOK = 0,						// Ticket is valid for this game and this steamID.
+	k_EBeginAuthSessionResultInvalidTicket = 1,				// Ticket is not valid.
+	k_EBeginAuthSessionResultDuplicateRequest = 2,			// A ticket has already been submitted for this steamID
+	k_EBeginAuthSessionResultInvalidVersion = 3,			// Ticket is from an incompatible interface version
+	k_EBeginAuthSessionResultGameMismatch = 4,				// Ticket is not for this game
+	k_EBeginAuthSessionResultExpiredTicket = 5,				// Ticket has expired
+};
+
+// Callback values for callback ValidateAuthTicketResponse_t which is a response to BeginAuthSession
+enum EAuthSessionResponse
+{
+	k_EAuthSessionResponseOK = 0,							// Steam has verified the user is online, the ticket is valid and ticket has not been reused.
+	k_EAuthSessionResponseUserNotConnectedToSteam = 1,		// The user in question is not connected to steam
+	k_EAuthSessionResponseNoLicenseOrExpired = 2,			// The license has expired.
+	k_EAuthSessionResponseVACBanned = 3,					// The user is VAC banned for this game.
+	k_EAuthSessionResponseLoggedInElseWhere = 4,			// The user account has logged in elsewhere and the session containing the game instance has been disconnected.
+	k_EAuthSessionResponseVACCheckTimedOut = 5,				// VAC has been unable to perform anti-cheat checks on this user
+	k_EAuthSessionResponseAuthTicketCanceled = 6,			// The ticket has been canceled by the issuer
+	k_EAuthSessionResponseAuthTicketInvalidAlreadyUsed = 7,	// This ticket has already been used, it is not valid.
+	k_EAuthSessionResponseAuthTicketInvalid = 8,			// This ticket is not from a user instance currently connected to steam.
+	k_EAuthSessionResponsePublisherIssuedBan = 9,			// The user is banned for this game. The ban came via the web api and not VAC
+	k_EAuthSessionResponseAuthTicketNetworkIdentityFailure = 10,	// The network identity in the ticket does not match the server authenticating the ticket
+};
+
+// results from UserHasLicenseForApp
+enum EUserHasLicenseForAppResult
+{
+	k_EUserHasLicenseResultHasLicense = 0,					// User has a license for specified app
+	k_EUserHasLicenseResultDoesNotHaveLicense = 1,			// User does not have a license for the specified app
+	k_EUserHasLicenseResultNoAuth = 2,						// User has not been authenticated
+};
+
+//
+// Specifies a game's online state in relation to duration control
+//
+enum EDurationControlOnlineState
+{
+	k_EDurationControlOnlineState_Invalid = 0,				// nil value
+	k_EDurationControlOnlineState_Offline = 1,				// currently in offline play - single-player, offline co-op, etc.
+	k_EDurationControlOnlineState_Online = 2,				// currently in online play
+	k_EDurationControlOnlineState_OnlineHighPri = 3,		// currently in online play and requests not to be interrupted
+};
+
+
+// Error codes for use with the voice functions
+enum EVoiceResult
+{
+	k_EVoiceResultOK = 0,
+	k_EVoiceResultNotInitialized = 1,
+	k_EVoiceResultNotRecording = 2,
+	k_EVoiceResultNoData = 3,
+	k_EVoiceResultBufferTooSmall = 4,
+	k_EVoiceResultDataCorrupted = 5,
+	k_EVoiceResultRestricted = 6,
+	k_EVoiceResultUnsupportedCodec = 7,
+	k_EVoiceResultReceiverOutOfDate = 8,
+	k_EVoiceResultReceiverDidNotAnswer = 9,
+
+};
+
+enum EUIMode
+{
+	EUIMode_VGUI = 0,
+	EUIMode_Tenfoot = 1,
+	EUIMode_Mobile = 2,
+	EUIMode_Web = 3,
+	EUIMode_GamePadUI = 4,
+	EUIMode_MobileChat = 5,
+	EUIMode_EmbeddedClient = 6,
+	EUIMode_DesktopUI = 7,
+	EUIMode_MAX = 8,
+};
+
 enum ESteamAPICallFailure
 {
 	ESteamAPICallFailure_None = -1,			// no failure

@@ -3,8 +3,10 @@
 #include <cstdint>
 #include "enums.h"
 #include <steam/steamid.h>
+#include <steam/gameid.h>
 #include <tier1/utlbuffer.h>
 #include <steam/ipaddr.h>
+
 
 // Handle types
 typedef int32_t HSteamPipe;
@@ -13,6 +15,12 @@ typedef uint32_t HImage;
 typedef uint32_t HHTMLBrowser;
 typedef uint32_t HImage;
 typedef uint32_t HSharedConnection;
+
+typedef uint32_t HAuthTicket;
+const HAuthTicket k_HAuthTicketInvalid = 0;
+
+// Forward declare
+class SteamNetworkingIdentity;
 
 typedef int32_t unknown_ret;
 
