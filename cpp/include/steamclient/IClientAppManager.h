@@ -35,7 +35,7 @@ public:
     virtual unknown_ret GetAppDependencies() = 0; //argc: 3, index 19
     virtual unknown_ret GetDependentApps() = 0; //argc: 3, index 20
     virtual unknown_ret GetUpdateInfo() = 0; //argc: 2, index 21
-    virtual unknown_ret BIsAppUpToDate() = 0; //argc: 1, index 22
+    virtual bool BIsAppUpToDate(AppId_t appid) = 0; //argc: 1, index 22
     virtual unknown_ret GetAvailableLanguages() = 0; //argc: 4, index 23
     virtual int GetCurrentLanguage(AppId_t appid, char* buf, int bufSize) = 0; //argc: 3, index 24
     virtual ELanguage GetCurrentLanguage(AppId_t appid) = 0; //argc: 1, index 25
@@ -50,8 +50,8 @@ public:
     virtual unknown_ret GetNumBetas() = 0; //argc: 3, index 34
     virtual unknown_ret GetBetaInfo() = 0; //argc: 8, index 35
     virtual unknown_ret CheckBetaPassword() = 0; //argc: 2, index 36
-    virtual unknown_ret SetActiveBeta() = 0; //argc: 2, index 37
-    virtual unknown_ret GetActiveBeta() = 0; //argc: 3, index 38
+    virtual bool SetActiveBeta(AppId_t appid, const char *betaName) = 0; //argc: 2, index 37
+    virtual int GetActiveBeta(AppId_t appid, char *betaName, int betaNameMax) = 0; //argc: 3, index 38
     virtual unknown_ret BGetActiveBetaForApps() = 0; //argc: 2, index 39
     virtual unknown_ret SetDownloadingEnabled() = 0; //argc: 1, index 40
     virtual unknown_ret BIsDownloadingEnabled() = 0; //argc: 0, index 41

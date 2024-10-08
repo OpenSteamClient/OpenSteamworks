@@ -11,6 +11,8 @@
 
 #include "clienttypes.h"
 
+class CMsgCellList;
+
 class IClientUser
 {
 public:
@@ -21,9 +23,9 @@ public:
     virtual bool BLoggedOn() = 0; //argc: 0, index 5
     virtual unknown_ret GetLogonState() = 0; //argc: 0, index 6
     virtual bool BConnected() = 0; //argc: 0, index 7
-    virtual unknown_ret BInitiateReconnect() = 0; //argc: 0, index 8
+    virtual bool BInitiateReconnect() = 0; //argc: 0, index 8
     virtual unknown_ret EConnect() = 0; //argc: 0, index 9
-    virtual unknown_ret BTryingToLogin() = 0; //argc: 0, index 10
+    virtual bool BTryingToLogin() = 0; //argc: 0, index 10
     virtual CSteamID GetSteamID() = 0; //argc: 1, index 11
     virtual unknown_ret GetClientInstanceID() = 0; //argc: 0, index 12
     virtual unknown_ret GetUserCountry() = 0; //argc: 0, index 13
@@ -37,9 +39,9 @@ public:
     virtual unknown_ret GetConfigBinaryBlob() = 0; //argc: 3, index 21
     virtual unknown_ret DeleteConfigKey() = 0; //argc: 2, index 22
     virtual unknown_ret GetConfigStoreKeyName() = 0; //argc: 4, index 23
-    virtual unknown_ret InitiateGameConnection() = 0; //argc: 8, index 24
-    virtual unknown_ret InitiateGameConnectionOld() = 0; //argc: 10, index 25
-    virtual unknown_ret TerminateGameConnection() = 0; //argc: 2, index 26
+    virtual unknown_ret InitiateGameConnection(void *pAuthBlob, int cbMaxAuthBlob, CSteamID steamIDGameServer, CGameID gameID, uint32 unIPServer, uint16 usPortServer, bool bSecure) = 0; //argc: 8, index 24
+    virtual unknown_ret InitiateGameConnectionOld(void *pAuthBlob, int cbMaxAuthBlob, CSteamID steamIDGameServer, CGameID gameID, uint32 unIPServer, uint16 usPortServer, bool bSecure, void *steam2EncryptionKey, int cbSteam2EncryptionKey) = 0; //argc: 10, index 25
+    virtual unknown_ret TerminateGameConnection(uint32 unIPServer, uint16 usPortServer) = 0; //argc: 2, index 26
     virtual unknown_ret TerminateGame() = 0; //argc: 2, index 27
     virtual unknown_ret SetSelfAsChatDestination() = 0; //argc: 1, index 28
     virtual unknown_ret IsPrimaryChatDestination() = 0; //argc: 0, index 29
@@ -57,9 +59,9 @@ public:
     virtual unknown_ret GetAppsInGuestPassesToRedeem() = 0; //argc: 2, index 41
     virtual unknown_ret GetCountUserNotifications() = 0; //argc: 0, index 42
     virtual unknown_ret GetCountUserNotification() = 0; //argc: 1, index 43
-    virtual unknown_ret RequestStoreAuthURL() = 0; //argc: 1, index 44
+    virtual SteamAPICall_t RequestStoreAuthURL(const char *pchRedirectURL) = 0; //argc: 1, index 44
     virtual unknown_ret SetLanguage() = 0; //argc: 1, index 45
-    virtual unknown_ret TrackAppUsageEvent() = 0; //argc: 3, index 46
+    virtual unknown_ret TrackAppUsageEvent(CGameID gameID, int eAppUsageEvent, const char *pchExtraInfo) = 0; //argc: 3, index 46
     virtual unknown_ret RaiseConnectionPriority() = 0; //argc: 2, index 47
     virtual unknown_ret ResetConnectionPriority() = 0; //argc: 1, index 48
     virtual unknown_ret GetDesiredNetQOSLevel() = 0; //argc: 0, index 49
@@ -87,9 +89,9 @@ public:
     virtual unknown_ret GetCustomBinariesState() = 0; //argc: 3, index 71
     virtual unknown_ret RequestCustomBinaries() = 0; //argc: 4, index 72
     virtual unknown_ret SetCellID() = 0; //argc: 1, index 73
-    virtual unknown_ret GetCellList() = 0; //argc: 1, index 74
+    virtual bool GetCellList(CMsgCellList*) = 0; //argc: 1, index 74
     virtual const char *GetUserBaseFolder() = 0; //argc: 0, index 75
-    virtual unknown_ret GetUserDataFolder() = 0; //argc: 3, index 76
+    virtual bool GetUserDataFolder(AppId_t appId, char *pchBuffer, int cubBuffer) = 0; //argc: 3, index 76
     virtual unknown_ret GetUserConfigFolder() = 0; //argc: 2, index 77
     virtual bool GetAccountName(char* buf, int bufLen) = 0; //argc: 2, index 78
     virtual int GetAccountName(CSteamID steamid, char* buf, int bufLen) = 0; //argc: 4, index 79
@@ -110,7 +112,7 @@ public:
     virtual unknown_ret GetSteamGuardDetails() = 0; //argc: 0, index 94
     virtual unknown_ret GetSentryFileData() = 0; //argc: 1, index 95
     virtual unknown_ret GetTwoFactorDetails() = 0; //argc: 0, index 96
-    virtual unknown_ret BHasTwoFactor() = 0; //argc: 0, index 97
+    virtual bool BHasTwoFactor() = 0; //argc: 0, index 97
     virtual unknown_ret GetEmail() = 0; //argc: 3, index 98
     virtual unknown_ret Test_FakeConnectionTimeout() = 0; //argc: 0, index 99
     virtual unknown_ret RunInstallScript() = 0; //argc: 3, index 100
@@ -126,20 +128,20 @@ public:
     virtual unknown_ret GetMarketingMessage() = 0; //argc: 5, index 110
     virtual unknown_ret MarkMarketingMessageSeen() = 0; //argc: 2, index 111
     virtual unknown_ret CheckForPendingMarketingMessages() = 0; //argc: 0, index 112
-    virtual unknown_ret GetAuthSessionTicket() = 0; //argc: 3, index 113
-    virtual unknown_ret GetAuthSessionTicketV2() = 0; //argc: 4, index 114
-    virtual unknown_ret GetAuthSessionTicketV3() = 0; //argc: 4, index 115
-    virtual unknown_ret GetAuthTicketForWebApi() = 0; //argc: 1, index 116
-    virtual unknown_ret GetAuthSessionTicketForGameID() = 0; //argc: 5, index 117
-    virtual unknown_ret BeginAuthSession() = 0; //argc: 4, index 118
-    virtual unknown_ret EndAuthSession() = 0; //argc: 2, index 119
-    virtual unknown_ret CancelAuthTicket() = 0; //argc: 1, index 120
+    virtual HAuthTicket GetAuthSessionTicket(void *pTicket, int cbMaxTicket, uint32 *pcbTicket) = 0; //argc: 3, index 113
+    virtual HAuthTicket GetAuthSessionTicketV2(void *pTicket, int cbMaxTicket, uint32 *pcbTicket, const SteamNetworkingIdentity *pSteamNetworkingIdentity) = 0; //argc: 4, index 114
+    virtual HAuthTicket GetAuthSessionTicketV3(void *pTicket, int cbMaxTicket, uint32 *pcbTicket, const SteamNetworkingIdentity *pSteamNetworkingIdentity) = 0; //argc: 4, index 115
+    virtual HAuthTicket GetAuthTicketForWebApi(const char *pchIdentity) = 0; //argc: 1, index 116
+    virtual HAuthTicket GetAuthSessionTicketForGameID() = 0; //argc: 5, index 117
+    virtual EBeginAuthSessionResult BeginAuthSession(const void *pAuthTicket, int cbAuthTicket, CSteamID steamID) = 0; //argc: 4, index 118
+    virtual void EndAuthSession(CSteamID steamID) = 0; //argc: 2, index 119
+    virtual void CancelAuthTicket(HAuthTicket) = 0; //argc: 1, index 120
     virtual unknown_ret IsUserSubscribedAppInTicket() = 0; //argc: 3, index 121
-    virtual unknown_ret AdvertiseGame() = 0; //argc: 5, index 122
-    virtual unknown_ret RequestEncryptedAppTicket() = 0; //argc: 2, index 123
-    virtual unknown_ret GetEncryptedAppTicket() = 0; //argc: 3, index 124
-    virtual unknown_ret GetGameBadgeLevel() = 0; //argc: 2, index 125
-    virtual unknown_ret GetPlayerSteamLevel() = 0; //argc: 0, index 126
+    virtual void AdvertiseGame(CGameID gameid, CSteamID steamIDGameServer, uint32 unIPServer, uint16 usPortServer) = 0; //argc: 5, index 122
+    virtual SteamAPICall_t RequestEncryptedAppTicket(void *pDataToInclude, int cbDataToInclude) = 0; //argc: 2, index 123
+    virtual bool GetEncryptedAppTicket(void *pTicket, int cbMaxTicket, uint32 *pcbTicket) = 0; //argc: 3, index 124
+    virtual int GetGameBadgeLevel(int nSeries, bool bFoil) = 0; //argc: 2, index 125
+    virtual int GetPlayerSteamLevel() = 0; //argc: 0, index 126
     virtual unknown_ret SetAccountLimited() = 0; //argc: 1, index 127
     virtual unknown_ret BIsAccountLimited() = 0; //argc: 0, index 128
     virtual unknown_ret SetAccountCommunityBanned() = 0; //argc: 1, index 129
@@ -162,7 +164,7 @@ public:
     virtual unknown_ret BOverlayIgnoreChildProcesses() = 0; //argc: 1, index 146
     virtual unknown_ret SetOverlayState() = 0; //argc: 2, index 147
     virtual unknown_ret NotifyOverlaySettingsChanged() = 0; //argc: 0, index 148
-    virtual unknown_ret BIsBehindNAT() = 0; //argc: 0, index 149
+    virtual bool BIsBehindNAT() = 0; //argc: 0, index 149
     virtual unknown_ret GetMicroTxnAppID() = 0; //argc: 2, index 150
     virtual unknown_ret GetMicroTxnOrderID() = 0; //argc: 2, index 151
     virtual unknown_ret BGetMicroTxnPrice() = 0; //argc: 6, index 152
@@ -185,28 +187,28 @@ public:
     virtual unknown_ret GetCountAuthedComputers() = 0; //argc: 0, index 169
     virtual unknown_ret GetSteamGuardEnabledTime() = 0; //argc: 0, index 170
     virtual unknown_ret SetPhoneIsVerified() = 0; //argc: 1, index 171
-    virtual unknown_ret BIsPhoneVerified() = 0; //argc: 0, index 172
+    virtual bool BIsPhoneVerified() = 0; //argc: 0, index 172
     virtual unknown_ret SetPhoneIsIdentifying() = 0; //argc: 1, index 173
-    virtual unknown_ret BIsPhoneIdentifying() = 0; //argc: 0, index 174
+    virtual bool BIsPhoneIdentifying() = 0; //argc: 0, index 174
     virtual unknown_ret SetPhoneIsRequiringVerification() = 0; //argc: 1, index 175
-    virtual unknown_ret BIsPhoneRequiringVerification() = 0; //argc: 0, index 176
+    virtual bool BIsPhoneRequiringVerification() = 0; //argc: 0, index 176
     virtual unknown_ret Set2ndFactorAuthCode() = 0; //argc: 2, index 177
     virtual unknown_ret SetUserMachineName() = 0; //argc: 1, index 178
     virtual unknown_ret GetUserMachineName() = 0; //argc: 2, index 179
     virtual unknown_ret GetEmailDomainFromLogonFailure() = 0; //argc: 2, index 180
     virtual unknown_ret GetAgreementSessionUrl() = 0; //argc: 0, index 181
-    virtual unknown_ret GetDurationControl() = 0; //argc: 0, index 182
-    virtual unknown_ret GetDurationControlForApp() = 0; //argc: 1, index 183
-    virtual unknown_ret BSetDurationControlOnlineState() = 0; //argc: 1, index 184
-    virtual unknown_ret BSetDurationControlOnlineStateForApp() = 0; //argc: 2, index 185
+    virtual SteamAPICall_t GetDurationControl() = 0; //argc: 0, index 182
+    virtual SteamAPICall_t GetDurationControlForApp(AppId_t appid) = 0; //argc: 1, index 183
+    virtual bool BSetDurationControlOnlineState(EDurationControlOnlineState eNewState) = 0; //argc: 1, index 184
+    virtual bool BSetDurationControlOnlineStateForApp(AppId_t appid, EDurationControlOnlineState eNewState) = 0; //argc: 2, index 185
     virtual unknown_ret BGetDurationControlExtendedResults() = 0; //argc: 3, index 186
-    virtual unknown_ret BIsSubscribedApp() = 0; //argc: 1, index 187
+    virtual bool BIsSubscribedApp() = 0; //argc: 1, index 187
     virtual unknown_ret GetSubscribedApps() = 0; //argc: 3, index 188
     virtual unknown_ret AckSystemIM() = 0; //argc: 2, index 189
     virtual unknown_ret RequestSpecialSurvey() = 0; //argc: 1, index 190
     virtual unknown_ret SendSpecialSurveyResponse() = 0; //argc: 3, index 191
     virtual unknown_ret RequestNotifications() = 0; //argc: 0, index 192
-    virtual unknown_ret GetAppOwnershipInfo() = 0; //argc: 4, index 193
+    virtual bool GetAppOwnershipInfo(AppId_t appid, RTime32 *timeCreated, uint32_t *unk, char *countryCode) = 0; //argc: 4, index 193
     virtual unknown_ret SendGameWebCallback() = 0; //argc: 2, index 194
     virtual unknown_ret BIsStreamingUIToRemoteDevice() = 0; //argc: 0, index 195
     virtual unknown_ret BIsCurrentlyNVStreaming() = 0; //argc: 0, index 196
@@ -246,7 +248,7 @@ public:
     virtual unknown_ret RequestSurveySchedule() = 0; //argc: 0, index 230
     virtual unknown_ret RequestNewSteamAnnouncementState() = 0; //argc: 0, index 231
     virtual unknown_ret UpdateSteamAnnouncementLastRead() = 0; //argc: 3, index 232
-    virtual unknown_ret GetMarketEligibility() = 0; //argc: 0, index 233
+    virtual SteamAPICall_t GetMarketEligibility() = 0; //argc: 0, index 233
     virtual unknown_ret UpdateGameVrDllState() = 0; //argc: 3, index 234
     virtual unknown_ret KillVRTheaterPancakeGame() = 0; //argc: 1, index 235
     virtual unknown_ret SetVRIsHMDAwake() = 0; //argc: 1, index 236
