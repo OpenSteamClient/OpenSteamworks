@@ -1,3 +1,7 @@
+#ifndef VALID_STEAMID_INCLUDE
+#error "Invalid include of gameid.h, you must include clienttypes.h instead"
+#endif
+
 #pragma once
 
 #pragma pack( push, 1 )

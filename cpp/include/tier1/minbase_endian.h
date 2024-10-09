@@ -133,4 +133,15 @@ inline T QWordSwapC( T dw )
 	inline float LittleFloat( float val )       { int test = 1; return ( *(char *)&test == 1 ) ? val : DWordSwap( val ); }
 #endif
 
+#if __BYTE_ORDER == __LITTLE_ENDIAN
+#define VALVE_LITTLE_ENDIAN 1
+#else
+#define VALVE_BIG_ENDIAN 1
+#endif
+
+#if defined( VALVE_LITTLE_ENDIAN ) == defined( VALVE_BIG_ENDIAN )
+	#error "Cannot determine endianness of platform!"
+#endif
+
+
 #endif // #ifndef MINBASE_ENDIAN_H

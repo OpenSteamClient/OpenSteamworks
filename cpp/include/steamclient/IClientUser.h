@@ -28,8 +28,8 @@ public:
     virtual bool BTryingToLogin() = 0; //argc: 0, index 10
     virtual CSteamID GetSteamID() = 0; //argc: 1, index 11
     virtual unknown_ret GetClientInstanceID() = 0; //argc: 0, index 12
-    virtual unknown_ret GetUserCountry() = 0; //argc: 0, index 13
-    virtual unknown_ret IsVACBanned() = 0; //argc: 1, index 14
+    virtual const char *GetUserCountry() = 0; //argc: 0, index 13
+    virtual bool IsVACBanned(AppId_t app) = 0; //argc: 1, index 14
     virtual unknown_ret SetEmail() = 0; //argc: 1, index 15
     virtual unknown_ret SetConfigString() = 0; //argc: 3, index 16
     virtual unknown_ret GetConfigString() = 0; //argc: 4, index 17
@@ -45,7 +45,7 @@ public:
     virtual unknown_ret TerminateGame() = 0; //argc: 2, index 27
     virtual unknown_ret SetSelfAsChatDestination() = 0; //argc: 1, index 28
     virtual unknown_ret IsPrimaryChatDestination() = 0; //argc: 0, index 29
-    virtual unknown_ret RequestLegacyCDKey() = 0; //argc: 1, index 30
+    virtual void RequestLegacyCDKey(AppId_t nAppID) = 0; //argc: 1, index 30
     virtual unknown_ret AckGuestPass() = 0; //argc: 1, index 31
     virtual unknown_ret RedeemGuestPass() = 0; //argc: 1, index 32
     virtual unknown_ret GetGuestPassToGiveCount() = 0; //argc: 0, index 33
@@ -100,8 +100,8 @@ public:
     virtual unknown_ret CheckoutSiteLicenseSeat() = 0; //argc: 1, index 82
     virtual unknown_ret GetAvailableSeats() = 0; //argc: 1, index 83
     virtual unknown_ret GetAssociatedSiteName() = 0; //argc: 0, index 84
-    virtual unknown_ret BIsRunningInCafe() = 0; //argc: 0, index 85
-    virtual unknown_ret BAllowCachedCredentialsInCafe() = 0; //argc: 0, index 86
+    virtual bool BIsRunningInCafe() = 0; //argc: 0, index 85
+    virtual bool BAllowCachedCredentialsInCafe() = 0; //argc: 0, index 86
     virtual unknown_ret RequiresLegacyCDKey() = 0; //argc: 2, index 87
     virtual unknown_ret GetLegacyCDKey() = 0; //argc: 3, index 88
     virtual unknown_ret SetLegacyCDKey() = 0; //argc: 2, index 89
@@ -202,7 +202,7 @@ public:
     virtual bool BSetDurationControlOnlineState(EDurationControlOnlineState eNewState) = 0; //argc: 1, index 184
     virtual bool BSetDurationControlOnlineStateForApp(AppId_t appid, EDurationControlOnlineState eNewState) = 0; //argc: 2, index 185
     virtual unknown_ret BGetDurationControlExtendedResults() = 0; //argc: 3, index 186
-    virtual bool BIsSubscribedApp() = 0; //argc: 1, index 187
+    virtual bool BIsSubscribedApp(AppId_t appid) = 0; //argc: 1, index 187
     virtual unknown_ret GetSubscribedApps() = 0; //argc: 3, index 188
     virtual unknown_ret AckSystemIM() = 0; //argc: 2, index 189
     virtual unknown_ret RequestSpecialSurvey() = 0; //argc: 1, index 190
@@ -262,8 +262,8 @@ public:
     virtual unknown_ret OnNewGroupChatMsgAdded() = 0; //argc: 8, index 244
     virtual unknown_ret OnGroupChatUserStateChange() = 0; //argc: 4, index 245
     virtual unknown_ret OnReceivedGroupChatSubscriptionResponse() = 0; //argc: 5, index 246
-    virtual unknown_ret GetTimedTrialStatus() = 0; //argc: 4, index 247
-    virtual unknown_ret RequestTimedTrialStatus() = 0; //argc: 1, index 248
+    virtual bool GetTimedTrialStatus(AppId_t, bool *pUnk, uint32 *punSecondsAllowed, uint32 *punSecondsPlayed) = 0; //argc: 4, index 247
+    virtual bool RequestTimedTrialStatus(AppId_t) = 0; //argc: 1, index 248
     virtual unknown_ret PrepareForSystemSuspend() = 0; //argc: 0, index 249
     virtual unknown_ret ResumeSuspendedGames() = 0; //argc: 1, index 250
     virtual unknown_ret GetClientInstallationID() = 0; //argc: 0, index 251

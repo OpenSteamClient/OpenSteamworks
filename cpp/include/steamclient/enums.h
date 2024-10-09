@@ -23,6 +23,112 @@ enum EAccountType {
     EAccountType_Max
 };
 
+enum EAppOwnershipFlags
+{
+	k_EAppOwnershipFlagsNone = 0,
+	k_EAppOwnershipFlagsOwnsLicense = 1,
+	k_EAppOwnershipFlagsFreeLicense = 2,
+	k_EAppOwnershipFlagsRegionRestricted = 4,
+	k_EAppOwnershipFlagsLowViolence = 8,
+	k_EAppOwnershipFlagsInvalidPlatform = 16,
+	k_EAppOwnershipFlagsSharedLicense = 32,
+	k_EAppOwnershipFlagsFreeWeekend = 64,
+	k_EAppOwnershipFlagsRetailLicense = 128,
+	k_EAppOwnershipFlagsLicenseLocked = 256,
+	k_EAppOwnershipFlagsLicensePending = 512,
+	k_EAppOwnershipFlagsLicenseExpired = 1024,
+	k_EAppOwnershipFlagsLicensePermanent = 2048,
+	k_EAppOwnershipFlagsLicenseRecurring = 4096,
+	k_EAppOwnershipFlagsLicenseCanceled = 8192,
+	k_EAppOwnershipFlagsAutoGrant = 16384,
+	k_EAppOwnershipFlagsPendingGift = 32768,
+	k_EAppOwnershipFlagsRentalNotActivated = 65536,
+	k_EAppOwnershipFlagsRental = 131072,
+	k_EAppOwnershipFlagsSiteLicense = 262144,
+	k_EAppOwnershipFlagsLegacyFreeSub = 524288,
+	k_EAppOwnershipFlagsInvalidOSType = 1048576,
+	k_EAppOwnershipFlagsTimedTrial = 2097152,
+};
+
+enum EAppState
+{
+    k_EAppStateInvalid = 0,
+    k_EAppStateUninstalled = 1,
+    k_EAppStateUpdateRequired = 1 << 1,
+    k_EAppStateFullyInstalled = 1 << 2,
+    k_EAppStateUpdateQueued = 1 << 3,
+    k_EAppStateUpdateOptional = 1 << 4,
+    k_EAppStateFilesMissing = 1 << 5,
+    k_EAppStateSharedOnly = 1 << 6,
+    k_EAppStateFilesCorrupt = 1 << 7,
+    k_EAppStateUpdateRunning = 1 << 8,
+    k_EAppStateUpdatePaused = 1 << 9,
+    k_EAppStateUpdateStarted = 1 << 10,
+    k_EAppStateUninstalling = 1 << 11,
+    k_EAppStateBackupRunning = 1 << 12,
+    k_EAppStateAppRunning = 1 << 13,
+    k_EAppStateComponentInUse = 1 << 14,
+    k_EAppStateMovingFolder = 1 << 15,
+    k_EAppStateTerminating = 1 << 16,
+    k_EAppStatePrefetchingInfo = 1 << 17,
+    k_EAppStatePeerServer = 1 << 18,
+};
+
+enum EAppType
+{
+	k_EAppTypeDepotonly = -2147483648,
+	k_EAppTypeInvalid = 0,
+	k_EAppTypeGame = 1,
+	k_EAppTypeApplication = 2,
+	k_EAppTypeTool = 4,
+	k_EAppTypeDemo = 8,
+	k_EAppTypeMedia = 16,
+	k_EAppTypeDlc = 32,
+	k_EAppTypeGuide = 64,
+	k_EAppTypeDriver = 128,
+	k_EAppTypeConfig = 256,
+	k_EAppTypeHardware = 512,
+	k_EAppTypeFranchise = 1024,
+	k_EAppTypeVideo = 2048,
+	k_EAppTypePlugin = 4096,
+	k_EAppTypeMusic = 8192,
+	k_EAppTypeSeries = 16384,
+	k_EAppTypeComic = 32768,
+	k_EAppTypeBeta = 65536,
+	k_EAppTypeShortcut = 1073741824
+};
+
+enum EAppInfoSection
+{
+	k_EAppInfoSectionUnknown = 0,
+	k_EAppInfoSectionAll,
+	k_EAppInfoSectionCommon,
+	k_EAppInfoSectionExtended,
+	k_EAppInfoSectionConfig,
+	k_EAppInfoSectionStats,
+	k_EAppInfoSectionInstall,
+	k_EAppInfoSectionDepots,
+	k_EAppInfoSectionVac,
+	k_EAppInfoSectionDrm,
+	k_EAppInfoSectionUfs,
+	k_EAppInfoSectionOgg,
+	k_EAppInfoSectionItems,
+	k_EAppInfoSectionPolicies,
+	k_EAppInfoSectionSysreqs,
+	k_EAppInfoSectionCommunity,
+	k_EAppInfoSectionStore,
+    k_EAppInfoSectionLocalization,
+    k_EAppInfoSectionBroadcastgamedata,
+	k_EAppInfoSectionComputed,
+	k_EAppInfoSectionAlbummetadata,
+};
+
+enum ESteamControllerPad
+{
+	k_ESteamControllerPad_Left,
+	k_ESteamControllerPad_Right
+};
+
 // results from BeginAuthSession
 enum EBeginAuthSessionResult
 {
