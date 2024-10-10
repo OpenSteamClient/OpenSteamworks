@@ -23,6 +23,107 @@ enum EAccountType {
     EAccountType_Max
 };
 
+//-----------------------------------------------------------------------------
+// Purpose: list of states a friend can be in
+//-----------------------------------------------------------------------------
+enum EPersonaState
+{
+	k_EPersonaStateOffline = 0,			// friend is not currently logged on
+	k_EPersonaStateOnline = 1,			// friend is logged on
+	k_EPersonaStateBusy = 2,			// user is on, but busy
+	k_EPersonaStateAway = 3,			// auto-away feature
+	k_EPersonaStateSnooze = 4,			// auto-away for a long time
+	k_EPersonaStateLookingToTrade = 5,	// Online, trading
+	k_EPersonaStateLookingToPlay = 6,	// Online, wanting to play
+	k_EPersonaStateInvisible = 7,		// Online, but appears offline to friends.  This status is never published to clients.
+	k_EPersonaStateMax,
+};
+
+
+//-----------------------------------------------------------------------------
+// Purpose: flags for enumerating friends list, or quickly checking a the relationship between users
+//-----------------------------------------------------------------------------
+enum EFriendFlags
+{
+	k_EFriendFlagNone			= 0x00,
+	k_EFriendFlagBlocked		= 0x01,
+	k_EFriendFlagFriendshipRequested	= 0x02,
+	k_EFriendFlagImmediate		= 0x04,			// "regular" friend
+	k_EFriendFlagClanMember		= 0x08,
+	k_EFriendFlagOnGameServer	= 0x10,	
+	// k_EFriendFlagHasPlayedWith	= 0x20,	// not currently used
+	// k_EFriendFlagFriendOfFriend	= 0x40, // not currently used
+	k_EFriendFlagRequestingFriendship = 0x80,
+	k_EFriendFlagRequestingInfo = 0x100,
+	k_EFriendFlagIgnored		= 0x200,
+	k_EFriendFlagIgnoredFriend	= 0x400,
+	// k_EFriendFlagSuggested		= 0x800,	// not used
+	k_EFriendFlagChatMember		= 0x1000,
+	k_EFriendFlagAll			= 0xFFFF,
+};
+
+//-----------------------------------------------------------------------------
+// Purpose: set of relationships to other users
+//-----------------------------------------------------------------------------
+enum EFriendRelationship
+{
+	k_EFriendRelationshipNone = 0,
+	k_EFriendRelationshipBlocked = 1,			// this doesn't get stored; the user has just done an Ignore on an friendship invite
+	k_EFriendRelationshipRequestRecipient = 2,
+	k_EFriendRelationshipFriend = 3,
+	k_EFriendRelationshipRequestInitiator = 4,
+	k_EFriendRelationshipIgnored = 5,			// this is stored; the user has explicit blocked this other user from comments/chat/etc
+	k_EFriendRelationshipIgnoredFriend = 6,
+	k_EFriendRelationshipSuggested_DEPRECATED = 7,		// was used by the original implementation of the facebook linking feature, but now unused.
+
+	// keep this updated
+	k_EFriendRelationshipMax = 8,
+};
+
+enum ESteamUserStatType
+{
+	k_ESteamUserStatTypeINVALID = 0,
+	k_ESteamUserStatTypeINT = 1,
+	k_ESteamUserStatTypeFLOAT = 2,
+	// Read as FLOAT, set with count / session length
+	k_ESteamUserStatTypeAVGRATE = 3,
+	k_ESteamUserStatTypeACHIEVEMENTS = 4,
+	k_ESteamUserStatTypeGROUPACHIEVEMENTS = 5,
+};
+
+// type of data request, when downloading leaderboard entries
+enum ELeaderboardDataRequest
+{
+	k_ELeaderboardDataRequestGlobal = 0,
+	k_ELeaderboardDataRequestGlobalAroundUser = 1,
+	k_ELeaderboardDataRequestFriends = 2,
+	k_ELeaderboardDataRequestUsers = 3
+};
+
+// the sort order of a leaderboard
+enum ELeaderboardSortMethod
+{
+	k_ELeaderboardSortMethodNone = 0,
+	k_ELeaderboardSortMethodAscending = 1,	// top-score is lowest number
+	k_ELeaderboardSortMethodDescending = 2,	// top-score is highest number
+};
+
+// the display type (used by the Steam Community web site) for a leaderboard
+enum ELeaderboardDisplayType
+{
+	k_ELeaderboardDisplayTypeNone = 0, 
+	k_ELeaderboardDisplayTypeNumeric = 1,			// simple numerical score
+	k_ELeaderboardDisplayTypeTimeSeconds = 2,		// the score represents a time, in seconds
+	k_ELeaderboardDisplayTypeTimeMilliSeconds = 3,	// the score represents a time, in milliseconds
+};
+
+enum ELeaderboardUploadScoreMethod
+{
+	k_ELeaderboardUploadScoreMethodNone = 0,
+	k_ELeaderboardUploadScoreMethodKeepBest = 1,	// Leaderboard will keep user's best score
+	k_ELeaderboardUploadScoreMethodForceUpdate = 2,	// Leaderboard will always replace score with specified
+};
+
 enum EAppOwnershipFlags
 {
 	k_EAppOwnershipFlagsNone = 0,

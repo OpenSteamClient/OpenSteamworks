@@ -143,5 +143,11 @@ inline T QWordSwapC( T dw )
 	#error "Cannot determine endianness of platform!"
 #endif
 
+#if defined(__linux__) || defined(__APPLE__) 
+#define VALVE_CALLBACK_PACK_SMALL
+#else
+#define VALVE_CALLBACK_PACK_LARGE
+#endif
+
 
 #endif // #ifndef MINBASE_ENDIAN_H
