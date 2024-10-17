@@ -145,9 +145,10 @@ inline T QWordSwapC( T dw )
 
 #if defined(__linux__) || defined(__APPLE__) 
 #define VALVE_CALLBACK_PACK_SMALL
+#define VALVE_CALLBACK_SIZE 4
 #else
 #define VALVE_CALLBACK_PACK_LARGE
+#define VALVE_CALLBACK_SIZE 8
 #endif
-
 
 #endif // #ifndef MINBASE_ENDIAN_H

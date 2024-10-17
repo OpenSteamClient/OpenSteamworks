@@ -16,18 +16,18 @@ class IClientControllerSerialized
 public:
     virtual unknown_ret Unknown_0_DONTUSE() = 0; //argc: -1, index 1
     virtual unknown_ret Unknown_1_DONTUSE() = 0; //argc: -1, index 2
-    virtual unknown_ret ShowBindingPanel() = 0; //argc: 3, index 3
+    virtual bool ShowBindingPanel(AppId_t appid, ControllerHandle_t handle) = 0; //argc: 3, index 3
     virtual unknown_ret GetControllerTypeForHandle() = 0; //argc: 2, index 4
     virtual unknown_ret GetGamepadIndexForHandle() = 0; //argc: 2, index 5
     virtual unknown_ret GetHandleForGamepadIndex() = 0; //argc: 1, index 6
-    virtual unknown_ret GetActionSetHandle() = 0; //argc: 2, index 7
+    virtual ControllerActionSetHandle_t GetActionSetHandle(AppId_t appid, const char *pszActionSetName) = 0; //argc: 2, index 7
     virtual unknown_ret GetActionSetHandleByTitle() = 0; //argc: 2, index 8
-    virtual unknown_ret GetDigitalActionHandle() = 0; //argc: 3, index 9
-    virtual unknown_ret GetAnalogActionHandle() = 0; //argc: 3, index 10
-    virtual unknown_ret StopAnalogActionMomentum() = 0; //argc: 4, index 11
-    virtual unknown_ret EnableDeviceCallbacks() = 0; //argc: 1, index 12
-    virtual unknown_ret GetStringForDigitalActionName() = 0; //argc: 5, index 13
-    virtual unknown_ret GetStringForAnalogActionName() = 0; //argc: 5, index 14
+    virtual ControllerDigitalActionHandle_t GetDigitalActionHandle(AppId_t appid, const char *pszActionName, bool unk) = 0; //argc: 3, index 9
+    virtual ControllerAnalogActionHandle_t GetAnalogActionHandle(AppId_t appid, const char *pszActionName, bool unk) = 0; //argc: 3, index 10
+    virtual void StopAnalogActionMomentum(ControllerHandle_t controllerHandle, ControllerAnalogActionHandle_t actionHandle) = 0; //argc: 4, index 11
+    virtual void EnableDeviceCallbacks(AppId_t appid) = 0; //argc: 1, index 12
+    virtual bool GetStringForDigitalActionName(AppId_t appid, ControllerDigitalActionHandle_t handle, char *buf, int bufLen) = 0; //argc: 5, index 13
+    virtual bool GetStringForAnalogActionName(AppId_t appid, ControllerAnalogActionHandle_t handle, char *buf, int bufLen) = 0; //argc: 5, index 14
     virtual unknown_ret BCheckGameDirectoryAndReloadConfigIfNecessary() = 0; //argc: 3, index 15
     virtual unknown_ret GetActionManifestPath(unknown_ret) = 0; //argc: 1, index 16
     virtual unknown_ret GetActionManifestPath(unknown_ret, unknown_ret) = 0; //argc: 2, index 17
@@ -103,7 +103,7 @@ public:
     virtual unknown_ret TriggerSimpleHapticEvent() = 0; //argc: 5, index 87
     virtual unknown_ret TriggerVibration() = 0; //argc: 4, index 88
     virtual unknown_ret TriggerVibrationExtended() = 0; //argc: 6, index 89
-    virtual unknown_ret SetLEDColor() = 0; //argc: 5, index 90
+    virtual void SetLEDColor(ControllerHandle_t controllerHandle, uint8 nColorR, uint8 nColorG, uint8 nColorB, unsigned int nFlags) = 0; //argc: 5, index 90
     virtual unknown_ret SetDonglePairingMode() = 0; //argc: 2, index 91
     virtual unknown_ret ReserveSteamController() = 0; //argc: 0, index 92
     virtual unknown_ret CancelSteamControllerReservations() = 0; //argc: 0, index 93

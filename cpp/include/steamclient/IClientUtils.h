@@ -34,7 +34,7 @@ public:
     virtual unknown_ret GetOfflineMode() = 0; //argc: 0, index 18
     virtual AppId_t SetAppIDForCurrentPipe(AppId_t appID, bool bTrack) = 0; //argc: 2, index 19
     virtual AppId_t GetAppID() = 0; //argc: 0, index 20
-    virtual unknown_ret SetAPIDebuggingActive() = 0; //argc: 2, index 21
+    virtual void SetAPIDebuggingActive(bool bActive, bool bVerbose) = 0; //argc: 2, index 21
     virtual SteamAPICall_t AllocPendingAPICallHandle() = 0; //argc: 0, index 22
     virtual bool IsAPICallCompleted(SteamAPICall_t hSteamAPICall, bool *pbFailed) = 0; //argc: 3, index 23
     virtual ESteamAPICallFailure GetAPICallFailureReason(SteamAPICall_t hSteamAPICall) = 0; //argc: 2, index 24
@@ -103,11 +103,11 @@ public:
     virtual unknown_ret ScheduleConnectivityTest() = 0; //argc: 2, index 87
     virtual unknown_ret GetConnectivityTestState() = 0; //argc: 1, index 88
     virtual unknown_ret GetCaptivePortalURL() = 0; //argc: 0, index 89
-    virtual unknown_ret RecordSteamInterfaceCreation() = 0; //argc: 2, index 90
+    virtual void RecordSteamInterfaceCreation(const char *interfaceVersion, const char *simpleName) = 0; //argc: 2, index 90
     virtual unknown_ret GetCloudGamingPlatform() = 0; //argc: 0, index 91
     virtual unknown_ret BGetMacAddresses() = 0; //argc: 3, index 92
     virtual unknown_ret BGetDiskSerialNumber() = 0; //argc: 2, index 93
-    virtual unknown_ret GetSteamEnvironmentForApp() = 0; //argc: 3, index 94
+    virtual int GetSteamEnvironmentForApp(AppId_t appid, char *buf, int bufMax) = 0; //argc: 3, index 94
     virtual unknown_ret TestHTTP() = 0; //argc: 1, index 95
     virtual unknown_ret DumpJobs() = 0; //argc: 1, index 96
     virtual bool ShowFloatingGamepadTextInput(AppId_t appid, EFloatingGamepadTextInputMode eKeyboardMode, int nTextFieldXPosition, int nTextFieldYPosition, int nTextFieldWidth, int nTextFieldHeight) = 0; //argc: 6, index 97

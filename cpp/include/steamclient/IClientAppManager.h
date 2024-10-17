@@ -51,7 +51,7 @@ public:
     virtual unknown_ret GetBetaInfo() = 0; //argc: 8, index 35
     virtual unknown_ret CheckBetaPassword() = 0; //argc: 2, index 36
     virtual bool SetActiveBeta(AppId_t appid, const char *betaName) = 0; //argc: 2, index 37
-    virtual int GetActiveBeta(AppId_t appid, char *betaName, int betaNameMax) = 0; //argc: 3, index 38
+    virtual bool GetActiveBeta(AppId_t appid, char *betaName, int betaNameMax) = 0; //argc: 3, index 38
     virtual unknown_ret BGetActiveBetaForApps() = 0; //argc: 2, index 39
     virtual unknown_ret SetDownloadingEnabled() = 0; //argc: 1, index 40
     virtual unknown_ret BIsDownloadingEnabled() = 0; //argc: 0, index 41
