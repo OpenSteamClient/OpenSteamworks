@@ -14,17 +14,17 @@
 class IClientParties
 {
 public:
-    virtual unknown_ret GetNumActiveBeacons() = 0; //argc: 0, index 1
-    virtual unknown_ret GetBeaconByIndex() = 0; //argc: 1, index 2
-    virtual unknown_ret GetBeaconDetails() = 0; //argc: 6, index 3
-    virtual unknown_ret JoinParty() = 0; //argc: 2, index 4
-    virtual unknown_ret GetNumAvailableBeaconLocations() = 0; //argc: 1, index 5
-    virtual unknown_ret GetAvailableBeaconLocations() = 0; //argc: 2, index 6
-    virtual unknown_ret CreateBeacon() = 0; //argc: 5, index 7
-    virtual unknown_ret OnReservationCompleted() = 0; //argc: 4, index 8
-    virtual unknown_ret CancelReservation() = 0; //argc: 4, index 9
-    virtual unknown_ret ChangeNumOpenSlots() = 0; //argc: 3, index 10
-    virtual unknown_ret DestroyBeacon() = 0; //argc: 2, index 11
-    virtual unknown_ret GetBeaconLocationData() = 0; //argc: 6, index 12
+    virtual uint32 GetNumActiveBeacons() = 0; //argc: 0, index 1
+    virtual PartyBeaconID_t GetBeaconByIndex(uint32 unIndex) = 0; //argc: 1, index 2
+    virtual bool GetBeaconDetails(PartyBeaconID_t ulBeaconID, CSteamID *pSteamIDBeaconOwner, SteamPartyBeaconLocation_t *pLocation, char *pchMetadata, int cchMetadata) = 0; //argc: 6, index 3
+    virtual SteamAPICall_t JoinParty(PartyBeaconID_t ulBeaconID) = 0; //argc: 2, index 4
+    virtual bool GetNumAvailableBeaconLocations(uint32 *puNumLocations) = 0; //argc: 1, index 5
+    virtual bool GetAvailableBeaconLocations(SteamPartyBeaconLocation_t *pLocationList, uint32 uMaxNumLocations) = 0; //argc: 2, index 6
+    virtual SteamAPICall_t CreateBeacon(uint32 unOpenSlots, SteamPartyBeaconLocation_t *pBeaconLocations, int numBeaconLocations, const char *pchConnectString, const char *pchMetadata) = 0; //argc: 5, index 7
+    virtual void OnReservationCompleted(PartyBeaconID_t ulBeacon, CSteamID steamIDUser) = 0; //argc: 4, index 8
+    virtual void CancelReservation(PartyBeaconID_t ulBeacon, CSteamID steamIDUser) = 0; //argc: 4, index 9
+    virtual SteamAPICall_t ChangeNumOpenSlots(PartyBeaconID_t ulBeacon, uint32 unOpenSlots) = 0; //argc: 3, index 10
+    virtual bool DestroyBeacon(PartyBeaconID_t ulBeacon) = 0; //argc: 2, index 11
+    virtual bool GetBeaconLocationData(SteamPartyBeaconLocation_t BeaconLocation, ESteamPartyBeaconLocationData eData, char *pchDataStringOut, int cchDataStringOut) = 0; //argc: 6, index 12
     virtual unknown_ret ReservePartySlot() = 0; //argc: 3, index 13
 };

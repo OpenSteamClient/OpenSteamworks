@@ -83,7 +83,7 @@
 	#define INOUT_Z_ARRAY
 #endif
 
-#include "strtools.h"
+#include <tier1/strtools.h>
 
 #ifdef MY_COMPILER_SUCKS
 	#define COMPILE_TIME_ASSERT( pred ) typedef int UNIQUE_ID[ (pred) ? 1 : -1]

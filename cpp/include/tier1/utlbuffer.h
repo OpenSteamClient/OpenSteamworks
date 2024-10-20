@@ -14,7 +14,8 @@
 #include <stdarg.h>
 #include "utlmemory.h"
 #include "utlstring.h"
-#include "minbase_endian.h"
+#include <minbase/minbase_endian.h>
+#include <minbase/minbase_securezeromemory_impl.h>
 
 //-----------------------------------------------------------------------------
 // Description of character conversions for string output
@@ -793,6 +794,32 @@ inline void	CUtlBuffer::CopyBuffer( const void *pubData, int cubData )
 		Put( pubData, cubData );
 	}
 }
+
+/// CUtlBuffer that will wipe upon destruction
+//
+/// WARNING: This is only intended for simple use cases where the caller
+/// can easily pre-allocate.  For example, it won't wipe if the buffer needs
+/// to be relocated as a result of realloc.  Or if you pas it to a function
+/// via a CUtlBuffer&, and CUtlBuffer::Purge is invoked directly.  Etc.
+class CAutoWipeBuffer : public CUtlBuffer
+{
+public:
+	CAutoWipeBuffer() {}
+	explicit CAutoWipeBuffer( int cbInit ) : CUtlBuffer( 0, cbInit, 0 ) {}
+	~CAutoWipeBuffer() { Purge(); }
+
+	void Clear()
+	{
+		SecureZeroMemory( Base(), SizeAllocated() );
+		CUtlBuffer::Clear();
+	}
+
+	void Purge()
+	{
+		Clear();
+		CUtlBuffer::Purge();
+	}
+};
 
 
 #endif // UTLBUFFER_H

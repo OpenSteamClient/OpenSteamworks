@@ -1,5 +1,6 @@
 #pragma once
-#include <cstdint>
+#include <minbase/minbase_identify.h>
+#include <minbase/minbase_types.h>
 
 extern uint32_t Plat_MSTime();
 extern uint32_t ThreadGetCurrentProcessId();

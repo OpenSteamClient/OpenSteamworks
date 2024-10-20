@@ -341,7 +341,11 @@ bool CUtlBuffer::Get( void* pMem, int size )
 {
 	if ( CheckGet( size ) )
 	{
-		memcpy( pMem, &m_Memory[m_Get], size );
+		if (pMem != nullptr)
+		{
+			memcpy( pMem, &m_Memory[m_Get], size );
+		}
+
 		m_Get += size;
 		return true;
 	}

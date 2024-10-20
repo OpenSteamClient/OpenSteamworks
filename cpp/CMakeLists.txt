@@ -46,9 +46,9 @@ if (WITH_STEAMPROTO)
 
     add_library(steamproto STATIC ${steamproto_sources})
     set_target_properties(steamproto PROPERTIES CXX_STANDARD 14)
-    target_link_libraries(steamproto ${Protobuf_LIBRARIES})
+    target_link_libraries(steamproto PUBLIC ${Protobuf_LIBRARIES})
 
-    target_include_directories(steamproto PUBLIC "../OpenSteamworks.Native/protobufhack/generated/")
+    target_include_directories(steamproto PUBLIC "../OpenSteamworks.Native/protobufhack/generated/" ${Protobuf_INCLUDE_DIRS} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 endif()
 
 set_target_properties(tier1_s PROPERTIES CXX_STANDARD 20)

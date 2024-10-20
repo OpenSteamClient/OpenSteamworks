@@ -3,13 +3,8 @@
 #include <cstdlib>
 #include <stdarg.h>
 
-void AssertMsgImpl(const char *file, int line, int cond, const char *msg, ...)
+void AssertMsgImpl(const char *file, int line, const char *msg, ...)
 {
-    if (!!cond)
-    {
-        return;
-    }
-
     char buf[1024];
 	va_list va;
 	va_start( va, msg );

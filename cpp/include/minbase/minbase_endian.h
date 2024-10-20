@@ -8,7 +8,7 @@
 #ifndef MINBASE_ENDIAN_H
 #define MINBASE_ENDIAN_H
 
-#include "miniutl.h"
+#include <miniutl.h>
 
 //-----------------------------------------------------------------------------
 // Purpose: Standard functions for handling endian-ness

@@ -14,18 +14,18 @@
 class IClientGameSearch
 {
 public:
-    virtual unknown_ret AddGameSearchParams() = 0; //argc: 2, index 1
-    virtual unknown_ret SearchForGameWithLobby() = 0; //argc: 4, index 2
-    virtual unknown_ret SearchForGameSolo() = 0; //argc: 2, index 3
-    virtual unknown_ret AcceptGame() = 0; //argc: 0, index 4
-    virtual unknown_ret DeclineGame() = 0; //argc: 0, index 5
-    virtual unknown_ret RetrieveConnectionDetails() = 0; //argc: 4, index 6
-    virtual unknown_ret EndGameSearch() = 0; //argc: 0, index 7
-    virtual unknown_ret SetGameHostParams() = 0; //argc: 2, index 8
-    virtual unknown_ret SetConnectionDetails() = 0; //argc: 2, index 9
-    virtual unknown_ret RequestPlayersForGame() = 0; //argc: 3, index 10
-    virtual unknown_ret HostConfirmGameStart() = 0; //argc: 2, index 11
-    virtual unknown_ret CancelRequestPlayersForGame() = 0; //argc: 0, index 12
-    virtual unknown_ret SubmitPlayerResult() = 0; //argc: 5, index 13
-    virtual unknown_ret EndGame() = 0; //argc: 2, index 14
+    virtual EGameSearchErrorCode AddGameSearchParams(const char* pchKeyToFind, const char* pchValuesToFind) = 0; //argc: 2, index 1
+    virtual EGameSearchErrorCode SearchForGameWithLobby(CSteamID steamIDLobby, int nPlayerMin, int nPlayerMax) = 0; //argc: 4, index 2
+    virtual EGameSearchErrorCode SearchForGameSolo(int nPlayerMin, int nPlayerMax) = 0; //argc: 2, index 3
+    virtual EGameSearchErrorCode AcceptGame() = 0; //argc: 0, index 4
+    virtual EGameSearchErrorCode DeclineGame() = 0; //argc: 0, index 5
+    virtual EGameSearchErrorCode RetrieveConnectionDetails(CSteamID steamIDHost, char* pchConnectionDetails, int cubConnectionDetails) = 0; //argc: 4, index 6
+    virtual EGameSearchErrorCode EndGameSearch() = 0; //argc: 0, index 7
+    virtual EGameSearchErrorCode SetGameHostParams(const char* pchKey, const char* pchValue) = 0; //argc: 2, index 8
+    virtual EGameSearchErrorCode SetConnectionDetails(const char* pchConnectionDetails, int cubConnectionDetails) = 0; //argc: 2, index 9
+    virtual EGameSearchErrorCode RequestPlayersForGame(int nPlayerMin, int nPlayerMax, int nMaxTeamSize) = 0; //argc: 3, index 10
+    virtual EGameSearchErrorCode HostConfirmGameStart(uint64 ullUniqueGameID) = 0; //argc: 2, index 11
+    virtual EGameSearchErrorCode CancelRequestPlayersForGame() = 0; //argc: 0, index 12
+    virtual EGameSearchErrorCode SubmitPlayerResult(uint64 ullUniqueGameID, CSteamID steamIDPlayer, EPlayerResult EPlayerResult) = 0; //argc: 5, index 13
+    virtual EGameSearchErrorCode EndGame(uint64 ullUniqueGameID) = 0; //argc: 2, index 14
 };

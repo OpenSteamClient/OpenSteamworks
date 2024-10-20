@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <generichash.h>
 #include <strtools.h>
-#include "minbase_endian.h"
+#include <minbase/minbase_endian.h>
 
 #if defined(_MSC_VER) && _MSC_VER > 1200
 #define ROTL32(x,y)	_rotl(x,y)
