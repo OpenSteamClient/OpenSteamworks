@@ -778,7 +778,7 @@ inline void CUtlBuffer::Purge()
 	m_Put = 0;
 	m_nMaxPut = 0;
 	m_Error = 0;
-	m_Memory.CUtlMemoryBase::Purge();
+	m_Memory.Purge();
 }
 
 inline void CUtlBuffer::CopyBuffer( const CUtlBuffer &buffer )

@@ -1622,7 +1622,7 @@ void CUtlBuffer::TakeOwnershipOfMemory( CUtlMemory<uint8_t> &mem )
 	m_nMaxPut = mem.Count();
 	m_Error = 0;
 	m_Memory.Swap( mem );
-	mem.CUtlMemoryBase::Purge();
+	mem.Purge();
 }
 
 

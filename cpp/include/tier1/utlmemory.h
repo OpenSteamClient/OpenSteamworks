@@ -109,7 +109,9 @@ public:
 	// Switches the buffer from an external memory buffer to a reallocatable buffer
 	// Will copy the current contents of the external buffer to the reallocatable buffer
 	void ConvertToGrowableMemory( int nGrowSize );
-
+	
+	void Purge();
+	
 	// Purge all but the given number of elements
 	void Purge( int numElements, bool bRealloc = true );
 
@@ -240,6 +242,12 @@ inline void CUtlMemory<T>::EnsureCapacity( int num )
 	{
 		m_pMemory = PvAlloc( m_nAllocationCount * sizeof(T) );
 	}
+}
+
+template< class T >
+inline void CUtlMemory<T>::Purge()
+{
+	this->CUtlMemoryBase::Purge();
 }
 
 template< class T >

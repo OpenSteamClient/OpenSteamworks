@@ -9,8 +9,6 @@
 #define MINBASE_IDENTIFY_H
 #pragma once
 
-#include <miniutl.h>
-
 #if defined(_LP64) || defined(__x86_64__) || defined(__arm64__) || defined(__aarch64__) || defined(_WIN64)
 	#define X64BITS
 	#define PLATFORM_64BITS
@@ -143,9 +141,6 @@
 #endif
 #ifndef IsConsole
 	#define IsConsole() false
-#endif
-#ifndef IsNintendoSwitch
-	#define IsNintendoSwitch() false
 #endif
 #define IsX360() false
 #ifndef IsXboxOne

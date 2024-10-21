@@ -14,76 +14,15 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdint.h>
-#include <tier0/dbg.h>
 
-#if defined(_MSC_VER)
-	#define FMTFUNCTION( x, y )
-#else
-	#if defined(__GNUC__)
-		#ifdef __MINGW__
-			#define FMTFUNCTION( fmtargnumber, firstvarargnumber ) __attribute__ (( format( __MINGW_PRINTF_FORMAT, fmtargnumber, firstvarargnumber )))
-		#else
-			#define FMTFUNCTION( fmtargnumber, firstvarargnumber ) __attribute__ (( format( __printf__, fmtargnumber, firstvarargnumber )))
-		#endif
-		#define GCC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)
-	#else
-		#define PRINTF_FORMAT_STRING
-		#define FMTFUNCTION( x, y )
-	#endif
+#include <minbase/minbase_identify.h>
+#include <minbase/minbase_annotations.h>
+#include <minbase/minbase_types.h>
+#include <minbase/minbase_decls.h>
+
+#if !defined(_MSC_VER)
 	#define _vsnprintf vsnprintf
-	#ifndef __cdecl
-	#define __cdecl
-	#endif
 #endif
-
-#if _MSC_VER >= 1600 && defined(_PREFAST_)// VS 2010 and above.
-	// Tag all printf-style format strings with this (consumed by MSVC).
-	#define PRINTF_FORMAT_STRING _Printf_format_string_
-	#define SCANF_FORMAT_STRING _Scanf_format_string_impl_
-
-	// Various macros for specifying the capacity of the buffer pointed
-	// to by a function parameter. Variations include in/out/inout,
-	// CAP (elements) versus BYTECAP (bytes), and null termination or
-	// not (_Z).
-	#define IN_Z _In_z_
-	#define IN_CAP(x) _In_count_(x)
-	#define IN_BYTECAP(x) _In_bytecount_(x)
-	#define OUT_Z_CAP(x) _Out_z_cap_(x)
-	#define OUT_CAP(x) _Out_cap_(x)
-	#define OUT_BYTECAP(x) _Out_bytecap_(x)
-	#define OUT_Z_BYTECAP(x) _Out_z_bytecap_(x)
-	#define INOUT_BYTECAP(x) _Inout_bytecap_(x)
-	#define INOUT_Z_CAP(x) _Inout_z_cap_(x)
-	#define INOUT_Z_BYTECAP(x) _Inout_z_bytecap_(x)
-	// These macros are use for annotating array reference parameters, typically used in functions
-	// such as V_strcpy_safe. Because they are array references the capacity is already known.
-	#if _MSC_VER >= 1700
-		#define IN_Z_ARRAY _Pre_z_
-		#define OUT_Z_ARRAY _Post_z_
-		#define INOUT_Z_ARRAY _Prepost_z_
-	#else
-		#define IN_Z_ARRAY _Deref_pre_z_
-		#define OUT_Z_ARRAY _Deref_post_z_
-		#define INOUT_Z_ARRAY _Deref_prepost_z_
-	#endif // _MSC_VER >= 1700
-#else
-	#define PRINTF_FORMAT_STRING
-	#define SCANF_FORMAT_STRING
-	#define IN_Z
-	#define IN_CAP(x)
-	#define IN_BYTECAP(x)
-	#define OUT_Z_CAP(x)
-	#define OUT_CAP(x)
-	#define OUT_BYTECAP(x)
-	#define OUT_Z_BYTECAP(x)
-	#define INOUT_BYTECAP(x)
-	#define INOUT_Z_CAP(x)
-	#define INOUT_Z_BYTECAP(x)
-	#define OUT_Z_ARRAY
-	#define INOUT_Z_ARRAY
-#endif
-
-#include <tier1/strtools.h>
 
 #ifdef MY_COMPILER_SUCKS
 	#define COMPILE_TIME_ASSERT( pred ) typedef int UNIQUE_ID[ (pred) ? 1 : -1]
@@ -109,84 +48,14 @@ inline void Error( const char *msg )
 	abort();
 }
 
+#include <tier0/basetypes.h>
+#include <tier0/dbg.h>
+#include <tier0/platform.h>
+
+#include <tier1/strtools.h>
+
 #define MEM_ALLOC_CREDIT_CLASS()
 
-// This is the preferred Min operator. Using the MIN macro can lead to unexpected
-// side-effects or more expensive code.
-template< class T >
-static inline T const & Min( T const &val1, T const &val2 )
-{
-	return val1 < val2 ? val1 : val2;
-}
-
-// This is the preferred Max operator. Using the MAX macro can lead to unexpected
-// side-effects or more expensive code.
-template< class T >
-static inline T const & Max( T const &val1, T const &val2 )
-{
-	return val1 > val2 ? val1 : val2;
-}
-
 #define V_ARRAYSIZE( arr ) ( sizeof((arr)) / sizeof((arr)[0]) )
-
-typedef unsigned int uint;
-
-#ifdef _MSC_VER
-#include <new.h>
-#else
-#include <new>
-#endif
-
-template <class T>
-inline void Construct( T* pMemory )
-{
-	::new( pMemory ) T;
-}
-
-template <class T>
-inline void CopyConstruct( T* pMemory, T const& src )
-{
-	::new( pMemory ) T(src);
-}
-
-template <class T>
-inline void Destruct( T* pMemory )
-{
-	pMemory->~T();
-}
-
-namespace basetypes
-{
-	template <class T>
-	inline bool IsPowerOf2( T n )
-	{
-		return n > 0 && (n & (n - 1)) == 0;
-	}
-
-	template <class T1, class T2>
-	inline T2 ModPowerOf2( T1 a, T2 b )
-	{
-		return T2( a ) & (b - 1);
-	}
-
-	template <class T>
-	inline T RoundDownToMultipleOf( T n, T m )
-	{
-		return n - (IsPowerOf2( m ) ? ModPowerOf2( n, m ) : (n%m));
-	}
-
-	template <class T>
-	inline T RoundUpToMultipleOf( T n, T m )
-	{
-		if ( !n )
-		{
-			return m;
-		}
-		else
-		{
-			return RoundDownToMultipleOf( n + m - 1, m );
-		}
-	}
-}
 
 #endif // MINIUTL_H

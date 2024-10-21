@@ -21,6 +21,8 @@ typedef int64_t int64;
 typedef intptr_t intp;
 typedef uintptr_t uintp;
 
+typedef uint32 uint;
+
 // Why?
 #ifdef _WIN64
 	typedef unsigned int str_size;

@@ -7,12 +7,20 @@
 #include "steamtypes.h"
 #include "steamclientpublic.h"
 
+class ISteamNetworkingConnectionSignaling;
+class ISteamNetworkingSignalingRecvContext;
+class ISteamNetworkingFakeUDPPort;
+class SteamNetworkingQuickConnectionStatus;
+
 //-----------------------------------------------------------------------------
 // SteamNetworkingSockets config.
 
-#ifndef STEAMNETWORKINGSOCKETS_STANDALONELIB
-	#define STEAMNETWORKINGSOCKETS_STANDALONELIB // Support compiling/linking with the standalone library
-#endif
+#define STEAMNETWORKINGSOCKETS_STEAMCLIENT
+#define STEAMNETWORKINGSOCKETS_STATIC_LINK
+
+//TODO
+//#define STEAMNETWORKINGSOCKETS_ENABLE_SDR
+
 //#define STEAMNETWORKINGSOCKETS_STEAMAPI // Support compiling/linking with steam_api.h
 
 // End SteamNetworkingSockets config.
@@ -24,7 +32,7 @@
 #if defined( STEAMNETWORKINGSOCKETS_STATIC_LINK )
 	#define STEAMNETWORKINGSOCKETS_INTERFACE extern "C"
 #elif defined( STEAMNETWORKINGSOCKETS_FOREXPORT )
-	#if defined( _WIN32 ) || defined( __ORBIS__ ) || defined( __PROSPERO__ )
+	#if IsWindows()
 		#define STEAMNETWORKINGSOCKETS_INTERFACE extern "C" __declspec( dllexport )
 	#else
 		#define STEAMNETWORKINGSOCKETS_INTERFACE extern "C" __attribute__((visibility("default")))

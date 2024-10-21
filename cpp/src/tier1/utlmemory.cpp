@@ -44,6 +44,23 @@ CUtlMemoryBase::~CUtlMemoryBase()
 
 
 //-----------------------------------------------------------------------------
+// Memory deallocation
+//-----------------------------------------------------------------------------
+void CUtlMemoryBase::Purge()
+{
+	if ( !IsExternallyAllocated() )
+	{
+		if (m_pMemory)
+		{
+			UTLMEMORY_TRACK_FREE();
+			FreePv( m_pMemory );
+			m_pMemory = 0;
+		}
+		m_nAllocationCount = 0;
+	}
+}
+
+//-----------------------------------------------------------------------------
 // Fast swap
 //-----------------------------------------------------------------------------
 void *CUtlMemoryBase::Detach()
@@ -171,23 +188,6 @@ int UtlMemory_CalcNewAllocationCount( int nAllocationCount, int nGrowSize, int n
 	}
 
 	return nAllocationCount;
-}
-
-//-----------------------------------------------------------------------------
-// Memory deallocation
-//-----------------------------------------------------------------------------
-void CUtlMemoryBase::Purge()
-{
-	if ( !IsExternallyAllocated() )
-	{
-		if (m_pMemory)
-		{
-			UTLMEMORY_TRACK_FREE();
-			FreePv( m_pMemory );
-			m_pMemory = 0;
-		}
-		m_nAllocationCount = 0;
-	}
 }
 
 //-----------------------------------------------------------------------------

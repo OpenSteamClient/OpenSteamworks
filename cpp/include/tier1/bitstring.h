@@ -21,6 +21,7 @@
 #pragma once
 #ifndef BITSTRING_H
 #define BITSTRING_H
+#include <tier0/platform.h>
 
 class CUtlBuffer;
 

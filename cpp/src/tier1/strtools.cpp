@@ -433,3 +433,8 @@ int V_StrTrim( char *pStr )
 
 	return pDest - pStart;
 }
+
+void V_AllocAndSplitString( const char *pString, const char *pSeparator, CUtlVector<char*> &outStrings, bool bIncludeEmptyStrings )
+{
+	V_SplitString2( pString, &pSeparator, 1, outStrings, bIncludeEmptyStrings );
+}
