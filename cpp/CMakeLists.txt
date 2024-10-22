@@ -31,6 +31,7 @@ add_library(tier1_s ${tier1_s_BUILD_TYPE}
     src/tier1/bitstring.cpp
     src/tier1/generichash.cpp
     src/tier1/ipv6text.c
+    src/tier1/netadr.cpp
     src/tier1/strtools.cpp
     src/tier1/utlbuffer.cpp
     src/tier1/utlmemory.cpp

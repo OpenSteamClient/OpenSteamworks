@@ -37,7 +37,7 @@ struct SteamNetworkingQuickConnectionStatus
 #define STEAMNETWORKINGSOCKETS_STEAMCLIENT
 #define STEAMNETWORKINGSOCKETS_STATIC_LINK
 
-//TODO
+//TODO: SDR support
 //#define STEAMNETWORKINGSOCKETS_ENABLE_SDR
 
 //#define STEAMNETWORKINGSOCKETS_STEAMAPI // Support compiling/linking with steam_api.h
@@ -57,7 +57,7 @@ struct SteamNetworkingQuickConnectionStatus
 		#define STEAMNETWORKINGSOCKETS_INTERFACE extern "C" __attribute__((visibility("default")))
 	#endif
 #else
-	#ifdef _WIN32
+	#ifdef IsWindows()
 		#define STEAMNETWORKINGSOCKETS_INTERFACE extern "C" __declspec( dllimport )
 	#else
 		#define STEAMNETWORKINGSOCKETS_INTERFACE extern "C"
