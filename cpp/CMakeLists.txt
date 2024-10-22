@@ -40,11 +40,17 @@ add_library(tier0_s ${tier0_s_BUILD_TYPE}
     src/tier0/dbg.cpp
     src/tier0/platform.cpp)
 
+set_property(TARGET tier0_s PROPERTY POSITION_INDEPENDENT_CODE ON)
+set_property(TARGET tier1_s PROPERTY POSITION_INDEPENDENT_CODE ON)
+
 if (WITH_STEAMPROTO)
     include("../OpenSteamworks.Native/cmake/protobuf_external.cmake")
     file(GLOB_RECURSE steamproto_sources CONFIGURE_DEPENDS "../OpenSteamworks.Native/protobufhack/generated/*.cc")
 
     add_library(steamproto STATIC ${steamproto_sources})
+
+    set_property(TARGET steamproto PROPERTY POSITION_INDEPENDENT_CODE ON)
+
     set_target_properties(steamproto PROPERTIES CXX_STANDARD 14)
     target_link_libraries(steamproto PUBLIC ${Protobuf_LIBRARIES})
 

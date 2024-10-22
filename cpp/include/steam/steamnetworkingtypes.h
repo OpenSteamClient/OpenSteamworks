@@ -10,7 +10,26 @@
 class ISteamNetworkingConnectionSignaling;
 class ISteamNetworkingSignalingRecvContext;
 class ISteamNetworkingFakeUDPPort;
-class SteamNetworkingQuickConnectionStatus;
+
+#pragma pack( push, 8 )
+struct SteamNetworkingQuickConnectionStatus
+{
+	uint32_t m_eState;
+	int32_t m_nPing;
+	float m_flConnectionQualityLocal;
+	float m_flConnectionQualityRemote;
+	float m_flOutPacketsPerSec;
+	float m_flOutBytesPerSec;
+	float m_flInPacketsPerSec;
+	float m_flInBytesPerSec;
+	int32_t m_nSendRateBytesPerSecond;
+	int32_t m_cbPendingUnreliable;
+	int32_t m_cbPendingReliable;
+	int32_t m_cbSentUnackedReliable;
+	int64_t m_usecQueueTime;
+	uint32_t (reserved)[16];
+};
+#pragma pack( pop )
 
 //-----------------------------------------------------------------------------
 // SteamNetworkingSockets config.
@@ -933,7 +952,7 @@ struct SteamNetworkingMessage_t
 	inline SteamNetworkingMicroseconds GetTimeReceived() const { return m_usecTimeReceived; }
 	inline int64 GetMessageNumber() const { return m_nMessageNumber; }
 #endif
-protected:
+public:
 	// Declare destructor protected.  You should never need to declare a message
 	// object on the stack or create one yourself.
 	// - You will receive a pointer to a message object when you receive messages (e.g. ISteamNetworkingSockets::ReceiveMessagesOnConnection)
