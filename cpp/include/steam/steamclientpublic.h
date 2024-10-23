@@ -692,6 +692,14 @@ struct FriendSessionStateInfo_t
 
 #pragma pack( push, VALVE_CALLBACK_SIZE )
 
+struct SteamItemDetails_t
+{
+	SteamItemInstanceID_t m_itemId;
+	SteamItemDef_t m_iDefinition;
+	uint16 m_unQuantity;
+	uint16 m_unFlags; // see ESteamItemFlags
+};
+
 struct SteamPartyBeaconLocation_t
 {
 	ESteamPartyBeaconLocationType m_eType;

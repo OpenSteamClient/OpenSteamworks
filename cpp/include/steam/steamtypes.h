@@ -69,6 +69,24 @@ const GMSQueryHandle_t k_ulQueryHandleInvalid = 0;
 typedef uint32_t HAuthTicket;
 const HAuthTicket k_HAuthTicketInvalid = 0;
 
+// Types of items in your game are identified by a 32-bit "item definition number".
+// Valid definition numbers are between 1 and 999999999; numbers less than or equal to
+// zero are invalid, and numbers greater than or equal to one billion (1x10^9) are
+// reserved for internal Steam use.
+typedef int32 SteamItemDef_t;
+
+typedef int32 SteamInventoryResult_t;
+static const SteamInventoryResult_t k_SteamInventoryResultInvalid = -1;
+
+typedef uint64 SteamInventoryUpdateHandle_t;
+const SteamInventoryUpdateHandle_t k_SteamInventoryUpdateHandleInvalid = 0xffffffffffffffffull;
+
+// Every individual instance of an item has a globally-unique ItemInstanceID.
+// This ID is unique to the combination of (player, specific item instance)
+// and will not be transferred to another player or re-used for another item.
+typedef uint64 SteamItemInstanceID_t;
+static const SteamItemInstanceID_t k_SteamItemInstanceIDInvalid = (SteamItemInstanceID_t)~0;
+
 // Forward declare
 class SteamNetworkingIdentity;
 
@@ -84,6 +102,9 @@ class SteamNetworkingIdentity;
 #define STEAM_OUT_STRUCT()
 #define STEAM_OUT_ARRAY_CALL(x, y, z)
 #define STEAM_OUT_STRING_COUNT(x)
+#define STEAM_OUT_BUFFER_COUNT(x)
+#define STEAM_BUFFER_COUNT(x)
+#define STEAM_DESC(x)
 
 // maximum number of characters a lobby metadata key can be
 #define k_nMaxLobbyKeyLength 255
