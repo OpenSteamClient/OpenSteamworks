@@ -3,19 +3,6 @@
 #include <steam/steamuniverse.h>
 // enums.h purpose: All Client API enums. Add new enums at the top. Add public enums in steam/steamenums.h
 
-enum ESteamItemFlags
-{
-	// Item status flags - these flags are permanently attached to specific item instances
-	k_ESteamItemNoTrade = 1 << 0, // This item is account-locked and cannot be traded or given away.
-
-	// Action confirmation flags - these flags are set one time only, as part of a result set
-	k_ESteamItemRemoved = 1 << 8,	// The item has been destroyed, traded away, expired, or otherwise invalidated
-	k_ESteamItemConsumed = 1 << 9,	// The item quantity has been decreased by 1 via ConsumeItem API.
-
-	// All other flag bits are currently reserved for internal Steam use at this time.
-	// Do not assume anything about the state of other flags which are not defined here.
-};
-
 enum ELauncherType
 {
 	k_ELauncherTypeDefault = 0,

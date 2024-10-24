@@ -14,10 +14,10 @@
 class IClientMusic
 {
 public:
-    virtual unknown_ret BIsEnabled() = 0; //argc: 0, index 1
+    virtual bool BIsEnabled() = 0; //argc: 0, index 1
     virtual unknown_ret Enable() = 0; //argc: 1, index 2
     virtual unknown_ret EnableCrawlLogging() = 0; //argc: 1, index 3
-    virtual unknown_ret BIsPlaying() = 0; //argc: 0, index 4
+    virtual bool BIsPlaying() = 0; //argc: 0, index 4
     virtual unknown_ret GetQueueCount() = 0; //argc: 0, index 5
     virtual unknown_ret GetCurrentQueueEntry() = 0; //argc: 0, index 6
     virtual unknown_ret GetQueueEntryURI() = 0; //argc: 3, index 7
@@ -30,20 +30,20 @@ public:
     virtual unknown_ret AddAllTracksOfAlbumIDToQueue() = 0; //argc: 5, index 14
     virtual unknown_ret AddTracksOfPlaylistIDToQueue() = 0; //argc: 6, index 15
     virtual unknown_ret SetSuppressAutoTrackAdvance() = 0; //argc: 1, index 16
-    virtual unknown_ret GetPlaybackStatus() = 0; //argc: 0, index 17
+    virtual AudioPlayback_Status GetPlaybackStatus() = 0; //argc: 0, index 17
     virtual unknown_ret SetPlayingRepeatStatus() = 0; //argc: 1, index 18
     virtual unknown_ret GetPlayingRepeatStatus() = 0; //argc: 0, index 19
     virtual unknown_ret TogglePlayingRepeatStatus() = 0; //argc: 0, index 20
     virtual unknown_ret SetPlayingShuffled() = 0; //argc: 1, index 21
     virtual unknown_ret IsPlayingShuffled() = 0; //argc: 0, index 22
-    virtual unknown_ret Play() = 0; //argc: 0, index 23
-    virtual unknown_ret Pause() = 0; //argc: 0, index 24
-    virtual unknown_ret PlayPrevious() = 0; //argc: 0, index 25
-    virtual unknown_ret PlayNext() = 0; //argc: 0, index 26
+    virtual void Play() = 0; //argc: 0, index 23
+    virtual void Pause() = 0; //argc: 0, index 24
+    virtual void PlayPrevious() = 0; //argc: 0, index 25
+    virtual void PlayNext() = 0; //argc: 0, index 26
     virtual unknown_ret PlayEntry() = 0; //argc: 1, index 27
     virtual unknown_ret TogglePlayPause() = 0; //argc: 0, index 28
-    virtual unknown_ret SetVolume() = 0; //argc: 1, index 29
-    virtual unknown_ret GetVolume() = 0; //argc: 0, index 30
+    virtual void SetVolume(float flVolume) = 0; //argc: 1, index 29
+    virtual float GetVolume() = 0; //argc: 0, index 30
     virtual unknown_ret ToggleMuteVolume() = 0; //argc: 0, index 31
     virtual unknown_ret IncreaseVolume() = 0; //argc: 0, index 32
     virtual unknown_ret DecreaseVolume() = 0; //argc: 0, index 33

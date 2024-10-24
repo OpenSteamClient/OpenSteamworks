@@ -1,6 +1,58 @@
 #pragma once
 #include <stdint.h>
 
+enum EVRScreenshotType
+{
+	k_EVRScreenshotType_None			= 0,
+	k_EVRScreenshotType_Mono			= 1,
+	k_EVRScreenshotType_Stereo			= 2,
+	k_EVRScreenshotType_MonoCubemap		= 3,
+	k_EVRScreenshotType_MonoPanorama	= 4,
+	k_EVRScreenshotType_StereoPanorama	= 5
+};
+
+// Feature types for parental settings
+enum EParentalFeature
+{
+	k_EFeatureInvalid = 0,
+	k_EFeatureStore = 1,
+	k_EFeatureCommunity = 2,
+	k_EFeatureProfile = 3,
+	k_EFeatureFriends = 4,
+	k_EFeatureNews = 5,
+	k_EFeatureTrading = 6,
+	k_EFeatureSettings = 7,
+	k_EFeatureConsole = 8,
+	k_EFeatureBrowser = 9,
+	k_EFeatureParentalSetup = 10,
+	k_EFeatureLibrary = 11,
+	k_EFeatureTest = 12,
+	k_EFeatureSiteLicense = 13,
+	k_EFeatureKioskMode = 14,
+	k_EFeatureMax
+};
+
+enum AudioPlayback_Status
+{
+	AudioPlayback_Undefined = 0, 
+	AudioPlayback_Playing = 1,
+	AudioPlayback_Paused = 2,
+	AudioPlayback_Idle = 3
+};
+
+enum ESteamItemFlags
+{
+	// Item status flags - these flags are permanently attached to specific item instances
+	k_ESteamItemNoTrade = 1 << 0, // This item is account-locked and cannot be traded or given away.
+
+	// Action confirmation flags - these flags are set one time only, as part of a result set
+	k_ESteamItemRemoved = 1 << 8,	// The item has been destroyed, traded away, expired, or otherwise invalidated
+	k_ESteamItemConsumed = 1 << 9,	// The item quantity has been decreased by 1 via ConsumeItem API.
+
+	// All other flag bits are currently reserved for internal Steam use at this time.
+	// Do not assume anything about the state of other flags which are not defined here.
+};
+
 enum EWorkshopFileType
 {
 	k_EWorkshopFileTypeFirst = 0,

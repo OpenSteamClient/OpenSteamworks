@@ -87,6 +87,19 @@ const SteamInventoryUpdateHandle_t k_SteamInventoryUpdateHandleInvalid = 0xfffff
 typedef uint64 SteamItemInstanceID_t;
 static const SteamItemInstanceID_t k_SteamItemInstanceIDInvalid = (SteamItemInstanceID_t)~0;
 
+const uint32 k_nScreenshotMaxTaggedUsers = 32;
+const uint32 k_nScreenshotMaxTaggedPublishedFiles = 32;
+const int k_cubUFSTagTypeMax = 255;
+const int k_cubUFSTagValueMax = 255;
+
+// Required with of a thumbnail provided to AddScreenshotToLibrary.  If you do not provide a thumbnail
+// one will be generated.
+const int k_ScreenshotThumbWidth = 200;
+
+// Handle is valid for the lifetime of your process and no longer
+typedef uint32 ScreenshotHandle;
+#define INVALID_SCREENSHOT_HANDLE 0
+
 // Forward declare
 class SteamNetworkingIdentity;
 

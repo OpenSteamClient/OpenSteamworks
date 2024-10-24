@@ -16,7 +16,7 @@ class IClientInventory
 public:
     virtual EResult GetResultStatus(SteamInventoryResult_t resultHandle) = 0; //argc: 1, index 1
     virtual void DestroyResult(SteamInventoryResult_t resultHandle) = 0; //argc: 1, index 2
-    virtual bool GetResultItems(SteamInventoryResult_t resultHandle, SteamItemDetails_t *pOutItemsArray, int32 outItemsArrayMax, uint32 *punOutItemsArraySize) = 0; //argc: 4, index 3
+    virtual bool GetResultItems(SteamInventoryResult_t resultHandle, SteamItemDetails_t *pOutItemsArray, uint32 outItemsArrayMax, uint32 *punOutItemsArraySize) = 0; //argc: 4, index 3
     virtual bool GetResultItemProperty(SteamInventoryResult_t resultHandle, uint32 unItemIndex, const char *pchPropertyName, char *pchValueBuffer, uint32 unValueBufferSize, uint32 *punValueBufferSizeOut) = 0; //argc: 6, index 4
     virtual uint32 GetResultTimestamp(SteamInventoryResult_t resultHandle) = 0; //argc: 1, index 5
     virtual bool CheckResultSteamID(SteamInventoryResult_t resultHandle, CSteamID steamIDExpected) = 0; //argc: 3, index 6
@@ -37,7 +37,7 @@ public:
     virtual bool GetItemDefinitionProperty(SteamItemDef_t iDefinition, const char *pchPropertyName, char *pchValueBuffer, uint32 cubValueBuffer, uint32 *punValueBufferSizeOut) = 0; //argc: 5, index 21
     virtual SteamAPICall_t RequestEligiblePromoItemDefinitionsIDs(CSteamID steamID) = 0; //argc: 2, index 22
     virtual bool GetEligiblePromoItemDefinitionIDs(CSteamID steamID, SteamItemDef_t *pItemDefIDs, uint32 itemDefIDsLen, uint32 *punItemDefIDsArraySize) = 0; //argc: 5, index 23
-    virtual SteamAPICall_t StartPurchase(STEAM_ARRAY_COUNT(unArrayLength) const SteamItemDef_t *pArrayItemDefs, uint32 arrayItemDefsLen, const uint32 *punArrayQuantity, uint32 unArrayQuantityLength) = 0; //argc: 4, index 24
+    virtual SteamAPICall_t StartPurchase(const SteamItemDef_t *pArrayItemDefs, uint32 arrayItemDefsLen, const uint32 *punArrayQuantity, uint32 unArrayQuantityLength) = 0; //argc: 4, index 24
     virtual SteamAPICall_t RequestPrices() = 0; //argc: 0, index 25
     virtual uint32 GetNumItemsWithPrices() = 0; //argc: 0, index 26
     virtual bool GetItemsWithPrices(SteamItemDef_t *pArrayItemDefs, uint64 *pCurrentPrices, uint64 *pBasePrices, uint32 unPricesLength) = 0; //argc: 4, index 27
