@@ -14,12 +14,12 @@
 class IClientRemotePlay
 {
 public:
-    virtual unknown_ret GetSessionCount() = 0; //argc: 0, index 1
-    virtual unknown_ret GetSessionID() = 0; //argc: 1, index 2
-    virtual unknown_ret GetSessionSteamID() = 0; //argc: 2, index 3
-    virtual unknown_ret GetSessionClientName() = 0; //argc: 1, index 4
-    virtual unknown_ret GetSessionClientFormFactor() = 0; //argc: 1, index 5
-    virtual unknown_ret BGetSessionClientResolution() = 0; //argc: 3, index 6
-    virtual unknown_ret BStartRemotePlayTogether() = 0; //argc: 1, index 7
-    virtual unknown_ret BSendRemotePlayTogetherInvite() = 0; //argc: 2, index 8
+    virtual uint32 GetSessionCount() = 0; //argc: 0, index 1
+    virtual RemotePlaySessionID_t GetSessionID(int iSessionIndex) = 0; //argc: 1, index 2
+    virtual CSteamID GetSessionSteamID(RemotePlaySessionID_t unSessionID) = 0; //argc: 2, index 3
+    virtual const char *GetSessionClientName(RemotePlaySessionID_t unSessionID) = 0; //argc: 1, index 4
+    virtual ESteamDeviceFormFactor GetSessionClientFormFactor(RemotePlaySessionID_t unSessionID) = 0; //argc: 1, index 5
+    virtual bool BGetSessionClientResolution(RemotePlaySessionID_t unSessionID, int *pnResolutionX, int *pnResolutionY) = 0; //argc: 3, index 6
+    virtual bool BStartRemotePlayTogether(bool bShowOverlay) = 0; //argc: 1, index 7
+    virtual bool BSendRemotePlayTogetherInvite(CSteamID steamIDFriend) = 0; //argc: 2, index 8
 };

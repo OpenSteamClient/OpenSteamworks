@@ -36,9 +36,7 @@ struct SteamNetworkingQuickConnectionStatus
 
 #define STEAMNETWORKINGSOCKETS_STEAMCLIENT
 #define STEAMNETWORKINGSOCKETS_STATIC_LINK
-
-//TODO: SDR support
-//#define STEAMNETWORKINGSOCKETS_ENABLE_SDR
+#define STEAMNETWORKINGSOCKETS_ENABLE_SDR
 
 //#define STEAMNETWORKINGSOCKETS_STEAMAPI // Support compiling/linking with steam_api.h
 

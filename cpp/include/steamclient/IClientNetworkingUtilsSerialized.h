@@ -14,9 +14,9 @@
 class IClientNetworkingUtilsSerialized
 {
 public:
-    virtual unknown_ret GetNetworkConfigJSON_DEPRECATED() = 0; //argc: 3, index 1
+    virtual int GetNetworkConfigJSON_DEPRECATED(void *buf, uint32 cbBuf, const char *pszLauncherPartner) = 0; //argc: 3, index 1
     virtual ELauncherType GetLauncherType() = 0; //argc: 0, index 2
-    virtual unknown_ret TEST_ClearCachedNetworkConfig() = 0; //argc: 0, index 3
+    virtual void TEST_ClearCachedNetworkConfig() = 0; //argc: 0, index 3
     virtual void PostConnectionStateMsg(const void *pData, int cubData) = 0; //argc: 2, index 4
     virtual void PostConnectionStateUpdatesForAllConnections() = 0; //argc: 0, index 5
     virtual void PostAppSummaryUpdates() = 0; //argc: 0, index 6

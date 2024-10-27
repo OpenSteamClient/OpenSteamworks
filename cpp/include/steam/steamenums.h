@@ -1,6 +1,153 @@
 #pragma once
 #include <stdint.h>
 
+//-----------------------------------------------------------------------------
+// Purpose: The form factor of a device
+//-----------------------------------------------------------------------------
+enum ESteamDeviceFormFactor
+{
+	k_ESteamDeviceFormFactorUnknown		= 0,
+	k_ESteamDeviceFormFactorPhone		= 1,
+	k_ESteamDeviceFormFactorTablet		= 2,
+	k_ESteamDeviceFormFactorComputer	= 3,
+	k_ESteamDeviceFormFactorTV			= 4,
+};
+
+// Matching UGC types for queries
+enum EUGCMatchingUGCType
+{
+	k_EUGCMatchingUGCType_Items				 = 0,		// both mtx items and ready-to-use items
+	k_EUGCMatchingUGCType_Items_Mtx			 = 1,
+	k_EUGCMatchingUGCType_Items_ReadyToUse	 = 2,
+	k_EUGCMatchingUGCType_Collections		 = 3,
+	k_EUGCMatchingUGCType_Artwork			 = 4,
+	k_EUGCMatchingUGCType_Videos			 = 5,
+	k_EUGCMatchingUGCType_Screenshots		 = 6,
+	k_EUGCMatchingUGCType_AllGuides			 = 7,		// both web guides and integrated guides
+	k_EUGCMatchingUGCType_WebGuides			 = 8,
+	k_EUGCMatchingUGCType_IntegratedGuides	 = 9,
+	k_EUGCMatchingUGCType_UsableInGame		 = 10,		// ready-to-use items and integrated guides
+	k_EUGCMatchingUGCType_ControllerBindings = 11,
+	k_EUGCMatchingUGCType_GameManagedItems	 = 12,		// game managed items (not managed by users)
+	k_EUGCMatchingUGCType_All				 = ~0,		// @note: will only be valid for CreateQueryUserUGCRequest requests
+};
+
+// Different lists of published UGC for a user.
+// If the current logged in user is different than the specified user, then some options may not be allowed.
+enum EUserUGCList
+{
+	k_EUserUGCList_Published,
+	k_EUserUGCList_VotedOn,
+	k_EUserUGCList_VotedUp,
+	k_EUserUGCList_VotedDown,
+	k_EUserUGCList_WillVoteLater,
+	k_EUserUGCList_Favorited,
+	k_EUserUGCList_Subscribed,
+	k_EUserUGCList_UsedOrPlayed,
+	k_EUserUGCList_Followed,
+};
+
+// Sort order for user published UGC lists (defaults to creation order descending)
+enum EUserUGCListSortOrder
+{
+	k_EUserUGCListSortOrder_CreationOrderDesc,
+	k_EUserUGCListSortOrder_CreationOrderAsc,
+	k_EUserUGCListSortOrder_TitleAsc,
+	k_EUserUGCListSortOrder_LastUpdatedDesc,
+	k_EUserUGCListSortOrder_SubscriptionDateDesc,
+	k_EUserUGCListSortOrder_VoteScoreDesc,
+	k_EUserUGCListSortOrder_ForModeration,
+};
+
+// Combination of sorting and filtering for queries across all UGC
+enum EUGCQuery
+{
+	k_EUGCQuery_RankedByVote								  = 0,
+	k_EUGCQuery_RankedByPublicationDate						  = 1,
+	k_EUGCQuery_AcceptedForGameRankedByAcceptanceDate		  = 2,
+	k_EUGCQuery_RankedByTrend								  = 3,
+	k_EUGCQuery_FavoritedByFriendsRankedByPublicationDate	  = 4,
+	k_EUGCQuery_CreatedByFriendsRankedByPublicationDate		  = 5,
+	k_EUGCQuery_RankedByNumTimesReported					  = 6,
+	k_EUGCQuery_CreatedByFollowedUsersRankedByPublicationDate = 7,
+	k_EUGCQuery_NotYetRated									  = 8,
+	k_EUGCQuery_RankedByTotalVotesAsc						  = 9,
+	k_EUGCQuery_RankedByVotesUp								  = 10,
+	k_EUGCQuery_RankedByTextSearch							  = 11,
+	k_EUGCQuery_RankedByTotalUniqueSubscriptions			  = 12,
+	k_EUGCQuery_RankedByPlaytimeTrend						  = 13,
+	k_EUGCQuery_RankedByTotalPlaytime						  = 14,
+	k_EUGCQuery_RankedByAveragePlaytimeTrend				  = 15,
+	k_EUGCQuery_RankedByLifetimeAveragePlaytime				  = 16,
+	k_EUGCQuery_RankedByPlaytimeSessionsTrend				  = 17,
+	k_EUGCQuery_RankedByLifetimePlaytimeSessions			  = 18,
+	k_EUGCQuery_RankedByLastUpdatedDate						  = 19,
+};
+
+enum EItemUpdateStatus
+{
+	k_EItemUpdateStatusInvalid 				= 0, // The item update handle was invalid, job might be finished, listen too SubmitItemUpdateResult_t
+	k_EItemUpdateStatusPreparingConfig 		= 1, // The item update is processing configuration data
+	k_EItemUpdateStatusPreparingContent		= 2, // The item update is reading and processing content files
+	k_EItemUpdateStatusUploadingContent		= 3, // The item update is uploading content changes to Steam
+	k_EItemUpdateStatusUploadingPreviewFile	= 4, // The item update is uploading new preview file image
+	k_EItemUpdateStatusCommittingChanges	= 5  // The item update is committing all changes
+};
+
+enum EItemState
+{
+	k_EItemStateNone			= 0,	// item not tracked on client
+	k_EItemStateSubscribed		= 1,	// current user is subscribed to this item. Not just cached.
+	k_EItemStateLegacyItem		= 2,	// item was created with ISteamRemoteStorage
+	k_EItemStateInstalled		= 4,	// item is installed and usable (but maybe out of date)
+	k_EItemStateNeedsUpdate		= 8,	// items needs an update. Either because it's not installed yet or creator updated content
+	k_EItemStateDownloading		= 16,	// item update is currently downloading
+	k_EItemStateDownloadPending	= 32,	// DownloadItem() was called for this item, content isn't available until DownloadItemResult_t is fired
+};
+
+enum EItemStatistic
+{
+	k_EItemStatistic_NumSubscriptions					 = 0,
+	k_EItemStatistic_NumFavorites						 = 1,
+	k_EItemStatistic_NumFollowers						 = 2,
+	k_EItemStatistic_NumUniqueSubscriptions				 = 3,
+	k_EItemStatistic_NumUniqueFavorites					 = 4,
+	k_EItemStatistic_NumUniqueFollowers					 = 5,
+	k_EItemStatistic_NumUniqueWebsiteViews				 = 6,
+	k_EItemStatistic_ReportScore						 = 7,
+	k_EItemStatistic_NumSecondsPlayed					 = 8,
+	k_EItemStatistic_NumPlaytimeSessions				 = 9,
+	k_EItemStatistic_NumComments						 = 10,
+	k_EItemStatistic_NumSecondsPlayedDuringTimePeriod	 = 11,
+	k_EItemStatistic_NumPlaytimeSessionsDuringTimePeriod = 12,
+};
+
+enum EItemPreviewType
+{
+	k_EItemPreviewType_Image							= 0,	// standard image file expected (e.g. jpg, png, gif, etc.)
+	k_EItemPreviewType_YouTubeVideo						= 1,	// video id is stored
+	k_EItemPreviewType_Sketchfab						= 2,	// model id is stored
+	k_EItemPreviewType_EnvironmentMap_HorizontalCross	= 3,	// standard image file expected - cube map in the layout
+																// +---+---+-------+
+																// |   |Up |       |
+																// +---+---+---+---+
+																// | L | F | R | B |
+																// +---+---+---+---+
+																// |   |Dn |       |
+																// +---+---+---+---+
+	k_EItemPreviewType_EnvironmentMap_LatLong			= 4,	// standard image file expected
+	k_EItemPreviewType_ReservedMax						= 255,	// you can specify your own types above this value
+};
+
+enum EUGCContentDescriptorID
+{
+	k_EUGCContentDescriptor_NudityOrSexualContent	= 1,
+	k_EUGCContentDescriptor_FrequentViolenceOrGore	= 2,
+	k_EUGCContentDescriptor_AdultOnlySexualContent	= 3,
+	k_EUGCContentDescriptor_GratuitousSexualContent = 4,
+	k_EUGCContentDescriptor_AnyMatureContent		= 5,
+};
+
 enum EVRScreenshotType
 {
 	k_EVRScreenshotType_None			= 0,

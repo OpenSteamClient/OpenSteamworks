@@ -100,6 +100,25 @@ const int k_ScreenshotThumbWidth = 200;
 typedef uint32 ScreenshotHandle;
 #define INVALID_SCREENSHOT_HANDLE 0
 
+typedef uint64 UGCQueryHandle_t;
+const UGCQueryHandle_t k_UGCQueryHandleInvalid = 0xffffffffffffffffull;
+
+typedef uint64 UGCUpdateHandle_t;
+const UGCUpdateHandle_t k_UGCUpdateHandleInvalid = 0xffffffffffffffffull;
+
+// Steam Remote Play session ID
+typedef uint32 RemotePlaySessionID_t;
+
+const uint32 kNumUGCResultsPerPage = 50;
+const uint32 k_cchDeveloperMetadataMax = 5000;
+const uint32 k_cchPublishedDocumentTitleMax = 128 + 1;
+const uint32 k_cchPublishedDocumentDescriptionMax = 8000;
+const uint32 k_cchPublishedDocumentChangeDescriptionMax = 8000;
+const uint32 k_unEnumeratePublishedFilesMaxResults = 50;
+const uint32 k_cchTagListMax = 1024 + 1;
+const uint32 k_cchFilenameMax = 260;
+const uint32 k_cchPublishedFileURLMax = 256;
+
 // Forward declare
 class SteamNetworkingIdentity;
 

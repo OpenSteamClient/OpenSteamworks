@@ -5,6 +5,7 @@
 #include <tier1/utlbuffer.h>
 #include <tier1/utlmap.h>
 #include <steam/steamtypes.h>
+#include <steam/steam_api_common.h>
 
 typedef uint32_t HSharedConnection;
 typedef int32_t LibraryFolder_t;
@@ -28,6 +29,26 @@ struct CallbackMsg_t {
 
 #include <steam/steamclientpublic.h>
 
+#pragma pack(push, VALVE_CALLBACK_SIZE)
+
+struct SteamNetworkingSocketsCert_t
+{
+	enum { k_iCallback = k_iSteamNetworkingCallbacks + 96 };
+
+	EResult m_eResult;
+	uint32 m_cbCert;
+	char m_cert[0x200];
+	uint64 m_caKeyID;
+	uint32 m_cbSignature;
+	char m_signature[0x80];
+	uint32 m_cbPrivKey;
+	char m_privKey[0x80];
+};
+
+#pragma pack(pop)
+
+#pragma pack( push, 1 )
+
 struct AppStateInfo_s {
     // Purpose unknown.
     // If we have appinfo, it's 4, otherwise 0.
@@ -39,6 +60,8 @@ struct AppStateInfo_s {
     uint32 lastChangeNumber;
     uint32 unk8;
     uint32 unk9;
-    uint32 unk10;
-    uint32 unk11;
 };
+
+#pragma pack( pop )
+
+static_assert(sizeof(AppStateInfo_s) == 36);
