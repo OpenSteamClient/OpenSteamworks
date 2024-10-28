@@ -41,6 +41,8 @@ struct SteamNetworkingSocketsCert_t
 	uint64 m_caKeyID;
 	uint32 m_cbSignature;
 	char m_signature[0x80];
+
+	// Pub/Priv keypair. Public is first 32, priv is next 32
 	uint32 m_cbPrivKey;
 	char m_privKey[0x80];
 };

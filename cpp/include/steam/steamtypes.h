@@ -109,6 +109,9 @@ const UGCUpdateHandle_t k_UGCUpdateHandleInvalid = 0xffffffffffffffffull;
 // Steam Remote Play session ID
 typedef uint32 RemotePlaySessionID_t;
 
+typedef uint32 HTTPRequestHandle;
+typedef uint32 HTTPCookieContainerHandle;
+
 const uint32 kNumUGCResultsPerPage = 50;
 const uint32 k_cchDeveloperMetadataMax = 5000;
 const uint32 k_cchPublishedDocumentTitleMax = 128 + 1;
