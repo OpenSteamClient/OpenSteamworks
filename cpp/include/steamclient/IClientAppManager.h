@@ -30,7 +30,7 @@ public:
     virtual bool SetDlcContext(AppId_t nAppID, AppId_t nDlcID) = 0; //argc: 2, index 14
     virtual unknown_ret GetDlcSizes() = 0; //argc: 4, index 15
     virtual int GetNumInstalledApps() = 0; //argc: 0, index 16
-    virtual unknown_ret GetInstalledApps() = 0; //argc: 2, index 17
+    virtual int GetInstalledApps(AppId_t* pvecAppID, uint32 unMaxAppIDs) = 0; //argc: 2, index 17
     virtual unknown_ret BIsWaitingForInstalledApps() = 0; //argc: 0, index 18
     virtual unknown_ret GetAppDependencies() = 0; //argc: 3, index 19
     virtual unknown_ret GetDependentApps() = 0; //argc: 3, index 20

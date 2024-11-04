@@ -14,7 +14,7 @@
 class IClientGameCoordinator
 {
 public:
-    virtual unknown_ret SendMessage() = 0; //argc: 4, index 1
-    virtual unknown_ret IsMessageAvailable() = 0; //argc: 2, index 2
-    virtual unknown_ret RetrieveMessage() = 0; //argc: 5, index 3
+    virtual EGCResults SendMessage(AppId_t nAppID, uint32 unMsgType, const void *pubData, uint32 cubData) = 0; //argc: 4, index 1
+    virtual bool IsMessageAvailable(AppId_t nAppID, uint32 *pcubMsgSize) = 0; //argc: 2, index 2
+    virtual EGCResults RetrieveMessage(AppId_t nAppID, uint32 *punMsgType, void *pubDest, uint32 cubDest, uint32 *pcubMsgSize) = 0; //argc: 5, index 3
 };

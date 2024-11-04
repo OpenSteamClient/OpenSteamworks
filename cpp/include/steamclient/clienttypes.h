@@ -25,6 +25,35 @@ struct CallbackMsg_t {
 	int m_iCallback;
 	void* m_pubParam;
 	int m_cubParam;
+public:
+
+	// Zero-init ctor.
+	CallbackMsg_t()
+	{
+		m_hSteamUser = 0;
+		m_iCallback = 0;
+		m_pubParam = nullptr;
+		m_cubParam = 0;
+	}
+
+
+	// Does not copy.
+	CallbackMsg_t(HSteamUser hSteamUser, int iCallback, void *pubParam, int cubParam)
+	{
+		m_hSteamUser = hSteamUser;
+		m_iCallback = iCallback;
+		m_pubParam = pubParam;
+		m_cubParam = cubParam;
+	}
+
+	// Copies callback body from pubParam.
+	static CallbackMsg_t *Copy(HSteamUser hSteamUser, int iCallback, const void *pubParam, int cubParam)
+	{
+		auto mem = malloc(cubParam);
+		memcpy(mem, pubParam, cubParam);
+
+		return new CallbackMsg_t(hSteamUser, iCallback, mem, cubParam);
+	}
 };
 
 #include <steam/steamclientpublic.h>
