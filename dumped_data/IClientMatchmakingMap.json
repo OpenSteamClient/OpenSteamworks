@@ -5,8 +5,8 @@
             "name": "GetFavoriteGameCount",
             "argc": "1",
             "interfaceid": "6",
-            "functionid": "3709133845",
-            "fencepost": "3740779705",
+            "functionid": "3709133852",
+            "fencepost": "3740666809",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -18,8 +18,8 @@
             "name": "GetFavoriteGame",
             "argc": "8",
             "interfaceid": "6",
-            "functionid": "2472140565",
-            "fencepost": "2503931586",
+            "functionid": "2472140570",
+            "fencepost": "2503818688",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -38,8 +38,8 @@
             "name": "AddFavoriteGame",
             "argc": "7",
             "interfaceid": "6",
-            "functionid": "1132054094",
-            "fencepost": "1163974147",
+            "functionid": "1132054081",
+            "fencepost": "1163861231",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -57,8 +57,8 @@
             "name": "RemoveFavoriteGame",
             "argc": "6",
             "interfaceid": "6",
-            "functionid": "2280894418",
-            "fencepost": "2312830600",
+            "functionid": "2280894427",
+            "fencepost": "2312717706",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -75,8 +75,8 @@
             "name": "RequestLobbyList",
             "argc": "1",
             "interfaceid": "6",
-            "functionid": "1326870474",
-            "fencepost": "1358822785",
+            "functionid": "1326870465",
+            "fencepost": "1358709873",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -88,8 +88,8 @@
             "name": "AddRequestLobbyListStringFilter",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "2371909296",
-            "fencepost": "2403877736",
+            "functionid": "2371909305",
+            "fencepost": "2403764842",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "string",
@@ -103,8 +103,8 @@
             "name": "AddRequestLobbyListNumericalFilter",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "1385395844",
-            "fencepost": "1417380413",
+            "functionid": "1385395843",
+            "fencepost": "1417267509",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "string",
@@ -118,8 +118,8 @@
             "name": "AddRequestLobbyListNearValueFilter",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "1122347386",
-            "fencepost": "1154348084",
+            "functionid": "1122347267",
+            "fencepost": "1154235062",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "string",
@@ -132,8 +132,8 @@
             "name": "AddRequestLobbyListFilterSlotsAvailable",
             "argc": "2",
             "interfaceid": "6",
-            "functionid": "3929136065",
-            "fencepost": "3961152892",
+            "functionid": "3929136058",
+            "fencepost": "3961039982",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -145,8 +145,8 @@
             "name": "AddRequestLobbyListDistanceFilter",
             "argc": "2",
             "interfaceid": "6",
-            "functionid": "556694702",
-            "fencepost": "588727658",
+            "functionid": "556694743",
+            "fencepost": "588614796",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -158,8 +158,8 @@
             "name": "AddRequestLobbyListResultCountFilter",
             "argc": "2",
             "interfaceid": "6",
-            "functionid": "3672617761",
-            "fencepost": "3704666846",
+            "functionid": "3672617822",
+            "fencepost": "3704554004",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -171,8 +171,8 @@
             "name": "AddRequestLobbyListCompatibleMembersFilter",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "2799973470",
-            "fencepost": "2832038684",
+            "functionid": "2799973415",
+            "fencepost": "2831925726",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -184,8 +184,8 @@
             "name": "GetLobbyByIndex",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "441029215",
-            "fencepost": "473126687",
+            "functionid": "441029158",
+            "fencepost": "473013727",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -198,8 +198,8 @@
             "name": "CreateLobby",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "4052137754",
-            "fencepost": "4084267484",
+            "functionid": "4052137747",
+            "fencepost": "4084154574",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -213,8 +213,8 @@
             "name": "JoinLobby",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "2075246467",
-            "fencepost": "2107392326",
+            "functionid": "2075246472",
+            "fencepost": "2107279428",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -227,8 +227,8 @@
             "name": "LeaveLobby",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "2045601998",
-            "fencepost": "2077763986",
+            "functionid": "2045601991",
+            "fencepost": "2077651076",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -240,8 +240,8 @@
             "name": "InviteUserToLobby",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "1765995985",
-            "fencepost": "1798174102",
+            "functionid": "1765995998",
+            "fencepost": "1798061212",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -255,8 +255,8 @@
             "name": "GetNumLobbyMembers",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "2713759751",
-            "fencepost": "2745953997",
+            "functionid": "2713759758",
+            "fencepost": "2745841101",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -269,8 +269,8 @@
             "name": "GetLobbyMemberByIndex",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "578700200",
-            "fencepost": "610910575",
+            "functionid": "578700195",
+            "fencepost": "610797667",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -284,8 +284,8 @@
             "name": "GetLobbyData",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "478478159",
-            "fencepost": "510704663",
+            "functionid": "478478150",
+            "fencepost": "510591751",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -299,8 +299,8 @@
             "name": "SetLobbyData",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "1676292390",
-            "fencepost": "1708535023",
+            "functionid": "1676292385",
+            "fencepost": "1708422115",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -315,8 +315,8 @@
             "name": "GetLobbyDataCount",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "888772271",
-            "fencepost": "921063291",
+            "functionid": "888772278",
+            "fencepost": "920950395",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -329,8 +329,8 @@
             "name": "GetLobbyDataByIndex",
             "argc": "8",
             "interfaceid": "6",
-            "functionid": "2287073800",
-            "fencepost": "2319493852",
+            "functionid": "2287073815",
+            "fencepost": "2319380964",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -348,8 +348,8 @@
             "name": "DeleteLobbyData",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "3799905231",
-            "fencepost": "3832389799",
+            "functionid": "3799905222",
+            "fencepost": "3832276887",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -363,8 +363,8 @@
             "name": "GetLobbyMemberData",
             "argc": "6",
             "interfaceid": "6",
-            "functionid": "481725933",
-            "fencepost": "513984695",
+            "functionid": "481725940",
+            "fencepost": "513871799",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -379,8 +379,8 @@
             "name": "SetLobbyMemberData",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "2834485648",
-            "fencepost": "2866760539",
+            "functionid": "2834485643",
+            "fencepost": "2866647631",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -394,8 +394,8 @@
             "name": "SendLobbyChatMsg",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "2513118436",
-            "fencepost": "2545699778",
+            "functionid": "2513118429",
+            "fencepost": "2545586868",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -410,8 +410,8 @@
             "name": "GetLobbyChatEntry",
             "argc": "8",
             "interfaceid": "6",
-            "functionid": "822938810",
-            "fencepost": "855649184",
+            "functionid": "822938813",
+            "fencepost": "855536284",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -429,8 +429,8 @@
             "name": "RequestLobbyData",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "2655450074",
-            "fencepost": "2688257222",
+            "functionid": "2655450051",
+            "fencepost": "2688144296",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -443,8 +443,8 @@
             "name": "SetLobbyGameServer",
             "argc": "7",
             "interfaceid": "6",
-            "functionid": "2305096143",
-            "fencepost": "2337919420",
+            "functionid": "2305096144",
+            "fencepost": "2337806518",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -459,8 +459,8 @@
             "name": "GetLobbyGameServer",
             "argc": "6",
             "interfaceid": "6",
-            "functionid": "3538558296",
-            "fencepost": "3571446089",
+            "functionid": "3538558273",
+            "fencepost": "3571333163",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -476,8 +476,8 @@
             "name": "SetLobbyMemberLimit",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "3817479910",
-            "fencepost": "3850464477",
+            "functionid": "3817479917",
+            "fencepost": "3850351581",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -491,8 +491,8 @@
             "name": "GetLobbyMemberLimit",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "1323095277",
-            "fencepost": "1356095973",
+            "functionid": "1323095268",
+            "fencepost": "1355983061",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -505,8 +505,8 @@
             "name": "SetLobbyVoiceEnabled",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "3069506085",
-            "fencepost": "3102522910",
+            "functionid": "3069506082",
+            "fencepost": "3102410004",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -519,8 +519,8 @@
             "name": "RequestFriendsLobbies",
             "argc": "1",
             "interfaceid": "6",
-            "functionid": "1152076347",
-            "fencepost": "1185109301",
+            "functionid": "1152075202",
+            "fencepost": "1184995253",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -532,8 +532,8 @@
             "name": "SetLobbyType",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "2379859319",
-            "fencepost": "2412908402",
+            "functionid": "2379860620",
+            "fencepost": "2412796800",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -547,8 +547,8 @@
             "name": "SetLobbyJoinable",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "634473147",
-            "fencepost": "667538359",
+            "functionid": "634471746",
+            "fencepost": "667424055",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -562,8 +562,8 @@
             "name": "GetLobbyOwner",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "1693406539",
-            "fencepost": "1726487880",
+            "functionid": "1693407924",
+            "fencepost": "1726376362",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"
@@ -576,8 +576,8 @@
             "name": "SetLobbyOwner",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "706030440",
-            "fencepost": "739127910",
+            "functionid": "706028689",
+            "fencepost": "739013256",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -591,8 +591,8 @@
             "name": "SetLinkedLobby",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "2886089799",
-            "fencepost": "2919203398",
+            "functionid": "2886087612",
+            "fencepost": "2919088308",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -606,8 +606,8 @@
             "name": "BeginGMSQuery",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "269121376",
-            "fencepost": "302267233",
+            "functionid": "269121383",
+            "fencepost": "302154337",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -622,8 +622,8 @@
             "name": "PollGMSQuery",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "154205857",
-            "fencepost": "187367843",
+            "functionid": "154205864",
+            "fencepost": "187254947",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -636,8 +636,8 @@
             "name": "GetGMSQueryResults",
             "argc": "4",
             "interfaceid": "6",
-            "functionid": "2823712568",
-            "fencepost": "2856939070",
+            "functionid": "2823712563",
+            "fencepost": "2856826162",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -651,8 +651,8 @@
             "name": "ReleaseGMSQuery",
             "argc": "3",
             "interfaceid": "6",
-            "functionid": "832016773",
-            "fencepost": "865291662",
+            "functionid": "832016770",
+            "fencepost": "865178756",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -664,8 +664,8 @@
             "name": "QueryServerByFakeIP",
             "argc": "5",
             "interfaceid": "6",
-            "functionid": "3379209241",
-            "fencepost": "3412500259",
+            "functionid": "3379209216",
+            "fencepost": "3412387331",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -681,8 +681,8 @@
             "name": "EnsureFavoriteGameAccountsUpdated",
             "argc": "2",
             "interfaceid": "6",
-            "functionid": "3203997107",
-            "fencepost": "3237384899",
+            "functionid": "3203997098",
+            "fencepost": "3237271987",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes1"

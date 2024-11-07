@@ -33,173 +33,169 @@ namespace OpenSteamworks.Protobuf {
             "YW1faWQYASABKAYSDwoHZ2FtZV9pZBgCIAEoBhIOCgZlc3RhdGUYAyABKA0S",
             "HgoWZWF1dGhfc2Vzc2lvbl9yZXNwb25zZRgEIAEoDRIZChFERVBSRUNBVEVE",
             "X3RpY2tldBgFIAEoDBISCgp0aWNrZXRfY3JjGAYgASgNEhcKD3RpY2tldF9z",
-            "ZXF1ZW5jZRgHIAEoDRIWCg5vd25lcl9zdGVhbV9pZBgIIAEoBiKAAQoQQ01z",
-            "Z0NsaWVudENNTGlzdBIUCgxjbV9hZGRyZXNzZXMYASADKA0SEAoIY21fcG9y",
-            "dHMYAiADKA0SHgoWY21fd2Vic29ja2V0X2FkZHJlc3NlcxgDIAMoCRIkChxw",
-            "ZXJjZW50X2RlZmF1bHRfdG9fd2Vic29ja2V0GAQgASgNIqMBChtDTXNnQ2xp",
-            "ZW50UDJQQ29ubmVjdGlvbkluZm8SFQoNc3RlYW1faWRfZGVzdBgBIAEoBhIU",
-            "CgxzdGVhbV9pZF9zcmMYAiABKAYSDgoGYXBwX2lkGAMgASgNEhEKCWNhbmRp",
-            "ZGF0ZRgEIAEoDBIgChhsZWdhY3lfY29ubmVjdGlvbl9pZF9zcmMYBSABKAYS",
-            "EgoKcmVuZGV6dm91cxgGIAEoDCLDAQofQ01zZ0NsaWVudFAyUENvbm5lY3Rp",
-            "b25GYWlsSW5mbxIVCg1zdGVhbV9pZF9kZXN0GAEgASgGEhQKDHN0ZWFtX2lk",
-            "X3NyYxgCIAEoBhIOCgZhcHBfaWQYAyABKA0SGgoSZXAycF9zZXNzaW9uX2Vy",
-            "cm9yGAQgASgNEhoKEmNvbm5lY3Rpb25faWRfZGVzdBgFIAEoBhIUCgxjbG9z",
-            "ZV9yZWFzb24YByABKA0SFQoNY2xvc2VfbWVzc2FnZRgIIAEoCSJDCh9DTXNn",
-            "Q2xpZW50TmV0d29ya2luZ0NlcnRSZXF1ZXN0EhAKCGtleV9kYXRhGAIgASgM",
-            "Eg4KBmFwcF9pZBgDIAEoDSJWCh1DTXNnQ2xpZW50TmV0d29ya2luZ0NlcnRS",
-            "ZXBseRIMCgRjZXJ0GAQgASgMEhEKCWNhX2tleV9pZBgFIAEoBhIUCgxjYV9z",
-            "aWduYXR1cmUYBiABKAwiNwolQ01zZ0NsaWVudE5ldHdvcmtpbmdNb2JpbGVD",
-            "ZXJ0UmVxdWVzdBIOCgZhcHBfaWQYASABKA0iOwojQ01zZ0NsaWVudE5ldHdv",
-            "cmtpbmdNb2JpbGVDZXJ0UmVwbHkSFAoMZW5jb2RlZF9jZXJ0GAEgASgJIjEK",
-            "H0NNc2dDbGllbnRHZXRBcHBPd25lcnNoaXBUaWNrZXQSDgoGYXBwX2lkGAEg",
-            "ASgNIl0KJ0NNc2dDbGllbnRHZXRBcHBPd25lcnNoaXBUaWNrZXRSZXNwb25z",
-            "ZRISCgdlcmVzdWx0GAEgASgNOgEyEg4KBmFwcF9pZBgCIAEoDRIOCgZ0aWNr",
-            "ZXQYAyABKAwiJwoWQ01zZ0NsaWVudFNlc3Npb25Ub2tlbhINCgV0b2tlbhgB",
-            "IAEoBCJNChtDTXNnQ2xpZW50R2FtZUNvbm5lY3RUb2tlbnMSHgoSbWF4X3Rv",
-            "a2Vuc190b19rZWVwGAEgASgNOgIxMBIOCgZ0b2tlbnMYAiADKAwimQkKFUNN",
-            "c2dDbGllbnRHYW1lc1BsYXllZBI3CgxnYW1lc19wbGF5ZWQYASADKAsyIS5D",
-            "TXNnQ2xpZW50R2FtZXNQbGF5ZWQuR2FtZVBsYXllZBIWCg5jbGllbnRfb3Nf",
-            "dHlwZRgCIAEoDRIdChVjbG91ZF9nYW1pbmdfcGxhdGZvcm0YAyABKA0SHwoX",
-            "cmVjZW50X3JlYXV0aGVudGljYXRpb24YBCABKAgaVQoLUHJvY2Vzc0luZm8S",
-            "EgoKcHJvY2Vzc19pZBgBIAEoDRIZChFwcm9jZXNzX2lkX3BhcmVudBgCIAEo",
-            "DRIXCg9wYXJlbnRfaXNfc3RlYW0YAyABKAgalwcKCkdhbWVQbGF5ZWQSEwoL",
-            "c3RlYW1faWRfZ3MYASABKAQSDwoHZ2FtZV9pZBgCIAEoBhIiChpkZXByZWNh",
-            "dGVkX2dhbWVfaXBfYWRkcmVzcxgDIAEoDRIRCglnYW1lX3BvcnQYBCABKA0S",
-            "EQoJaXNfc2VjdXJlGAUgASgIEg0KBXRva2VuGAYgASgMEhcKD2dhbWVfZXh0",
-            "cmFfaW5mbxgHIAEoCRIWCg5nYW1lX2RhdGFfYmxvYhgIIAEoDBISCgpwcm9j",
-            "ZXNzX2lkGAkgASgNEh0KFXN0cmVhbWluZ19wcm92aWRlcl9pZBgKIAEoDRIS",
-            "CgpnYW1lX2ZsYWdzGAsgASgNEhAKCG93bmVyX2lkGAwgASgNEhUKDXZyX2ht",
-            "ZF92ZW5kb3IYDSABKAkSFAoMdnJfaG1kX21vZGVsGA4gASgJEh0KEmxhdW5j",
-            "aF9vcHRpb25fdHlwZRgPIAEoDToBMBIjChdwcmltYXJ5X2NvbnRyb2xsZXJf",
-            "dHlwZRgQIAEoBToCLTESJwofcHJpbWFyeV9zdGVhbV9jb250cm9sbGVyX3Nl",
-            "cmlhbBgRIAEoCRInChx0b3RhbF9zdGVhbV9jb250cm9sbGVyX2NvdW50GBIg",
-            "ASgNOgEwEisKIHRvdGFsX25vbl9zdGVhbV9jb250cm9sbGVyX2NvdW50GBMg",
-            "ASgNOgEwEiYKG2NvbnRyb2xsZXJfd29ya3Nob3BfZmlsZV9pZBgUIAEoBDoB",
-            "MBIYCg1sYXVuY2hfc291cmNlGBUgASgNOgEwEhYKDnZyX2htZF9ydW50aW1l",
-            "GBYgASgNEicKD2dhbWVfaXBfYWRkcmVzcxgXIAEoCzIOLkNNc2dJUEFkZHJl",
-            "c3MSJQoaY29udHJvbGxlcl9jb25uZWN0aW9uX3R5cGUYGCABKA06ATASGAoQ",
-            "Z2FtZV9vc19wbGF0Zm9ybRgZIAEoBRIVCg1nYW1lX2J1aWxkX2lkGBogASgN",
-            "EhkKDmNvbXBhdF90b29sX2lkGBsgASgNOgEwEhcKD2NvbXBhdF90b29sX2Nt",
-            "ZBgcIAEoCRIcChRjb21wYXRfdG9vbF9idWlsZF9pZBgdIAEoDRIRCgliZXRh",
-            "X25hbWUYHiABKAkSEwoLZGxjX2NvbnRleHQYHyABKA0SOwoPcHJvY2Vzc19p",
-            "ZF9saXN0GCAgAygLMiIuQ01zZ0NsaWVudEdhbWVzUGxheWVkLlByb2Nlc3NJ",
-            "bmZvIjkKDUNNc2dHU0FwcHJvdmUSEAoIc3RlYW1faWQYASABKAYSFgoOb3du",
-            "ZXJfc3RlYW1faWQYAiABKAYiSQoKQ01zZ0dTRGVueRIQCghzdGVhbV9pZBgB",
-            "IAEoBhIUCgxlZGVueV9yZWFzb24YAiABKAUSEwoLZGVueV9zdHJpbmcYAyAB",
-            "KAkiNAoKQ01zZ0dTS2ljaxIQCghzdGVhbV9pZBgBIAEoBhIUCgxlZGVueV9y",
-            "ZWFzb24YAiABKAUiyAEKEkNNc2dDbGllbnRBdXRoTGlzdBITCgt0b2tlbnNf",
-            "bGVmdBgBIAEoDRIYChBsYXN0X3JlcXVlc3Rfc2VxGAIgASgNEiQKHGxhc3Rf",
-            "cmVxdWVzdF9zZXFfZnJvbV9zZXJ2ZXIYAyABKA0SIAoHdGlja2V0cxgEIAMo",
-            "CzIPLkNNc2dBdXRoVGlja2V0Eg8KB2FwcF9pZHMYBSADKA0SGAoQbWVzc2Fn",
-            "ZV9zZXF1ZW5jZRgGIAEoDRIQCghmaWx0ZXJlZBgHIAEoCCJWChVDTXNnQ2xp",
-            "ZW50QXV0aExpc3RBY2sSEgoKdGlja2V0X2NyYxgBIAMoDRIPCgdhcHBfaWRz",
-            "GAIgAygNEhgKEG1lc3NhZ2Vfc2VxdWVuY2UYAyABKA0ijgQKFUNNc2dDbGll",
-            "bnRMaWNlbnNlTGlzdBISCgdlcmVzdWx0GAEgASgFOgEyEjAKCGxpY2Vuc2Vz",
-            "GAIgAygLMh4uQ01zZ0NsaWVudExpY2Vuc2VMaXN0LkxpY2Vuc2UargMKB0xp",
-            "Y2Vuc2USEgoKcGFja2FnZV9pZBgBIAEoDRIUCgx0aW1lX2NyZWF0ZWQYAiAB",
-            "KAcSGQoRdGltZV9uZXh0X3Byb2Nlc3MYAyABKAcSFAoMbWludXRlX2xpbWl0",
-            "GAQgASgFEhQKDG1pbnV0ZXNfdXNlZBgFIAEoBRIWCg5wYXltZW50X21ldGhv",
-            "ZBgGIAEoDRINCgVmbGFncxgHIAEoDRIdChVwdXJjaGFzZV9jb3VudHJ5X2Nv",
-            "ZGUYCCABKAkSFAoMbGljZW5zZV90eXBlGAkgASgNEhYKDnRlcnJpdG9yeV9j",
-            "b2RlGAogASgFEhUKDWNoYW5nZV9udW1iZXIYCyABKAUSEAoIb3duZXJfaWQY",
-            "DCABKA0SFgoOaW5pdGlhbF9wZXJpb2QYDSABKA0SGQoRaW5pdGlhbF90aW1l",
-            "X3VuaXQYDiABKA0SFgoOcmVuZXdhbF9wZXJpb2QYDyABKA0SGQoRcmVuZXdh",
-            "bF90aW1lX3VuaXQYECABKA0SFAoMYWNjZXNzX3Rva2VuGBEgASgEEhkKEW1h",
-            "c3Rlcl9wYWNrYWdlX2lkGBIgASgNIqoBChpDTXNnQ2xpZW50SXNMaW1pdGVk",
-            "QWNjb3VudBIbChNiaXNfbGltaXRlZF9hY2NvdW50GAEgASgIEhwKFGJpc19j",
-            "b21tdW5pdHlfYmFubmVkGAIgASgIEhoKEmJpc19sb2NrZWRfYWNjb3VudBgD",
-            "IAEoCBI1Ci1iaXNfbGltaXRlZF9hY2NvdW50X2FsbG93ZWRfdG9faW52aXRl",
-            "X2ZyaWVuZHMYBCABKAgipwEKHkNNc2dDbGllbnRSZXF1ZXN0ZWRDbGllbnRT",
-            "dGF0cxJCCg1zdGF0c190b19zZW5kGAEgAygLMisuQ01zZ0NsaWVudFJlcXVl",
-            "c3RlZENsaWVudFN0YXRzLlN0YXRzVG9TZW5kGkEKC1N0YXRzVG9TZW5kEhMK",
-            "C2NsaWVudF9zdGF0GAEgASgNEh0KFXN0YXRfYWdncmVnYXRlX21ldGhvZBgC",
-            "IAEoDSLAAQoPQ01zZ0NsaWVudFN0YXQyEjAKC3N0YXRfZGV0YWlsGAEgAygL",
-            "MhsuQ01zZ0NsaWVudFN0YXQyLlN0YXREZXRhaWwaewoKU3RhdERldGFpbBIT",
-            "CgtjbGllbnRfc3RhdBgBIAEoDRIQCghsbF92YWx1ZRgCIAEoAxITCgt0aW1l",
-            "X29mX2RheRgDIAEoDRIPCgdjZWxsX2lkGAQgASgNEhAKCGRlcG90X2lkGAUg",
-            "ASgNEg4KBmFwcF9pZBgGIAEoDSJyChZDTXNnQ2xpZW50SW52aXRlVG9HYW1l",
-            "EhUKDXN0ZWFtX2lkX2Rlc3QYASABKAYSFAoMc3RlYW1faWRfc3JjGAIgASgG",
-            "EhYKDmNvbm5lY3Rfc3RyaW5nGAMgASgJEhMKC3JlbW90ZV9wbGF5GAQgASgJ",
-            "IrkBChRDTXNnQ2xpZW50Q2hhdEludml0ZRIYChBzdGVhbV9pZF9pbnZpdGVk",
-            "GAEgASgGEhUKDXN0ZWFtX2lkX2NoYXQYAiABKAYSFwoPc3RlYW1faWRfcGF0",
-            "cm9uGAMgASgGEhUKDWNoYXRyb29tX3R5cGUYBCABKAUSHAoUc3RlYW1faWRf",
-            "ZnJpZW5kX2NoYXQYBSABKAYSEQoJY2hhdF9uYW1lGAYgASgJEg8KB2dhbWVf",
-            "aWQYByABKAYi+QgKGUNNc2dDbGllbnRDb25uZWN0aW9uU3RhdHMSOwoLc3Rh",
-            "dHNfbG9nb24YASABKAsyJi5DTXNnQ2xpZW50Q29ubmVjdGlvblN0YXRzLlN0",
-            "YXRzX0xvZ29uEjsKC3N0YXRzX3Zjb25uGAIgASgLMiYuQ01zZ0NsaWVudENv",
-            "bm5lY3Rpb25TdGF0cy5TdGF0c19WQ29ubhrTAgoLU3RhdHNfTG9nb24SGAoQ",
-            "Y29ubmVjdF9hdHRlbXB0cxgBIAEoBRIZChFjb25uZWN0X3N1Y2Nlc3NlcxgC",
-            "IAEoBRIYChBjb25uZWN0X2ZhaWx1cmVzGAMgASgFEhsKE2Nvbm5lY3Rpb25z",
-            "X2Ryb3BwZWQYBCABKAUSFwoPc2Vjb25kc19ydW5uaW5nGAUgASgNEhwKFG1z",
-            "ZWNfdG9sb2dvbnRoaXN0aW1lGAYgASgNEhUKDWNvdW50X2JhZF9jbXMYByAB",
-            "KA0SGwoTbm9fdWRwX2Nvbm5lY3Rpdml0eRgIIAEoCBIbChNub190Y3BfY29u",
-            "bmVjdGl2aXR5GAkgASgIEiUKHW5vX3dlYnNvY2tldF80NDNfY29ubmVjdGl2",
-            "aXR5GAogASgIEikKIW5vX3dlYnNvY2tldF9ub25fNDQzX2Nvbm5lY3Rpdml0",
-            "eRgLIAEoCBpxCglTdGF0c19VRFASEQoJcGt0c19zZW50GAEgASgEEhIKCmJ5",
-            "dGVzX3NlbnQYAiABKAQSEQoJcGt0c19yZWN2GAMgASgEEhYKDnBrdHNfcHJv",
-            "Y2Vzc2VkGAQgASgEEhIKCmJ5dGVzX3JlY3YYBSABKAQamAQKC1N0YXRzX1ZD",
-            "b25uEhcKD2Nvbm5lY3Rpb25zX3VkcBgBIAEoDRIXCg9jb25uZWN0aW9uc190",
-            "Y3AYAiABKA0SNwoJc3RhdHNfdWRwGAMgASgLMiQuQ01zZ0NsaWVudENvbm5l",
-            "Y3Rpb25TdGF0cy5TdGF0c19VRFASFgoOcGt0c19hYmFuZG9uZWQYBCABKAQS",
-            "GQoRY29ubl9yZXFfcmVjZWl2ZWQYBSABKAQSEwoLcGt0c19yZXNlbnQYBiAB",
-            "KAQSEQoJbXNnc19zZW50GAcgASgEEhgKEG1zZ3Nfc2VudF9mYWlsZWQYCCAB",
-            "KAQSEQoJbXNnc19yZWN2GAkgASgEEhYKDmRhdGFncmFtc19zZW50GAogASgE",
-            "EhYKDmRhdGFncmFtc19yZWN2GAsgASgEEhUKDWJhZF9wa3RzX3JlY3YYDCAB",
-            "KAQSHgoWdW5rbm93bl9jb25uX3BrdHNfcmVjdhgNIAEoBBIYChBtaXNzZWRf",
-            "cGt0c19yZWN2GA4gASgEEhUKDWR1cF9wa3RzX3JlY3YYDyABKAQSIQoZZmFp",
-            "bGVkX2Nvbm5lY3RfY2hhbGxlbmdlcxgQIAEoBBIdChVtaWNyb19zZWNfYXZn",
-            "X2xhdGVuY3kYESABKA0SHQoVbWljcm9fc2VjX21pbl9sYXRlbmN5GBIgASgN",
-            "Eh0KFW1pY3JvX3NlY19tYXhfbGF0ZW5jeRgTIAEoDSLSAQoaQ01zZ0NsaWVu",
-            "dFNlcnZlcnNBdmFpbGFibGUSUgoWc2VydmVyX3R5cGVzX2F2YWlsYWJsZRgB",
-            "IAMoCzIyLkNNc2dDbGllbnRTZXJ2ZXJzQXZhaWxhYmxlLlNlcnZlcl9UeXBl",
-            "c19BdmFpbGFibGUSJQodc2VydmVyX3R5cGVfZm9yX2F1dGhfc2VydmljZXMY",
-            "AiABKA0aOQoWU2VydmVyX1R5cGVzX0F2YWlsYWJsZRIOCgZzZXJ2ZXIYASAB",
-            "KA0SDwoHY2hhbmdlZBgCIAEoCCI/CiRDTXNnQ2xpZW50UmVwb3J0T3Zlcmxh",
-            "eURldG91ckZhaWx1cmUSFwoPZmFpbHVyZV9zdHJpbmdzGAEgAygJIkcKI0NN",
-            "c2dDbGllbnRSZXF1ZXN0RW5jcnlwdGVkQXBwVGlja2V0Eg4KBmFwcF9pZBgB",
-            "IAEoDRIQCgh1c2VyZGF0YRgCIAEoDCKEAQorQ01zZ0NsaWVudFJlcXVlc3RF",
-            "bmNyeXB0ZWRBcHBUaWNrZXRSZXNwb25zZRIOCgZhcHBfaWQYASABKA0SEgoH",
-            "ZXJlc3VsdBgCIAEoBToBMhIxChRlbmNyeXB0ZWRfYXBwX3RpY2tldBgDIAEo",
-            "CzITLkVuY3J5cHRlZEFwcFRpY2tldCK1AQoaQ01zZ0NsaWVudFdhbGxldElu",
-            "Zm9VcGRhdGUSEgoKaGFzX3dhbGxldBgBIAEoCBIPCgdiYWxhbmNlGAIgASgF",
-            "EhAKCGN1cnJlbmN5GAMgASgFEhcKD2JhbGFuY2VfZGVsYXllZBgEIAEoBRIX",
-            "CgliYWxhbmNlNjQYBSABKANCBKC2GAESHwoRYmFsYW5jZTY0X2RlbGF5ZWQY",
-            "BiABKANCBKC2GAESDQoFcmVhbG0YByABKAUiMwobQ01zZ0NsaWVudEFNR2V0",
-            "Q2xhbk9mZmljZXJzEhQKDHN0ZWFtaWRfY2xhbhgBIAEoBiJmCiNDTXNnQ2xp",
-            "ZW50QU1HZXRDbGFuT2ZmaWNlcnNSZXNwb25zZRISCgdlcmVzdWx0GAEgASgF",
-            "OgEyEhQKDHN0ZWFtaWRfY2xhbhgCIAEoBhIVCg1vZmZpY2VyX2NvdW50GAMg",
-            "ASgFIpABCiFDTXNnQ2xpZW50QU1HZXRQZXJzb25hTmFtZUhpc3RvcnkSEAoI",
-            "aWRfY291bnQYASABKAUSOgoDSWRzGAIgAygLMi0uQ01zZ0NsaWVudEFNR2V0",
-            "UGVyc29uYU5hbWVIaXN0b3J5LklkSW5zdGFuY2UaHQoKSWRJbnN0YW5jZRIP",
-            "CgdzdGVhbWlkGAEgASgGIsMCCilDTXNnQ2xpZW50QU1HZXRQZXJzb25hTmFt",
-            "ZUhpc3RvcnlSZXNwb25zZRJPCglyZXNwb25zZXMYAiADKAsyPC5DTXNnQ2xp",
-            "ZW50QU1HZXRQZXJzb25hTmFtZUhpc3RvcnlSZXNwb25zZS5OYW1lVGFibGVJ",
-            "bnN0YW5jZRrEAQoRTmFtZVRhYmxlSW5zdGFuY2USEgoHZXJlc3VsdBgBIAEo",
-            "BToBMhIPCgdzdGVhbWlkGAIgASgGElgKBW5hbWVzGAMgAygLMkkuQ01zZ0Ns",
-            "aWVudEFNR2V0UGVyc29uYU5hbWVIaXN0b3J5UmVzcG9uc2UuTmFtZVRhYmxl",
-            "SW5zdGFuY2UuTmFtZUluc3RhbmNlGjAKDE5hbWVJbnN0YW5jZRISCgpuYW1l",
-            "X3NpbmNlGAEgASgHEgwKBG5hbWUYAiABKAkiRQoeQ01zZ0NsaWVudERlcmVn",
-            "aXN0ZXJXaXRoU2VydmVyEhMKC2VzZXJ2ZXJ0eXBlGAEgASgNEg4KBmFwcF9p",
-            "ZBgCIAEoDSKrBAoTQ01zZ0NsaWVudENsYW5TdGF0ZRIUCgxzdGVhbWlkX2Ns",
-            "YW4YASABKAYSGgoSY2xhbl9hY2NvdW50X2ZsYWdzGAMgASgNEjAKCW5hbWVf",
-            "aW5mbxgEIAEoCzIdLkNNc2dDbGllbnRDbGFuU3RhdGUuTmFtZUluZm8SNAoL",
-            "dXNlcl9jb3VudHMYBSABKAsyHy5DTXNnQ2xpZW50Q2xhblN0YXRlLlVzZXJD",
-            "b3VudHMSKgoGZXZlbnRzGAYgAygLMhouQ01zZ0NsaWVudENsYW5TdGF0ZS5F",
-            "dmVudBIxCg1hbm5vdW5jZW1lbnRzGAcgAygLMhouQ01zZ0NsaWVudENsYW5T",
-            "dGF0ZS5FdmVudBIZChFjaGF0X3Jvb21fcHJpdmF0ZRgIIAEoCBoxCghOYW1l",
-            "SW5mbxIRCgljbGFuX25hbWUYASABKAkSEgoKc2hhX2F2YXRhchgCIAEoDBpr",
-            "CgpVc2VyQ291bnRzEg8KB21lbWJlcnMYASABKA0SDgoGb25saW5lGAIgASgN",
-            "EhAKCGNoYXR0aW5nGAMgASgNEg8KB2luX2dhbWUYBCABKA0SGQoRY2hhdF9y",
-            "b29tX21lbWJlcnMYBSABKA0aYAoFRXZlbnQSCwoDZ2lkGAEgASgGEhIKCmV2",
-            "ZW50X3RpbWUYAiABKA0SEAoIaGVhZGxpbmUYAyABKAkSDwoHZ2FtZV9pZBgE",
-            "IAEoBhITCgtqdXN0X3Bvc3RlZBgFIAEoCEIfSAGAAQCqAhdPcGVuU3RlYW13",
-            "b3Jrcy5Qcm90b2J1Zg=="));
+            "ZXF1ZW5jZRgHIAEoDRIWCg5vd25lcl9zdGVhbV9pZBgIIAEoBiKjAQobQ01z",
+            "Z0NsaWVudFAyUENvbm5lY3Rpb25JbmZvEhUKDXN0ZWFtX2lkX2Rlc3QYASAB",
+            "KAYSFAoMc3RlYW1faWRfc3JjGAIgASgGEg4KBmFwcF9pZBgDIAEoDRIRCglj",
+            "YW5kaWRhdGUYBCABKAwSIAoYbGVnYWN5X2Nvbm5lY3Rpb25faWRfc3JjGAUg",
+            "ASgGEhIKCnJlbmRlenZvdXMYBiABKAwiwwEKH0NNc2dDbGllbnRQMlBDb25u",
+            "ZWN0aW9uRmFpbEluZm8SFQoNc3RlYW1faWRfZGVzdBgBIAEoBhIUCgxzdGVh",
+            "bV9pZF9zcmMYAiABKAYSDgoGYXBwX2lkGAMgASgNEhoKEmVwMnBfc2Vzc2lv",
+            "bl9lcnJvchgEIAEoDRIaChJjb25uZWN0aW9uX2lkX2Rlc3QYBSABKAYSFAoM",
+            "Y2xvc2VfcmVhc29uGAcgASgNEhUKDWNsb3NlX21lc3NhZ2UYCCABKAkiQwof",
+            "Q01zZ0NsaWVudE5ldHdvcmtpbmdDZXJ0UmVxdWVzdBIQCghrZXlfZGF0YRgC",
+            "IAEoDBIOCgZhcHBfaWQYAyABKA0iVgodQ01zZ0NsaWVudE5ldHdvcmtpbmdD",
+            "ZXJ0UmVwbHkSDAoEY2VydBgEIAEoDBIRCgljYV9rZXlfaWQYBSABKAYSFAoM",
+            "Y2Ffc2lnbmF0dXJlGAYgASgMIjcKJUNNc2dDbGllbnROZXR3b3JraW5nTW9i",
+            "aWxlQ2VydFJlcXVlc3QSDgoGYXBwX2lkGAEgASgNIjsKI0NNc2dDbGllbnRO",
+            "ZXR3b3JraW5nTW9iaWxlQ2VydFJlcGx5EhQKDGVuY29kZWRfY2VydBgBIAEo",
+            "CSIxCh9DTXNnQ2xpZW50R2V0QXBwT3duZXJzaGlwVGlja2V0Eg4KBmFwcF9p",
+            "ZBgBIAEoDSJdCidDTXNnQ2xpZW50R2V0QXBwT3duZXJzaGlwVGlja2V0UmVz",
+            "cG9uc2USEgoHZXJlc3VsdBgBIAEoDToBMhIOCgZhcHBfaWQYAiABKA0SDgoG",
+            "dGlja2V0GAMgASgMIicKFkNNc2dDbGllbnRTZXNzaW9uVG9rZW4SDQoFdG9r",
+            "ZW4YASABKAQiTQobQ01zZ0NsaWVudEdhbWVDb25uZWN0VG9rZW5zEh4KEm1h",
+            "eF90b2tlbnNfdG9fa2VlcBgBIAEoDToCMTASDgoGdG9rZW5zGAIgAygMIpkJ",
+            "ChVDTXNnQ2xpZW50R2FtZXNQbGF5ZWQSNwoMZ2FtZXNfcGxheWVkGAEgAygL",
+            "MiEuQ01zZ0NsaWVudEdhbWVzUGxheWVkLkdhbWVQbGF5ZWQSFgoOY2xpZW50",
+            "X29zX3R5cGUYAiABKA0SHQoVY2xvdWRfZ2FtaW5nX3BsYXRmb3JtGAMgASgN",
+            "Eh8KF3JlY2VudF9yZWF1dGhlbnRpY2F0aW9uGAQgASgIGlUKC1Byb2Nlc3NJ",
+            "bmZvEhIKCnByb2Nlc3NfaWQYASABKA0SGQoRcHJvY2Vzc19pZF9wYXJlbnQY",
+            "AiABKA0SFwoPcGFyZW50X2lzX3N0ZWFtGAMgASgIGpcHCgpHYW1lUGxheWVk",
+            "EhMKC3N0ZWFtX2lkX2dzGAEgASgEEg8KB2dhbWVfaWQYAiABKAYSIgoaZGVw",
+            "cmVjYXRlZF9nYW1lX2lwX2FkZHJlc3MYAyABKA0SEQoJZ2FtZV9wb3J0GAQg",
+            "ASgNEhEKCWlzX3NlY3VyZRgFIAEoCBINCgV0b2tlbhgGIAEoDBIXCg9nYW1l",
+            "X2V4dHJhX2luZm8YByABKAkSFgoOZ2FtZV9kYXRhX2Jsb2IYCCABKAwSEgoK",
+            "cHJvY2Vzc19pZBgJIAEoDRIdChVzdHJlYW1pbmdfcHJvdmlkZXJfaWQYCiAB",
+            "KA0SEgoKZ2FtZV9mbGFncxgLIAEoDRIQCghvd25lcl9pZBgMIAEoDRIVCg12",
+            "cl9obWRfdmVuZG9yGA0gASgJEhQKDHZyX2htZF9tb2RlbBgOIAEoCRIdChJs",
+            "YXVuY2hfb3B0aW9uX3R5cGUYDyABKA06ATASIwoXcHJpbWFyeV9jb250cm9s",
+            "bGVyX3R5cGUYECABKAU6Ai0xEicKH3ByaW1hcnlfc3RlYW1fY29udHJvbGxl",
+            "cl9zZXJpYWwYESABKAkSJwocdG90YWxfc3RlYW1fY29udHJvbGxlcl9jb3Vu",
+            "dBgSIAEoDToBMBIrCiB0b3RhbF9ub25fc3RlYW1fY29udHJvbGxlcl9jb3Vu",
+            "dBgTIAEoDToBMBImChtjb250cm9sbGVyX3dvcmtzaG9wX2ZpbGVfaWQYFCAB",
+            "KAQ6ATASGAoNbGF1bmNoX3NvdXJjZRgVIAEoDToBMBIWCg52cl9obWRfcnVu",
+            "dGltZRgWIAEoDRInCg9nYW1lX2lwX2FkZHJlc3MYFyABKAsyDi5DTXNnSVBB",
+            "ZGRyZXNzEiUKGmNvbnRyb2xsZXJfY29ubmVjdGlvbl90eXBlGBggASgNOgEw",
+            "EhgKEGdhbWVfb3NfcGxhdGZvcm0YGSABKAUSFQoNZ2FtZV9idWlsZF9pZBga",
+            "IAEoDRIZCg5jb21wYXRfdG9vbF9pZBgbIAEoDToBMBIXCg9jb21wYXRfdG9v",
+            "bF9jbWQYHCABKAkSHAoUY29tcGF0X3Rvb2xfYnVpbGRfaWQYHSABKA0SEQoJ",
+            "YmV0YV9uYW1lGB4gASgJEhMKC2RsY19jb250ZXh0GB8gASgNEjsKD3Byb2Nl",
+            "c3NfaWRfbGlzdBggIAMoCzIiLkNNc2dDbGllbnRHYW1lc1BsYXllZC5Qcm9j",
+            "ZXNzSW5mbyI5Cg1DTXNnR1NBcHByb3ZlEhAKCHN0ZWFtX2lkGAEgASgGEhYK",
+            "Dm93bmVyX3N0ZWFtX2lkGAIgASgGIkkKCkNNc2dHU0RlbnkSEAoIc3RlYW1f",
+            "aWQYASABKAYSFAoMZWRlbnlfcmVhc29uGAIgASgFEhMKC2Rlbnlfc3RyaW5n",
+            "GAMgASgJIjQKCkNNc2dHU0tpY2sSEAoIc3RlYW1faWQYASABKAYSFAoMZWRl",
+            "bnlfcmVhc29uGAIgASgFIsgBChJDTXNnQ2xpZW50QXV0aExpc3QSEwoLdG9r",
+            "ZW5zX2xlZnQYASABKA0SGAoQbGFzdF9yZXF1ZXN0X3NlcRgCIAEoDRIkChxs",
+            "YXN0X3JlcXVlc3Rfc2VxX2Zyb21fc2VydmVyGAMgASgNEiAKB3RpY2tldHMY",
+            "BCADKAsyDy5DTXNnQXV0aFRpY2tldBIPCgdhcHBfaWRzGAUgAygNEhgKEG1l",
+            "c3NhZ2Vfc2VxdWVuY2UYBiABKA0SEAoIZmlsdGVyZWQYByABKAgiVgoVQ01z",
+            "Z0NsaWVudEF1dGhMaXN0QWNrEhIKCnRpY2tldF9jcmMYASADKA0SDwoHYXBw",
+            "X2lkcxgCIAMoDRIYChBtZXNzYWdlX3NlcXVlbmNlGAMgASgNIo4EChVDTXNn",
+            "Q2xpZW50TGljZW5zZUxpc3QSEgoHZXJlc3VsdBgBIAEoBToBMhIwCghsaWNl",
+            "bnNlcxgCIAMoCzIeLkNNc2dDbGllbnRMaWNlbnNlTGlzdC5MaWNlbnNlGq4D",
+            "CgdMaWNlbnNlEhIKCnBhY2thZ2VfaWQYASABKA0SFAoMdGltZV9jcmVhdGVk",
+            "GAIgASgHEhkKEXRpbWVfbmV4dF9wcm9jZXNzGAMgASgHEhQKDG1pbnV0ZV9s",
+            "aW1pdBgEIAEoBRIUCgxtaW51dGVzX3VzZWQYBSABKAUSFgoOcGF5bWVudF9t",
+            "ZXRob2QYBiABKA0SDQoFZmxhZ3MYByABKA0SHQoVcHVyY2hhc2VfY291bnRy",
+            "eV9jb2RlGAggASgJEhQKDGxpY2Vuc2VfdHlwZRgJIAEoDRIWCg50ZXJyaXRv",
+            "cnlfY29kZRgKIAEoBRIVCg1jaGFuZ2VfbnVtYmVyGAsgASgFEhAKCG93bmVy",
+            "X2lkGAwgASgNEhYKDmluaXRpYWxfcGVyaW9kGA0gASgNEhkKEWluaXRpYWxf",
+            "dGltZV91bml0GA4gASgNEhYKDnJlbmV3YWxfcGVyaW9kGA8gASgNEhkKEXJl",
+            "bmV3YWxfdGltZV91bml0GBAgASgNEhQKDGFjY2Vzc190b2tlbhgRIAEoBBIZ",
+            "ChFtYXN0ZXJfcGFja2FnZV9pZBgSIAEoDSKqAQoaQ01zZ0NsaWVudElzTGlt",
+            "aXRlZEFjY291bnQSGwoTYmlzX2xpbWl0ZWRfYWNjb3VudBgBIAEoCBIcChRi",
+            "aXNfY29tbXVuaXR5X2Jhbm5lZBgCIAEoCBIaChJiaXNfbG9ja2VkX2FjY291",
+            "bnQYAyABKAgSNQotYmlzX2xpbWl0ZWRfYWNjb3VudF9hbGxvd2VkX3RvX2lu",
+            "dml0ZV9mcmllbmRzGAQgASgIIqcBCh5DTXNnQ2xpZW50UmVxdWVzdGVkQ2xp",
+            "ZW50U3RhdHMSQgoNc3RhdHNfdG9fc2VuZBgBIAMoCzIrLkNNc2dDbGllbnRS",
+            "ZXF1ZXN0ZWRDbGllbnRTdGF0cy5TdGF0c1RvU2VuZBpBCgtTdGF0c1RvU2Vu",
+            "ZBITCgtjbGllbnRfc3RhdBgBIAEoDRIdChVzdGF0X2FnZ3JlZ2F0ZV9tZXRo",
+            "b2QYAiABKA0iwAEKD0NNc2dDbGllbnRTdGF0MhIwCgtzdGF0X2RldGFpbBgB",
+            "IAMoCzIbLkNNc2dDbGllbnRTdGF0Mi5TdGF0RGV0YWlsGnsKClN0YXREZXRh",
+            "aWwSEwoLY2xpZW50X3N0YXQYASABKA0SEAoIbGxfdmFsdWUYAiABKAMSEwoL",
+            "dGltZV9vZl9kYXkYAyABKA0SDwoHY2VsbF9pZBgEIAEoDRIQCghkZXBvdF9p",
+            "ZBgFIAEoDRIOCgZhcHBfaWQYBiABKA0icgoWQ01zZ0NsaWVudEludml0ZVRv",
+            "R2FtZRIVCg1zdGVhbV9pZF9kZXN0GAEgASgGEhQKDHN0ZWFtX2lkX3NyYxgC",
+            "IAEoBhIWCg5jb25uZWN0X3N0cmluZxgDIAEoCRITCgtyZW1vdGVfcGxheRgE",
+            "IAEoCSK5AQoUQ01zZ0NsaWVudENoYXRJbnZpdGUSGAoQc3RlYW1faWRfaW52",
+            "aXRlZBgBIAEoBhIVCg1zdGVhbV9pZF9jaGF0GAIgASgGEhcKD3N0ZWFtX2lk",
+            "X3BhdHJvbhgDIAEoBhIVCg1jaGF0cm9vbV90eXBlGAQgASgFEhwKFHN0ZWFt",
+            "X2lkX2ZyaWVuZF9jaGF0GAUgASgGEhEKCWNoYXRfbmFtZRgGIAEoCRIPCgdn",
+            "YW1lX2lkGAcgASgGIvkIChlDTXNnQ2xpZW50Q29ubmVjdGlvblN0YXRzEjsK",
+            "C3N0YXRzX2xvZ29uGAEgASgLMiYuQ01zZ0NsaWVudENvbm5lY3Rpb25TdGF0",
+            "cy5TdGF0c19Mb2dvbhI7CgtzdGF0c192Y29ubhgCIAEoCzImLkNNc2dDbGll",
+            "bnRDb25uZWN0aW9uU3RhdHMuU3RhdHNfVkNvbm4a0wIKC1N0YXRzX0xvZ29u",
+            "EhgKEGNvbm5lY3RfYXR0ZW1wdHMYASABKAUSGQoRY29ubmVjdF9zdWNjZXNz",
+            "ZXMYAiABKAUSGAoQY29ubmVjdF9mYWlsdXJlcxgDIAEoBRIbChNjb25uZWN0",
+            "aW9uc19kcm9wcGVkGAQgASgFEhcKD3NlY29uZHNfcnVubmluZxgFIAEoDRIc",
+            "ChRtc2VjX3RvbG9nb250aGlzdGltZRgGIAEoDRIVCg1jb3VudF9iYWRfY21z",
+            "GAcgASgNEhsKE25vX3VkcF9jb25uZWN0aXZpdHkYCCABKAgSGwoTbm9fdGNw",
+            "X2Nvbm5lY3Rpdml0eRgJIAEoCBIlCh1ub193ZWJzb2NrZXRfNDQzX2Nvbm5l",
+            "Y3Rpdml0eRgKIAEoCBIpCiFub193ZWJzb2NrZXRfbm9uXzQ0M19jb25uZWN0",
+            "aXZpdHkYCyABKAgacQoJU3RhdHNfVURQEhEKCXBrdHNfc2VudBgBIAEoBBIS",
+            "CgpieXRlc19zZW50GAIgASgEEhEKCXBrdHNfcmVjdhgDIAEoBBIWCg5wa3Rz",
+            "X3Byb2Nlc3NlZBgEIAEoBBISCgpieXRlc19yZWN2GAUgASgEGpgECgtTdGF0",
+            "c19WQ29ubhIXCg9jb25uZWN0aW9uc191ZHAYASABKA0SFwoPY29ubmVjdGlv",
+            "bnNfdGNwGAIgASgNEjcKCXN0YXRzX3VkcBgDIAEoCzIkLkNNc2dDbGllbnRD",
+            "b25uZWN0aW9uU3RhdHMuU3RhdHNfVURQEhYKDnBrdHNfYWJhbmRvbmVkGAQg",
+            "ASgEEhkKEWNvbm5fcmVxX3JlY2VpdmVkGAUgASgEEhMKC3BrdHNfcmVzZW50",
+            "GAYgASgEEhEKCW1zZ3Nfc2VudBgHIAEoBBIYChBtc2dzX3NlbnRfZmFpbGVk",
+            "GAggASgEEhEKCW1zZ3NfcmVjdhgJIAEoBBIWCg5kYXRhZ3JhbXNfc2VudBgK",
+            "IAEoBBIWCg5kYXRhZ3JhbXNfcmVjdhgLIAEoBBIVCg1iYWRfcGt0c19yZWN2",
+            "GAwgASgEEh4KFnVua25vd25fY29ubl9wa3RzX3JlY3YYDSABKAQSGAoQbWlz",
+            "c2VkX3BrdHNfcmVjdhgOIAEoBBIVCg1kdXBfcGt0c19yZWN2GA8gASgEEiEK",
+            "GWZhaWxlZF9jb25uZWN0X2NoYWxsZW5nZXMYECABKAQSHQoVbWljcm9fc2Vj",
+            "X2F2Z19sYXRlbmN5GBEgASgNEh0KFW1pY3JvX3NlY19taW5fbGF0ZW5jeRgS",
+            "IAEoDRIdChVtaWNyb19zZWNfbWF4X2xhdGVuY3kYEyABKA0i0gEKGkNNc2dD",
+            "bGllbnRTZXJ2ZXJzQXZhaWxhYmxlElIKFnNlcnZlcl90eXBlc19hdmFpbGFi",
+            "bGUYASADKAsyMi5DTXNnQ2xpZW50U2VydmVyc0F2YWlsYWJsZS5TZXJ2ZXJf",
+            "VHlwZXNfQXZhaWxhYmxlEiUKHXNlcnZlcl90eXBlX2Zvcl9hdXRoX3NlcnZp",
+            "Y2VzGAIgASgNGjkKFlNlcnZlcl9UeXBlc19BdmFpbGFibGUSDgoGc2VydmVy",
+            "GAEgASgNEg8KB2NoYW5nZWQYAiABKAgiPwokQ01zZ0NsaWVudFJlcG9ydE92",
+            "ZXJsYXlEZXRvdXJGYWlsdXJlEhcKD2ZhaWx1cmVfc3RyaW5ncxgBIAMoCSJH",
+            "CiNDTXNnQ2xpZW50UmVxdWVzdEVuY3J5cHRlZEFwcFRpY2tldBIOCgZhcHBf",
+            "aWQYASABKA0SEAoIdXNlcmRhdGEYAiABKAwihAEKK0NNc2dDbGllbnRSZXF1",
+            "ZXN0RW5jcnlwdGVkQXBwVGlja2V0UmVzcG9uc2USDgoGYXBwX2lkGAEgASgN",
+            "EhIKB2VyZXN1bHQYAiABKAU6ATISMQoUZW5jcnlwdGVkX2FwcF90aWNrZXQY",
+            "AyABKAsyEy5FbmNyeXB0ZWRBcHBUaWNrZXQitQEKGkNNc2dDbGllbnRXYWxs",
+            "ZXRJbmZvVXBkYXRlEhIKCmhhc193YWxsZXQYASABKAgSDwoHYmFsYW5jZRgC",
+            "IAEoBRIQCghjdXJyZW5jeRgDIAEoBRIXCg9iYWxhbmNlX2RlbGF5ZWQYBCAB",
+            "KAUSFwoJYmFsYW5jZTY0GAUgASgDQgSgthgBEh8KEWJhbGFuY2U2NF9kZWxh",
+            "eWVkGAYgASgDQgSgthgBEg0KBXJlYWxtGAcgASgFIjMKG0NNc2dDbGllbnRB",
+            "TUdldENsYW5PZmZpY2VycxIUCgxzdGVhbWlkX2NsYW4YASABKAYiZgojQ01z",
+            "Z0NsaWVudEFNR2V0Q2xhbk9mZmljZXJzUmVzcG9uc2USEgoHZXJlc3VsdBgB",
+            "IAEoBToBMhIUCgxzdGVhbWlkX2NsYW4YAiABKAYSFQoNb2ZmaWNlcl9jb3Vu",
+            "dBgDIAEoBSKQAQohQ01zZ0NsaWVudEFNR2V0UGVyc29uYU5hbWVIaXN0b3J5",
+            "EhAKCGlkX2NvdW50GAEgASgFEjoKA0lkcxgCIAMoCzItLkNNc2dDbGllbnRB",
+            "TUdldFBlcnNvbmFOYW1lSGlzdG9yeS5JZEluc3RhbmNlGh0KCklkSW5zdGFu",
+            "Y2USDwoHc3RlYW1pZBgBIAEoBiLDAgopQ01zZ0NsaWVudEFNR2V0UGVyc29u",
+            "YU5hbWVIaXN0b3J5UmVzcG9uc2USTwoJcmVzcG9uc2VzGAIgAygLMjwuQ01z",
+            "Z0NsaWVudEFNR2V0UGVyc29uYU5hbWVIaXN0b3J5UmVzcG9uc2UuTmFtZVRh",
+            "YmxlSW5zdGFuY2UaxAEKEU5hbWVUYWJsZUluc3RhbmNlEhIKB2VyZXN1bHQY",
+            "ASABKAU6ATISDwoHc3RlYW1pZBgCIAEoBhJYCgVuYW1lcxgDIAMoCzJJLkNN",
+            "c2dDbGllbnRBTUdldFBlcnNvbmFOYW1lSGlzdG9yeVJlc3BvbnNlLk5hbWVU",
+            "YWJsZUluc3RhbmNlLk5hbWVJbnN0YW5jZRowCgxOYW1lSW5zdGFuY2USEgoK",
+            "bmFtZV9zaW5jZRgBIAEoBxIMCgRuYW1lGAIgASgJIkUKHkNNc2dDbGllbnRE",
+            "ZXJlZ2lzdGVyV2l0aFNlcnZlchITCgtlc2VydmVydHlwZRgBIAEoDRIOCgZh",
+            "cHBfaWQYAiABKA0iqwQKE0NNc2dDbGllbnRDbGFuU3RhdGUSFAoMc3RlYW1p",
+            "ZF9jbGFuGAEgASgGEhoKEmNsYW5fYWNjb3VudF9mbGFncxgDIAEoDRIwCglu",
+            "YW1lX2luZm8YBCABKAsyHS5DTXNnQ2xpZW50Q2xhblN0YXRlLk5hbWVJbmZv",
+            "EjQKC3VzZXJfY291bnRzGAUgASgLMh8uQ01zZ0NsaWVudENsYW5TdGF0ZS5V",
+            "c2VyQ291bnRzEioKBmV2ZW50cxgGIAMoCzIaLkNNc2dDbGllbnRDbGFuU3Rh",
+            "dGUuRXZlbnQSMQoNYW5ub3VuY2VtZW50cxgHIAMoCzIaLkNNc2dDbGllbnRD",
+            "bGFuU3RhdGUuRXZlbnQSGQoRY2hhdF9yb29tX3ByaXZhdGUYCCABKAgaMQoI",
+            "TmFtZUluZm8SEQoJY2xhbl9uYW1lGAEgASgJEhIKCnNoYV9hdmF0YXIYAiAB",
+            "KAwaawoKVXNlckNvdW50cxIPCgdtZW1iZXJzGAEgASgNEg4KBm9ubGluZRgC",
+            "IAEoDRIQCghjaGF0dGluZxgDIAEoDRIPCgdpbl9nYW1lGAQgASgNEhkKEWNo",
+            "YXRfcm9vbV9tZW1iZXJzGAUgASgNGmAKBUV2ZW50EgsKA2dpZBgBIAEoBhIS",
+            "CgpldmVudF90aW1lGAIgASgNEhAKCGhlYWRsaW5lGAMgASgJEg8KB2dhbWVf",
+            "aWQYBCABKAYSEwoLanVzdF9wb3N0ZWQYBSABKAhCH0gBgAEAqgIXT3BlblN0",
+            "ZWFtd29ya3MuUHJvdG9idWY="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.EncryptedAppTicketReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientRegisterAuthTicketWithCM), global::OpenSteamworks.Protobuf.CMsgClientRegisterAuthTicketWithCM.Parser, new[]{ "ProtocolVersion", "Ticket", "ClientInstanceId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientTicketAuthComplete), global::OpenSteamworks.Protobuf.CMsgClientTicketAuthComplete.Parser, new[]{ "SteamId", "GameId", "Estate", "EauthSessionResponse", "DEPRECATEDTicket", "TicketCrc", "TicketSequence", "OwnerSteamId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientCMList), global::OpenSteamworks.Protobuf.CMsgClientCMList.Parser, new[]{ "CmAddresses", "CmPorts", "CmWebsocketAddresses", "PercentDefaultToWebsocket" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientP2PConnectionInfo), global::OpenSteamworks.Protobuf.CMsgClientP2PConnectionInfo.Parser, new[]{ "SteamIdDest", "SteamIdSrc", "AppId", "Candidate", "LegacyConnectionIdSrc", "Rendezvous" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientP2PConnectionFailInfo), global::OpenSteamworks.Protobuf.CMsgClientP2PConnectionFailInfo.Parser, new[]{ "SteamIdDest", "SteamIdSrc", "AppId", "Ep2PSessionError", "ConnectionIdDest", "CloseReason", "CloseMessage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientNetworkingCertRequest), global::OpenSteamworks.Protobuf.CMsgClientNetworkingCertRequest.Parser, new[]{ "KeyData", "AppId" }, null, null, null, null),
@@ -1142,303 +1138,6 @@ namespace OpenSteamworks.Protobuf {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class CMsgClientCMList : pb::IMessage<CMsgClientCMList>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMsgClientCMList> _parser = new pb::MessageParser<CMsgClientCMList>(() => new CMsgClientCMList());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CMsgClientCMList> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CMsgClientCMList() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CMsgClientCMList(CMsgClientCMList other) : this() {
-      _hasBits0 = other._hasBits0;
-      cmAddresses_ = other.cmAddresses_.Clone();
-      cmPorts_ = other.cmPorts_.Clone();
-      cmWebsocketAddresses_ = other.cmWebsocketAddresses_.Clone();
-      percentDefaultToWebsocket_ = other.percentDefaultToWebsocket_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CMsgClientCMList Clone() {
-      return new CMsgClientCMList(this);
-    }
-
-    /// <summary>Field number for the "cm_addresses" field.</summary>
-    public const int CmAddressesFieldNumber = 1;
-    private static readonly pb::FieldCodec<uint> _repeated_cmAddresses_codec
-        = pb::FieldCodec.ForUInt32(8);
-    private readonly pbc::RepeatedField<uint> cmAddresses_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> CmAddresses {
-      get { return cmAddresses_; }
-    }
-
-    /// <summary>Field number for the "cm_ports" field.</summary>
-    public const int CmPortsFieldNumber = 2;
-    private static readonly pb::FieldCodec<uint> _repeated_cmPorts_codec
-        = pb::FieldCodec.ForUInt32(16);
-    private readonly pbc::RepeatedField<uint> cmPorts_ = new pbc::RepeatedField<uint>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<uint> CmPorts {
-      get { return cmPorts_; }
-    }
-
-    /// <summary>Field number for the "cm_websocket_addresses" field.</summary>
-    public const int CmWebsocketAddressesFieldNumber = 3;
-    private static readonly pb::FieldCodec<string> _repeated_cmWebsocketAddresses_codec
-        = pb::FieldCodec.ForString(26);
-    private readonly pbc::RepeatedField<string> cmWebsocketAddresses_ = new pbc::RepeatedField<string>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> CmWebsocketAddresses {
-      get { return cmWebsocketAddresses_; }
-    }
-
-    /// <summary>Field number for the "percent_default_to_websocket" field.</summary>
-    public const int PercentDefaultToWebsocketFieldNumber = 4;
-    private readonly static uint PercentDefaultToWebsocketDefaultValue = 0;
-
-    private uint percentDefaultToWebsocket_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint PercentDefaultToWebsocket {
-      get { if ((_hasBits0 & 1) != 0) { return percentDefaultToWebsocket_; } else { return PercentDefaultToWebsocketDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        percentDefaultToWebsocket_ = value;
-      }
-    }
-    /// <summary>Gets whether the "percent_default_to_websocket" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasPercentDefaultToWebsocket {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "percent_default_to_websocket" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearPercentDefaultToWebsocket() {
-      _hasBits0 &= ~1;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as CMsgClientCMList);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CMsgClientCMList other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!cmAddresses_.Equals(other.cmAddresses_)) return false;
-      if(!cmPorts_.Equals(other.cmPorts_)) return false;
-      if(!cmWebsocketAddresses_.Equals(other.cmWebsocketAddresses_)) return false;
-      if (PercentDefaultToWebsocket != other.PercentDefaultToWebsocket) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= cmAddresses_.GetHashCode();
-      hash ^= cmPorts_.GetHashCode();
-      hash ^= cmWebsocketAddresses_.GetHashCode();
-      if (HasPercentDefaultToWebsocket) hash ^= PercentDefaultToWebsocket.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      cmAddresses_.WriteTo(output, _repeated_cmAddresses_codec);
-      cmPorts_.WriteTo(output, _repeated_cmPorts_codec);
-      cmWebsocketAddresses_.WriteTo(output, _repeated_cmWebsocketAddresses_codec);
-      if (HasPercentDefaultToWebsocket) {
-        output.WriteRawTag(32);
-        output.WriteUInt32(PercentDefaultToWebsocket);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      cmAddresses_.WriteTo(ref output, _repeated_cmAddresses_codec);
-      cmPorts_.WriteTo(ref output, _repeated_cmPorts_codec);
-      cmWebsocketAddresses_.WriteTo(ref output, _repeated_cmWebsocketAddresses_codec);
-      if (HasPercentDefaultToWebsocket) {
-        output.WriteRawTag(32);
-        output.WriteUInt32(PercentDefaultToWebsocket);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += cmAddresses_.CalculateSize(_repeated_cmAddresses_codec);
-      size += cmPorts_.CalculateSize(_repeated_cmPorts_codec);
-      size += cmWebsocketAddresses_.CalculateSize(_repeated_cmWebsocketAddresses_codec);
-      if (HasPercentDefaultToWebsocket) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PercentDefaultToWebsocket);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CMsgClientCMList other) {
-      if (other == null) {
-        return;
-      }
-      cmAddresses_.Add(other.cmAddresses_);
-      cmPorts_.Add(other.cmPorts_);
-      cmWebsocketAddresses_.Add(other.cmWebsocketAddresses_);
-      if (other.HasPercentDefaultToWebsocket) {
-        PercentDefaultToWebsocket = other.PercentDefaultToWebsocket;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10:
-          case 8: {
-            cmAddresses_.AddEntriesFrom(input, _repeated_cmAddresses_codec);
-            break;
-          }
-          case 18:
-          case 16: {
-            cmPorts_.AddEntriesFrom(input, _repeated_cmPorts_codec);
-            break;
-          }
-          case 26: {
-            cmWebsocketAddresses_.AddEntriesFrom(input, _repeated_cmWebsocketAddresses_codec);
-            break;
-          }
-          case 32: {
-            PercentDefaultToWebsocket = input.ReadUInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10:
-          case 8: {
-            cmAddresses_.AddEntriesFrom(ref input, _repeated_cmAddresses_codec);
-            break;
-          }
-          case 18:
-          case 16: {
-            cmPorts_.AddEntriesFrom(ref input, _repeated_cmPorts_codec);
-            break;
-          }
-          case 26: {
-            cmWebsocketAddresses_.AddEntriesFrom(ref input, _repeated_cmWebsocketAddresses_codec);
-            break;
-          }
-          case 32: {
-            PercentDefaultToWebsocket = input.ReadUInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CMsgClientP2PConnectionInfo : pb::IMessage<CMsgClientP2PConnectionInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1454,7 +1153,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[3]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1927,7 +1626,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[4]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2453,7 +2152,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[5]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2719,7 +2418,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[6]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3036,7 +2735,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[7]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3250,7 +2949,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[8]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3463,7 +3162,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[9]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3678,7 +3377,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[10]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3996,7 +3695,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[11]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4211,7 +3910,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[12]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4452,7 +4151,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[13]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6911,7 +6610,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[14]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7178,7 +6877,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[15]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7496,7 +7195,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[16]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7763,7 +7462,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[17]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8240,7 +7939,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[18]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8511,7 +8210,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[19]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9858,7 +9557,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[20]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10228,7 +9927,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[21]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10690,7 +10389,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[22]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11361,7 +11060,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[23]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11730,7 +11429,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[24]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12255,7 +11954,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[25]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14820,7 +14519,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[26]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15335,7 +15034,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[27]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15523,7 +15222,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[28]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15789,7 +15488,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[29]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16102,7 +15801,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[30]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16629,7 +16328,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[31]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16844,7 +16543,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[32]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17163,7 +16862,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[33]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17626,7 +17325,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[34]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18389,7 +18088,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[35]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18656,7 +18355,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[36]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientserverReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

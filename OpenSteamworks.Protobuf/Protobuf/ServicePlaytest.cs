@@ -32,21 +32,28 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "YXl0ZXN0X0dldEludml0ZXNfUmVzcG9uc2VfSW52aXRlEhEKCWludml0ZV9p",
             "ZBgBIAEoBBINCgVhcHBpZBgCIAEoDRIXCg9zdGVhbWlkX2ludml0ZXIYAyAB",
             "KAYSGAoGc3RhdHVzGAQgASgFQgiCtRgEZW51bRIUCgx0aW1lX2NyZWF0ZWQY",
-            "BSABKA0SEAoIYXBwX25hbWUYBiABKAkiTwofQ1BsYXl0ZXN0X1VwZGF0ZUlu",
-            "dml0ZXNfUmVxdWVzdBISCgppbnZpdGVfaWRzGAEgAygEEhgKBnN0YXR1cxgC",
-            "IAEoBUIIgrUYBGVudW0iOwogQ1BsYXl0ZXN0X1VwZGF0ZUludml0ZXNfUmVz",
-            "cG9uc2USFwoPaW52aXRlc191cGRhdGVkGAEgASgNMq0BCghQbGF5dGVzdBJL",
-            "CgpHZXRJbnZpdGVzEh0uQ1BsYXl0ZXN0X0dldEludml0ZXNfUmVxdWVzdBoe",
-            "LkNQbGF5dGVzdF9HZXRJbnZpdGVzX1Jlc3BvbnNlElQKDVVwZGF0ZUludml0",
-            "ZXMSIC5DUGxheXRlc3RfVXBkYXRlSW52aXRlc19SZXF1ZXN0GiEuQ1BsYXl0",
-            "ZXN0X1VwZGF0ZUludml0ZXNfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtz",
-            "LlByb3RvYnVmLldlYlVJ"));
+            "BSABKA0SEAoIYXBwX25hbWUYBiABKAkiQQofQ1BsYXl0ZXN0X1JlcXVlc3RJ",
+            "bnZpdGVfUmVxdWVzdBINCgVhcHBpZBgBIAEoDRIPCgdzdGVhbWlkGAIgASgG",
+            "IlcKIENQbGF5dGVzdF9SZXF1ZXN0SW52aXRlX1Jlc3BvbnNlEhkKEWludml0",
+            "ZXNfcmVtYWluaW5nGAEgASgFEhgKBnN0YXR1cxgCIAEoBUIIgrUYBGVudW0i",
+            "TwofQ1BsYXl0ZXN0X1VwZGF0ZUludml0ZXNfUmVxdWVzdBISCgppbnZpdGVf",
+            "aWRzGAEgAygEEhgKBnN0YXR1cxgCIAEoBUIIgrUYBGVudW0iOwogQ1BsYXl0",
+            "ZXN0X1VwZGF0ZUludml0ZXNfUmVzcG9uc2USFwoPaW52aXRlc191cGRhdGVk",
+            "GAEgASgNMoMCCghQbGF5dGVzdBJLCgpHZXRJbnZpdGVzEh0uQ1BsYXl0ZXN0",
+            "X0dldEludml0ZXNfUmVxdWVzdBoeLkNQbGF5dGVzdF9HZXRJbnZpdGVzX1Jl",
+            "c3BvbnNlElQKDVJlcXVlc3RJbnZpdGUSIC5DUGxheXRlc3RfUmVxdWVzdElu",
+            "dml0ZV9SZXF1ZXN0GiEuQ1BsYXl0ZXN0X1JlcXVlc3RJbnZpdGVfUmVzcG9u",
+            "c2USVAoNVXBkYXRlSW52aXRlcxIgLkNQbGF5dGVzdF9VcGRhdGVJbnZpdGVz",
+            "X1JlcXVlc3QaIS5DUGxheXRlc3RfVXBkYXRlSW52aXRlc19SZXNwb25zZUIg",
+            "qgIdT3BlblN0ZWFtd29ya3MuUHJvdG9idWYuV2ViVUk="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPlaytest_GetInvites_Request), global::OpenSteamworks.Protobuf.WebUI.CPlaytest_GetInvites_Request.Parser, new[]{ "InviteId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPlaytest_GetInvites_Response), global::OpenSteamworks.Protobuf.WebUI.CPlaytest_GetInvites_Response.Parser, new[]{ "Invites" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPlaytest_GetInvites_Response_Invite), global::OpenSteamworks.Protobuf.WebUI.CPlaytest_GetInvites_Response_Invite.Parser, new[]{ "InviteId", "Appid", "SteamidInviter", "Status", "TimeCreated", "AppName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPlaytest_RequestInvite_Request), global::OpenSteamworks.Protobuf.WebUI.CPlaytest_RequestInvite_Request.Parser, new[]{ "Appid", "Steamid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPlaytest_RequestInvite_Response), global::OpenSteamworks.Protobuf.WebUI.CPlaytest_RequestInvite_Response.Parser, new[]{ "InvitesRemaining", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPlaytest_UpdateInvites_Request), global::OpenSteamworks.Protobuf.WebUI.CPlaytest_UpdateInvites_Request.Parser, new[]{ "InviteIds", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPlaytest_UpdateInvites_Response), global::OpenSteamworks.Protobuf.WebUI.CPlaytest_UpdateInvites_Response.Parser, new[]{ "InvitesUpdated" }, null, null, null, null)
           }));
@@ -932,6 +939,540 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CPlaytest_RequestInvite_Request : pb::IMessage<CPlaytest_RequestInvite_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CPlaytest_RequestInvite_Request> _parser = new pb::MessageParser<CPlaytest_RequestInvite_Request>(() => new CPlaytest_RequestInvite_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CPlaytest_RequestInvite_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePlaytestReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPlaytest_RequestInvite_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPlaytest_RequestInvite_Request(CPlaytest_RequestInvite_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      appid_ = other.appid_;
+      steamid_ = other.steamid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPlaytest_RequestInvite_Request Clone() {
+      return new CPlaytest_RequestInvite_Request(this);
+    }
+
+    /// <summary>Field number for the "appid" field.</summary>
+    public const int AppidFieldNumber = 1;
+    private readonly static uint AppidDefaultValue = 0;
+
+    private uint appid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Appid {
+      get { if ((_hasBits0 & 1) != 0) { return appid_; } else { return AppidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "steamid" field.</summary>
+    public const int SteamidFieldNumber = 2;
+    private readonly static ulong SteamidDefaultValue = 0UL;
+
+    private ulong steamid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Steamid {
+      get { if ((_hasBits0 & 2) != 0) { return steamid_; } else { return SteamidDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        steamid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "steamid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSteamid {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "steamid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSteamid() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CPlaytest_RequestInvite_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CPlaytest_RequestInvite_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Appid != other.Appid) return false;
+      if (Steamid != other.Steamid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppid) hash ^= Appid.GetHashCode();
+      if (HasSteamid) hash ^= Steamid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasSteamid) {
+        output.WriteRawTag(17);
+        output.WriteFixed64(Steamid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasSteamid) {
+        output.WriteRawTag(17);
+        output.WriteFixed64(Steamid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Appid);
+      }
+      if (HasSteamid) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CPlaytest_RequestInvite_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppid) {
+        Appid = other.Appid;
+      }
+      if (other.HasSteamid) {
+        Steamid = other.Steamid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 17: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 17: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CPlaytest_RequestInvite_Response : pb::IMessage<CPlaytest_RequestInvite_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CPlaytest_RequestInvite_Response> _parser = new pb::MessageParser<CPlaytest_RequestInvite_Response>(() => new CPlaytest_RequestInvite_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CPlaytest_RequestInvite_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePlaytestReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPlaytest_RequestInvite_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPlaytest_RequestInvite_Response(CPlaytest_RequestInvite_Response other) : this() {
+      _hasBits0 = other._hasBits0;
+      invitesRemaining_ = other.invitesRemaining_;
+      status_ = other.status_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPlaytest_RequestInvite_Response Clone() {
+      return new CPlaytest_RequestInvite_Response(this);
+    }
+
+    /// <summary>Field number for the "invites_remaining" field.</summary>
+    public const int InvitesRemainingFieldNumber = 1;
+    private readonly static int InvitesRemainingDefaultValue = 0;
+
+    private int invitesRemaining_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int InvitesRemaining {
+      get { if ((_hasBits0 & 1) != 0) { return invitesRemaining_; } else { return InvitesRemainingDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        invitesRemaining_ = value;
+      }
+    }
+    /// <summary>Gets whether the "invites_remaining" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasInvitesRemaining {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "invites_remaining" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearInvitesRemaining() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 2;
+    private readonly static int StatusDefaultValue = 0;
+
+    private int status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Status {
+      get { if ((_hasBits0 & 2) != 0) { return status_; } else { return StatusDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        status_ = value;
+      }
+    }
+    /// <summary>Gets whether the "status" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasStatus {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "status" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearStatus() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CPlaytest_RequestInvite_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CPlaytest_RequestInvite_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (InvitesRemaining != other.InvitesRemaining) return false;
+      if (Status != other.Status) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasInvitesRemaining) hash ^= InvitesRemaining.GetHashCode();
+      if (HasStatus) hash ^= Status.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasInvitesRemaining) {
+        output.WriteRawTag(8);
+        output.WriteInt32(InvitesRemaining);
+      }
+      if (HasStatus) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasInvitesRemaining) {
+        output.WriteRawTag(8);
+        output.WriteInt32(InvitesRemaining);
+      }
+      if (HasStatus) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasInvitesRemaining) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(InvitesRemaining);
+      }
+      if (HasStatus) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Status);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CPlaytest_RequestInvite_Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasInvitesRemaining) {
+        InvitesRemaining = other.InvitesRemaining;
+      }
+      if (other.HasStatus) {
+        Status = other.Status;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            InvitesRemaining = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Status = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            InvitesRemaining = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Status = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CPlaytest_UpdateInvites_Request : pb::IMessage<CPlaytest_UpdateInvites_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -947,7 +1488,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePlaytestReflection.Descriptor.MessageTypes[3]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePlaytestReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1190,7 +1731,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePlaytestReflection.Descriptor.MessageTypes[4]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePlaytestReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

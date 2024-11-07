@@ -5,8 +5,8 @@
             "name": "GetSessionCount",
             "argc": "1",
             "interfaceid": "52",
-            "functionid": "2794248641",
-            "fencepost": "2893255047",
+            "functionid": "2794248375",
+            "fencepost": "2887351567",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -18,8 +18,8 @@
             "name": "GetSessionID",
             "argc": "2",
             "interfaceid": "52",
-            "functionid": "1973243958",
-            "fencepost": "2072266493",
+            "functionid": "1973244224",
+            "fencepost": "2066363545",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -32,8 +32,8 @@
             "name": "GetSessionSteamID",
             "argc": "3",
             "interfaceid": "52",
-            "functionid": "2908162478",
-            "fencepost": "3007201142",
+            "functionid": "2908162268",
+            "fencepost": "3001297718",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -46,8 +46,8 @@
             "name": "GetSessionClientName",
             "argc": "2",
             "interfaceid": "52",
-            "functionid": "787084725",
-            "fencepost": "886139518",
+            "functionid": "787084487",
+            "fencepost": "880236066",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -60,8 +60,8 @@
             "name": "GetSessionClientFormFactor",
             "argc": "2",
             "interfaceid": "52",
-            "functionid": "4060454957",
-            "fencepost": "4159525879",
+            "functionid": "4060455235",
+            "fencepost": "4153622943",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -74,8 +74,8 @@
             "name": "BGetSessionClientResolution",
             "argc": "4",
             "interfaceid": "52",
-            "functionid": "2408321987",
-            "fencepost": "2507473554",
+            "functionid": "2408321709",
+            "fencepost": "2501570062",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -90,8 +90,8 @@
             "name": "BStartRemotePlayTogether",
             "argc": "2",
             "interfaceid": "52",
-            "functionid": "1922131020",
-            "fencepost": "2021347103",
+            "functionid": "1922132690",
+            "fencepost": "2015445559",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes1"
@@ -104,8 +104,8 @@
             "name": "BSendRemotePlayTogetherInvite",
             "argc": "3",
             "interfaceid": "52",
-            "functionid": "1483306746",
-            "fencepost": "1582538958",
+            "functionid": "1483307112",
+            "fencepost": "1576636110",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64"

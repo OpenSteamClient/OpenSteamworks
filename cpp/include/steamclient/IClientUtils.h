@@ -20,7 +20,7 @@ public:
     virtual const char *GetManagedContentRoot() = 0; //argc: 0, index 4
     virtual uint32_t GetSecondsSinceAppActive() = 0; //argc: 0, index 5
     virtual uint32_t GetSecondsSinceComputerActive() = 0; //argc: 0, index 6
-    virtual void SetComputerActive() = 0; //argc: 0, index 7
+    virtual void SetComputerActive() = 0; //argc: 1, index 7
     virtual EUniverse GetConnectedUniverse() = 0; //argc: 0, index 8
     virtual unknown_ret GetSteamRealm() = 0; //argc: 0, index 9
     virtual uint32_t GetServerRealTime() = 0; //argc: 0, index 10

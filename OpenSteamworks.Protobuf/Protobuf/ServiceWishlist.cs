@@ -25,31 +25,1722 @@ namespace OpenSteamworks.Protobuf.WebUI {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChZzZXJ2aWNlX3dpc2hsaXN0LnByb3RvGiBnb29nbGUvcHJvdG9idWYvZGVz",
-            "Y3JpcHRvci5wcm90bxoMY29tbW9uLnByb3RvIoMBCihDV2lzaGxpc3RfR2V0",
-            "V2lzaGxpc3RJdGVtc09uU2FsZV9SZXF1ZXN0EiQKB2NvbnRleHQYASABKAsy",
-            "Ey5TdG9yZUJyb3dzZUNvbnRleHQSMQoMZGF0YV9yZXF1ZXN0GAIgASgLMhsu",
-            "U3RvcmVCcm93c2VJdGVtRGF0YVJlcXVlc3QicwopQ1dpc2hsaXN0X0dldFdp",
-            "c2hsaXN0SXRlbXNPblNhbGVfUmVzcG9uc2USRgoFaXRlbXMYASADKAsyNy5D",
-            "V2lzaGxpc3RfR2V0V2lzaGxpc3RJdGVtc09uU2FsZV9SZXNwb25zZV9XaXNo",
-            "bGlzdEl0ZW0iZwo2Q1dpc2hsaXN0X0dldFdpc2hsaXN0SXRlbXNPblNhbGVf",
-            "UmVzcG9uc2VfV2lzaGxpc3RJdGVtEg0KBWFwcGlkGAEgASgNEh4KCnN0b3Jl",
-            "X2l0ZW0YAiABKAsyCi5TdG9yZUl0ZW0yewoIV2lzaGxpc3QSbwoWR2V0V2lz",
-            "aGxpc3RJdGVtc09uU2FsZRIpLkNXaXNobGlzdF9HZXRXaXNobGlzdEl0ZW1z",
-            "T25TYWxlX1JlcXVlc3QaKi5DV2lzaGxpc3RfR2V0V2lzaGxpc3RJdGVtc09u",
-            "U2FsZV9SZXNwb25zZUIgqgIdT3BlblN0ZWFtd29ya3MuUHJvdG9idWYuV2Vi",
-            "VUk="));
+            "Y3JpcHRvci5wcm90bxoMY29tbW9uLnByb3RvGhFjb21tb25fYmFzZS5wcm90",
+            "byJaCh9DV2lzaGxpc3RfQWRkVG9XaXNobGlzdF9SZXF1ZXN0Eg0KBWFwcGlk",
+            "GAEgASgNEigKB25hdmRhdGEYAiABKAsyFy5DVXNlckludGVyZmFjZV9OYXZE",
+            "YXRhIjoKIENXaXNobGlzdF9BZGRUb1dpc2hsaXN0X1Jlc3BvbnNlEhYKDndp",
+            "c2hsaXN0X2NvdW50GAEgASgNIjAKHUNXaXNobGlzdF9HZXRXaXNobGlzdF9S",
+            "ZXF1ZXN0Eg8KB3N0ZWFtaWQYASABKAYiXQoeQ1dpc2hsaXN0X0dldFdpc2hs",
+            "aXN0X1Jlc3BvbnNlEjsKBWl0ZW1zGAEgAygLMiwuQ1dpc2hsaXN0X0dldFdp",
+            "c2hsaXN0X1Jlc3BvbnNlX1dpc2hsaXN0SXRlbSJiCitDV2lzaGxpc3RfR2V0",
+            "V2lzaGxpc3RfUmVzcG9uc2VfV2lzaGxpc3RJdGVtEg0KBWFwcGlkGAEgASgN",
+            "EhAKCHByaW9yaXR5GAIgASgNEhIKCmRhdGVfYWRkZWQYAyABKA0iOQomQ1dp",
+            "c2hsaXN0X0dldFdpc2hsaXN0SXRlbUNvdW50X1JlcXVlc3QSDwoHc3RlYW1p",
+            "ZBgBIAEoBiI4CidDV2lzaGxpc3RfR2V0V2lzaGxpc3RJdGVtQ291bnRfUmVz",
+            "cG9uc2USDQoFY291bnQYASABKA0igwEKKENXaXNobGlzdF9HZXRXaXNobGlz",
+            "dEl0ZW1zT25TYWxlX1JlcXVlc3QSJAoHY29udGV4dBgBIAEoCzITLlN0b3Jl",
+            "QnJvd3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QYAiABKAsyGy5TdG9yZUJy",
+            "b3dzZUl0ZW1EYXRhUmVxdWVzdCJzCilDV2lzaGxpc3RfR2V0V2lzaGxpc3RJ",
+            "dGVtc09uU2FsZV9SZXNwb25zZRJGCgVpdGVtcxgBIAMoCzI3LkNXaXNobGlz",
+            "dF9HZXRXaXNobGlzdEl0ZW1zT25TYWxlX1Jlc3BvbnNlX1dpc2hsaXN0SXRl",
+            "bSJnCjZDV2lzaGxpc3RfR2V0V2lzaGxpc3RJdGVtc09uU2FsZV9SZXNwb25z",
+            "ZV9XaXNobGlzdEl0ZW0SDQoFYXBwaWQYASABKA0SHgoKc3RvcmVfaXRlbRgC",
+            "IAEoCzIKLlN0b3JlSXRlbSKMAgorQ1dpc2hsaXN0X0dldFdpc2hsaXN0U29y",
+            "dGVkRmlsdGVyZWRfUmVxdWVzdBIPCgdzdGVhbWlkGAEgASgGEiQKB2NvbnRl",
+            "eHQYAiABKAsyEy5TdG9yZUJyb3dzZUNvbnRleHQSMQoMZGF0YV9yZXF1ZXN0",
+            "GAMgASgLMhsuU3RvcmVCcm93c2VJdGVtRGF0YVJlcXVlc3QSHwoKc29ydF9v",
+            "cmRlchgEIAEoBToBMEIIgrUYBGVudW0SIgoHZmlsdGVycxgFIAEoCzIRLkNX",
+            "aXNobGlzdEZpbHRlcnMSFgoLc3RhcnRfaW5kZXgYBiABKAU6ATASFgoJcGFn",
+            "ZV9zaXplGAcgASgFOgMxMDAieQosQ1dpc2hsaXN0X0dldFdpc2hsaXN0U29y",
+            "dGVkRmlsdGVyZWRfUmVzcG9uc2USSQoFaXRlbXMYASADKAsyOi5DV2lzaGxp",
+            "c3RfR2V0V2lzaGxpc3RTb3J0ZWRGaWx0ZXJlZF9SZXNwb25zZV9XaXNobGlz",
+            "dEl0ZW0ikAEKOUNXaXNobGlzdF9HZXRXaXNobGlzdFNvcnRlZEZpbHRlcmVk",
+            "X1Jlc3BvbnNlX1dpc2hsaXN0SXRlbRINCgVhcHBpZBgBIAEoDRIQCghwcmlv",
+            "cml0eRgCIAEoDRISCgpkYXRlX2FkZGVkGAMgASgNEh4KCnN0b3JlX2l0ZW0Y",
+            "BCABKAsyCi5TdG9yZUl0ZW0iNQokQ1dpc2hsaXN0X1JlbW92ZUZyb21XaXNo",
+            "bGlzdF9SZXF1ZXN0Eg0KBWFwcGlkGAEgASgNIj8KJUNXaXNobGlzdF9SZW1v",
+            "dmVGcm9tV2lzaGxpc3RfUmVzcG9uc2USFgoOd2lzaGxpc3RfY291bnQYASAB",
+            "KA0ixwIKEENXaXNobGlzdEZpbHRlcnMSEgoKbWFjb3Nfb25seRgBIAEoCBIa",
+            "ChJzdGVhbW9zX2xpbnV4X29ubHkYAiABKAgSEgoKb25seV9nYW1lcxgKIAEo",
+            "CBIVCg1vbmx5X3NvZnR3YXJlGAsgASgIEhAKCG9ubHlfZGxjGAwgASgIEhEK",
+            "CW9ubHlfZnJlZRgNIAEoCBIaChJtYXhfcHJpY2VfaW5fY2VudHMYFCABKAMS",
+            "HAoUbWluX2Rpc2NvdW50X3BlcmNlbnQYFSABKAUSOwoNZXhjbHVkZV90eXBl",
+            "cxgWIAEoCzIkLkNXaXNobGlzdEZpbHRlcnNfRXhjbHVkZVR5cGVGaWx0ZXJz",
+            "EjwKEHN0ZWFtX2RlY2ZpbHRlcnMYFyABKAsyIi5DV2lzaGxpc3RGaWx0ZXJz",
+            "X1N0ZWFtRGVja0ZpbHRlcnMieQojQ1dpc2hsaXN0RmlsdGVyc19FeGNsdWRl",
+            "VHlwZUZpbHRlcnMSHAoUZXhjbHVkZV9lYXJseV9hY2Nlc3MYASABKAgSGwoT",
+            "ZXhjbHVkZV9jb21pbmdfc29vbhgCIAEoCBIXCg9leGNsdWRlX3ZyX29ubHkY",
+            "AyABKAgiVwohQ1dpc2hsaXN0RmlsdGVyc19TdGVhbURlY2tGaWx0ZXJzEhgK",
+            "EGluY2x1ZGVfdmVyaWZpZWQYASABKAgSGAoQaW5jbHVkZV9wbGF5YWJsZRgC",
+            "IAEoCDLrBAoIV2lzaGxpc3QSVAoNQWRkVG9XaXNobGlzdBIgLkNXaXNobGlz",
+            "dF9BZGRUb1dpc2hsaXN0X1JlcXVlc3QaIS5DV2lzaGxpc3RfQWRkVG9XaXNo",
+            "bGlzdF9SZXNwb25zZRJOCgtHZXRXaXNobGlzdBIeLkNXaXNobGlzdF9HZXRX",
+            "aXNobGlzdF9SZXF1ZXN0Gh8uQ1dpc2hsaXN0X0dldFdpc2hsaXN0X1Jlc3Bv",
+            "bnNlEmkKFEdldFdpc2hsaXN0SXRlbUNvdW50EicuQ1dpc2hsaXN0X0dldFdp",
+            "c2hsaXN0SXRlbUNvdW50X1JlcXVlc3QaKC5DV2lzaGxpc3RfR2V0V2lzaGxp",
+            "c3RJdGVtQ291bnRfUmVzcG9uc2USbwoWR2V0V2lzaGxpc3RJdGVtc09uU2Fs",
+            "ZRIpLkNXaXNobGlzdF9HZXRXaXNobGlzdEl0ZW1zT25TYWxlX1JlcXVlc3Qa",
+            "Ki5DV2lzaGxpc3RfR2V0V2lzaGxpc3RJdGVtc09uU2FsZV9SZXNwb25zZRJ4",
+            "ChlHZXRXaXNobGlzdFNvcnRlZEZpbHRlcmVkEiwuQ1dpc2hsaXN0X0dldFdp",
+            "c2hsaXN0U29ydGVkRmlsdGVyZWRfUmVxdWVzdBotLkNXaXNobGlzdF9HZXRX",
+            "aXNobGlzdFNvcnRlZEZpbHRlcmVkX1Jlc3BvbnNlEmMKElJlbW92ZUZyb21X",
+            "aXNobGlzdBIlLkNXaXNobGlzdF9SZW1vdmVGcm9tV2lzaGxpc3RfUmVxdWVz",
+            "dBomLkNXaXNobGlzdF9SZW1vdmVGcm9tV2lzaGxpc3RfUmVzcG9uc2VCIKoC",
+            "HU9wZW5TdGVhbXdvcmtzLlByb3RvYnVmLldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_AddToWishlist_Request), global::OpenSteamworks.Protobuf.WebUI.CWishlist_AddToWishlist_Request.Parser, new[]{ "Appid", "Navdata" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_AddToWishlist_Response), global::OpenSteamworks.Protobuf.WebUI.CWishlist_AddToWishlist_Response.Parser, new[]{ "WishlistCount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Request), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Request.Parser, new[]{ "Steamid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response.Parser, new[]{ "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response_WishlistItem), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response_WishlistItem.Parser, new[]{ "Appid", "Priority", "DateAdded" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemCount_Request), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemCount_Request.Parser, new[]{ "Steamid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemCount_Response), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemCount_Response.Parser, new[]{ "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Request), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Request.Parser, new[]{ "Context", "DataRequest" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Response), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Response.Parser, new[]{ "Items" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Response_WishlistItem), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Response_WishlistItem.Parser, new[]{ "Appid", "StoreItem" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Response_WishlistItem), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistItemsOnSale_Response_WishlistItem.Parser, new[]{ "Appid", "StoreItem" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Request), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Request.Parser, new[]{ "Steamid", "Context", "DataRequest", "SortOrder", "Filters", "StartIndex", "PageSize" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response.Parser, new[]{ "Items" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem.Parser, new[]{ "Appid", "Priority", "DateAdded", "StoreItem" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Request), global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Request.Parser, new[]{ "Appid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Response), global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Response.Parser, new[]{ "WishlistCount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters), global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters.Parser, new[]{ "MacosOnly", "SteamosLinuxOnly", "OnlyGames", "OnlySoftware", "OnlyDlc", "OnlyFree", "MaxPriceInCents", "MinDiscountPercent", "ExcludeTypes", "SteamDecfilters" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters), global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters.Parser, new[]{ "ExcludeEarlyAccess", "ExcludeComingSoon", "ExcludeVrOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters), global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters.Parser, new[]{ "IncludeVerified", "IncludePlayable" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_AddToWishlist_Request : pb::IMessage<CWishlist_AddToWishlist_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_AddToWishlist_Request> _parser = new pb::MessageParser<CWishlist_AddToWishlist_Request>(() => new CWishlist_AddToWishlist_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_AddToWishlist_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_AddToWishlist_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_AddToWishlist_Request(CWishlist_AddToWishlist_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      appid_ = other.appid_;
+      navdata_ = other.navdata_ != null ? other.navdata_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_AddToWishlist_Request Clone() {
+      return new CWishlist_AddToWishlist_Request(this);
+    }
+
+    /// <summary>Field number for the "appid" field.</summary>
+    public const int AppidFieldNumber = 1;
+    private readonly static uint AppidDefaultValue = 0;
+
+    private uint appid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Appid {
+      get { if ((_hasBits0 & 1) != 0) { return appid_; } else { return AppidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "navdata" field.</summary>
+    public const int NavdataFieldNumber = 2;
+    private global::OpenSteamworks.Protobuf.WebUI.CUserInterface_NavData navdata_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.CUserInterface_NavData Navdata {
+      get { return navdata_; }
+      set {
+        navdata_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_AddToWishlist_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_AddToWishlist_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Appid != other.Appid) return false;
+      if (!object.Equals(Navdata, other.Navdata)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppid) hash ^= Appid.GetHashCode();
+      if (navdata_ != null) hash ^= Navdata.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (navdata_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Navdata);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (navdata_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Navdata);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Appid);
+      }
+      if (navdata_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Navdata);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_AddToWishlist_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppid) {
+        Appid = other.Appid;
+      }
+      if (other.navdata_ != null) {
+        if (navdata_ == null) {
+          Navdata = new global::OpenSteamworks.Protobuf.WebUI.CUserInterface_NavData();
+        }
+        Navdata.MergeFrom(other.Navdata);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            if (navdata_ == null) {
+              Navdata = new global::OpenSteamworks.Protobuf.WebUI.CUserInterface_NavData();
+            }
+            input.ReadMessage(Navdata);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            if (navdata_ == null) {
+              Navdata = new global::OpenSteamworks.Protobuf.WebUI.CUserInterface_NavData();
+            }
+            input.ReadMessage(Navdata);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_AddToWishlist_Response : pb::IMessage<CWishlist_AddToWishlist_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_AddToWishlist_Response> _parser = new pb::MessageParser<CWishlist_AddToWishlist_Response>(() => new CWishlist_AddToWishlist_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_AddToWishlist_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_AddToWishlist_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_AddToWishlist_Response(CWishlist_AddToWishlist_Response other) : this() {
+      _hasBits0 = other._hasBits0;
+      wishlistCount_ = other.wishlistCount_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_AddToWishlist_Response Clone() {
+      return new CWishlist_AddToWishlist_Response(this);
+    }
+
+    /// <summary>Field number for the "wishlist_count" field.</summary>
+    public const int WishlistCountFieldNumber = 1;
+    private readonly static uint WishlistCountDefaultValue = 0;
+
+    private uint wishlistCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint WishlistCount {
+      get { if ((_hasBits0 & 1) != 0) { return wishlistCount_; } else { return WishlistCountDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        wishlistCount_ = value;
+      }
+    }
+    /// <summary>Gets whether the "wishlist_count" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasWishlistCount {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "wishlist_count" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearWishlistCount() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_AddToWishlist_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_AddToWishlist_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (WishlistCount != other.WishlistCount) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasWishlistCount) hash ^= WishlistCount.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasWishlistCount) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(WishlistCount);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasWishlistCount) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(WishlistCount);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasWishlistCount) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(WishlistCount);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_AddToWishlist_Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasWishlistCount) {
+        WishlistCount = other.WishlistCount;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            WishlistCount = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            WishlistCount = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlist_Request : pb::IMessage<CWishlist_GetWishlist_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlist_Request> _parser = new pb::MessageParser<CWishlist_GetWishlist_Request>(() => new CWishlist_GetWishlist_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlist_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Request(CWishlist_GetWishlist_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      steamid_ = other.steamid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Request Clone() {
+      return new CWishlist_GetWishlist_Request(this);
+    }
+
+    /// <summary>Field number for the "steamid" field.</summary>
+    public const int SteamidFieldNumber = 1;
+    private readonly static ulong SteamidDefaultValue = 0UL;
+
+    private ulong steamid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Steamid {
+      get { if ((_hasBits0 & 1) != 0) { return steamid_; } else { return SteamidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        steamid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "steamid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSteamid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "steamid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSteamid() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlist_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlist_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Steamid != other.Steamid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasSteamid) hash ^= Steamid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasSteamid) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlist_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasSteamid) {
+        Steamid = other.Steamid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlist_Response : pb::IMessage<CWishlist_GetWishlist_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlist_Response> _parser = new pb::MessageParser<CWishlist_GetWishlist_Response>(() => new CWishlist_GetWishlist_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlist_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Response(CWishlist_GetWishlist_Response other) : this() {
+      items_ = other.items_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Response Clone() {
+      return new CWishlist_GetWishlist_Response(this);
+    }
+
+    /// <summary>Field number for the "items" field.</summary>
+    public const int ItemsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response_WishlistItem> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response_WishlistItem.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response_WishlistItem> items_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response_WishlistItem>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlist_Response_WishlistItem> Items {
+      get { return items_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlist_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlist_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!items_.Equals(other.items_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= items_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      items_.WriteTo(output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      items_.WriteTo(ref output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += items_.CalculateSize(_repeated_items_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlist_Response other) {
+      if (other == null) {
+        return;
+      }
+      items_.Add(other.items_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            items_.AddEntriesFrom(input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            items_.AddEntriesFrom(ref input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlist_Response_WishlistItem : pb::IMessage<CWishlist_GetWishlist_Response_WishlistItem>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlist_Response_WishlistItem> _parser = new pb::MessageParser<CWishlist_GetWishlist_Response_WishlistItem>(() => new CWishlist_GetWishlist_Response_WishlistItem());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlist_Response_WishlistItem> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Response_WishlistItem() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Response_WishlistItem(CWishlist_GetWishlist_Response_WishlistItem other) : this() {
+      _hasBits0 = other._hasBits0;
+      appid_ = other.appid_;
+      priority_ = other.priority_;
+      dateAdded_ = other.dateAdded_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlist_Response_WishlistItem Clone() {
+      return new CWishlist_GetWishlist_Response_WishlistItem(this);
+    }
+
+    /// <summary>Field number for the "appid" field.</summary>
+    public const int AppidFieldNumber = 1;
+    private readonly static uint AppidDefaultValue = 0;
+
+    private uint appid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Appid {
+      get { if ((_hasBits0 & 1) != 0) { return appid_; } else { return AppidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "priority" field.</summary>
+    public const int PriorityFieldNumber = 2;
+    private readonly static uint PriorityDefaultValue = 0;
+
+    private uint priority_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Priority {
+      get { if ((_hasBits0 & 2) != 0) { return priority_; } else { return PriorityDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        priority_ = value;
+      }
+    }
+    /// <summary>Gets whether the "priority" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPriority {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "priority" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPriority() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "date_added" field.</summary>
+    public const int DateAddedFieldNumber = 3;
+    private readonly static uint DateAddedDefaultValue = 0;
+
+    private uint dateAdded_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint DateAdded {
+      get { if ((_hasBits0 & 4) != 0) { return dateAdded_; } else { return DateAddedDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        dateAdded_ = value;
+      }
+    }
+    /// <summary>Gets whether the "date_added" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDateAdded {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "date_added" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDateAdded() {
+      _hasBits0 &= ~4;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlist_Response_WishlistItem);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlist_Response_WishlistItem other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Appid != other.Appid) return false;
+      if (Priority != other.Priority) return false;
+      if (DateAdded != other.DateAdded) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppid) hash ^= Appid.GetHashCode();
+      if (HasPriority) hash ^= Priority.GetHashCode();
+      if (HasDateAdded) hash ^= DateAdded.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasPriority) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Priority);
+      }
+      if (HasDateAdded) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(DateAdded);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasPriority) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Priority);
+      }
+      if (HasDateAdded) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(DateAdded);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Appid);
+      }
+      if (HasPriority) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+      }
+      if (HasDateAdded) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DateAdded);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlist_Response_WishlistItem other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppid) {
+        Appid = other.Appid;
+      }
+      if (other.HasPriority) {
+        Priority = other.Priority;
+      }
+      if (other.HasDateAdded) {
+        DateAdded = other.DateAdded;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Priority = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            DateAdded = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Priority = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            DateAdded = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlistItemCount_Request : pb::IMessage<CWishlist_GetWishlistItemCount_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlistItemCount_Request> _parser = new pb::MessageParser<CWishlist_GetWishlistItemCount_Request>(() => new CWishlist_GetWishlistItemCount_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlistItemCount_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistItemCount_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistItemCount_Request(CWishlist_GetWishlistItemCount_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      steamid_ = other.steamid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistItemCount_Request Clone() {
+      return new CWishlist_GetWishlistItemCount_Request(this);
+    }
+
+    /// <summary>Field number for the "steamid" field.</summary>
+    public const int SteamidFieldNumber = 1;
+    private readonly static ulong SteamidDefaultValue = 0UL;
+
+    private ulong steamid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Steamid {
+      get { if ((_hasBits0 & 1) != 0) { return steamid_; } else { return SteamidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        steamid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "steamid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSteamid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "steamid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSteamid() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlistItemCount_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlistItemCount_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Steamid != other.Steamid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasSteamid) hash ^= Steamid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasSteamid) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlistItemCount_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasSteamid) {
+        Steamid = other.Steamid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlistItemCount_Response : pb::IMessage<CWishlist_GetWishlistItemCount_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlistItemCount_Response> _parser = new pb::MessageParser<CWishlist_GetWishlistItemCount_Response>(() => new CWishlist_GetWishlistItemCount_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlistItemCount_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistItemCount_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistItemCount_Response(CWishlist_GetWishlistItemCount_Response other) : this() {
+      _hasBits0 = other._hasBits0;
+      count_ = other.count_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistItemCount_Response Clone() {
+      return new CWishlist_GetWishlistItemCount_Response(this);
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 1;
+    private readonly static uint CountDefaultValue = 0;
+
+    private uint count_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Count {
+      get { if ((_hasBits0 & 1) != 0) { return count_; } else { return CountDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        count_ = value;
+      }
+    }
+    /// <summary>Gets whether the "count" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCount {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "count" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCount() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlistItemCount_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlistItemCount_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Count != other.Count) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasCount) hash ^= Count.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasCount) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasCount) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasCount) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Count);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlistItemCount_Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasCount) {
+        Count = other.Count;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Count = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Count = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CWishlist_GetWishlistItemsOnSale_Request : pb::IMessage<CWishlist_GetWishlistItemsOnSale_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -65,7 +1756,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[0]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -318,7 +2009,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[1]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -506,7 +2197,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[2]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -742,6 +2433,2754 @@ namespace OpenSteamworks.Protobuf.WebUI {
               StoreItem = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
             }
             input.ReadMessage(StoreItem);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlistSortedFiltered_Request : pb::IMessage<CWishlist_GetWishlistSortedFiltered_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Request> _parser = new pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Request>(() => new CWishlist_GetWishlistSortedFiltered_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Request(CWishlist_GetWishlistSortedFiltered_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      steamid_ = other.steamid_;
+      context_ = other.context_ != null ? other.context_.Clone() : null;
+      dataRequest_ = other.dataRequest_ != null ? other.dataRequest_.Clone() : null;
+      sortOrder_ = other.sortOrder_;
+      filters_ = other.filters_ != null ? other.filters_.Clone() : null;
+      startIndex_ = other.startIndex_;
+      pageSize_ = other.pageSize_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Request Clone() {
+      return new CWishlist_GetWishlistSortedFiltered_Request(this);
+    }
+
+    /// <summary>Field number for the "steamid" field.</summary>
+    public const int SteamidFieldNumber = 1;
+    private readonly static ulong SteamidDefaultValue = 0UL;
+
+    private ulong steamid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Steamid {
+      get { if ((_hasBits0 & 1) != 0) { return steamid_; } else { return SteamidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        steamid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "steamid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSteamid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "steamid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSteamid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "context" field.</summary>
+    public const int ContextFieldNumber = 2;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext context_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext Context {
+      get { return context_; }
+      set {
+        context_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "data_request" field.</summary>
+    public const int DataRequestFieldNumber = 3;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest dataRequest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest DataRequest {
+      get { return dataRequest_; }
+      set {
+        dataRequest_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sort_order" field.</summary>
+    public const int SortOrderFieldNumber = 4;
+    private readonly static int SortOrderDefaultValue = 0;
+
+    private int sortOrder_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SortOrder {
+      get { if ((_hasBits0 & 2) != 0) { return sortOrder_; } else { return SortOrderDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        sortOrder_ = value;
+      }
+    }
+    /// <summary>Gets whether the "sort_order" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSortOrder {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "sort_order" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSortOrder() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "filters" field.</summary>
+    public const int FiltersFieldNumber = 5;
+    private global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters filters_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters Filters {
+      get { return filters_; }
+      set {
+        filters_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_index" field.</summary>
+    public const int StartIndexFieldNumber = 6;
+    private readonly static int StartIndexDefaultValue = 0;
+
+    private int startIndex_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int StartIndex {
+      get { if ((_hasBits0 & 4) != 0) { return startIndex_; } else { return StartIndexDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        startIndex_ = value;
+      }
+    }
+    /// <summary>Gets whether the "start_index" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasStartIndex {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "start_index" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearStartIndex() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "page_size" field.</summary>
+    public const int PageSizeFieldNumber = 7;
+    private readonly static int PageSizeDefaultValue = 100;
+
+    private int pageSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PageSize {
+      get { if ((_hasBits0 & 8) != 0) { return pageSize_; } else { return PageSizeDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        pageSize_ = value;
+      }
+    }
+    /// <summary>Gets whether the "page_size" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPageSize {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "page_size" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPageSize() {
+      _hasBits0 &= ~8;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlistSortedFiltered_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlistSortedFiltered_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Steamid != other.Steamid) return false;
+      if (!object.Equals(Context, other.Context)) return false;
+      if (!object.Equals(DataRequest, other.DataRequest)) return false;
+      if (SortOrder != other.SortOrder) return false;
+      if (!object.Equals(Filters, other.Filters)) return false;
+      if (StartIndex != other.StartIndex) return false;
+      if (PageSize != other.PageSize) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasSteamid) hash ^= Steamid.GetHashCode();
+      if (context_ != null) hash ^= Context.GetHashCode();
+      if (dataRequest_ != null) hash ^= DataRequest.GetHashCode();
+      if (HasSortOrder) hash ^= SortOrder.GetHashCode();
+      if (filters_ != null) hash ^= Filters.GetHashCode();
+      if (HasStartIndex) hash ^= StartIndex.GetHashCode();
+      if (HasPageSize) hash ^= PageSize.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (context_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Context);
+      }
+      if (dataRequest_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DataRequest);
+      }
+      if (HasSortOrder) {
+        output.WriteRawTag(32);
+        output.WriteInt32(SortOrder);
+      }
+      if (filters_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Filters);
+      }
+      if (HasStartIndex) {
+        output.WriteRawTag(48);
+        output.WriteInt32(StartIndex);
+      }
+      if (HasPageSize) {
+        output.WriteRawTag(56);
+        output.WriteInt32(PageSize);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (context_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Context);
+      }
+      if (dataRequest_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DataRequest);
+      }
+      if (HasSortOrder) {
+        output.WriteRawTag(32);
+        output.WriteInt32(SortOrder);
+      }
+      if (filters_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Filters);
+      }
+      if (HasStartIndex) {
+        output.WriteRawTag(48);
+        output.WriteInt32(StartIndex);
+      }
+      if (HasPageSize) {
+        output.WriteRawTag(56);
+        output.WriteInt32(PageSize);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasSteamid) {
+        size += 1 + 8;
+      }
+      if (context_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Context);
+      }
+      if (dataRequest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DataRequest);
+      }
+      if (HasSortOrder) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SortOrder);
+      }
+      if (filters_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Filters);
+      }
+      if (HasStartIndex) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StartIndex);
+      }
+      if (HasPageSize) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageSize);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlistSortedFiltered_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasSteamid) {
+        Steamid = other.Steamid;
+      }
+      if (other.context_ != null) {
+        if (context_ == null) {
+          Context = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext();
+        }
+        Context.MergeFrom(other.Context);
+      }
+      if (other.dataRequest_ != null) {
+        if (dataRequest_ == null) {
+          DataRequest = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest();
+        }
+        DataRequest.MergeFrom(other.DataRequest);
+      }
+      if (other.HasSortOrder) {
+        SortOrder = other.SortOrder;
+      }
+      if (other.filters_ != null) {
+        if (filters_ == null) {
+          Filters = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters();
+        }
+        Filters.MergeFrom(other.Filters);
+      }
+      if (other.HasStartIndex) {
+        StartIndex = other.StartIndex;
+      }
+      if (other.HasPageSize) {
+        PageSize = other.PageSize;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+          case 18: {
+            if (context_ == null) {
+              Context = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext();
+            }
+            input.ReadMessage(Context);
+            break;
+          }
+          case 26: {
+            if (dataRequest_ == null) {
+              DataRequest = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest();
+            }
+            input.ReadMessage(DataRequest);
+            break;
+          }
+          case 32: {
+            SortOrder = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            if (filters_ == null) {
+              Filters = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters();
+            }
+            input.ReadMessage(Filters);
+            break;
+          }
+          case 48: {
+            StartIndex = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            PageSize = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+          case 18: {
+            if (context_ == null) {
+              Context = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext();
+            }
+            input.ReadMessage(Context);
+            break;
+          }
+          case 26: {
+            if (dataRequest_ == null) {
+              DataRequest = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest();
+            }
+            input.ReadMessage(DataRequest);
+            break;
+          }
+          case 32: {
+            SortOrder = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            if (filters_ == null) {
+              Filters = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters();
+            }
+            input.ReadMessage(Filters);
+            break;
+          }
+          case 48: {
+            StartIndex = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            PageSize = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlistSortedFiltered_Response : pb::IMessage<CWishlist_GetWishlistSortedFiltered_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Response> _parser = new pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Response>(() => new CWishlist_GetWishlistSortedFiltered_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Response(CWishlist_GetWishlistSortedFiltered_Response other) : this() {
+      items_ = other.items_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Response Clone() {
+      return new CWishlist_GetWishlistSortedFiltered_Response(this);
+    }
+
+    /// <summary>Field number for the "items" field.</summary>
+    public const int ItemsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem> _repeated_items_codec
+        = pb::FieldCodec.ForMessage(10, global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem> items_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem> Items {
+      get { return items_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlistSortedFiltered_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlistSortedFiltered_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!items_.Equals(other.items_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= items_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      items_.WriteTo(output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      items_.WriteTo(ref output, _repeated_items_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += items_.CalculateSize(_repeated_items_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlistSortedFiltered_Response other) {
+      if (other == null) {
+        return;
+      }
+      items_.Add(other.items_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            items_.AddEntriesFrom(input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            items_.AddEntriesFrom(ref input, _repeated_items_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_GetWishlistSortedFiltered_Response_WishlistItem : pb::IMessage<CWishlist_GetWishlistSortedFiltered_Response_WishlistItem>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Response_WishlistItem> _parser = new pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Response_WishlistItem>(() => new CWishlist_GetWishlistSortedFiltered_Response_WishlistItem());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_GetWishlistSortedFiltered_Response_WishlistItem> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Response_WishlistItem() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Response_WishlistItem(CWishlist_GetWishlistSortedFiltered_Response_WishlistItem other) : this() {
+      _hasBits0 = other._hasBits0;
+      appid_ = other.appid_;
+      priority_ = other.priority_;
+      dateAdded_ = other.dateAdded_;
+      storeItem_ = other.storeItem_ != null ? other.storeItem_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_GetWishlistSortedFiltered_Response_WishlistItem Clone() {
+      return new CWishlist_GetWishlistSortedFiltered_Response_WishlistItem(this);
+    }
+
+    /// <summary>Field number for the "appid" field.</summary>
+    public const int AppidFieldNumber = 1;
+    private readonly static uint AppidDefaultValue = 0;
+
+    private uint appid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Appid {
+      get { if ((_hasBits0 & 1) != 0) { return appid_; } else { return AppidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "priority" field.</summary>
+    public const int PriorityFieldNumber = 2;
+    private readonly static uint PriorityDefaultValue = 0;
+
+    private uint priority_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Priority {
+      get { if ((_hasBits0 & 2) != 0) { return priority_; } else { return PriorityDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        priority_ = value;
+      }
+    }
+    /// <summary>Gets whether the "priority" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPriority {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "priority" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPriority() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "date_added" field.</summary>
+    public const int DateAddedFieldNumber = 3;
+    private readonly static uint DateAddedDefaultValue = 0;
+
+    private uint dateAdded_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint DateAdded {
+      get { if ((_hasBits0 & 4) != 0) { return dateAdded_; } else { return DateAddedDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        dateAdded_ = value;
+      }
+    }
+    /// <summary>Gets whether the "date_added" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDateAdded {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "date_added" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDateAdded() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "store_item" field.</summary>
+    public const int StoreItemFieldNumber = 4;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreItem storeItem_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreItem StoreItem {
+      get { return storeItem_; }
+      set {
+        storeItem_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_GetWishlistSortedFiltered_Response_WishlistItem);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_GetWishlistSortedFiltered_Response_WishlistItem other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Appid != other.Appid) return false;
+      if (Priority != other.Priority) return false;
+      if (DateAdded != other.DateAdded) return false;
+      if (!object.Equals(StoreItem, other.StoreItem)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppid) hash ^= Appid.GetHashCode();
+      if (HasPriority) hash ^= Priority.GetHashCode();
+      if (HasDateAdded) hash ^= DateAdded.GetHashCode();
+      if (storeItem_ != null) hash ^= StoreItem.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasPriority) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Priority);
+      }
+      if (HasDateAdded) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(DateAdded);
+      }
+      if (storeItem_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(StoreItem);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasPriority) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Priority);
+      }
+      if (HasDateAdded) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(DateAdded);
+      }
+      if (storeItem_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(StoreItem);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Appid);
+      }
+      if (HasPriority) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+      }
+      if (HasDateAdded) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DateAdded);
+      }
+      if (storeItem_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StoreItem);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_GetWishlistSortedFiltered_Response_WishlistItem other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppid) {
+        Appid = other.Appid;
+      }
+      if (other.HasPriority) {
+        Priority = other.Priority;
+      }
+      if (other.HasDateAdded) {
+        DateAdded = other.DateAdded;
+      }
+      if (other.storeItem_ != null) {
+        if (storeItem_ == null) {
+          StoreItem = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
+        }
+        StoreItem.MergeFrom(other.StoreItem);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Priority = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            DateAdded = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            if (storeItem_ == null) {
+              StoreItem = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
+            }
+            input.ReadMessage(StoreItem);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Priority = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            DateAdded = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            if (storeItem_ == null) {
+              StoreItem = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
+            }
+            input.ReadMessage(StoreItem);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_RemoveFromWishlist_Request : pb::IMessage<CWishlist_RemoveFromWishlist_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_RemoveFromWishlist_Request> _parser = new pb::MessageParser<CWishlist_RemoveFromWishlist_Request>(() => new CWishlist_RemoveFromWishlist_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_RemoveFromWishlist_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_RemoveFromWishlist_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_RemoveFromWishlist_Request(CWishlist_RemoveFromWishlist_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      appid_ = other.appid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_RemoveFromWishlist_Request Clone() {
+      return new CWishlist_RemoveFromWishlist_Request(this);
+    }
+
+    /// <summary>Field number for the "appid" field.</summary>
+    public const int AppidFieldNumber = 1;
+    private readonly static uint AppidDefaultValue = 0;
+
+    private uint appid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Appid {
+      get { if ((_hasBits0 & 1) != 0) { return appid_; } else { return AppidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppid() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_RemoveFromWishlist_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_RemoveFromWishlist_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Appid != other.Appid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppid) hash ^= Appid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Appid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_RemoveFromWishlist_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppid) {
+        Appid = other.Appid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlist_RemoveFromWishlist_Response : pb::IMessage<CWishlist_RemoveFromWishlist_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlist_RemoveFromWishlist_Response> _parser = new pb::MessageParser<CWishlist_RemoveFromWishlist_Response>(() => new CWishlist_RemoveFromWishlist_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlist_RemoveFromWishlist_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_RemoveFromWishlist_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_RemoveFromWishlist_Response(CWishlist_RemoveFromWishlist_Response other) : this() {
+      _hasBits0 = other._hasBits0;
+      wishlistCount_ = other.wishlistCount_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlist_RemoveFromWishlist_Response Clone() {
+      return new CWishlist_RemoveFromWishlist_Response(this);
+    }
+
+    /// <summary>Field number for the "wishlist_count" field.</summary>
+    public const int WishlistCountFieldNumber = 1;
+    private readonly static uint WishlistCountDefaultValue = 0;
+
+    private uint wishlistCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint WishlistCount {
+      get { if ((_hasBits0 & 1) != 0) { return wishlistCount_; } else { return WishlistCountDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        wishlistCount_ = value;
+      }
+    }
+    /// <summary>Gets whether the "wishlist_count" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasWishlistCount {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "wishlist_count" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearWishlistCount() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlist_RemoveFromWishlist_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlist_RemoveFromWishlist_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (WishlistCount != other.WishlistCount) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasWishlistCount) hash ^= WishlistCount.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasWishlistCount) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(WishlistCount);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasWishlistCount) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(WishlistCount);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasWishlistCount) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(WishlistCount);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlist_RemoveFromWishlist_Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasWishlistCount) {
+        WishlistCount = other.WishlistCount;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            WishlistCount = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            WishlistCount = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlistFilters : pb::IMessage<CWishlistFilters>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlistFilters> _parser = new pb::MessageParser<CWishlistFilters>(() => new CWishlistFilters());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlistFilters> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters(CWishlistFilters other) : this() {
+      _hasBits0 = other._hasBits0;
+      macosOnly_ = other.macosOnly_;
+      steamosLinuxOnly_ = other.steamosLinuxOnly_;
+      onlyGames_ = other.onlyGames_;
+      onlySoftware_ = other.onlySoftware_;
+      onlyDlc_ = other.onlyDlc_;
+      onlyFree_ = other.onlyFree_;
+      maxPriceInCents_ = other.maxPriceInCents_;
+      minDiscountPercent_ = other.minDiscountPercent_;
+      excludeTypes_ = other.excludeTypes_ != null ? other.excludeTypes_.Clone() : null;
+      steamDecfilters_ = other.steamDecfilters_ != null ? other.steamDecfilters_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters Clone() {
+      return new CWishlistFilters(this);
+    }
+
+    /// <summary>Field number for the "macos_only" field.</summary>
+    public const int MacosOnlyFieldNumber = 1;
+    private readonly static bool MacosOnlyDefaultValue = false;
+
+    private bool macosOnly_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool MacosOnly {
+      get { if ((_hasBits0 & 1) != 0) { return macosOnly_; } else { return MacosOnlyDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        macosOnly_ = value;
+      }
+    }
+    /// <summary>Gets whether the "macos_only" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMacosOnly {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "macos_only" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMacosOnly() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "steamos_linux_only" field.</summary>
+    public const int SteamosLinuxOnlyFieldNumber = 2;
+    private readonly static bool SteamosLinuxOnlyDefaultValue = false;
+
+    private bool steamosLinuxOnly_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool SteamosLinuxOnly {
+      get { if ((_hasBits0 & 2) != 0) { return steamosLinuxOnly_; } else { return SteamosLinuxOnlyDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        steamosLinuxOnly_ = value;
+      }
+    }
+    /// <summary>Gets whether the "steamos_linux_only" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSteamosLinuxOnly {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "steamos_linux_only" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSteamosLinuxOnly() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "only_games" field.</summary>
+    public const int OnlyGamesFieldNumber = 10;
+    private readonly static bool OnlyGamesDefaultValue = false;
+
+    private bool onlyGames_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool OnlyGames {
+      get { if ((_hasBits0 & 4) != 0) { return onlyGames_; } else { return OnlyGamesDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        onlyGames_ = value;
+      }
+    }
+    /// <summary>Gets whether the "only_games" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOnlyGames {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "only_games" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOnlyGames() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "only_software" field.</summary>
+    public const int OnlySoftwareFieldNumber = 11;
+    private readonly static bool OnlySoftwareDefaultValue = false;
+
+    private bool onlySoftware_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool OnlySoftware {
+      get { if ((_hasBits0 & 8) != 0) { return onlySoftware_; } else { return OnlySoftwareDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        onlySoftware_ = value;
+      }
+    }
+    /// <summary>Gets whether the "only_software" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOnlySoftware {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "only_software" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOnlySoftware() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "only_dlc" field.</summary>
+    public const int OnlyDlcFieldNumber = 12;
+    private readonly static bool OnlyDlcDefaultValue = false;
+
+    private bool onlyDlc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool OnlyDlc {
+      get { if ((_hasBits0 & 16) != 0) { return onlyDlc_; } else { return OnlyDlcDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        onlyDlc_ = value;
+      }
+    }
+    /// <summary>Gets whether the "only_dlc" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOnlyDlc {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "only_dlc" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOnlyDlc() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "only_free" field.</summary>
+    public const int OnlyFreeFieldNumber = 13;
+    private readonly static bool OnlyFreeDefaultValue = false;
+
+    private bool onlyFree_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool OnlyFree {
+      get { if ((_hasBits0 & 32) != 0) { return onlyFree_; } else { return OnlyFreeDefaultValue; } }
+      set {
+        _hasBits0 |= 32;
+        onlyFree_ = value;
+      }
+    }
+    /// <summary>Gets whether the "only_free" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOnlyFree {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "only_free" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOnlyFree() {
+      _hasBits0 &= ~32;
+    }
+
+    /// <summary>Field number for the "max_price_in_cents" field.</summary>
+    public const int MaxPriceInCentsFieldNumber = 20;
+    private readonly static long MaxPriceInCentsDefaultValue = 0L;
+
+    private long maxPriceInCents_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long MaxPriceInCents {
+      get { if ((_hasBits0 & 64) != 0) { return maxPriceInCents_; } else { return MaxPriceInCentsDefaultValue; } }
+      set {
+        _hasBits0 |= 64;
+        maxPriceInCents_ = value;
+      }
+    }
+    /// <summary>Gets whether the "max_price_in_cents" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMaxPriceInCents {
+      get { return (_hasBits0 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "max_price_in_cents" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMaxPriceInCents() {
+      _hasBits0 &= ~64;
+    }
+
+    /// <summary>Field number for the "min_discount_percent" field.</summary>
+    public const int MinDiscountPercentFieldNumber = 21;
+    private readonly static int MinDiscountPercentDefaultValue = 0;
+
+    private int minDiscountPercent_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MinDiscountPercent {
+      get { if ((_hasBits0 & 128) != 0) { return minDiscountPercent_; } else { return MinDiscountPercentDefaultValue; } }
+      set {
+        _hasBits0 |= 128;
+        minDiscountPercent_ = value;
+      }
+    }
+    /// <summary>Gets whether the "min_discount_percent" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMinDiscountPercent {
+      get { return (_hasBits0 & 128) != 0; }
+    }
+    /// <summary>Clears the value of the "min_discount_percent" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMinDiscountPercent() {
+      _hasBits0 &= ~128;
+    }
+
+    /// <summary>Field number for the "exclude_types" field.</summary>
+    public const int ExcludeTypesFieldNumber = 22;
+    private global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters excludeTypes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters ExcludeTypes {
+      get { return excludeTypes_; }
+      set {
+        excludeTypes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "steam_decfilters" field.</summary>
+    public const int SteamDecfiltersFieldNumber = 23;
+    private global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters steamDecfilters_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters SteamDecfilters {
+      get { return steamDecfilters_; }
+      set {
+        steamDecfilters_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlistFilters);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlistFilters other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (MacosOnly != other.MacosOnly) return false;
+      if (SteamosLinuxOnly != other.SteamosLinuxOnly) return false;
+      if (OnlyGames != other.OnlyGames) return false;
+      if (OnlySoftware != other.OnlySoftware) return false;
+      if (OnlyDlc != other.OnlyDlc) return false;
+      if (OnlyFree != other.OnlyFree) return false;
+      if (MaxPriceInCents != other.MaxPriceInCents) return false;
+      if (MinDiscountPercent != other.MinDiscountPercent) return false;
+      if (!object.Equals(ExcludeTypes, other.ExcludeTypes)) return false;
+      if (!object.Equals(SteamDecfilters, other.SteamDecfilters)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasMacosOnly) hash ^= MacosOnly.GetHashCode();
+      if (HasSteamosLinuxOnly) hash ^= SteamosLinuxOnly.GetHashCode();
+      if (HasOnlyGames) hash ^= OnlyGames.GetHashCode();
+      if (HasOnlySoftware) hash ^= OnlySoftware.GetHashCode();
+      if (HasOnlyDlc) hash ^= OnlyDlc.GetHashCode();
+      if (HasOnlyFree) hash ^= OnlyFree.GetHashCode();
+      if (HasMaxPriceInCents) hash ^= MaxPriceInCents.GetHashCode();
+      if (HasMinDiscountPercent) hash ^= MinDiscountPercent.GetHashCode();
+      if (excludeTypes_ != null) hash ^= ExcludeTypes.GetHashCode();
+      if (steamDecfilters_ != null) hash ^= SteamDecfilters.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasMacosOnly) {
+        output.WriteRawTag(8);
+        output.WriteBool(MacosOnly);
+      }
+      if (HasSteamosLinuxOnly) {
+        output.WriteRawTag(16);
+        output.WriteBool(SteamosLinuxOnly);
+      }
+      if (HasOnlyGames) {
+        output.WriteRawTag(80);
+        output.WriteBool(OnlyGames);
+      }
+      if (HasOnlySoftware) {
+        output.WriteRawTag(88);
+        output.WriteBool(OnlySoftware);
+      }
+      if (HasOnlyDlc) {
+        output.WriteRawTag(96);
+        output.WriteBool(OnlyDlc);
+      }
+      if (HasOnlyFree) {
+        output.WriteRawTag(104);
+        output.WriteBool(OnlyFree);
+      }
+      if (HasMaxPriceInCents) {
+        output.WriteRawTag(160, 1);
+        output.WriteInt64(MaxPriceInCents);
+      }
+      if (HasMinDiscountPercent) {
+        output.WriteRawTag(168, 1);
+        output.WriteInt32(MinDiscountPercent);
+      }
+      if (excludeTypes_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(ExcludeTypes);
+      }
+      if (steamDecfilters_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(SteamDecfilters);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasMacosOnly) {
+        output.WriteRawTag(8);
+        output.WriteBool(MacosOnly);
+      }
+      if (HasSteamosLinuxOnly) {
+        output.WriteRawTag(16);
+        output.WriteBool(SteamosLinuxOnly);
+      }
+      if (HasOnlyGames) {
+        output.WriteRawTag(80);
+        output.WriteBool(OnlyGames);
+      }
+      if (HasOnlySoftware) {
+        output.WriteRawTag(88);
+        output.WriteBool(OnlySoftware);
+      }
+      if (HasOnlyDlc) {
+        output.WriteRawTag(96);
+        output.WriteBool(OnlyDlc);
+      }
+      if (HasOnlyFree) {
+        output.WriteRawTag(104);
+        output.WriteBool(OnlyFree);
+      }
+      if (HasMaxPriceInCents) {
+        output.WriteRawTag(160, 1);
+        output.WriteInt64(MaxPriceInCents);
+      }
+      if (HasMinDiscountPercent) {
+        output.WriteRawTag(168, 1);
+        output.WriteInt32(MinDiscountPercent);
+      }
+      if (excludeTypes_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(ExcludeTypes);
+      }
+      if (steamDecfilters_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(SteamDecfilters);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasMacosOnly) {
+        size += 1 + 1;
+      }
+      if (HasSteamosLinuxOnly) {
+        size += 1 + 1;
+      }
+      if (HasOnlyGames) {
+        size += 1 + 1;
+      }
+      if (HasOnlySoftware) {
+        size += 1 + 1;
+      }
+      if (HasOnlyDlc) {
+        size += 1 + 1;
+      }
+      if (HasOnlyFree) {
+        size += 1 + 1;
+      }
+      if (HasMaxPriceInCents) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(MaxPriceInCents);
+      }
+      if (HasMinDiscountPercent) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(MinDiscountPercent);
+      }
+      if (excludeTypes_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(ExcludeTypes);
+      }
+      if (steamDecfilters_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(SteamDecfilters);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlistFilters other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasMacosOnly) {
+        MacosOnly = other.MacosOnly;
+      }
+      if (other.HasSteamosLinuxOnly) {
+        SteamosLinuxOnly = other.SteamosLinuxOnly;
+      }
+      if (other.HasOnlyGames) {
+        OnlyGames = other.OnlyGames;
+      }
+      if (other.HasOnlySoftware) {
+        OnlySoftware = other.OnlySoftware;
+      }
+      if (other.HasOnlyDlc) {
+        OnlyDlc = other.OnlyDlc;
+      }
+      if (other.HasOnlyFree) {
+        OnlyFree = other.OnlyFree;
+      }
+      if (other.HasMaxPriceInCents) {
+        MaxPriceInCents = other.MaxPriceInCents;
+      }
+      if (other.HasMinDiscountPercent) {
+        MinDiscountPercent = other.MinDiscountPercent;
+      }
+      if (other.excludeTypes_ != null) {
+        if (excludeTypes_ == null) {
+          ExcludeTypes = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters();
+        }
+        ExcludeTypes.MergeFrom(other.ExcludeTypes);
+      }
+      if (other.steamDecfilters_ != null) {
+        if (steamDecfilters_ == null) {
+          SteamDecfilters = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters();
+        }
+        SteamDecfilters.MergeFrom(other.SteamDecfilters);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            MacosOnly = input.ReadBool();
+            break;
+          }
+          case 16: {
+            SteamosLinuxOnly = input.ReadBool();
+            break;
+          }
+          case 80: {
+            OnlyGames = input.ReadBool();
+            break;
+          }
+          case 88: {
+            OnlySoftware = input.ReadBool();
+            break;
+          }
+          case 96: {
+            OnlyDlc = input.ReadBool();
+            break;
+          }
+          case 104: {
+            OnlyFree = input.ReadBool();
+            break;
+          }
+          case 160: {
+            MaxPriceInCents = input.ReadInt64();
+            break;
+          }
+          case 168: {
+            MinDiscountPercent = input.ReadInt32();
+            break;
+          }
+          case 178: {
+            if (excludeTypes_ == null) {
+              ExcludeTypes = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters();
+            }
+            input.ReadMessage(ExcludeTypes);
+            break;
+          }
+          case 186: {
+            if (steamDecfilters_ == null) {
+              SteamDecfilters = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters();
+            }
+            input.ReadMessage(SteamDecfilters);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            MacosOnly = input.ReadBool();
+            break;
+          }
+          case 16: {
+            SteamosLinuxOnly = input.ReadBool();
+            break;
+          }
+          case 80: {
+            OnlyGames = input.ReadBool();
+            break;
+          }
+          case 88: {
+            OnlySoftware = input.ReadBool();
+            break;
+          }
+          case 96: {
+            OnlyDlc = input.ReadBool();
+            break;
+          }
+          case 104: {
+            OnlyFree = input.ReadBool();
+            break;
+          }
+          case 160: {
+            MaxPriceInCents = input.ReadInt64();
+            break;
+          }
+          case 168: {
+            MinDiscountPercent = input.ReadInt32();
+            break;
+          }
+          case 178: {
+            if (excludeTypes_ == null) {
+              ExcludeTypes = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters();
+            }
+            input.ReadMessage(ExcludeTypes);
+            break;
+          }
+          case 186: {
+            if (steamDecfilters_ == null) {
+              SteamDecfilters = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters();
+            }
+            input.ReadMessage(SteamDecfilters);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlistFilters_ExcludeTypeFilters : pb::IMessage<CWishlistFilters_ExcludeTypeFilters>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlistFilters_ExcludeTypeFilters> _parser = new pb::MessageParser<CWishlistFilters_ExcludeTypeFilters>(() => new CWishlistFilters_ExcludeTypeFilters());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlistFilters_ExcludeTypeFilters> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters_ExcludeTypeFilters() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters_ExcludeTypeFilters(CWishlistFilters_ExcludeTypeFilters other) : this() {
+      _hasBits0 = other._hasBits0;
+      excludeEarlyAccess_ = other.excludeEarlyAccess_;
+      excludeComingSoon_ = other.excludeComingSoon_;
+      excludeVrOnly_ = other.excludeVrOnly_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters_ExcludeTypeFilters Clone() {
+      return new CWishlistFilters_ExcludeTypeFilters(this);
+    }
+
+    /// <summary>Field number for the "exclude_early_access" field.</summary>
+    public const int ExcludeEarlyAccessFieldNumber = 1;
+    private readonly static bool ExcludeEarlyAccessDefaultValue = false;
+
+    private bool excludeEarlyAccess_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ExcludeEarlyAccess {
+      get { if ((_hasBits0 & 1) != 0) { return excludeEarlyAccess_; } else { return ExcludeEarlyAccessDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        excludeEarlyAccess_ = value;
+      }
+    }
+    /// <summary>Gets whether the "exclude_early_access" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasExcludeEarlyAccess {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "exclude_early_access" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearExcludeEarlyAccess() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "exclude_coming_soon" field.</summary>
+    public const int ExcludeComingSoonFieldNumber = 2;
+    private readonly static bool ExcludeComingSoonDefaultValue = false;
+
+    private bool excludeComingSoon_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ExcludeComingSoon {
+      get { if ((_hasBits0 & 2) != 0) { return excludeComingSoon_; } else { return ExcludeComingSoonDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        excludeComingSoon_ = value;
+      }
+    }
+    /// <summary>Gets whether the "exclude_coming_soon" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasExcludeComingSoon {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "exclude_coming_soon" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearExcludeComingSoon() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "exclude_vr_only" field.</summary>
+    public const int ExcludeVrOnlyFieldNumber = 3;
+    private readonly static bool ExcludeVrOnlyDefaultValue = false;
+
+    private bool excludeVrOnly_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ExcludeVrOnly {
+      get { if ((_hasBits0 & 4) != 0) { return excludeVrOnly_; } else { return ExcludeVrOnlyDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        excludeVrOnly_ = value;
+      }
+    }
+    /// <summary>Gets whether the "exclude_vr_only" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasExcludeVrOnly {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "exclude_vr_only" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearExcludeVrOnly() {
+      _hasBits0 &= ~4;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlistFilters_ExcludeTypeFilters);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlistFilters_ExcludeTypeFilters other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ExcludeEarlyAccess != other.ExcludeEarlyAccess) return false;
+      if (ExcludeComingSoon != other.ExcludeComingSoon) return false;
+      if (ExcludeVrOnly != other.ExcludeVrOnly) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasExcludeEarlyAccess) hash ^= ExcludeEarlyAccess.GetHashCode();
+      if (HasExcludeComingSoon) hash ^= ExcludeComingSoon.GetHashCode();
+      if (HasExcludeVrOnly) hash ^= ExcludeVrOnly.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasExcludeEarlyAccess) {
+        output.WriteRawTag(8);
+        output.WriteBool(ExcludeEarlyAccess);
+      }
+      if (HasExcludeComingSoon) {
+        output.WriteRawTag(16);
+        output.WriteBool(ExcludeComingSoon);
+      }
+      if (HasExcludeVrOnly) {
+        output.WriteRawTag(24);
+        output.WriteBool(ExcludeVrOnly);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasExcludeEarlyAccess) {
+        output.WriteRawTag(8);
+        output.WriteBool(ExcludeEarlyAccess);
+      }
+      if (HasExcludeComingSoon) {
+        output.WriteRawTag(16);
+        output.WriteBool(ExcludeComingSoon);
+      }
+      if (HasExcludeVrOnly) {
+        output.WriteRawTag(24);
+        output.WriteBool(ExcludeVrOnly);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasExcludeEarlyAccess) {
+        size += 1 + 1;
+      }
+      if (HasExcludeComingSoon) {
+        size += 1 + 1;
+      }
+      if (HasExcludeVrOnly) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlistFilters_ExcludeTypeFilters other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasExcludeEarlyAccess) {
+        ExcludeEarlyAccess = other.ExcludeEarlyAccess;
+      }
+      if (other.HasExcludeComingSoon) {
+        ExcludeComingSoon = other.ExcludeComingSoon;
+      }
+      if (other.HasExcludeVrOnly) {
+        ExcludeVrOnly = other.ExcludeVrOnly;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ExcludeEarlyAccess = input.ReadBool();
+            break;
+          }
+          case 16: {
+            ExcludeComingSoon = input.ReadBool();
+            break;
+          }
+          case 24: {
+            ExcludeVrOnly = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ExcludeEarlyAccess = input.ReadBool();
+            break;
+          }
+          case 16: {
+            ExcludeComingSoon = input.ReadBool();
+            break;
+          }
+          case 24: {
+            ExcludeVrOnly = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CWishlistFilters_SteamDeckFilters : pb::IMessage<CWishlistFilters_SteamDeckFilters>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CWishlistFilters_SteamDeckFilters> _parser = new pb::MessageParser<CWishlistFilters_SteamDeckFilters>(() => new CWishlistFilters_SteamDeckFilters());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CWishlistFilters_SteamDeckFilters> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceWishlistReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters_SteamDeckFilters() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters_SteamDeckFilters(CWishlistFilters_SteamDeckFilters other) : this() {
+      _hasBits0 = other._hasBits0;
+      includeVerified_ = other.includeVerified_;
+      includePlayable_ = other.includePlayable_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CWishlistFilters_SteamDeckFilters Clone() {
+      return new CWishlistFilters_SteamDeckFilters(this);
+    }
+
+    /// <summary>Field number for the "include_verified" field.</summary>
+    public const int IncludeVerifiedFieldNumber = 1;
+    private readonly static bool IncludeVerifiedDefaultValue = false;
+
+    private bool includeVerified_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IncludeVerified {
+      get { if ((_hasBits0 & 1) != 0) { return includeVerified_; } else { return IncludeVerifiedDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        includeVerified_ = value;
+      }
+    }
+    /// <summary>Gets whether the "include_verified" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncludeVerified {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "include_verified" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncludeVerified() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "include_playable" field.</summary>
+    public const int IncludePlayableFieldNumber = 2;
+    private readonly static bool IncludePlayableDefaultValue = false;
+
+    private bool includePlayable_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IncludePlayable {
+      get { if ((_hasBits0 & 2) != 0) { return includePlayable_; } else { return IncludePlayableDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        includePlayable_ = value;
+      }
+    }
+    /// <summary>Gets whether the "include_playable" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncludePlayable {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "include_playable" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncludePlayable() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CWishlistFilters_SteamDeckFilters);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CWishlistFilters_SteamDeckFilters other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IncludeVerified != other.IncludeVerified) return false;
+      if (IncludePlayable != other.IncludePlayable) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasIncludeVerified) hash ^= IncludeVerified.GetHashCode();
+      if (HasIncludePlayable) hash ^= IncludePlayable.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasIncludeVerified) {
+        output.WriteRawTag(8);
+        output.WriteBool(IncludeVerified);
+      }
+      if (HasIncludePlayable) {
+        output.WriteRawTag(16);
+        output.WriteBool(IncludePlayable);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasIncludeVerified) {
+        output.WriteRawTag(8);
+        output.WriteBool(IncludeVerified);
+      }
+      if (HasIncludePlayable) {
+        output.WriteRawTag(16);
+        output.WriteBool(IncludePlayable);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasIncludeVerified) {
+        size += 1 + 1;
+      }
+      if (HasIncludePlayable) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CWishlistFilters_SteamDeckFilters other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasIncludeVerified) {
+        IncludeVerified = other.IncludeVerified;
+      }
+      if (other.HasIncludePlayable) {
+        IncludePlayable = other.IncludePlayable;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            IncludeVerified = input.ReadBool();
+            break;
+          }
+          case 16: {
+            IncludePlayable = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            IncludeVerified = input.ReadBool();
+            break;
+          }
+          case 16: {
+            IncludePlayable = input.ReadBool();
             break;
           }
         }

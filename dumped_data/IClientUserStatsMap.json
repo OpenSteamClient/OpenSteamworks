@@ -5,8 +5,8 @@
             "name": "GetNumStats",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "4148505806",
-            "fencepost": "4195361948",
+            "functionid": "4148505797",
+            "fencepost": "4195249036",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -19,8 +19,8 @@
             "name": "GetStatName",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "3169986111",
-            "fencepost": "3216874511",
+            "functionid": "3169986096",
+            "fencepost": "3216761593",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -34,8 +34,8 @@
             "name": "GetStatType",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "2709961930",
-            "fencepost": "2756866459",
+            "functionid": "2709961923",
+            "fencepost": "2756753549",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -49,8 +49,8 @@
             "name": "GetNumAchievements",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "1805937863",
-            "fencepost": "1852858521",
+            "functionid": "1805937868",
+            "fencepost": "1852745623",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -63,8 +63,8 @@
             "name": "GetAchievementName",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "2812559753",
-            "fencepost": "2859496540",
+            "functionid": "2812559744",
+            "fencepost": "2859383628",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -78,8 +78,8 @@
             "name": "RequestCurrentStats",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "3958340700",
-            "fencepost": "4005309745",
+            "functionid": "3958340709",
+            "fencepost": "4005196851",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -92,8 +92,8 @@
             "name": "DeprecatedPublic_RequestCurrentStats",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "1931036364",
-            "fencepost": "1978021538",
+            "functionid": "1931036407",
+            "fencepost": "1977908678",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -106,8 +106,8 @@
             "name": "GetStat",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "2187667407",
-            "fencepost": "2234749355",
+            "functionid": "2187667440",
+            "fencepost": "2234636485",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -122,8 +122,8 @@
             "name": "GetStat",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "2758091677",
-            "fencepost": "2805302657",
+            "functionid": "2758091666",
+            "fencepost": "2805189743",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -138,8 +138,8 @@
             "name": "SetStat",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "1591534473",
-            "fencepost": "1638809969",
+            "functionid": "1591534486",
+            "fencepost": "1638697079",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -154,8 +154,8 @@
             "name": "SetStat",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "1963367188",
-            "fencepost": "2010658813",
+            "functionid": "1963367181",
+            "fencepost": "2010545903",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -170,8 +170,8 @@
             "name": "UpdateAvgRateStat",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "3611043737",
-            "fencepost": "3658351491",
+            "functionid": "3611043714",
+            "fencepost": "3658238565",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -187,8 +187,8 @@
             "name": "GetAchievement",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "1831446895",
-            "fencepost": "1878899810",
+            "functionid": "1831446884",
+            "fencepost": "1878786896",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -204,8 +204,8 @@
             "name": "SetAchievement",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "4187073670",
-            "fencepost": "4234607230",
+            "functionid": "4187073657",
+            "fencepost": "4234494314",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -219,8 +219,8 @@
             "name": "ClearAchievement",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "1703242115",
-            "fencepost": "1750807933",
+            "functionid": "1703242104",
+            "fencepost": "1750695019",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -234,8 +234,8 @@
             "name": "GetAchievementProgress",
             "argc": "6",
             "interfaceid": "11",
-            "functionid": "3345468593",
-            "fencepost": "3393163443",
+            "functionid": "3345468598",
+            "fencepost": "3393050545",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -252,8 +252,8 @@
             "name": "StoreStats",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "1956106104",
-            "fencepost": "2003446116",
+            "functionid": "1956106111",
+            "fencepost": "2003333220",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -266,8 +266,8 @@
             "name": "GetAchievementIcon",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "4189709206",
-            "fencepost": "4237710507",
+            "functionid": "4189709231",
+            "fencepost": "4237597629",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -282,8 +282,8 @@
             "name": "BGetAchievementIconURL",
             "argc": "6",
             "interfaceid": "11",
-            "functionid": "251528306",
-            "fencepost": "299658639",
+            "functionid": "251528267",
+            "fencepost": "299545697",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -300,8 +300,8 @@
             "name": "GetAchievementDisplayAttribute",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "1881467525",
-            "fencepost": "1929662374",
+            "functionid": "1881467532",
+            "fencepost": "1929549478",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -317,8 +317,8 @@
             "name": "IndicateAchievementProgress",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "2495046603",
-            "fencepost": "2543273710",
+            "functionid": "2495046594",
+            "fencepost": "2543160798",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -334,8 +334,8 @@
             "name": "SetMaxStatsLoaded",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "2833449192",
-            "fencepost": "2881708557",
+            "functionid": "2833449201",
+            "fencepost": "2881595663",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -347,8 +347,8 @@
             "name": "RequestUserStats",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "4286446409",
-            "fencepost": "39770736",
+            "functionid": "4286446416",
+            "fencepost": "39657840",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -362,8 +362,8 @@
             "name": "GetUserStat",
             "argc": "6",
             "interfaceid": "11",
-            "functionid": "1255080143",
-            "fencepost": "1303484669",
+            "functionid": "1255080150",
+            "fencepost": "1303371773",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -379,8 +379,8 @@
             "name": "GetUserStat",
             "argc": "6",
             "interfaceid": "11",
-            "functionid": "2919878676",
-            "fencepost": "2968428363",
+            "functionid": "2919878687",
+            "fencepost": "2968315471",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -396,8 +396,8 @@
             "name": "GetUserAchievement",
             "argc": "7",
             "interfaceid": "11",
-            "functionid": "3299260103",
-            "fencepost": "3347971080",
+            "functionid": "3299260094",
+            "fencepost": "3347858168",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -414,8 +414,8 @@
             "name": "GetUserAchievementProgress",
             "argc": "8",
             "interfaceid": "11",
-            "functionid": "2272093544",
-            "fencepost": "2319998071",
+            "functionid": "2272093559",
+            "fencepost": "2319885183",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "uint64",
@@ -433,8 +433,8 @@
             "name": "ResetAllStats",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "1725141429",
-            "fencepost": "1773933051",
+            "functionid": "1725141422",
+            "fencepost": "1773820141",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -448,8 +448,8 @@
             "name": "FindOrCreateLeaderboard",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "2230180946",
-            "fencepost": "2279004826",
+            "functionid": "2230180941",
+            "fencepost": "2278891918",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "string",
@@ -464,8 +464,8 @@
             "name": "FindLeaderboard",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "509056187",
-            "fencepost": "557896196",
+            "functionid": "509056162",
+            "fencepost": "557783268",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "string"
@@ -478,8 +478,8 @@
             "name": "GetLeaderboardName",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "4090231111",
-            "fencepost": "4139087249",
+            "functionid": "4090231132",
+            "fencepost": "4138974367",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -492,8 +492,8 @@
             "name": "GetLeaderboardEntryCount",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "2246432372",
-            "fencepost": "2295304639",
+            "functionid": "2246432365",
+            "fencepost": "2295191729",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -506,8 +506,8 @@
             "name": "GetLeaderboardSortMethod",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "2678849867",
-            "fencepost": "2727738263",
+            "functionid": "2678849868",
+            "fencepost": "2727625361",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -520,8 +520,8 @@
             "name": "GetLeaderboardDisplayType",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "3738408924",
-            "fencepost": "3787313449",
+            "functionid": "3738408917",
+            "fencepost": "3787200539",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -534,8 +534,8 @@
             "name": "DownloadLeaderboardEntries",
             "argc": "6",
             "interfaceid": "11",
-            "functionid": "870134605",
-            "fencepost": "919055259",
+            "functionid": "870134598",
+            "fencepost": "918942349",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -551,8 +551,8 @@
             "name": "DownloadLeaderboardEntriesForUsers",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "2528302859",
-            "fencepost": "2577304158",
+            "functionid": "2528302850",
+            "fencepost": "2577191246",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -567,8 +567,8 @@
             "name": "GetDownloadedLeaderboardEntry",
             "argc": "7",
             "interfaceid": "11",
-            "functionid": "2075367037",
-            "fencepost": "2124497368",
+            "functionid": "2075366980",
+            "fencepost": "2124384408",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -585,8 +585,8 @@
             "name": "AttachLeaderboardUGC",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "942824060",
-            "fencepost": "992164068",
+            "functionid": "942824035",
+            "fencepost": "992051140",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -600,8 +600,8 @@
             "name": "UploadLeaderboardScore",
             "argc": "7",
             "interfaceid": "11",
-            "functionid": "2743891142",
-            "fencepost": "2793182763",
+            "functionid": "2743891151",
+            "fencepost": "2793069869",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -618,8 +618,8 @@
             "name": "GetNumberOfCurrentPlayers",
             "argc": "1",
             "interfaceid": "11",
-            "functionid": "1739715238",
-            "fencepost": "1789087504",
+            "functionid": "1739715261",
+            "fencepost": "1788974624",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -631,8 +631,8 @@
             "name": "GetNumAchievedAchievements",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "593155464",
-            "fencepost": "642559988",
+            "functionid": "593155471",
+            "fencepost": "642447092",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -645,8 +645,8 @@
             "name": "GetLastAchievementUnlocked",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "2597872907",
-            "fencepost": "2647309689",
+            "functionid": "2597872896",
+            "fencepost": "2647196775",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -659,8 +659,8 @@
             "name": "GetMostRecentAchievementUnlocked",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "2813950239",
-            "fencepost": "2863403150",
+            "functionid": "2813950230",
+            "fencepost": "2863290238",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -674,8 +674,8 @@
             "name": "RequestGlobalAchievementPercentages",
             "argc": "2",
             "interfaceid": "11",
-            "functionid": "2245931896",
-            "fencepost": "2295417065",
+            "functionid": "2245931889",
+            "fencepost": "2295304155",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -688,8 +688,8 @@
             "name": "GetMostAchievedAchievementInfo",
             "argc": "6",
             "interfaceid": "11",
-            "functionid": "1487799630",
-            "fencepost": "1537413831",
+            "functionid": "1487799623",
+            "fencepost": "1537300921",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -706,8 +706,8 @@
             "name": "GetNextMostAchievedAchievementInfo",
             "argc": "7",
             "interfaceid": "11",
-            "functionid": "1302066308",
-            "fencepost": "1351890186",
+            "functionid": "1302066317",
+            "fencepost": "1351777292",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -725,8 +725,8 @@
             "name": "GetAchievementAchievedPercent",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "39065782",
-            "fencepost": "89050950",
+            "functionid": "39065777",
+            "fencepost": "88938042",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -741,8 +741,8 @@
             "name": "RequestGlobalStats",
             "argc": "3",
             "interfaceid": "11",
-            "functionid": "3137234459",
-            "fencepost": "3187284143",
+            "functionid": "3137234460",
+            "fencepost": "3187171241",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -756,8 +756,8 @@
             "name": "GetGlobalStat",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "2773922149",
-            "fencepost": "2824068607",
+            "functionid": "2773922142",
+            "fencepost": "2823955697",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -772,8 +772,8 @@
             "name": "GetGlobalStat",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "934276893",
-            "fencepost": "984552383",
+            "functionid": "934276886",
+            "fencepost": "984439473",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -788,8 +788,8 @@
             "name": "GetGlobalStatHistory",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "3133197953",
-            "fencepost": "3183618604",
+            "functionid": "3133197978",
+            "fencepost": "3183505726",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -805,8 +805,8 @@
             "name": "GetGlobalStatHistory",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "4287951548",
-            "fencepost": "43550064",
+            "functionid": "4287951541",
+            "fencepost": "43437154",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -822,8 +822,8 @@
             "name": "GetAchievementProgressLimits",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "46322353",
-            "fencepost": "97017197",
+            "functionid": "46322382",
+            "fencepost": "96904323",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -839,8 +839,8 @@
             "name": "GetAchievementProgressLimits",
             "argc": "5",
             "interfaceid": "11",
-            "functionid": "2405345910",
-            "fencepost": "2456185915",
+            "functionid": "2405345919",
+            "fencepost": "2456073021",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -856,8 +856,8 @@
             "name": "BAchievementIconLoaded",
             "argc": "4",
             "interfaceid": "11",
-            "functionid": "1372344038",
-            "fencepost": "1423264688",
+            "functionid": "1372344061",
+            "fencepost": "1423151808",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",

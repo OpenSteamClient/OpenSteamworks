@@ -57,7 +57,7 @@ public:
     virtual bool SetLobbyOwner(CSteamID steamIDLobby, CSteamID steamIDNewOwner) = 0; //argc: 4, index 39
     virtual bool SetLinkedLobby(CSteamID steamIDLobby, CSteamID steamIDLobbyDependent) = 0; //argc: 4, index 40
     virtual GMSQueryHandle_t BeginGMSQuery(AppId_t nAppId, ERegionCode eRegionCode, const char* szFilterText) = 0; //argc: 3, index 41
-
+    
     // returns: -1 if query in progress
     virtual int32 PollGMSQuery(GMSQueryHandle_t queryHandle) = 0; //argc: 2, index 42
     virtual bool GetGMSQueryResults(GMSQueryHandle_t queryHandle, CMsgGMSClientServerQueryResponse *results) = 0; //argc: 3, index 43

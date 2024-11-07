@@ -33,7 +33,7 @@ namespace OpenSteamworks.Protobuf {
             "KAkSEAoIb2JqZWN0aWQYBCABKAkSDgoGY2VsbGlkGAUgASgNEhMKC2lzX21h",
             "bmlmZXN0GAYgASgIEhMKC29iamVjdF9zaXplGAcgASgEEhcKD2NvcnJ1cHRp",
             "b25fdHlwZRgIIAEoDRISCgp1c2VkX2h0dHBzGAkgASgIEhkKEW9jX3Byb3h5",
-            "X2RldGVjdGVkGAogASgIItwECi5DRGF0YVB1Ymxpc2hlcl9DbGllbnRVcGRh",
+            "X2RldGVjdGVkGAogASgIIvgECi5DRGF0YVB1Ymxpc2hlcl9DbGllbnRVcGRh",
             "dGVBcHBKb2JfTm90aWZpY2F0aW9uEg4KBmFwcF9pZBgBIAEoDRIRCglkZXBv",
             "dF9pZHMYAiADKA0SEQoJYXBwX3N0YXRlGAMgASgNEhUKDWpvYl9hcHBfZXJy",
             "b3IYBCABKA0SFQoNZXJyb3JfZGV0YWlscxgFIAEoCRIUCgxqb2JfZHVyYXRp",
@@ -46,48 +46,49 @@ namespace OpenSteamworks.Protobuf {
             "ZXN0b3JlZBgQIAEoBBITCgtpc19ib3Jyb3dlZBgRIAEoCBIXCg9pc19mcmVl",
             "X3dlZWtlbmQYEiABKAgSGwoTdG90YWxfYnl0ZXNfcGF0Y2hlZBgUIAEoBBIZ",
             "ChF0b3RhbF9ieXRlc19zYXZlZBgVIAEoBBIPCgdjZWxsX2lkGBYgASgNEhMK",
-            "C2lzX3dvcmtzaG9wGBcgASgIEhEKCWlzX3NoYWRlchgYIAEoCCI9CiZDRGF0",
-            "YVB1Ymxpc2hlcl9HZXRWUkRldmljZUluZm9fUmVxdWVzdBITCgttb250aF9j",
-            "b3VudBgBIAEoDSLdAQonQ0RhdGFQdWJsaXNoZXJfR2V0VlJEZXZpY2VJbmZv",
-            "X1Jlc3BvbnNlEj8KBmRldmljZRgBIAMoCzIvLkNEYXRhUHVibGlzaGVyX0dl",
-            "dFZSRGV2aWNlSW5mb19SZXNwb25zZS5EZXZpY2UacQoGRGV2aWNlEgwKBG5h",
-            "bWUYASABKAkSCwoDcmVmGAIgASgNEhcKD2FnZ3JlZ2F0aW9uX3JlZhgDIAEo",
-            "DRINCgV0b3RhbBgEIAEoDRIOCgZkcml2ZXIYBSABKAkSFAoMZGV2aWNlX2Ns",
-            "YXNzGAYgASgFImIKOkNEYXRhUHVibGlzaGVyX1NldFZSRGV2aWNlSW5mb0Fn",
-            "Z3JlZ2F0aW9uUmVmZXJlbmNlX1JlcXVlc3QSCwoDcmVmGAEgASgNEhcKD2Fn",
-            "Z3JlZ2F0aW9uX3JlZhgCIAEoDSJNCjtDRGF0YVB1Ymxpc2hlcl9TZXRWUkRl",
-            "dmljZUluZm9BZ2dyZWdhdGlvblJlZmVyZW5jZV9SZXNwb25zZRIOCgZyZXN1",
-            "bHQYASABKA0ijAEKJkNEYXRhUHVibGlzaGVyX0FkZFZSRGV2aWNlSW5mb19S",
-            "ZXF1ZXN0EhQKDG1hbnVmYWN0dXJlchgBIAEoCRINCgVtb2RlbBgCIAEoCRIO",
-            "CgZkcml2ZXIYAyABKAkSFwoPY29udHJvbGxlcl90eXBlGAQgASgJEhQKDGRl",
-            "dmljZV9jbGFzcxgFIAEoBSJGCidDRGF0YVB1Ymxpc2hlcl9BZGRWUkRldmlj",
-            "ZUluZm9fUmVzcG9uc2USDgoGcmVzdWx0GAEgASgNEgsKA3JlZhgCIAEoDSJj",
-            "CihDVmFsdmVIV1N1cnZleV9HZXRTdXJ2ZXlTY2hlZHVsZV9SZXF1ZXN0EhcK",
-            "D3N1cnZleWRhdGV0b2tlbhgBIAEoCRIeChZzdXJ2ZXlkYXRldG9rZW52ZXJz",
-            "aW9uGAIgASgGImQKKUNWYWx2ZUhXU3VydmV5X0dldFN1cnZleVNjaGVkdWxl",
-            "X1Jlc3BvbnNlEhcKD3N1cnZleWRhdGV0b2tlbhgBIAEoDRIeChZzdXJ2ZXlk",
-            "YXRldG9rZW52ZXJzaW9uGAIgASgGMsIECg1EYXRhUHVibGlzaGVyEmgKHUNs",
-            "aWVudENvbnRlbnRDb3JydXB0aW9uUmVwb3J0EjouQ0RhdGFQdWJsaXNoZXJf",
-            "Q2xpZW50Q29udGVudENvcnJ1cHRpb25SZXBvcnRfTm90aWZpY2F0aW9uGgsu",
-            "Tm9SZXNwb25zZRJYChhDbGllbnRVcGRhdGVBcHBKb2JSZXBvcnQSLy5DRGF0",
-            "YVB1Ymxpc2hlcl9DbGllbnRVcGRhdGVBcHBKb2JfTm90aWZpY2F0aW9uGgsu",
-            "Tm9SZXNwb25zZRJkCg9HZXRWUkRldmljZUluZm8SJy5DRGF0YVB1Ymxpc2hl",
-            "cl9HZXRWUkRldmljZUluZm9fUmVxdWVzdBooLkNEYXRhUHVibGlzaGVyX0dl",
-            "dFZSRGV2aWNlSW5mb19SZXNwb25zZRKgAQojU2V0VlJEZXZpY2VJbmZvQWdn",
-            "cmVnYXRpb25SZWZlcmVuY2USOy5DRGF0YVB1Ymxpc2hlcl9TZXRWUkRldmlj",
-            "ZUluZm9BZ2dyZWdhdGlvblJlZmVyZW5jZV9SZXF1ZXN0GjwuQ0RhdGFQdWJs",
-            "aXNoZXJfU2V0VlJEZXZpY2VJbmZvQWdncmVnYXRpb25SZWZlcmVuY2VfUmVz",
-            "cG9uc2USZAoPQWRkVlJEZXZpY2VJbmZvEicuQ0RhdGFQdWJsaXNoZXJfQWRk",
-            "VlJEZXZpY2VJbmZvX1JlcXVlc3QaKC5DRGF0YVB1Ymxpc2hlcl9BZGRWUkRl",
-            "dmljZUluZm9fUmVzcG9uc2UyewoNVmFsdmVIV1N1cnZleRJqChFHZXRTdXJ2",
-            "ZXlTY2hlZHVsZRIpLkNWYWx2ZUhXU3VydmV5X0dldFN1cnZleVNjaGVkdWxl",
-            "X1JlcXVlc3QaKi5DVmFsdmVIV1N1cnZleV9HZXRTdXJ2ZXlTY2hlZHVsZV9S",
-            "ZXNwb25zZUIdgAEBqgIXT3BlblN0ZWFtd29ya3MuUHJvdG9idWY="));
+            "C2lzX3dvcmtzaG9wGBcgASgIEhEKCWlzX3NoYWRlchgYIAEoCBIaChJzZWNv",
+            "bmRzX25vdF9wbGF5ZWQYGSABKA0iPQomQ0RhdGFQdWJsaXNoZXJfR2V0VlJE",
+            "ZXZpY2VJbmZvX1JlcXVlc3QSEwoLbW9udGhfY291bnQYASABKA0i3QEKJ0NE",
+            "YXRhUHVibGlzaGVyX0dldFZSRGV2aWNlSW5mb19SZXNwb25zZRI/CgZkZXZp",
+            "Y2UYASADKAsyLy5DRGF0YVB1Ymxpc2hlcl9HZXRWUkRldmljZUluZm9fUmVz",
+            "cG9uc2UuRGV2aWNlGnEKBkRldmljZRIMCgRuYW1lGAEgASgJEgsKA3JlZhgC",
+            "IAEoDRIXCg9hZ2dyZWdhdGlvbl9yZWYYAyABKA0SDQoFdG90YWwYBCABKA0S",
+            "DgoGZHJpdmVyGAUgASgJEhQKDGRldmljZV9jbGFzcxgGIAEoBSJiCjpDRGF0",
+            "YVB1Ymxpc2hlcl9TZXRWUkRldmljZUluZm9BZ2dyZWdhdGlvblJlZmVyZW5j",
+            "ZV9SZXF1ZXN0EgsKA3JlZhgBIAEoDRIXCg9hZ2dyZWdhdGlvbl9yZWYYAiAB",
+            "KA0iTQo7Q0RhdGFQdWJsaXNoZXJfU2V0VlJEZXZpY2VJbmZvQWdncmVnYXRp",
+            "b25SZWZlcmVuY2VfUmVzcG9uc2USDgoGcmVzdWx0GAEgASgNIowBCiZDRGF0",
+            "YVB1Ymxpc2hlcl9BZGRWUkRldmljZUluZm9fUmVxdWVzdBIUCgxtYW51ZmFj",
+            "dHVyZXIYASABKAkSDQoFbW9kZWwYAiABKAkSDgoGZHJpdmVyGAMgASgJEhcK",
+            "D2NvbnRyb2xsZXJfdHlwZRgEIAEoCRIUCgxkZXZpY2VfY2xhc3MYBSABKAUi",
+            "RgonQ0RhdGFQdWJsaXNoZXJfQWRkVlJEZXZpY2VJbmZvX1Jlc3BvbnNlEg4K",
+            "BnJlc3VsdBgBIAEoDRILCgNyZWYYAiABKA0iYwooQ1ZhbHZlSFdTdXJ2ZXlf",
+            "R2V0U3VydmV5U2NoZWR1bGVfUmVxdWVzdBIXCg9zdXJ2ZXlkYXRldG9rZW4Y",
+            "ASABKAkSHgoWc3VydmV5ZGF0ZXRva2VudmVyc2lvbhgCIAEoBiJkCilDVmFs",
+            "dmVIV1N1cnZleV9HZXRTdXJ2ZXlTY2hlZHVsZV9SZXNwb25zZRIXCg9zdXJ2",
+            "ZXlkYXRldG9rZW4YASABKA0SHgoWc3VydmV5ZGF0ZXRva2VudmVyc2lvbhgC",
+            "IAEoBjLCBAoNRGF0YVB1Ymxpc2hlchJoCh1DbGllbnRDb250ZW50Q29ycnVw",
+            "dGlvblJlcG9ydBI6LkNEYXRhUHVibGlzaGVyX0NsaWVudENvbnRlbnRDb3Jy",
+            "dXB0aW9uUmVwb3J0X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USWAoYQ2xp",
+            "ZW50VXBkYXRlQXBwSm9iUmVwb3J0Ei8uQ0RhdGFQdWJsaXNoZXJfQ2xpZW50",
+            "VXBkYXRlQXBwSm9iX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USZAoPR2V0",
+            "VlJEZXZpY2VJbmZvEicuQ0RhdGFQdWJsaXNoZXJfR2V0VlJEZXZpY2VJbmZv",
+            "X1JlcXVlc3QaKC5DRGF0YVB1Ymxpc2hlcl9HZXRWUkRldmljZUluZm9fUmVz",
+            "cG9uc2USoAEKI1NldFZSRGV2aWNlSW5mb0FnZ3JlZ2F0aW9uUmVmZXJlbmNl",
+            "EjsuQ0RhdGFQdWJsaXNoZXJfU2V0VlJEZXZpY2VJbmZvQWdncmVnYXRpb25S",
+            "ZWZlcmVuY2VfUmVxdWVzdBo8LkNEYXRhUHVibGlzaGVyX1NldFZSRGV2aWNl",
+            "SW5mb0FnZ3JlZ2F0aW9uUmVmZXJlbmNlX1Jlc3BvbnNlEmQKD0FkZFZSRGV2",
+            "aWNlSW5mbxInLkNEYXRhUHVibGlzaGVyX0FkZFZSRGV2aWNlSW5mb19SZXF1",
+            "ZXN0GiguQ0RhdGFQdWJsaXNoZXJfQWRkVlJEZXZpY2VJbmZvX1Jlc3BvbnNl",
+            "MnsKDVZhbHZlSFdTdXJ2ZXkSagoRR2V0U3VydmV5U2NoZWR1bGUSKS5DVmFs",
+            "dmVIV1N1cnZleV9HZXRTdXJ2ZXlTY2hlZHVsZV9SZXF1ZXN0GiouQ1ZhbHZl",
+            "SFdTdXJ2ZXlfR2V0U3VydmV5U2NoZWR1bGVfUmVzcG9uc2VCHYABAaoCF09w",
+            "ZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesUnifiedBaseSteamclientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDataPublisher_ClientContentCorruptionReport_Notification), global::OpenSteamworks.Protobuf.CDataPublisher_ClientContentCorruptionReport_Notification.Parser, new[]{ "Appid", "Depotid", "DownloadSource", "Objectid", "Cellid", "IsManifest", "ObjectSize", "CorruptionType", "UsedHttps", "OcProxyDetected" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDataPublisher_ClientUpdateAppJob_Notification), global::OpenSteamworks.Protobuf.CDataPublisher_ClientUpdateAppJob_Notification.Parser, new[]{ "AppId", "DepotIds", "AppState", "JobAppError", "ErrorDetails", "JobDuration", "FilesValidationFailed", "JobBytesDownloaded", "JobBytesStaged", "BytesComitted", "StartAppState", "StatsMachineId", "BranchName", "TotalBytesDownloaded", "TotalBytesStaged", "TotalBytesRestored", "IsBorrowed", "IsFreeWeekend", "TotalBytesPatched", "TotalBytesSaved", "CellId", "IsWorkshop", "IsShader" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDataPublisher_ClientUpdateAppJob_Notification), global::OpenSteamworks.Protobuf.CDataPublisher_ClientUpdateAppJob_Notification.Parser, new[]{ "AppId", "DepotIds", "AppState", "JobAppError", "ErrorDetails", "JobDuration", "FilesValidationFailed", "JobBytesDownloaded", "JobBytesStaged", "BytesComitted", "StartAppState", "StatsMachineId", "BranchName", "TotalBytesDownloaded", "TotalBytesStaged", "TotalBytesRestored", "IsBorrowed", "IsFreeWeekend", "TotalBytesPatched", "TotalBytesSaved", "CellId", "IsWorkshop", "IsShader", "SecondsNotPlayed" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDataPublisher_GetVRDeviceInfo_Request), global::OpenSteamworks.Protobuf.CDataPublisher_GetVRDeviceInfo_Request.Parser, new[]{ "MonthCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDataPublisher_GetVRDeviceInfo_Response), global::OpenSteamworks.Protobuf.CDataPublisher_GetVRDeviceInfo_Response.Parser, new[]{ "Device" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDataPublisher_GetVRDeviceInfo_Response.Types.Device), global::OpenSteamworks.Protobuf.CDataPublisher_GetVRDeviceInfo_Response.Types.Device.Parser, new[]{ "Name", "Ref", "AggregationRef", "Total", "Driver", "DeviceClass" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDataPublisher_SetVRDeviceInfoAggregationReference_Request), global::OpenSteamworks.Protobuf.CDataPublisher_SetVRDeviceInfoAggregationReference_Request.Parser, new[]{ "Ref", "AggregationRef" }, null, null, null, null),
@@ -843,6 +844,7 @@ namespace OpenSteamworks.Protobuf {
       cellId_ = other.cellId_;
       isWorkshop_ = other.isWorkshop_;
       isShader_ = other.isShader_;
+      secondsNotPlayed_ = other.secondsNotPlayed_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1455,6 +1457,33 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~524288;
     }
 
+    /// <summary>Field number for the "seconds_not_played" field.</summary>
+    public const int SecondsNotPlayedFieldNumber = 25;
+    private readonly static uint SecondsNotPlayedDefaultValue = 0;
+
+    private uint secondsNotPlayed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint SecondsNotPlayed {
+      get { if ((_hasBits0 & 1048576) != 0) { return secondsNotPlayed_; } else { return SecondsNotPlayedDefaultValue; } }
+      set {
+        _hasBits0 |= 1048576;
+        secondsNotPlayed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "seconds_not_played" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSecondsNotPlayed {
+      get { return (_hasBits0 & 1048576) != 0; }
+    }
+    /// <summary>Clears the value of the "seconds_not_played" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSecondsNotPlayed() {
+      _hasBits0 &= ~1048576;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1493,6 +1522,7 @@ namespace OpenSteamworks.Protobuf {
       if (CellId != other.CellId) return false;
       if (IsWorkshop != other.IsWorkshop) return false;
       if (IsShader != other.IsShader) return false;
+      if (SecondsNotPlayed != other.SecondsNotPlayed) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1523,6 +1553,7 @@ namespace OpenSteamworks.Protobuf {
       if (HasCellId) hash ^= CellId.GetHashCode();
       if (HasIsWorkshop) hash ^= IsWorkshop.GetHashCode();
       if (HasIsShader) hash ^= IsShader.GetHashCode();
+      if (HasSecondsNotPlayed) hash ^= SecondsNotPlayed.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1630,6 +1661,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(192, 1);
         output.WriteBool(IsShader);
       }
+      if (HasSecondsNotPlayed) {
+        output.WriteRawTag(200, 1);
+        output.WriteUInt32(SecondsNotPlayed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1729,6 +1764,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(192, 1);
         output.WriteBool(IsShader);
       }
+      if (HasSecondsNotPlayed) {
+        output.WriteRawTag(200, 1);
+        output.WriteUInt32(SecondsNotPlayed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1805,6 +1844,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasIsShader) {
         size += 2 + 1;
+      }
+      if (HasSecondsNotPlayed) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(SecondsNotPlayed);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1884,6 +1926,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasIsShader) {
         IsShader = other.IsShader;
+      }
+      if (other.HasSecondsNotPlayed) {
+        SecondsNotPlayed = other.SecondsNotPlayed;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1997,6 +2042,10 @@ namespace OpenSteamworks.Protobuf {
             IsShader = input.ReadBool();
             break;
           }
+          case 200: {
+            SecondsNotPlayed = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -2107,6 +2156,10 @@ namespace OpenSteamworks.Protobuf {
           }
           case 192: {
             IsShader = input.ReadBool();
+            break;
+          }
+          case 200: {
+            SecondsNotPlayed = input.ReadUInt32();
             break;
           }
         }

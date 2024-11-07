@@ -5,8 +5,8 @@
             "name": "IsInterfaceValid",
             "argc": "1",
             "interfaceid": "60",
-            "functionid": "862245967",
-            "fencepost": "907753496",
+            "functionid": "862246324",
+            "fencepost": "907640950",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -18,8 +18,8 @@
             "name": "GetState",
             "argc": "2",
             "interfaceid": "60",
-            "functionid": "2169953890",
-            "fencepost": "2215525935",
+            "functionid": "2169953893",
+            "fencepost": "2215413035",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -32,8 +32,8 @@
             "name": "SetMode",
             "argc": "2",
             "interfaceid": "60",
-            "functionid": "2139887766",
-            "fencepost": "2185556585",
+            "functionid": "2139887773",
+            "fencepost": "2185443689",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "protobuf"
@@ -46,8 +46,8 @@
             "name": "ClearModeOverride",
             "argc": "2",
             "interfaceid": "60",
-            "functionid": "3934404336",
-            "fencepost": "3980121542",
+            "functionid": "3934404329",
+            "fencepost": "3980008632",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -60,8 +60,8 @@
             "name": "SetCompatibilityMode",
             "argc": "2",
             "interfaceid": "60",
-            "functionid": "206061318",
-            "fencepost": "251794653",
+            "functionid": "206061337",
+            "fencepost": "251681769",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -74,8 +74,8 @@
             "name": "SetGameResolutionGlobal",
             "argc": "2",
             "interfaceid": "60",
-            "functionid": "4025867423",
-            "fencepost": "4071616887",
+            "functionid": "4025867398",
+            "fencepost": "4071503959",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "string"

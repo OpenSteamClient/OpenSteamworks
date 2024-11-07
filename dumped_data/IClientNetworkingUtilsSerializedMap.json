@@ -5,8 +5,8 @@
             "name": "GetNetworkConfigJSON_DEPRECATED",
             "argc": "4",
             "interfaceid": "50",
-            "functionid": "687842835",
-            "fencepost": "786542536",
+            "functionid": "687843205",
+            "fencepost": "780639692",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -21,8 +21,8 @@
             "name": "GetLauncherType",
             "argc": "1",
             "interfaceid": "50",
-            "functionid": "2850033652",
-            "fencepost": "2948781740",
+            "functionid": "2850033250",
+            "fencepost": "2942878124",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -34,8 +34,8 @@
             "name": "TEST_ClearCachedNetworkConfig",
             "argc": "1",
             "interfaceid": "50",
-            "functionid": "3061613483",
-            "fencepost": "3160458345",
+            "functionid": "3061613273",
+            "fencepost": "3154554921",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -46,8 +46,8 @@
             "name": "PostConnectionStateMsg",
             "argc": "3",
             "interfaceid": "50",
-            "functionid": "3774977862",
-            "fencepost": "3873790466",
+            "functionid": "3774977744",
+            "fencepost": "3867887134",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -60,8 +60,8 @@
             "name": "PostConnectionStateUpdatesForAllConnections",
             "argc": "1",
             "interfaceid": "50",
-            "functionid": "2261759012",
-            "fencepost": "2360620003",
+            "functionid": "2261759318",
+            "fencepost": "2354717095",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -72,8 +72,8 @@
             "name": "PostAppSummaryUpdates",
             "argc": "1",
             "interfaceid": "50",
-            "functionid": "37822568",
-            "fencepost": "136699688",
+            "functionid": "37822750",
+            "fencepost": "130796656",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -84,8 +84,8 @@
             "name": "GotLocationString",
             "argc": "2",
             "interfaceid": "50",
-            "functionid": "2020165469",
-            "fencepost": "2119058718",
+            "functionid": "2020165163",
+            "fencepost": "2113155198",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "string"

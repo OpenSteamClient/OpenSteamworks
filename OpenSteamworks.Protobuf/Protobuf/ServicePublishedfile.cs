@@ -361,97 +361,99 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "CCABKAkiQgodUHVibGlzaGVkRmlsZURldGFpbHNfUmVhY3Rpb24SEgoKcmVh",
             "Y3Rpb25pZBgBIAEoDRINCgVjb3VudBgCIAEoDSJQChhQdWJsaXNoZWRGaWxl",
             "RGV0YWlsc19UYWcSCwoDdGFnGAEgASgJEhEKCWFkbWlub25seRgCIAEoCBIU",
-            "CgxkaXNwbGF5X25hbWUYAyABKAkiVAodUHVibGlzaGVkRmlsZURldGFpbHNf",
-            "Vm90ZURhdGESDQoFc2NvcmUYASABKAISEAoIdm90ZXNfdXAYAiABKA0SEgoK",
-            "dm90ZXNfZG93bhgDIAEoDSJpChdQdWJsaXNoZWRGaWxlU3ViU2VjdGlvbhIR",
-            "CglzZWN0aW9uaWQYASABKAQSDQoFdGl0bGUYAiABKAkSGAoQZGVzY3JpcHRp",
-            "b25fdGV4dBgDIAEoCRISCgpzb3J0X29yZGVyGAQgASgNMt0bCg1QdWJsaXNo",
-            "ZWRGaWxlEm0KEkFkZEFwcFJlbGF0aW9uc2hpcBIqLkNQdWJsaXNoZWRGaWxl",
-            "X0FkZEFwcFJlbGF0aW9uc2hpcF9SZXF1ZXN0GisuQ1B1Ymxpc2hlZEZpbGVf",
-            "QWRkQXBwUmVsYXRpb25zaGlwX1Jlc3BvbnNlEk8KCEFkZENoaWxkEiAuQ1B1",
-            "Ymxpc2hlZEZpbGVfQWRkQ2hpbGRfUmVxdWVzdBohLkNQdWJsaXNoZWRGaWxl",
-            "X0FkZENoaWxkX1Jlc3BvbnNlEoUBChpBcmVGaWxlc0luU3Vic2NyaXB0aW9u",
-            "TGlzdBIyLkNQdWJsaXNoZWRGaWxlX0FyZUZpbGVzSW5TdWJzY3JpcHRpb25M",
-            "aXN0X1JlcXVlc3QaMy5DUHVibGlzaGVkRmlsZV9BcmVGaWxlc0luU3Vic2Ny",
-            "aXB0aW9uTGlzdF9SZXNwb25zZRJbCgxDYW5TdWJzY3JpYmUSJC5DUHVibGlz",
-            "aGVkRmlsZV9DYW5TdWJzY3JpYmVfUmVxdWVzdBolLkNQdWJsaXNoZWRGaWxl",
-            "X0NhblN1YnNjcmliZV9SZXNwb25zZRJJCgZEZWxldGUSHi5DUHVibGlzaGVk",
-            "RmlsZV9EZWxldGVfUmVxdWVzdBofLkNQdWJsaXNoZWRGaWxlX0RlbGV0ZV9S",
-            "ZXNwb25zZRJwChNHZXRBcHBSZWxhdGlvbnNoaXBzEisuQ1B1Ymxpc2hlZEZp",
-            "bGVfR2V0QXBwUmVsYXRpb25zaGlwc19SZXF1ZXN0GiwuQ1B1Ymxpc2hlZEZp",
-            "bGVfR2V0QXBwUmVsYXRpb25zaGlwc19SZXNwb25zZRKFAQoaR2V0QXBwUmVs",
-            "YXRpb25zaGlwc0JhdGNoZWQSMi5DUHVibGlzaGVkRmlsZV9HZXRBcHBSZWxh",
-            "dGlvbnNoaXBzQmF0Y2hlZF9SZXF1ZXN0GjMuQ1B1Ymxpc2hlZEZpbGVfR2V0",
-            "QXBwUmVsYXRpb25zaGlwc0JhdGNoZWRfUmVzcG9uc2USZwoQR2V0Q2hhbmdl",
-            "SGlzdG9yeRIoLkNQdWJsaXNoZWRGaWxlX0dldENoYW5nZUhpc3RvcnlfUmVx",
-            "dWVzdBopLkNQdWJsaXNoZWRGaWxlX0dldENoYW5nZUhpc3RvcnlfUmVzcG9u",
-            "c2USdgoVR2V0Q2hhbmdlSGlzdG9yeUVudHJ5Ei0uQ1B1Ymxpc2hlZEZpbGVf",
-            "R2V0Q2hhbmdlSGlzdG9yeUVudHJ5X1JlcXVlc3QaLi5DUHVibGlzaGVkRmls",
-            "ZV9HZXRDaGFuZ2VIaXN0b3J5RW50cnlfUmVzcG9uc2USdgoVR2V0Q29udGVu",
-            "dERlc2NyaXB0b3JzEi0uQ1B1Ymxpc2hlZEZpbGVfR2V0Q29udGVudERlc2Ny",
-            "aXB0b3JzX1JlcXVlc3QaLi5DUHVibGlzaGVkRmlsZV9HZXRDb250ZW50RGVz",
-            "Y3JpcHRvcnNfUmVzcG9uc2USVQoKR2V0RGV0YWlscxIiLkNQdWJsaXNoZWRG",
-            "aWxlX0dldERldGFpbHNfUmVxdWVzdBojLkNQdWJsaXNoZWRGaWxlX0dldERl",
-            "dGFpbHNfUmVzcG9uc2USYQoOR2V0SXRlbUNoYW5nZXMSJi5DUHVibGlzaGVk",
-            "RmlsZV9HZXRJdGVtQ2hhbmdlc19SZXF1ZXN0GicuQ1B1Ymxpc2hlZEZpbGVf",
-            "R2V0SXRlbUNoYW5nZXNfUmVzcG9uc2USWAoLR2V0SXRlbUluZm8SIy5DUHVi",
-            "bGlzaGVkRmlsZV9HZXRJdGVtSW5mb19SZXF1ZXN0GiQuQ1B1Ymxpc2hlZEZp",
-            "bGVfR2V0SXRlbUluZm9fUmVzcG9uc2USagoRR2V0U3ViU2VjdGlvbkRhdGES",
-            "KS5DUHVibGlzaGVkRmlsZV9HZXRTdWJTZWN0aW9uRGF0YV9SZXF1ZXN0Giou",
-            "Q1B1Ymxpc2hlZEZpbGVfR2V0U3ViU2VjdGlvbkRhdGFfUmVzcG9uc2USXwoQ",
-            "R2V0VXNlckZpbGVDb3VudBIkLkNQdWJsaXNoZWRGaWxlX0dldFVzZXJGaWxl",
-            "c19SZXF1ZXN0GiUuQ1B1Ymxpc2hlZEZpbGVfR2V0VXNlckZpbGVzX1Jlc3Bv",
-            "bnNlElsKDEdldFVzZXJGaWxlcxIkLkNQdWJsaXNoZWRGaWxlX0dldFVzZXJG",
-            "aWxlc19SZXF1ZXN0GiUuQ1B1Ymxpc2hlZEZpbGVfR2V0VXNlckZpbGVzX1Jl",
-            "c3BvbnNlEm0KEkdldFVzZXJWb3RlU3VtbWFyeRIqLkNQdWJsaXNoZWRGaWxl",
-            "X0dldFVzZXJWb3RlU3VtbWFyeV9SZXF1ZXN0GisuQ1B1Ymxpc2hlZEZpbGVf",
-            "R2V0VXNlclZvdGVTdW1tYXJ5X1Jlc3BvbnNlEkwKB1B1Ymxpc2gSHy5DUHVi",
-            "bGlzaGVkRmlsZV9QdWJsaXNoX1JlcXVlc3QaIC5DUHVibGlzaGVkRmlsZV9Q",
-            "dWJsaXNoX1Jlc3BvbnNlElUKClF1ZXJ5RmlsZXMSIi5DUHVibGlzaGVkRmls",
-            "ZV9RdWVyeUZpbGVzX1JlcXVlc3QaIy5DUHVibGlzaGVkRmlsZV9RdWVyeUZp",
-            "bGVzX1Jlc3BvbnNlEm0KElJlZnJlc2hWb3RpbmdRdWV1ZRIqLkNQdWJsaXNo",
-            "ZWRGaWxlX1JlZnJlc2hWb3RpbmdRdWV1ZV9SZXF1ZXN0GisuQ1B1Ymxpc2hl",
-            "ZEZpbGVfUmVmcmVzaFZvdGluZ1F1ZXVlX1Jlc3BvbnNlEnYKFVJlbW92ZUFw",
-            "cFJlbGF0aW9uc2hpcBItLkNQdWJsaXNoZWRGaWxlX1JlbW92ZUFwcFJlbGF0",
-            "aW9uc2hpcF9SZXF1ZXN0Gi4uQ1B1Ymxpc2hlZEZpbGVfUmVtb3ZlQXBwUmVs",
-            "YXRpb25zaGlwX1Jlc3BvbnNlElgKC1JlbW92ZUNoaWxkEiMuQ1B1Ymxpc2hl",
-            "ZEZpbGVfUmVtb3ZlQ2hpbGRfUmVxdWVzdBokLkNQdWJsaXNoZWRGaWxlX1Jl",
-            "bW92ZUNoaWxkX1Jlc3BvbnNlEnYKFVNldENvbGxlY3Rpb25DaGlsZHJlbhIt",
-            "LkNQdWJsaXNoZWRGaWxlX1NldENvbGxlY3Rpb25DaGlsZHJlbl9SZXF1ZXN0",
-            "Gi4uQ1B1Ymxpc2hlZEZpbGVfU2V0Q29sbGVjdGlvbkNoaWxkcmVuX1Jlc3Bv",
-            "bnNlEpQBCh9TZXRQbGF5dGltZUZvckNvbnRyb2xsZXJDb25maWdzEjcuQ1B1",
+            "CgxkaXNwbGF5X25hbWUYAyABKAkioQEKHVB1Ymxpc2hlZEZpbGVEZXRhaWxz",
+            "X1ZvdGVEYXRhEg0KBXNjb3JlGAEgASgCEhAKCHZvdGVzX3VwGAIgASgNEhIK",
+            "CnZvdGVzX2Rvd24YAyABKA0SFQoNdHJ1c3RlZF9zY29yZRgEIAEoAhIYChB0",
+            "cnVzdGVkX3ZvdGVzX3VwGAUgASgNEhoKEnRydXN0ZWRfdm90ZXNfZG93bhgG",
+            "IAEoDSJpChdQdWJsaXNoZWRGaWxlU3ViU2VjdGlvbhIRCglzZWN0aW9uaWQY",
+            "ASABKAQSDQoFdGl0bGUYAiABKAkSGAoQZGVzY3JpcHRpb25fdGV4dBgDIAEo",
+            "CRISCgpzb3J0X29yZGVyGAQgASgNMt0bCg1QdWJsaXNoZWRGaWxlEm0KEkFk",
+            "ZEFwcFJlbGF0aW9uc2hpcBIqLkNQdWJsaXNoZWRGaWxlX0FkZEFwcFJlbGF0",
+            "aW9uc2hpcF9SZXF1ZXN0GisuQ1B1Ymxpc2hlZEZpbGVfQWRkQXBwUmVsYXRp",
+            "b25zaGlwX1Jlc3BvbnNlEk8KCEFkZENoaWxkEiAuQ1B1Ymxpc2hlZEZpbGVf",
+            "QWRkQ2hpbGRfUmVxdWVzdBohLkNQdWJsaXNoZWRGaWxlX0FkZENoaWxkX1Jl",
+            "c3BvbnNlEoUBChpBcmVGaWxlc0luU3Vic2NyaXB0aW9uTGlzdBIyLkNQdWJs",
+            "aXNoZWRGaWxlX0FyZUZpbGVzSW5TdWJzY3JpcHRpb25MaXN0X1JlcXVlc3Qa",
+            "My5DUHVibGlzaGVkRmlsZV9BcmVGaWxlc0luU3Vic2NyaXB0aW9uTGlzdF9S",
+            "ZXNwb25zZRJbCgxDYW5TdWJzY3JpYmUSJC5DUHVibGlzaGVkRmlsZV9DYW5T",
+            "dWJzY3JpYmVfUmVxdWVzdBolLkNQdWJsaXNoZWRGaWxlX0NhblN1YnNjcmli",
+            "ZV9SZXNwb25zZRJJCgZEZWxldGUSHi5DUHVibGlzaGVkRmlsZV9EZWxldGVf",
+            "UmVxdWVzdBofLkNQdWJsaXNoZWRGaWxlX0RlbGV0ZV9SZXNwb25zZRJwChNH",
+            "ZXRBcHBSZWxhdGlvbnNoaXBzEisuQ1B1Ymxpc2hlZEZpbGVfR2V0QXBwUmVs",
+            "YXRpb25zaGlwc19SZXF1ZXN0GiwuQ1B1Ymxpc2hlZEZpbGVfR2V0QXBwUmVs",
+            "YXRpb25zaGlwc19SZXNwb25zZRKFAQoaR2V0QXBwUmVsYXRpb25zaGlwc0Jh",
+            "dGNoZWQSMi5DUHVibGlzaGVkRmlsZV9HZXRBcHBSZWxhdGlvbnNoaXBzQmF0",
+            "Y2hlZF9SZXF1ZXN0GjMuQ1B1Ymxpc2hlZEZpbGVfR2V0QXBwUmVsYXRpb25z",
+            "aGlwc0JhdGNoZWRfUmVzcG9uc2USZwoQR2V0Q2hhbmdlSGlzdG9yeRIoLkNQ",
+            "dWJsaXNoZWRGaWxlX0dldENoYW5nZUhpc3RvcnlfUmVxdWVzdBopLkNQdWJs",
+            "aXNoZWRGaWxlX0dldENoYW5nZUhpc3RvcnlfUmVzcG9uc2USdgoVR2V0Q2hh",
+            "bmdlSGlzdG9yeUVudHJ5Ei0uQ1B1Ymxpc2hlZEZpbGVfR2V0Q2hhbmdlSGlz",
+            "dG9yeUVudHJ5X1JlcXVlc3QaLi5DUHVibGlzaGVkRmlsZV9HZXRDaGFuZ2VI",
+            "aXN0b3J5RW50cnlfUmVzcG9uc2USdgoVR2V0Q29udGVudERlc2NyaXB0b3Jz",
+            "Ei0uQ1B1Ymxpc2hlZEZpbGVfR2V0Q29udGVudERlc2NyaXB0b3JzX1JlcXVl",
+            "c3QaLi5DUHVibGlzaGVkRmlsZV9HZXRDb250ZW50RGVzY3JpcHRvcnNfUmVz",
+            "cG9uc2USVQoKR2V0RGV0YWlscxIiLkNQdWJsaXNoZWRGaWxlX0dldERldGFp",
+            "bHNfUmVxdWVzdBojLkNQdWJsaXNoZWRGaWxlX0dldERldGFpbHNfUmVzcG9u",
+            "c2USYQoOR2V0SXRlbUNoYW5nZXMSJi5DUHVibGlzaGVkRmlsZV9HZXRJdGVt",
+            "Q2hhbmdlc19SZXF1ZXN0GicuQ1B1Ymxpc2hlZEZpbGVfR2V0SXRlbUNoYW5n",
+            "ZXNfUmVzcG9uc2USWAoLR2V0SXRlbUluZm8SIy5DUHVibGlzaGVkRmlsZV9H",
+            "ZXRJdGVtSW5mb19SZXF1ZXN0GiQuQ1B1Ymxpc2hlZEZpbGVfR2V0SXRlbUlu",
+            "Zm9fUmVzcG9uc2USagoRR2V0U3ViU2VjdGlvbkRhdGESKS5DUHVibGlzaGVk",
+            "RmlsZV9HZXRTdWJTZWN0aW9uRGF0YV9SZXF1ZXN0GiouQ1B1Ymxpc2hlZEZp",
+            "bGVfR2V0U3ViU2VjdGlvbkRhdGFfUmVzcG9uc2USXwoQR2V0VXNlckZpbGVD",
+            "b3VudBIkLkNQdWJsaXNoZWRGaWxlX0dldFVzZXJGaWxlc19SZXF1ZXN0GiUu",
+            "Q1B1Ymxpc2hlZEZpbGVfR2V0VXNlckZpbGVzX1Jlc3BvbnNlElsKDEdldFVz",
+            "ZXJGaWxlcxIkLkNQdWJsaXNoZWRGaWxlX0dldFVzZXJGaWxlc19SZXF1ZXN0",
+            "GiUuQ1B1Ymxpc2hlZEZpbGVfR2V0VXNlckZpbGVzX1Jlc3BvbnNlEm0KEkdl",
+            "dFVzZXJWb3RlU3VtbWFyeRIqLkNQdWJsaXNoZWRGaWxlX0dldFVzZXJWb3Rl",
+            "U3VtbWFyeV9SZXF1ZXN0GisuQ1B1Ymxpc2hlZEZpbGVfR2V0VXNlclZvdGVT",
+            "dW1tYXJ5X1Jlc3BvbnNlEkwKB1B1Ymxpc2gSHy5DUHVibGlzaGVkRmlsZV9Q",
+            "dWJsaXNoX1JlcXVlc3QaIC5DUHVibGlzaGVkRmlsZV9QdWJsaXNoX1Jlc3Bv",
+            "bnNlElUKClF1ZXJ5RmlsZXMSIi5DUHVibGlzaGVkRmlsZV9RdWVyeUZpbGVz",
+            "X1JlcXVlc3QaIy5DUHVibGlzaGVkRmlsZV9RdWVyeUZpbGVzX1Jlc3BvbnNl",
+            "Em0KElJlZnJlc2hWb3RpbmdRdWV1ZRIqLkNQdWJsaXNoZWRGaWxlX1JlZnJl",
+            "c2hWb3RpbmdRdWV1ZV9SZXF1ZXN0GisuQ1B1Ymxpc2hlZEZpbGVfUmVmcmVz",
+            "aFZvdGluZ1F1ZXVlX1Jlc3BvbnNlEnYKFVJlbW92ZUFwcFJlbGF0aW9uc2hp",
+            "cBItLkNQdWJsaXNoZWRGaWxlX1JlbW92ZUFwcFJlbGF0aW9uc2hpcF9SZXF1",
+            "ZXN0Gi4uQ1B1Ymxpc2hlZEZpbGVfUmVtb3ZlQXBwUmVsYXRpb25zaGlwX1Jl",
+            "c3BvbnNlElgKC1JlbW92ZUNoaWxkEiMuQ1B1Ymxpc2hlZEZpbGVfUmVtb3Zl",
+            "Q2hpbGRfUmVxdWVzdBokLkNQdWJsaXNoZWRGaWxlX1JlbW92ZUNoaWxkX1Jl",
+            "c3BvbnNlEnYKFVNldENvbGxlY3Rpb25DaGlsZHJlbhItLkNQdWJsaXNoZWRG",
+            "aWxlX1NldENvbGxlY3Rpb25DaGlsZHJlbl9SZXF1ZXN0Gi4uQ1B1Ymxpc2hl",
+            "ZEZpbGVfU2V0Q29sbGVjdGlvbkNoaWxkcmVuX1Jlc3BvbnNlEpQBCh9TZXRQ",
+            "bGF5dGltZUZvckNvbnRyb2xsZXJDb25maWdzEjcuQ1B1Ymxpc2hlZEZpbGVf",
+            "U2V0UGxheXRpbWVGb3JDb250cm9sbGVyQ29uZmlnc19SZXF1ZXN0GjguQ1B1",
             "Ymxpc2hlZEZpbGVfU2V0UGxheXRpbWVGb3JDb250cm9sbGVyQ29uZmlnc19S",
-            "ZXF1ZXN0GjguQ1B1Ymxpc2hlZEZpbGVfU2V0UGxheXRpbWVGb3JDb250cm9s",
-            "bGVyQ29uZmlnc19SZXNwb25zZRKaAQohU2V0U3Vic2NyaXB0aW9uTGlzdEZy",
-            "b21Db2xsZWN0aW9uEjkuQ1B1Ymxpc2hlZEZpbGVfU2V0U3Vic2NyaXB0aW9u",
-            "TGlzdEZyb21Db2xsZWN0aW9uX1JlcXVlc3QaOi5DUHVibGlzaGVkRmlsZV9T",
-            "ZXRTdWJzY3JpcHRpb25MaXN0RnJvbUNvbGxlY3Rpb25fUmVzcG9uc2USdgoV",
-            "U3RhcnRQbGF5dGltZVRyYWNraW5nEi0uQ1B1Ymxpc2hlZEZpbGVfU3RhcnRQ",
-            "bGF5dGltZVRyYWNraW5nX1JlcXVlc3QaLi5DUHVibGlzaGVkRmlsZV9TdGFy",
-            "dFBsYXl0aW1lVHJhY2tpbmdfUmVzcG9uc2UScwoUU3RvcFBsYXl0aW1lVHJh",
-            "Y2tpbmcSLC5DUHVibGlzaGVkRmlsZV9TdG9wUGxheXRpbWVUcmFja2luZ19S",
-            "ZXF1ZXN0Gi0uQ1B1Ymxpc2hlZEZpbGVfU3RvcFBsYXl0aW1lVHJhY2tpbmdf",
-            "UmVzcG9uc2USnQEKIlN0b3BQbGF5dGltZVRyYWNraW5nRm9yQWxsQXBwSXRl",
-            "bXMSOi5DUHVibGlzaGVkRmlsZV9TdG9wUGxheXRpbWVUcmFja2luZ0ZvckFs",
-            "bEFwcEl0ZW1zX1JlcXVlc3QaOy5DUHVibGlzaGVkRmlsZV9TdG9wUGxheXRp",
-            "bWVUcmFja2luZ0ZvckFsbEFwcEl0ZW1zX1Jlc3BvbnNlElIKCVN1YnNjcmli",
-            "ZRIhLkNQdWJsaXNoZWRGaWxlX1N1YnNjcmliZV9SZXF1ZXN0GiIuQ1B1Ymxp",
-            "c2hlZEZpbGVfU3Vic2NyaWJlX1Jlc3BvbnNlElgKC1Vuc3Vic2NyaWJlEiMu",
-            "Q1B1Ymxpc2hlZEZpbGVfVW5zdWJzY3JpYmVfUmVxdWVzdBokLkNQdWJsaXNo",
-            "ZWRGaWxlX1Vuc3Vic2NyaWJlX1Jlc3BvbnNlEkkKBlVwZGF0ZRIeLkNQdWJs",
-            "aXNoZWRGaWxlX1VwZGF0ZV9SZXF1ZXN0Gh8uQ1B1Ymxpc2hlZEZpbGVfVXBk",
-            "YXRlX1Jlc3BvbnNlEn8KGFVwZGF0ZUNvbnRlbnREZXNjcmlwdG9ycxIwLkNQ",
-            "dWJsaXNoZWRGaWxlX1VwZGF0ZUNvbnRlbnREZXNjcmlwdG9yc19SZXF1ZXN0",
-            "GjEuQ1B1Ymxpc2hlZEZpbGVfVXBkYXRlQ29udGVudERlc2NyaXB0b3JzX1Jl",
-            "c3BvbnNlEkMKBFZvdGUSHC5DUHVibGlzaGVkRmlsZV9Wb3RlX1JlcXVlc3Qa",
-            "HS5DUHVibGlzaGVkRmlsZV9Wb3RlX1Jlc3BvbnNlMpACChNQdWJsaXNoZWRG",
-            "aWxlQ2xpZW50ElEKEU5vdGlmeUZpbGVEZWxldGVkEi8uQ1B1Ymxpc2hlZEZp",
-            "bGVfRmlsZURlbGV0ZWRfQ2xpZW50X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9u",
-            "c2USUAoUTm90aWZ5RmlsZVN1YnNjcmliZWQSKy5DUHVibGlzaGVkRmlsZV9G",
-            "aWxlU3Vic2NyaWJlZF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElQKFk5v",
-            "dGlmeUZpbGVVbnN1YnNjcmliZWQSLS5DUHVibGlzaGVkRmlsZV9GaWxlVW5z",
-            "dWJzY3JpYmVkX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2VCIKoCHU9wZW5T",
-            "dGVhbXdvcmtzLlByb3RvYnVmLldlYlVJ"));
+            "ZXNwb25zZRKaAQohU2V0U3Vic2NyaXB0aW9uTGlzdEZyb21Db2xsZWN0aW9u",
+            "EjkuQ1B1Ymxpc2hlZEZpbGVfU2V0U3Vic2NyaXB0aW9uTGlzdEZyb21Db2xs",
+            "ZWN0aW9uX1JlcXVlc3QaOi5DUHVibGlzaGVkRmlsZV9TZXRTdWJzY3JpcHRp",
+            "b25MaXN0RnJvbUNvbGxlY3Rpb25fUmVzcG9uc2USdgoVU3RhcnRQbGF5dGlt",
+            "ZVRyYWNraW5nEi0uQ1B1Ymxpc2hlZEZpbGVfU3RhcnRQbGF5dGltZVRyYWNr",
+            "aW5nX1JlcXVlc3QaLi5DUHVibGlzaGVkRmlsZV9TdGFydFBsYXl0aW1lVHJh",
+            "Y2tpbmdfUmVzcG9uc2UScwoUU3RvcFBsYXl0aW1lVHJhY2tpbmcSLC5DUHVi",
+            "bGlzaGVkRmlsZV9TdG9wUGxheXRpbWVUcmFja2luZ19SZXF1ZXN0Gi0uQ1B1",
+            "Ymxpc2hlZEZpbGVfU3RvcFBsYXl0aW1lVHJhY2tpbmdfUmVzcG9uc2USnQEK",
+            "IlN0b3BQbGF5dGltZVRyYWNraW5nRm9yQWxsQXBwSXRlbXMSOi5DUHVibGlz",
+            "aGVkRmlsZV9TdG9wUGxheXRpbWVUcmFja2luZ0ZvckFsbEFwcEl0ZW1zX1Jl",
+            "cXVlc3QaOy5DUHVibGlzaGVkRmlsZV9TdG9wUGxheXRpbWVUcmFja2luZ0Zv",
+            "ckFsbEFwcEl0ZW1zX1Jlc3BvbnNlElIKCVN1YnNjcmliZRIhLkNQdWJsaXNo",
+            "ZWRGaWxlX1N1YnNjcmliZV9SZXF1ZXN0GiIuQ1B1Ymxpc2hlZEZpbGVfU3Vi",
+            "c2NyaWJlX1Jlc3BvbnNlElgKC1Vuc3Vic2NyaWJlEiMuQ1B1Ymxpc2hlZEZp",
+            "bGVfVW5zdWJzY3JpYmVfUmVxdWVzdBokLkNQdWJsaXNoZWRGaWxlX1Vuc3Vi",
+            "c2NyaWJlX1Jlc3BvbnNlEkkKBlVwZGF0ZRIeLkNQdWJsaXNoZWRGaWxlX1Vw",
+            "ZGF0ZV9SZXF1ZXN0Gh8uQ1B1Ymxpc2hlZEZpbGVfVXBkYXRlX1Jlc3BvbnNl",
+            "En8KGFVwZGF0ZUNvbnRlbnREZXNjcmlwdG9ycxIwLkNQdWJsaXNoZWRGaWxl",
+            "X1VwZGF0ZUNvbnRlbnREZXNjcmlwdG9yc19SZXF1ZXN0GjEuQ1B1Ymxpc2hl",
+            "ZEZpbGVfVXBkYXRlQ29udGVudERlc2NyaXB0b3JzX1Jlc3BvbnNlEkMKBFZv",
+            "dGUSHC5DUHVibGlzaGVkRmlsZV9Wb3RlX1JlcXVlc3QaHS5DUHVibGlzaGVk",
+            "RmlsZV9Wb3RlX1Jlc3BvbnNlMpACChNQdWJsaXNoZWRGaWxlQ2xpZW50ElEK",
+            "EU5vdGlmeUZpbGVEZWxldGVkEi8uQ1B1Ymxpc2hlZEZpbGVfRmlsZURlbGV0",
+            "ZWRfQ2xpZW50X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USUAoUTm90aWZ5",
+            "RmlsZVN1YnNjcmliZWQSKy5DUHVibGlzaGVkRmlsZV9GaWxlU3Vic2NyaWJl",
+            "ZF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElQKFk5vdGlmeUZpbGVVbnN1",
+            "YnNjcmliZWQSLS5DUHVibGlzaGVkRmlsZV9GaWxlVW5zdWJzY3JpYmVkX05v",
+            "dGlmaWNhdGlvbhoLLk5vUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtzLlBy",
+            "b3RvYnVmLldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -549,7 +551,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_Preview), global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_Preview.Parser, new[]{ "Previewid", "Sortorder", "Url", "Size", "Filename", "Youtubevideoid", "PreviewType", "ExternalReference" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_Reaction), global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_Reaction.Parser, new[]{ "Reactionid", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_Tag), global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_Tag.Parser, new[]{ "Tag", "Adminonly", "DisplayName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_VoteData), global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_VoteData.Parser, new[]{ "Score", "VotesUp", "VotesDown" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_VoteData), global::OpenSteamworks.Protobuf.WebUI.PublishedFileDetails_VoteData.Parser, new[]{ "Score", "VotesUp", "VotesDown", "TrustedScore", "TrustedVotesUp", "TrustedVotesDown" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.PublishedFileSubSection), global::OpenSteamworks.Protobuf.WebUI.PublishedFileSubSection.Parser, new[]{ "Sectionid", "Title", "DescriptionText", "SortOrder" }, null, null, null, null)
           }));
     }
@@ -35069,6 +35071,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       score_ = other.score_;
       votesUp_ = other.votesUp_;
       votesDown_ = other.votesDown_;
+      trustedScore_ = other.trustedScore_;
+      trustedVotesUp_ = other.trustedVotesUp_;
+      trustedVotesDown_ = other.trustedVotesDown_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -35159,6 +35164,87 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~4;
     }
 
+    /// <summary>Field number for the "trusted_score" field.</summary>
+    public const int TrustedScoreFieldNumber = 4;
+    private readonly static float TrustedScoreDefaultValue = 0F;
+
+    private float trustedScore_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float TrustedScore {
+      get { if ((_hasBits0 & 8) != 0) { return trustedScore_; } else { return TrustedScoreDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        trustedScore_ = value;
+      }
+    }
+    /// <summary>Gets whether the "trusted_score" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTrustedScore {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "trusted_score" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTrustedScore() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "trusted_votes_up" field.</summary>
+    public const int TrustedVotesUpFieldNumber = 5;
+    private readonly static uint TrustedVotesUpDefaultValue = 0;
+
+    private uint trustedVotesUp_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint TrustedVotesUp {
+      get { if ((_hasBits0 & 16) != 0) { return trustedVotesUp_; } else { return TrustedVotesUpDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        trustedVotesUp_ = value;
+      }
+    }
+    /// <summary>Gets whether the "trusted_votes_up" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTrustedVotesUp {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "trusted_votes_up" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTrustedVotesUp() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "trusted_votes_down" field.</summary>
+    public const int TrustedVotesDownFieldNumber = 6;
+    private readonly static uint TrustedVotesDownDefaultValue = 0;
+
+    private uint trustedVotesDown_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint TrustedVotesDown {
+      get { if ((_hasBits0 & 32) != 0) { return trustedVotesDown_; } else { return TrustedVotesDownDefaultValue; } }
+      set {
+        _hasBits0 |= 32;
+        trustedVotesDown_ = value;
+      }
+    }
+    /// <summary>Gets whether the "trusted_votes_down" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTrustedVotesDown {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "trusted_votes_down" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTrustedVotesDown() {
+      _hasBits0 &= ~32;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -35177,6 +35263,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Score, other.Score)) return false;
       if (VotesUp != other.VotesUp) return false;
       if (VotesDown != other.VotesDown) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(TrustedScore, other.TrustedScore)) return false;
+      if (TrustedVotesUp != other.TrustedVotesUp) return false;
+      if (TrustedVotesDown != other.TrustedVotesDown) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -35187,6 +35276,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasScore) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Score);
       if (HasVotesUp) hash ^= VotesUp.GetHashCode();
       if (HasVotesDown) hash ^= VotesDown.GetHashCode();
+      if (HasTrustedScore) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(TrustedScore);
+      if (HasTrustedVotesUp) hash ^= TrustedVotesUp.GetHashCode();
+      if (HasTrustedVotesDown) hash ^= TrustedVotesDown.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -35217,6 +35309,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(24);
         output.WriteUInt32(VotesDown);
       }
+      if (HasTrustedScore) {
+        output.WriteRawTag(37);
+        output.WriteFloat(TrustedScore);
+      }
+      if (HasTrustedVotesUp) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(TrustedVotesUp);
+      }
+      if (HasTrustedVotesDown) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(TrustedVotesDown);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -35239,6 +35343,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(24);
         output.WriteUInt32(VotesDown);
       }
+      if (HasTrustedScore) {
+        output.WriteRawTag(37);
+        output.WriteFloat(TrustedScore);
+      }
+      if (HasTrustedVotesUp) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(TrustedVotesUp);
+      }
+      if (HasTrustedVotesDown) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(TrustedVotesDown);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -35257,6 +35373,15 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasVotesDown) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(VotesDown);
+      }
+      if (HasTrustedScore) {
+        size += 1 + 4;
+      }
+      if (HasTrustedVotesUp) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TrustedVotesUp);
+      }
+      if (HasTrustedVotesDown) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TrustedVotesDown);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -35278,6 +35403,15 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasVotesDown) {
         VotesDown = other.VotesDown;
+      }
+      if (other.HasTrustedScore) {
+        TrustedScore = other.TrustedScore;
+      }
+      if (other.HasTrustedVotesUp) {
+        TrustedVotesUp = other.TrustedVotesUp;
+      }
+      if (other.HasTrustedVotesDown) {
+        TrustedVotesDown = other.TrustedVotesDown;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -35310,6 +35444,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
             VotesDown = input.ReadUInt32();
             break;
           }
+          case 37: {
+            TrustedScore = input.ReadFloat();
+            break;
+          }
+          case 40: {
+            TrustedVotesUp = input.ReadUInt32();
+            break;
+          }
+          case 48: {
+            TrustedVotesDown = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -35339,6 +35485,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 24: {
             VotesDown = input.ReadUInt32();
+            break;
+          }
+          case 37: {
+            TrustedScore = input.ReadFloat();
+            break;
+          }
+          case 40: {
+            TrustedVotesUp = input.ReadUInt32();
+            break;
+          }
+          case 48: {
+            TrustedVotesDown = input.ReadUInt32();
             break;
           }
         }
