@@ -39,7 +39,7 @@ jobs:
         cd ../OpenSteamworks.Protobuf
         echo "BuiltVersion_OSWProtobuf=$(dotnet msbuild -getproperty:Version)" >> $GITHUB_ENV
 
-     - name: Upload to NuGet.org
+    - name: Upload to NuGet.org
       run: |
         dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.${{ env.BuiltVersion_OSW }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
         dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Data.${{ env.BuiltVersion_OSWData }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
