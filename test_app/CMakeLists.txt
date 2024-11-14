@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 project(testapp LANGUAGES CXX)
 
-add_executable(testapp main.cpp)
-target_include_directories(testapp PRIVATE "../cpp/include")
+add_executable(testapp main.cpp console.cpp)
+add_subdirectory(../cpp/ osw)
 
-target_link_libraries(testapp dl)
+target_include_directories(testapp PUBLIC ../cpp/include/)
+
+target_link_libraries(testapp dl tier1_s) # tier1_s
