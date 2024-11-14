@@ -435,17 +435,7 @@
         "size": 8
     },
     {
-        "id": 1110001,
-        "name": "Unknown",
-        "size": 8
-    },
-    {
         "id": 1110002,
-        "name": "Unknown",
-        "size": 8
-    },
-    {
-        "id": 1110003,
         "name": "Unknown",
         "size": 8
     },
@@ -568,6 +558,11 @@
         "id": 1140009,
         "name": "Unknown",
         "size": 128
+    },
+    {
+        "id": 1140011,
+        "name": "Unknown",
+        "size": 1
     },
     {
         "id": 1250014,

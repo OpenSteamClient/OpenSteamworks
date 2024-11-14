@@ -27,65 +27,65 @@ namespace OpenSteamworks.Protobuf {
             "CixzdGVhbW1lc3NhZ2VzX2RlcG90YnVpbGRlci5zdGVhbWNsaWVudC5wcm90",
             "bxogZ29vZ2xlL3Byb3RvYnVmL2Rlc2NyaXB0b3IucHJvdG8aGHN0ZWFtbWVz",
             "c2FnZXNfYmFzZS5wcm90bxosc3RlYW1tZXNzYWdlc191bmlmaWVkX2Jhc2Uu",
-            "c3RlYW1jbGllbnQucHJvdG8ijgEKJkNDb250ZW50QnVpbGRlcl9Jbml0RGVw",
+            "c3RlYW1jbGllbnQucHJvdG8ipAEKJkNDb250ZW50QnVpbGRlcl9Jbml0RGVw",
             "b3RCdWlsZF9SZXF1ZXN0Eg0KBWFwcGlkGAEgASgNEg8KB2RlcG90aWQYAiAB",
             "KA0SFwoPd29ya3Nob3BfaXRlbWlkGAMgASgEEhQKDGZvcl9sb2NhbF9jcxgE",
-            "IAEoCBIVCg10YXJnZXRfYnJhbmNoGAUgASgJIoYDCidDQ29udGVudEJ1aWxk",
-            "ZXJfSW5pdERlcG90QnVpbGRfUmVzcG9uc2USGwoTYmFzZWxpbmVfbWFuaWZl",
-            "c3RpZBgBIAEoBBIQCghjaHVuc2l6ZRgCIAEoDRIPCgdhZXNfa2V5GAMgASgM",
-            "Eg8KB3JzYV9rZXkYBCABKAwSEAoIdXJsX2hvc3QYBSABKAkSIAoYb2Zmc2V0",
-            "X2RldGVjdGlvbl9lbmFibGVkGAYgASgIEigKIG9mZnNldF9kZXRlY3Rpb25f",
-            "bWluX2NsZWFuX2NodW5rGAcgASgNEikKIW9mZnNldF9kZXRlY3Rpb25fYmxh",
-            "c3RfcmFkaXVzX3ByZRgIIAEoDRIqCiJvZmZzZXRfZGV0ZWN0aW9uX2JsYXN0",
-            "X3JhZGl1c19wb3N0GAkgASgNEikKIW9mZnNldF9kZXRlY3Rpb25fbWF4X2Rp",
-            "c3RhbmNlX3ByZRgKIAEoDRIqCiJvZmZzZXRfZGV0ZWN0aW9uX21heF9kaXN0",
-            "YW5jZV9wb3N0GAsgASgNIq0BCihDQ29udGVudEJ1aWxkZXJfU3RhcnREZXBv",
-            "dFVwbG9hZF9SZXF1ZXN0Eg0KBWFwcGlkGAEgASgNEg8KB2RlcG90aWQYAiAB",
-            "KA0SFwoPd29ya3Nob3BfaXRlbWlkGAMgASgEEhQKDGZvcl9sb2NhbF9jcxgE",
-            "IAEoCBIbChNiYXNlbGluZV9tYW5pZmVzdGlkGAUgASgEEhUKDW1hbmlmZXN0",
-            "X3NpemUYBiABKA0iRwopQ0NvbnRlbnRCdWlsZGVyX1N0YXJ0RGVwb3RVcGxv",
-            "YWRfUmVzcG9uc2USGgoSZGVwb3RfYnVpbGRfaGFuZGxlGAEgASgEIloKLUND",
-            "b250ZW50QnVpbGRlcl9HZXRNaXNzaW5nRGVwb3RDaHVua3NfUmVxdWVzdBIN",
-            "CgVhcHBpZBgBIAEoDRIaChJkZXBvdF9idWlsZF9oYW5kbGUYAiABKAQi0gEK",
-            "LkNDb250ZW50QnVpbGRlcl9HZXRNaXNzaW5nRGVwb3RDaHVua3NfUmVzcG9u",
-            "c2USTgoObWlzc2luZ19jaHVua3MYASADKAsyNi5DQ29udGVudEJ1aWxkZXJf",
-            "R2V0TWlzc2luZ0RlcG90Q2h1bmtzX1Jlc3BvbnNlLkNodW5rcxIcChR0b3Rh",
-            "bF9taXNzaW5nX2NodW5rcxgCIAEoDRIbChN0b3RhbF9taXNzaW5nX2J5dGVz",
-            "GAMgASgEGhUKBkNodW5rcxILCgNzaGEYASABKAwiVgopQ0NvbnRlbnRCdWls",
-            "ZGVyX0ZpbmlzaERlcG90VXBsb2FkX1JlcXVlc3QSDQoFYXBwaWQYASABKA0S",
-            "GgoSZGVwb3RfYnVpbGRfaGFuZGxlGAIgASgEIlUKKkNDb250ZW50QnVpbGRl",
-            "cl9GaW5pc2hEZXBvdFVwbG9hZF9SZXNwb25zZRISCgptYW5pZmVzdGlkGAEg",
-            "ASgEEhMKC3ByZXZfcmV1c2VkGAIgASgIItkBCiZDQ29udGVudEJ1aWxkZXJf",
-            "Q29tbWl0QXBwQnVpbGRfUmVxdWVzdBINCgVhcHBpZBgBIAEoDRJHCg9kZXBv",
-            "dF9tYW5pZmVzdHMYAiADKAsyLi5DQ29udGVudEJ1aWxkZXJfQ29tbWl0QXBw",
-            "QnVpbGRfUmVxdWVzdC5EZXBvdHMSEwoLYnVpbGRfbm90ZXMYBCABKAkSEwoL",
-            "bGl2ZV9icmFuY2gYBSABKAkaLQoGRGVwb3RzEg8KB2RlcG90aWQYASABKA0S",
-            "EgoKbWFuaWZlc3RpZBgCIAEoBCI6CidDQ29udGVudEJ1aWxkZXJfQ29tbWl0",
-            "QXBwQnVpbGRfUmVzcG9uc2USDwoHYnVpbGRpZBgBIAEoDSJjCilDQ29udGVu",
-            "dEJ1aWxkZXJfU2lnbkluc3RhbGxTY3JpcHRfUmVxdWVzdBINCgVhcHBpZBgB",
-            "IAEoDRIPCgdkZXBvdGlkGAIgASgNEhYKDmluc3RhbGxfc2NyaXB0GAMgASgJ",
-            "IksKKkNDb250ZW50QnVpbGRlcl9TaWduSW5zdGFsbFNjcmlwdF9SZXNwb25z",
-            "ZRIdChVzaWduZWRfaW5zdGFsbF9zY3JpcHQYASABKAkymwUKDkNvbnRlbnRC",
-            "dWlsZGVyEmMKDkluaXREZXBvdEJ1aWxkEicuQ0NvbnRlbnRCdWlsZGVyX0lu",
-            "aXREZXBvdEJ1aWxkX1JlcXVlc3QaKC5DQ29udGVudEJ1aWxkZXJfSW5pdERl",
-            "cG90QnVpbGRfUmVzcG9uc2USaQoQU3RhcnREZXBvdFVwbG9hZBIpLkNDb250",
-            "ZW50QnVpbGRlcl9TdGFydERlcG90VXBsb2FkX1JlcXVlc3QaKi5DQ29udGVu",
-            "dEJ1aWxkZXJfU3RhcnREZXBvdFVwbG9hZF9SZXNwb25zZRJ4ChVHZXRNaXNz",
-            "aW5nRGVwb3RDaHVua3MSLi5DQ29udGVudEJ1aWxkZXJfR2V0TWlzc2luZ0Rl",
-            "cG90Q2h1bmtzX1JlcXVlc3QaLy5DQ29udGVudEJ1aWxkZXJfR2V0TWlzc2lu",
-            "Z0RlcG90Q2h1bmtzX1Jlc3BvbnNlEmwKEUZpbmlzaERlcG90VXBsb2FkEiou",
-            "Q0NvbnRlbnRCdWlsZGVyX0ZpbmlzaERlcG90VXBsb2FkX1JlcXVlc3QaKy5D",
-            "Q29udGVudEJ1aWxkZXJfRmluaXNoRGVwb3RVcGxvYWRfUmVzcG9uc2USYwoO",
-            "Q29tbWl0QXBwQnVpbGQSJy5DQ29udGVudEJ1aWxkZXJfQ29tbWl0QXBwQnVp",
-            "bGRfUmVxdWVzdBooLkNDb250ZW50QnVpbGRlcl9Db21taXRBcHBCdWlsZF9S",
-            "ZXNwb25zZRJsChFTaWduSW5zdGFsbFNjcmlwdBIqLkNDb250ZW50QnVpbGRl",
-            "cl9TaWduSW5zdGFsbFNjcmlwdF9SZXF1ZXN0GisuQ0NvbnRlbnRCdWlsZGVy",
-            "X1NpZ25JbnN0YWxsU2NyaXB0X1Jlc3BvbnNlQh2AAQGqAhdPcGVuU3RlYW13",
-            "b3Jrcy5Qcm90b2J1Zg=="));
+            "IAEoCBIVCg10YXJnZXRfYnJhbmNoGAUgASgJEhQKDHNoYWRlcl9kZXBvdBgG",
+            "IAEoCCKGAwonQ0NvbnRlbnRCdWlsZGVyX0luaXREZXBvdEJ1aWxkX1Jlc3Bv",
+            "bnNlEhsKE2Jhc2VsaW5lX21hbmlmZXN0aWQYASABKAQSEAoIY2h1bnNpemUY",
+            "AiABKA0SDwoHYWVzX2tleRgDIAEoDBIPCgdyc2Ffa2V5GAQgASgMEhAKCHVy",
+            "bF9ob3N0GAUgASgJEiAKGG9mZnNldF9kZXRlY3Rpb25fZW5hYmxlZBgGIAEo",
+            "CBIoCiBvZmZzZXRfZGV0ZWN0aW9uX21pbl9jbGVhbl9jaHVuaxgHIAEoDRIp",
+            "CiFvZmZzZXRfZGV0ZWN0aW9uX2JsYXN0X3JhZGl1c19wcmUYCCABKA0SKgoi",
+            "b2Zmc2V0X2RldGVjdGlvbl9ibGFzdF9yYWRpdXNfcG9zdBgJIAEoDRIpCiFv",
+            "ZmZzZXRfZGV0ZWN0aW9uX21heF9kaXN0YW5jZV9wcmUYCiABKA0SKgoib2Zm",
+            "c2V0X2RldGVjdGlvbl9tYXhfZGlzdGFuY2VfcG9zdBgLIAEoDSKtAQooQ0Nv",
+            "bnRlbnRCdWlsZGVyX1N0YXJ0RGVwb3RVcGxvYWRfUmVxdWVzdBINCgVhcHBp",
+            "ZBgBIAEoDRIPCgdkZXBvdGlkGAIgASgNEhcKD3dvcmtzaG9wX2l0ZW1pZBgD",
+            "IAEoBBIUCgxmb3JfbG9jYWxfY3MYBCABKAgSGwoTYmFzZWxpbmVfbWFuaWZl",
+            "c3RpZBgFIAEoBBIVCg1tYW5pZmVzdF9zaXplGAYgASgNIkcKKUNDb250ZW50",
+            "QnVpbGRlcl9TdGFydERlcG90VXBsb2FkX1Jlc3BvbnNlEhoKEmRlcG90X2J1",
+            "aWxkX2hhbmRsZRgBIAEoBCJaCi1DQ29udGVudEJ1aWxkZXJfR2V0TWlzc2lu",
+            "Z0RlcG90Q2h1bmtzX1JlcXVlc3QSDQoFYXBwaWQYASABKA0SGgoSZGVwb3Rf",
+            "YnVpbGRfaGFuZGxlGAIgASgEItIBCi5DQ29udGVudEJ1aWxkZXJfR2V0TWlz",
+            "c2luZ0RlcG90Q2h1bmtzX1Jlc3BvbnNlEk4KDm1pc3NpbmdfY2h1bmtzGAEg",
+            "AygLMjYuQ0NvbnRlbnRCdWlsZGVyX0dldE1pc3NpbmdEZXBvdENodW5rc19S",
+            "ZXNwb25zZS5DaHVua3MSHAoUdG90YWxfbWlzc2luZ19jaHVua3MYAiABKA0S",
+            "GwoTdG90YWxfbWlzc2luZ19ieXRlcxgDIAEoBBoVCgZDaHVua3MSCwoDc2hh",
+            "GAEgASgMIlYKKUNDb250ZW50QnVpbGRlcl9GaW5pc2hEZXBvdFVwbG9hZF9S",
+            "ZXF1ZXN0Eg0KBWFwcGlkGAEgASgNEhoKEmRlcG90X2J1aWxkX2hhbmRsZRgC",
+            "IAEoBCJVCipDQ29udGVudEJ1aWxkZXJfRmluaXNoRGVwb3RVcGxvYWRfUmVz",
+            "cG9uc2USEgoKbWFuaWZlc3RpZBgBIAEoBBITCgtwcmV2X3JldXNlZBgCIAEo",
+            "CCLZAQomQ0NvbnRlbnRCdWlsZGVyX0NvbW1pdEFwcEJ1aWxkX1JlcXVlc3QS",
+            "DQoFYXBwaWQYASABKA0SRwoPZGVwb3RfbWFuaWZlc3RzGAIgAygLMi4uQ0Nv",
+            "bnRlbnRCdWlsZGVyX0NvbW1pdEFwcEJ1aWxkX1JlcXVlc3QuRGVwb3RzEhMK",
+            "C2J1aWxkX25vdGVzGAQgASgJEhMKC2xpdmVfYnJhbmNoGAUgASgJGi0KBkRl",
+            "cG90cxIPCgdkZXBvdGlkGAEgASgNEhIKCm1hbmlmZXN0aWQYAiABKAQiOgon",
+            "Q0NvbnRlbnRCdWlsZGVyX0NvbW1pdEFwcEJ1aWxkX1Jlc3BvbnNlEg8KB2J1",
+            "aWxkaWQYASABKA0iYwopQ0NvbnRlbnRCdWlsZGVyX1NpZ25JbnN0YWxsU2Ny",
+            "aXB0X1JlcXVlc3QSDQoFYXBwaWQYASABKA0SDwoHZGVwb3RpZBgCIAEoDRIW",
+            "Cg5pbnN0YWxsX3NjcmlwdBgDIAEoCSJLCipDQ29udGVudEJ1aWxkZXJfU2ln",
+            "bkluc3RhbGxTY3JpcHRfUmVzcG9uc2USHQoVc2lnbmVkX2luc3RhbGxfc2Ny",
+            "aXB0GAEgASgJMpsFCg5Db250ZW50QnVpbGRlchJjCg5Jbml0RGVwb3RCdWls",
+            "ZBInLkNDb250ZW50QnVpbGRlcl9Jbml0RGVwb3RCdWlsZF9SZXF1ZXN0Gigu",
+            "Q0NvbnRlbnRCdWlsZGVyX0luaXREZXBvdEJ1aWxkX1Jlc3BvbnNlEmkKEFN0",
+            "YXJ0RGVwb3RVcGxvYWQSKS5DQ29udGVudEJ1aWxkZXJfU3RhcnREZXBvdFVw",
+            "bG9hZF9SZXF1ZXN0GiouQ0NvbnRlbnRCdWlsZGVyX1N0YXJ0RGVwb3RVcGxv",
+            "YWRfUmVzcG9uc2USeAoVR2V0TWlzc2luZ0RlcG90Q2h1bmtzEi4uQ0NvbnRl",
+            "bnRCdWlsZGVyX0dldE1pc3NpbmdEZXBvdENodW5rc19SZXF1ZXN0Gi8uQ0Nv",
+            "bnRlbnRCdWlsZGVyX0dldE1pc3NpbmdEZXBvdENodW5rc19SZXNwb25zZRJs",
+            "ChFGaW5pc2hEZXBvdFVwbG9hZBIqLkNDb250ZW50QnVpbGRlcl9GaW5pc2hE",
+            "ZXBvdFVwbG9hZF9SZXF1ZXN0GisuQ0NvbnRlbnRCdWlsZGVyX0ZpbmlzaERl",
+            "cG90VXBsb2FkX1Jlc3BvbnNlEmMKDkNvbW1pdEFwcEJ1aWxkEicuQ0NvbnRl",
+            "bnRCdWlsZGVyX0NvbW1pdEFwcEJ1aWxkX1JlcXVlc3QaKC5DQ29udGVudEJ1",
+            "aWxkZXJfQ29tbWl0QXBwQnVpbGRfUmVzcG9uc2USbAoRU2lnbkluc3RhbGxT",
+            "Y3JpcHQSKi5DQ29udGVudEJ1aWxkZXJfU2lnbkluc3RhbGxTY3JpcHRfUmVx",
+            "dWVzdBorLkNDb250ZW50QnVpbGRlcl9TaWduSW5zdGFsbFNjcmlwdF9SZXNw",
+            "b25zZUIdgAEBqgIXT3BlblN0ZWFtd29ya3MuUHJvdG9idWY="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesUnifiedBaseSteamclientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentBuilder_InitDepotBuild_Request), global::OpenSteamworks.Protobuf.CContentBuilder_InitDepotBuild_Request.Parser, new[]{ "Appid", "Depotid", "WorkshopItemid", "ForLocalCs", "TargetBranch" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentBuilder_InitDepotBuild_Request), global::OpenSteamworks.Protobuf.CContentBuilder_InitDepotBuild_Request.Parser, new[]{ "Appid", "Depotid", "WorkshopItemid", "ForLocalCs", "TargetBranch", "ShaderDepot" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentBuilder_InitDepotBuild_Response), global::OpenSteamworks.Protobuf.CContentBuilder_InitDepotBuild_Response.Parser, new[]{ "BaselineManifestid", "Chunsize", "AesKey", "RsaKey", "UrlHost", "OffsetDetectionEnabled", "OffsetDetectionMinCleanChunk", "OffsetDetectionBlastRadiusPre", "OffsetDetectionBlastRadiusPost", "OffsetDetectionMaxDistancePre", "OffsetDetectionMaxDistancePost" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentBuilder_StartDepotUpload_Request), global::OpenSteamworks.Protobuf.CContentBuilder_StartDepotUpload_Request.Parser, new[]{ "Appid", "Depotid", "WorkshopItemid", "ForLocalCs", "BaselineManifestid", "ManifestSize" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentBuilder_StartDepotUpload_Response), global::OpenSteamworks.Protobuf.CContentBuilder_StartDepotUpload_Response.Parser, new[]{ "DepotBuildHandle" }, null, null, null, null),
@@ -145,6 +145,7 @@ namespace OpenSteamworks.Protobuf {
       workshopItemid_ = other.workshopItemid_;
       forLocalCs_ = other.forLocalCs_;
       targetBranch_ = other.targetBranch_;
+      shaderDepot_ = other.shaderDepot_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -288,6 +289,33 @@ namespace OpenSteamworks.Protobuf {
       targetBranch_ = null;
     }
 
+    /// <summary>Field number for the "shader_depot" field.</summary>
+    public const int ShaderDepotFieldNumber = 6;
+    private readonly static bool ShaderDepotDefaultValue = false;
+
+    private bool shaderDepot_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ShaderDepot {
+      get { if ((_hasBits0 & 16) != 0) { return shaderDepot_; } else { return ShaderDepotDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        shaderDepot_ = value;
+      }
+    }
+    /// <summary>Gets whether the "shader_depot" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasShaderDepot {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "shader_depot" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearShaderDepot() {
+      _hasBits0 &= ~16;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -308,6 +336,7 @@ namespace OpenSteamworks.Protobuf {
       if (WorkshopItemid != other.WorkshopItemid) return false;
       if (ForLocalCs != other.ForLocalCs) return false;
       if (TargetBranch != other.TargetBranch) return false;
+      if (ShaderDepot != other.ShaderDepot) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -320,6 +349,7 @@ namespace OpenSteamworks.Protobuf {
       if (HasWorkshopItemid) hash ^= WorkshopItemid.GetHashCode();
       if (HasForLocalCs) hash ^= ForLocalCs.GetHashCode();
       if (HasTargetBranch) hash ^= TargetBranch.GetHashCode();
+      if (HasShaderDepot) hash ^= ShaderDepot.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -358,6 +388,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(42);
         output.WriteString(TargetBranch);
       }
+      if (HasShaderDepot) {
+        output.WriteRawTag(48);
+        output.WriteBool(ShaderDepot);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -388,6 +422,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(42);
         output.WriteString(TargetBranch);
       }
+      if (HasShaderDepot) {
+        output.WriteRawTag(48);
+        output.WriteBool(ShaderDepot);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -412,6 +450,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasTargetBranch) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TargetBranch);
+      }
+      if (HasShaderDepot) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -439,6 +480,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasTargetBranch) {
         TargetBranch = other.TargetBranch;
+      }
+      if (other.HasShaderDepot) {
+        ShaderDepot = other.ShaderDepot;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -479,6 +523,10 @@ namespace OpenSteamworks.Protobuf {
             TargetBranch = input.ReadString();
             break;
           }
+          case 48: {
+            ShaderDepot = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -516,6 +564,10 @@ namespace OpenSteamworks.Protobuf {
           }
           case 42: {
             TargetBranch = input.ReadString();
+            break;
+          }
+          case 48: {
+            ShaderDepot = input.ReadBool();
             break;
           }
         }

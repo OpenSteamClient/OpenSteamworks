@@ -54,17 +54,11 @@ public:
     virtual unknown_ret GetWatchBroadcastMPD() = 0; //argc: 2, index 38
     virtual unknown_ret GetApprovalRequestCount() = 0; //argc: 0, index 39
     virtual unknown_ret GetApprovalRequests() = 0; //argc: 2, index 40
-    virtual unknown_ret AddBroadcastGameData() = 0; //argc: 2, index 41
-    virtual unknown_ret RemoveBroadcastGameData() = 0; //argc: 1, index 42
-    virtual unknown_ret AddTimelineMarker() = 0; //argc: 5, index 43
-    virtual unknown_ret RemoveTimelineMarker() = 0; //argc: 0, index 44
-    virtual unknown_ret AddRegion() = 0; //argc: 4, index 45
-    virtual unknown_ret RemoveRegion() = 0; //argc: 1, index 46
-    virtual void GetVideoURL(AppId_t unVideoAppID) = 0; //argc: 1, index 47
-    virtual void GetOPFSettings(AppId_t unVideoAppID) = 0; //argc: 1, index 48
-    virtual bool GetOPFStringForApp(AppId_t unVideoAppID, char* pchBuffer, int32 nBufferSize, int32* pnBufferSize) = 0; //argc: 4, index 49
-    virtual unknown_ret WebRTCGetTURNAddress() = 0; //argc: 1, index 50--
-    virtual unknown_ret WebRTCStartResult() = 0; //argc: 4, index 51
-    virtual unknown_ret WebRTCAddCandidate() = 0; //argc: 5, index 52
-    virtual unknown_ret WebRTCGetAnswer() = 0; //argc: 3, index 53
+    virtual void GetVideoURL(AppId_t unVideoAppID) = 0; //argc: 1, index 41
+    virtual void GetOPFSettings(AppId_t unVideoAppID) = 0; //argc: 1, index 42
+    virtual bool GetOPFStringForApp(AppId_t unVideoAppID, char* pchBuffer, int32 nBufferSize, int32* pnBufferSize) = 0; //argc: 4, index 43
+    virtual unknown_ret WebRTCGetTURNAddress() = 0; //argc: 1, index 44
+    virtual unknown_ret WebRTCStartResult() = 0; //argc: 4, index 45
+    virtual unknown_ret WebRTCAddCandidate() = 0; //argc: 5, index 46
+    virtual unknown_ret WebRTCGetAnswer() = 0; //argc: 3, index 47
 };

@@ -25,52 +25,533 @@ namespace OpenSteamworks.Protobuf.WebUI {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChxzZXJ2aWNlX3N0b3JlbWFya2V0aW5nLnByb3RvGiBnb29nbGUvcHJvdG9i",
-            "dWYvZGVzY3JpcHRvci5wcm90bxoMY29tbW9uLnByb3RvIvoCCilDU3RvcmVN",
-            "YXJrZXRpbmdfR2V0SXRlbXNUb0ZlYXR1cmVfUmVxdWVzdBIkCgdjb250ZXh0",
-            "GAEgASgLMhMuU3RvcmVCcm93c2VDb250ZXh0EjEKDGRhdGFfcmVxdWVzdBgC",
-            "IAEoCzIbLlN0b3JlQnJvd3NlSXRlbURhdGFSZXF1ZXN0ElYKEmluY2x1ZGVf",
-            "c3BvdGxpZ2h0cxgFIAEoCzI6LkNTdG9yZU1hcmtldGluZ19HZXRJdGVtc1Rv",
-            "RmVhdHVyZV9SZXF1ZXN0X1Nwb3RsaWdodEZpbHRlchIaChJpbmNsdWRlX2Rh",
-            "aWx5ZGVhbHMYBiABKAgSIgoaaW5jbHVkZV90b3Bfc3BlY2lhbHNfY291bnQY",
-            "ByABKAUSKAogaW5jbHVkZV9wdXJjaGFzZV9yZWNvbW1lbmRhdGlvbnMYCCAB",
-            "KAgSMgocYWRkaXRpb25hbF9wdXJjaGFzZV9pdGVtX2lkcxgJIAMoCzIMLlN0",
-            "b3JlSXRlbUlEInEKOUNTdG9yZU1hcmtldGluZ19HZXRJdGVtc1RvRmVhdHVy",
-            "ZV9SZXF1ZXN0X1Nwb3RsaWdodEZpbHRlchIQCghsb2NhdGlvbhgBIAEoCRIQ",
-            "CghjYXRlZ29yeRgCIAEoCRIQCghnZW5yZV9pZBgDIAEoBSLuAgoqQ1N0b3Jl",
-            "TWFya2V0aW5nX0dldEl0ZW1zVG9GZWF0dXJlX1Jlc3BvbnNlEkkKCnNwb3Rs",
-            "aWdodHMYASADKAsyNS5DU3RvcmVNYXJrZXRpbmdfR2V0SXRlbXNUb0ZlYXR1",
-            "cmVfUmVzcG9uc2VfU3BvdGxpZ2h0Ek0KC2RhaWx5X2RlYWxzGAIgAygLMjgu",
-            "Q1N0b3JlTWFya2V0aW5nX0dldEl0ZW1zVG9GZWF0dXJlX1Jlc3BvbnNlX0Zl",
-            "YXR1cmVkSXRlbRJKCghzcGVjaWFscxgDIAMoCzI4LkNTdG9yZU1hcmtldGlu",
-            "Z19HZXRJdGVtc1RvRmVhdHVyZV9SZXNwb25zZV9GZWF0dXJlZEl0ZW0SWgoY",
-            "cHVyY2hhc2VfcmVjb21tZW5kYXRpb25zGAQgAygLMjguQ1N0b3JlTWFya2V0",
-            "aW5nX0dldEl0ZW1zVG9GZWF0dXJlX1Jlc3BvbnNlX0ZlYXR1cmVkSXRlbSJy",
-            "CjdDU3RvcmVNYXJrZXRpbmdfR2V0SXRlbXNUb0ZlYXR1cmVfUmVzcG9uc2Vf",
-            "RmVhdHVyZWRJdGVtEh0KB2l0ZW1faWQYASABKAsyDC5TdG9yZUl0ZW1JRBIY",
-            "CgRpdGVtGAIgASgLMgouU3RvcmVJdGVtIvQBCjRDU3RvcmVNYXJrZXRpbmdf",
-            "R2V0SXRlbXNUb0ZlYXR1cmVfUmVzcG9uc2VfU3BvdGxpZ2h0Eh0KB2l0ZW1f",
-            "aWQYASABKAsyDC5TdG9yZUl0ZW1JRBIjCg9hc3NvY2lhdGVkX2l0ZW0YAiAB",
-            "KAsyCi5TdG9yZUl0ZW0SGgoSc3BvdGxpZ2h0X3RlbXBsYXRlGAMgASgJEhcK",
-            "D3Nwb3RsaWdodF90aXRsZRgEIAEoCRIWCg5zcG90bGlnaHRfYm9keRgFIAEo",
-            "CRIRCglhc3NldF91cmwYBiABKAkSGAoQc3BvdGxpZ2h0X2xpbnVybBgHIAEo",
-            "CTJ+Cg5TdG9yZU1hcmtldGluZxJsChFHZXRJdGVtc1RvRmVhdHVyZRIqLkNT",
-            "dG9yZU1hcmtldGluZ19HZXRJdGVtc1RvRmVhdHVyZV9SZXF1ZXN0GisuQ1N0",
-            "b3JlTWFya2V0aW5nX0dldEl0ZW1zVG9GZWF0dXJlX1Jlc3BvbnNlQiCqAh1P",
-            "cGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJVSQ=="));
+            "dWYvZGVzY3JpcHRvci5wcm90bxoMY29tbW9uLnByb3RvIoUBCipDU3RvcmVN",
+            "YXJrZXRpbmdfR2V0RnJvbnRQYWdlQ29uZmlnX1JlcXVlc3QSJAoHY29udGV4",
+            "dBgBIAEoCzITLlN0b3JlQnJvd3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QY",
+            "AiABKAsyGy5TdG9yZUJyb3dzZUl0ZW1EYXRhUmVxdWVzdCJSCitDU3RvcmVN",
+            "YXJrZXRpbmdfR2V0RnJvbnRQYWdlQ29uZmlnX1Jlc3BvbnNlEiMKB2NsdXN0",
+            "ZXIYASABKAsyEi5DU3RvcmVQYWdlQ2x1c3RlciL6AgopQ1N0b3JlTWFya2V0",
+            "aW5nX0dldEl0ZW1zVG9GZWF0dXJlX1JlcXVlc3QSJAoHY29udGV4dBgBIAEo",
+            "CzITLlN0b3JlQnJvd3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QYAiABKAsy",
+            "Gy5TdG9yZUJyb3dzZUl0ZW1EYXRhUmVxdWVzdBJWChJpbmNsdWRlX3Nwb3Rs",
+            "aWdodHMYBSABKAsyOi5DU3RvcmVNYXJrZXRpbmdfR2V0SXRlbXNUb0ZlYXR1",
+            "cmVfUmVxdWVzdF9TcG90bGlnaHRGaWx0ZXISGgoSaW5jbHVkZV9kYWlseWRl",
+            "YWxzGAYgASgIEiIKGmluY2x1ZGVfdG9wX3NwZWNpYWxzX2NvdW50GAcgASgF",
+            "EigKIGluY2x1ZGVfcHVyY2hhc2VfcmVjb21tZW5kYXRpb25zGAggASgIEjIK",
+            "HGFkZGl0aW9uYWxfcHVyY2hhc2VfaXRlbV9pZHMYCSADKAsyDC5TdG9yZUl0",
+            "ZW1JRCJxCjlDU3RvcmVNYXJrZXRpbmdfR2V0SXRlbXNUb0ZlYXR1cmVfUmVx",
+            "dWVzdF9TcG90bGlnaHRGaWx0ZXISEAoIbG9jYXRpb24YASABKAkSEAoIY2F0",
+            "ZWdvcnkYAiABKAkSEAoIZ2VucmVfaWQYAyABKAUi7QEKKkNTdG9yZU1hcmtl",
+            "dGluZ19HZXRJdGVtc1RvRmVhdHVyZV9SZXNwb25zZRJJCgpzcG90bGlnaHRz",
+            "GAEgAygLMjUuQ1N0b3JlTWFya2V0aW5nX0dldEl0ZW1zVG9GZWF0dXJlX1Jl",
+            "c3BvbnNlX1Nwb3RsaWdodBIiCgtkYWlseV9kZWFscxgCIAMoCzINLlN0b3Jl",
+            "Q2Fwc3VsZRIfCghzcGVjaWFscxgDIAMoCzINLlN0b3JlQ2Fwc3VsZRIvChhw",
+            "dXJjaGFzZV9yZWNvbW1lbmRhdGlvbnMYBCADKAsyDS5TdG9yZUNhcHN1bGUi",
+            "9AEKNENTdG9yZU1hcmtldGluZ19HZXRJdGVtc1RvRmVhdHVyZV9SZXNwb25z",
+            "ZV9TcG90bGlnaHQSHQoHaXRlbV9pZBgBIAEoCzIMLlN0b3JlSXRlbUlEEiMK",
+            "D2Fzc29jaWF0ZWRfaXRlbRgCIAEoCzIKLlN0b3JlSXRlbRIaChJzcG90bGln",
+            "aHRfdGVtcGxhdGUYAyABKAkSFwoPc3BvdGxpZ2h0X3RpdGxlGAQgASgJEhYK",
+            "DnNwb3RsaWdodF9ib2R5GAUgASgJEhEKCWFzc2V0X3VybBgGIAEoCRIYChBz",
+            "cG90bGlnaHRfbGludXJsGAcgASgJIoACChFDU3RvcmVQYWdlQ2x1c3RlchI1",
+            "Cg1jYXBzdWxlX2xpc3RzGAEgAygLMh4uQ1N0b3JlUGFnZUNsdXN0ZXJfQ2Fw",
+            "c3VsZUxpc3QSHwoIdGFrZW92ZXIYAiABKAsyDS5TdG9yZUNhcHN1bGUSKAoG",
+            "YXNzZXRzGAMgAygLMhguQ1N0b3JlUGFnZUNsdXN0ZXJfQXNzZXQSLwoNY3Vz",
+            "dG9tX2Fzc2V0cxgEIAMoCzIYLkNTdG9yZVBhZ2VDbHVzdGVyX0Fzc2V0Eg4K",
+            "BmxheW91dBgFIAEoCRIoCgZmaWVsZHMYBiADKAsyGC5DU3RvcmVQYWdlQ2x1",
+            "c3Rlcl9GaWVsZCJBChdDU3RvcmVQYWdlQ2x1c3Rlcl9Bc3NldBISCgphc3Nl",
+            "dF9uYW1lGAEgASgJEhIKCmFzc2V0X3BhdGgYAiABKAkiewodQ1N0b3JlUGFn",
+            "ZUNsdXN0ZXJfQ2Fwc3VsZUxpc3QSDAoEbmFtZRgBIAEoCRIfCghjYXBzdWxl",
+            "cxgCIAMoCzINLlN0b3JlQ2Fwc3VsZRITCgttYXhfdmlzaWJsZRgDIAEoBRIW",
+            "Cg5tYXhfdW5yZWxlYXNlZBgEIAEoBSI2ChdDU3RvcmVQYWdlQ2x1c3Rlcl9G",
+            "aWVsZBIMCgRuYW1lGAEgASgJEg0KBXZhbHVlGAIgASgJIkcKDFN0b3JlQ2Fw",
+            "c3VsZRIdCgdpdGVtX2lkGAEgASgLMgwuU3RvcmVJdGVtSUQSGAoEaXRlbRgC",
+            "IAEoCzIKLlN0b3JlSXRlbTLvAQoOU3RvcmVNYXJrZXRpbmcSbwoSR2V0RnJv",
+            "bnRQYWdlQ29uZmlnEisuQ1N0b3JlTWFya2V0aW5nX0dldEZyb250UGFnZUNv",
+            "bmZpZ19SZXF1ZXN0GiwuQ1N0b3JlTWFya2V0aW5nX0dldEZyb250UGFnZUNv",
+            "bmZpZ19SZXNwb25zZRJsChFHZXRJdGVtc1RvRmVhdHVyZRIqLkNTdG9yZU1h",
+            "cmtldGluZ19HZXRJdGVtc1RvRmVhdHVyZV9SZXF1ZXN0GisuQ1N0b3JlTWFy",
+            "a2V0aW5nX0dldEl0ZW1zVG9GZWF0dXJlX1Jlc3BvbnNlQiCqAh1PcGVuU3Rl",
+            "YW13b3Jrcy5Qcm90b2J1Zi5XZWJVSQ=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetFrontPageConfig_Request), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetFrontPageConfig_Request.Parser, new[]{ "Context", "DataRequest" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetFrontPageConfig_Response), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetFrontPageConfig_Response.Parser, new[]{ "Cluster" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Request), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Request.Parser, new[]{ "Context", "DataRequest", "IncludeSpotlights", "IncludeDailydeals", "IncludeTopSpecialsCount", "IncludePurchaseRecommendations", "AdditionalPurchaseItemIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Request_SpotlightFilter), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Request_SpotlightFilter.Parser, new[]{ "Location", "Category", "GenreId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response.Parser, new[]{ "Spotlights", "DailyDeals", "Specials", "PurchaseRecommendations" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem.Parser, new[]{ "ItemId", "Item" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_Spotlight), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_Spotlight.Parser, new[]{ "ItemId", "AssociatedItem", "SpotlightTemplate", "SpotlightTitle", "SpotlightBody", "AssetUrl", "SpotlightLinurl" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_Spotlight), global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_Spotlight.Parser, new[]{ "ItemId", "AssociatedItem", "SpotlightTemplate", "SpotlightTitle", "SpotlightBody", "AssetUrl", "SpotlightLinurl" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster), global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster.Parser, new[]{ "CapsuleLists", "Takeover", "Assets", "CustomAssets", "Layout", "Fields" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset), global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset.Parser, new[]{ "AssetName", "AssetPath" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_CapsuleList), global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_CapsuleList.Parser, new[]{ "Name", "Capsules", "MaxVisible", "MaxUnreleased" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Field), global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Field.Parser, new[]{ "Name", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.StoreCapsule), global::OpenSteamworks.Protobuf.WebUI.StoreCapsule.Parser, new[]{ "ItemId", "Item" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStoreMarketing_GetFrontPageConfig_Request : pb::IMessage<CStoreMarketing_GetFrontPageConfig_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStoreMarketing_GetFrontPageConfig_Request> _parser = new pb::MessageParser<CStoreMarketing_GetFrontPageConfig_Request>(() => new CStoreMarketing_GetFrontPageConfig_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStoreMarketing_GetFrontPageConfig_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreMarketing_GetFrontPageConfig_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreMarketing_GetFrontPageConfig_Request(CStoreMarketing_GetFrontPageConfig_Request other) : this() {
+      context_ = other.context_ != null ? other.context_.Clone() : null;
+      dataRequest_ = other.dataRequest_ != null ? other.dataRequest_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreMarketing_GetFrontPageConfig_Request Clone() {
+      return new CStoreMarketing_GetFrontPageConfig_Request(this);
+    }
+
+    /// <summary>Field number for the "context" field.</summary>
+    public const int ContextFieldNumber = 1;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext context_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext Context {
+      get { return context_; }
+      set {
+        context_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "data_request" field.</summary>
+    public const int DataRequestFieldNumber = 2;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest dataRequest_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest DataRequest {
+      get { return dataRequest_; }
+      set {
+        dataRequest_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStoreMarketing_GetFrontPageConfig_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStoreMarketing_GetFrontPageConfig_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Context, other.Context)) return false;
+      if (!object.Equals(DataRequest, other.DataRequest)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (context_ != null) hash ^= Context.GetHashCode();
+      if (dataRequest_ != null) hash ^= DataRequest.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (context_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Context);
+      }
+      if (dataRequest_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(DataRequest);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (context_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Context);
+      }
+      if (dataRequest_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(DataRequest);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (context_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Context);
+      }
+      if (dataRequest_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DataRequest);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStoreMarketing_GetFrontPageConfig_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.context_ != null) {
+        if (context_ == null) {
+          Context = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext();
+        }
+        Context.MergeFrom(other.Context);
+      }
+      if (other.dataRequest_ != null) {
+        if (dataRequest_ == null) {
+          DataRequest = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest();
+        }
+        DataRequest.MergeFrom(other.DataRequest);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (context_ == null) {
+              Context = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext();
+            }
+            input.ReadMessage(Context);
+            break;
+          }
+          case 18: {
+            if (dataRequest_ == null) {
+              DataRequest = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest();
+            }
+            input.ReadMessage(DataRequest);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (context_ == null) {
+              Context = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseContext();
+            }
+            input.ReadMessage(Context);
+            break;
+          }
+          case 18: {
+            if (dataRequest_ == null) {
+              DataRequest = new global::OpenSteamworks.Protobuf.WebUI.StoreBrowseItemDataRequest();
+            }
+            input.ReadMessage(DataRequest);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStoreMarketing_GetFrontPageConfig_Response : pb::IMessage<CStoreMarketing_GetFrontPageConfig_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStoreMarketing_GetFrontPageConfig_Response> _parser = new pb::MessageParser<CStoreMarketing_GetFrontPageConfig_Response>(() => new CStoreMarketing_GetFrontPageConfig_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStoreMarketing_GetFrontPageConfig_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreMarketing_GetFrontPageConfig_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreMarketing_GetFrontPageConfig_Response(CStoreMarketing_GetFrontPageConfig_Response other) : this() {
+      cluster_ = other.cluster_ != null ? other.cluster_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStoreMarketing_GetFrontPageConfig_Response Clone() {
+      return new CStoreMarketing_GetFrontPageConfig_Response(this);
+    }
+
+    /// <summary>Field number for the "cluster" field.</summary>
+    public const int ClusterFieldNumber = 1;
+    private global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster cluster_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster Cluster {
+      get { return cluster_; }
+      set {
+        cluster_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStoreMarketing_GetFrontPageConfig_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStoreMarketing_GetFrontPageConfig_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Cluster, other.Cluster)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (cluster_ != null) hash ^= Cluster.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (cluster_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Cluster);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (cluster_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Cluster);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (cluster_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Cluster);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStoreMarketing_GetFrontPageConfig_Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.cluster_ != null) {
+        if (cluster_ == null) {
+          Cluster = new global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster();
+        }
+        Cluster.MergeFrom(other.Cluster);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (cluster_ == null) {
+              Cluster = new global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster();
+            }
+            input.ReadMessage(Cluster);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (cluster_ == null) {
+              Cluster = new global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster();
+            }
+            input.ReadMessage(Cluster);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CStoreMarketing_GetItemsToFeature_Request : pb::IMessage<CStoreMarketing_GetItemsToFeature_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -87,7 +568,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[0]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -570,7 +1051,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[1]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -886,7 +1367,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[2]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -932,34 +1413,34 @@ namespace OpenSteamworks.Protobuf.WebUI {
 
     /// <summary>Field number for the "daily_deals" field.</summary>
     public const int DailyDealsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> _repeated_dailyDeals_codec
-        = pb::FieldCodec.ForMessage(18, global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem.Parser);
-    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> dailyDeals_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem>();
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> _repeated_dailyDeals_codec
+        = pb::FieldCodec.ForMessage(18, global::OpenSteamworks.Protobuf.WebUI.StoreCapsule.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> dailyDeals_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> DailyDeals {
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> DailyDeals {
       get { return dailyDeals_; }
     }
 
     /// <summary>Field number for the "specials" field.</summary>
     public const int SpecialsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> _repeated_specials_codec
-        = pb::FieldCodec.ForMessage(26, global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem.Parser);
-    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> specials_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem>();
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> _repeated_specials_codec
+        = pb::FieldCodec.ForMessage(26, global::OpenSteamworks.Protobuf.WebUI.StoreCapsule.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> specials_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> Specials {
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> Specials {
       get { return specials_; }
     }
 
     /// <summary>Field number for the "purchase_recommendations" field.</summary>
     public const int PurchaseRecommendationsFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> _repeated_purchaseRecommendations_codec
-        = pb::FieldCodec.ForMessage(34, global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem.Parser);
-    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> purchaseRecommendations_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem>();
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> _repeated_purchaseRecommendations_codec
+        = pb::FieldCodec.ForMessage(34, global::OpenSteamworks.Protobuf.WebUI.StoreCapsule.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> purchaseRecommendations_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> PurchaseRecommendations {
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> PurchaseRecommendations {
       get { return purchaseRecommendations_; }
     }
 
@@ -1137,259 +1618,6 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class CStoreMarketing_GetItemsToFeature_Response_FeaturedItem : pb::IMessage<CStoreMarketing_GetItemsToFeature_Response_FeaturedItem>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> _parser = new pb::MessageParser<CStoreMarketing_GetItemsToFeature_Response_FeaturedItem>(() => new CStoreMarketing_GetItemsToFeature_Response_FeaturedItem());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<CStoreMarketing_GetItemsToFeature_Response_FeaturedItem> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CStoreMarketing_GetItemsToFeature_Response_FeaturedItem() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CStoreMarketing_GetItemsToFeature_Response_FeaturedItem(CStoreMarketing_GetItemsToFeature_Response_FeaturedItem other) : this() {
-      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
-      item_ = other.item_ != null ? other.item_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public CStoreMarketing_GetItemsToFeature_Response_FeaturedItem Clone() {
-      return new CStoreMarketing_GetItemsToFeature_Response_FeaturedItem(this);
-    }
-
-    /// <summary>Field number for the "item_id" field.</summary>
-    public const int ItemIdFieldNumber = 1;
-    private global::OpenSteamworks.Protobuf.WebUI.StoreItemID itemId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::OpenSteamworks.Protobuf.WebUI.StoreItemID ItemId {
-      get { return itemId_; }
-      set {
-        itemId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "item" field.</summary>
-    public const int ItemFieldNumber = 2;
-    private global::OpenSteamworks.Protobuf.WebUI.StoreItem item_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::OpenSteamworks.Protobuf.WebUI.StoreItem Item {
-      get { return item_; }
-      set {
-        item_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as CStoreMarketing_GetItemsToFeature_Response_FeaturedItem);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(CStoreMarketing_GetItemsToFeature_Response_FeaturedItem other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(ItemId, other.ItemId)) return false;
-      if (!object.Equals(Item, other.Item)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (itemId_ != null) hash ^= ItemId.GetHashCode();
-      if (item_ != null) hash ^= Item.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (itemId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ItemId);
-      }
-      if (item_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Item);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (itemId_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ItemId);
-      }
-      if (item_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Item);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (itemId_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
-      }
-      if (item_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(CStoreMarketing_GetItemsToFeature_Response_FeaturedItem other) {
-      if (other == null) {
-        return;
-      }
-      if (other.itemId_ != null) {
-        if (itemId_ == null) {
-          ItemId = new global::OpenSteamworks.Protobuf.WebUI.StoreItemID();
-        }
-        ItemId.MergeFrom(other.ItemId);
-      }
-      if (other.item_ != null) {
-        if (item_ == null) {
-          Item = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
-        }
-        Item.MergeFrom(other.Item);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (itemId_ == null) {
-              ItemId = new global::OpenSteamworks.Protobuf.WebUI.StoreItemID();
-            }
-            input.ReadMessage(ItemId);
-            break;
-          }
-          case 18: {
-            if (item_ == null) {
-              Item = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
-            }
-            input.ReadMessage(Item);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (itemId_ == null) {
-              ItemId = new global::OpenSteamworks.Protobuf.WebUI.StoreItemID();
-            }
-            input.ReadMessage(ItemId);
-            break;
-          }
-          case 18: {
-            if (item_ == null) {
-              Item = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
-            }
-            input.ReadMessage(Item);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CStoreMarketing_GetItemsToFeature_Response_Spotlight : pb::IMessage<CStoreMarketing_GetItemsToFeature_Response_Spotlight>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1404,7 +1632,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[4]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1888,6 +2116,1491 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 58: {
             SpotlightLinurl = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStorePageCluster : pb::IMessage<CStorePageCluster>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStorePageCluster> _parser = new pb::MessageParser<CStorePageCluster>(() => new CStorePageCluster());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStorePageCluster> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster(CStorePageCluster other) : this() {
+      capsuleLists_ = other.capsuleLists_.Clone();
+      takeover_ = other.takeover_ != null ? other.takeover_.Clone() : null;
+      assets_ = other.assets_.Clone();
+      customAssets_ = other.customAssets_.Clone();
+      layout_ = other.layout_;
+      fields_ = other.fields_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster Clone() {
+      return new CStorePageCluster(this);
+    }
+
+    /// <summary>Field number for the "capsule_lists" field.</summary>
+    public const int CapsuleListsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_CapsuleList> _repeated_capsuleLists_codec
+        = pb::FieldCodec.ForMessage(10, global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_CapsuleList.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_CapsuleList> capsuleLists_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_CapsuleList>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_CapsuleList> CapsuleLists {
+      get { return capsuleLists_; }
+    }
+
+    /// <summary>Field number for the "takeover" field.</summary>
+    public const int TakeoverFieldNumber = 2;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreCapsule takeover_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreCapsule Takeover {
+      get { return takeover_; }
+      set {
+        takeover_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "assets" field.</summary>
+    public const int AssetsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset> _repeated_assets_codec
+        = pb::FieldCodec.ForMessage(26, global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset> assets_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset> Assets {
+      get { return assets_; }
+    }
+
+    /// <summary>Field number for the "custom_assets" field.</summary>
+    public const int CustomAssetsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset> _repeated_customAssets_codec
+        = pb::FieldCodec.ForMessage(34, global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset> customAssets_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Asset> CustomAssets {
+      get { return customAssets_; }
+    }
+
+    /// <summary>Field number for the "layout" field.</summary>
+    public const int LayoutFieldNumber = 5;
+    private readonly static string LayoutDefaultValue = "";
+
+    private string layout_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Layout {
+      get { return layout_ ?? LayoutDefaultValue; }
+      set {
+        layout_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "layout" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasLayout {
+      get { return layout_ != null; }
+    }
+    /// <summary>Clears the value of the "layout" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearLayout() {
+      layout_ = null;
+    }
+
+    /// <summary>Field number for the "fields" field.</summary>
+    public const int FieldsFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Field> _repeated_fields_codec
+        = pb::FieldCodec.ForMessage(50, global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Field.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Field> fields_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Field>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CStorePageCluster_Field> Fields {
+      get { return fields_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStorePageCluster);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStorePageCluster other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!capsuleLists_.Equals(other.capsuleLists_)) return false;
+      if (!object.Equals(Takeover, other.Takeover)) return false;
+      if(!assets_.Equals(other.assets_)) return false;
+      if(!customAssets_.Equals(other.customAssets_)) return false;
+      if (Layout != other.Layout) return false;
+      if(!fields_.Equals(other.fields_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= capsuleLists_.GetHashCode();
+      if (takeover_ != null) hash ^= Takeover.GetHashCode();
+      hash ^= assets_.GetHashCode();
+      hash ^= customAssets_.GetHashCode();
+      if (HasLayout) hash ^= Layout.GetHashCode();
+      hash ^= fields_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      capsuleLists_.WriteTo(output, _repeated_capsuleLists_codec);
+      if (takeover_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Takeover);
+      }
+      assets_.WriteTo(output, _repeated_assets_codec);
+      customAssets_.WriteTo(output, _repeated_customAssets_codec);
+      if (HasLayout) {
+        output.WriteRawTag(42);
+        output.WriteString(Layout);
+      }
+      fields_.WriteTo(output, _repeated_fields_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      capsuleLists_.WriteTo(ref output, _repeated_capsuleLists_codec);
+      if (takeover_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Takeover);
+      }
+      assets_.WriteTo(ref output, _repeated_assets_codec);
+      customAssets_.WriteTo(ref output, _repeated_customAssets_codec);
+      if (HasLayout) {
+        output.WriteRawTag(42);
+        output.WriteString(Layout);
+      }
+      fields_.WriteTo(ref output, _repeated_fields_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += capsuleLists_.CalculateSize(_repeated_capsuleLists_codec);
+      if (takeover_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Takeover);
+      }
+      size += assets_.CalculateSize(_repeated_assets_codec);
+      size += customAssets_.CalculateSize(_repeated_customAssets_codec);
+      if (HasLayout) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Layout);
+      }
+      size += fields_.CalculateSize(_repeated_fields_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStorePageCluster other) {
+      if (other == null) {
+        return;
+      }
+      capsuleLists_.Add(other.capsuleLists_);
+      if (other.takeover_ != null) {
+        if (takeover_ == null) {
+          Takeover = new global::OpenSteamworks.Protobuf.WebUI.StoreCapsule();
+        }
+        Takeover.MergeFrom(other.Takeover);
+      }
+      assets_.Add(other.assets_);
+      customAssets_.Add(other.customAssets_);
+      if (other.HasLayout) {
+        Layout = other.Layout;
+      }
+      fields_.Add(other.fields_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            capsuleLists_.AddEntriesFrom(input, _repeated_capsuleLists_codec);
+            break;
+          }
+          case 18: {
+            if (takeover_ == null) {
+              Takeover = new global::OpenSteamworks.Protobuf.WebUI.StoreCapsule();
+            }
+            input.ReadMessage(Takeover);
+            break;
+          }
+          case 26: {
+            assets_.AddEntriesFrom(input, _repeated_assets_codec);
+            break;
+          }
+          case 34: {
+            customAssets_.AddEntriesFrom(input, _repeated_customAssets_codec);
+            break;
+          }
+          case 42: {
+            Layout = input.ReadString();
+            break;
+          }
+          case 50: {
+            fields_.AddEntriesFrom(input, _repeated_fields_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            capsuleLists_.AddEntriesFrom(ref input, _repeated_capsuleLists_codec);
+            break;
+          }
+          case 18: {
+            if (takeover_ == null) {
+              Takeover = new global::OpenSteamworks.Protobuf.WebUI.StoreCapsule();
+            }
+            input.ReadMessage(Takeover);
+            break;
+          }
+          case 26: {
+            assets_.AddEntriesFrom(ref input, _repeated_assets_codec);
+            break;
+          }
+          case 34: {
+            customAssets_.AddEntriesFrom(ref input, _repeated_customAssets_codec);
+            break;
+          }
+          case 42: {
+            Layout = input.ReadString();
+            break;
+          }
+          case 50: {
+            fields_.AddEntriesFrom(ref input, _repeated_fields_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStorePageCluster_Asset : pb::IMessage<CStorePageCluster_Asset>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStorePageCluster_Asset> _parser = new pb::MessageParser<CStorePageCluster_Asset>(() => new CStorePageCluster_Asset());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStorePageCluster_Asset> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_Asset() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_Asset(CStorePageCluster_Asset other) : this() {
+      assetName_ = other.assetName_;
+      assetPath_ = other.assetPath_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_Asset Clone() {
+      return new CStorePageCluster_Asset(this);
+    }
+
+    /// <summary>Field number for the "asset_name" field.</summary>
+    public const int AssetNameFieldNumber = 1;
+    private readonly static string AssetNameDefaultValue = "";
+
+    private string assetName_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AssetName {
+      get { return assetName_ ?? AssetNameDefaultValue; }
+      set {
+        assetName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "asset_name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAssetName {
+      get { return assetName_ != null; }
+    }
+    /// <summary>Clears the value of the "asset_name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAssetName() {
+      assetName_ = null;
+    }
+
+    /// <summary>Field number for the "asset_path" field.</summary>
+    public const int AssetPathFieldNumber = 2;
+    private readonly static string AssetPathDefaultValue = "";
+
+    private string assetPath_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AssetPath {
+      get { return assetPath_ ?? AssetPathDefaultValue; }
+      set {
+        assetPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "asset_path" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAssetPath {
+      get { return assetPath_ != null; }
+    }
+    /// <summary>Clears the value of the "asset_path" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAssetPath() {
+      assetPath_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStorePageCluster_Asset);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStorePageCluster_Asset other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AssetName != other.AssetName) return false;
+      if (AssetPath != other.AssetPath) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAssetName) hash ^= AssetName.GetHashCode();
+      if (HasAssetPath) hash ^= AssetPath.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAssetName) {
+        output.WriteRawTag(10);
+        output.WriteString(AssetName);
+      }
+      if (HasAssetPath) {
+        output.WriteRawTag(18);
+        output.WriteString(AssetPath);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAssetName) {
+        output.WriteRawTag(10);
+        output.WriteString(AssetName);
+      }
+      if (HasAssetPath) {
+        output.WriteRawTag(18);
+        output.WriteString(AssetPath);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAssetName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AssetName);
+      }
+      if (HasAssetPath) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AssetPath);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStorePageCluster_Asset other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAssetName) {
+        AssetName = other.AssetName;
+      }
+      if (other.HasAssetPath) {
+        AssetPath = other.AssetPath;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            AssetName = input.ReadString();
+            break;
+          }
+          case 18: {
+            AssetPath = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            AssetName = input.ReadString();
+            break;
+          }
+          case 18: {
+            AssetPath = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStorePageCluster_CapsuleList : pb::IMessage<CStorePageCluster_CapsuleList>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStorePageCluster_CapsuleList> _parser = new pb::MessageParser<CStorePageCluster_CapsuleList>(() => new CStorePageCluster_CapsuleList());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStorePageCluster_CapsuleList> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_CapsuleList() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_CapsuleList(CStorePageCluster_CapsuleList other) : this() {
+      _hasBits0 = other._hasBits0;
+      name_ = other.name_;
+      capsules_ = other.capsules_.Clone();
+      maxVisible_ = other.maxVisible_;
+      maxUnreleased_ = other.maxUnreleased_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_CapsuleList Clone() {
+      return new CStorePageCluster_CapsuleList(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private readonly static string NameDefaultValue = "";
+
+    private string name_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_ ?? NameDefaultValue; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasName {
+      get { return name_ != null; }
+    }
+    /// <summary>Clears the value of the "name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearName() {
+      name_ = null;
+    }
+
+    /// <summary>Field number for the "capsules" field.</summary>
+    public const int CapsulesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> _repeated_capsules_codec
+        = pb::FieldCodec.ForMessage(18, global::OpenSteamworks.Protobuf.WebUI.StoreCapsule.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> capsules_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.StoreCapsule> Capsules {
+      get { return capsules_; }
+    }
+
+    /// <summary>Field number for the "max_visible" field.</summary>
+    public const int MaxVisibleFieldNumber = 3;
+    private readonly static int MaxVisibleDefaultValue = 0;
+
+    private int maxVisible_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MaxVisible {
+      get { if ((_hasBits0 & 1) != 0) { return maxVisible_; } else { return MaxVisibleDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        maxVisible_ = value;
+      }
+    }
+    /// <summary>Gets whether the "max_visible" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMaxVisible {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "max_visible" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMaxVisible() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "max_unreleased" field.</summary>
+    public const int MaxUnreleasedFieldNumber = 4;
+    private readonly static int MaxUnreleasedDefaultValue = 0;
+
+    private int maxUnreleased_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MaxUnreleased {
+      get { if ((_hasBits0 & 2) != 0) { return maxUnreleased_; } else { return MaxUnreleasedDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        maxUnreleased_ = value;
+      }
+    }
+    /// <summary>Gets whether the "max_unreleased" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMaxUnreleased {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "max_unreleased" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMaxUnreleased() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStorePageCluster_CapsuleList);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStorePageCluster_CapsuleList other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if(!capsules_.Equals(other.capsules_)) return false;
+      if (MaxVisible != other.MaxVisible) return false;
+      if (MaxUnreleased != other.MaxUnreleased) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasName) hash ^= Name.GetHashCode();
+      hash ^= capsules_.GetHashCode();
+      if (HasMaxVisible) hash ^= MaxVisible.GetHashCode();
+      if (HasMaxUnreleased) hash ^= MaxUnreleased.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasName) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      capsules_.WriteTo(output, _repeated_capsules_codec);
+      if (HasMaxVisible) {
+        output.WriteRawTag(24);
+        output.WriteInt32(MaxVisible);
+      }
+      if (HasMaxUnreleased) {
+        output.WriteRawTag(32);
+        output.WriteInt32(MaxUnreleased);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasName) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      capsules_.WriteTo(ref output, _repeated_capsules_codec);
+      if (HasMaxVisible) {
+        output.WriteRawTag(24);
+        output.WriteInt32(MaxVisible);
+      }
+      if (HasMaxUnreleased) {
+        output.WriteRawTag(32);
+        output.WriteInt32(MaxUnreleased);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      size += capsules_.CalculateSize(_repeated_capsules_codec);
+      if (HasMaxVisible) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxVisible);
+      }
+      if (HasMaxUnreleased) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxUnreleased);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStorePageCluster_CapsuleList other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasName) {
+        Name = other.Name;
+      }
+      capsules_.Add(other.capsules_);
+      if (other.HasMaxVisible) {
+        MaxVisible = other.MaxVisible;
+      }
+      if (other.HasMaxUnreleased) {
+        MaxUnreleased = other.MaxUnreleased;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            capsules_.AddEntriesFrom(input, _repeated_capsules_codec);
+            break;
+          }
+          case 24: {
+            MaxVisible = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            MaxUnreleased = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            capsules_.AddEntriesFrom(ref input, _repeated_capsules_codec);
+            break;
+          }
+          case 24: {
+            MaxVisible = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            MaxUnreleased = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CStorePageCluster_Field : pb::IMessage<CStorePageCluster_Field>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CStorePageCluster_Field> _parser = new pb::MessageParser<CStorePageCluster_Field>(() => new CStorePageCluster_Field());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CStorePageCluster_Field> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_Field() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_Field(CStorePageCluster_Field other) : this() {
+      name_ = other.name_;
+      value_ = other.value_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CStorePageCluster_Field Clone() {
+      return new CStorePageCluster_Field(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private readonly static string NameDefaultValue = "";
+
+    private string name_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_ ?? NameDefaultValue; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasName {
+      get { return name_ != null; }
+    }
+    /// <summary>Clears the value of the "name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearName() {
+      name_ = null;
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private readonly static string ValueDefaultValue = "";
+
+    private string value_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Value {
+      get { return value_ ?? ValueDefaultValue; }
+      set {
+        value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasValue {
+      get { return value_ != null; }
+    }
+    /// <summary>Clears the value of the "value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearValue() {
+      value_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CStorePageCluster_Field);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CStorePageCluster_Field other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasName) hash ^= Name.GetHashCode();
+      if (HasValue) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasName) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (HasValue) {
+        output.WriteRawTag(18);
+        output.WriteString(Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasName) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      if (HasValue) {
+        output.WriteRawTag(18);
+        output.WriteString(Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (HasValue) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CStorePageCluster_Field other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasName) {
+        Name = other.Name;
+      }
+      if (other.HasValue) {
+        Value = other.Value;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Value = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            Value = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class StoreCapsule : pb::IMessage<StoreCapsule>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<StoreCapsule> _parser = new pb::MessageParser<StoreCapsule>(() => new StoreCapsule());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<StoreCapsule> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceStoremarketingReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public StoreCapsule() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public StoreCapsule(StoreCapsule other) : this() {
+      itemId_ = other.itemId_ != null ? other.itemId_.Clone() : null;
+      item_ = other.item_ != null ? other.item_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public StoreCapsule Clone() {
+      return new StoreCapsule(this);
+    }
+
+    /// <summary>Field number for the "item_id" field.</summary>
+    public const int ItemIdFieldNumber = 1;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreItemID itemId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreItemID ItemId {
+      get { return itemId_; }
+      set {
+        itemId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "item" field.</summary>
+    public const int ItemFieldNumber = 2;
+    private global::OpenSteamworks.Protobuf.WebUI.StoreItem item_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.StoreItem Item {
+      get { return item_; }
+      set {
+        item_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as StoreCapsule);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(StoreCapsule other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ItemId, other.ItemId)) return false;
+      if (!object.Equals(Item, other.Item)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (itemId_ != null) hash ^= ItemId.GetHashCode();
+      if (item_ != null) hash ^= Item.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (itemId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ItemId);
+      }
+      if (item_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Item);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (itemId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ItemId);
+      }
+      if (item_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Item);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (itemId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ItemId);
+      }
+      if (item_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(StoreCapsule other) {
+      if (other == null) {
+        return;
+      }
+      if (other.itemId_ != null) {
+        if (itemId_ == null) {
+          ItemId = new global::OpenSteamworks.Protobuf.WebUI.StoreItemID();
+        }
+        ItemId.MergeFrom(other.ItemId);
+      }
+      if (other.item_ != null) {
+        if (item_ == null) {
+          Item = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
+        }
+        Item.MergeFrom(other.Item);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (itemId_ == null) {
+              ItemId = new global::OpenSteamworks.Protobuf.WebUI.StoreItemID();
+            }
+            input.ReadMessage(ItemId);
+            break;
+          }
+          case 18: {
+            if (item_ == null) {
+              Item = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
+            }
+            input.ReadMessage(Item);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (itemId_ == null) {
+              ItemId = new global::OpenSteamworks.Protobuf.WebUI.StoreItemID();
+            }
+            input.ReadMessage(ItemId);
+            break;
+          }
+          case 18: {
+            if (item_ == null) {
+              Item = new global::OpenSteamworks.Protobuf.WebUI.StoreItem();
+            }
+            input.ReadMessage(Item);
             break;
           }
         }

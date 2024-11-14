@@ -79,31 +79,19 @@ public unsafe interface IClientVideo
     // WARNING: Arguments are unknown!
     public unknown_ret GetApprovalRequests();  // argc: 2, index: 40, ipc args: [bytes4], ipc returns: [bytes4, bytes_length_from_reg]
     // WARNING: Arguments are unknown!
-    public unknown_ret AddBroadcastGameData();  // argc: 2, index: 41, ipc args: [string, string], ipc returns: []
+    public unknown_ret GetVideoURL();  // argc: 1, index: 41, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown_ret RemoveBroadcastGameData();  // argc: 1, index: 42, ipc args: [string], ipc returns: []
+    public unknown_ret GetOPFSettings();  // argc: 1, index: 42, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown_ret AddTimelineMarker();  // argc: 5, index: 43, ipc args: [string, bytes1, bytes1, bytes1, bytes1], ipc returns: []
-    public unknown_ret RemoveTimelineMarker();  // argc: 0, index: 44, ipc args: [], ipc returns: []
-    // WARNING: Arguments are unknown!
-    [BlacklistedInCrossProcessIPC]
-    public unknown_ret AddRegion();  // argc: 4, index: 45, ipc args: [string, string, bytes4, bytes4], ipc returns: [bytes4]
-    // WARNING: Arguments are unknown!
-    public unknown_ret RemoveRegion();  // argc: 1, index: 46, ipc args: [bytes4], ipc returns: []
-    // WARNING: Arguments are unknown!
-    public unknown_ret GetVideoURL();  // argc: 1, index: 47, ipc args: [bytes4], ipc returns: []
-    // WARNING: Arguments are unknown!
-    public unknown_ret GetOPFSettings();  // argc: 1, index: 48, ipc args: [bytes4], ipc returns: []
-    // WARNING: Arguments are unknown!
-    public unknown_ret GetOPFStringForApp();  // argc: 4, index: 49, ipc args: [bytes4, bytes4], ipc returns: [bytes1, bytes_length_from_mem, bytes4]
+    public unknown_ret GetOPFStringForApp();  // argc: 4, index: 43, ipc args: [bytes4, bytes4], ipc returns: [bytes1, bytes_length_from_mem, bytes4]
     // WARNING: Arguments are unknown!
     [BlacklistedInCrossProcessIPC]
-    public unknown_ret WebRTCGetTURNAddress();  // argc: 1, index: 50, ipc args: [bytes4], ipc returns: []
+    public unknown_ret WebRTCGetTURNAddress();  // argc: 1, index: 44, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown_ret WebRTCStartResult();  // argc: 4, index: 51, ipc args: [bytes8, bytes1, string], ipc returns: []
+    public unknown_ret WebRTCStartResult();  // argc: 4, index: 45, ipc args: [bytes8, bytes1, string], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown_ret WebRTCAddCandidate();  // argc: 5, index: 52, ipc args: [bytes8, string, bytes4, string], ipc returns: []
+    public unknown_ret WebRTCAddCandidate();  // argc: 5, index: 46, ipc args: [bytes8, string, bytes4, string], ipc returns: []
     // WARNING: Arguments are unknown!
     [BlacklistedInCrossProcessIPC]
-    public unknown_ret WebRTCGetAnswer();  // argc: 3, index: 53, ipc args: [bytes8, bytes4], ipc returns: []
+    public unknown_ret WebRTCGetAnswer();  // argc: 3, index: 47, ipc args: [bytes8, bytes4], ipc returns: []
 }

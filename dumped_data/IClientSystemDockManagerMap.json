@@ -5,8 +5,8 @@
             "name": "IsInterfaceValid",
             "argc": "1",
             "interfaceid": "58",
-            "functionid": "862246292",
-            "fencepost": "907124536",
+            "functionid": "862246301",
+            "fencepost": "907011642",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -18,8 +18,8 @@
             "name": "GetState",
             "argc": "2",
             "interfaceid": "58",
-            "functionid": "724788037",
-            "fencepost": "769730797",
+            "functionid": "724788092",
+            "fencepost": "769617949",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -32,8 +32,8 @@
             "name": "UpdateFirmware",
             "argc": "2",
             "interfaceid": "58",
-            "functionid": "1231225157",
-            "fencepost": "1276264691",
+            "functionid": "1231225212",
+            "fencepost": "1276151843",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "protobuf"
@@ -46,8 +46,8 @@
             "name": "DisarmSafetyNet",
             "argc": "1",
             "interfaceid": "58",
-            "functionid": "874836127",
-            "fencepost": "919924048",
+            "functionid": "874836112",
+            "fencepost": "919811130",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],

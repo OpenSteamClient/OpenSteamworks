@@ -1,25 +1,25 @@
 [
     {
         "emsg": 113,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgDestJobFailed"
     },
     {
         "emsg": 124,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgHubConnect"
     },
     {
         "emsg": 146,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgServiceMethod"
     },
     {
         "emsg": 147,
-        "flags": 63,
+        "flags": 47,
         "server_type": 41,
         "name": "k_EMsgServiceMethodResponse"
     },
@@ -322,12 +322,6 @@
         "flags": 2,
         "server_type": -1,
         "name": "k_EMsgClientVACBanStatus"
-    },
-    {
-        "emsg": 783,
-        "flags": 2,
-        "server_type": -1,
-        "name": "k_EMsgClientCMList"
     },
     {
         "emsg": 784,
@@ -697,43 +691,43 @@
     },
     {
         "emsg": 1200,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgFileXferRequest"
     },
     {
         "emsg": 1201,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgFileXferResponse"
     },
     {
         "emsg": 1202,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgFileXferData"
     },
     {
         "emsg": 1203,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgFileXferEnd"
     },
     {
         "emsg": 1204,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgFileXferDataAck"
     },
     {
         "emsg": 1303,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgChannelEncryptRequest"
     },
     {
         "emsg": 1304,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgChannelEncryptResponse"
     },
@@ -1176,18 +1170,6 @@
         "name": "k_EMsgClientStat2"
     },
     {
-        "emsg": 5483,
-        "flags": 2,
-        "server_type": -1,
-        "name": "k_EMsgClientVerifyPassword"
-    },
-    {
-        "emsg": 5484,
-        "flags": 2,
-        "server_type": -1,
-        "name": "k_EMsgClientVerifyPasswordResponse"
-    },
-    {
         "emsg": 5485,
         "flags": 2,
         "server_type": -1,
@@ -1357,7 +1339,7 @@
     },
     {
         "emsg": 5517,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgClientReportOverlayDetourFailure"
     },
@@ -1531,7 +1513,7 @@
     },
     {
         "emsg": 5548,
-        "flags": 63,
+        "flags": 47,
         "server_type": 16,
         "name": "k_EMsgClientDownloadRateStatistics"
     },
@@ -1855,19 +1837,19 @@
     },
     {
         "emsg": 6403,
-        "flags": 63,
+        "flags": 47,
         "server_type": 43,
         "name": "k_EMsgClientGMSServerQuery"
     },
     {
         "emsg": 6404,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgGMSClientServerQueryResponse"
     },
     {
         "emsg": 6407,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgGameServerOutOfDate"
     },
@@ -1921,49 +1903,49 @@
     },
     {
         "emsg": 6601,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSCreateLobby"
     },
     {
         "emsg": 6602,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSCreateLobbyResponse"
     },
     {
         "emsg": 6603,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSJoinLobby"
     },
     {
         "emsg": 6604,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSJoinLobbyResponse"
     },
     {
         "emsg": 6605,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSLeaveLobby"
     },
     {
         "emsg": 6606,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSLeaveLobbyResponse"
     },
     {
         "emsg": 6607,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSGetLobbyList"
     },
     {
         "emsg": 6608,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSGetLobbyListResponse"
     },
@@ -1981,13 +1963,13 @@
     },
     {
         "emsg": 6611,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSGetLobbyData"
     },
     {
         "emsg": 6612,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSLobbyData"
     },
@@ -2041,7 +2023,7 @@
     },
     {
         "emsg": 6621,
-        "flags": 63,
+        "flags": 47,
         "server_type": 42,
         "name": "k_EMsgClientMMSInviteToLobby"
     },
@@ -2539,13 +2521,13 @@
     },
     {
         "emsg": 9507,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgClientUnlockH264"
     },
     {
         "emsg": 9508,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgClientUnlockH264Response"
     },
@@ -2635,13 +2617,13 @@
     },
     {
         "emsg": 9800,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgClientVoiceCallPreAuthorize"
     },
     {
         "emsg": 9801,
-        "flags": 59,
+        "flags": 43,
         "server_type": -1,
         "name": "k_EMsgClientVoiceCallPreAuthorizeResponse"
     },

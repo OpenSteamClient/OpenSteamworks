@@ -5,8 +5,8 @@
             "name": "Launched",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "3052121741",
-            "fencepost": "3138674146",
+            "functionid": "3052120546",
+            "fencepost": "3133043930",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -18,8 +18,8 @@
             "name": "FocusGained",
             "argc": "3",
             "interfaceid": "33",
-            "functionid": "3108058666",
-            "fencepost": "3194627200",
+            "functionid": "3108057415",
+            "fencepost": "3188996928",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -32,8 +32,8 @@
             "name": "FocusLost",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "3204093365",
-            "fencepost": "3290678028",
+            "functionid": "3204092630",
+            "fencepost": "3285048272",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -45,8 +45,8 @@
             "name": "Finished",
             "argc": "3",
             "interfaceid": "33",
-            "functionid": "2423897314",
-            "fencepost": "2510498106",
+            "functionid": "2423896967",
+            "fencepost": "2504868738",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -59,8 +59,8 @@
             "name": "BGetStreamingClientConfig",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "657324966",
-            "fencepost": "743974145",
+            "functionid": "657325249",
+            "fencepost": "738345407",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -73,8 +73,8 @@
             "name": "BSaveStreamingClientConfig",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "1315543636",
-            "fencepost": "1402289589",
+            "functionid": "1315544329",
+            "fencepost": "1396661261",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "unknown"
@@ -87,8 +87,8 @@
             "name": "SetQualityOverride",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "3216130405",
-            "fencepost": "3302908616",
+            "functionid": "3216132038",
+            "fencepost": "3297281228",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -100,8 +100,8 @@
             "name": "SetBitrateOverride",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "1508810720",
-            "fencepost": "1595605060",
+            "functionid": "1508809037",
+            "fencepost": "1589974356",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -113,8 +113,8 @@
             "name": "ShowOnScreenKeyboard",
             "argc": "1",
             "interfaceid": "33",
-            "functionid": "2106022224",
-            "fencepost": "2192832693",
+            "functionid": "2106023935",
+            "fencepost": "2187205383",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -125,8 +125,8 @@
             "name": "BQueueControllerConfigMessageForLocal",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "4009397487",
-            "fencepost": "4096256343",
+            "functionid": "4009396802",
+            "fencepost": "4090626637",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "protobuf"
@@ -139,8 +139,8 @@
             "name": "BGetControllerConfigMessageForRemote",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "1116830670",
-            "fencepost": "1203754042",
+            "functionid": "1116831083",
+            "fencepost": "1198125434",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -153,8 +153,8 @@
             "name": "GetSystemInfo",
             "argc": "1",
             "interfaceid": "33",
-            "functionid": "287256575",
-            "fencepost": "374228334",
+            "functionid": "287254876",
+            "fencepost": "368597614",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -166,8 +166,8 @@
             "name": "StartStreamingSession",
             "argc": "2",
             "interfaceid": "33",
-            "functionid": "1347034150",
-            "fencepost": "1434022038",
+            "functionid": "1347033731",
+            "fencepost": "1428392598",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8"
@@ -179,8 +179,8 @@
             "name": "ReportStreamingSessionEvent",
             "argc": "3",
             "interfaceid": "33",
-            "functionid": "2573792818",
-            "fencepost": "2660796835",
+            "functionid": "2573791381",
+            "fencepost": "2655166377",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",
@@ -193,8 +193,8 @@
             "name": "FinishStreamingSession",
             "argc": "4",
             "interfaceid": "33",
-            "functionid": "1603033037",
-            "fencepost": "1690053183",
+            "functionid": "1603031400",
+            "fencepost": "1684422525",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes8",

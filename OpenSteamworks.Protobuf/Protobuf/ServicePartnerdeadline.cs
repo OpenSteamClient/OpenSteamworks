@@ -25,7 +25,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch1zZXJ2aWNlX3BhcnRuZXJkZWFkbGluZS5wcm90bxogZ29vZ2xlL3Byb3Rv",
-            "YnVmL2Rlc2NyaXB0b3IucHJvdG8aEWNvbW1vbl9iYXNlLnByb3RvIsECChBD",
+            "YnVmL2Rlc2NyaXB0b3IucHJvdG8aEWNvbW1vbl9iYXNlLnByb3RvItQCChBD",
             "UGFydG5lckRlYWRsaW5lEhEKCXBhcnRuZXJpZBgBIAEoDRIWCgR0eXBlGAIg",
             "ASgFQgiCtRgEZW51bRIYCgZzdGF0dXMYAyABKAVCCIK1GARlbnVtEhAKCGR1",
             "ZV9kYXRlGAQgASgNEh0KFWVtYWlsX2RheXNfYmVmb3JlX2R1ZRgFIAMoDRIL",
@@ -33,42 +33,49 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "bRIVCg1zdG9yZV9pdGVtX2lkGAggASgNEhkKEWRpc2NvdW50X2V2ZW50X2lk",
             "GAkgASgNEhwKFGRlc2NyaXB0aW9uX2pzb25kYXRhGAogASgJEhcKD3JlcXVp",
             "cmVkX3JpZ2h0cxgLIAEoBBIeChZzZW5kX2VtYWlsX29uX2NyZWF0aW9uGAwg",
-            "ASgIIsMBCi9DUGFydG5lckRlYWRsaW5lX0dldERlYWRsaW5lQnlUaW1lUmFu",
-            "Z2VfUmVxdWVzdBIWCgR0eXBlGAEgASgFQgiCtRgEZW51bRISCgpzdGFydF9k",
-            "YXRlGAIgASgNEhAKCGVuZF9kYXRlGAMgASgNEhgKEGluY2x1ZGVfY29tcGxl",
-            "dGUYBCABKAgSIQoPc3RvcmVfaXRlbV90eXBlGAcgASgFQgiCtRgEZW51bRIV",
-            "Cg1zdG9yZV9pdGVtX2lkGAggASgNIn8KMENQYXJ0bmVyRGVhZGxpbmVfR2V0",
-            "RGVhZGxpbmVCeVRpbWVSYW5nZV9SZXNwb25zZRJLCglkZWFkbGluZXMYASAD",
-            "KAsyOC5DUGFydG5lckRlYWRsaW5lX0dldERlYWRsaW5lQnlUaW1lUmFuZ2Vf",
-            "UmVzcG9uc2VfUmVzdWx0Im4KN0NQYXJ0bmVyRGVhZGxpbmVfR2V0RGVhZGxp",
-            "bmVCeVRpbWVSYW5nZV9SZXNwb25zZV9SZXN1bHQSEgoKZGVhZGxpbmVpZBgB",
-            "IAEoBhIfCgRkYXRhGAIgASgLMhEuQ1BhcnRuZXJEZWFkbGluZSKEAQovQ1Bh",
-            "cnRuZXJEZWFkbGluZV9HZXREZWFkbGluZXNGb3JQYXJ0bmVyX1JlcXVlc3QS",
-            "EQoJcGFydG5lcmlkGAEgASgNEhIKCnN0YXJ0X2RhdGUYAiABKA0SEAoIZW5k",
-            "X2RhdGUYAyABKA0SGAoQaW5jbHVkZV9jb21wbGV0ZRgEIAEoCCJ/CjBDUGFy",
-            "dG5lckRlYWRsaW5lX0dldERlYWRsaW5lc0ZvclBhcnRuZXJfUmVzcG9uc2US",
-            "SwoJZGVhZGxpbmVzGAEgAygLMjguQ1BhcnRuZXJEZWFkbGluZV9HZXREZWFk",
-            "bGluZXNGb3JQYXJ0bmVyX1Jlc3BvbnNlX1Jlc3VsdCJuCjdDUGFydG5lckRl",
-            "YWRsaW5lX0dldERlYWRsaW5lc0ZvclBhcnRuZXJfUmVzcG9uc2VfUmVzdWx0",
-            "EhIKCmRlYWRsaW5laWQYASABKAYSHwoEZGF0YRgCIAEoCzIRLkNQYXJ0bmVy",
-            "RGVhZGxpbmUyjwIKD1BhcnRuZXJEZWFkbGluZRJ9ChZHZXREZWFkbGluZUJ5",
-            "VGltZVJhbmdlEjAuQ1BhcnRuZXJEZWFkbGluZV9HZXREZWFkbGluZUJ5VGlt",
-            "ZVJhbmdlX1JlcXVlc3QaMS5DUGFydG5lckRlYWRsaW5lX0dldERlYWRsaW5l",
-            "QnlUaW1lUmFuZ2VfUmVzcG9uc2USfQoWR2V0RGVhZGxpbmVzRm9yUGFydG5l",
-            "chIwLkNQYXJ0bmVyRGVhZGxpbmVfR2V0RGVhZGxpbmVzRm9yUGFydG5lcl9S",
-            "ZXF1ZXN0GjEuQ1BhcnRuZXJEZWFkbGluZV9HZXREZWFkbGluZXNGb3JQYXJ0",
-            "bmVyX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJV",
-            "SQ=="));
+            "ASgIEhEKCWFjY291bnRpZBgNIAEoDSLDAQovQ1BhcnRuZXJEZWFkbGluZV9H",
+            "ZXREZWFkbGluZUJ5VGltZVJhbmdlX1JlcXVlc3QSFgoEdHlwZRgBIAEoBUII",
+            "grUYBGVudW0SEgoKc3RhcnRfZGF0ZRgCIAEoDRIQCghlbmRfZGF0ZRgDIAEo",
+            "DRIYChBpbmNsdWRlX2NvbXBsZXRlGAQgASgIEiEKD3N0b3JlX2l0ZW1fdHlw",
+            "ZRgHIAEoBUIIgrUYBGVudW0SFQoNc3RvcmVfaXRlbV9pZBgIIAEoDSJ/CjBD",
+            "UGFydG5lckRlYWRsaW5lX0dldERlYWRsaW5lQnlUaW1lUmFuZ2VfUmVzcG9u",
+            "c2USSwoJZGVhZGxpbmVzGAEgAygLMjguQ1BhcnRuZXJEZWFkbGluZV9HZXRE",
+            "ZWFkbGluZUJ5VGltZVJhbmdlX1Jlc3BvbnNlX1Jlc3VsdCJuCjdDUGFydG5l",
+            "ckRlYWRsaW5lX0dldERlYWRsaW5lQnlUaW1lUmFuZ2VfUmVzcG9uc2VfUmVz",
+            "dWx0EhIKCmRlYWRsaW5laWQYASABKAYSHwoEZGF0YRgCIAEoCzIRLkNQYXJ0",
+            "bmVyRGVhZGxpbmUixwEKL0NQYXJ0bmVyRGVhZGxpbmVfR2V0RGVhZGxpbmVz",
+            "Rm9yUGFydG5lcl9SZXF1ZXN0EhEKCXBhcnRuZXJpZBgBIAEoDRISCgpzdGFy",
+            "dF9kYXRlGAIgASgNEhAKCGVuZF9kYXRlGAMgASgNEhgKEGluY2x1ZGVfY29t",
+            "cGxldGUYBCABKAgSLgoKbG9va3VwX2tleRgFIAMoCzIaLkNQYXJ0bmVyRGVh",
+            "ZGxpbmVMb29rVXBLZXkSEQoJYWNjb3VudGlkGAYgASgNIn8KMENQYXJ0bmVy",
+            "RGVhZGxpbmVfR2V0RGVhZGxpbmVzRm9yUGFydG5lcl9SZXNwb25zZRJLCglk",
+            "ZWFkbGluZXMYASADKAsyOC5DUGFydG5lckRlYWRsaW5lX0dldERlYWRsaW5l",
+            "c0ZvclBhcnRuZXJfUmVzcG9uc2VfUmVzdWx0Im4KN0NQYXJ0bmVyRGVhZGxp",
+            "bmVfR2V0RGVhZGxpbmVzRm9yUGFydG5lcl9SZXNwb25zZV9SZXN1bHQSEgoK",
+            "ZGVhZGxpbmVpZBgBIAEoBhIfCgRkYXRhGAIgASgLMhEuQ1BhcnRuZXJEZWFk",
+            "bGluZSLPAQoZQ1BhcnRuZXJEZWFkbGluZUxvb2tVcEtleRISCgpkZWFkbGlu",
+            "ZWlkGAEgASgGEhEKCXBhcnRuZXJpZBgCIAEoDRIWCgR0eXBlGAMgASgFQgiC",
+            "tRgEZW51bRILCgNnaWQYBCABKAYSIQoPc3RvcmVfaXRlbV90eXBlGAUgASgF",
+            "QgiCtRgEZW51bRIVCg1zdG9yZV9pdGVtX2lkGAYgASgNEhkKEWRpc2NvdW50",
+            "X2V2ZW50X2lkGAcgASgNEhEKCWFjY291bnRpZBgIIAEoDTKPAgoPUGFydG5l",
+            "ckRlYWRsaW5lEn0KFkdldERlYWRsaW5lQnlUaW1lUmFuZ2USMC5DUGFydG5l",
+            "ckRlYWRsaW5lX0dldERlYWRsaW5lQnlUaW1lUmFuZ2VfUmVxdWVzdBoxLkNQ",
+            "YXJ0bmVyRGVhZGxpbmVfR2V0RGVhZGxpbmVCeVRpbWVSYW5nZV9SZXNwb25z",
+            "ZRJ9ChZHZXREZWFkbGluZXNGb3JQYXJ0bmVyEjAuQ1BhcnRuZXJEZWFkbGlu",
+            "ZV9HZXREZWFkbGluZXNGb3JQYXJ0bmVyX1JlcXVlc3QaMS5DUGFydG5lckRl",
+            "YWRsaW5lX0dldERlYWRsaW5lc0ZvclBhcnRuZXJfUmVzcG9uc2VCIKoCHU9w",
+            "ZW5TdGVhbXdvcmtzLlByb3RvYnVmLldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline.Parser, new[]{ "Partnerid", "Type", "Status", "DueDate", "EmailDaysBeforeDue", "Gid", "StoreItemType", "StoreItemId", "DiscountEventId", "DescriptionJsondata", "RequiredRights", "SendEmailOnCreation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline.Parser, new[]{ "Partnerid", "Type", "Status", "DueDate", "EmailDaysBeforeDue", "Gid", "StoreItemType", "StoreItemId", "DiscountEventId", "DescriptionJsondata", "RequiredRights", "SendEmailOnCreation", "Accountid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlineByTimeRange_Request), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlineByTimeRange_Request.Parser, new[]{ "Type", "StartDate", "EndDate", "IncludeComplete", "StoreItemType", "StoreItemId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlineByTimeRange_Response), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlineByTimeRange_Response.Parser, new[]{ "Deadlines" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlineByTimeRange_Response_Result), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlineByTimeRange_Response_Result.Parser, new[]{ "Deadlineid", "Data" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Request), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Request.Parser, new[]{ "Partnerid", "StartDate", "EndDate", "IncludeComplete" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Request), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Request.Parser, new[]{ "Partnerid", "StartDate", "EndDate", "IncludeComplete", "LookupKey", "Accountid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Response), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Response.Parser, new[]{ "Deadlines" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Response_Result), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Response_Result.Parser, new[]{ "Deadlineid", "Data" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Response_Result), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline_GetDeadlinesForPartner_Response_Result.Parser, new[]{ "Deadlineid", "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadlineLookUpKey), global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadlineLookUpKey.Parser, new[]{ "Deadlineid", "Partnerid", "Type", "Gid", "StoreItemType", "StoreItemId", "DiscountEventId", "Accountid" }, null, null, null, null)
           }));
     }
     #endregion
@@ -124,6 +131,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       descriptionJsondata_ = other.descriptionJsondata_;
       requiredRights_ = other.requiredRights_;
       sendEmailOnCreation_ = other.sendEmailOnCreation_;
+      accountid_ = other.accountid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -440,6 +448,33 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~512;
     }
 
+    /// <summary>Field number for the "accountid" field.</summary>
+    public const int AccountidFieldNumber = 13;
+    private readonly static uint AccountidDefaultValue = 0;
+
+    private uint accountid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Accountid {
+      get { if ((_hasBits0 & 1024) != 0) { return accountid_; } else { return AccountidDefaultValue; } }
+      set {
+        _hasBits0 |= 1024;
+        accountid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "accountid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAccountid {
+      get { return (_hasBits0 & 1024) != 0; }
+    }
+    /// <summary>Clears the value of the "accountid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAccountid() {
+      _hasBits0 &= ~1024;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -467,6 +502,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (DescriptionJsondata != other.DescriptionJsondata) return false;
       if (RequiredRights != other.RequiredRights) return false;
       if (SendEmailOnCreation != other.SendEmailOnCreation) return false;
+      if (Accountid != other.Accountid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -486,6 +522,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasDescriptionJsondata) hash ^= DescriptionJsondata.GetHashCode();
       if (HasRequiredRights) hash ^= RequiredRights.GetHashCode();
       if (HasSendEmailOnCreation) hash ^= SendEmailOnCreation.GetHashCode();
+      if (HasAccountid) hash ^= Accountid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -549,6 +586,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(96);
         output.WriteBool(SendEmailOnCreation);
       }
+      if (HasAccountid) {
+        output.WriteRawTag(104);
+        output.WriteUInt32(Accountid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -604,6 +645,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(96);
         output.WriteBool(SendEmailOnCreation);
       }
+      if (HasAccountid) {
+        output.WriteRawTag(104);
+        output.WriteUInt32(Accountid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -647,6 +692,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasSendEmailOnCreation) {
         size += 1 + 1;
+      }
+      if (HasAccountid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Accountid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -693,6 +741,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasSendEmailOnCreation) {
         SendEmailOnCreation = other.SendEmailOnCreation;
+      }
+      if (other.HasAccountid) {
+        Accountid = other.Accountid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -762,6 +813,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             SendEmailOnCreation = input.ReadBool();
             break;
           }
+          case 104: {
+            Accountid = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -828,6 +883,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 96: {
             SendEmailOnCreation = input.ReadBool();
+            break;
+          }
+          case 104: {
+            Accountid = input.ReadUInt32();
             break;
           }
         }
@@ -1801,6 +1860,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
       startDate_ = other.startDate_;
       endDate_ = other.endDate_;
       includeComplete_ = other.includeComplete_;
+      lookupKey_ = other.lookupKey_.Clone();
+      accountid_ = other.accountid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1918,6 +1979,44 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~8;
     }
 
+    /// <summary>Field number for the "lookup_key" field.</summary>
+    public const int LookupKeyFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadlineLookUpKey> _repeated_lookupKey_codec
+        = pb::FieldCodec.ForMessage(42, global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadlineLookUpKey.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadlineLookUpKey> lookupKey_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadlineLookUpKey>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadlineLookUpKey> LookupKey {
+      get { return lookupKey_; }
+    }
+
+    /// <summary>Field number for the "accountid" field.</summary>
+    public const int AccountidFieldNumber = 6;
+    private readonly static uint AccountidDefaultValue = 0;
+
+    private uint accountid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Accountid {
+      get { if ((_hasBits0 & 16) != 0) { return accountid_; } else { return AccountidDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        accountid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "accountid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAccountid {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "accountid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAccountid() {
+      _hasBits0 &= ~16;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1937,6 +2036,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (StartDate != other.StartDate) return false;
       if (EndDate != other.EndDate) return false;
       if (IncludeComplete != other.IncludeComplete) return false;
+      if(!lookupKey_.Equals(other.lookupKey_)) return false;
+      if (Accountid != other.Accountid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1948,6 +2049,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasStartDate) hash ^= StartDate.GetHashCode();
       if (HasEndDate) hash ^= EndDate.GetHashCode();
       if (HasIncludeComplete) hash ^= IncludeComplete.GetHashCode();
+      hash ^= lookupKey_.GetHashCode();
+      if (HasAccountid) hash ^= Accountid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1982,6 +2085,11 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(32);
         output.WriteBool(IncludeComplete);
       }
+      lookupKey_.WriteTo(output, _repeated_lookupKey_codec);
+      if (HasAccountid) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(Accountid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2008,6 +2116,11 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(32);
         output.WriteBool(IncludeComplete);
       }
+      lookupKey_.WriteTo(ref output, _repeated_lookupKey_codec);
+      if (HasAccountid) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(Accountid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2029,6 +2142,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasIncludeComplete) {
         size += 1 + 1;
+      }
+      size += lookupKey_.CalculateSize(_repeated_lookupKey_codec);
+      if (HasAccountid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Accountid);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2053,6 +2170,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasIncludeComplete) {
         IncludeComplete = other.IncludeComplete;
+      }
+      lookupKey_.Add(other.lookupKey_);
+      if (other.HasAccountid) {
+        Accountid = other.Accountid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2089,6 +2210,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
             IncludeComplete = input.ReadBool();
             break;
           }
+          case 42: {
+            lookupKey_.AddEntriesFrom(input, _repeated_lookupKey_codec);
+            break;
+          }
+          case 48: {
+            Accountid = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -2122,6 +2251,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 32: {
             IncludeComplete = input.ReadBool();
+            break;
+          }
+          case 42: {
+            lookupKey_.AddEntriesFrom(ref input, _repeated_lookupKey_codec);
+            break;
+          }
+          case 48: {
+            Accountid = input.ReadUInt32();
             break;
           }
         }
@@ -2570,6 +2707,585 @@ namespace OpenSteamworks.Protobuf.WebUI {
               Data = new global::OpenSteamworks.Protobuf.WebUI.CPartnerDeadline();
             }
             input.ReadMessage(Data);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CPartnerDeadlineLookUpKey : pb::IMessage<CPartnerDeadlineLookUpKey>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CPartnerDeadlineLookUpKey> _parser = new pb::MessageParser<CPartnerDeadlineLookUpKey>(() => new CPartnerDeadlineLookUpKey());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CPartnerDeadlineLookUpKey> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePartnerdeadlineReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPartnerDeadlineLookUpKey() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPartnerDeadlineLookUpKey(CPartnerDeadlineLookUpKey other) : this() {
+      _hasBits0 = other._hasBits0;
+      deadlineid_ = other.deadlineid_;
+      partnerid_ = other.partnerid_;
+      type_ = other.type_;
+      gid_ = other.gid_;
+      storeItemType_ = other.storeItemType_;
+      storeItemId_ = other.storeItemId_;
+      discountEventId_ = other.discountEventId_;
+      accountid_ = other.accountid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPartnerDeadlineLookUpKey Clone() {
+      return new CPartnerDeadlineLookUpKey(this);
+    }
+
+    /// <summary>Field number for the "deadlineid" field.</summary>
+    public const int DeadlineidFieldNumber = 1;
+    private readonly static ulong DeadlineidDefaultValue = 0UL;
+
+    private ulong deadlineid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Deadlineid {
+      get { if ((_hasBits0 & 1) != 0) { return deadlineid_; } else { return DeadlineidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        deadlineid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "deadlineid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDeadlineid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "deadlineid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDeadlineid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "partnerid" field.</summary>
+    public const int PartneridFieldNumber = 2;
+    private readonly static uint PartneridDefaultValue = 0;
+
+    private uint partnerid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Partnerid {
+      get { if ((_hasBits0 & 2) != 0) { return partnerid_; } else { return PartneridDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        partnerid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "partnerid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPartnerid {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "partnerid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPartnerid() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 3;
+    private readonly static int TypeDefaultValue = 0;
+
+    private int type_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Type {
+      get { if ((_hasBits0 & 4) != 0) { return type_; } else { return TypeDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        type_ = value;
+      }
+    }
+    /// <summary>Gets whether the "type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasType {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearType() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "gid" field.</summary>
+    public const int GidFieldNumber = 4;
+    private readonly static ulong GidDefaultValue = 0UL;
+
+    private ulong gid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Gid {
+      get { if ((_hasBits0 & 8) != 0) { return gid_; } else { return GidDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        gid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "gid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGid {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "gid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGid() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "store_item_type" field.</summary>
+    public const int StoreItemTypeFieldNumber = 5;
+    private readonly static int StoreItemTypeDefaultValue = 0;
+
+    private int storeItemType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int StoreItemType {
+      get { if ((_hasBits0 & 16) != 0) { return storeItemType_; } else { return StoreItemTypeDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        storeItemType_ = value;
+      }
+    }
+    /// <summary>Gets whether the "store_item_type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasStoreItemType {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "store_item_type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearStoreItemType() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "store_item_id" field.</summary>
+    public const int StoreItemIdFieldNumber = 6;
+    private readonly static uint StoreItemIdDefaultValue = 0;
+
+    private uint storeItemId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint StoreItemId {
+      get { if ((_hasBits0 & 32) != 0) { return storeItemId_; } else { return StoreItemIdDefaultValue; } }
+      set {
+        _hasBits0 |= 32;
+        storeItemId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "store_item_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasStoreItemId {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "store_item_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearStoreItemId() {
+      _hasBits0 &= ~32;
+    }
+
+    /// <summary>Field number for the "discount_event_id" field.</summary>
+    public const int DiscountEventIdFieldNumber = 7;
+    private readonly static uint DiscountEventIdDefaultValue = 0;
+
+    private uint discountEventId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint DiscountEventId {
+      get { if ((_hasBits0 & 64) != 0) { return discountEventId_; } else { return DiscountEventIdDefaultValue; } }
+      set {
+        _hasBits0 |= 64;
+        discountEventId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "discount_event_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDiscountEventId {
+      get { return (_hasBits0 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "discount_event_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDiscountEventId() {
+      _hasBits0 &= ~64;
+    }
+
+    /// <summary>Field number for the "accountid" field.</summary>
+    public const int AccountidFieldNumber = 8;
+    private readonly static uint AccountidDefaultValue = 0;
+
+    private uint accountid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Accountid {
+      get { if ((_hasBits0 & 128) != 0) { return accountid_; } else { return AccountidDefaultValue; } }
+      set {
+        _hasBits0 |= 128;
+        accountid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "accountid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAccountid {
+      get { return (_hasBits0 & 128) != 0; }
+    }
+    /// <summary>Clears the value of the "accountid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAccountid() {
+      _hasBits0 &= ~128;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CPartnerDeadlineLookUpKey);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CPartnerDeadlineLookUpKey other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Deadlineid != other.Deadlineid) return false;
+      if (Partnerid != other.Partnerid) return false;
+      if (Type != other.Type) return false;
+      if (Gid != other.Gid) return false;
+      if (StoreItemType != other.StoreItemType) return false;
+      if (StoreItemId != other.StoreItemId) return false;
+      if (DiscountEventId != other.DiscountEventId) return false;
+      if (Accountid != other.Accountid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasDeadlineid) hash ^= Deadlineid.GetHashCode();
+      if (HasPartnerid) hash ^= Partnerid.GetHashCode();
+      if (HasType) hash ^= Type.GetHashCode();
+      if (HasGid) hash ^= Gid.GetHashCode();
+      if (HasStoreItemType) hash ^= StoreItemType.GetHashCode();
+      if (HasStoreItemId) hash ^= StoreItemId.GetHashCode();
+      if (HasDiscountEventId) hash ^= DiscountEventId.GetHashCode();
+      if (HasAccountid) hash ^= Accountid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasDeadlineid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Deadlineid);
+      }
+      if (HasPartnerid) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Partnerid);
+      }
+      if (HasType) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Type);
+      }
+      if (HasGid) {
+        output.WriteRawTag(33);
+        output.WriteFixed64(Gid);
+      }
+      if (HasStoreItemType) {
+        output.WriteRawTag(40);
+        output.WriteInt32(StoreItemType);
+      }
+      if (HasStoreItemId) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(StoreItemId);
+      }
+      if (HasDiscountEventId) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(DiscountEventId);
+      }
+      if (HasAccountid) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(Accountid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasDeadlineid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Deadlineid);
+      }
+      if (HasPartnerid) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Partnerid);
+      }
+      if (HasType) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Type);
+      }
+      if (HasGid) {
+        output.WriteRawTag(33);
+        output.WriteFixed64(Gid);
+      }
+      if (HasStoreItemType) {
+        output.WriteRawTag(40);
+        output.WriteInt32(StoreItemType);
+      }
+      if (HasStoreItemId) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(StoreItemId);
+      }
+      if (HasDiscountEventId) {
+        output.WriteRawTag(56);
+        output.WriteUInt32(DiscountEventId);
+      }
+      if (HasAccountid) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(Accountid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasDeadlineid) {
+        size += 1 + 8;
+      }
+      if (HasPartnerid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Partnerid);
+      }
+      if (HasType) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
+      }
+      if (HasGid) {
+        size += 1 + 8;
+      }
+      if (HasStoreItemType) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StoreItemType);
+      }
+      if (HasStoreItemId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(StoreItemId);
+      }
+      if (HasDiscountEventId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DiscountEventId);
+      }
+      if (HasAccountid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Accountid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CPartnerDeadlineLookUpKey other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasDeadlineid) {
+        Deadlineid = other.Deadlineid;
+      }
+      if (other.HasPartnerid) {
+        Partnerid = other.Partnerid;
+      }
+      if (other.HasType) {
+        Type = other.Type;
+      }
+      if (other.HasGid) {
+        Gid = other.Gid;
+      }
+      if (other.HasStoreItemType) {
+        StoreItemType = other.StoreItemType;
+      }
+      if (other.HasStoreItemId) {
+        StoreItemId = other.StoreItemId;
+      }
+      if (other.HasDiscountEventId) {
+        DiscountEventId = other.DiscountEventId;
+      }
+      if (other.HasAccountid) {
+        Accountid = other.Accountid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Deadlineid = input.ReadFixed64();
+            break;
+          }
+          case 16: {
+            Partnerid = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Type = input.ReadInt32();
+            break;
+          }
+          case 33: {
+            Gid = input.ReadFixed64();
+            break;
+          }
+          case 40: {
+            StoreItemType = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            StoreItemId = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            DiscountEventId = input.ReadUInt32();
+            break;
+          }
+          case 64: {
+            Accountid = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Deadlineid = input.ReadFixed64();
+            break;
+          }
+          case 16: {
+            Partnerid = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Type = input.ReadInt32();
+            break;
+          }
+          case 33: {
+            Gid = input.ReadFixed64();
+            break;
+          }
+          case 40: {
+            StoreItemType = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            StoreItemId = input.ReadUInt32();
+            break;
+          }
+          case 56: {
+            DiscountEventId = input.ReadUInt32();
+            break;
+          }
+          case 64: {
+            Accountid = input.ReadUInt32();
             break;
           }
         }

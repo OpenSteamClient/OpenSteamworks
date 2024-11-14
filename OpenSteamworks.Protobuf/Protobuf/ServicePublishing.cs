@@ -81,75 +81,80 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "Q1B1Ymxpc2hpbmdfR2V0UGFydG5lckFwcE9wdEluRW1haWxEZWZBbmRTdGF0",
             "c19SZXF1ZXN0EhMKC29wdF9pbl9uYW1lGAEgASgJImIKN0NQdWJsaXNoaW5n",
             "X0dldFBhcnRuZXJBcHBPcHRJbkVtYWlsRGVmQW5kU3RhdHNfUmVzcG9uc2US",
-            "JwoEZGVmcxgBIAMoCzIZLkNQYXJ0bmVyQXBwT3B0SW5FbWFpbERlZiJSCitD",
-            "UHVibGlzaGluZ19HZXRQYXJ0bmVyT3B0SW5JbnZpdGVzX1Jlc3BvbnNlEiMK",
-            "BGRhdGEYASADKAsyFS5DUGFydG5lckFwcE9wdEluRGF0YSJICjJDUHVibGlz",
-            "aGluZ19HZXRQYXJ0bmVyUGFpZEdpdmVuUGFja2FnZUxpc3RfUmVxdWVzdBIS",
-            "CgpwYWNrYWdlaWRzGAEgAygNIpABCjNDUHVibGlzaGluZ19HZXRQYXJ0bmVy",
-            "UGFpZEdpdmVuUGFja2FnZUxpc3RfUmVzcG9uc2USWQoEcGFpZBgBIAMoCzJL",
-            "LkNQdWJsaXNoaW5nX0dldFBhcnRuZXJQYWlkR2l2ZW5QYWNrYWdlTGlzdF9S",
-            "ZXNwb25zZV9DUGFja2FnZUFuZFBhcnRuZXJQYWlyInIKSkNQdWJsaXNoaW5n",
-            "X0dldFBhcnRuZXJQYWlkR2l2ZW5QYWNrYWdlTGlzdF9SZXNwb25zZV9DUGFj",
-            "a2FnZUFuZFBhcnRuZXJQYWlyEhEKCXBhcnRuZXJpZBgBIAEoDRIRCglwYWNr",
-            "YWdlaWQYAiABKA0iPgotQ1B1Ymxpc2hpbmdfR2V0U2luZ2xlUGFydG5lckFw",
-            "cE9wdEluc19SZXF1ZXN0Eg0KBWFwcGlkGAEgASgNIlUKLkNQdWJsaXNoaW5n",
-            "X0dldFNpbmdsZVBhcnRuZXJBcHBPcHRJbnNfUmVzcG9uc2USIwoEZGF0YRgB",
-            "IAMoCzIVLkNQYXJ0bmVyQXBwT3B0SW5EYXRhImEKM0NQdWJsaXNoaW5nX1Nl",
-            "bmRQYXJ0bmVyQXBwT3B0SW5FbWFpbEFuZFdhaXRfUmVxdWVzdBIUCgxlbWFp",
-            "bF9kZWZfaWQYASABKAYSFAoMZm9yY2VfcmVzZW5kGAIgASgIImQKNENQdWJs",
-            "aXNoaW5nX1NlbmRQYXJ0bmVyQXBwT3B0SW5FbWFpbEFuZFdhaXRfUmVzcG9u",
-            "c2USLAoHcmVzdWx0cxgBIAEoCzIbLkNQYXJ0bmVyQXBwT3B0SW5FbWFpbFN0",
-            "YXRzInwKMUNQdWJsaXNoaW5nX1NldEZlYXR1cmluZ09uUGFydG5lckFwcE9w",
-            "dEluX1JlcXVlc3QSDgoGYXBwaWRzGAEgAygNEiIKFGFkZGl0aW9uYWxfZmVh",
-            "dHVyaW5nGAIgASgIOgR0cnVlEhMKC29wdF9pbl9uYW1lGAMgASgJIkQKMkNQ",
-            "dWJsaXNoaW5nX1NldEZlYXR1cmluZ09uUGFydG5lckFwcE9wdEluX1Jlc3Bv",
-            "bnNlEg4KBmFwcGlkcxgBIAMoDSJqCjBDUHVibGlzaGluZ19UZXN0RmlyZVBh",
-            "cnRuZXJBcHBPcHRJbkVtYWlsX1JlcXVlc3QSFAoMZW1haWxfZGVmX2lkGAEg",
-            "ASgGEg0KBWFwcGlkGAIgASgNEhEKCXBhcnRuZXJpZBgDIAEoDSIzCjFDUHVi",
-            "bGlzaGluZ19UZXN0RmlyZVBhcnRuZXJBcHBPcHRJbkVtYWlsX1Jlc3BvbnNl",
-            "ItUBCi5DUHVibGlzaGluZ19VcGRhdGVQYXJ0bmVyQXBwT3B0SW5FbWFpbF9S",
-            "ZXF1ZXN0EhQKDGVtYWlsX2RlZl9pZBgBIAEoBhIWCg50YXJnZXRpbmdfZmxh",
-            "ZxgCIAEoBhIVCg1zZXR0aW5nc19mbGFnGAMgASgGEhcKD2VtYWlsX3RlbXBs",
-            "YXRlcxgEIAEoCRIWCgtzdGFydF9ydGltZRgFIAEoDToBMBIUCgllbmRfcnRp",
-            "bWUYBiABKA06ATASFwoIcmV2aWV3ZWQYByABKAg6BWZhbHNlIjEKL0NQdWJs",
-            "aXNoaW5nX1VwZGF0ZVBhcnRuZXJBcHBPcHRJbkVtYWlsX1Jlc3BvbnNlMrkM",
-            "CgpQdWJsaXNoaW5nEoABChtDcmVhdGVQYXJ0bmVyQXBwT3B0SW5FbWFpbHMS",
-            "Ly5DUHVibGlzaGluZ19DcmVhdGVQYXJ0bmVyQXBwT3B0SW5FbWFpbF9SZXF1",
-            "ZXN0GjAuQ1B1Ymxpc2hpbmdfQ3JlYXRlUGFydG5lckFwcE9wdEluRW1haWxf",
-            "UmVzcG9uc2USjgEKH0dldEVzdGltYXRlUGFydG5lckFwcE9wdEluRW1haWwS",
-            "NC5DUHVibGlzaGluZ19HZXRFc3RpbWF0ZVBhcnRuZXJBcHBPcHRJbkVtYWls",
-            "X1JlcXVlc3QaNS5DUHVibGlzaGluZ19HZXRFc3RpbWF0ZVBhcnRuZXJBcHBP",
-            "cHRJbkVtYWlsX1Jlc3BvbnNlEoIBChtHZXRPcHRJbkFwcGVhbHNTdW1tYXJ5",
-            "U3RhdHMSMC5DUHVibGlzaGluZ19HZXRPcHRJbkFwcGVhbHNTdW1tYXJ5U3Rh",
-            "dHNfUmVxdWVzdBoxLkNQdWJsaXNoaW5nX0dldE9wdEluQXBwZWFsc1N1bW1h",
-            "cnlTdGF0c19SZXNwb25zZRJwChVHZXRPcHRJbkVtYWlsVHJhY2tpbmcSKi5D",
-            "UHVibGlzaGluZ19HZXRPcHRJbkVtYWlsVHJhY2tpbmdfUmVxdWVzdBorLkNQ",
-            "dWJsaXNoaW5nX0dldE9wdEluRW1haWxUcmFja2luZ19SZXNwb25zZRKXAQoi",
-            "R2V0UGFydG5lckFwcE9wdEluRW1haWxEZWZBbmRTdGF0cxI3LkNQdWJsaXNo",
-            "aW5nX0dldFBhcnRuZXJBcHBPcHRJbkVtYWlsRGVmQW5kU3RhdHNfUmVxdWVz",
-            "dBo4LkNQdWJsaXNoaW5nX0dldFBhcnRuZXJBcHBPcHRJbkVtYWlsRGVmQW5k",
-            "U3RhdHNfUmVzcG9uc2USVwoWR2V0UGFydG5lck9wdEluSW52aXRlcxIPLk5v",
-            "dEltcGxlbWVudGVkGiwuQ1B1Ymxpc2hpbmdfR2V0UGFydG5lck9wdEluSW52",
-            "aXRlc19SZXNwb25zZRKLAQoeR2V0UGFydG5lclBhaWRHaXZlblBhY2thZ2VM",
-            "aXN0EjMuQ1B1Ymxpc2hpbmdfR2V0UGFydG5lclBhaWRHaXZlblBhY2thZ2VM",
-            "aXN0X1JlcXVlc3QaNC5DUHVibGlzaGluZ19HZXRQYXJ0bmVyUGFpZEdpdmVu",
-            "UGFja2FnZUxpc3RfUmVzcG9uc2USewoYR2V0U2luZ2xlUGFydG5lckFwcE9w",
-            "dEluEi4uQ1B1Ymxpc2hpbmdfR2V0U2luZ2xlUGFydG5lckFwcE9wdEluc19S",
-            "ZXF1ZXN0Gi8uQ1B1Ymxpc2hpbmdfR2V0U2luZ2xlUGFydG5lckFwcE9wdElu",
-            "c19SZXNwb25zZRKLAQocU2VuZFBhcnRuZXJPcHRJbkVtYWlsQW5kV2FpdBI0",
-            "LkNQdWJsaXNoaW5nX1NlbmRQYXJ0bmVyQXBwT3B0SW5FbWFpbEFuZFdhaXRf",
-            "UmVxdWVzdBo1LkNQdWJsaXNoaW5nX1NlbmRQYXJ0bmVyQXBwT3B0SW5FbWFp",
-            "bEFuZFdhaXRfUmVzcG9uc2USiAEKHVNldEZlYXR1cmluZ09uUGFydG5lckFw",
-            "cE9wdEluEjIuQ1B1Ymxpc2hpbmdfU2V0RmVhdHVyaW5nT25QYXJ0bmVyQXBw",
-            "T3B0SW5fUmVxdWVzdBozLkNQdWJsaXNoaW5nX1NldEZlYXR1cmluZ09uUGFy",
-            "dG5lckFwcE9wdEluX1Jlc3BvbnNlEoUBChxUZXN0RmlyZVBhcnRuZXJBcHBP",
-            "cHRJbkVtYWlsEjEuQ1B1Ymxpc2hpbmdfVGVzdEZpcmVQYXJ0bmVyQXBwT3B0",
-            "SW5FbWFpbF9SZXF1ZXN0GjIuQ1B1Ymxpc2hpbmdfVGVzdEZpcmVQYXJ0bmVy",
-            "QXBwT3B0SW5FbWFpbF9SZXNwb25zZRKAAQobVXBkYXRlUGFydG5lckFwcE9w",
-            "dEluRW1haWxzEi8uQ1B1Ymxpc2hpbmdfVXBkYXRlUGFydG5lckFwcE9wdElu",
-            "RW1haWxfUmVxdWVzdBowLkNQdWJsaXNoaW5nX1VwZGF0ZVBhcnRuZXJBcHBP",
-            "cHRJbkVtYWlsX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1",
-            "Zi5XZWJVSQ=="));
+            "JwoEZGVmcxgBIAMoCzIZLkNQYXJ0bmVyQXBwT3B0SW5FbWFpbERlZiJBCipD",
+            "UHVibGlzaGluZ19HZXRQYXJ0bmVyQXBwT3B0SW5zSURzX1JlcXVlc3QSEwoL",
+            "b3B0X2luX25hbWUYASABKAkiRgorQ1B1Ymxpc2hpbmdfR2V0UGFydG5lckFw",
+            "cE9wdEluc0lEc19SZXNwb25zZRIXCg9vcHRlZF9pbl9hcHBpZHMYASADKA0i",
+            "UgorQ1B1Ymxpc2hpbmdfR2V0UGFydG5lck9wdEluSW52aXRlc19SZXNwb25z",
+            "ZRIjCgRkYXRhGAEgAygLMhUuQ1BhcnRuZXJBcHBPcHRJbkRhdGEiSAoyQ1B1",
+            "Ymxpc2hpbmdfR2V0UGFydG5lclBhaWRHaXZlblBhY2thZ2VMaXN0X1JlcXVl",
+            "c3QSEgoKcGFja2FnZWlkcxgBIAMoDSKQAQozQ1B1Ymxpc2hpbmdfR2V0UGFy",
+            "dG5lclBhaWRHaXZlblBhY2thZ2VMaXN0X1Jlc3BvbnNlElkKBHBhaWQYASAD",
+            "KAsySy5DUHVibGlzaGluZ19HZXRQYXJ0bmVyUGFpZEdpdmVuUGFja2FnZUxp",
+            "c3RfUmVzcG9uc2VfQ1BhY2thZ2VBbmRQYXJ0bmVyUGFpciJyCkpDUHVibGlz",
+            "aGluZ19HZXRQYXJ0bmVyUGFpZEdpdmVuUGFja2FnZUxpc3RfUmVzcG9uc2Vf",
+            "Q1BhY2thZ2VBbmRQYXJ0bmVyUGFpchIRCglwYXJ0bmVyaWQYASABKA0SEQoJ",
+            "cGFja2FnZWlkGAIgASgNIj4KLUNQdWJsaXNoaW5nX0dldFNpbmdsZVBhcnRu",
+            "ZXJBcHBPcHRJbnNfUmVxdWVzdBINCgVhcHBpZBgBIAEoDSJVCi5DUHVibGlz",
+            "aGluZ19HZXRTaW5nbGVQYXJ0bmVyQXBwT3B0SW5zX1Jlc3BvbnNlEiMKBGRh",
+            "dGEYASADKAsyFS5DUGFydG5lckFwcE9wdEluRGF0YSJhCjNDUHVibGlzaGlu",
+            "Z19TZW5kUGFydG5lckFwcE9wdEluRW1haWxBbmRXYWl0X1JlcXVlc3QSFAoM",
+            "ZW1haWxfZGVmX2lkGAEgASgGEhQKDGZvcmNlX3Jlc2VuZBgCIAEoCCJkCjRD",
+            "UHVibGlzaGluZ19TZW5kUGFydG5lckFwcE9wdEluRW1haWxBbmRXYWl0X1Jl",
+            "c3BvbnNlEiwKB3Jlc3VsdHMYASABKAsyGy5DUGFydG5lckFwcE9wdEluRW1h",
+            "aWxTdGF0cyJ8CjFDUHVibGlzaGluZ19TZXRGZWF0dXJpbmdPblBhcnRuZXJB",
+            "cHBPcHRJbl9SZXF1ZXN0Eg4KBmFwcGlkcxgBIAMoDRIiChRhZGRpdGlvbmFs",
+            "X2ZlYXR1cmluZxgCIAEoCDoEdHJ1ZRITCgtvcHRfaW5fbmFtZRgDIAEoCSJE",
+            "CjJDUHVibGlzaGluZ19TZXRGZWF0dXJpbmdPblBhcnRuZXJBcHBPcHRJbl9S",
+            "ZXNwb25zZRIOCgZhcHBpZHMYASADKA0iagowQ1B1Ymxpc2hpbmdfVGVzdEZp",
+            "cmVQYXJ0bmVyQXBwT3B0SW5FbWFpbF9SZXF1ZXN0EhQKDGVtYWlsX2RlZl9p",
+            "ZBgBIAEoBhINCgVhcHBpZBgCIAEoDRIRCglwYXJ0bmVyaWQYAyABKA0iMwox",
+            "Q1B1Ymxpc2hpbmdfVGVzdEZpcmVQYXJ0bmVyQXBwT3B0SW5FbWFpbF9SZXNw",
+            "b25zZSLVAQouQ1B1Ymxpc2hpbmdfVXBkYXRlUGFydG5lckFwcE9wdEluRW1h",
+            "aWxfUmVxdWVzdBIUCgxlbWFpbF9kZWZfaWQYASABKAYSFgoOdGFyZ2V0aW5n",
+            "X2ZsYWcYAiABKAYSFQoNc2V0dGluZ3NfZmxhZxgDIAEoBhIXCg9lbWFpbF90",
+            "ZW1wbGF0ZXMYBCABKAkSFgoLc3RhcnRfcnRpbWUYBSABKA06ATASFAoJZW5k",
+            "X3J0aW1lGAYgASgNOgEwEhcKCHJldmlld2VkGAcgASgIOgVmYWxzZSIxCi9D",
+            "UHVibGlzaGluZ19VcGRhdGVQYXJ0bmVyQXBwT3B0SW5FbWFpbF9SZXNwb25z",
+            "ZTKuDQoKUHVibGlzaGluZxKAAQobQ3JlYXRlUGFydG5lckFwcE9wdEluRW1h",
+            "aWxzEi8uQ1B1Ymxpc2hpbmdfQ3JlYXRlUGFydG5lckFwcE9wdEluRW1haWxf",
+            "UmVxdWVzdBowLkNQdWJsaXNoaW5nX0NyZWF0ZVBhcnRuZXJBcHBPcHRJbkVt",
+            "YWlsX1Jlc3BvbnNlEo4BCh9HZXRFc3RpbWF0ZVBhcnRuZXJBcHBPcHRJbkVt",
+            "YWlsEjQuQ1B1Ymxpc2hpbmdfR2V0RXN0aW1hdGVQYXJ0bmVyQXBwT3B0SW5F",
+            "bWFpbF9SZXF1ZXN0GjUuQ1B1Ymxpc2hpbmdfR2V0RXN0aW1hdGVQYXJ0bmVy",
+            "QXBwT3B0SW5FbWFpbF9SZXNwb25zZRKCAQobR2V0T3B0SW5BcHBlYWxzU3Vt",
+            "bWFyeVN0YXRzEjAuQ1B1Ymxpc2hpbmdfR2V0T3B0SW5BcHBlYWxzU3VtbWFy",
+            "eVN0YXRzX1JlcXVlc3QaMS5DUHVibGlzaGluZ19HZXRPcHRJbkFwcGVhbHNT",
+            "dW1tYXJ5U3RhdHNfUmVzcG9uc2UScAoVR2V0T3B0SW5FbWFpbFRyYWNraW5n",
+            "EiouQ1B1Ymxpc2hpbmdfR2V0T3B0SW5FbWFpbFRyYWNraW5nX1JlcXVlc3Qa",
+            "Ky5DUHVibGlzaGluZ19HZXRPcHRJbkVtYWlsVHJhY2tpbmdfUmVzcG9uc2US",
+            "lwEKIkdldFBhcnRuZXJBcHBPcHRJbkVtYWlsRGVmQW5kU3RhdHMSNy5DUHVi",
+            "bGlzaGluZ19HZXRQYXJ0bmVyQXBwT3B0SW5FbWFpbERlZkFuZFN0YXRzX1Jl",
+            "cXVlc3QaOC5DUHVibGlzaGluZ19HZXRQYXJ0bmVyQXBwT3B0SW5FbWFpbERl",
+            "ZkFuZFN0YXRzX1Jlc3BvbnNlEnMKFkdldFBhcnRuZXJBcHBPcHRJbnNJRHMS",
+            "Ky5DUHVibGlzaGluZ19HZXRQYXJ0bmVyQXBwT3B0SW5zSURzX1JlcXVlc3Qa",
+            "LC5DUHVibGlzaGluZ19HZXRQYXJ0bmVyQXBwT3B0SW5zSURzX1Jlc3BvbnNl",
+            "ElcKFkdldFBhcnRuZXJPcHRJbkludml0ZXMSDy5Ob3RJbXBsZW1lbnRlZBos",
+            "LkNQdWJsaXNoaW5nX0dldFBhcnRuZXJPcHRJbkludml0ZXNfUmVzcG9uc2US",
+            "iwEKHkdldFBhcnRuZXJQYWlkR2l2ZW5QYWNrYWdlTGlzdBIzLkNQdWJsaXNo",
+            "aW5nX0dldFBhcnRuZXJQYWlkR2l2ZW5QYWNrYWdlTGlzdF9SZXF1ZXN0GjQu",
+            "Q1B1Ymxpc2hpbmdfR2V0UGFydG5lclBhaWRHaXZlblBhY2thZ2VMaXN0X1Jl",
+            "c3BvbnNlEnsKGEdldFNpbmdsZVBhcnRuZXJBcHBPcHRJbhIuLkNQdWJsaXNo",
+            "aW5nX0dldFNpbmdsZVBhcnRuZXJBcHBPcHRJbnNfUmVxdWVzdBovLkNQdWJs",
+            "aXNoaW5nX0dldFNpbmdsZVBhcnRuZXJBcHBPcHRJbnNfUmVzcG9uc2USiwEK",
+            "HFNlbmRQYXJ0bmVyT3B0SW5FbWFpbEFuZFdhaXQSNC5DUHVibGlzaGluZ19T",
+            "ZW5kUGFydG5lckFwcE9wdEluRW1haWxBbmRXYWl0X1JlcXVlc3QaNS5DUHVi",
+            "bGlzaGluZ19TZW5kUGFydG5lckFwcE9wdEluRW1haWxBbmRXYWl0X1Jlc3Bv",
+            "bnNlEogBCh1TZXRGZWF0dXJpbmdPblBhcnRuZXJBcHBPcHRJbhIyLkNQdWJs",
+            "aXNoaW5nX1NldEZlYXR1cmluZ09uUGFydG5lckFwcE9wdEluX1JlcXVlc3Qa",
+            "My5DUHVibGlzaGluZ19TZXRGZWF0dXJpbmdPblBhcnRuZXJBcHBPcHRJbl9S",
+            "ZXNwb25zZRKFAQocVGVzdEZpcmVQYXJ0bmVyQXBwT3B0SW5FbWFpbBIxLkNQ",
+            "dWJsaXNoaW5nX1Rlc3RGaXJlUGFydG5lckFwcE9wdEluRW1haWxfUmVxdWVz",
+            "dBoyLkNQdWJsaXNoaW5nX1Rlc3RGaXJlUGFydG5lckFwcE9wdEluRW1haWxf",
+            "UmVzcG9uc2USgAEKG1VwZGF0ZVBhcnRuZXJBcHBPcHRJbkVtYWlscxIvLkNQ",
+            "dWJsaXNoaW5nX1VwZGF0ZVBhcnRuZXJBcHBPcHRJbkVtYWlsX1JlcXVlc3Qa",
+            "MC5DUHVibGlzaGluZ19VcGRhdGVQYXJ0bmVyQXBwT3B0SW5FbWFpbF9SZXNw",
+            "b25zZUIgqgIdT3BlblN0ZWFtd29ya3MuUHJvdG9idWYuV2ViVUk="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -168,6 +173,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetOptInEmailTracking_Response), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetOptInEmailTracking_Response.Parser, new[]{ "EmailDefId", "Results" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInEmailDefAndStats_Request), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInEmailDefAndStats_Request.Parser, new[]{ "OptInName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInEmailDefAndStats_Response), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInEmailDefAndStats_Response.Parser, new[]{ "Defs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInsIDs_Request), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInsIDs_Request.Parser, new[]{ "OptInName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInsIDs_Response), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerAppOptInsIDs_Response.Parser, new[]{ "OptedInAppids" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerOptInInvites_Response), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerOptInInvites_Response.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerPaidGivenPackageList_Request), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerPaidGivenPackageList_Request.Parser, new[]{ "Packageids" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerPaidGivenPackageList_Response), global::OpenSteamworks.Protobuf.WebUI.CPublishing_GetPartnerPaidGivenPackageList_Response.Parser, new[]{ "Paid" }, null, null, null, null),
@@ -6296,6 +6303,407 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CPublishing_GetPartnerAppOptInsIDs_Request : pb::IMessage<CPublishing_GetPartnerAppOptInsIDs_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CPublishing_GetPartnerAppOptInsIDs_Request> _parser = new pb::MessageParser<CPublishing_GetPartnerAppOptInsIDs_Request>(() => new CPublishing_GetPartnerAppOptInsIDs_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CPublishing_GetPartnerAppOptInsIDs_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPublishing_GetPartnerAppOptInsIDs_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPublishing_GetPartnerAppOptInsIDs_Request(CPublishing_GetPartnerAppOptInsIDs_Request other) : this() {
+      optInName_ = other.optInName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPublishing_GetPartnerAppOptInsIDs_Request Clone() {
+      return new CPublishing_GetPartnerAppOptInsIDs_Request(this);
+    }
+
+    /// <summary>Field number for the "opt_in_name" field.</summary>
+    public const int OptInNameFieldNumber = 1;
+    private readonly static string OptInNameDefaultValue = "";
+
+    private string optInName_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OptInName {
+      get { return optInName_ ?? OptInNameDefaultValue; }
+      set {
+        optInName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "opt_in_name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOptInName {
+      get { return optInName_ != null; }
+    }
+    /// <summary>Clears the value of the "opt_in_name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOptInName() {
+      optInName_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CPublishing_GetPartnerAppOptInsIDs_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CPublishing_GetPartnerAppOptInsIDs_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OptInName != other.OptInName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasOptInName) hash ^= OptInName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasOptInName) {
+        output.WriteRawTag(10);
+        output.WriteString(OptInName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasOptInName) {
+        output.WriteRawTag(10);
+        output.WriteString(OptInName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasOptInName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OptInName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CPublishing_GetPartnerAppOptInsIDs_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasOptInName) {
+        OptInName = other.OptInName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            OptInName = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            OptInName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CPublishing_GetPartnerAppOptInsIDs_Response : pb::IMessage<CPublishing_GetPartnerAppOptInsIDs_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CPublishing_GetPartnerAppOptInsIDs_Response> _parser = new pb::MessageParser<CPublishing_GetPartnerAppOptInsIDs_Response>(() => new CPublishing_GetPartnerAppOptInsIDs_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CPublishing_GetPartnerAppOptInsIDs_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPublishing_GetPartnerAppOptInsIDs_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPublishing_GetPartnerAppOptInsIDs_Response(CPublishing_GetPartnerAppOptInsIDs_Response other) : this() {
+      optedInAppids_ = other.optedInAppids_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CPublishing_GetPartnerAppOptInsIDs_Response Clone() {
+      return new CPublishing_GetPartnerAppOptInsIDs_Response(this);
+    }
+
+    /// <summary>Field number for the "opted_in_appids" field.</summary>
+    public const int OptedInAppidsFieldNumber = 1;
+    private static readonly pb::FieldCodec<uint> _repeated_optedInAppids_codec
+        = pb::FieldCodec.ForUInt32(8);
+    private readonly pbc::RepeatedField<uint> optedInAppids_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<uint> OptedInAppids {
+      get { return optedInAppids_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CPublishing_GetPartnerAppOptInsIDs_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CPublishing_GetPartnerAppOptInsIDs_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!optedInAppids_.Equals(other.optedInAppids_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= optedInAppids_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      optedInAppids_.WriteTo(output, _repeated_optedInAppids_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      optedInAppids_.WriteTo(ref output, _repeated_optedInAppids_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += optedInAppids_.CalculateSize(_repeated_optedInAppids_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CPublishing_GetPartnerAppOptInsIDs_Response other) {
+      if (other == null) {
+        return;
+      }
+      optedInAppids_.Add(other.optedInAppids_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            optedInAppids_.AddEntriesFrom(input, _repeated_optedInAppids_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            optedInAppids_.AddEntriesFrom(ref input, _repeated_optedInAppids_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CPublishing_GetPartnerOptInInvites_Response : pb::IMessage<CPublishing_GetPartnerOptInInvites_Response>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6310,7 +6718,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[15]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6497,7 +6905,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[16]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6686,7 +7094,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[17]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6874,7 +7282,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[18]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7141,7 +7549,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[19]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7355,7 +7763,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[20]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7543,7 +7951,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[21]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7809,7 +8217,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[22]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8017,7 +8425,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[23]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8310,7 +8718,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[24]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8500,7 +8908,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[25]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8818,7 +9226,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[26]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8980,7 +9388,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[27]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9505,7 +9913,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[28]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServicePublishingReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

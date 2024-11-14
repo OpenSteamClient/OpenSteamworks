@@ -26,7 +26,7 @@ public unsafe interface IClientUtils
     public string GetManagedContentRoot();  // argc: 0, index: 4, ipc args: [], ipc returns: [string]
     public RTime32 GetSecondsSinceAppActive();  // argc: 0, index: 5, ipc args: [], ipc returns: [bytes4]
     public RTime32 GetSecondsSinceComputerActive();  // argc: 0, index: 6, ipc args: [], ipc returns: [bytes4]
-    public void SetComputerActive();  // argc: 0, index: 7, ipc args: [], ipc returns: []
+    public void SetComputerActive();  // argc: 1, index: 7, ipc args: [bytes4], ipc returns: []
     public EUniverse GetConnectedUniverse();  // argc: 0, index: 8, ipc args: [], ipc returns: [bytes4]
     public ESteamRealm GetSteamRealm();  // argc: 0, index: 9, ipc args: [], ipc returns: [bytes4]
     public RTime32 GetServerRealTime();  // argc: 0, index: 10, ipc args: [], ipc returns: [bytes4]

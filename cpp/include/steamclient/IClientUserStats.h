@@ -66,7 +66,7 @@ public:
     virtual bool GetGlobalStat(CGameID nGameID, const char *pchStatName, double *pData) = 0; //argc: 3, index 50
     virtual int32 GetGlobalStatHistory(CGameID nGameID, const char *pchStatName, int64 *pData, uint32 cubData) = 0; //argc: 4, index 51
     virtual int32 GetGlobalStatHistory(CGameID nGameID, const char *pchStatName, double *pData, uint32 cubData) = 0; //argc: 4, index 52
-    virtual bool GetAchievementProgressLimits(CGameID nGameID, const char *pchName, int32 *pnMinProgress, int32 *pnMaxProgress) = 0; // argc: 4, index 53
+    virtual bool GetAchievementProgressLimits(CGameID nGameID, const char *pchName, int32 *pnMinProgress, int32 *pnMaxProgress) = 0; //argc: 4, index 53
     virtual bool GetAchievementProgressLimits(CGameID nGameID, const char *pchName, float *pnMinProgress, float *pnMaxProgress) = 0; //argc: 4, index 54
     virtual unknown_ret BAchievementIconLoaded() = 0; //argc: 3, index 55
 };

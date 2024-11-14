@@ -5,8 +5,8 @@
             "name": "SignInstallScript",
             "argc": "4",
             "interfaceid": "34",
-            "functionid": "3980648269",
-            "fencepost": "4022023472",
+            "functionid": "3980647606",
+            "fencepost": "4021909906",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -21,8 +21,8 @@
             "name": "DRMWrap",
             "argc": "7",
             "interfaceid": "34",
-            "functionid": "437430899",
-            "fencepost": "478822231",
+            "functionid": "437430666",
+            "fencepost": "478709095",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -40,8 +40,8 @@
             "name": "CEGWrap",
             "argc": "5",
             "interfaceid": "34",
-            "functionid": "1355770288",
-            "fencepost": "1397177749",
+            "functionid": "1355770295",
+            "fencepost": "1397064853",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",

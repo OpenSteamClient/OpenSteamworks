@@ -5,8 +5,8 @@
             "name": "AllocateSharedConnection",
             "argc": "1",
             "interfaceid": "44",
-            "functionid": "815678655",
-            "fencepost": "902829230",
+            "functionid": "815677978",
+            "fencepost": "897199532",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
             ],
@@ -18,8 +18,8 @@
             "name": "ReleaseSharedConnection",
             "argc": "2",
             "interfaceid": "44",
-            "functionid": "1808647066",
-            "fencepost": "1895813770",
+            "functionid": "1808647481",
+            "fencepost": "1890185164",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -31,8 +31,8 @@
             "name": "SendMessage",
             "argc": "4",
             "interfaceid": "44",
-            "functionid": "2329349328",
-            "fencepost": "2416628935",
+            "functionid": "2329348621",
+            "fencepost": "2410999207",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -47,8 +47,8 @@
             "name": "SendMessageAndAwaitResponse",
             "argc": "4",
             "interfaceid": "44",
-            "functionid": "2048660414",
-            "fencepost": "2136052924",
+            "functionid": "2048660817",
+            "fencepost": "2130424306",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -63,8 +63,8 @@
             "name": "RegisterEMsgHandler",
             "argc": "3",
             "interfaceid": "44",
-            "functionid": "2709394593",
-            "fencepost": "2796835490",
+            "functionid": "2709394012",
+            "fencepost": "2791205888",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -77,8 +77,8 @@
             "name": "RegisterServiceMethodHandler",
             "argc": "3",
             "interfaceid": "44",
-            "functionid": "3444979895",
-            "fencepost": "3532453050",
+            "functionid": "3444981322",
+            "fencepost": "3526825456",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4",
@@ -91,8 +91,8 @@
             "name": "BPopReceivedMessage",
             "argc": "4",
             "interfaceid": "44",
-            "functionid": "3279629657",
-            "fencepost": "3367199586",
+            "functionid": "3279629244",
+            "fencepost": "3361570152",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
@@ -107,8 +107,8 @@
             "name": "InitiateConnection",
             "argc": "2",
             "interfaceid": "44",
-            "functionid": "2265053591",
-            "fencepost": "2352704165",
+            "functionid": "2265055088",
+            "fencepost": "2347076641",
             "cannotcallincrossprocess": "0",
             "serializedargs": [
                 "bytes4"
