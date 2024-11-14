@@ -5,7 +5,7 @@
 
 #include <minbase/minbase_identify.h>
 
-extern void AssertMsgImpl(bool bFatal, const char *file, int line, const char *msg, ...);
+extern void AssertMsgImpl(const char *file, int line, const char *msg, ...);
 
 #define Assert( x ) \
 do { \

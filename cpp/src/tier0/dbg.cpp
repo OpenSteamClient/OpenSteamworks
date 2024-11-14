@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <stdarg.h>
 
-void AssertMsgImpl(bool bFatal, const char *file, int line, const char *msg, ...)
+void AssertMsgImpl(const char *file, int line, const char *msg, ...)
 {
     char buf[1024];
 	va_list va;
