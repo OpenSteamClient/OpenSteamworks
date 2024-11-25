@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OpenSteamworks.Utils;
 
-public unsafe sealed class PinnedUTF8String : IDisposable {
+internal sealed unsafe class PinnedUTF8String : IDisposable {
 	private readonly PinnedByteArray underlyingBytes;
 	public string CurrentString {
         get => Marshal.PtrToStringUTF8((nint)underlyingBytes.CurrentPtr) ?? string.Empty;

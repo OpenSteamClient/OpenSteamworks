@@ -1,16 +1,14 @@
+using OpenSteamworks.Utils;
+
 namespace OpenSteamworks.Messaging.Header;
 
 public interface IMsgHdr
 {
-    ulong TargetJobID { get; set; }
-    ulong SourceJobID { get; set; }
-    abstract static byte HEADER_SIZE { get; }
-    void Serialize(Stream stream);
-
-    /// <summary>
-    /// Deserializes the header
-    /// </summary>
-    /// <param name="stream"></param>
-    /// <returns>True if the header has extended info</returns>
-    bool Deserialize(Stream stream);
+    internal static abstract byte StaticHeaderSize { get; }
+    
+    public ulong TargetJobID { get; set; }
+    public ulong SourceJobID { get; set; }
+    
+    internal void Serialize(EndianAwareBinaryWriter writer);
+    internal bool Deserialize(EndianAwareBinaryReader reader);
 }

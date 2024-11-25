@@ -6,7 +6,7 @@ using OpenSteamworks.Data.Structs;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1080002)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct DeauthorizeDeviceResult_t
 {
     public EResult m_eResult;

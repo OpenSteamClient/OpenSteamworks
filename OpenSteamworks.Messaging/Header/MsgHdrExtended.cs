@@ -1,39 +1,23 @@
-using System.Runtime.InteropServices;
-using System.Text;
 using OpenSteamworks.Protobuf;
-using OpenSteamworks.Messaging.Header;
 using OpenSteamworks.Utils;
 
-namespace OpenSteamworks.Messaging.Structs;
+namespace OpenSteamworks.Messaging.Header;
 
-public class MsgHdrExtended : IMsgHdr
+public sealed class MsgHdrExtended : IMsgHdr
 {
-    public static byte HEADER_SIZE => sizeof(EMsg) + sizeof(byte) + sizeof(ushort) + sizeof(ulong) + sizeof(ulong) + sizeof(byte) + sizeof(ulong) + sizeof(int);
+    public static byte StaticHeaderSize => sizeof(EMsg) + sizeof(byte) + sizeof(ushort) + sizeof(ulong) + sizeof(ulong) + sizeof(byte) + sizeof(ulong) + sizeof(int);
     public const ushort VER = 2;
     public const byte CANARY = 239;
-    public byte HeaderSize { get; set; }
-    public ushort HeaderVersion { get; set; }
-    public ulong TargetJobID { get; set; }
-    public ulong SourceJobID { get; set; }
-    public byte HeaderCanary { get; set; }
-    public ulong SteamID { get; set; }
-    public int SessionID { get; set; }
+    public byte HeaderSize { get; set; } = StaticHeaderSize;
+    public ushort HeaderVersion { get; set; } = VER;
+    public ulong TargetJobID { get; set; } = ulong.MaxValue;
+    public ulong SourceJobID { get; set; } = ulong.MaxValue;
+    public byte HeaderCanary { get; set; } = CANARY;
+    public ulong SteamID { get; set; } = 0;
+    public int SessionID { get; set; } = 0;
 
-    public MsgHdrExtended()
+    public void Serialize(EndianAwareBinaryWriter writer)
     {
-        HeaderSize = HEADER_SIZE;
-        HeaderVersion = VER;
-        TargetJobID = ulong.MaxValue;
-        SourceJobID = ulong.MaxValue;
-        HeaderCanary = CANARY;
-        SteamID = 0;
-        SessionID = 0;
-    }
-
-    public void Serialize(Stream stream)
-    {
-        using var writer = new EndianAwareBinaryWriter(stream, Encoding.UTF8, true);
-
         writer.Write(HeaderSize);
         writer.Write(HeaderVersion);
         writer.Write(TargetJobID);
@@ -43,10 +27,8 @@ public class MsgHdrExtended : IMsgHdr
         writer.Write(SessionID);
     }
 
-    public bool Deserialize(Stream stream)
+    public bool Deserialize(EndianAwareBinaryReader reader)
     {
-        using var reader = new EndianAwareBinaryReader(stream, Encoding.UTF8, true);
-
         HeaderSize = reader.ReadByte();
         HeaderVersion = reader.ReadUInt16();
         TargetJobID = reader.ReadUInt64();

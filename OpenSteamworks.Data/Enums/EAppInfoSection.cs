@@ -53,3 +53,33 @@ public enum EAppInfoSection : int
     /// </summary>
 	Albummetadata,
 };
+
+public static class EAppInfoSectionExtensions
+{
+	public static string ToAPIString(this EAppInfoSection section)
+	{
+		return section switch
+		{
+			EAppInfoSection.Common => "common",
+			EAppInfoSection.Extended => "extended",
+			EAppInfoSection.Config => "config",
+			EAppInfoSection.Stats => "stats",
+			EAppInfoSection.Install => "install",
+			EAppInfoSection.Depots => "depots",
+			EAppInfoSection.Vac => "vac",
+			EAppInfoSection.Drm => "drm",
+			EAppInfoSection.Ufs => "ufs",
+			EAppInfoSection.Ogg => "ogg",
+			EAppInfoSection.Items => "items",
+			EAppInfoSection.Policies => "policies",
+			EAppInfoSection.Sysreqs => "sysreqs",
+			EAppInfoSection.Community => "community",
+			EAppInfoSection.Store => "store",
+			EAppInfoSection.Localization => "localization",
+			EAppInfoSection.Broadcastgamedata => "broadcastgamedata",
+			EAppInfoSection.Computed => "computed",
+			EAppInfoSection.Albummetadata => "albummetadata",
+			_ => throw new ArgumentOutOfRangeException(nameof(section)),
+		};
+	}
+}

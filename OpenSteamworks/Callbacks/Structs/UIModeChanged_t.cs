@@ -7,7 +7,7 @@ using OpenSteamworks.Data.Structs;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1040029)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct UIModeChanged_t
 {
     public EUIMode m_uiModeOld;

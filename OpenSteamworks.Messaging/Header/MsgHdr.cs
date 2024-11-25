@@ -1,39 +1,28 @@
-using System.Runtime.InteropServices;
-using System.Text;
 using OpenSteamworks.Protobuf;
-using OpenSteamworks.Messaging.Header;
 using OpenSteamworks.Utils;
 
-namespace OpenSteamworks.Messaging.Structs;
+namespace OpenSteamworks.Messaging.Header;
 
-public class MsgHdr : IMsgHdr
+public sealed class MsgHdr : IMsgHdr
 {
-    public static byte HEADER_SIZE => sizeof(EMsg) + sizeof(ulong) + sizeof(ulong);
-    public ulong TargetJobID { get; set; }
-    public ulong SourceJobID { get; set; }
+    public static byte StaticHeaderSize => sizeof(EMsg) + sizeof(ulong) + sizeof(ulong);
+    public ulong TargetJobID { get; set; } = ulong.MaxValue;
+    public ulong SourceJobID { get; set; } = ulong.MaxValue;
 
-    public MsgHdr()
+    public void Serialize(EndianAwareBinaryWriter writer)
     {
-        TargetJobID = ulong.MaxValue;
-        SourceJobID = ulong.MaxValue;
-    }
-
-    public void Serialize(Stream stream)
-    {
-        using var writer = new EndianAwareBinaryWriter(stream, Encoding.UTF8, true);
-
         writer.Write(TargetJobID);
         writer.Write(SourceJobID);
     }
 
-    public bool Deserialize(Stream stream)
+    public bool Deserialize(EndianAwareBinaryReader reader)
     {
-        using var reader = new EndianAwareBinaryReader(stream, Encoding.UTF8, true);
-
         TargetJobID = reader.ReadUInt64();
         SourceJobID = reader.ReadUInt64();
+
+        var stream = reader.BaseStream;
         
-        if ((stream.Length - (stream.Position - 16)) < MsgHdrExtended.HEADER_SIZE) {
+        if ((stream.Length - (stream.Position - 16)) < MsgHdrExtended.StaticHeaderSize) {
             return false;
         }
 

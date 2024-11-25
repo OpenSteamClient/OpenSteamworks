@@ -22,8 +22,18 @@
     <None Include="README.md" Pack="true" PackagePath="\"/>
     <None Include="LICENSE" Pack="true" PackagePath=""/>
   </ItemGroup>
-
+  
   <ItemGroup>
-	  <PackageReference Include="OpenSteamworks" Version="$(CommonVersion)"/>
+    <!-- Always use protobuf nuget as building it is slow and resource consuming.-->
+    <PackageReference Include="OpenSteamworks.Protobuf" Version="$(CommonVersion)"/>
+    <PackageReference Include="OpenSteamworks.Utils" Version="1.0.3"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IsPacking)' != ''">
+    <PackageReference Include="OpenSteamworks.Data" Version="$(CommonVersion)"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IsPacking)' == ''">
+    <ProjectReference Include="../OpenSteamworks.Data/OpenSteamworks.Data.csproj"/>
   </ItemGroup>
 </Project>

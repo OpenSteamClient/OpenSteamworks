@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks", "OpenSteamworks\OpenSteamworks.csproj", "{3C172F64-A9E9-49F4-B6C3-CB5D990904CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.Messaging", "OpenSteamworks.Messaging\OpenSteamworks.Messaging.csproj", "{F912C183-A6D3-4FB0-8774-F54B7DA1D1BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.IPC", "OpenSteamworks.IPC\OpenSteamworks.IPC.csproj", "{8C8D7894-309B-44A1-9FF3-775DDE1A1C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.Protobuf", "OpenSteamworks.Protobuf\OpenSteamworks.Protobuf.csproj", "{A5162D21-9B23-4045-B442-7188463EE8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.Data", "OpenSteamworks.Data\OpenSteamworks.Data.csproj", "{36521CF7-A514-4870-B24C-0E66C3345EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSWTest", "OSWTest\OSWTest.csproj", "{7ABC9B9C-0A45-475A-8EA7-C6A8C643427E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.SourceGen", "OpenSteamworks.SourceGen\OpenSteamworks.SourceGen.csproj", "{3E46613A-BCF5-4711-8B6E-3D5B6BA37FD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.DataSourceGen", "OpenSteamworks.DataSourceGen\OpenSteamworks.DataSourceGen.csproj", "{E0A3E07F-AAFE-4BC6-A6BB-7B518DD14BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CppSourceGen.Generator", "CppSourceGen.Generator\CppSourceGen.Generator.csproj", "{A99B9805-91DB-4FD2-B2DC-6B13B63393AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGeneratorsKit", "SourceGeneratorsKit\SourceGeneratorsKit.csproj", "{E88B5827-FCB4-4D87-AC7F-3F8C01DE7B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.Messaging.SharedConnection", "OpenSteamworks.Messaging.SharedConnection\OpenSteamworks.Messaging.SharedConnection.csproj", "{958D3D1E-BE22-492C-BFB1-510D9B486C4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C172F64-A9E9-49F4-B6C3-CB5D990904CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C172F64-A9E9-49F4-B6C3-CB5D990904CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C172F64-A9E9-49F4-B6C3-CB5D990904CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C172F64-A9E9-49F4-B6C3-CB5D990904CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F912C183-A6D3-4FB0-8774-F54B7DA1D1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F912C183-A6D3-4FB0-8774-F54B7DA1D1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F912C183-A6D3-4FB0-8774-F54B7DA1D1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F912C183-A6D3-4FB0-8774-F54B7DA1D1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C8D7894-309B-44A1-9FF3-775DDE1A1C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8D7894-309B-44A1-9FF3-775DDE1A1C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8D7894-309B-44A1-9FF3-775DDE1A1C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8D7894-309B-44A1-9FF3-775DDE1A1C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5162D21-9B23-4045-B442-7188463EE8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5162D21-9B23-4045-B442-7188463EE8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5162D21-9B23-4045-B442-7188463EE8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5162D21-9B23-4045-B442-7188463EE8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36521CF7-A514-4870-B24C-0E66C3345EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36521CF7-A514-4870-B24C-0E66C3345EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36521CF7-A514-4870-B24C-0E66C3345EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36521CF7-A514-4870-B24C-0E66C3345EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABC9B9C-0A45-475A-8EA7-C6A8C643427E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABC9B9C-0A45-475A-8EA7-C6A8C643427E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABC9B9C-0A45-475A-8EA7-C6A8C643427E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABC9B9C-0A45-475A-8EA7-C6A8C643427E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E46613A-BCF5-4711-8B6E-3D5B6BA37FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E46613A-BCF5-4711-8B6E-3D5B6BA37FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E46613A-BCF5-4711-8B6E-3D5B6BA37FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E46613A-BCF5-4711-8B6E-3D5B6BA37FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A3E07F-AAFE-4BC6-A6BB-7B518DD14BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A3E07F-AAFE-4BC6-A6BB-7B518DD14BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A3E07F-AAFE-4BC6-A6BB-7B518DD14BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A3E07F-AAFE-4BC6-A6BB-7B518DD14BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99B9805-91DB-4FD2-B2DC-6B13B63393AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99B9805-91DB-4FD2-B2DC-6B13B63393AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99B9805-91DB-4FD2-B2DC-6B13B63393AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99B9805-91DB-4FD2-B2DC-6B13B63393AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E88B5827-FCB4-4D87-AC7F-3F8C01DE7B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E88B5827-FCB4-4D87-AC7F-3F8C01DE7B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E88B5827-FCB4-4D87-AC7F-3F8C01DE7B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E88B5827-FCB4-4D87-AC7F-3F8C01DE7B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFEE207-C496-4823-A68C-6BBB95A8D0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFEE207-C496-4823-A68C-6BBB95A8D0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFEE207-C496-4823-A68C-6BBB95A8D0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFEE207-C496-4823-A68C-6BBB95A8D0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958D3D1E-BE22-492C-BFB1-510D9B486C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958D3D1E-BE22-492C-BFB1-510D9B486C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958D3D1E-BE22-492C-BFB1-510D9B486C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958D3D1E-BE22-492C-BFB1-510D9B486C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

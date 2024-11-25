@@ -10,10 +10,11 @@ using System;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data.Structs;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientUserStats
 {
     public UInt32 GetNumStats(in CGameID nGameID);  // argc: 1, index: 1, ipc args: [bytes8], ipc returns: [bytes4]
@@ -24,8 +25,7 @@ public unsafe interface IClientUserStats
     public unknown_ret GetNumAchievements();  // argc: 1, index: 4, ipc args: [bytes8], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public unknown_ret GetAchievementName();  // argc: 2, index: 5, ipc args: [bytes8, bytes4], ipc returns: [string]
-    // WARNING: Arguments are unknown!
-    public unknown_ret RequestCurrentStats();  // argc: 1, index: 6, ipc args: [bytes8], ipc returns: [bytes1]
+    public bool RequestCurrentStats(CGameID gameID);  // argc: 1, index: 6, ipc args: [bytes8], ipc returns: [bytes1]
     public unknown_ret DeprecatedPublic_RequestCurrentStats();  // argc: 1, index: 7, ipc args: [bytes8], ipc returns: [bytes1]
     public unknown_ret GetStat(in CGameID nGameID, string pchName, ref Int32 pData);  // argc: 3, index: 8, ipc args: [bytes8, string], ipc returns: [bytes1, bytes4]
     public unknown_ret GetStat(in CGameID nGameID, string pchName, ref float pData);  // argc: 3, index: 9, ipc args: [bytes8, string], ipc returns: [bytes1, bytes4]
@@ -52,7 +52,7 @@ public unsafe interface IClientUserStats
     // WARNING: Arguments are unknown!
     public unknown_ret IndicateAchievementProgress();  // argc: 4, index: 21, ipc args: [bytes8, string, bytes4, bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret SetMaxStatsLoaded();  // argc: 1, index: 22, ipc args: [bytes4], ipc returns: []
+    public void SetMaxStatsLoaded(int iMaxStats);  // argc: 1, index: 22, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
     public unknown_ret RequestUserStats();  // argc: 3, index: 23, ipc args: [uint64, bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!

@@ -3,11 +3,12 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
-using OpenSteamworks.IPCClient.Interfaces;
+using OpenSteamworks.Data;
+using OpenSteamworks.IPC.Interfaces
 using OpenSteamworks.Messaging;
 using OpenSteamworks.Utils;
 
-namespace OpenSteamworks.IPCClient;
+namespace OpenSteamworks.IPC;
 
 public class FunctionSerializer : IDisposable {
     private readonly MemoryStream stream;

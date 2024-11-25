@@ -9,10 +9,11 @@
 using System;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientControllerSerialized
 {
     // WARNING: Do not use this function! Unknown behaviour will occur!

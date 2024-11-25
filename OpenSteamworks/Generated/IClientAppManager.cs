@@ -13,10 +13,11 @@ using OpenSteamworks.Data.Enums;
 
 using OpenSteamworks.Data.Structs;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientAppManager
 {
     public EAppError InstallApp(AppId_t unAppID, LibraryFolder_t libraryFolder, bool bLegacy);  // argc: 3, index: 1, ipc args: [bytes4, bytes4, bytes1], ipc returns: [bytes4]
@@ -103,27 +104,18 @@ public unsafe interface IClientAppManager
     /// Builds a backup at the specified path. Does not create a subdirectory.
     /// Creates various Disk_XXXX numbered folders, according to ullMaxFileSize, which dictates the maximum size of one disk.
     /// </summary>
-    // WARNING: Arguments are unknown!
     public EAppError BuildBackup(AppId_t unAppID, UInt64 ullMaxFileSize, string cszBackupPath);  // argc: 4, index: 61, ipc args: [bytes4, bytes8, string], ipc returns: [bytes4]
     /// <summary>
     /// This function is meant for people publishing their Steam games as CD installers.
     /// </summary> 
-    // WARNING: Arguments are unknown!
     public EAppError BuildInstaller(string projectFile, string backupPath, string unk, string unk2);  // argc: 4, index: 62, ipc args: [string, string, string, string], ipc returns: [bytes4]
     public bool CancelBackup();  // argc: 0, index: 63, ipc args: [], ipc returns: [bytes1]
     public EAppError RestoreAppFromBackup(AppId_t appid, string pathToBackup);  // argc: 2, index: 64, ipc args: [bytes4, string], ipc returns: [bytes4]
     public EAppError RecoverAppFromFolder(AppId_t appid, string folder);  // argc: 2, index: 65, ipc args: [bytes4, string], ipc returns: [bytes4]
     public EAppError CanMoveApp(AppId_t appid, out AppId_t dependentApp);  // argc: 2, index: 66, ipc args: [bytes4], ipc returns: [bytes4, bytes4]
     public EAppError MoveApp(AppId_t appid, LibraryFolder_t folder);  // argc: 2, index: 67, ipc args: [bytes4, bytes4], ipc returns: [bytes4]
-    // WARNING: Arguments are unknown!
     public bool GetMoveAppProgress(AppId_t appid, out UInt64 unk1, out UInt64 unk2, out uint unk3);  // argc: 4, index: 68, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes8, bytes4]
-    // WARNING: Arguments are unknown!
     public bool CancelMoveApp(AppId_t appid);  // argc: 1, index: 69, ipc args: [bytes4], ipc returns: [bytes1]
-    // WARNING: Arguments are unknown!
-    /// <summary>
-    /// Called by ValveSteam 440 times.
-    /// </summary>
-    /// <returns></returns>
     public bool GetAppStateInfo(AppId_t appid, out AppStateInfo_s state);  // argc: 2, index: 70, ipc args: [bytes4], ipc returns: [bytes1, bytes36]
     [BlacklistedInCrossProcessIPC]
     public bool BGetAppStateInfoForApps(CUtlVector<AppId_t>* apps, CUtlVector<AppStateInfo_s>* states);  // argc: 2, index: 71, ipc args: [bytes4, bytes4], ipc returns: [boolean]

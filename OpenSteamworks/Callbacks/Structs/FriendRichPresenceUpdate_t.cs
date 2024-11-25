@@ -8,7 +8,7 @@ using OpenSteamworks.Data;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(336)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct FriendRichPresenceUpdate_t
 {
 	public CSteamID steamid;

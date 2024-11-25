@@ -6,7 +6,7 @@ using OpenSteamworks.Data;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(3418)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct UserSubscribedItemsListChanged_t 
 {
 	public AppId_t m_nAppID;

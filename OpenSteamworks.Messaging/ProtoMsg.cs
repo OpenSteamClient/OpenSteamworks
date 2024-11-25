@@ -7,10 +7,10 @@ using OpenSteamworks.Utils.Enum;
 
 namespace OpenSteamworks.Messaging;
 
-public class ProtoMsg<T> : ProtoMsgBase, ISerializableMsg where T: IMessage<T>, new()
+public sealed class ProtoMsg<T> : ProtoMsgBase where T: IMessage<T>, new()
 {
     public T Body { get; set; }
-    private readonly MessageParser<T> BodyParser;
+    private readonly MessageParser<T> bodyParser;
 
     /// <summary>
     /// Constructs a new ProtoMsg with a specified service method call.
@@ -25,11 +25,7 @@ public class ProtoMsg<T> : ProtoMsgBase, ISerializableMsg where T: IMessage<T>, 
 
         Header.Steamid = 0;
         this.JobName = jobName;
-        if (unauthenticated) {
-            this.EMsg = EMsg.ServiceMethodCallFromClientNonAuthed;
-        } else {
-            this.EMsg = EMsg.ServiceMethodCallFromClient;
-        }
+        this.EMsg = unauthenticated ? EMsg.ServiceMethodCallFromClientNonAuthed : EMsg.ServiceMethodCallFromClient;
     }
 
     /// <summary>
@@ -44,7 +40,7 @@ public class ProtoMsg<T> : ProtoMsgBase, ISerializableMsg where T: IMessage<T>, 
 
     public ProtoMsg() {
         Body = new();
-        BodyParser = new MessageParser<T>(() => Body);
+        bodyParser = new MessageParser<T>(() => new T());
     }
 
     /// <summary>
@@ -62,56 +58,38 @@ public class ProtoMsg<T> : ProtoMsgBase, ISerializableMsg where T: IMessage<T>, 
     {
         this.Body = body;
     }
-
-    public ProtoMsg(byte[] data) : this() {
-        using var ms = new MemoryStream(data);
-        FillFromStream(ms);
+    
+    /// <summary>
+    /// Constructs a new ProtoMsg by deserializing a serialized message
+    /// </summary>
+    /// <param name="stream"></param>
+    public ProtoMsg(Stream stream) : this() {
+        Deserialize(stream);
     }
-
-    public static ProtoMsg<T> FromBinary(byte[] data) {
-        ProtoMsg<T> msg = new();
-        using var ms = new MemoryStream(data);
-        msg.FillFromStream(ms);
-        return msg;
-    }
-
+    
     [MemberNotNull(nameof(Body))]
-    public override void FillFromStream(Stream stream) {
-        // Read the header
-        base.FillFromStream(stream);
-
-        using var reader = new EndianAwareBinaryReader(stream, Encoding.UTF8, true, Endianness.Little);
-
-        // Read the body
-        var body_size = stream.Length - stream.Position;
-        byte[] body_binary = reader.ReadBytes((int)body_size);
-
-        // Parse the body
-        this.Body = BodyParser.ParseFrom(body_binary);
+    protected override void DeserializeInternal(EndianAwareBinaryReader reader)
+    {
+        base.DeserializeInternal(reader);
+        this.Body = bodyParser.ParseFrom(RawBody);
     }
 
-    public override void Serialize(Stream stream) {
-        using var writer = new EndianAwareBinaryWriter(stream, Encoding.UTF8, true, Endianness.Little);
-
-        // Serialize header
-        base.Serialize(stream);
-
+    protected override void SerializeInternal(EndianAwareBinaryWriter writer)
+    {
         // Serialize body
-        writer.Write(this.Body.ToByteArray());
+        RawBody = Body.ToByteArray();
+        
+        // Base class takes care of the rest
+        base.SerializeInternal(writer);
     }
 
     public override string ToString()
     {
         StringBuilder builder = new();
-        builder.AppendLine(string.Format("Printing message {0}, EMsg: {1}", typeof(T).FullName, this.EMsg));
-        builder.AppendLine("Header: " + this.Header.ToString());
-        builder.AppendLine("Body: " + this.Body.ToString());
+        builder.AppendLine($"Printing message {typeof(T).FullName}");
+        builder.AppendLine($"EMsg: {EMsg}");
+        builder.AppendLine("Header: " + Header);
+        builder.AppendLine("Body: " + Body);
         return builder.ToString();
-    }
-
-    public byte[] Serialize() {
-        using var stream = new MemoryStream();
-        Serialize(stream);
-        return stream.ToArray();
     }
 }

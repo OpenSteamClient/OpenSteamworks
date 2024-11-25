@@ -8,7 +8,7 @@ using OpenSteamworks.Data;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(4507)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct HTML_OpenLinkInNewTab_t
 {
 	public HHTMLBrowser unBrowserHandle;

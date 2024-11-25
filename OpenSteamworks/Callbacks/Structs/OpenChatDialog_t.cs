@@ -7,7 +7,7 @@ using OpenSteamworks.Data.Structs;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1010016)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct OpenChatDialog_t
 {
     public CSteamID ChatID;

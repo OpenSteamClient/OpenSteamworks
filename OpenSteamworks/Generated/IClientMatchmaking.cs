@@ -10,10 +10,11 @@ using System;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Protobuf;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientMatchmaking
 {
     public unknown_ret GetFavoriteGameCount();  // argc: 0, index: 1, ipc args: [], ipc returns: [bytes4]

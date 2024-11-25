@@ -11,6 +11,7 @@ typedef UInt32 HImage;
 typedef UInt32 HHTMLBrowser;
 typedef UInt32 HImage;
 typedef UInt32 HSharedConnection;
+typedef UInt32 HSharedConnectionMsg;
 
 // _t types
 typedef Int32 LibraryFolder_t;

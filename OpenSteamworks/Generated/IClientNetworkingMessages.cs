@@ -8,11 +8,12 @@
 
 using System;
 using OpenSteamworks.Attributes;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
 // This interface doesn't get dumped. What does it contain?
-[CppInterface]
+[CppClass]
 public unsafe interface IClientNetworkingMessages
 {
 

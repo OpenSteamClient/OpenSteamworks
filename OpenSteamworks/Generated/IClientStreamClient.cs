@@ -10,10 +10,11 @@ using System;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Protobuf;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientStreamClient
 {
     // WARNING: Arguments are unknown!

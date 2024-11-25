@@ -18,10 +18,11 @@ using System.Runtime.CompilerServices;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Callbacks.Structs;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientUser
 {
     // WARNING: Do not use this function! Unknown behaviour will occur!
@@ -271,10 +272,8 @@ public unsafe interface IClientUser
     public SteamAPICall_t SendValidationEmail();  // argc: 0, index: 133, ipc args: [], ipc returns: []
     public bool BGameConnectTokensAvailable();  // argc: 0, index: 134, ipc args: [], ipc returns: [boolean]
     public int NumGamesRunning();  // argc: 0, index: 135, ipc args: [], ipc returns: [bytes4]
-    public CGameID GetRunningGameID(int index, int unk);  // argc: 2, index: 136, ipc args: [bytes4], ipc returns: [bytes8]
-    // WARNING: Arguments are unknown!
-    public UInt32 GetRunningGamePID(int index);  // argc: 1, index: 137, ipc args: [bytes4], ipc returns: [bytes4]
-    // WARNING: Arguments are unknown!
+    public CGameID GetRunningGameID(int i);  // argc: 2, index: 136, ipc args: [bytes4], ipc returns: [bytes8]
+    public UInt32 GetRunningGamePID(int i);  // argc: 1, index: 137, ipc args: [bytes4], ipc returns: [bytes4]
     public unknown_ret RaiseWindowForGame(CGameID gameid);  // argc: 1, index: 138, ipc args: [bytes8], ipc returns: [bytes4]
     public UInt32 GetAccountSecurityPolicyFlags();  // argc: 0, index: 139, ipc args: [], ipc returns: [bytes4]
     public bool BSupportUser();  // argc: 0, index: 140, ipc args: [], ipc returns: [boolean]
@@ -292,24 +291,16 @@ public unsafe interface IClientUser
     public unknown_ret GetMicroTxnOrderID(GID_t transactionId);  // argc: 2, index: 149, ipc args: [bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
     public unknown_ret BGetMicroTxnPrice(GID_t transactionId, ref CAmount unk, ref CAmount unk2, ref bool unk3, int unk4);  // argc: 6, index: 150, ipc args: [bytes8], ipc returns: [boolean, bytes12, bytes12, boolean, bytes12]
-    // WARNING: Arguments are unknown!
     public ESteamRealm GetMicroTxnSteamRealm(GID_t transactionId);  // argc: 2, index: 151, ipc args: [bytes8], ipc returns: [bytes4]
-    // WARNING: Arguments are unknown!
-    public unknown_ret GetMicroTxnLineItemCount(GID_t transactionId);  // argc: 2, index: 152, ipc args: [bytes8], ipc returns: [bytes4]
+    public int GetMicroTxnLineItemCount(GID_t transactionId);  // argc: 2, index: 152, ipc args: [bytes8], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public unknown_ret BGetMicroTxnLineItem(GID_t transactionId, uint unk, ref int unk2, ref uint unk3, StringBuilder name, int nameMax, ref int unk4, byte* unk5, ref int unk6, ref bool unk7);  // argc: 11, index: 153, ipc args: [bytes8, bytes4, bytes4], ipc returns: [boolean, bytes12, bytes4, bytes_length_from_mem, bytes4, boolean, bytes12, boolean]
-    // WARNING: Arguments are unknown!
-    public bool BIsSandboxMicroTxn(GID_t transactionId, ref bool unk);  // argc: 3, index: 154, ipc args: [bytes8], ipc returns: [boolean, boolean]
-    // WARNING: Arguments are unknown!
-    public bool BMicroTxnRequiresCachedPmtMethod(GID_t transactionId, ref bool unk);  // argc: 3, index: 155, ipc args: [bytes8], ipc returns: [boolean, boolean]
-    // WARNING: Arguments are unknown!
-    public unknown_ret AuthorizeMicroTxn(GID_t transactionId, int unk);  // argc: 3, index: 156, ipc args: [bytes8, bytes4], ipc returns: [bytes8]
-    // WARNING: Arguments are unknown!
+    public bool BIsSandboxMicroTxn(GID_t transactionId, out bool isSandbox);  // argc: 3, index: 154, ipc args: [bytes8], ipc returns: [boolean, boolean]
+    public bool BMicroTxnRequiresCachedPmtMethod(GID_t transactionId, out bool requiresCachedPmtMethod);  // argc: 3, index: 155, ipc args: [bytes8], ipc returns: [boolean, boolean]
+    public SteamAPICall_t AuthorizeMicroTxn(GID_t transactionId, int unk);  // argc: 3, index: 156, ipc args: [bytes8, bytes4], ipc returns: [bytes8]
     public bool BGetWalletBalance(out bool hasWallet, out CAmount amount, out CAmount amountPending);  // argc: 3, index: 157, ipc args: [], ipc returns: [boolean, boolean, bytes12, bytes12]
-    // WARNING: Arguments are unknown!
-    public unknown_ret RequestMicroTxnInfo(GID_t transactionId);  // argc: 2, index: 158, ipc args: [bytes8], ipc returns: [bytes8]
-    // WARNING: Arguments are unknown!
-    public unknown_ret BMicroTxnRefundable(GID_t transactionId);  // argc: 2, index: 159, ipc args: [bytes8], ipc returns: [boolean]
+    public SteamAPICall_t RequestMicroTxnInfo(GID_t transactionId);  // argc: 2, index: 158, ipc args: [bytes8], ipc returns: [bytes8]
+    public bool BMicroTxnRefundable(GID_t transactionId);  // argc: 2, index: 159, ipc args: [bytes8], ipc returns: [boolean]
     public bool BGetAppMinutesPlayed(AppId_t appid, ref UInt32 allTime, ref UInt32 lastTwoWeeks);  // argc: 3, index: 160, ipc args: [bytes4], ipc returns: [boolean, bytes4, bytes4]
     public RTime32 GetAppLastPlayedTime(AppId_t appid);  // argc: 1, index: 161, ipc args: [bytes4], ipc returns: [bytes4]
     public uint GetAppUpdateDisabledSecondsRemaining(AppId_t appid);  // argc: 1, index: 162, ipc args: [bytes4], ipc returns: [bytes4]
@@ -352,8 +343,7 @@ public unsafe interface IClientUser
     /// <param name="unk">Unknown...</param>
     /// <returns>How many apps the user owns</returns>
     public uint GetSubscribedApps(uint[] arr, uint lengthOfArr, bool unk);  // argc: 3, index: 186, ipc args: [bytes4, bytes1], ipc returns: [bytes4, bytes_length_from_reg]
-    // WARNING: Arguments are unknown!
-    public unknown_ret AckSystemIM(GID_t id);  // argc: 2, index: 187, ipc args: [bytes8], ipc returns: []
+    public void AckSystemIM(GID_t id);  // argc: 2, index: 187, ipc args: [bytes8], ipc returns: []
     // WARNING: Arguments are unknown!
     public unknown_ret RequestSpecialSurvey(uint surveyId);  // argc: 1, index: 188, ipc args: [bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
@@ -470,7 +460,7 @@ public unsafe interface IClientUser
     public AppId_t GetAppIDForGameID(in CGameID gameid);  // argc: 1, index: 250, ipc args: [bytes8], ipc returns: [bytes4]
     public bool BDoNotDisturb();  // argc: 0, index: 251, ipc args: [], ipc returns: [boolean]
     // WARNING: Arguments are unknown!
-    public void SetAdditionalClientArgData(string data);  // argc: 1, index: 252, ipc args: [bytes5], ipc returns: []
+    public void SetAdditionalClientArgData();  // argc: 1, index: 252, ipc args: [bytes5], ipc returns: []
     public ulong GetFamilyGroupID();  // argc: 0, index: 253, ipc args: [], ipc returns: [bytes8]
     public string GetFamilyGroupName();  // argc: 0, index: 254, ipc args: [], ipc returns: [string]
     public uint GetFamilyGroupRole();  // argc: 0, index: 255, ipc args: [], ipc returns: [bytes4]

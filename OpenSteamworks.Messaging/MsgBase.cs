@@ -15,18 +15,49 @@ public abstract class MsgBase : IMessage
     public abstract JobID SourceJobID { get; set; }
     public abstract JobID TargetJobID { get; }
 
-    private byte[] raw = [];
-
-    public virtual void FillFromStream(Stream stream) {
-        using var reader = new EndianAwareBinaryReader(stream, Encoding.UTF8, true, Endianness.Little);
-
-        using (var ms = new MemoryStream())
+    public static unsafe MsgBase GetMsg(ReadOnlySpan<byte> msg) {
+        fixed (byte* ptr = msg)
         {
-            stream.CopyTo(ms);
-            stream.Seek(0, SeekOrigin.Begin);
-            raw = ms.ToArray();
+            using var ms = new UnmanagedMemoryStream(ptr, msg.Length);
+            using var reader = new EndianAwareBinaryReader(ms, Encoding.UTF8, true, Endianness.Little);
+            
+            var emsg = reader.ReadUInt32();
+            ms.Seek(0, SeekOrigin.Begin);
+            
+            if (EMsgUtil.IsProtoBuf(emsg)) {
+                return new ProtoMsgBase(ms);
+            } else {
+                return new StructMsgBase(ms);
+            }
         }
+    }
 
+    protected virtual void SerializeInternal(EndianAwareBinaryWriter writer)
+    {
+        writer.WriteUInt32(EMsgUtil.Make(EMsg, IsProto));
+    }
+    
+    /// <summary>
+    /// Serialize to a stream.
+    /// </summary>
+    /// <param name="stream"></param>
+    public void Serialize(Stream stream) {
+        using var writer = new EndianAwareBinaryWriter(stream, Encoding.UTF8, true, Endianness.Little);
+        SerializeInternal(writer);
+    }
+    
+    /// <summary>
+    /// Serialize to a byte array
+    /// </summary>
+    /// <returns></returns>
+    public byte[] Serialize() {
+        using var stream = new MemoryStream();
+        Serialize(stream);
+        return stream.ToArray();
+    }
+
+    protected virtual void DeserializeInternal(EndianAwareBinaryReader reader)
+    {
         var masked = reader.ReadUInt32();
         if (IsProto && !EMsgUtil.IsProtoBuf(masked)) {
             throw new InvalidOperationException("Tried to fill ProtoMsg with non-proto EMsg");
@@ -34,74 +65,36 @@ public abstract class MsgBase : IMessage
 
         this.EMsg = EMsgUtil.GetTrueEMsg(masked);
     }
-
-    public static MsgBase GetMsg(byte[] msg) {
-        using var ms = new MemoryStream(msg);
-        using var reader = new EndianAwareBinaryReader(ms, Encoding.UTF8, true, Endianness.Little);
-        
-        var emsg = reader.ReadUInt32();
-        if (EMsgUtil.IsProtoBuf(emsg)) {
-            return new ProtoMsgBase(msg);
-        } else {
-            return new StructMsgBase(msg);
-        }
-    }
-
-    public virtual void Serialize(Stream stream) {
-        using var writer = new EndianAwareBinaryWriter(stream, Encoding.UTF8, true, Endianness.Little);
-        writer.WriteUInt32(EMsgUtil.Make(EMsg, IsProto));
-    }
-
-    /// <summary>
-    /// Gets a deserialized message as a protobuf message.
-    /// </summary>
-    /// <exception cref="InvalidOperationException">If the message is not a protobuf message</exception>
-    public ProtoMsg<T> AsProto<T>() where T: Google.Protobuf.IMessage<T>, new() {
-        // In case the user is trying to get a derived class instead
-        if (this is ProtoMsg<T> p) {
-            return p;
-        }
-        
-        if (!IsProto) {
-            throw new InvalidOperationException("Tried to get message as a ProtoMsg, but it's not a protobuf message");
-        }
-
-        var msg = new ProtoMsg<T>();
-        using var stream = new MemoryStream(raw);
-        msg.FillFromStream(stream);
-
-        return msg;
-    }
-
-    /// <summary>
-    /// Gets a deserialized message as a protobuf message.
-    /// </summary>
-    /// <exception cref="InvalidOperationException">If the message is not a protobuf message</exception>
-    public ProtoMsgBase AsProtoBase() {
-        // In case the user is trying to get a derived class instead
-        if (this is ProtoMsgBase p) {
-            return p;
-        }
-
-        if (!IsProto) {
-            throw new InvalidOperationException("Tried to get message as a ProtoMsgBase, but it's not a protobuf message");
-        }
-
-        var msg = new ProtoMsgBase();
-        using var stream = new MemoryStream(raw);
-        msg.FillFromStream(stream);
-
-        return msg;
-    }
-
-    public byte[] ToBinary()
+    
+    public void Deserialize(Stream stream)
     {
-        if (this is ISerializableMsg serializableMsg) {
-            using var stream = new MemoryStream();
-            serializableMsg.Serialize(stream);
-            return stream.ToArray();
-        }
+        using var reader = new EndianAwareBinaryReader(stream, Encoding.UTF8, Endianness.Little);
+        DeserializeInternal(reader);
+    }
 
-        return raw;
+    /// <summary>
+    /// Gets a deserialized message as a protobuf message.
+    /// </summary>
+    /// <exception cref="InvalidOperationException">If the message is not a protobuf message</exception>
+    public virtual ProtoMsgBase AsProtoBase()
+        => throw new InvalidOperationException("Message is not a protobuf message");
+    
+    public virtual StructMsgBase AsStructBase()
+        => throw new InvalidOperationException("Message is not a struct message");
+    
+    /// <summary>
+    /// Gets a deserialized message as a protobuf message.
+    /// </summary>
+    /// <exception cref="InvalidOperationException">If the message is not a protobuf message</exception>
+    public virtual ProtoMsg<T> AsProto<T>() where T: Google.Protobuf.IMessage<T>, new() {
+        throw new InvalidOperationException("Message is not a protobuf message");
+    }
+    
+    /// <summary>
+    /// Gets a deserialized message as a struct message.
+    /// </summary>
+    /// <exception cref="InvalidOperationException">If the message is not a struct message</exception>
+    public virtual StructMsg<T> AsStruct<T>() where T: unmanaged {
+        throw new InvalidOperationException("Message is not a struct message");
     }
 }

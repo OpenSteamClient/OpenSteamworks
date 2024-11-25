@@ -1,13 +1,9 @@
-using System.Text;
 using OpenSteamworks.Protobuf;
-using OpenSteamworks.Messaging.Structs;
-using OpenSteamworks.Utils;
-using OpenSteamworks.Utils.Enum;
 
 namespace OpenSteamworks.Messaging;
 
 public static class EMsgUtil {
-    public const uint PROTOBUF_MASK = 0x80000000;
+    private const uint PROTOBUF_MASK = 0x80000000;
 
     /// <summary>
     /// Check if this eMsg is protobuf or not

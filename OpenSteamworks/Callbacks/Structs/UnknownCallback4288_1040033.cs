@@ -10,7 +10,7 @@ namespace OpenSteamworks.Callbacks.Structs;
 /// Seems to be some sort of job state callback for tracking CJob:s.
 /// </summary>
 [Callback(1040033)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct UnknownCallback4288_1040033
 {
     [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 4288)]

@@ -11,10 +11,11 @@ using OpenSteamworks.Attributes;
 using OpenSteamworks.Data.Enums;
 
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientConfigStore
 {
     public bool IsSet( EConfigStore eConfigStore, string pszKeyNameIn );  // argc: 2, index: 1, ipc args: [bytes4, string], ipc returns: [boolean]

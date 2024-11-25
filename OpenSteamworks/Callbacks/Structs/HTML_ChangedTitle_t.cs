@@ -8,7 +8,7 @@ using OpenSteamworks.Data;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(4508)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct HTML_ChangedTitle_t
 {
 	public HHTMLBrowser unBrowserHandle;

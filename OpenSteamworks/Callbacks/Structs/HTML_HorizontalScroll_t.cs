@@ -8,7 +8,7 @@ using OpenSteamworks.Data;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(4511)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct HTML_HorizontalScroll_t
 {
 	public HHTMLBrowser unBrowserHandle;

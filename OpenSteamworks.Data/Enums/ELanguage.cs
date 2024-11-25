@@ -47,8 +47,8 @@ public static class ELanguageConversion {
         {ELanguage.Italian, "italian"},
         {ELanguage.Korean, "korean"},
         {ELanguage.Spanish, "spanish"},
-        {ELanguage.Simplified_Chinese, "schinese"}, // Is this correct?
-        {ELanguage.Traditional_Chinese, "tchinese"}, // Is this correct?
+        {ELanguage.Simplified_Chinese, "schinese"},
+        {ELanguage.Traditional_Chinese, "tchinese"},
         {ELanguage.Russian, "russian"},
         {ELanguage.Thai, "thai"},
         {ELanguage.Japanese, "japanese"},

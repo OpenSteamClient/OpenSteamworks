@@ -9,10 +9,11 @@
 using System;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientParties
 {
     public unknown_ret GetNumActiveBeacons();  // argc: 0, index: 1, ipc args: [], ipc returns: [bytes4]

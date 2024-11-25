@@ -10,6 +10,8 @@ public enum ERemoteStoragePlatform : uint
     PlatformOSX = 1 << 1,
     PlatformPS3 = 1 << 2,
     PlatformLinux = 1 << 3,
-    PlatformReserved = 1 << 4,
+    PlatformSwitch = 1 << 4,
+    PlatformAndroid = 1 << 5,
+    PlatformIOS = 1 << 6,
     PlatformAll	= uint.MaxValue
 };

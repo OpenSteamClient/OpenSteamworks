@@ -1,6 +1,7 @@
+using OpenSteamworks.Data;
 using OpenSteamworks.Data.Structs;
 
-namespace OpenSteamworks.IPCClient.Interfaces;
+namespace OpenSteamworks.IPC.Interfaces;
 
 public class ClientShortcuts : IPCBaseInterface
 {

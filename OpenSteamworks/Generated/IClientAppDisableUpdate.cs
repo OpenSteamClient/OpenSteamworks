@@ -11,10 +11,11 @@ using System.Text;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Native;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientAppDisableUpdate
 {
     public void SetAppUpdateDisabledSecondsRemaining(AppId_t appId, uint disableLength);  // argc: 2, index: 1, ipc args: [bytes4, bytes4], ipc returns: []

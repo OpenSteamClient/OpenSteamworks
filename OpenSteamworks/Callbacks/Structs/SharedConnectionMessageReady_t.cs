@@ -5,7 +5,7 @@ using OpenSteamworks.Attributes;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1170001)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct SharedConnectionMessageReady_t
 {
 	public UInt32 m_hResult;

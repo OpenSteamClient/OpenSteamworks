@@ -7,7 +7,7 @@ using OpenSteamworks.Data.Structs;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1040018)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct StartVRDashboard_t
 {
 }

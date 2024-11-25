@@ -1,4 +1,4 @@
-namespace OpenSteamworks.IPCClient.Interfaces;
+namespace OpenSteamworks.IPC.Interfaces;
 
 public abstract class IPCBaseInterface {
     internal readonly IPCClient client;

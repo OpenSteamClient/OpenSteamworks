@@ -4,7 +4,7 @@ using OpenSteamworks.Attributes;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1020111)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct ExecuteSteamURL_t {
     public string m_pchSteamURL;
 }

@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageId>OpenSteamworks.Messaging.SharedConnection</PackageId>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/OpenSteamClient/OpenSteamworks</RepositoryUrl>
+
+        <!-- Update the version in Directory.Build.props when you make changes -->
+        <VersionPrefix>$(CommonVersion)</VersionPrefix>
+
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <IsAotCompatible>true</IsAotCompatible>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="README.md" Pack="true" PackagePath="\"/>
+      <None Include="LICENSE" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(IsPacking)' != ''">
+      <PackageReference Include="OpenSteamworks" Version="$(CommonVersion)"/>
+      <PackageReference Include="OpenSteamworks.Messaging" Version="$(CommonVersion)"/>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(IsPacking)' == ''">
+      <ProjectReference Include="..\OpenSteamworks.Messaging\OpenSteamworks.Messaging.csproj" />
+      <ProjectReference Include="..\OpenSteamworks\OpenSteamworks.csproj" />
+    </ItemGroup>
+</Project>

@@ -7,7 +7,7 @@ namespace OpenSteamworks.Utils;
 /// A block of native memory that implements IDisposable, for easy avoidance of memory leaks.
 /// For docs, see NativeMemory (CLR class)
 /// </summary>
-public unsafe sealed class NativeMemoryBlock : IDisposable {
+internal sealed unsafe class NativeMemoryBlock : IDisposable {
 	public bool IsAligned { get; }
 	public void* Ptr { get; }
 

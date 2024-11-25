@@ -16,166 +16,66 @@ using OpenSteamworks.Utils;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
+using OpenSteamClient.Logging;
+using OpenSteamworks.Data;
+using OpenSteamworks.Data.Enums;
 
-namespace OpenSteamworks.IPCClient;
+namespace OpenSteamworks.IPC;
 
-//TODO: Needs Windows support
-public class IPCClient {
-    public enum IPCCommandCode : byte {
-        Interface = 1,
-        SerializeCallbacks = 2,
-        ConnectToGlobalUser = 3,
-        ReleaseGlobalUser = 4,
-        TerminatePipe = 5,
-        Ping = 6,
-        ConnectPipe = 9,
-    }
-
-    public enum IPCResponseCode : byte {
-        SerializeCallbacks = 2,
-        Interface = 11,
-        ConnectToGlobalUser = 3,
-        ReleaseGlobalUser = 4,
-        CallbacksAvailable = 7,
-    }
-
-    /// <summary>
-    /// | size | command | data
-    /// </summary>
-    [StructLayout(LayoutKind.Sequential, Pack = 1)]
-    public struct ClientMsgHeader {
-        public UInt32 DataLength;
-        public IPCCommandCode Command;
-        public unsafe byte[] Serialize() {
-            if (sizeof(ClientMsgHeader) != 5) {
-                throw new Exception("Unexpected size " + sizeof(ClientMsgHeader));
-            }
-
-            byte[] hdr = new byte[sizeof(ClientMsgHeader)];
-            using (var stream = new MemoryStream(hdr))
-            {
-                var writer = new EndianAwareBinaryWriter(stream);
-                writer.WriteUInt32(1 + DataLength);
-                writer.Write((byte)Command);
-            }
-
-            return hdr;
-        }
-    }
-
-    private readonly TcpClient tcpClient;
-    public enum IPCConnectionType {
-        Client,
-        Service
-    }
-
-    public uint IPCCallCount { get; private set; } = 0;
-    public IPCConnectionType ConnectionType { get; private set; }
-    public bool CallbacksAvailable { get; private set; }
-
-    private readonly Thread callbackReadThread;
-    private bool callbackReadThreadShouldRun = true;
-    private bool pipeIsConnected = false;
-    private readonly object serializeLock = new();
-
-    public IPCClient(string ipcService, IPCConnectionType connectionType) {
-        this.callbackReadThread = new(CallbackReadThread);
-        this.ConnectionType = connectionType;
-        IPEndPoint ep = GetEndPointFromName(ipcService);
-        Logging.IPCLogger.Info("Connecting to " + ep.ToString());
-        
-        tcpClient = new TcpClient(ep.Address.ToString(), ep.Port);
-        tcpClient.NoDelay = true;
-
-        Logging.IPCLogger.Info("Connected to " + ep.ToString());
-
-        ConnectToSteamPipe(out uint hostPid);
-        
-        if (connectionType == IPCConnectionType.Client) {
-            ConnectToGlobalUser();
-        }
-
-        this.callbackReadThread.Start();
-    }
-
-    private void CallbackReadThread() {
-        var stream = tcpClient.GetStream();
-        while (callbackReadThreadShouldRun)
-        {
-            if (!tcpClient.Connected) {
-                Shutdown();
-                break;
-            }
-
-           lock (serializeLock)
-           {
-                while (stream.DataAvailable)
-                {
-                    if (!tcpClient.Connected) {
-                        break;
-                    }
+/// <summary>
+/// Represents the base of a connection to a remote IPC service, such as the Steam3Master or SteamClientService.
+/// </summary>
+// TODO: Support different kinds of pipes, such as shared memory pipes, win32 pipes, in-process pipes and so on.
+// Which also means, TODO: Windows support.
+public abstract class IPCClient {
     
-                    var available = tcpClient.Available;
-                    byte[] buf = new byte[available];
-                    stream.Read(buf, 0, available);
-                    HandleData(buf);
-                }
-           }
-        }
+    public int RemotePID { get; private set; }
+    public uint IPCCallCount { get; private set; } = 0;
 
-        callbackReadThreadShouldRun = true;
+    private readonly Socket tcpSocket;
+    private bool hasCallbacks = false;
+    private readonly ILogger logger;
+    public IPCClient(ILoggerFactory loggerFactory, string ipcService)
+    {
+        logger = loggerFactory.CreateLogger($"IPCClient-{ipcService}");
+        
+        tcpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        tcpSocket.NoDelay = true;
+        tcpSocket.Blocking = true;
+        
+        IPEndPoint ep = GetEndPointFromName(ipcService);
+        
+        logger.Info("Connecting to " + ep.ToString());
+        tcpSocket.Connect(ep);
+        logger.Info("Connected to " + ep.ToString());
+        
+        ConnectToSteamPipe(out uint hostPid);
     }
 
-    private uint expectedLength = 0;
-    private readonly List<byte> incompleteMsg = new();
-
-    /// <summary>
-    /// Handles a partial message.
-    /// </summary>
-    /// <param name="data"></param>
-    /// <param name="msg"></param>
-    /// <returns>False if the data was partial, true if a full message was completed</returns>
-    private bool HandlePartial(byte[] data, [NotNullWhen(true)] out byte[]? msg)
+    private void HandleMessageData(ReadOnlyMemory<byte> msg)
     {
-        using var stream = new MemoryStream(data);
-        using var reader = new EndianAwareBinaryReader(stream, OpenSteamworks.Utils.Enum.Endianness.Little);
+        
+    }
 
-        // If we don't have a partial message, read the length now
-        if (expectedLength == 0)
-        {
-            expectedLength = reader.ReadUInt32();
-        }
-
-        // Add to the incomplete message buffer
-        incompleteMsg.AddRange(data);
-
-        // Exit now if we have a partial message
-        if (incompleteMsg.Count - sizeof(uint) < expectedLength)
-        {
-            msg = null;
-            return false;
-        }
-
-        expectedLength = 0;
-        msg = incompleteMsg.ToArray();
-        incompleteMsg.Clear();
-        return true;
+    protected virtual void HandleMessage(EIPCResponseCode responseCode, ReadOnlySpan<byte> msg)
+    {
+        
     }
     
     private void HandleData(byte[] partial)
     {
-        Logging.IPCLogger.Debug("Got data from server " + string.Join(" ", partial));
+        logger.Debug("Got data from server " + string.Join(" ", partial));
         if (HandlePartial(partial, out byte[]? msg))
         {
-            Logging.IPCLogger.Debug("Full msg: " + string.Join(" ", msg));
+            logger.Debug("Full msg: " + string.Join(" ", msg));
             using var stream = new MemoryStream(msg);
             using var reader = new EndianAwareBinaryReader(stream, OpenSteamworks.Utils.Enum.Endianness.Little);
 
             var len = reader.ReadUInt32();
             var cmd = reader.ReadByte();
-            if (!System.Enum.IsDefined(typeof(IPCResponseCode), cmd))
+            if (!Enum.IsDefined(typeof(EIPCResponseCode), cmd))
             {
-                Logging.IPCLogger.Debug("Unsupported response code " + cmd);
+                logger.Debug("Unsupported response code " + cmd);
                 return;
                 //throw new InvalidOperationException("Unsupported response code " + cmd);
             }
@@ -186,10 +86,10 @@ public class IPCClient {
             }
             catch (System.Exception e)
             {
-                Logging.IPCLogger.Debug("Got error while handling message:");
-                Logging.IPCLogger.Debug(e.ToString());
+                logger.Debug("Got error while handling message:");
+                logger.Debug(e.ToString());
                 if (!pipeIsConnected) {
-                    Logging.IPCLogger.Debug("Error is fatal");
+                    logger.Debug("Error is fatal");
 
                     // This has to be done like this, otherwise it will hang forever
                     Task.Run(() => this.Shutdown());
@@ -207,25 +107,25 @@ public class IPCClient {
                 // S: 17 0 0 0 2 1 0 0 0 209 161 16 0 4 0 0 0 1 0 0 0
                 // S: 13 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0
                 // S: 1 0 0 0 7
-                Logging.IPCLogger.Debug("Got CB " + ReadCB(cb));
+                logger.Debug("Got CB " + ReadCB(cb));
                 while (tcpClient.Client.Poll(TimeSpan.FromMilliseconds(56), SelectMode.SelectRead))
                 {
-                    Logging.IPCLogger.Debug("poll success, avail: " + tcpClient.Available);
+                    logger.Debug("poll success, avail: " + tcpClient.Available);
                     if (tcpClient.Available < 13) {
                         break;
                     }
 
                     var cb2 = WaitForMessageOfLength(13); // S: 13 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0
                     if (cb2[4] == (byte)IPCCommandCode.SerializeCallbacks) {
-                        Logging.IPCLogger.Debug("More?");
+                        logger.Debug("More?");
                         var ca2 = WaitForMessageOfLength(5);
                         if (ca2[4] == (byte)IPCResponseCode.CallbacksAvailable) {
-                            Logging.IPCLogger.Debug("More callbacks available");
+                            logger.Debug("More callbacks available");
 
                             cb2 = WaitForMessageOfLength(13);
-                            Logging.IPCLogger.Debug("Got CB2 " + ReadCB(cb2));
+                            logger.Debug("Got CB2 " + ReadCB(cb2));
                         } else {
-                            Logging.IPCLogger.Debug("No");
+                            logger.Debug("No");
                             break;
                         }
                     } else {
@@ -235,7 +135,7 @@ public class IPCClient {
 
                 break;
             default:
-                Logging.IPCLogger.Debug("Got unsupported command " + code);
+                logger.Debug("Got unsupported command " + code);
                 break;
         }
     }
@@ -244,7 +144,7 @@ public class IPCClient {
         using var reader = new EndianAwareBinaryReader(new MemoryStream(cb), Utils.Enum.Endianness.Little);
         var firstByte = reader.ReadByte();
         if (firstByte != 2) {
-            Logging.IPCLogger.Debug("CB unknown first byte " + firstByte);
+            logger.Debug("CB unknown first byte " + firstByte);
         }
 
         var steamUser = reader.ReadInt32();
@@ -294,7 +194,7 @@ public class IPCClient {
 
     public void ConnectToSteamPipe(out uint hostPid) {
         hostPid = 0;
-        Logging.IPCLogger.Info("Connect to pipe");
+        logger.Info("Connect to pipe");
         using (var stream = new MemoryStream()) {
             var writer = new EndianAwareBinaryWriter(stream);
             // | Success | ProcID | ThreadID |
@@ -321,7 +221,7 @@ public class IPCClient {
                 hostPid = reader.ReadUInt32();
                 var hosttid = reader.ReadUInt32();
                 var seed = reader.ReadUInt32();
-                Logging.IPCLogger.Info($"Got host pid: {hostPid}, host tid: {hosttid}, seed: {seed}");
+                logger.Info($"Got host pid: {hostPid}, host tid: {hosttid}, seed: {seed}");
                 ThrowIfInvalidHostProcess((int)hostPid, (int)hosttid);
                 pipeIsConnected = true;
             }
@@ -346,7 +246,7 @@ public class IPCClient {
     }
 
     public HSteamUser ConnectToGlobalUser() {
-        Logging.IPCLogger.Info("Connect to user");
+        logger.Info("Connect to user");
 
         // | GlobalUserType |
         uint hUser;
@@ -360,7 +260,7 @@ public class IPCClient {
                 throw new Exception($"ConnectToGlobalUser returned invalid HSteamUserEngine={hUser}");
             }
 
-            Logging.IPCLogger.Info("Got HSteamUser " + hUser);
+            logger.Info("Got HSteamUser " + hUser);
         }
 
         return (int)hUser;
@@ -371,7 +271,7 @@ public class IPCClient {
         {
             var serialized = Serialize(command, data);
             Send(serialized);
-            Logging.IPCLogger.Debug($"sent {data.Length} bytes as {command}, waiting for response");
+            logger.Debug($"sent {data.Length} bytes as {command}, waiting for response");
             var resp = WaitForResponseTo(command);
 
             if (command == IPCCommandCode.Interface) {
@@ -491,7 +391,7 @@ public class IPCClient {
             msg = _WaitForMessage();
         }
 
-        Logging.IPCLogger.Debug("Got msg " + string.Join(" ", msg));
+        logger.Debug("Got msg " + string.Join(" ", msg));
 
         return msg;
     }
@@ -512,11 +412,11 @@ public class IPCClient {
         //     if (CallbacksAvailable) {
         //         CallbacksAvailable = false;
         //         var resp = SendAndWaitForResponse(IPCCommandCode.SerializeCallbacks, []);
-        //         Logging.IPCLogger.Debug("Resp: " + resp.Length);
+        //         logger.Debug("Resp: " + resp.Length);
         //         using var reader = new EndianAwareBinaryReader(new MemoryStream(resp), Utils.Enum.Endianness.Little);
         //         var firstByte = reader.ReadByte();
         //         if (firstByte != 2) {
-        //             Logging.IPCLogger.Debug("CB unknown first byte " + firstByte);
+        //             logger.Debug("CB unknown first byte " + firstByte);
         //         }
 
         //         callback.steamUser = reader.ReadInt32();
@@ -527,16 +427,16 @@ public class IPCClient {
         //         if (stream.DataAvailable) {
         //             byte b = (byte)stream.ReadByte();
         //             if (b == (byte)IPCResponseCode.CallbacksAvailable) {
-        //                 Logging.IPCLogger.Debug("Another callback");
+        //                 logger.Debug("Another callback");
         //                 CallbacksAvailable = true;
         //             }
 
         //             // byte b2 = (byte)stream.ReadByte();
         //             // if (b2 == (byte)IPCResponseCode.CallbacksAvailable) {
-        //             //     Logging.IPCLogger.Debug("More than 1 callback");
+        //             //     logger.Debug("More than 1 callback");
         //             // }
         //         } else {
-        //             Logging.IPCLogger.Debug("No more data");
+        //             logger.Debug("No more data");
         //         }
 
         //         return true;

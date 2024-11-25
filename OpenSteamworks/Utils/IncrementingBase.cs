@@ -2,7 +2,7 @@ using System;
 
 namespace OpenSteamworks.Utils;
 
-public abstract class IncrementingBase<T> {
+internal abstract class IncrementingBase<T> {
     public abstract T Data { get; set; }
     public abstract int Length { get; }
     public uint UIntLength => (uint)Length;

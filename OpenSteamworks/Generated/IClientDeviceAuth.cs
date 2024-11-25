@@ -11,13 +11,14 @@ using System.Text;
 using OpenSteamworks.Callbacks.Structs;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
 /// <summary>
 /// The main interface for the old family sharing system.
 /// </summary>
-[CppInterface]
+[CppClass]
 public unsafe interface IClientDeviceAuth
 {
     // WARNING: Arguments are unknown!

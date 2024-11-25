@@ -15,10 +15,14 @@ public unsafe struct NativeCallbackMsg_t {
 /// <summary>
 /// A managed abstraction over a native or IPC-delivered callback message.
 /// </summary>
-public struct CallbackMsg_t {
-    public HSteamUser steamUser;
-	public int callbackID;
-    public byte[] callbackData;
+public ref struct CallbackMsg_t
+{
+	public HSteamUser SteamUser { get; init; } = 0;
+	public int CallbackID { get; init; } = 0;
+	public ReadOnlySpan<byte> CallbackData { get; init; } = ReadOnlySpan<byte>.Empty;
 
-    public static readonly CallbackMsg_t Empty = new() { steamUser = 0, callbackID = 0, callbackData = Array.Empty<byte>() };
+    public CallbackMsg_t()
+    {
+	    
+    }
 }

@@ -51,51 +51,49 @@ public unsafe struct CUtlVector<T> where T : unmanaged {
         }
         return list;
     }
+
+    public void Add(T item)
+    {
+        m_Memory.Grow(1);
+        m_Size++;
+        m_Memory[m_Size] = item;
+    }
 }
 
 /// <summary>
-/// A CUtlVector<CUtlString>. Provided as a convenience so we can convert to a native string list easily.
+/// A CUtlVector&lt;CUtlString&gt;. Provided as a convenience so we can convert to a native string list easily.
 /// </summary>
 [StructLayout(LayoutKind.Sequential)]
-public unsafe struct CUtlStringList {
-    public CUtlMemory<CUtlString> m_Memory;
-    public int m_Size;
-    public CUtlStringList(int length) {
-        this.m_Size = length;
-        this.m_Memory = new CUtlMemory<CUtlString>(0, this.m_Size);
-        unsafe {
-            for (int i = 0; i < length; i++)
-            {
-                this.Base()[i] = new CUtlString();
-            }
-        }
+public unsafe struct CUtlStringList
+{
+    public CUtlVector<CUtlString> m_vec;
+    public CUtlStringList(int length)
+    {
+        this.m_vec = new(length, new());
     }
 
     public CUtlStringList() {
-        this.m_Size = 0;
-        this.m_Memory = new CUtlMemory<CUtlString>(0, this.m_Size);
+        this.m_vec = new();
     }
 
-    public CUtlString* Base() {
-        return (CUtlString*)m_Memory.m_pMemory;
-    }
-    public CUtlString Element(int i) {
-        unsafe {
-            return Base()[i];
-        }
-    }
+    public CUtlString* Base()
+        => m_vec.Base();
+       
+    public CUtlString Element(int i)
+        => m_vec.Element(i);
 
     public void Free() {
-        for (int i = 0; i < this.m_Size; i++)
+        for (int i = 0; i < this.m_vec.m_Size; i++)
         {
             this.Element(i).Free();
         }
-        this.m_Memory.Free();
+        
+        m_vec.Free();
     }
 
-    public void Add(string str) {
-        m_Memory.Grow(1);
-        Base()[this.m_Size] = new CUtlString(str);
+    public void Add(string str)
+    {
+        m_vec.Add(new CUtlString(str));
     }
 
     public List<string> ToManagedAndFree() {
@@ -106,15 +104,16 @@ public unsafe struct CUtlStringList {
     
     public List<string> ToManaged() {
         List<string> list = new();
-        for (int i = 0; i < this.m_Size; i++)
+        foreach (var utlString in this.m_vec.ToManaged())
         {
-            var elem = this.Element(i).ToManaged();
+            var elem = utlString.ToManaged();
             if (elem == null) {
                 continue;
             }
 
             list.Add(elem);
-        }
+        }        
+        
         return list;
     }
 }

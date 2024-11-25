@@ -6,7 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup Condition="'$(UseOSWPackage)' != ''">
+    <PackageReference Include="OpenSteamworks" Version="$(CommonVersion)"/>
+    <PackageReference Include="OpenSteamworks.Messaging" Version="$(CommonVersion)"/>
+    <PackageReference Include="OpenSteamworks.Messaging.SharedConnection" Version="$(CommonVersion)"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(UseOSWPackage)' == ''">
+    <ProjectReference Include="../OpenSteamworks/OpenSteamworks.csproj"/>
+    <ProjectReference Include="..\OpenSteamworks.Messaging.SharedConnection\OpenSteamworks.Messaging.SharedConnection.csproj" />
+    <ProjectReference Include="..\OpenSteamworks.Messaging\OpenSteamworks.Messaging.csproj" />
+  </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="OpenSteamworks" Version="1.1.3"/>
+    
   </ItemGroup>
 </Project>

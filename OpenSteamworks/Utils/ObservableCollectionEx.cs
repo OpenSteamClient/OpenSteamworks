@@ -9,13 +9,15 @@ using System.Linq;
 using OpenSteamClient.Logging;
 
 namespace OpenSteamworks.Utils;
-    
-//TODO: Move the bulk of these utility classes into OpenSteamworks.Utils
-//TODO: This needs to be looked at.
-// For some reason it sometimes crashes avalonia, even though we do everything properly
+
+/// <summary>
+/// A sortable, filterable, observable list of objects.
+/// Can also block sending of update observable signals.
+/// </summary>
+// TODO: Move this class away from here!
 [Serializable]
 [DebuggerDisplay("Count = {Count}")]
-public class ObservableCollectionEx<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IList<T>, IReadOnlyCollection<T>, IReadOnlyList<T>, ICollection, IList, INotifyCollectionChanged, INotifyPropertyChanged
+public sealed class ObservableCollectionEx<T> : IList<T>, IReadOnlyList<T>, IList, INotifyCollectionChanged, INotifyPropertyChanged
 {
     private readonly List<T> underlyingCollection;
     private List<T>? filteredCollection;
@@ -101,7 +103,7 @@ public class ObservableCollectionEx<T> : ICollection<T>, IEnumerable<T>, IEnumer
         //     CollectionChanged?.Invoke(this, e);
         // }
 
-        // Always reset to avoid bugs.
+        // TODO: We always fire a reset to avoid bugs, which completely ignores the args passed in and will cause perf problems. 
         Logging.GeneralLogger.Debug("Firing reset");
         CollectionChanged?.Invoke(this, new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Reset));
         
@@ -172,8 +174,10 @@ public class ObservableCollectionEx<T> : ICollection<T>, IEnumerable<T>, IEnumer
 
     public void AddRange(IEnumerable<T> items) {
         var idx = underlyingCollection.Count;
+
+        items = items.ToList();
         underlyingCollection.AddRange(items);
-        OnCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, items.ToList(), idx));
+        OnCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Add, items, idx));
     }
 
     public void Sort() {
@@ -247,9 +251,9 @@ public class ObservableCollectionEx<T> : ICollection<T>, IEnumerable<T>, IEnumer
         return ((IEnumerable<T>)actualCollection).GetEnumerator();
     }
 
-    System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+    IEnumerator IEnumerable.GetEnumerator()
     {
-        return ((System.Collections.IEnumerable)actualCollection).GetEnumerator();
+        return ((IEnumerable)actualCollection).GetEnumerator();
     }
 
     public int IndexOf(T item)

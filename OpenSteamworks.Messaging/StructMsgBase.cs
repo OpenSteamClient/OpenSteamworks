@@ -1,8 +1,6 @@
 using System.Text;
 using OpenSteamworks.Messaging.Header;
-using OpenSteamworks.Messaging.Structs;
 using OpenSteamworks.Utils;
-using OpenSteamworks.Utils.Enum;
 using OpenSteamworks.Data;
 
 namespace OpenSteamworks.Messaging;
@@ -23,7 +21,6 @@ public class StructMsgBase : MsgBase
         set {
             if (Header is MsgHdrExtended ext) {
                 ext.SteamID = value;
-                return;
             }
         }
     }
@@ -40,7 +37,6 @@ public class StructMsgBase : MsgBase
         set {
             if (Header is MsgHdrExtended ext) {
                 ext.SessionID = value;
-                return;
             }
         }
     }
@@ -74,42 +70,62 @@ public class StructMsgBase : MsgBase
         }
     }
 
-    public IMsgHdr Header { get; set; }
+    public IMsgHdr Header { get; set; } = new MsgHdrExtended();
+    protected byte[] RawBody { get; set; } = [];
 
-    public StructMsgBase() {
-        this.Header = new MsgHdr();
+    public StructMsgBase()
+    {
+        
     }
-
-    public StructMsgBase(byte[] data) : this() {
-        using var ms = new MemoryStream(data);
-        FillFromStream(ms);
-    }
-
-    public override void FillFromStream(Stream stream) {
-        base.FillFromStream(stream);
-
-        using var reader = new EndianAwareBinaryReader(stream, Encoding.UTF8, true, Endianness.Little);
     
-        // Read the header
-        bool extended = this.Header.Deserialize(stream);
-        if (extended) {
-            stream.Seek(-MsgHdr.HEADER_SIZE, SeekOrigin.Current);
-            this.Header = new MsgHdrExtended();
-            this.Header.Deserialize(stream);
-        }
+    public StructMsgBase(Stream stream) {
+        Deserialize(stream);
     }
 
-    public override void Serialize(Stream stream) {
-        // Serialize EMsg
-        base.Serialize(stream);
-        this.Header.Serialize(stream);
+    protected override void DeserializeInternal(EndianAwareBinaryReader reader)
+    {
+        base.DeserializeInternal(reader);
+        
+        // Read the header
+        bool extended = Header.Deserialize(reader);
+
+        if (extended)
+        {
+            reader.BaseStream.Seek(-MsgHdr.StaticHeaderSize, SeekOrigin.Current);
+            Header = new MsgHdrExtended();
+            Header.Deserialize(reader);
+        }
+        
+        // Read the body
+        var bodySize = reader.BaseStream.Length - reader.BaseStream.Position;
+        RawBody = reader.ReadBytes((int)bodySize);
+    }
+
+    protected override void SerializeInternal(EndianAwareBinaryWriter writer)
+    {
+        base.SerializeInternal(writer);
+        this.Header.Serialize(writer);
+        writer.Write(RawBody);
+    }
+    
+    /// <inheritdoc/>
+    public sealed override StructMsg<T> AsStruct<T>()
+    {
+        using var ms = new MemoryStream();
+        Serialize(ms);
+        ms.Seek(0, SeekOrigin.Begin);
+        return new(ms);
     }
 
     public override string ToString()
     {
         StringBuilder builder = new();
-        builder.AppendLine(string.Format("Printing header-only message EMsg: {0}", this.EMsg));
-        builder.AppendLine("Header: " + this.Header.ToString());
+        builder.AppendLine("Printing header-only message");
+        builder.AppendLine($"EMsg: {EMsg}");
+        builder.AppendLine($"Header: {Header}");
         return builder.ToString();
     }
+
+    public override StructMsgBase AsStructBase()
+        => this;
 }

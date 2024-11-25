@@ -7,7 +7,7 @@ using OpenSteamworks.Data.Structs;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1080003)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct StopPlayingBorrowedApp_t
 {
     public UInt32 m_unAppID;

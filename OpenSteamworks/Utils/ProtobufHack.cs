@@ -7,11 +7,12 @@ using OpenSteamworks.Protobuf;
 namespace OpenSteamworks.Utils;
 
 /// <summary>
-/// This is terrible. Absolutely nothing about this should work.
+/// This is terrible.
 /// A class for marshalling managed protobuf objects to unmanaged pointers for the sake of interoperability with native binaries.
+/// ValveSteam uses an archaic version of C++ protobuf, which is required by some function's args...
 /// </summary>
-internal unsafe static class ProtobufHack {
-    public class Proto_Disposable<T> : IDisposable where T: IMessage<T>, new()
+internal static unsafe class ProtobufHack {
+    public sealed class Proto_Disposable<T> : IDisposable where T: IMessage<T>, new()
     {
         private readonly delegate* unmanaged[Cdecl]<IntPtr, void> deletor;
         private readonly delegate* unmanaged[Cdecl]<IntPtr> constructor;
@@ -69,7 +70,6 @@ internal unsafe static class ProtobufHack {
 
         public void Dispose()
         {
-            GC.SuppressFinalize(this);
             disposed = true;
             deletor(ptr);
             ptr = 0;
@@ -107,11 +107,11 @@ internal unsafe static class ProtobufHack {
         return parser.ParseFrom(bytes);
     }
 
-    public unsafe static T GetFromPointer<T>(void* ptr, uint length) where T: IMessage<T>, new() {
+    public static T GetFromPointer<T>(void* ptr, uint length) where T: IMessage<T>, new() {
         return GetFromPointer<T>((IntPtr)ptr, length);
     }
 
-    public unsafe static T GetFromPointer<T>(void* ptr) where T: IMessage<T>, new() {
+    public static T GetFromPointer<T>(void* ptr) where T: IMessage<T>, new() {
         return GetFromPointer<T>((IntPtr)ptr);
     }
 

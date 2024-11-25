@@ -57,35 +57,4 @@ internal static partial class CallbackMetadata {
 			return "(threw an exception)";
 		}
 	}
-
-	// public const int FocusedAndFocusableWindowsUpdate_t_ID = 1040044;
-	// public static string FocusedAndFocusableWindowsUpdate_t_ToString(FocusedAndFocusableWindowsUpdate_t cb) {
-	// 	StringBuilder builder = new();
-	// 	builder.AppendLine("Begin Callback FocusedAndFocusableWindowsUpdate_t");
-	// 	builder.AppendLine($"	currentlyFocusedAppID: {FieldToString(cb.currentlyFocusedAppID)}");
-	// 	builder.AppendLine($"	unkLen1: {FieldToString(cb.unkLen1)}");
-	// 	builder.AppendLine($"	unk1: {EnumerableToString(cb.unk1)}");
-	// 	builder.AppendLine($"	unkLen2: {FieldToString(cb.unkLen2)}");
-	// 	builder.AppendLine($"	unk2: {EnumerableToString(cb.unk2)}");
-	// 	builder.AppendLine($"	unkLen3: {FieldToString(cb.unkLen3)}");
-	// 	builder.AppendLine($"	unk3: {EnumerableToString(cb.unk3)}");
-	// 	builder.AppendLine("End Callback FocusedAndFocusableWindowsUpdate_t");
-	// 	return builder.ToString();
-	// }
-
-	// public static int GetIDFromType<T>() where T: struct {
-	// 	if (typeof(T) == typeof(FocusedAndFocusableWindowsUpdate_t)) {
-	// 		return FocusedAndFocusableWindowsUpdate_t_ID;
-	// 	}
-
-	// 	throw new NotImplementedException("Invalid type");
-	// }
-
-	// public static string CallbackToString(int callbackID, byte[] data) {
-	// 	return callbackID switch
-	// 	{
-	// 		FocusedAndFocusableWindowsUpdate_t_ID => FocusedAndFocusableWindowsUpdate_t_ToString(GetStructForCallback<FocusedAndFocusableWindowsUpdate_t>(data)),
-	// 		_ => string.Empty,
-	// 	};
-	// }
 }

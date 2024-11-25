@@ -10,10 +10,11 @@ using System;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data.Structs;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientVideo
 {
     // WARNING: Arguments are unknown!

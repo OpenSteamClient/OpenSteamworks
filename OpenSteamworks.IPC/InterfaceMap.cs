@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace OpenSteamworks;
+namespace OpenSteamworks.IPC;
 
 public static class InterfaceMap {
     public static readonly List<byte> ClientInterfacesNoUser = new()

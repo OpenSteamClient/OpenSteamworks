@@ -5,7 +5,7 @@ namespace OpenSteamworks.Utils;
 /// <summary>
 /// A simple uint array which doubles in size when requested or until a given call's data fits.
 /// </summary>
-public class IncrementingUIntArray : IncrementingBase<uint[]> {
+internal sealed class IncrementingUIntArray : IncrementingBase<uint[]> {
     private uint[] data;
     public override uint[] Data { get => data; set => data = value; }
     public override int Length => data.Length;

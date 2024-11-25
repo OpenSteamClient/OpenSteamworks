@@ -1,39 +1,58 @@
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 using OpenSteamClient.Logging;
 using OpenSteamworks.Data.Structs;
+using OpenSteamworks.Generated;
+using OpenSteamworks.Utils;
 
 namespace OpenSteamworks.Callbacks;
 
 public sealed partial class CallbackManager : IDisposable {
-	private readonly ISteamClient steamClient;
+	private readonly ISteamClientImpl steamClient;
+	private readonly IClientUtils clientUtils;
+	
 	private readonly ILogger callbackLogger;
 	private readonly ILogger callbackContentLogger;
-	private readonly ILogger logger;
 
 	private volatile bool shouldThreadRun = true;
-	private readonly Thread callbackThread;
+	private readonly Thread? callbackThread;
 
-	public int CallbackThreadID => callbackThread.ManagedThreadId;
-
-	internal CallbackManager(ISteamClient steamClient, ILoggerFactory loggerFactory) {
-		this.steamClient = steamClient;
-		this.logger = loggerFactory.CreateLogger("CallbackManager");
+	private readonly bool logCallbackContents;
+	private readonly bool logIncomingCallbacks;
+	
+	public bool IsManualPump { get; }
+	
+	internal CallbackManager(ISteamClientImpl steamClientImpl, ISteamClient steamClient, ILoggerFactory loggerFactory, bool logIncomingCallbacks, bool logCallbackContents, bool isManualPump)
+	{
+		this.IsManualPump = isManualPump;
+		this.steamClient = steamClientImpl;
+		this.clientUtils = steamClient.IClientUtils;
+		
 		this.callbackLogger = loggerFactory.CreateLogger("Callbacks");
 		this.callbackContentLogger = loggerFactory.CreateLogger("CallbackContent");
 
-		callbackThread = new(this.CallbackThreadMain)
-        {
-            Name = "CallbackThread"
-        };
+		this.logIncomingCallbacks = logIncomingCallbacks;
+		this.logCallbackContents = logCallbackContents;
+
+		if (!isManualPump)
+		{
+			callbackLogger.Info("CallbackThread in automatic mode!");
+			callbackThread = new(CallbackThreadMain)
+			{
+				Name = "CallbackThread"
+			};
+		}
+		else
+		{
+			callbackLogger.Info("CallbackThread in manual mode! Remember to pump it manually.");
+		}
 	}
 
 	internal void Start()
-		=> callbackThread.Start();
+		=> callbackThread?.Start();
 
 	private bool isDisposing = false;
 
@@ -47,7 +66,10 @@ public sealed partial class CallbackManager : IDisposable {
 				threadsPausedSemaphore.Release();
 			}
 		}
-		catch (Exception) { } // It might throw errors but we don't really care
+		catch (Exception)
+		{
+			// It might throw errors but we don't really care
+		}
 
 		// Wake it from pause state
 		pauseTcs = null;
@@ -116,71 +138,126 @@ public sealed partial class CallbackManager : IDisposable {
 			if (!isDisposing) throw;
 		}
 	}
+	private void LogCallback(CallbackMsg_t callbackMsg) 
+	{
+		if (!logIncomingCallbacks)
+		{
+			return;
+		}
+			
+		CallbackNameMap.CallbackNames.TryGetValue(callbackMsg.CallbackID, out var callbackName);
 
+		if (!logCallbackContents)
+		{
+			callbackLogger.Debug($"Received callback [ID: {callbackMsg.CallbackID}, name: {callbackName ?? "Unknown"}, param length: {callbackMsg.CallbackData.Length}");
+			return;
+		}
+			
+		// Data copy happens here
+		byte[] copied = callbackMsg.CallbackData.ToArray();
+			
+		callbackLogger.Debug($"Received callback [ID: {callbackMsg.CallbackID}, name: {callbackName ?? "Unknown"}, param length: {copied.Length}, data: {string.Join(" ", copied)}]");
+			
+		string callbackString = CallbackMetadata.CallbackToString(callbackMsg.CallbackID, copied);
+		if (!string.IsNullOrEmpty(callbackString)) 
+		{
+			callbackContentLogger.Debug(callbackString);
+		}
+		else 
+		{
+			callbackContentLogger.Debug("(no information available)");
+		}
+	}
+
+	private bool BRunFrame()
+	{
+		steamClient.IClientEngine.RunFrame();
+
+		// Process callbacks
+		bool hadCallbacks = false;
+		while (BProcessCallback())
+		{
+			hadCallbacks = true;
+			if (!shouldThreadRun) { return false; }
+		}
+		
+		using (new UsingSemaphore(frameTasksSem))
+		{
+			isFrameTasksLocked = true;
+			
+			foreach (var item in frameTasks)
+			{
+				item.Invoke();
+			}
+
+			foreach (var item in oneShotFrameTasks)
+			{
+				item.Invoke();
+			}
+
+			isFrameTasksLocked = false;
+		}
+
+		return hadCallbacks;
+	}
+
+	// Tries to get and process a callback.
+	// If there's no callbacks, does nothing.
+	private bool BProcessCallback() 
+	{
+		var hadCallback = steamClient.BGetCallback(out CallbackMsg_t callbackMsg);
+		if (hadCallback) 
+		{
+			// If we have a callback, process it.
+			LogCallback(callbackMsg);
+			InvokeAllHandlers(callbackMsg.CallbackID, callbackMsg.CallbackData);
+			steamClient.FreeLastCallback();
+		}
+
+		return hadCallback;
+	}
+	
+	/// <summary>
+	/// Pumps the CallbackManager manually. This function may pause for an undefined amount of time.
+	/// </summary>
+	/// <exception cref="InvalidOperationException">If CallbackManager is being manually pumped.</exception>
+	public void Pump()
+	{
+		if (!IsManualPump)
+			throw new InvalidOperationException("Cannot pump CallbackManager, automatic mode is enabled.");
+
+		if (!shouldThreadRun)
+			return;
+		
+		// If the loop is requested to stop, freeze here in the pump function
+		if (pauseTcs is not null) {
+
+			// Signal we're stopped
+			pauseTcs.SetResult();
+
+			lock (pauseLock)
+			{
+				// And wait until we need to run again.
+				Monitor.Wait(pauseLock);
+			}
+		}
+
+		while (BRunFrame())
+		{
+			// Run all callbacks on a pump.
+			if (!shouldThreadRun) { return; }
+		}
+	}
+	
 	private void CallbackThreadMain() 
 	{
-		void LogCallback(CallbackMsg_t callbackMsg) 
-		{
-			CallbackNameMap.CallbackNames.TryGetValue(callbackMsg.callbackID, out string? callbackName);
-			callbackLogger.Debug($"Received callback [ID: {callbackMsg.callbackID}, name: {callbackName ?? "Unknown"}, param length: {callbackMsg.callbackData.Length}, data: {string.Join(" ", callbackMsg.callbackData)}]");
-		
-			string callbackString = CallbackMetadata.CallbackToString(callbackMsg.callbackID, callbackMsg.callbackData);
-			if (!string.IsNullOrEmpty(callbackString)) 
-			{
-				callbackContentLogger.Debug(callbackString);
-			}
-			else 
-			{
-				callbackContentLogger.Debug("(no information available)");
-			}
-		}
-
-		bool BRunFrame()
-		{
-			steamClient.IClientEngine.RunFrame();
-
-			// Process callbacks
-			bool hadCallbacks = false;
-			while (BProcessCallback())
-			{
-				hadCallbacks = true;
-				if (!shouldThreadRun) { return false; }
-			}
-
-			lock (frameTasksLock)
-			{
-				foreach (var item in frameTasks)
-				{
-					item.Invoke();
-				}
-			}
-
-			return hadCallbacks;
-		}
-
-		// Tries to get and process a callback.
-		// If there's no callbacks, does nothing.
-		bool BProcessCallback() 
-		{
-			var hadCallback = steamClient.BGetCallback(out CallbackMsg_t callbackMsg);
-			if (hadCallback) 
-			{
-				// If we have a callback, process it.
-				LogCallback(callbackMsg);
-				InvokeAllHandlers(callbackMsg.callbackID, callbackMsg.callbackData);
-				steamClient.FreeLastCallback();
-			}
-
-			return hadCallback;
-		}
-
 		breakLoop:
 		while (shouldThreadRun)
 		{			
 			// If the loop is requested to stop, stop it
 			if (pauseTcs is not null) {
 
-				// Signal it's stoppage
+				// Signal its stoppage
 				pauseTcs.SetResult();
 
 				lock (pauseLock)
@@ -190,12 +267,12 @@ public sealed partial class CallbackManager : IDisposable {
 				}
 			}
 
-			// Eco-friendly mode: Wait until callbacks are available to not stress the CPU.
+			// Eco-friendliness: Wait until callbacks are available to not stress the CPU.
 			while (!BRunFrame())
 			{
 				if (!shouldThreadRun) { goto breakLoop; }
 
-				Thread.Sleep(15); // Roughly 66FPS. Should keep chrome stuff responsive enough. 
+				Thread.Sleep(15); // Roughly 66 "FPS". Should keep chrome stuff responsive enough. 
 			}
 
 			// Run a frame.
@@ -210,17 +287,49 @@ public sealed partial class CallbackManager : IDisposable {
 		shouldThreadRun = true;
 	}
 
-	private readonly object frameTasksLock = new();
+	private volatile bool isFrameTasksLocked = false;
+
+	private readonly SemaphoreSlim frameTasksSem = new(1, 1);
 	private readonly List<Action> frameTasks = new();
+	private readonly List<Action> oneShotFrameTasks = new();
+
+	private sealed class FrameTaskDisposable : IDisposable
+	{
+		private readonly Action? action;
+		private readonly CallbackManager callbackManager;
+		
+		public FrameTaskDisposable(CallbackManager callbackManager, Action? action)
+		{
+			this.action = action;
+			this.callbackManager = callbackManager;
+		}
+
+		public void Dispose()
+		{
+			if (action != null)
+				callbackManager.RemoveFrameTask(action);
+		}
+	}
 
 	/// <summary>
-	/// Runs the specified action after each frame.
+	/// Runs the specified action after each frame, or once on the next frame if oneShot is specified.
+	/// Returns a disposable you can dispose to remove the frame task. Only works for persistent tasks.
 	/// </summary>
-	public void AddFrameTask(Action action)
+	public IDisposable AddFrameTask(Action action, bool oneShot = false)
 	{
-		lock (frameTasksLock)
+		using (new UsingSemaphore(frameTasksSem))
 		{
+			if (isFrameTasksLocked)
+				throw new InvalidOperationException("Attempted to modify frame tasks list from frame task!");
+			
+			if (oneShot)
+			{
+				oneShotFrameTasks.Add(action);
+				return new FrameTaskDisposable(this, null);
+			}
+			
 			frameTasks.Add(action);
+			return new FrameTaskDisposable(this, action);
 		}
 	}
 
@@ -229,8 +338,11 @@ public sealed partial class CallbackManager : IDisposable {
 	/// </summary>
 	public void RemoveFrameTask(Action action)
 	{
-		lock (frameTasksLock)
+		using (new UsingSemaphore(frameTasksSem))
 		{
+			if (isFrameTasksLocked)
+				throw new InvalidOperationException("Attempted to modify frame tasks list from frame task!");
+			
 			frameTasks.Remove(action);
 		}
 	}
@@ -239,64 +351,15 @@ public sealed partial class CallbackManager : IDisposable {
 	/// Runs the specified action after the next frame a single time.
 	/// </summary>
 	public void InvokeNextFrame(Action action)
-	{
-		// First define a no-op action
-		Action wrap = () => { };
+		=> AddFrameTask(action, true);
 
-		// Then set the actual value
-		wrap = () => {
-			action();
-
-			// So that 'wrap' is valid here
-			RemoveFrameTask(wrap);	
-		};
-
-		AddFrameTask(wrap);
-	}
-	
-	public Task<T> WaitAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(CancellationToken cancellationToken = default) where T: struct {
+	public Task<T> WaitAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(Func<T, bool>? checkFunction = null, CancellationToken cancellationToken = default) where T: struct {
 		TaskCompletionSource<T> taskCompletionSource = new();
 		object lockObj = new();
 
 		var handler = Register((ICallbackHandler handler, T cb) =>
 		{
-			lock (lockObj)
-			{
-				try
-				{
-					taskCompletionSource.SetResult(cb);
-				}
-				catch (System.Exception)
-				{
-					// Don't care if the result has already been set.
-				}
-
-				handler.Dispose();
-			}
-		});
-
-		cancellationToken.Register(() => {
-			lock (lockObj)
-			{
-				if (taskCompletionSource.Task.IsCompleted) {
-					return;
-				}
-				
-				handler.Dispose();
-				taskCompletionSource.SetCanceled(cancellationToken);
-			}
-		});
-
-		return taskCompletionSource.Task;
-	}
-
-	public Task<T> WaitAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(Func<T, bool> checkFunction, CancellationToken cancellationToken = default) where T: struct {
-		TaskCompletionSource<T> taskCompletionSource = new();
-		object lockObj = new();
-
-		var handler = Register((ICallbackHandler handler, T cb) =>
-		{
-			if (!checkFunction.Invoke(cb)) {
+			if (checkFunction != null && !checkFunction.Invoke(cb)) {
 				// Not the right one, keep waiting.
 				return;
 			}
@@ -307,7 +370,7 @@ public sealed partial class CallbackManager : IDisposable {
 				{
 					taskCompletionSource.SetResult(cb);
 				}
-				catch (System.Exception)
+				catch (Exception)
 				{
 					// Don't care if the result has already been set.
 				}

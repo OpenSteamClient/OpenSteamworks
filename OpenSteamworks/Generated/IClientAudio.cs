@@ -9,10 +9,11 @@
 using System;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientAudio
 {
     public unknown_ret StartVoiceRecording();  // argc: 0, index: 1, ipc args: [], ipc returns: []

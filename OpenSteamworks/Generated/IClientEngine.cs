@@ -6,6 +6,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Runtime.CompilerServices;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
+using OpenSteamworks.ConCommands.Native;
 
 namespace OpenSteamworks.Generated;
 
@@ -15,7 +17,7 @@ public delegate void ClientAPI_WarningMessageHook_t(int nSeverity, string pchDeb
 [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 public delegate void ClientAPI_PostAPIResultInProcess_t(SteamAPICall_t callHandle, IntPtr callbackData, uint unCallbackSize, int iCallbackNum);
 
-[CppInterface]
+[CppClass]
 public interface IClientEngine {
 	public HSteamPipe CreateSteamPipe();
 	public bool BReleaseSteamPipe( HSteamPipe hSteamPipe );
@@ -83,7 +85,7 @@ public interface IClientEngine {
 	public IClientSystemDockManager GetIClientSystemDockManager( HSteamPipe hSteamPipe );
 	public IClientSystemAudioManager GetIClientSystemAudioManager( HSteamPipe hSteamPipe );
 	public IClientSystemDisplayManager GetIClientSystemDisplayManager( HSteamPipe hSteamPipe );
-	public void ConCommandInit( in IConCommandBaseAccessor pAccessor );
+	public void ConCommandInit( in INativeConCommandBaseAccessor pAccessor );
 	public IClientAppManager GetIClientAppManager( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientConfigStore GetIClientConfigStore( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public bool BOverlayNeedsPresent();

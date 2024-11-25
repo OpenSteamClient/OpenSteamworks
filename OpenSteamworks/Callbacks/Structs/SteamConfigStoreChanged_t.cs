@@ -6,7 +6,7 @@ using OpenSteamworks.Data.Enums;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1040011)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct SteamConfigStoreChanged_t
 {
 	public EConfigStore ConfigStore;

@@ -10,10 +10,11 @@ using System;
 using System.Text;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientParentalSettings
 {
     public bool BIsParentalLockEnabled();  // argc: 0, index: 1, ipc args: [], ipc returns: [boolean]

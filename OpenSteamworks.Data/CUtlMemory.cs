@@ -6,8 +6,6 @@ namespace OpenSteamworks.Data;
 
 [StructLayout(LayoutKind.Sequential)]
 public unsafe struct CUtlMemory<T> where T : unmanaged {
-	
-
 	public void* m_pMemory = null;
 	public int m_nAllocationCount = 0;
 	public int m_nGrowSize = 0;
@@ -37,7 +35,7 @@ public unsafe struct CUtlMemory<T> where T : unmanaged {
         return (T*)m_pMemory;
     }
 
-    public byte[] ToManagedAndFree() {
+    public T[] ToManagedAndFree() {
         var str = this.ToManaged();
         this.Free();
         return str;
@@ -91,18 +89,11 @@ public unsafe struct CUtlMemory<T> where T : unmanaged {
         this.m_pMemory = NativeMemory.Realloc(this.m_pMemory, (nuint)(m_nAllocationCount * m_unSizeOfElements));
     }
 
-    public byte[] ToManaged() {
-        byte[] bytes = new byte[this.m_unSizeOfElements * this.m_nAllocationCount];
+    public unsafe T[] ToManaged()
+        => GetSpan().ToArray();
 
-        // This is a hack but I haven't found a better solution either
-        unsafe {
-            fixed (byte* firstByte = bytes ) {
-                NativeMemory.Copy(this.m_pMemory, firstByte, (nuint)(this.m_unSizeOfElements * this.m_nAllocationCount));
-            }
-        }
-
-        return bytes;
-    }
+    public Span<T> GetSpan()
+        => new(this.m_pMemory, this.m_unSizeOfElements * this.m_nAllocationCount);
 
     public readonly int NumAllocated()
     {

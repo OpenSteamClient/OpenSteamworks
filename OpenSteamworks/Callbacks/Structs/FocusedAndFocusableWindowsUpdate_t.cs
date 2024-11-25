@@ -9,7 +9,7 @@ using OpenSteamworks.Data;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1040044)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct FocusedAndFocusableWindowsUpdate_t
 {
     public AppId_t currentlyFocusedAppID;

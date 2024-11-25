@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace OpenSteamworks.Utils;
 
-public class DelayFunction {
+internal sealed class DelayFunction {
     private readonly Action func;
     private TimeSpan delay;
     public Task? Task { get; private set; }

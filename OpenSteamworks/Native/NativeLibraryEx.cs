@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.IO.MemoryMappedFiles;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -13,9 +12,9 @@ using OpenSteamworks.Utils;
 
 namespace OpenSteamworks.Native;
 
-public class NativeLibraryEx {
+// TODO: This code could do with a cleanup.
+internal sealed class NativeLibraryEx {
     public class Section {
-        private NativeLibraryEx nativeLibrary;
         public string Name { get; private set; }
         public UIntPtr StartAddress { get; private set; }
         public UIntPtr EndAddress { get; private set; }
@@ -23,21 +22,24 @@ public class NativeLibraryEx {
         private RefCount widenedSecurityRefCount = new RefCount();
         private int previousSecurity = 0;
         
-        internal Section(string name, UIntPtr startAddress, ulong length, NativeLibraryEx nativeLibrary) {
+        internal Section(string name, UIntPtr startAddress, ulong length) {
             this.Name = name;
             this.StartAddress = startAddress;
             this.Length = length;
             this.EndAddress = this.StartAddress + new UIntPtr(this.Length);
-            this.nativeLibrary = nativeLibrary;
         }
 
         /// <summary>
         /// Widens security of this section temporarily.
         /// </summary>
-        public void WidenSecurity() {
-            if (widenedSecurityRefCount.Increment()) {
+        public void WidenSecurity()
+        {
+            using var initLock = widenedSecurityRefCount.Increment(out bool shouldConstruct);
+            if (shouldConstruct) {
                 if (OperatingSystem.IsLinux()) {
+                    //TODO: Fetch the previous security value
                     previousSecurity = LinuxNative.PROT_READ + LinuxNative.PROT_EXEC;
+                    
                     if (LinuxNative.mprotect((nint)StartAddress, (nuint)this.Length, LinuxNative.PROT_READ + LinuxNative.PROT_WRITE + LinuxNative.PROT_EXEC) != 0) {
                         Logging.GeneralLogger.Warning($"Failed to widen {this.Name} security, errno: " + Marshal.GetLastWin32Error());
                     }
@@ -59,8 +61,10 @@ public class NativeLibraryEx {
         /// <summary>
         /// Restores this section's security to what it was before a call to WidenSecurity.
         /// </summary>
-        public void RestoreSecurity() {
-            if (widenedSecurityRefCount.Decrement()) {
+        public void RestoreSecurity()
+        {
+            using var deinitLock = widenedSecurityRefCount.Decrement(out bool shouldDeconstruct);
+            if (shouldDeconstruct) {
                 if (OperatingSystem.IsLinux()) {
                     if(LinuxNative.mprotect((nint)StartAddress, (UIntPtr)Length, previousSecurity) != 0) {
                         Logging.GeneralLogger.Warning($"Failed to restore {this.Name} security, errno: " + Marshal.GetLastWin32Error());
@@ -81,33 +85,18 @@ public class NativeLibraryEx {
         }
 
     }
-
-    private static nint? _libc;
-    [SupportedOSPlatform("linux")]
-    [SupportedOSPlatform("macos")]
-    public static nint Libc {
-        get {
-            if (_libc != null) {
-                return _libc.Value;
-            }
-            
-            _libc = NativeLibrary.Load("libc");
-            return _libc.Value;
-        }
-    }
+    
     public string FileName { get; private set; }
     public IntPtr Handle { get; private set; }
-    private Dictionary<IntPtr, byte[]> hookedFunctions = new();
-    private List<Section> sections = new();
-    public ReadOnlyCollectionEx<Section> Sections {
-        get {
-            return new ReadOnlyCollectionEx<Section>(sections);
-        }
-    }
+    private readonly Dictionary<IntPtr, byte[]> hookedFunctions = new();
+    private readonly List<Section> sections = new();
+
+    public IReadOnlyCollection<Section> Sections
+        => sections;
 
     public Section TextSection { 
         get {
-            return sections.Where(s => s.Name == ".text").First();
+            return sections.First(s => s.Name == ".text");
         }
     }
 
@@ -210,9 +199,9 @@ public class NativeLibraryEx {
     /// <summary>
     /// Finds a signature
     /// </summary>
-    /// <param name="signature">The signature to find</param>
+    /// <param name="szPattern">The signature to find</param>
     /// <param name="signatureMask">The mask to use</param>
-    /// <param name="customStart">A custom start position to use, should be in range of memoryStart</param>
+    /// <param name="offset">A custom relative start position to use, relative to memoryStart</param>
     /// <returns>An absolute pointer to the start of the found signature or nullptr if not found</returns>
     public unsafe IntPtr FindSignature(string szPattern, string signatureMask, UIntPtr? offset = null)
     {
@@ -311,7 +300,7 @@ public class NativeLibraryEx {
                     continue;
                 }
                 Logging.GeneralLogger.Debug($"Found section " + sectionName + ", which is " + shdr.sh_size + " bytes");
-                Section sect = new Section(sectionName, (UIntPtr)(linkMap->l_addr + shdr.sh_addr), shdr.sh_size, this);
+                Section sect = new Section(sectionName, (UIntPtr)(linkMap->l_addr + shdr.sh_addr), shdr.sh_size);
                 this.sections.Add(sect);
             }
         }
@@ -342,14 +331,14 @@ public class NativeLibraryEx {
                     int len = strnlen(section.Name, 8);
                     var sectionName = System.Text.Encoding.UTF8.GetString(section.Name, len);
                     Logging.GeneralLogger.Debug($"Found section " + sectionName + ", which is " + section.PhysicalAddressOrVirtualSize + " bytes");
-                    Section sect = new Section(sectionName, (UIntPtr)(loadedLibraryHandle + section.VirtualAddress), section.PhysicalAddressOrVirtualSize, this);
+                    Section sect = new Section(sectionName, (UIntPtr)(loadedLibraryHandle + section.VirtualAddress), section.PhysicalAddressOrVirtualSize);
                     this.sections.Add(sect);
                 }
             }
         }
     }
 
-    // There's no alternative to this in C#, so add it in here for cross platform sakes
+    // There's no alternative to this in C#, so add it in here for cross-platform's sakes
     /// <summary>
     /// The strnlen() function returns the number of bytes in the string
     /// pointed to by s, excluding the terminating null byte ('\0'), but

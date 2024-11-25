@@ -5,7 +5,7 @@ using System.Threading;
 
 namespace OpenSteamworks.Utils;
 
-public class IntervalFunc
+internal sealed class IntervalFunc
 {
     private Timer? timer;
 

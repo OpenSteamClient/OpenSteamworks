@@ -3,9 +3,11 @@ using OpenSteamworks.Data;
 
 namespace OpenSteamworks.Messaging;
 
-public interface IMessage {
+public interface IMessage
+{
     public void Serialize(Stream stream);
-    public void FillFromStream(Stream stream);
+    public void Deserialize(Stream stream);
+    
     public EMsg EMsg { get; set; }
     public bool IsProto { get; }
     public ulong SteamID { get; set; }

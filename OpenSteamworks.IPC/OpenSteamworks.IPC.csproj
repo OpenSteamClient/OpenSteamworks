@@ -18,8 +18,16 @@
     <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
 
+  <ItemGroup Condition="'$(IsPacking)' != ''">
+    <PackageReference Include="OpenSteamworks" Version="$(CommonVersion)"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IsPacking)' == ''">
+    <ProjectReference Include="../OpenSteamworks/OpenSteamworks.csproj"/>
+  </ItemGroup>
+
   <ItemGroup>
-	  <PackageReference Include="OpenSteamworks" Version="$(CommonVersion)"/>
+    <ProjectReference Include="..\OpenSteamworks.Messaging\OpenSteamworks.Messaging.csproj" />
   </ItemGroup>
 
 </Project>

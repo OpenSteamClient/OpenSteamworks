@@ -103,8 +103,16 @@ public unsafe struct CUtlBuffer : IDisposable {
         return usedBytes;
     }
 
-    public void SeekToBeginning() {
-        this.m_Put = 0;
+    public Span<byte> GetSpan()
+        => m_Memory.GetSpan().Slice(this.m_Get, this.m_Put);
+
+    public void SeekGet(int newPos) {
+        this.m_Get = newPos;
+    }
+
+    public void SeekPut(int newPos)
+    {
+        this.m_Put = newPos;
     }
 
     public byte[] ToManagedAndFree() {

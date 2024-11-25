@@ -31,18 +31,12 @@ jobs:
 
     - name: Set version envs
       run: |
-        cd OpenSteamworks.Data 
-        echo "BuiltVersion_OSWData=$(dotnet msbuild -getproperty:Version)" >> $GITHUB_ENV
-        cd ../OpenSteamworks 
-        echo "BuiltVersion_OSW=$(dotnet msbuild -getproperty:Version)" >> $GITHUB_ENV
-        cd ../OpenSteamworks.Messaging
-        echo "BuiltVersion_OSWMessaging=$(dotnet msbuild -getproperty:Version)" >> $GITHUB_ENV
-        cd ../OpenSteamworks.Protobuf
-        echo "BuiltVersion_OSWProtobuf=$(dotnet msbuild -getproperty:Version)" >> $GITHUB_ENV
+        echo "OSWVersion=$(dotnet msbuild -getproperty:CommonVersion Directory.Build.props)" >> $GITHUB_ENV
 
     - name: Upload to NuGet.org
       run: |
-        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.${{ env.BuiltVersion_OSW }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
-        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Data.${{ env.BuiltVersion_OSWData }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
-        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Messaging.${{ env.BuiltVersion_OSWMessaging }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
-        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Protobuf.${{ env.BuiltVersion_OSWProtobuf }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
+        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.${{ env.OSWVersion }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
+        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Data.${{ env.OSWVersion }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
+        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Messaging.${{ env.OSWVersion }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
+        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Messaging.SharedConnection.${{ env.OSWVersion }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
+        dotnet nuget push ${{ github.workspace }}/artifacts/package/release/OpenSteamworks.Protobuf.${{ env.OSWVersion }}.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json

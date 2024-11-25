@@ -2,11 +2,12 @@ using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
+using OpenSteamworks.Data;
 using OpenSteamworks.Extensions;
 using OpenSteamworks.Messaging;
 using OpenSteamworks.Utils;
 
-namespace OpenSteamworks.IPCClient;
+namespace OpenSteamworks.IPC;
 
 public class FunctionDeserializer : IDisposable {
     private readonly MemoryStream stream;

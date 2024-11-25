@@ -6,7 +6,7 @@ using OpenSteamworks.Data.Enums;
 namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1020030)]
-[StructLayout(LayoutKind.Sequential, Pack = SteamClient.Pack)]
+[StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct AppLifetimeNotice_t
 {
     // Hmm, this causes problems for 64-bit pids...

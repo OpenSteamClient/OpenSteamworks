@@ -11,10 +11,11 @@ using OpenSteamworks.Data.Enums;
 using OpenSteamworks.Data.Structs;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientRemotePlay
 {
     public int GetSessionCount();  // argc: 0, index: 1, ipc args: [], ipc returns: [bytes4]

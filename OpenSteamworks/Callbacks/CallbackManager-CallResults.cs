@@ -15,18 +15,18 @@ public partial class CallbackManager {
 		int expectedSize = Marshal.SizeOf<T>();
 		using var mem = NativeMemoryBlock.AllocZeroed((nuint)expectedSize);
 
-		if (!steamClient.IClientUtils.GetAPICallResult(handle, mem.Ptr, expectedSize, expectedCallbackID, out bool failed)) {
+		if (!clientUtils.GetAPICallResult(handle, mem.Ptr, expectedSize, expectedCallbackID, out bool failed)) {
 			throw new Exception("API call not completed");
 		}
 
 		if (failed) {
-			return new CallResult<T>(failed, steamClient.IClientUtils.GetAPICallFailureReason(handle), new());
+			return new CallResult<T>(failed, clientUtils.GetAPICallFailureReason(handle), new());
 		}
 
 		T inst;
 		inst = Marshal.PtrToStructure<T>((nint)mem.Ptr);
 
-		return new CallResult<T>(failed, steamClient.IClientUtils.GetAPICallFailureReason(handle), inst);
+		return new CallResult<T>(failed, clientUtils.GetAPICallFailureReason(handle), inst);
 	}
 	
 	private async Task<CallResult<T>> WaitCallResultAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(SteamAPICall_t handle, CancellationToken cancellationToken = default) where T: struct
@@ -35,7 +35,7 @@ public partial class CallbackManager {
 		int expectedSize = Marshal.SizeOf<T>();
 
 		// Check to see if the call has already completed, before starting to wait.
-		if (steamClient.IClientUtils.IsAPICallCompleted(handle, out bool failed)) {
+		if (clientUtils.IsAPICallCompleted(handle, out bool failed)) {
 			return GetCompletedCall<T>(handle);
 		}
 

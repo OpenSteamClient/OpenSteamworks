@@ -14,10 +14,11 @@ using OpenSteamworks.Protobuf;
 using OpenSteamworks.Data.Structs;
 
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientRemoteStorage
 {
     // WARNING: Arguments are unknown!

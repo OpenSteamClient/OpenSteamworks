@@ -9,12 +9,13 @@
 using System;
 using System.Runtime.InteropServices;
 using OpenSteamworks.Attributes;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
 using HHTTPRequest = System.Int32;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientHTTP
 {
     // WARNING: Arguments are unknown!

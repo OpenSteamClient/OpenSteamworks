@@ -12,10 +12,11 @@ using OpenSteamworks.Data.Enums;
 
 using OpenSteamworks.Data.Structs;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientGameServerInternal
 {
     // WARNING: Do not use this function! Unknown behaviour will occur!

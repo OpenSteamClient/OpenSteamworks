@@ -10,10 +10,11 @@ using System;
 using OpenSteamworks.Data.Enums;
 using OpenSteamworks.Attributes;
 using OpenSteamworks.Data;
+using CppSourceGen.Attributes;
 
 namespace OpenSteamworks.Generated;
 
-[CppInterface]
+[CppClass]
 public unsafe interface IClientUnifiedMessages
 {
     // WARNING: Arguments are unknown!
