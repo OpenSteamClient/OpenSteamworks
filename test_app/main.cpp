@@ -63,6 +63,40 @@
 #include <cstdio>
 #include <cstdlib>
 #include <string.h>
+#include <thread>
+
+#include <tier1/cvar.h>
+
+#include "console.h"
+
+class CSteamConCommandBaseAccessor : public CConCommandBaseAccessor
+{
+public:
+    ConCommand *m_pTestConCommand;
+    ConVar *m_pTestConVar;
+
+    bool RegisterConCommandBase( ConCommandBase *pVar ) override
+    {
+        CConCommandBaseAccessor::RegisterConCommandBase(pVar);
+
+        if (pVar->BIsCommand())
+        {
+            auto cmd = reinterpret_cast<ConCommand*>(pVar);
+
+            printf("cmd: %s, desc: %s, flags: %u,  hcc: %i\n", cmd->GetName(), cmd->GetHelpText(), cmd->GetFlags(), static_cast<int>(cmd->BHasCompletionCallback()));
+            if (strcmp(cmd->GetName(), "app_info_print") == 0)
+            {
+                m_pTestConCommand = cmd;
+            }
+        } else
+        {
+            auto cvar = reinterpret_cast<ConVar*>(pVar);
+            printf("cvar: %s : %s, flags %u, strval: %s, fval: %f, u64val: %llu\n", cvar->GetName(), cvar->GetHelpText(), cvar->GetFlags(), cvar->GetStringValue(), cvar->GetFloatValue(), cvar->GetUInt64Value());
+        }
+
+        return true;
+    }
+};
 
 int main(int argc, char** argv)
 {
@@ -85,26 +119,26 @@ int main(int argc, char** argv)
     }
 
     auto lib = dlopen("steamclient.so", RTLD_LAZY);
-    if (lib == NULL)
+    if (lib == nullptr)
     {
         fprintf(stderr, "Failed to load steamclient.so! Err: %s\n", dlerror());
         lib = dlopen("libsteamclient.so", RTLD_LAZY);
-        if (lib == NULL)
+        if (lib == nullptr)
         {
             fprintf(stderr, "Failed to load libsteamclient.so! Err: %s\n", dlerror());
             return 1;
         }
     }
 
-    CreateInterfaceFn CreateInterface = (CreateInterfaceFn)dlsym(lib, "CreateInterface");
-    if (CreateInterface == NULL)
+    auto CreateInterface = reinterpret_cast<CreateInterfaceFn>(dlsym(lib, "CreateInterface"));
+    if (CreateInterface == nullptr)
     {
         fprintf(stderr, "Failed to get CreateInterface!\n");
         return 1;
     }
 
     int ret = 0;
-    IClientEngine *engine = (IClientEngine*)CreateInterface("CLIENTENGINE_INTERFACE_VERSION005", &ret);
+    auto engine = static_cast<IClientEngine*>(CreateInterface("CLIENTENGINE_INTERFACE_VERSION005", &ret));
     if (engine == nullptr)
     {
         fprintf(stderr, "Failed to get IClientEngine! Err: %d\n", ret);
@@ -112,6 +146,11 @@ int main(int argc, char** argv)
     }
 
     printf("Got IClientEngine %p\n", engine);
+
+
+    printf("Retrieving ConCommands list\n");
+    ConCommandBase::s_pAccessor = new CSteamConCommandBaseAccessor();
+    engine->ConCommandInit(ConCommandBase::s_pAccessor);
 
     HSteamPipe pipe;
     HSteamUser user;
@@ -126,7 +165,6 @@ int main(int argc, char** argv)
         user = engine->CreateGlobalUser(&pipe);
         printf("Created SteamUser handle %d, pipe %d\n", user, pipe);
     }
-    
 
     IClientUtils *utils = engine->GetIClientUtils(pipe);
     if (utils == nullptr)
@@ -155,7 +193,7 @@ int main(int argc, char** argv)
         fprintf(stderr, "Failed to get IClientUser!\n", ret);
     } else {
         printf("Got IClientUser %p\n", clientUser);
-        printf("Logged in SteamID: %llu\n", clientUser->GetSteamID());
+        printf("Logged in SteamID: %llu\n", clientUser->GetSteamID().ConvertToUint64());
 
         char buf[256];
         printf("Logged in user: %s, success: %d\n", buf, clientUser->GetAccountName(buf, sizeof(buf)));

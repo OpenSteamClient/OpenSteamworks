@@ -12,5 +12,4 @@ void AssertMsgImpl(const char *file, int line, const char *msg, ...)
 	va_end( va );
 
     fprintf(stderr, "%s (%d) : Assertion Failed: %s\n", file, line, buf);
-    std::abort();
 }

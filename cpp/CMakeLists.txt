@@ -29,6 +29,7 @@ endif()
 
 add_library(tier1_s ${tier1_s_BUILD_TYPE} 
     src/tier1/bitstring.cpp
+    src/tier1/cvar.cpp
     src/tier1/generichash.cpp
     src/tier1/ipv6text.c
     src/tier1/netadr.cpp
@@ -63,3 +64,5 @@ set_target_properties(tier0_s PROPERTIES CXX_STANDARD 20)
 
 target_include_directories(tier0_s PUBLIC "include" PRIVATE "include/tier0")
 target_include_directories(tier1_s PUBLIC "include" PRIVATE "include/tier1")
+
+target_link_libraries(tier1_s PUBLIC tier0_s)
