@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSteamClient.Logging" Version="1.0.2"/>
+    <PackageReference Include="OpenSteamClient.Logging" Version="1.0.3"/>
 
     <ProjectReference SetTargetFramework="TargetFramework=netstandard2.0" Properties="RuntimeIdentifier=" Include="..\OpenSteamworks.DataSourceGen\OpenSteamworks.DataSourceGen.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

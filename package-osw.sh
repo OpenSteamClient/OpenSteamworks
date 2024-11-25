@@ -5,6 +5,12 @@ mkdir -p artifacts/package/pkgsrc
 
 OSWVersion="$(dotnet msbuild -getproperty:CommonVersion Directory.Build.props)"
 
+# Ugh, have to build this explicitly.
+cd SourceGeneratorsKit
+dotnet build
+dotnet build -c Release
+cd ..
+
 cd OpenSteamworks.Protobuf
 dotnet pack -c Release /p:IsPacking=true
 cd ..
