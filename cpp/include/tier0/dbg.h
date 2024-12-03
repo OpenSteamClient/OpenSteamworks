@@ -10,7 +10,7 @@ extern void AssertMsgImpl(const char *file, int line, const char *msg, ...);
 #define Assert( x ) \
 do { \
     if (!(x)) { \
-        AssertMsgImpl(true, __FILE__, __LINE__, #x); \
+        AssertMsgImpl(__FILE__, __LINE__, #x); \
         asm(R"(
         int3
         )"); \
@@ -20,7 +20,7 @@ do { \
 #define AssertMsg( x, ... ) \
 do { \
     if (!(x)) { \
-        AssertMsgImpl(true, __FILE__, __LINE__, __VA_ARGS__); \
+        AssertMsgImpl( __FILE__, __LINE__, __VA_ARGS__); \
         asm(R"(
         int3
         )"); \
