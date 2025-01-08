@@ -17,9 +17,9 @@ namespace OpenSteamworks.Generated;
 public unsafe interface IClientGameCoordinator
 {
     // WARNING: Arguments are unknown!
-    public unknown_ret SendMessage();  // argc: 4, index: 1, ipc args: [bytes4, bytes4, bytes4, bytes_length_from_mem], ipc returns: [bytes4]
+    public unknown SendMessage();  // argc: 4, index: 1, ipc args: [bytes4, bytes4, bytes4, bytes_length_from_mem], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret IsMessageAvailable();  // argc: 2, index: 2, ipc args: [bytes4], ipc returns: [boolean, bytes4]
+    public unknown IsMessageAvailable();  // argc: 2, index: 2, ipc args: [bytes4], ipc returns: [boolean, bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret RetrieveMessage();  // argc: 5, index: 3, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes4, bytes4, bytes_length_from_mem]
+    public unknown RetrieveMessage();  // argc: 5, index: 3, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes4, bytes4, bytes_length_from_mem]
 }

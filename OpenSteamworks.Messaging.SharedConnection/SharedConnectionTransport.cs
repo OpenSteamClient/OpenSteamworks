@@ -37,13 +37,14 @@ public sealed class SharedConnectionTransport : BaseConnectionTransport
         if (IsDisposed)
             return;
         
-        msgBuf.SeekGet(0);
-        msgBuf.SeekPut(0);
+        msgBuf.SeekRead(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
+        msgBuf.SeekWrite(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
         while (sharedConnection.BPopReceivedMessage(handle, in msgBuf, out var hCall))
         {
-            msgBuf.SeekGet(0);
-            OnMsgDataReceived(msgBuf.GetSpan(), hCall);
-            msgBuf.SeekPut(0);
+            msgBuf.SeekRead(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
+            // Don't need to seek read afterwards, since this operation will always reset it to zero anyhow.
+            OnMsgDataReceived(msgBuf.GetReadSpan(), hCall);
+            msgBuf.SeekWrite(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
         }
     }
 
@@ -70,7 +71,7 @@ public sealed class SharedConnectionTransport : BaseConnectionTransport
         base.Dispose();
         frameTask.Dispose();
         sharedConnection.ReleaseSharedConnection(handle);
-        msgBuf.Free();
+        msgBuf.Dispose();
     }
 
     protected override void RewriteMessage(IMessage message)

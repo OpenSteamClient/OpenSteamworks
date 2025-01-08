@@ -6,7 +6,4 @@ namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1020028)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
-public struct AppOwnershipTicketReceived_t 
-{
-	public AppId_t m_nAppID;
-}
+public record struct AppOwnershipTicketReceived_t(AppId_t AppID);

@@ -8,7 +8,4 @@ namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1280019)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
-public struct AppConfigChanged_t
-{
-	public AppId_t m_nAppID;
-}
+public record struct AppConfigChanged_t(AppId_t AppID);

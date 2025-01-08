@@ -32,7 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="typedefs.typedef" />
+    <AdditionalFiles Include="steamtypes.typedef" />
+    <AdditionalFiles Include="interop.typedef" />
   </ItemGroup>
 
 </Project>

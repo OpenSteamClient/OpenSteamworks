@@ -39,6 +39,16 @@ public struct CGameID : IEquatable<CGameID>, IComparable<CGameID> {
 		ModID = nModID;
 	}
 
+	public CGameID(EGameIDType type, AppId_t appid, uint modID = 0)
+	{
+		GameID = 0;
+		Type = type;
+		AppID = appid;
+		ModID = modID;
+	}
+
+	public static CGameID CreateFromShortcut(AppId_t shortcutAppID)
+		=> new CGameID(EGameIDType.Shortcut, 0, shortcutAppID);
 
 
 	/// <summary>

@@ -1,35 +1,38 @@
-using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Diagnostics;
 using OpenSteamClient.Logging;
 
 namespace OpenSteamworks.Data;
 
+// ReSharper disable InconsistentNaming
+// ReSharper disable PrivateFieldCanBeConvertedToLocalVariable
+// ReSharper disable MemberCanBePrivate.Global
+
 [StructLayout(LayoutKind.Sequential)]
 public unsafe struct CUtlBuffer : IDisposable {
-    public CUtlMemory<byte> m_Memory;
-	public int m_Get;
-	public int m_Put;
+    private CUtlMemory<byte> m_Memory;
+    public int ReadPosition { get; set; }
+	public int WritePosition { get; set; }
 
-	public int m_nMaxPut;
-	public UInt16 m_nTab;
+	public int MaxWritten { get; private set; }
+    private UInt16 m_nTab = 0;
 
-	public ErrorFlags_t m_Error;
-	public BufferFlags_t m_Flags;
+	private ErrorFlags_t m_Error;
+    private BufferFlags_t m_Flags;
 
-	public delegate* unmanaged[Thiscall]<CUtlBuffer*, int, byte> m_GetOverflowFunc;
-    public uint padding = 0;
-    public delegate* unmanaged[Thiscall]<CUtlBuffer*, int, byte> m_PutOverflowFunc;
-    public uint padding1 = 0;
-
-    public enum ErrorFlags_t : byte 
+    private delegate* unmanaged[Thiscall]<CUtlBuffer*, int, byte> ReadOverflowFunc;
+    private uint padding = 0;
+    private delegate* unmanaged[Thiscall]<CUtlBuffer*, int, byte> WriteOverflowFunc;
+    private uint padding1 = 0;
+    
+    [Flags]
+    private enum ErrorFlags_t : byte 
     {
-        PUT_OVERFLOW = 0x1,
-        GET_OVERFLOW = 0x2,
-        MAX_ERROR_FLAG
+        WRITE_OVERFLOW = 0x1,
+        READ_OVERFLOW = 0x2
     }
-
+    
+    [Flags]
     public enum BufferFlags_t : byte
 	{
 		TEXT_BUFFER = 0x1,			// Describes how get + put work (as strings, or binary)
@@ -40,7 +43,7 @@ public unsafe struct CUtlBuffer : IDisposable {
 		LITTLE_ENDIAN_BUFFER = 0x20,// ensures that data is stored in little endian format
 		BIG_ENDIAN_BUFFER = 0x40,	// ensures that data is stored in big endian format
 	};
-
+    
     public enum SeekType_t : byte
 	{
 		SEEK_HEAD = 0,
@@ -48,216 +51,134 @@ public unsafe struct CUtlBuffer : IDisposable {
 		SEEK_TAIL
 	};
 
-    public CUtlBuffer(int length, int growSize = 0) {
-        this.m_Memory = new CUtlMemory<byte>(growSize, length);
+    public CUtlBuffer()
+    {
         this.m_Error = 0;
-        this.m_Get = 0;
-        this.m_Put = 0;
-        this.m_nTab = 0;
+        this.ReadPosition = 0;
+        this.WritePosition = 0;
+        this.MaxWritten = -1;
         this.m_Flags = 0;
-
-        this.m_nMaxPut = -1;
-
-        unsafe {
-            this.m_GetOverflowFunc = &GetOverflow;
-            this.m_PutOverflowFunc = &PutOverflow;
-        }
+        this.ReadOverflowFunc = &ReadOverflow;
+        this.WriteOverflowFunc = &WriteOverflow;
+    }
+    
+    public CUtlBuffer(int length, int growSize = 0) : this() { 
+        this.m_Memory = new CUtlMemory<byte>(growSize, length);
+        
+        if (length != 0)
+            AddNullTermination();
     }
 
-    public CUtlBuffer(IntPtr pBuffer, int nSize, BufferFlags_t nFlags)
+    public CUtlBuffer(bool isConst, byte* ptr, int len) : this()
     {
-        Trace.Assert( nSize != 0 );
-        this.m_Memory = new CUtlMemory<byte>(pBuffer, nSize);
-
-        m_Error = 0;
-        m_Get = 0;
-        m_Put = 0;
-        m_nTab = 0;
-        m_Flags = nFlags;
-        if ( IsReadOnly() )
+        this.m_Memory = new CUtlMemory<byte>(isConst, ptr, len);
+        this.m_Flags = BufferFlags_t.EXTERNAL_GROWABLE;
+        if (isConst)
         {
-            m_nMaxPut = nSize;
-            m_Put = nSize;
+            this.m_Flags |= BufferFlags_t.READ_ONLY;
+            this.MaxWritten = len;
+            this.WritePosition = len;
         }
         else
         {
-            m_nMaxPut = -1;
             AddNullTermination();
         }
-
-        unsafe {
-            this.m_GetOverflowFunc = &GetOverflow;
-            this.m_PutOverflowFunc = &PutOverflow;
-        }
     }
 
-    public void Free() {
-        this.m_Memory.Free();
-    }
-
-    public byte[] ToManaged()
-    {
-        byte[] allBytes = this.m_Memory.ToManaged();
-        byte[] usedBytes = new byte[this.m_Put];
-        Array.Copy(allBytes, usedBytes, this.m_Put);
-        return usedBytes;
-    }
-
-    public Span<byte> GetSpan()
-        => m_Memory.GetSpan().Slice(this.m_Get, this.m_Put);
-
-    public void SeekGet(int newPos) {
-        this.m_Get = newPos;
-    }
-
-    public void SeekPut(int newPos)
-    {
-        this.m_Put = newPos;
-    }
-
-    public byte[] ToManagedAndFree() {
-        var str = this.ToManaged();
-        this.Free();
-        return str;
-    }
-
-    [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvThiscall) })]
-    public static byte PutOverflow(CUtlBuffer* buf, int nSize) {
+    [UnmanagedCallersOnly(CallConvs = [typeof(CallConvThiscall)])]
+    public static byte WriteOverflow(CUtlBuffer *buf, int nSize) {
         UtlLogging.UtlBuffer.Debug("PutOverflow called");
-        int nGrowDelta = (buf->m_Put + nSize) - buf->m_Memory.m_nAllocationCount;
-
-        if (nGrowDelta > 0)
-        {
-            buf->m_Memory.Grow( nGrowDelta );
-        }
+        buf->Grow(nSize);
             
         return 1;
     }
 
-    [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvThiscall) })]
-    public static byte GetOverflow(CUtlBuffer* buf, int nSize) {
+    [UnmanagedCallersOnly(CallConvs = [typeof(CallConvThiscall)])]
+    public static byte ReadOverflow(CUtlBuffer *buf, int nSize) {
         UtlLogging.UtlBuffer.Debug("GetOverflow called");
         return 0;
     }
 
-    public unsafe void Put( void *pMem, int size )
-    {
-        if ( size > 0 && CheckPut( size ) )
-        {
-            if ( pMem != &m_Memory.Base()[m_Put] )
-                NativeMemory.Copy(&m_Memory.Base()[m_Put], pMem, (nuint)size);
-            m_Put += size;
-
-            AddNullTermination();
-        }
-    }
-
-    public unsafe bool CheckPut(int nSize) {
-        Trace.Assert( nSize >= 0 );
-        if (m_Error.HasFlag(ErrorFlags_t.PUT_OVERFLOW) || IsReadOnly() || nSize < 0 )
-            return false;
-
-        Trace.Assert( m_Put >= 0 );
-        if ( nSize <= m_Memory.NumAllocated() - m_Put )
-            return true;
-
-        if ( OnPutOverflow( nSize ) )
-            return true;
-
-        m_Error |= ErrorFlags_t.PUT_OVERFLOW;
-        return false;
-    }
-
-    public readonly unsafe bool IsReadOnly() {
-        return (m_Flags & BufferFlags_t.READ_ONLY) != 0; 
-    }
-
-    public bool OnPutOverflow( int nSize )
-    {
-        fixed (CUtlBuffer* thisptr = &this) {
-            return m_PutOverflowFunc(thisptr, nSize) == 1;
-        }
-    }
-
-    public bool OnGetOverflow( int nSize )
-    {
-        fixed (CUtlBuffer* thisptr = &this) {
-            return m_GetOverflowFunc(thisptr, nSize) == 1;
-        }
-    }
-
-    public void AddNullTermination()
-    {
-        Trace.Assert( m_Put >= 0 );
-        if ( m_Put > m_nMaxPut )
-        {
-            if ( !IsReadOnly() && (!m_Error.HasFlag(ErrorFlags_t.PUT_OVERFLOW)) && IsText()  )
-            {
-                // Add null termination value
-                if ( CheckPut( 1 ) )
-                {
-                    m_Memory[m_Put] = 0;
-                }
-                else
-                {
-                    // Restore the overflow state, it was valid before...
-                    m_Error &= ~ErrorFlags_t.PUT_OVERFLOW;
-                }
-            }
-            m_nMaxPut = m_Put;
-        }		
-    }
-
-    public readonly bool IsText()
-    {
-        return m_Flags.HasFlag(BufferFlags_t.TEXT_BUFFER);
-    }
-
-    public readonly bool IsValid()
-    { 
-        return m_Error == 0; 
-    }
-
-    public void EatWhiteSpace()
-    {
-        if ( IsText() && IsValid() )
-        {
-            while ( CheckGet( sizeof(byte) ) )
-            {
-                if ( !char.IsWhiteSpace((char)*(byte*)PeekGet()))
-                    break;
-                m_Get += sizeof(byte);
-            }
-        }
-    }
-
-    public readonly int TellMaxPut()
-    {
-        return m_nMaxPut;
-    }
-
     /// <summary>
-    /// Checks if a get is ok
+    /// Change where I'm reading
     /// </summary>
-    public bool CheckGet( int nSize )
+    public bool SeekRead( SeekType_t type, int offset )	
     {
-        if ( nSize < 0 )
-            return false;
-
-        if (m_Error.HasFlag(ErrorFlags_t.GET_OVERFLOW))
-            return false;
-
-        if ( TellMaxPut() < m_Get + nSize )
+        m_Memory.ThrowIfDisposed();
+        
+        switch( type )
         {
-            m_Error |= ErrorFlags_t.GET_OVERFLOW;
+            case SeekType_t.SEEK_HEAD:						 
+                ReadPosition = offset; 
+                break;
+
+            case SeekType_t.SEEK_CURRENT:
+                ReadPosition += offset;
+                break;
+
+            case SeekType_t.SEEK_TAIL:
+                ReadPosition = MaxWritten - offset;
+                break;
+        }
+
+        if ( ReadPosition > MaxWritten )
+        {
+            m_Error |= ErrorFlags_t.READ_OVERFLOW;
+            return false;
+        }
+        else
+        {
+            m_Error &= ~ErrorFlags_t.READ_OVERFLOW;
+            return true;
+        }
+    }
+    
+    /// <summary>
+    /// Change where I'm writing
+    /// </summary>
+    public void SeekWrite( SeekType_t type, int offset )	
+    {
+        m_Memory.ThrowIfDisposed();
+        
+        switch( type )
+        {
+            case SeekType_t.SEEK_HEAD:						 
+                WritePosition = offset; 
+                break;
+
+            case SeekType_t.SEEK_CURRENT:
+                WritePosition += offset;
+                break;
+
+            case SeekType_t.SEEK_TAIL:
+                WritePosition = MaxWritten - offset;
+                break;
+        }
+        
+        AddNullTermination();
+    }
+
+    private bool CheckRead(int num)
+    {
+        ThrowIfInvalidFlags();
+        
+        if (num < 0)
+            return false;
+
+        if (m_Error.HasFlag(ErrorFlags_t.READ_OVERFLOW))
+            return false;
+
+        if (MaxWritten < ReadPosition + num)
+        {
+            m_Error |= ErrorFlags_t.READ_OVERFLOW;
             return false;
         }
 
-        if ( ( m_Get < 0 ) || (	m_Memory.NumAllocated() < m_Get + nSize ) )
+        if (ReadPosition < 0 || m_Memory.AllocationCount < ReadPosition + num)
         {
-            if ( !OnGetOverflow( nSize ) )
+            if (!OnReadOverflow(num))
             {
-                m_Error |= ErrorFlags_t.GET_OVERFLOW;
+                m_Error |= ErrorFlags_t.READ_OVERFLOW;
                 return false;
             }
         }
@@ -265,110 +186,132 @@ public unsafe struct CUtlBuffer : IDisposable {
         return true;
     }
 
-    /// <summary>
-    /// Eats C++ style comments
-    /// </summary>
-    public bool EatCPPComment()
+    private bool OnReadOverflow(int num)
     {
-        if ( IsText() && IsValid() )
+        if (this.ReadOverflowFunc == null)
+            return false;
+
+        fixed (CUtlBuffer* thisptr = &this)
         {
-            // If we don't have a a c++ style comment next, we're done
-            byte *pPeek = (byte*)PeekGet( 2 * sizeof(byte), 0 );
-            if ( pPeek == null || ( pPeek[0] != '/' ) || ( pPeek[1] != '/' ) )
-                return false;
+            return ReadOverflowFunc(thisptr, num) != 0;
+        }
+    }
 
-            // Deal with c++ style comments
-            m_Get += 2;
+    private bool CheckWrite(int num)
+    {
+        ThrowIfInvalidFlags(true);
+        ArgumentOutOfRangeException.ThrowIfNegative(num);
 
-            // read complete line
-            for ( byte c = GetByte(); IsValid(); c = GetByte() )
-            {
-                if ( c == '\n' )
-                    break;
-            }
+        if (m_Error.HasFlag(ErrorFlags_t.WRITE_OVERFLOW))
+            return false;
+
+        if (m_Flags.HasFlag(BufferFlags_t.READ_ONLY))
+            return false;
+
+        if (WritePosition < 0)
+            throw new InvalidDataException($"WritePosition is invalid. (a negative value of {WritePosition}");
+
+        if (num <= m_Memory.AllocationCount - WritePosition)
+            return true;
+
+        if (OnWriteOverflow(num)) 
+            return true;
+        
+        m_Error |= ErrorFlags_t.WRITE_OVERFLOW;
+        return false;
+
+    }
+    
+    private bool OnWriteOverflow(int num)
+    {
+        if (this.WriteOverflowFunc == null)
+            return false;
+        
+        fixed (CUtlBuffer* thisptr = &this)
+        {
+            return WriteOverflowFunc(thisptr, num) != 0;
+        }
+    }
+
+    public bool TryRead(Span<byte> buffer, int num)
+    {
+        if (!CheckRead(num))
+            return false;
+        
+        GetReadSpan().CopyTo(buffer);
+        ReadPosition += num;
+        return true;
+    }
+    
+    /// <summary>
+    /// Tries to write data. If the write fails, no exception is thrown and false is returned. Returns true on success.
+    /// </summary>
+    /// <param name="data"></param>
+    public bool TryWrite(ReadOnlySpan<byte> data)
+    {
+        if (data.Length > 0 && CheckWrite(data.Length))
+        {
+            data.CopyTo(GetWriteSpan());
+            WritePosition += data.Length;
+            AddNullTermination();
             return true;
         }
+
         return false;
     }
 
-    /// <summary>
-    /// Checks if a peek get is ok
-    /// </summary>
-    public bool CheckPeekGet(int nOffset, int nSize)
+    public void Grow(int newSize)
     {
-        if (m_Error.HasFlag(ErrorFlags_t.GET_OVERFLOW))
-            return false;
-
-        // Checking for peek can't set the overflow flag
-        bool bOk = CheckGet( nOffset + nSize );
-        m_Error &= ~ErrorFlags_t.GET_OVERFLOW;
-        return bOk;
-    }
-
-    /// <summary>
-    /// Peek part of the butt
-    /// </summary>
-    public unsafe void* PeekGet( int nMaxSize, int nOffset )
-    {
-        if ( !CheckPeekGet( nOffset, nMaxSize ) )
-            return null;
-        return &m_Memory.Base()[m_Get + nOffset];
-    }
-
-    public byte GetByte()
-    {
-        byte c = 0;
-        if ( CheckGet( 1 ) ) // sets get overflow error bit on failure
+        ThrowIfInvalidFlags(true);
+        
+        if (m_Flags.HasFlag(BufferFlags_t.EXTERNAL_GROWABLE))
+            throw new NotImplementedException("Growing external memory not implemented.");
+        
+        int nGrowDelta = (ReadPosition + newSize) - m_Memory.AllocationCount;
+        if ( nGrowDelta >  0 )
         {
-            c = *(byte*) PeekGet();
-            m_Get += 1;
-        }
-        return c;
-    }
-
-    public unsafe void* PeekGet()
-    {
-        return &m_Memory.Base()[ m_Get ];
-    }
-
-    /// <summary>
-    /// Change where I'm reading
-    /// </summary>
-    public unsafe bool SeekGet( SeekType_t type, int offset )	
-    {
-        switch( type )
-        {
-            case SeekType_t.SEEK_HEAD:						 
-                m_Get = offset; 
-                break;
-
-            case SeekType_t.SEEK_CURRENT:
-                m_Get += offset;
-                break;
-
-            case SeekType_t.SEEK_TAIL:
-                m_Get = m_nMaxPut - offset;
-                break;
-        }
-
-        if ( m_Get > m_nMaxPut )
-        {
-            m_Error |= ErrorFlags_t.GET_OVERFLOW;
-            return false;
-        }
-        else
-        {
-            m_Error &= ~ErrorFlags_t.GET_OVERFLOW;
-            return true;
+            m_Memory.Grow( nGrowDelta );
         }
     }
 
-    public readonly int TellGet() {
-        return m_Get;
+    private void ThrowIfInvalidFlags(bool isWriteOperation = false)
+    {
+        if (isWriteOperation && m_Flags.HasFlag(BufferFlags_t.READ_ONLY))
+            throw new InvalidOperationException("Buffer is read-only, and a write was attempted.");
+        
+        if (m_Flags.HasFlag(BufferFlags_t.TEXT_BUFFER))
+            throw new NotImplementedException("Text buffers are currently unsupported");
     }
-
+    
+    
     public void Dispose()
     {
-        this.Free();
+        m_Memory.ThrowIfDisposed();
+        this.m_Memory.Dispose();
     }
+
+    public void AddNullTermination()
+    {
+        if (WritePosition > MaxWritten)
+        {
+            //TODO: For text buffers, this should actually null terminate.
+            MaxWritten = WritePosition;
+        }
+    }
+    
+    /// <summary>
+    /// Gets the span for reading.
+    /// You must increment <see cref="ReadPosition"/> manually.
+    /// </summary>
+    /// <returns></returns>
+    public ReadOnlySpan<byte> GetReadSpan()
+        => new(m_Memory.Pointer + ReadPosition, MaxWritten);
+    
+    /// <summary>
+    /// Gets the span for writing.
+    /// You must increment <see cref="WritePosition"/> manually, and call <see cref="AddNullTermination"/> afterwards.
+    /// </summary>
+    /// <returns></returns>
+    public Span<byte> GetWriteSpan()
+        => new(m_Memory.Pointer + WritePosition, m_Memory.AllocationCount - WritePosition);
 }

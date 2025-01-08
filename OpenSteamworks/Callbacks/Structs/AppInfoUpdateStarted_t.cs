@@ -7,7 +7,4 @@ namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1280017)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
-public struct AppInfoUpdateStarted_t
-{
-    
-}
+public record struct AppInfoUpdateStarted_t();

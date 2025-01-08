@@ -8,8 +8,4 @@ namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1020070)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
-public struct AppLastPlayedTimeChanged_t
-{
-	public AppId_t m_nAppID;
-    public RTime32 m_lastPlayed;
-}
+public record struct AppLastPlayedTimeChanged_t(AppId_t AppID, RTime32 LastPlayed);

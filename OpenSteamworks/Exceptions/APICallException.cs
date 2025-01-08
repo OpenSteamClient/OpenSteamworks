@@ -1,12 +1,19 @@
 using System;
+using OpenSteamworks.Data.Enums;
 
 namespace OpenSteamworks.Exceptions;
 
 /// <summary>
-/// Thrown when an API call fails for unknown reasons.
+/// Thrown when an API call fails.
 /// </summary>
-public class APICallException : Exception
+public sealed class APICallException : Exception
 {
+    /// <summary>
+    /// The reason for the failure, if this exception came from awaiting a SteamAPICall_t.
+    /// In other cases this will be <see cref="ESteamAPICallFailure.None"/>
+    /// </summary>
+    public ESteamAPICallFailure FailureReason { get; } = ESteamAPICallFailure.None;
+    
     public APICallException()
     {
     }

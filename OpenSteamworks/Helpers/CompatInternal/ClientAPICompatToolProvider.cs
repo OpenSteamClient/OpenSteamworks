@@ -14,25 +14,25 @@ internal sealed class ClientAPICompatToolProvider(ISteamClient steamClient) : IC
 
     public unsafe IEnumerable<string> GetCompatTools()
     {
-        CUtlStringList stringList = new();
+        using var stringList = new CUtlStringList();
         clientCompat.GetAvailableCompatTools(&stringList);
 
-        return stringList.ToManagedAndFree();
+        return stringList.ToManaged();
     }
 
     public unsafe IEnumerable<string> GetCompatTools(ERemoteStoragePlatform target)
     {
-        CUtlStringList stringList = new();
+        using var stringList = new CUtlStringList();
         clientCompat.GetAvailableCompatToolsFiltered(&stringList, target);
 
-        return stringList.ToManagedAndFree();
+        return stringList.ToManaged();
     }
 
     public unsafe IEnumerable<string> GetCompatToolsForApp(AppId_t appid)
     {
-        CUtlStringList stringList = new();
+        using var stringList = new CUtlStringList();
         clientCompat.GetAvailableCompatToolsForApp(&stringList, appid);
 
-        return stringList.ToManagedAndFree();
+        return stringList.ToManaged();
     }
 }

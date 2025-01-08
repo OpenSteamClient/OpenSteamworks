@@ -17,13 +17,13 @@ namespace OpenSteamworks.Generated;
 public unsafe interface IClientGameNotifications
 {
     // WARNING: Arguments are unknown!
-    public unknown_ret EnumerateNotifications();  // argc: 1, index: 1, ipc args: [bytes4], ipc returns: [bytes8]
+    public unknown EnumerateNotifications();  // argc: 1, index: 1, ipc args: [bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetNotificationCount();  // argc: 1, index: 2, ipc args: [bytes4], ipc returns: [bytes4]
+    public unknown GetNotificationCount();  // argc: 1, index: 2, ipc args: [bytes4], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetNotification();  // argc: 3, index: 3, ipc args: [bytes4, bytes4], ipc returns: [bytes1, bytes4124]
+    public unknown GetNotification();  // argc: 3, index: 3, ipc args: [bytes4, bytes4], ipc returns: [bytes1, bytes4124]
     // WARNING: Arguments are unknown!
-    public unknown_ret RemoveSession();  // argc: 3, index: 4, ipc args: [bytes4, bytes8], ipc returns: []
+    public unknown RemoveSession();  // argc: 3, index: 4, ipc args: [bytes4, bytes8], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdateSession();  // argc: 3, index: 5, ipc args: [bytes4, bytes8], ipc returns: []
+    public unknown UpdateSession();  // argc: 3, index: 5, ipc args: [bytes4, bytes8], ipc returns: []
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
+using OpenSteamworks.Data.Interop;
 
 namespace OpenSteamworks.Native;
 
@@ -53,10 +54,10 @@ internal unsafe struct IMAGE_DOS_HEADER {
   public WORD  e_cs;         /* 16: Initial (relative) CS value */
   public WORD  e_lfarlc;     /* 18: File address of relocation table */
   public WORD  e_ovno;       /* 1a: Overlay number */
-  public fixed WORD  e_res[4];     /* 1c: Reserved words */
+  public fixed ushort  e_res[4];     /* 1c: Reserved words */
   public WORD  e_oemid;      /* 24: OEM identifier (for e_oeminfo) */
   public WORD  e_oeminfo;    /* 26: OEM information; e_oemid specific */
-  public fixed WORD  e_res2[10];   /* 28: Reserved words */
+  public fixed ushort  e_res2[10];   /* 28: Reserved words */
   public DWORD e_lfanew;     /* 3c: Offset to extended header */
 }
 

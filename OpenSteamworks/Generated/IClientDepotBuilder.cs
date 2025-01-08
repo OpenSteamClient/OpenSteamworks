@@ -17,16 +17,16 @@ namespace OpenSteamworks.Generated;
 public unsafe interface IClientDepotBuilder
 {
     // WARNING: Arguments are unknown!
-    public unknown_ret BGetDepotBuildStatus();  // argc: 5, index: 1, ipc args: [bytes8], ipc returns: [boolean, bytes4, bytes8, bytes8]
+    public unknown BGetDepotBuildStatus();  // argc: 5, index: 1, ipc args: [bytes8], ipc returns: [boolean, bytes4, bytes8, bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret VerifyChunkStore();  // argc: 3, index: 2, ipc args: [bytes4, bytes4, string], ipc returns: [bytes8]
+    public unknown VerifyChunkStore();  // argc: 3, index: 2, ipc args: [bytes4, bytes4, string], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public SteamAPICall_t DownloadDepot(AppId_t appid, DepotId_t depotId, uint workshopItemID, uint unk2, ulong targetManifestID, ulong deltaManifestID, string? targetInstallPath);  // argc: -1, index: 3, ipc args: [], ipc returns: []
+    public SteamAPICall_t DownloadDepot(AppId_t appid, DepotId_t depotId, uint workshopItemID, uint depotFlagsFilter, ulong targetManifestID, ulong deltaManifestID, string? targetInstallPath);  // argc: -1, index: 3, ipc args: [], ipc returns: []
     // WARNING: Arguments are unknown!
     [BlacklistedInCrossProcessIPC]
-    public unknown_ret DownloadChunk();  // argc: 3, index: 4, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
+    public unknown DownloadChunk();  // argc: 3, index: 4, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret StartDepotBuild();  // argc: 4, index: 5, ipc args: [bytes4, bytes4, bytes4, string], ipc returns: [bytes8]
+    public unknown StartDepotBuild();  // argc: 4, index: 5, ipc args: [bytes4, bytes4, bytes4, string], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret CommitAppBuild();  // argc: 6, index: 6, ipc args: [bytes4, bytes4, bytes_length_from_reg, bytes_length_from_reg, string, string], ipc returns: [bytes8]
+    public unknown CommitAppBuild();  // argc: 6, index: 6, ipc args: [bytes4, bytes4, bytes_length_from_reg, bytes_length_from_reg, string, string], ipc returns: [bytes8]
 }

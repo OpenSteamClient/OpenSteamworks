@@ -14,22 +14,22 @@
 class IClientCompat
 {
 public:
-    virtual unknown_ret BIsCompatLayerEnabled() = 0; //argc: 0, index 1
-    virtual unknown_ret GetAvailableCompatTools() = 0; //argc: 1, index 2
-    virtual unknown_ret GetAvailableCompatToolsFiltered() = 0; //argc: 3, index 3
-    virtual unknown_ret GetAvailableCompatToolsForApp() = 0; //argc: 2, index 4
-    virtual unknown_ret SpecifyCompatTool() = 0; //argc: 4, index 5
-    virtual unknown_ret SpecifyCompatExperiment() = 0; //argc: 3, index 6
-    virtual unknown_ret BIsCompatibilityToolEnabled() = 0; //argc: 1, index 7
-    virtual unknown_ret GetCompatToolName() = 0; //argc: 1, index 8
-    virtual unknown_ret GetCompatToolMappingPriority() = 0; //argc: 1, index 9
-    virtual unknown_ret GetCompatToolDisplayName() = 0; //argc: 1, index 10
-    virtual unknown_ret GetCompatExperiment() = 0; //argc: 1, index 11
-    virtual unknown_ret GetAppCompatCategories() = 0; //argc: 2, index 12
-    virtual unknown_ret StartSession() = 0; //argc: 1, index 13
-    virtual unknown_ret ReleaseSession() = 0; //argc: 3, index 14
-    virtual unknown_ret BIsLauncherServiceEnabled() = 0; //argc: 1, index 15
-    virtual unknown_ret DeleteCompatData() = 0; //argc: 1, index 16
-    virtual unknown_ret GetCompatibilityDataDiskSize() = 0; //argc: 1, index 17
-    virtual unknown_ret BNeedsUnlockH264() = 0; //argc: 1, index 18
+    virtual unknown BIsCompatLayerEnabled() = 0; //argc: 0, index 1
+    virtual unknown GetAvailableCompatTools() = 0; //argc: 1, index 2
+    virtual unknown GetAvailableCompatToolsFiltered() = 0; //argc: 3, index 3
+    virtual unknown GetAvailableCompatToolsForApp() = 0; //argc: 2, index 4
+    virtual unknown SpecifyCompatTool() = 0; //argc: 4, index 5
+    virtual unknown SpecifyCompatExperiment() = 0; //argc: 3, index 6
+    virtual unknown BIsCompatibilityToolEnabled() = 0; //argc: 1, index 7
+    virtual unknown GetCompatToolName() = 0; //argc: 1, index 8
+    virtual unknown GetCompatToolMappingPriority() = 0; //argc: 1, index 9
+    virtual unknown GetCompatToolDisplayName() = 0; //argc: 1, index 10
+    virtual unknown GetCompatExperiment() = 0; //argc: 1, index 11
+    virtual unknown GetAppCompatCategories() = 0; //argc: 2, index 12
+    virtual unknown StartSession() = 0; //argc: 1, index 13
+    virtual unknown ReleaseSession() = 0; //argc: 3, index 14
+    virtual unknown BIsLauncherServiceEnabled() = 0; //argc: 1, index 15
+    virtual unknown DeleteCompatData() = 0; //argc: 1, index 16
+    virtual unknown GetCompatibilityDataDiskSize() = 0; //argc: 1, index 17
+    virtual unknown BNeedsUnlockH264() = 0; //argc: 1, index 18
 };

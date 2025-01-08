@@ -1,0 +1,6 @@
+namespace OpenSteamworks.Data.Interop;
+
+// Internal interop datatypes.
+
+typedef UInt32 DWORD;
+typedef UInt16 WORD;

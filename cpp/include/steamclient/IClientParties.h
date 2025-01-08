@@ -26,5 +26,5 @@ public:
     virtual SteamAPICall_t ChangeNumOpenSlots(PartyBeaconID_t ulBeacon, uint32 unOpenSlots) = 0; //argc: 3, index 10
     virtual bool DestroyBeacon(PartyBeaconID_t ulBeacon) = 0; //argc: 2, index 11
     virtual bool GetBeaconLocationData(SteamPartyBeaconLocation_t BeaconLocation, ESteamPartyBeaconLocationData eData, char *pchDataStringOut, int cchDataStringOut) = 0; //argc: 6, index 12
-    virtual unknown_ret ReservePartySlot() = 0; //argc: 3, index 13
+    virtual unknown ReservePartySlot() = 0; //argc: 3, index 13
 };

@@ -1,19 +1,40 @@
 namespace OpenSteamworks.Data.Enums;
 
+/// <summary>
+/// Hints for compat tool priorities.
+/// The priorities may also be any other int value.
+/// </summary>
 public enum ECompatToolPriority : int
 {
     /// <summary>
-    /// The user-set global override. This is the override used for non-certified Windows games to run with.
+    /// The app does not have a compat tool.
     /// </summary>
-    UserSetGlobal = 75,
+    None = 0,
     
     /// <summary>
-    /// The title has overrides in its appinfo, or an override from SteamPlay 2.0 Manifests (or somewhere else). May still be overridden by the user.
+    /// The user-set global "wildcard". This is the tool used for non-certified Windows games to run with.
     /// </summary>
-    FromValveTesting = 100,
+    Wildcard = 75,
+    
+    /// <summary>
+    /// Override inside the apps appinfo.
+    /// This tag is also used for games tagged with linux in their common/oslist
+    /// </summary>
+    OverrideFromAppInfo = 85,
+    
+    /// <summary>
+    /// Override from SteamPlay 2.0 Manifests.
+    /// </summary>
+    OverrideFromSPManifests = 100,
     
     /// <summary>
     /// The user-set override for this app.
     /// </summary>
-    UserSetAppSpecific = 250,
+    AppForced = 250,
+}
+
+public static class ECompatToolPriorityExtensions
+{
+    public static bool IsWhitelisted(this ECompatToolPriority priority)
+        => priority < ECompatToolPriority.AppForced && priority > ECompatToolPriority.Wildcard;
 }

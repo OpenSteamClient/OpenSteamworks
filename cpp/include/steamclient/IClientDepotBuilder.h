@@ -14,10 +14,10 @@
 class IClientDepotBuilder
 {
 public:
-    virtual unknown_ret BGetDepotBuildStatus() = 0; //argc: 5, index 1
-    virtual unknown_ret VerifyChunkStore() = 0; //argc: 3, index 2
-    virtual unknown_ret Unknown_2_DONTUSE() = 0; //argc: -1, index 3
-    virtual unknown_ret DownloadChunk() = 0; //argc: 3, index 4
-    virtual unknown_ret StartDepotBuild() = 0; //argc: 4, index 5
-    virtual unknown_ret CommitAppBuild() = 0; //argc: 6, index 6
+    virtual unknown BGetDepotBuildStatus() = 0; //argc: 5, index 1
+    virtual unknown VerifyChunkStore() = 0; //argc: 3, index 2
+    virtual unknown Unknown_2_DONTUSE() = 0; //argc: -1, index 3
+    virtual unknown DownloadChunk() = 0; //argc: 3, index 4
+    virtual unknown StartDepotBuild() = 0; //argc: 4, index 5
+    virtual unknown CommitAppBuild() = 0; //argc: 6, index 6
 };

@@ -14,7 +14,7 @@
 class IClientSystemAudioManager
 {
 public:
-    virtual unknown_ret IsInterfaceValid() = 0; //argc: 0, index 1
-    virtual unknown_ret GetState() = 0; //argc: 2, index 2
-    virtual unknown_ret UpdateSomething() = 0; //argc: 1, index 3
+    virtual unknown IsInterfaceValid() = 0; //argc: 0, index 1
+    virtual unknown GetState() = 0; //argc: 2, index 2
+    virtual unknown UpdateSomething() = 0; //argc: 1, index 3
 };

@@ -40,7 +40,7 @@ internal partial class NativeSteamClient
     [MemberNotNull(nameof(fnFreeLastCallback))]
     [MemberNotNull(nameof(loadedClientLib))]
     [MemberNotNull(nameof(clientEngine))]
-    private static void InitClientDLL(NativeSteamClientCreateOptions createOptions, NativeSteamClient creatingInstance)
+    private static void InitClientDLL(NativeSteamClientCreateOptions createOptions, SteamClient wrapper, NativeSteamClient creatingInstance)
     {
         lock (loadedClientLibLock)
         {
@@ -64,7 +64,7 @@ internal partial class NativeSteamClient
                     if (retPtr == IntPtr.Zero)
                         throw new ClientDLLException($"Failed to retrieve IClientEngine (ver {SteamPlatform.CLIENTENGINE_INTERFACE_VERSION}), failCode: {failCode}");
 
-                    clientEngine = MarshallableClasses.Create_IClientEngine(retPtr);
+                    clientEngine = MarshallableClasses.Create_IClientEngine(retPtr, wrapper);
                     creatingInstance.IClientEngine = clientEngine;
                     
                     if (createOptions.HookLoggingFunctions)

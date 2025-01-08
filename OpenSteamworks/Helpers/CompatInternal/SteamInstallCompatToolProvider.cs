@@ -165,6 +165,8 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
     
     public IEnumerable<string> GetCompatToolsForApp(AppId_t appid)
     {
+        //TODO: This does not handle shortcuts.
+        
         if (!appsHelper.TryGetAppInfo(appid, EAppInfoSection.Common, out var commonSection))
         {
             logger.Warning($"No cached appinfo; cannot get compat tools for app {appid}");

@@ -17,8 +17,8 @@ public:
     virtual bool PurchaseWithActivationCode(const char *licenseCode) = 0; //argc: 1, index 1
     virtual bool HasActiveLicense(AppId_t appid) = 0; //argc: 1, index 2
     virtual bool GetLicenseInfo(AppId_t appid, RTime32 *pRTime32Created, RTime32 *pRTime32NextProcess, int32 *pnMinuteLimit, int32 *pnMinutesUsed, uint32_t *pUnk5, uint32_t *punFlags, int32 *pnTerritoryCode, char *countryCode) = 0; //argc: 9, index 3
-    virtual unknown_ret EnableTestLicense() = 0; //argc: 1, index 4
-    virtual unknown_ret DisableTestLicense() = 0; //argc: 1, index 5
-    virtual unknown_ret GetAppsInPackage() = 0; //argc: 3, index 6
-    virtual unknown_ret RequestFreeLicenseForApps() = 0; //argc: 2, index 7
+    virtual unknown EnableTestLicense() = 0; //argc: 1, index 4
+    virtual unknown DisableTestLicense() = 0; //argc: 1, index 5
+    virtual unknown GetAppsInPackage() = 0; //argc: 3, index 6
+    virtual unknown RequestFreeLicenseForApps() = 0; //argc: 2, index 7
 };

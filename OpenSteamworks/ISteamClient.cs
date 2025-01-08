@@ -11,6 +11,9 @@ public interface ISteamClient : IDisposable {
     public AppManagerHelper AppManagerHelper { get; }
     public AppsHelper AppsHelper { get; }
     public CompatHelper CompatHelper { get; }
+    public DownloadsHelper DownloadsHelper { get; }
+    public UserHelper UserHelper { get; }
+    public ConsoleHelper ConsoleHelper { get; }
     
     public IClientEngine IClientEngine { get; }
     public IClientAppDisableUpdate IClientAppDisableUpdate { get; }
@@ -76,11 +79,6 @@ public interface ISteamClient : IDisposable {
     public IClientTimeline IClientTimeline { get; }
     
     public CallbackManager CallbackManager { get; }
-    
-    /// <summary>
-    /// Get access to ConCommands, ConVars and register your own.
-    /// </summary>
-    public SteamConsole SteamConsole { get; }
     
     /// <summary>
     /// Is the current connection cross-process?

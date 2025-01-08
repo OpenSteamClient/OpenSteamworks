@@ -53,6 +53,6 @@ public:
     virtual void SetPageScaleFactor(HHTMLBrowser handle, float zoom, int x, int y) = 0;
     virtual void SetBackgroundMode(HHTMLBrowser handle, bool backgroundMode) = 0;
     virtual void SetDPIScalingFactor(HHTMLBrowser handle, float scaleFactor) = 0;
-    virtual unknown_ret OpenDeveloperTools(HHTMLBrowser handle) = 0;
-    virtual unknown_ret Validate(void* cvalidator, const char *unk) = 0;
+    virtual unknown OpenDeveloperTools(HHTMLBrowser handle) = 0;
+    virtual unknown Validate(void* cvalidator, const char *unk) = 0;
 };

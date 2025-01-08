@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenSteamClient.Logging;
 using OpenSteamworks.Callbacks;
 using OpenSteamworks.Callbacks.Structs;
 using OpenSteamworks.Data;
@@ -26,8 +27,10 @@ public sealed class AppsHelper : IDisposable
     private readonly IClientApps clientApps;
     
     private readonly ICallbackHandler cbAppInfoUpdateProgress;
-    public AppsHelper(ISteamClient steamClient)
+    private readonly ILogger logger;
+    public AppsHelper(ISteamClient steamClient, ILoggerFactory loggerFactory)
     {
+        this.logger = loggerFactory.CreateLogger(nameof(AppsHelper));
         this.clientApps = steamClient.IClientApps;
         
         cbAppInfoUpdateProgress = steamClient.CallbackManager.Register<AppInfoUpdateProgress_t>(OnAppInfoUpdateProgress);
@@ -36,21 +39,34 @@ public sealed class AppsHelper : IDisposable
     /// <summary>
     /// Retrieve a specific key from an app's appdata. 
     /// </summary>
-    /// <param name="appid"></param>
-    /// <param name="key"></param>
-    /// <returns></returns>
-    public string GetAppData(AppId_t appid, string key)
+    /// <param name="appid">The appid of the app to retrieve data from</param>
+    /// <param name="key">The key to retrieve.</param>
+    /// <param name="bufSize">The size of the temporary buffer to store the return data, before conversion to string.</param>
+    /// <returns>The value of the specified key.</returns>
+    /// <exception cref="AppInfoMissingException">AppInfo is not available for the specified app.</exception>
+    /// <exception cref="KeyNotFoundException">The specified key is not present in the AppInfo for the specified app.</exception>
+    public string GetAppData(AppId_t appid, string key, int bufSize = 512)
     {
-        int len = clientApps.GetAppData(appid, key, null, 0);
+        StringBuilder builder = new(bufSize);
+        int realLen = clientApps.GetAppData(appid, key, builder, bufSize);
+        if (realLen == 0)
+            throw new AppInfoMissingException($"AppInfo missing for app {appid}");
+
+        if (realLen == 1)
+            throw new KeyNotFoundException($"Key {key} is not present in AppInfo, or it's value is empty.");
         
-        StringBuilder builder = new(len);
-        clientApps.GetAppData(appid, key, builder, len);
-        
+        if (realLen >= bufSize - 1)
+            logger.Warning($"GetAppData: Data exceeds maximum size of {bufSize}, truncated!");
+
         return builder.ToString();
     }
     
+    /// <summary>
+    /// Gets the localized name for the specified appid, in the current client localization (see <see cref="OpenSteamworks.Generated.IClientUtils.GetSteamUILanguage"/>
+    /// </summary>
+    /// <param name="appid"></param>
+    /// <returns></returns>
     public string GetAppLocalizedName(AppId_t appid)
-        // This internally gets the correct localization. Very handy!
         => GetAppData(appid, "common/name");
     
     /// <summary>
@@ -128,17 +144,17 @@ public sealed class AppsHelper : IDisposable
         return true;
     }
     
-    private readonly object waitForAppInfoUpdateCompletionLock = new();
-    private readonly Dictionary<AppId_t, TaskCompletionSource> waitForAppInfoUpdateCompletionList = new();
+    private readonly object appInfoRequestsInFlightLock = new();
+    private readonly Dictionary<AppId_t, TaskCompletionSource?> appInfoRequestsInFlight = new();
     
     private Task WaitForAppInfoUpdateCompletion(AppId_t appid)
     {
-        lock (waitForAppInfoUpdateCompletionLock)
+        lock (appInfoRequestsInFlightLock)
         {
             // Create a TCS if one doesn't exist already
-            if (!waitForAppInfoUpdateCompletionList.TryGetValue(appid, out var tcs))
+            if (!appInfoRequestsInFlight.TryGetValue(appid, out var tcs) || tcs == null)
             {
-                tcs = waitForAppInfoUpdateCompletionList[appid] = new TaskCompletionSource();
+                tcs = appInfoRequestsInFlight[appid] = new TaskCompletionSource();
             }
             
             return tcs.Task;
@@ -147,14 +163,14 @@ public sealed class AppsHelper : IDisposable
     
     private void OnAppInfoUpdateProgress(ICallbackHandler handler, AppInfoUpdateProgress_t cb)
     {
-        lock (waitForAppInfoUpdateCompletionLock)
+        lock (appInfoRequestsInFlightLock)
         {
-            if (!waitForAppInfoUpdateCompletionList.Remove(cb.m_nAppID, out var tcs))
+            if (!appInfoRequestsInFlight.Remove(cb.AppID, out var tcs))
             {
                 return;
             }
 
-            tcs.SetResult();
+            tcs?.SetResult();
         }  
     }
     
@@ -198,6 +214,20 @@ public sealed class AppsHelper : IDisposable
         }
 
         return objects;
+    }
+
+    public void MarkAppInfoMissing(AppId_t appid)
+    {
+        lock (appInfoRequestsInFlightLock)
+        {
+            if (appInfoRequestsInFlight.TryAdd(appid, null))
+            {
+                if (!clientApps.RequestAppInfoUpdate([appid], 1))
+                {
+                    
+                }
+            }
+        }
     }
     
     public void Dispose()

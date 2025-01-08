@@ -177,7 +177,7 @@ export class CppVirtualHeader {
                 funcToAdd = oldfunc;
             } else {
                 addWarning = (Number(dumpfunc.argc) != 0);
-                funcToAdd = { name: dumpfunc.name, args: [], comment: `argc: ${dumpfunc.argc}, index ${index}`, returnType: "unknown_ret", precedingLines: [] };
+                funcToAdd = { name: dumpfunc.name, args: [], comment: `argc: ${dumpfunc.argc}, index ${index}`, returnType: "unknown", precedingLines: [] };
             }
             
             newFuncs.push(funcToAdd);

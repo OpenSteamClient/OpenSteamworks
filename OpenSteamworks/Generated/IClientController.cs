@@ -9,6 +9,7 @@
 using System;
 using OpenSteamworks.Attributes;
 using CppSourceGen.Attributes;
+using OpenSteamworks.Data;
 
 namespace OpenSteamworks.Generated;
 
@@ -16,5 +17,12 @@ namespace OpenSteamworks.Generated;
 [CppClass]
 public unsafe interface IClientController
 {
-    
+    public unknown Unknown_0_DONTUSE();
+    // The second destructor only exists on Linux (and maybe macos?)
+#if !_WINDOWS
+    public unknown Unknown_1_DONTUSE();
+#endif
+    public bool Init(bool bHostProcess, IClientControllerSerialized? serialized, uint unk, bool bUnk);
+    public unknown Shutdown();
+    public void RunFrame(bool bFromSteamAPI = false);
 }

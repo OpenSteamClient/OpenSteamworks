@@ -10,7 +10,7 @@
 typedef uint32_t HSharedConnection;
 typedef int32_t LibraryFolder_t;
 
-typedef int32_t unknown_ret;
+typedef int32_t unknown;
 
 // Function pointers
 extern "C" typedef void*    (*CreateInterfaceFn)( const char *pName, int *pReturnCode );

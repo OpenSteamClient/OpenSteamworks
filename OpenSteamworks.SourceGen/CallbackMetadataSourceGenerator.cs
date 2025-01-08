@@ -29,6 +29,10 @@ public class CallbackMetadataSourceGenerator : IIncrementalGenerator
 			ITypeSymbol type = null;
 			if (item is IFieldSymbol fieldSymbol) 
 			{
+				// Skip backing fields.
+				if (fieldSymbol.IsImplicitlyDeclared)
+					continue;
+				
 				type = fieldSymbol.Type;
 			} else if (item is IPropertySymbol propertySymbol)
 			{
@@ -66,7 +70,7 @@ public class CallbackMetadataSourceGenerator : IIncrementalGenerator
 		return builder.ToString();
 	}
 
-	private static string GenerateCallbackToStringMapping(INamedTypeSymbol structSymbol)
+	private static string GenerateCallbackToStringMapping(INamedTypeSymbol structSymbol) 
 		=> $"			{structSymbol.Name}_ID => {structSymbol.Name}_ToString(GetStructForCallback<{structSymbol.Name}>(data)),";
 
 	private void Generate(SourceProductionContext context, ImmutableArray<INamedTypeSymbol> structSymbols)
@@ -146,16 +150,11 @@ internal static partial class {METADATA_STORE_NAME} {{
 
 		if (node is RecordDeclarationSyntax)
 		{
-			return false;
-		}
-		
-		if (node is not StructDeclarationSyntax)
-		{
-			return false;
+			return true;
 		}
 		
 		//TODO: More checks here?
-		return true;
+		return node is StructDeclarationSyntax;
 	}
 	
     public void Initialize(IncrementalGeneratorInitializationContext context)

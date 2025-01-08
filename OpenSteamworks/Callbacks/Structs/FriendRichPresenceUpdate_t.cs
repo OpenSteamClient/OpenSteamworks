@@ -9,8 +9,4 @@ namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(336)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
-public struct FriendRichPresenceUpdate_t
-{
-	public CSteamID steamid;
-	public AppId_t appid;
-}
+public record struct FriendRichPresenceUpdate_t(CSteamID SteamID, AppId_t AppID);

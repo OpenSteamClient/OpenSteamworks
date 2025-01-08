@@ -8,7 +8,4 @@ namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1280001)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
-public struct AppInfoUpdateProgress_t
-{
-	public AppId_t m_nAppID;
-}
+public record struct AppInfoUpdateProgress_t(AppId_t AppID);

@@ -1,5 +1,7 @@
+using OpenSteamworks.Callbacks;
 using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
+using OpenSteamworks.Helpers;
 
 namespace OpenSteamworks;
 
@@ -33,7 +35,7 @@ public record BaseSteamClientCreateOptions
     
     /// <summary>
     /// Automatically pump callbacks?
-    /// If this is false, you must manually pump callbacks with CallbackManager.Pump.
+    /// If this is false, you must manually pump callbacks with <see cref="CallbackManager.Pump"/>.
     /// </summary>
     public bool AutomaticCallbackPump { get; init; } = true;
     
@@ -41,4 +43,10 @@ public record BaseSteamClientCreateOptions
     /// Mark this process as the global UI process (only valid if we started a global user)
     /// </summary>
     public bool IsUIProcess { get; init; } = false;
+
+    /// <summary>
+    /// How often should <see cref="DownloadsHelper"/> poll for update information?
+    /// Setting this to 0.0 will check on each frame, which may slow callback handling and other frametasks.
+    /// </summary>
+    public double DownloadsHelper_UpdateInterval { get; init; } = 0.5;
 }

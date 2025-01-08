@@ -208,7 +208,7 @@ export class VirtualHeader {
                 funcToAdd = oldfunc;
             } else {
                 addWarning = (Number(dumpfunc.argc) != 0);
-                funcToAdd = { name: dumpfunc.name, args: [], blacklistedInCrossProcessIPC: (dumpfunc.cannotcallincrossprocess == "1"), postBody: this.GeneratePostBody(dumpfunc, index), returnType: "unknown_ret", precedingLines: [] };
+                funcToAdd = { name: dumpfunc.name, args: [], blacklistedInCrossProcessIPC: (dumpfunc.cannotcallincrossprocess == "1"), postBody: this.GeneratePostBody(dumpfunc, index), returnType: "unknown", precedingLines: [] };
             }
 
             const unknownBehaviourWarning = "// WARNING: Do not use this function! Unknown behaviour will occur!";

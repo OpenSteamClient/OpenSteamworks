@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using OpenSteamClient.Logging;
 using OpenSteamworks.Callbacks;
 using OpenSteamworks.Callbacks.Structs;
@@ -17,9 +18,10 @@ public sealed class CompatHelper : ICompatToolProvider
 {
     private readonly IClientCompat clientCompat;
     private readonly ICompatToolProvider dataProvider;
-
+    private readonly ILogger logger;
     public CompatHelper(ISteamClient steamClient, ILoggerFactory loggerFactory)
     {
+        this.logger = loggerFactory.CreateLogger("CompatHelper");
         this.clientCompat = steamClient.IClientCompat;
 
         if (steamClient.IsCrossProcess)
@@ -48,17 +50,17 @@ public sealed class CompatHelper : ICompatToolProvider
     /// Set the global compat tool for non-valve-tested Windows titles.
     /// </summary>
     public void SetCompatToolForWindowsTitles(string compatToolName, string compatToolSettings = "")
-        => clientCompat.SpecifyCompatTool(0, compatToolName, compatToolSettings, ECompatToolPriority.UserSetGlobal);
+        => clientCompat.SpecifyCompatTool(0, compatToolName, compatToolSettings, ECompatToolPriority.Wildcard);
         
     /// <summary>
     /// Is there a global compat tool set?
     /// </summary>
     /// <returns></returns>
-    public bool BIsCompatEnabledForWindowsTitles()
-        => clientCompat.GetCompatToolName(0) != string.Empty;
+    // public bool BIsCompatEnabledForWindowsTitles()
+    //     => clientCompat.GetCompatToolName(0) != string.Empty;
 
     public void SetAppCompatTool(AppId_t appid, string compatToolName, string compatToolSettings = "")
-        => clientCompat.SpecifyCompatTool(appid, compatToolName, compatToolSettings, ECompatToolPriority.UserSetAppSpecific);
+        => clientCompat.SpecifyCompatTool(appid, compatToolName, compatToolSettings, ECompatToolPriority.AppForced);
     
     /// <summary>
     /// Removes any compat tools from being used. Disables compat for the app.
@@ -79,19 +81,45 @@ public sealed class CompatHelper : ICompatToolProvider
     /// </summary>
     public bool AppCompatEnabled(AppId_t appid)
         => clientCompat.BIsCompatibilityToolEnabled(appid);
+
+    /// <summary>
+    /// Enable or disable compat for this app.
+    /// Will automatically select a compat tool when enabling.
+    /// </summary>
+    public void AppEnableCompat(AppId_t appid, bool enable)
+    {
+        if (!enable)
+        {
+            // To disable, simply set no compat tool.
+            SetAppCompatTool(appid, string.Empty, string.Empty);
+            return;
+        }
+        
+        if (AppCompatEnabled(appid))
+            return;
+
+        var toolToUse = GetCompatToolsForApp(appid).FirstOrDefault();
+        if (string.IsNullOrEmpty(toolToUse))
+        {
+            logger.Error("Cannot enable compat for app " + appid + ", it has no valid compat tools.");
+            return;
+        }
+        
+        SetAppCompatTool(appid, toolToUse);
+    }
     
     /// <summary>
     /// Is the compat tool user-overridden specifically for this app?
     /// Equivalent of the "Force the use of a specific Steam Play compatibility tool" for per-app configuration in the SteamUI.
     /// </summary>
     public bool BIsCompatToolUserOverride(AppId_t appid)
-        => clientCompat.GetCompatToolMappingPriority(appid) >= ECompatToolPriority.UserSetAppSpecific;
+        => clientCompat.GetCompatToolMappingPriority(appid) >= ECompatToolPriority.AppForced;
     
     /// <summary>
     /// Is the compat tool the default global tool for Windows titles?
     /// </summary>
     public bool BIsCompatToolDefaultWindows(AppId_t appid)
-        => clientCompat.GetCompatToolMappingPriority(appid) == ECompatToolPriority.UserSetGlobal;
+        => clientCompat.GetCompatToolMappingPriority(appid) == ECompatToolPriority.Wildcard;
 
     public string GetCompatToolDisplayName(string tool)
         => clientCompat.GetCompatToolDisplayName(tool);

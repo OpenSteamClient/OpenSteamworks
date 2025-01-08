@@ -29,6 +29,7 @@ No special environment is expected, as this is the mode apps use to connect.
 - No access to some APIs, such as IClientVR
 - Limited access to some APIs, such as IClientCompat, IClientApps
 - Exact version match is required.
+- Native ConCommands do not work (custom ones work fine)
 
 #### Features
 - Poking and prodding around the locally running client.

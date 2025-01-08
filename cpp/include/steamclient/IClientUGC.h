@@ -34,9 +34,9 @@ public:
     virtual bool GetQueryUGCKeyValueTag(UGCQueryHandle_t handle, uint32 index, uint32 keyValueTagIndex, char* pchKey, uint32 cchKeySize, char* pchValue, uint32 cchValueSize) = 0; //argc: 8, index 18
     virtual bool GetQueryUGCKeyValueTag(UGCQueryHandle_t handle, uint32 index, const char* pchKey, char* pchValue, uint32 cchValueSize) = 0; //argc: 6, index 19
     virtual uint32 GetQueryUGCContentDescriptors(UGCQueryHandle_t handle, uint32 index, EUGCContentDescriptorID* pvecDescriptors, uint32 cMaxEntries) = 0; //argc: 5, index 20
-    virtual unknown_ret GetNumSupportedGameVersions() = 0; //argc: 3, index 21
-    virtual unknown_ret GetSupportedGameVersionData() = 0; //argc: 7, index 22
-    virtual unknown_ret GetQueryUGCIsDepotBuild() = 0; //argc: 4, index 23
+    virtual unknown GetNumSupportedGameVersions() = 0; //argc: 3, index 21
+    virtual unknown GetSupportedGameVersionData() = 0; //argc: 7, index 22
+    virtual unknown GetQueryUGCIsDepotBuild() = 0; //argc: 4, index 23
     virtual bool ReleaseQueryUGCRequest(UGCQueryHandle_t handle) = 0; //argc: 2, index 24
     virtual bool AddRequiredTag(UGCQueryHandle_t handle, const char* pTagName) = 0; //argc: 3, index 25
     virtual bool AddRequiredTagGroup(UGCQueryHandle_t handle, const SteamParamStringArray_t* pTagGroups) = 0; //argc: 3, index 26
@@ -81,8 +81,8 @@ public:
     virtual bool RemoveItemPreview(UGCUpdateHandle_t handle, uint32 index) = 0; //argc: 3, index 65
     virtual bool AddContentDescriptor(UGCUpdateHandle_t handle, EUGCContentDescriptorID descid) = 0; //argc: 3, index 66
     virtual bool RemoveContentDescriptor(UGCUpdateHandle_t handle, EUGCContentDescriptorID descid) = 0; //argc: 3, index 67
-    virtual unknown_ret SetRequiredGameVersions() = 0; //argc: 4, index 68
-    virtual unknown_ret SetExternalAssetID() = 0; //argc: 4, index 69
+    virtual unknown SetRequiredGameVersions() = 0; //argc: 4, index 68
+    virtual unknown SetExternalAssetID() = 0; //argc: 4, index 69
     virtual SteamAPICall_t SubmitItemUpdate(UGCUpdateHandle_t handle, const char* pchChangeNote) = 0; //argc: 3, index 70
     virtual EItemUpdateStatus GetItemUpdateProgress(UGCUpdateHandle_t handle, uint64* punBytesProcessed, uint64* punBytesTotal) = 0; //argc: 4, index 71
     virtual SteamAPICall_t SetUserItemVote(PublishedFileId_t nPublishedFileID, bool bVoteUp) = 0; //argc: 3, index 72
@@ -94,9 +94,9 @@ public:
     virtual uint32 GetNumSubscribedItems(AppId_t appid) = 0; //argc: 1, index 78
     virtual uint32 GetSubscribedItems(AppId_t appid, PublishedFileId_t* pvecPublishedFileID, uint32 cMaxEntries) = 0; //argc: 3, index 79
     virtual uint32 GetSubscribedItemsInternal() = 0; //argc: 2, index 80
-    virtual unknown_ret SetWorkshopItemsDisabledLocally() = 0; //argc: 3, index 81
-    virtual unknown_ret SetSubscriptionsLoadOrder() = 0; //argc: 2, index 82
-    virtual unknown_ret MoveSubscriptionsLoadOrder() = 0; //argc: 3, index 83
+    virtual unknown SetWorkshopItemsDisabledLocally() = 0; //argc: 3, index 81
+    virtual unknown SetSubscriptionsLoadOrder() = 0; //argc: 2, index 82
+    virtual unknown MoveSubscriptionsLoadOrder() = 0; //argc: 3, index 83
     virtual uint32 GetItemState(AppId_t appid, PublishedFileId_t nPublishedFileID) = 0; //argc: 3, index 84
     virtual bool GetItemInstallInfo(AppId_t appid, PublishedFileId_t nPublishedFileID, uint64* punSizeOnDisk, char* pchFolder, uint32 cchFolderSize, uint32* punTimeStamp) = 0; //argc: 7, index 85
     virtual bool GetItemDownloadInfo(AppId_t appid, PublishedFileId_t nPublishedFileID, uint64* punBytesDownloaded, uint64* punBytesTotal) = 0; //argc: 5, index 86
@@ -116,9 +116,9 @@ public:
     virtual SteamAPICall_t DeleteItem(PublishedFileId_t nPublishedFileID) = 0; //argc: 2, index 100
     virtual bool ShowWorkshopEULA() = 0; //argc: 0, index 101
     virtual SteamAPICall_t GetWorkshopEULAStatus() = 0; //argc: 0, index 102
-    virtual unknown_ret GetUserContentDescriptorPreferences() = 0; //argc: 2, index 103
+    virtual unknown GetUserContentDescriptorPreferences() = 0; //argc: 2, index 103
     virtual uint32 GetNumDownloadedItems(AppId_t appid) = 0; //argc: 1, index 104
-    virtual unknown_ret GetDownloadedItems() = 0; //argc: 3, index 105
-    virtual unknown_ret GetFullQueryUGCResponse() = 0; //argc: 3, index 106
-    virtual unknown_ret GetSerializedQueryUGCResponse() = 0; //argc: 3, index 107
+    virtual unknown GetDownloadedItems() = 0; //argc: 3, index 105
+    virtual unknown GetFullQueryUGCResponse() = 0; //argc: 3, index 106
+    virtual unknown GetSerializedQueryUGCResponse() = 0; //argc: 3, index 107
 };

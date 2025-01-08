@@ -24,7 +24,7 @@ public:
     virtual int AllowDirectConnectToPeerString(const char *peerString) = 0; //argc: 1, index 8
     virtual SteamAPICall_t BeginAsyncRequestFakeIP(int nNumPorts) = 0; //argc: 1, index 9
     virtual int AllowDirectConnectToPeerString(const char *peerString, int* pOutUserFlags) = 0; //argc: 1, index 10
-    virtual unknown_ret SetAllowShareIPUserSetting() = 0; //argc: 1, index 11
-    virtual unknown_ret GetAllowShareIPUserSetting() = 0; //argc: 0, index 12
+    virtual unknown SetAllowShareIPUserSetting() = 0; //argc: 1, index 11
+    virtual unknown GetAllowShareIPUserSetting() = 0; //argc: 0, index 12
     virtual void TEST_ClearInMemoryCachedCredentials() = 0; //argc: 0, index 13
 };

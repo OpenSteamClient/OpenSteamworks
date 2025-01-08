@@ -14,6 +14,6 @@
 class IClientGameServerPacketHandler
 {
 public:
-    virtual unknown_ret HandleIncomingPacket() = 0; //argc: 4, index 1
-    virtual unknown_ret GetNextOutgoingPacket() = 0; //argc: 4, index 2
+    virtual unknown HandleIncomingPacket() = 0; //argc: 4, index 1
+    virtual unknown GetNextOutgoingPacket() = 0; //argc: 4, index 2
 };

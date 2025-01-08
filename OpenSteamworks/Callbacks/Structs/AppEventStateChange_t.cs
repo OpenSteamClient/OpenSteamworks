@@ -8,10 +8,4 @@ namespace OpenSteamworks.Callbacks.Structs;
 
 [Callback(1280006)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
-public struct AppEventStateChange_t
-{
-	public AppId_t m_nAppID;
-	public EAppState m_eOldState;
-	public EAppState m_eNewState;
-	public EAppError m_eAppError;
-}
+public record struct AppEventStateChange_t(AppId_t AppID, EAppState OldState, EAppState NewState, EAppError Error);

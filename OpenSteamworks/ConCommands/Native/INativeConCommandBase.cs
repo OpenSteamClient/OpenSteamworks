@@ -1,4 +1,5 @@
 using System;
+using CppSourceGen;
 using CppSourceGen.Attributes;
 using OpenSteamworks.Data.Enums;
 
@@ -7,7 +8,7 @@ namespace OpenSteamworks.ConCommands.Native;
 // ReSharper disable InconsistentNaming : C++ -style names.
 
 [CppClass]
-public unsafe interface INativeConCommandBase
+public interface INativeConCommandBase : ICppClass
 {
     protected IntPtr m_pNext { get; set; }
     protected byte m_bRegistered { get; set; }

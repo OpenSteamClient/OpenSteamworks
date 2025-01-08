@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Collections.Concurrent;
 using OpenSteamClient.Logging;
+using OpenSteamworks.Data.Interop;
 
 namespace OpenSteamworks.Utils;
 
@@ -110,7 +111,6 @@ public static class UtilityFunctions {
             if (setenv(name, value, Convert.ToInt32(overwrite)) == -1) {
                 throw new Exception("Setting environment variable failed, errno: " + Marshal.GetLastWin32Error());
             }
-            return;
         }
     }
     
@@ -125,7 +125,7 @@ public static class UtilityFunctions {
     public static unsafe string? GetEnvironmentVariable(string name) {
         if (OperatingSystem.IsWindows()) {
             [DllImport("kernel32", SetLastError = true)]
-            static extern DWORD GetEnvironmentVariable([MarshalAs(UnmanagedType.LPUTF8Str)] string name, StringBuilder buffer, DWORD size);
+            static extern uint GetEnvironmentVariable([MarshalAs(UnmanagedType.LPUTF8Str)] string name, StringBuilder buffer, DWORD size);
             StringBuilder buffer = new(1024);
             var length = GetEnvironmentVariable(name, buffer, (uint)buffer.Length);
             var err = Marshal.GetLastWin32Error();
@@ -313,7 +313,7 @@ public static class UtilityFunctions {
     }
     
     /// <summary>
-    /// Gets an executable given it's name from the PATH. Returns null if not found.
+    /// Gets an executable given its name from the PATH. Returns null if not found.
     /// </summary>
     /// <param name="fileName"></param>
     /// <returns></returns>
@@ -394,7 +394,7 @@ public static class UtilityFunctions {
     }
 
     public unsafe static string FormatPtr(IntPtr ptr) {
-        return string.Format("0x{0:x}", (IntPtr)ptr);
+        return $"0x{ptr:x}";
     }
 
     private static readonly ConcurrentDictionary<object, DelayFunction> debounceList = new();

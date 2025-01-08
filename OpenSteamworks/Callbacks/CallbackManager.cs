@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace OpenSteamworks.Callbacks;
 public sealed partial class CallbackManager : IDisposable {
 	private readonly ISteamClientImpl steamClient;
 	private readonly IClientUtils clientUtils;
+	private readonly IClientController clientController;
 	
 	private readonly ILogger callbackLogger;
 	private readonly ILogger callbackContentLogger;
@@ -22,6 +24,12 @@ public sealed partial class CallbackManager : IDisposable {
 
 	private readonly bool logCallbackContents;
 	private readonly bool logIncomingCallbacks;
+
+	/// <summary>
+	/// How much time has passed between the current and the last frame.
+	/// </summary>
+	public double DeltaTime
+		=> timeBetweenFrames.Elapsed.TotalSeconds;
 	
 	public bool IsManualPump { get; }
 	
@@ -30,6 +38,7 @@ public sealed partial class CallbackManager : IDisposable {
 		this.IsManualPump = isManualPump;
 		this.steamClient = steamClientImpl;
 		this.clientUtils = steamClient.IClientUtils;
+		this.clientController = steamClient.IClientController;
 		
 		this.callbackLogger = loggerFactory.CreateLogger("Callbacks");
 		this.callbackContentLogger = loggerFactory.CreateLogger("CallbackContent");
@@ -168,17 +177,26 @@ public sealed partial class CallbackManager : IDisposable {
 			callbackContentLogger.Debug("(no information available)");
 		}
 	}
-
+	
+	private Stopwatch timeBetweenFrames = new();
 	private bool BRunFrame()
 	{
+		timeBetweenFrames.Stop();
+		void StopAndReportDeltaTime()
+		{
+			timeBetweenFrames.Reset();
+			timeBetweenFrames.Start();
+		}
+		
 		steamClient.IClientEngine.RunFrame();
+		clientController.RunFrame();
 
 		// Process callbacks
 		bool hadCallbacks = false;
 		while (BProcessCallback())
 		{
 			hadCallbacks = true;
-			if (!shouldThreadRun) { return false; }
+			if (!shouldThreadRun) { StopAndReportDeltaTime(); return false; }
 		}
 		
 		using (new UsingSemaphore(frameTasksSem))
@@ -197,7 +215,8 @@ public sealed partial class CallbackManager : IDisposable {
 
 			isFrameTasksLocked = false;
 		}
-
+		
+		StopAndReportDeltaTime();
 		return hadCallbacks;
 	}
 

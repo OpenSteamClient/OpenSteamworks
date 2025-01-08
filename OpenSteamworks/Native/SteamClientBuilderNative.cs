@@ -12,6 +12,6 @@ public static class SteamClientBuilderNative
     public static SteamClientBuilder WithNativeBackend(this SteamClientBuilder builder,
         NativeSteamClientCreateOptions options)
         => builder
-            .WithImpl((logger) => new NativeSteamClient(logger, options))
+            .WithImpl((logger, wrapper) => new NativeSteamClient(logger, wrapper, options))
             .WithOptions(options);
 }

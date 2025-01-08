@@ -14,9 +14,9 @@
 class IClientUnifiedMessages
 {
 public:
-    virtual unknown_ret SendMethod() = 0; //argc: 5, index 1
-    virtual unknown_ret GetMethodResponseInfo() = 0; //argc: 4, index 2
-    virtual unknown_ret GetMethodResponseData() = 0; //argc: 5, index 3
-    virtual unknown_ret ReleaseMethod() = 0; //argc: 2, index 4
-    virtual unknown_ret SendNotification() = 0; //argc: 3, index 5
+    virtual unknown SendMethod() = 0; //argc: 5, index 1
+    virtual unknown GetMethodResponseInfo() = 0; //argc: 4, index 2
+    virtual unknown GetMethodResponseData() = 0; //argc: 5, index 3
+    virtual unknown ReleaseMethod() = 0; //argc: 2, index 4
+    virtual unknown SendNotification() = 0; //argc: 3, index 5
 };

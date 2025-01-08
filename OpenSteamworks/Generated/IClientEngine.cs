@@ -1,10 +1,6 @@
 using System;
 using OpenSteamworks.Data.Enums;
-using OpenSteamworks.Native;
-using OpenSteamworks.Attributes;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Runtime.CompilerServices;
 using OpenSteamworks.Data;
 using CppSourceGen.Attributes;
 using OpenSteamworks.ConCommands.Native;
@@ -57,7 +53,7 @@ public interface IClientEngine {
 	/// <summary>
     /// Sets a steam api warning message hook.
     /// There's lots of docs for this online, but you should use a SteamAPIWarningMessageHook_t
-    /// It is currently unknown whether this affects any client api's (us)
+    /// It is currently unknown whether this affects any client API
     /// </summary>
 	public void SetWarningMessageHook( ClientAPI_WarningMessageHook_t func );
 	public IClientGameCoordinator GetIClientGameCoordinator( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
@@ -67,7 +63,7 @@ public interface IClientEngine {
 	public bool IsScreenshotsHooked();
 	public bool IsOverlayEnabled();
 	/// <summary>
-    /// Gets a API call's result
+    /// Gets an API call's result
     /// </summary>
     /// <param name="hSteamPipe">Steam Pipe which contains the call</param>
     /// <param name="hSteamAPICall">The reference number of the call</param>
@@ -85,7 +81,7 @@ public interface IClientEngine {
 	public IClientSystemDockManager GetIClientSystemDockManager( HSteamPipe hSteamPipe );
 	public IClientSystemAudioManager GetIClientSystemAudioManager( HSteamPipe hSteamPipe );
 	public IClientSystemDisplayManager GetIClientSystemDisplayManager( HSteamPipe hSteamPipe );
-	public void ConCommandInit( in INativeConCommandBaseAccessor pAccessor );
+	public void ConCommandInit( INativeConCommandBaseAccessor pAccessor );
 	public IClientAppManager GetIClientAppManager( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientConfigStore GetIClientConfigStore( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public bool BOverlayNeedsPresent();
@@ -119,9 +115,9 @@ public interface IClientEngine {
 
 	/// <summary>
     /// We don't know what this does yet.
-    /// You should use ClientAPI_PostAPIResultInProcess_t and store it somewhere to prevent it being GC'd.
+    /// You should use ClientAPI_PostAPIResultInProcess_t and store it somewhere to prevent it being GCd.
     /// </summary>
-	public unknown_ret Set_ClientAPI_CPostAPIResultInProcess( ClientAPI_PostAPIResultInProcess_t callback );
+	public void Set_ClientAPI_CPostAPIResultInProcess( ClientAPI_PostAPIResultInProcess_t callback );
 	public IClientSharedConnection GetIClientSharedConnection( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientShader GetIClientShader( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientNetworkingSocketsSerialized GetIClientNetworkingSocketsSerialized( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
@@ -144,10 +140,10 @@ public interface IClientEngine {
 	/// <summary>
 	/// Unsure if this exists
 	/// </summary>
-	public unknown_ret OnThreadLocalRegistration();
+	public unknown OnThreadLocalRegistration();
 
 	/// <summary>
 	/// Unsure if this exists
 	/// </summary>
-    public unknown_ret OnThreadBuffersOverLimit();
+    public unknown OnThreadBuffersOverLimit();
 }

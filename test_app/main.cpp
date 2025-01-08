@@ -138,7 +138,7 @@ int main(int argc, char** argv)
     }
 
     int ret = 0;
-    auto engine = static_cast<IClientEngine*>(CreateInterface("CLIENTENGINE_INTERFACE_VERSION005", &ret));
+    auto engine = static_cast<IClientEngine*>(CreateInterface(CLIENTENGINE_INTERFACE_VERSION, &ret));
     if (engine == nullptr)
     {
         fprintf(stderr, "Failed to get IClientEngine! Err: %d\n", ret);

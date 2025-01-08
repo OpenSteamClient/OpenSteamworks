@@ -62,6 +62,6 @@ public:
     virtual int32 PollGMSQuery(GMSQueryHandle_t queryHandle) = 0; //argc: 2, index 42
     virtual bool GetGMSQueryResults(GMSQueryHandle_t queryHandle, CMsgGMSClientServerQueryResponse *results) = 0; //argc: 3, index 43
     virtual void ReleaseGMSQuery(GMSQueryHandle_t queryHandle) = 0; //argc: 2, index 44
-    virtual unknown_ret QueryServerByFakeIP() = 0; //argc: 4, index 45
-    virtual unknown_ret EnsureFavoriteGameAccountsUpdated() = 0; //argc: 1, index 46
+    virtual unknown QueryServerByFakeIP() = 0; //argc: 4, index 45
+    virtual unknown EnsureFavoriteGameAccountsUpdated() = 0; //argc: 1, index 46
 };

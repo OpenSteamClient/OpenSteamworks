@@ -2,62 +2,54 @@ using System;
 using CppSourceGen.Attributes;
 using OpenSteamworks.ConCommands.Interfaces;
 using OpenSteamworks.Data;
+using OpenSteamworks.Data.Enums;
 
 namespace OpenSteamworks.ConCommands.Native;
 
 // ReSharper disable InconsistentNaming : C++ -style names.
 
-public unsafe interface INativeConVar_Ext
-{
-    public float FloatValue { get; set; }
-    public int IntValue { get; set; }
-    public Int64 Int64Value { get; set; }
-    public UInt64 UInt64Value { get; set; }
-    public double DoubleValue { get; set; }
-}
-
 [CppClass]
-public unsafe interface INativeConVar : INativeConCommandBase, INativeConVar_Ext
+public unsafe interface INativeConVar : INativeConCommandBase
 {
-    protected IntPtr m_pParent { get; set; }
-    protected CUtlString m_pszDefaultValue { get; }
+    public IntPtr m_pParent { get; set; }
+    public CUtlString m_pszDefaultValue { get; }
 
     // Purpose unknown.
-    protected CUtlString m_utlString { get; }
-    protected bool m_bUtlStringSet { get; }
+    public CUtlString m_utlString { get; }
+    public bool m_bUtlStringSet { get; }
 
     // Purpose unknown, other than possibly having something to do with replicated vars. Don't seem to do anything important.
-    protected CUtlString m_replicatedWaitingString { get; }
-    protected int m_iReplicatedWaitingStringLength { get; }
+    public CUtlString m_replicatedWaitingString { get; }
+    public int m_iReplicatedWaitingStringLength { get; }
 
-    protected CUtlString m_currentValue { get; }
-    protected int m_iCurrentValueLength { get; }
+    public CUtlString m_currentValue { get; }
+    public int m_iCurrentValueLength { get; }
 
     // Purpose unknown. Filled by _some_ cvars, but seemingly never read.
-    protected CUtlString m_decimalValue { get; }
+    public CUtlString m_decimalValue { get; }
 
-    protected float m_flValue { get; }
-    protected int m_iValue { get; }
-    protected Int64 m_llValue { get; }
-    protected UInt64 m_ullValue { get; }
-    protected double m_dblValue { get; }
+    public float m_flValue { get; }
+    public int m_iValue { get; }
+    public Int64 m_llValue { get; }
+    public UInt64 m_ullValue { get; }
+    public double m_dblValue { get; }
 
     // A couple of unknown arrays, which don't seem to do anything (meaningful).
-    protected int *pUnk { get; }
-    protected int *pUnk2 { get; }
+    public int *pUnk { get; }
+    public int *pUnk2 { get; }
 
-    protected bool m_bHasMax { get; }
-    protected float m_fMaxVal { get; }
+    public bool m_bHasMax { get; }
+    public float m_fMaxVal { get; }
 
-    protected bool m_bHasMin { get; }
-    protected float m_fMinVal { get; }
+    public bool m_bHasMin { get; }
+    public float m_fMinVal { get; }
 
-    protected bool m_bIsDefaultValue { get; }
-    protected bool m_bIsReplicatedAndSet { get; }
-    protected bool m_bIsReplicatedSet { get; }
-    protected bool m_bUnkBool3 { get; }
+    public bool m_bIsDefaultValue { get; }
+    public bool m_bIsReplicatedAndSet { get; }
+    public bool m_bIsReplicatedSet { get; }
+    public bool m_bUnkBool3 { get; }
 
-    protected CUtlVector<IntPtr> m_vecCallbacks { get; }
+    public CUtlVector<IntPtr> m_vecCallbacks { get; }
     
     public bool SetValue(string val);
     public bool SetValue(float val);
@@ -92,41 +84,5 @@ public unsafe interface INativeConVar : INativeConCommandBase, INativeConVar_Ext
 
 internal unsafe partial class INativeConVar_Impl
 {
-    public float FloatValue
-    {
-        get => m_flValue;
-        set => SetValue(value);
-    }
     
-    public int IntValue 
-    {
-        get => m_iValue;
-        set => SetValue(value);
-    }
-    
-    public long Int64Value
-    {
-        get => m_llValue;
-        set => SetValue(value);
-    }
-    
-    public ulong UInt64Value
-    {
-        get => m_ullValue;
-        set => SetValue(value);
-    }
-    
-    public double DoubleValue
-    {
-        get => m_dblValue;
-        set => SetValue(value);
-    }
-
-    public bool IsDefault
-        => BIsDefaultValue();
 }
-
-// internal unsafe partial class INativeConVar_Impl : IConVar
-// {
-//     
-// }

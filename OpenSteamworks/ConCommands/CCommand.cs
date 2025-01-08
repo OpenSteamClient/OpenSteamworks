@@ -2,26 +2,64 @@ using System;
 using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace OpenSteamworks.ConCommands;
 
-public struct CCommand
+public struct CCommand : IDisposable
 {
-    private CUtlString m_fullCommand;
-    private CUtlVector<CUtlString> m_args;
+    private CUtlString m_commandName;
+    private CUtlStringList m_args;
 
-    private CCommand(List<string> args)
+    public CCommand(List<string> args)
     {
-        this.m_fullCommand = new(args[0]);
+        this.m_commandName = new(args[0]);
+        m_args = new(args.Slice(1, args.Count - 1));
+    }
 
-        for (int i = 1; i < args.Count; i++)
+    public readonly string CommandName => m_commandName.ToManaged() ?? "";
+    public readonly int NumArgs => m_args.Size;
+
+    public readonly string this[int idx]
+        => m_args.Element(idx).ToManaged() ?? "";
+
+    public void Dispose()
+    {
+        m_commandName.Dispose();
+        m_args.Dispose();
+    }
+
+    public readonly bool TryGetArg(int argIndex, [NotNullWhen(true)] out string? arg)
+    {
+        if (argIndex >= NumArgs)
         {
-            m_args.Add(new(args[i]));
+            arg = null;
+            return false;
         }
+
+        arg = this[argIndex];
+        return true;
+    }
+
+    public readonly bool TryGetArg<T>(int argIndex, [NotNullWhen(true)] out T? arg) where T: IParsable<T>
+    {
+        if (!TryGetArg(argIndex, out var strArg))
+        {
+            arg = default;
+            return false;
+        }
+
+        return T.TryParse(strArg, null, out arg);
     }
     
-    public static CCommand Tokenize(out string commandName)
+    public readonly bool TryGetArgEnum<TEnum>(int argIndex, out TEnum arg) where TEnum: struct
     {
-        throw new NotImplementedException();
+        if (!TryGetArg(argIndex, out var strArg))
+        {
+            arg = default;
+            return false;
+        }
+
+        return Enum.TryParse(strArg, true, out arg);
     }
 }

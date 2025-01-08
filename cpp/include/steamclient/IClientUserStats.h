@@ -32,15 +32,15 @@ public:
     virtual bool GetAchievementProgress(CGameID nGameID, const char *pchName, float*, float*, float*) = 0; //argc: 5, index 16
     virtual bool StoreStats(CGameID nGameID) = 0; //argc: 1, index 17
     virtual int GetAchievementIcon(CGameID nGameID, const char *pchName) = 0; //argc: 3, index 18
-    virtual unknown_ret BGetAchievementIconURL() = 0; //argc: 5, index 19
+    virtual unknown BGetAchievementIconURL() = 0; //argc: 5, index 19
     virtual const char *GetAchievementDisplayAttribute(CGameID nGameID, const char *pchName, const char *pchKey) = 0; //argc: 4, index 20
     virtual bool IndicateAchievementProgress(CGameID nGameID, const char *pchName, uint32 nCurProgress, uint32 nMaxProgress) = 0; //argc: 4, index 21
-    virtual unknown_ret SetMaxStatsLoaded() = 0; //argc: 1, index 22
+    virtual unknown SetMaxStatsLoaded() = 0; //argc: 1, index 22
     virtual SteamAPICall_t RequestUserStats(CSteamID steamIDUser, CGameID nGameID) = 0; //argc: 3, index 23
     virtual bool GetUserStat(CSteamID steamIDUser, CGameID nGameID, const char *pchName, int32 *pData) = 0; //argc: 5, index 24
     virtual bool GetUserStat(CSteamID steamIDUser, CGameID nGameID, const char *pchName, float *pData) = 0; //argc: 5, index 25
     virtual bool GetUserAchievement(CSteamID steamIDUser, CGameID nGameID, const char *pchName, bool *pbAchieved) = 0; //argc: 6, index 26
-    virtual unknown_ret GetUserAchievementProgress() = 0; //argc: 7, index 27
+    virtual unknown GetUserAchievementProgress() = 0; //argc: 7, index 27
     virtual bool ResetAllStats(CGameID nGameID, bool bAchievementsToo) = 0; //argc: 2, index 28
     virtual SteamAPICall_t FindOrCreateLeaderboard(const char *pchLeaderboardName, ELeaderboardSortMethod eLeaderboardSortMethod, ELeaderboardDisplayType eLeaderboardDisplayType) = 0; //argc: 3, index 29
     virtual SteamAPICall_t FindLeaderboard(const char *pchLeaderboardName) = 0; //argc: 1, index 30
@@ -54,9 +54,9 @@ public:
     virtual SteamAPICall_t AttachLeaderboardUGC(SteamLeaderboard_t hSteamLeaderboard, UGCHandle_t hUGC) = 0; //argc: 4, index 38
     virtual SteamAPICall_t UploadLeaderboardScore(SteamLeaderboard_t hSteamLeaderboard, ELeaderboardUploadScoreMethod eLeaderboardUploadScoreMethod, int32 nScore, const int32 *pScoreDetails, int cScoreDetailsCount) = 0; //argc: 6, index 39
     virtual SteamAPICall_t GetNumberOfCurrentPlayers() = 0; //argc: 0, index 40
-    virtual unknown_ret GetNumAchievedAchievements() = 0; //argc: 1, index 41
-    virtual unknown_ret GetLastAchievementUnlocked() = 0; //argc: 1, index 42
-    virtual unknown_ret GetMostRecentAchievementUnlocked() = 0; //argc: 2, index 43
+    virtual unknown GetNumAchievedAchievements() = 0; //argc: 1, index 41
+    virtual unknown GetLastAchievementUnlocked() = 0; //argc: 1, index 42
+    virtual unknown GetMostRecentAchievementUnlocked() = 0; //argc: 2, index 43
     virtual SteamAPICall_t RequestGlobalAchievementPercentages(CGameID nGameID) = 0; //argc: 1, index 44
     virtual int GetMostAchievedAchievementInfo(CGameID nGameID, char *pchName, uint32 unNameBufLen, float *pflPercent, bool *pbAchieved) = 0; //argc: 5, index 45
     virtual int GetNextMostAchievedAchievementInfo(CGameID nGameID, int iIteratorPrevious, char *pchName, uint32 unNameBufLen, float *pflPercent, bool *pbAchieved) = 0; //argc: 6, index 46
@@ -68,5 +68,5 @@ public:
     virtual int32 GetGlobalStatHistory(CGameID nGameID, const char *pchStatName, double *pData, uint32 cubData) = 0; //argc: 4, index 52
     virtual bool GetAchievementProgressLimits(CGameID nGameID, const char *pchName, int32 *pnMinProgress, int32 *pnMaxProgress) = 0; //argc: 4, index 53
     virtual bool GetAchievementProgressLimits(CGameID nGameID, const char *pchName, float *pnMinProgress, float *pnMaxProgress) = 0; //argc: 4, index 54
-    virtual unknown_ret BAchievementIconLoaded() = 0; //argc: 3, index 55
+    virtual unknown BAchievementIconLoaded() = 0; //argc: 3, index 55
 };

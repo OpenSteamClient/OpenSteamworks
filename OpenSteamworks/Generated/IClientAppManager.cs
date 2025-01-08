@@ -20,30 +20,37 @@ namespace OpenSteamworks.Generated;
 [CppClass]
 public unsafe interface IClientAppManager
 {
-    public EAppError InstallApp(AppId_t unAppID, LibraryFolder_t libraryFolder, bool bLegacy);  // argc: 3, index: 1, ipc args: [bytes4, bytes4, bytes1], ipc returns: [bytes4]
+    /// <summary>
+    /// Install an app.
+    /// </summary>
+    /// <param name="unAppID">The appid of the app to install.</param>
+    /// <param name="libraryFolder">The library folder to install this app to.</param>
+    /// <param name="unscheduled">False to download the app immediately, true if the app should be added to the unscheduled downloads.</param>
+    /// <returns>If a predictable error occurred starting the installation. Unpredictable errors such as I/O failure will be reported during the download with callbacks.</returns>
+    public EAppError InstallApp(AppId_t unAppID, LibraryFolder_t libraryFolder, bool unscheduled);  // argc: 3, index: 1, ipc args: [bytes4, bytes4, bytes1], ipc returns: [bytes4]
     public EAppError UninstallApp(AppId_t unAppID);  // argc: 1, index: 2, ipc args: [bytes4], ipc returns: [bytes4]
-    public EAppError LaunchApp(in CGameID gameID, uint uLaunchOption, ELaunchSource eLaunchSource, string unkStr);  // argc: 4, index: 3, ipc args: [bytes8, bytes4, bytes4, string], ipc returns: [bytes4]
+    public EAppError LaunchApp(in CGameID gameID, uint uLaunchOption, ELaunchSource eLaunchSource, string unkStr = "");  // argc: 4, index: 3, ipc args: [bytes8, bytes4, bytes4, string], ipc returns: [bytes4]
     public bool ShutdownApp(AppId_t appId, bool force);  // argc: 2, index: 4, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
     public EAppState GetAppInstallState(AppId_t appid);  // argc: 1, index: 5, ipc args: [bytes4], ipc returns: [bytes4]
     public int GetAppInstallDir(AppId_t appid, StringBuilder path, int pathMax);  // argc: 3, index: 6, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetAppContentInfo(AppId_t appid, bool bUnk, out uint installedBuildID, out RTime32 installedBuildTimestamp, out ulong installedSize, out ulong installedDLCSize);  // argc: 6, index: 7, ipc args: [bytes4, bytes1], ipc returns: [bytes4, bytes4, bytes4, bytes8, bytes8]
+    public unknown GetAppContentInfo(AppId_t appid, bool bUnk, out uint installedBuildID, out RTime32 installedBuildTimestamp, out ulong installedSize, out ulong installedDLCSize);  // argc: 6, index: 7, ipc args: [bytes4, bytes1], ipc returns: [bytes4, bytes4, bytes4, bytes8, bytes8]
     // WARNING: Arguments are unknown!
     public bool GetAppStagingInfo(AppId_t appid, out uint unkOut, out ulong unkOut2);  // argc: 3, index: 8, ipc args: [bytes4], ipc returns: [bytes1, bytes4, bytes8]
     [BlacklistedInCrossProcessIPC]
-    public unknown_ret BGetContentInfoForApps();  // argc: 2, index: 9, ipc args: [bytes4, bytes4], ipc returns: [boolean]
+    public unknown BGetContentInfoForApps();  // argc: 2, index: 9, ipc args: [bytes4, bytes4], ipc returns: [boolean]
     public bool IsAppDlcInstalled(AppId_t appid, AppId_t dlcid);  // argc: 2, index: 10, ipc args: [bytes4, bytes4], ipc returns: [boolean]
     public bool GetDlcDownloadProgress(AppId_t appid, AppId_t dlcid, out UInt64 downloaded, out UInt64 toDownload);  // argc: 4, index: 11, ipc args: [bytes4, bytes4], ipc returns: [bytes1, bytes8, bytes8]
     public bool BIsDlcEnabled(AppId_t appid, AppId_t dlcid, out bool appManagesDLC);  // argc: 3, index: 12, ipc args: [bytes4, bytes4], ipc returns: [boolean, boolean]
     public void SetDlcEnabled(AppId_t appid, AppId_t dlcid, bool enable);  // argc: 3, index: 13, ipc args: [bytes4, bytes4, bytes1], ipc returns: []
     public bool SetDlcContext(AppId_t appid, AppId_t dlcid);  // argc: 2, index: 14, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public bool GetDlcSizes(AppId_t appid, uint[] dlcs, int dlccount, long[] sizes);  // argc: 4, index: 15, ipc args: [bytes4, bytes4, bytes_length_from_reg], ipc returns: [bytes1, bytes_length_from_reg]
+    public bool GetDlcSizes(AppId_t appid, ReadOnlySpan<AppId_t> dlcs, int dlccount, long[] sizes);  // argc: 4, index: 15, ipc args: [bytes4, bytes4, bytes_length_from_reg], ipc returns: [bytes1, bytes_length_from_reg]
     public uint GetNumInstalledApps();  // argc: 0, index: 16, ipc args: [], ipc returns: [bytes4]
-    public uint GetInstalledApps(uint[] appids, uint arrayLength);  // argc: 2, index: 17, ipc args: [bytes4], ipc returns: [bytes4, bytes_length_from_reg]
+    public uint GetInstalledApps(Span<AppId_t> appids, uint arrayLength);  // argc: 2, index: 17, ipc args: [bytes4], ipc returns: [bytes4, bytes_length_from_reg]
     public bool BIsWaitingForInstalledApps();  // argc: 0, index: 18, ipc args: [], ipc returns: [boolean]
-    public unknown_ret GetAppDependencies(AppId_t appid, uint[] dependencies, int dependenciesMax);  // argc: 3, index: 19, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
-    public unknown_ret GetDependentApps(AppId_t app, uint[] dependantApps, int dependantAppsMax);  // argc: 3, index: 20, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
+    public int GetAppDependencies(AppId_t appid, Span<AppId_t> dependencies, int dependenciesMax);  // argc: 3, index: 19, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
+    public int GetDependentApps(AppId_t app, Span<AppId_t> dependantApps, int dependantAppsMax);  // argc: 3, index: 20, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
     public bool GetUpdateInfo(AppId_t app, out AppUpdateInfo_s updateInfo);  // argc: 2, index: 21, ipc args: [bytes4], ipc returns: [bytes1, bytes120]
     public bool BIsAppUpToDate(AppId_t app);  // argc: 1, index: 22, ipc args: [bytes4], ipc returns: [boolean]
     /// <summary>
@@ -61,7 +68,7 @@ public unsafe interface IClientAppManager
     public ELanguage GetCurrentLanguage(AppId_t app);  // argc: 1, index: 25, ipc args: [bytes4], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public ELanguage GetFallbackLanguage(AppId_t appid, ELanguage fallback);  // argc: 2, index: 26, ipc args: [bytes4, bytes4], ipc returns: [bytes4]
-    public unknown_ret SetCurrentLanguage(AppId_t app, ELanguage language);  // argc: 2, index: 27, ipc args: [bytes4, bytes4], ipc returns: [bytes4]
+    public unknown SetCurrentLanguage(AppId_t app, ELanguage language);  // argc: 2, index: 27, ipc args: [bytes4, bytes4], ipc returns: [bytes4]
     public bool StartValidatingApp(AppId_t app);  // argc: 1, index: 28, ipc args: [bytes4], ipc returns: [bytes1]
     public bool CancelValidation(AppId_t app);  // argc: 1, index: 29, ipc args: [bytes4], ipc returns: [bytes1]
     /// <summary>
@@ -69,17 +76,27 @@ public unsafe interface IClientAppManager
     /// </summary>
     /// <param name="corrupt">True for corrupted, false for missing files</param>
     public bool MarkContentCorrupt(AppId_t app, bool corrupt);  // argc: 2, index: 30, ipc args: [bytes4, bytes1], ipc returns: [bytes1]
-    public uint GetInstalledDepots(AppId_t appid, uint[] depots, uint depotsLen);  // argc: 3, index: 31, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
+    public uint GetInstalledDepots(AppId_t appid, Span<DepotId_t> depots, uint depotsLen);  // argc: 3, index: 31, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
     public SteamAPICall_t GetFileDetails(AppId_t appid, string file);  // argc: 2, index: 32, ipc args: [bytes4, string], ipc returns: [bytes8]
     public SteamAPICall_t VerifySignedFiles(AppId_t appid);  // argc: 1, index: 33, ipc args: [bytes4], ipc returns: [bytes8]
-    public unknown_ret GetNumBetas();  // argc: 3, index: 34, ipc args: [bytes4], ipc returns: [bytes4, bytes4, bytes4]
-    public unknown_ret GetBetaInfo();  // argc: 8, index: 35, ipc args: [bytes4, bytes4, bytes4, bytes4], ipc returns: [bytes1, bytes4, bytes4, bytes_length_from_mem, bytes_length_from_mem]
+    public int GetNumBetas(AppId_t appid, out int availBetas, out int privBetas);  // argc: 3, index: 34, ipc args: [bytes4], ipc returns: [bytes4, bytes4, bytes4]
+    public bool GetBetaInfo(AppId_t appid, int iBeta, out EBetaBranchFlags flags, out uint buildID, StringBuilder name, int nameOut, StringBuilder description, int descriptionLen);  // argc: 8, index: 35, ipc args: [bytes4, bytes4, bytes4, bytes4], ipc returns: [bytes1, bytes4, bytes4, bytes_length_from_mem, bytes_length_from_mem]
     public bool CheckBetaPassword(AppId_t appid, string betaPassword);  // argc: 2, index: 36, ipc args: [bytes4, string], ipc returns: [bytes1]
     public bool SetActiveBeta(AppId_t appid, string beta);  // argc: 2, index: 37, ipc args: [bytes4, string], ipc returns: [bytes1]
     public int GetActiveBeta(AppId_t appid, StringBuilder betaOut, int betaOutLen);  // argc: 3, index: 38, ipc args: [bytes4, bytes4], ipc returns: [bytes1, bytes_length_from_mem]
     [BlacklistedInCrossProcessIPC]
     public bool BGetActiveBetaForApps(CUtlVector<AppId_t>* apps, CUtlStringList* betas);  // argc: 2, index: 39, ipc args: [bytes4, bytes4], ipc returns: [boolean]
+    /// <summary>
+    /// Pause or unpause downloads.
+    /// This will get flipped on automatically when calling <see cref="InstallApp"/>
+    /// </summary>
+    /// <param name="enabled"></param>
+    /// <returns></returns>
     public bool SetDownloadingEnabled(bool enabled);  // argc: 1, index: 40, ipc args: [bytes1], ipc returns: [bytes1]
+    /// <summary>
+    /// Is downloading paused?
+    /// </summary>
+    /// <returns></returns>
     public bool BIsDownloadingEnabled();  // argc: 0, index: 41, ipc args: [], ipc returns: [boolean]
     public bool GetDownloadStats(out DownloadStats_s stats);  // argc: 1, index: 42, ipc args: [], ipc returns: [bytes1, bytes28]
     public AppId_t GetDownloadingAppID();  // argc: 0, index: 43, ipc args: [], ipc returns: [bytes4]
@@ -119,11 +136,6 @@ public unsafe interface IClientAppManager
     public bool GetAppStateInfo(AppId_t appid, out AppStateInfo_s state);  // argc: 2, index: 70, ipc args: [bytes4], ipc returns: [bytes1, bytes36]
     [BlacklistedInCrossProcessIPC]
     public bool BGetAppStateInfoForApps(CUtlVector<AppId_t>* apps, CUtlVector<AppStateInfo_s>* states);  // argc: 2, index: 71, ipc args: [bytes4, bytes4], ipc returns: [boolean]
-    
-    // There's a function between these two "bool unk(AppId_t appid, string str)"
-    // Except not for our steamclient version...
-    // Seems to be a platform compatibility testing function
-    
     public bool BCanRemotePlayTogether(AppId_t appid);  // argc: 1, index: 72, ipc args: [bytes4], ipc returns: [boolean]
     public bool BIsLocalMultiplayerApp(AppId_t appid);  // argc: 1, index: 73, ipc args: [bytes4], ipc returns: [boolean]
     public int GetNumLibraryFolders();  // argc: 0, index: 74, ipc args: [], ipc returns: [bytes4]
@@ -146,7 +158,7 @@ public unsafe interface IClientAppManager
     public LibraryFolder_t GetAppLibraryFolder(AppId_t appid);  // argc: 1, index: 81, ipc args: [bytes4], ipc returns: [bytes4]
     public void RefreshLibraryFolders();  // argc: 0, index: 82, ipc args: [], ipc returns: []
     public int GetNumAppsInFolder(LibraryFolder_t folder);  // argc: 1, index: 83, ipc args: [bytes4], ipc returns: [bytes4]
-    public int GetAppsInFolder(LibraryFolder_t folder, uint[] apps, int appsLen);  // argc: 3, index: 84, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
+    public int GetAppsInFolder(LibraryFolder_t folder, Span<AppId_t> apps, int appsLen);  // argc: 3, index: 84, ipc args: [bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_reg]
     /// <summary>
     /// Forces all apps installed in the current session to be installed to a specific non-library folder directory.
     /// </summary>

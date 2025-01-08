@@ -6,13 +6,10 @@ namespace OpenSteamworks.ConCommands.Interfaces;
 public interface IConCommandBase
 {
     public string Name { get; }
-    public string HelpText { get; }
+    public string? HelpText { get; }
     
     public bool IsCommand { get; }
     public ConCommandFlags_t Flags { get; }
-    
-    // ConCommand registration
-    
     public bool IsRegistered { get; }
     
     /// <summary>

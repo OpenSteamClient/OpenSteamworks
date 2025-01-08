@@ -14,15 +14,15 @@
 class IClientGameServerStats
 {
 public:
-    virtual unknown_ret RequestUserStats() = 0; //argc: 3, index 1
-    virtual unknown_ret GetUserStat(unknown_ret) = 0; //argc: 5, index 2
-    virtual unknown_ret GetUserStat(unknown_ret, unknown_ret) = 0; //argc: 5, index 3
-    virtual unknown_ret GetUserAchievement() = 0; //argc: 6, index 4
-    virtual unknown_ret SetUserStat(unknown_ret) = 0; //argc: 5, index 5
-    virtual unknown_ret SetUserStat(unknown_ret, unknown_ret) = 0; //argc: 5, index 6
-    virtual unknown_ret UpdateUserAvgRateStat() = 0; //argc: 6, index 7
-    virtual unknown_ret SetUserAchievement() = 0; //argc: 4, index 8
-    virtual unknown_ret ClearUserAchievement() = 0; //argc: 4, index 9
-    virtual unknown_ret StoreUserStats() = 0; //argc: 3, index 10
-    virtual unknown_ret SetMaxStatsLoaded() = 0; //argc: 1, index 11
+    virtual unknown RequestUserStats() = 0; //argc: 3, index 1
+    virtual unknown GetUserStat(unknown) = 0; //argc: 5, index 2
+    virtual unknown GetUserStat(unknown, unknown) = 0; //argc: 5, index 3
+    virtual unknown GetUserAchievement() = 0; //argc: 6, index 4
+    virtual unknown SetUserStat(unknown) = 0; //argc: 5, index 5
+    virtual unknown SetUserStat(unknown, unknown) = 0; //argc: 5, index 6
+    virtual unknown UpdateUserAvgRateStat() = 0; //argc: 6, index 7
+    virtual unknown SetUserAchievement() = 0; //argc: 4, index 8
+    virtual unknown ClearUserAchievement() = 0; //argc: 4, index 9
+    virtual unknown StoreUserStats() = 0; //argc: 3, index 10
+    virtual unknown SetMaxStatsLoaded() = 0; //argc: 1, index 11
 };

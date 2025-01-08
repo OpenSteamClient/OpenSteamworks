@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.Protobuf", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.Data", "OpenSteamworks.Data\OpenSteamworks.Data.csproj", "{36521CF7-A514-4870-B24C-0E66C3345EE1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenSteamworks.Native", "OpenSteamworks.Native\OpenSteamworks.Native.nativeproj", "{A7B5694F-01AD-4A95-BEAA-8AB0E5EF35B6}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSWTest", "OSWTest\OSWTest.csproj", "{7ABC9B9C-0A45-475A-8EA7-C6A8C643427E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSteamworks.SourceGen", "OpenSteamworks.SourceGen\OpenSteamworks.SourceGen.csproj", "{3E46613A-BCF5-4711-8B6E-3D5B6BA37FD6}"
@@ -82,5 +84,9 @@ Global
 		{958D3D1E-BE22-492C-BFB1-510D9B486C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{958D3D1E-BE22-492C-BFB1-510D9B486C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{958D3D1E-BE22-492C-BFB1-510D9B486C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B5694F-01AD-4A95-BEAA-8AB0E5EF35B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {A7B5694F-01AD-4A95-BEAA-8AB0E5EF35B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {A7B5694F-01AD-4A95-BEAA-8AB0E5EF35B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {A7B5694F-01AD-4A95-BEAA-8AB0E5EF35B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

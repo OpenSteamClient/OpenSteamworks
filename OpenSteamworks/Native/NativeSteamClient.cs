@@ -3,6 +3,7 @@ using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.Marshalling;
 using CppSourceGen;
 using OpenSteamClient.Logging;
 using OpenSteamworks.Data;
@@ -52,11 +53,11 @@ internal partial class NativeSteamClient : ISteamClientImpl
     
     private readonly ILogger logger;
     
-    public NativeSteamClient(ILogger logger, NativeSteamClientCreateOptions createOptions)
+    public NativeSteamClient(ILogger logger, SteamClient wrapper, NativeSteamClientCreateOptions createOptions)
     {
         this.logger = logger;
         
-        InitClientDLL(createOptions, this);
+        InitClientDLL(createOptions, wrapper, this);
         Trace.Assert(IClientEngine != null);
         
         // No better way to determine this with native client.

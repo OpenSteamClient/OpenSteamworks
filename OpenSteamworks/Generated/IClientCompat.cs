@@ -39,8 +39,8 @@ public unsafe interface IClientCompat
     /// <param name="appid"></param>
     /// <param name="toolName">The name of a compat tool to set, for example "proton_experimental"</param>
     /// <param name="config">Comma-separated list of config string parts, for example "noesync,nofsync"</param>
-    /// <param name="priority">The priority of the compat tool and config. </param>
-    public void SpecifyCompatTool(AppId_t appid, string toolName, string config = "", ECompatToolPriority priority = ECompatToolPriority.UserSetAppSpecific);  // argc: 4, index: 5, ipc args: [bytes4, string, string, bytes4], ipc returns: []
+    /// <param name="priority">The priority of the compat tool and config. If the priority is lower than the current priority, it the compat tool will not be set.</param>
+    public void SpecifyCompatTool(AppId_t appid, string toolName, string config = "", ECompatToolPriority priority = ECompatToolPriority.AppForced);  // argc: 4, index: 5, ipc args: [bytes4, string, string, bytes4], ipc returns: []
     
     /// <summary>
     /// Change an apps compat tool's experiment.
@@ -50,7 +50,7 @@ public unsafe interface IClientCompat
     /// <param name="experiment">The compat experiment, format is unknown.</param>
     public void SpecifyCompatExperiment(AppId_t appid, string experiment, int unk = 0);  // argc: 3, index: 6, ipc args: [bytes4, string, bytes4], ipc returns: []
     public bool BIsCompatibilityToolEnabled(AppId_t appid);  // argc: 1, index: 7, ipc args: [bytes4], ipc returns: [boolean]
-    public string GetCompatToolName(AppId_t app);  // argc: 1, index: 8, ipc args: [bytes4], ipc returns: [string]
+    public string? GetCompatToolName(AppId_t app);  // argc: 1, index: 8, ipc args: [bytes4], ipc returns: [string]
     public ECompatToolPriority GetCompatToolMappingPriority(AppId_t appid);  // argc: 1, index: 9, ipc args: [bytes4], ipc returns: [bytes4]
     public string GetCompatToolDisplayName(string name);  // argc: 1, index: 10, ipc args: [string], ipc returns: [string]
     

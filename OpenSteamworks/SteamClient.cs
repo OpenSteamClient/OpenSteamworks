@@ -7,8 +7,6 @@ using OpenSteamworks.Data.Enums;
 using OpenSteamworks.Generated;
 using CppSourceGen;
 using OpenSteamworks.Exceptions;
-using OpenSteamworks.Helpers;
-using OpenSteamworks.Utils;
 
 namespace OpenSteamworks;
 
@@ -41,7 +39,7 @@ internal sealed partial class SteamClient : ISteamClient
     
     internal ILoggerFactory LoggerFactory { get; }
     
-    internal static SteamClient Create(Func<ILogger, ISteamClientImpl> fnSteamClientImplFactory,
+    internal static SteamClient Create(SteamClientBuilder.CreateImplFn fnSteamClientImplFactory,
         BaseSteamClientCreateOptions createOptions)
         => new(fnSteamClientImplFactory, createOptions);
     
@@ -79,6 +77,9 @@ internal sealed partial class SteamClient : ISteamClient
             logger.Error("Creating global user failed.");
             return false;
         }
+    
+        Pipe = newPipe;
+        User = newUser;
         
         IsCrossProcess = false;
         ConnectedWith = ConnectionType.NewClient;
@@ -105,14 +106,17 @@ internal sealed partial class SteamClient : ISteamClient
                 throw new APICallException("Failed to create global user.");
             }
         }
+
+        if (this.Pipe == 0 || this.User == 0)
+            throw new APICallException("Failed to create pipe or user.");
     }
     
-    private SteamClient(Func<ILogger, ISteamClientImpl> fnSteamClientImplFactory, BaseSteamClientCreateOptions createOptions)
+    private SteamClient(SteamClientBuilder.CreateImplFn fnSteamClientImplFactory, BaseSteamClientCreateOptions createOptions)
     {
         this.LoggerFactory = createOptions.LoggingSettings.LoggerFactory;
         this.logger = createOptions.LoggingSettings.LoggerFactory.CreateLogger("SteamClient");
         
-        this.steamClientImpl = fnSteamClientImplFactory(logger);
+        this.steamClientImpl = fnSteamClientImplFactory(logger, this);
         if (createOptions.TargetPipe != 0 && createOptions.TargetUser != 0)
         {
             ownsHandles = false;
@@ -122,9 +126,7 @@ internal sealed partial class SteamClient : ISteamClient
         InitInterfaces();
 
         CallbackManager = new(steamClientImpl, this, createOptions.LoggingSettings.LoggerFactory, createOptions.LoggingSettings.LogIncomingCallbacks, createOptions.LoggingSettings.LogCallbackContents, !createOptions.AutomaticCallbackPump);
-        SteamConsole = new(steamClientImpl);
-
-        InitializeHelpers();
+        InitializeHelpers(createOptions);
         
         if (createOptions.EnableSpew)
         {
@@ -154,16 +156,21 @@ internal sealed partial class SteamClient : ISteamClient
 
     // Helpers that wrap the underlying impl.
     public CallbackManager CallbackManager { get; }
-    public SteamConsole SteamConsole { get; }
 
-    private bool isDisposed = false;
+    private bool isDisposed;
     public void Dispose()
     {
         ObjectDisposedException.ThrowIf(isDisposed, this);
         isDisposed = true;
         
+        // Deconstruction of helpers.
+        AppsHelper.Dispose();
+        DownloadsHelper.Dispose();
+        
+        UserHelper.Dispose();
+        ConsoleHelper.Dispose();
+        
         CallbackManager.Dispose();
-        SteamConsole.Dispose();
 
         if (ownsHandles)
         {
@@ -176,7 +183,7 @@ internal sealed partial class SteamClient : ISteamClient
         steamClientImpl.Dispose();
     }
     
-    internal static void ThrowIfRemotePipe<T>(ICppClass<T> cppClass)
+    internal static void ThrowIfRemotePipe(ICppClass cppClass)
     {
         if (cppClass.MetadataObject is not SteamClient inst)
         {

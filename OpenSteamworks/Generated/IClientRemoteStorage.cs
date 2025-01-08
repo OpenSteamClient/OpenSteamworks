@@ -22,7 +22,7 @@ namespace OpenSteamworks.Generated;
 public unsafe interface IClientRemoteStorage
 {
     // WARNING: Arguments are unknown!
-    public bool FileWrite(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file, byte[] data, int dataLen);  // argc: 5, index: 1, ipc args: [bytes4, bytes4, string, bytes4, bytes_length_from_mem], ipc returns: [bytes4]
+    public bool FileWrite(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file, ReadOnlySpan<byte> data, int dataLen);  // argc: 5, index: 1, ipc args: [bytes4, bytes4, string, bytes4, bytes_length_from_mem], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public int GetFileSize(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file);  // argc: 3, index: 2, ipc args: [bytes4, bytes4, string], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
@@ -30,9 +30,9 @@ public unsafe interface IClientRemoteStorage
     // WARNING: Arguments are unknown!
     public SteamAPICall_t FileReadAsync(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file, UInt32 nOffset, UInt32 cubToRead);  // argc: 5, index: 4, ipc args: [bytes4, bytes4, string, bytes4, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public bool FileReadAsyncComplete(AppId_t nAppId, SteamAPICall_t hReadCall, byte[] data, int dataLen);  // argc: 5, index: 5, ipc args: [bytes4, bytes8, bytes4], ipc returns: [bytes1, bytes_length_from_mem]
+    public bool FileReadAsyncComplete(AppId_t nAppId, SteamAPICall_t hReadCall, Span<byte> data, int dataLen);  // argc: 5, index: 5, ipc args: [bytes4, bytes8, bytes4], ipc returns: [bytes1, bytes_length_from_mem]
     // WARNING: Arguments are unknown!
-    public int FileRead(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file, byte[] data, int dataLen);  // argc: 5, index: 6, ipc args: [bytes4, bytes4, string, bytes4], ipc returns: [bytes4, bytes_length_from_mem]
+    public int FileRead(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file, Span<byte> data, int dataLen);  // argc: 5, index: 6, ipc args: [bytes4, bytes4, string, bytes4], ipc returns: [bytes4, bytes_length_from_mem]
     // WARNING: Arguments are unknown!
     public bool FileForget(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file);  // argc: 3, index: 7, ipc args: [bytes4, bytes4, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
@@ -46,27 +46,27 @@ public unsafe interface IClientRemoteStorage
     // WARNING: Arguments are unknown!
     public RTime32 GetFileTimestamp(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file);  // argc: 3, index: 12, ipc args: [bytes4, bytes4, string], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret SetSyncPlatforms(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file, ERemoteStoragePlatform platform);  // argc: 4, index: 13, ipc args: [bytes4, bytes4, string, bytes4], ipc returns: [bytes1]
+    public unknown SetSyncPlatforms(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file, ERemoteStoragePlatform platform);  // argc: 4, index: 13, ipc args: [bytes4, bytes4, string, bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
     public ERemoteStoragePlatform GetSyncPlatforms(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file);  // argc: 3, index: 14, ipc args: [bytes4, bytes4, string], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public UGCFileWriteStreamHandle_t FileWriteStreamOpen(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot, string file);  // argc: 3, index: 15, ipc args: [bytes4, bytes4, string], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret FileWriteStreamClose(UGCFileWriteStreamHandle_t handle);  // argc: 2, index: 16, ipc args: [bytes8], ipc returns: [bytes4]
+    public unknown FileWriteStreamClose(UGCFileWriteStreamHandle_t handle);  // argc: 2, index: 16, ipc args: [bytes8], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret FileWriteStreamCancel(UGCFileWriteStreamHandle_t handle);  // argc: 2, index: 17, ipc args: [bytes8], ipc returns: [bytes4]
+    public unknown FileWriteStreamCancel(UGCFileWriteStreamHandle_t handle);  // argc: 2, index: 17, ipc args: [bytes8], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
-    public bool FileWriteStreamWriteChunk(UGCFileWriteStreamHandle_t handle, byte[] data, int dataLen);  // argc: 4, index: 18, ipc args: [bytes8, bytes4, bytes_length_from_mem], ipc returns: [bytes4]
+    public bool FileWriteStreamWriteChunk(UGCFileWriteStreamHandle_t handle, ReadOnlySpan<byte> data, int dataLen);  // argc: 4, index: 18, ipc args: [bytes8, bytes4, bytes_length_from_mem], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public int GetFileCount(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot);  // argc: 2, index: 19, ipc args: [bytes4, bytes1], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public string GetFileNameAndSize(AppId_t nAppId, int index, out ERemoteStorageFileRoot eRemoteStorageFileRoot, out int fileSizeBytes, bool unk);  // argc: 5, index: 20, ipc args: [bytes4, bytes4, bytes1], ipc returns: [string, bytes4, bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetQuota();  // argc: 3, index: 21, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes8]
+    public unknown GetQuota();  // argc: 3, index: 21, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetUGCQuotaUsage();  // argc: 5, index: 22, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes4, bytes8, bytes4]
+    public unknown GetUGCQuotaUsage();  // argc: 5, index: 22, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes4, bytes8, bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret InitializeUGCQuotaUsage();  // argc: 1, index: 23, ipc args: [bytes4], ipc returns: [bytes1]
+    public unknown InitializeUGCQuotaUsage();  // argc: 1, index: 23, ipc args: [bytes4], ipc returns: [bytes1]
     public bool IsCloudEnabledForAccount();  // argc: 0, index: 24, ipc args: [], ipc returns: [boolean]
     public bool IsCloudEnabledForApp(AppId_t appid);  // argc: 1, index: 25, ipc args: [bytes4], ipc returns: [boolean]
     public void SetCloudEnabledForApp(AppId_t appid, bool enable);  // argc: 2, index: 26, ipc args: [bytes4, bytes1], ipc returns: []
@@ -83,78 +83,78 @@ public unsafe interface IClientRemoteStorage
     // WARNING: Arguments are unknown!
     public bool GetUGCDownloadProgress(SteamAPICall_t call, out uint unk, out uint unk2);  // argc: 4, index: 32, ipc args: [bytes8], ipc returns: [bytes1, bytes4, bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetUGCDetails();  // argc: 6, index: 33, ipc args: [bytes8], ipc returns: [bytes1, bytes4, unknown, bytes4, uint64]
+    public unknown GetUGCDetails();  // argc: 6, index: 33, ipc args: [bytes8], ipc returns: [bytes1, bytes4, unknown, bytes4, uint64]
     // WARNING: Arguments are unknown!
-    public unknown_ret UGCRead();  // argc: 6, index: 34, ipc args: [bytes8, bytes4, bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_mem]
-    public unknown_ret GetCachedUGCCount();  // argc: 0, index: 35, ipc args: [], ipc returns: [bytes4]
+    public unknown UGCRead();  // argc: 6, index: 34, ipc args: [bytes8, bytes4, bytes4, bytes4], ipc returns: [bytes4, bytes_length_from_mem]
+    public unknown GetCachedUGCCount();  // argc: 0, index: 35, ipc args: [], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetCachedUGCHandle();  // argc: 1, index: 36, ipc args: [bytes4], ipc returns: [bytes8]
+    public unknown GetCachedUGCHandle();  // argc: 1, index: 36, ipc args: [bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret PublishFile();  // argc: 10, index: 37, ipc args: [bytes4, bytes4, string, string, bytes4, string, string, bytes4, utlvector, bytes4], ipc returns: [bytes8]
+    public unknown PublishFile();  // argc: 10, index: 37, ipc args: [bytes4, bytes4, string, string, bytes4, string, string, bytes4, utlvector, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret PublishVideo();  // argc: 11, index: 38, ipc args: [bytes4, bytes4, string, string, bytes4, string, bytes4, string, string, bytes4, utlvector], ipc returns: [bytes8]
+    public unknown PublishVideo();  // argc: 11, index: 38, ipc args: [bytes4, bytes4, string, string, bytes4, string, bytes4, string, string, bytes4, utlvector], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret PublishVideoFromURL();  // argc: 9, index: 39, ipc args: [bytes4, bytes4, string, string, bytes4, string, string, bytes4, utlvector], ipc returns: [bytes8]
+    public unknown PublishVideoFromURL();  // argc: 9, index: 39, ipc args: [bytes4, bytes4, string, string, bytes4, string, string, bytes4, utlvector], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret CreatePublishedFileUpdateRequest();  // argc: 3, index: 40, ipc args: [bytes4, bytes8], ipc returns: [bytes8]
+    public unknown CreatePublishedFileUpdateRequest();  // argc: 3, index: 40, ipc args: [bytes4, bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFileFile();  // argc: 3, index: 41, ipc args: [bytes8, string], ipc returns: [bytes1]
+    public unknown UpdatePublishedFileFile();  // argc: 3, index: 41, ipc args: [bytes8, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFilePreviewFile();  // argc: 3, index: 42, ipc args: [bytes8, string], ipc returns: [bytes1]
+    public unknown UpdatePublishedFilePreviewFile();  // argc: 3, index: 42, ipc args: [bytes8, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFileTitle();  // argc: 3, index: 43, ipc args: [bytes8, string], ipc returns: [bytes1]
+    public unknown UpdatePublishedFileTitle();  // argc: 3, index: 43, ipc args: [bytes8, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFileDescription();  // argc: 3, index: 44, ipc args: [bytes8, string], ipc returns: [bytes1]
+    public unknown UpdatePublishedFileDescription();  // argc: 3, index: 44, ipc args: [bytes8, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFileSetChangeDescription();  // argc: 3, index: 45, ipc args: [bytes8, string], ipc returns: [bytes1]
+    public unknown UpdatePublishedFileSetChangeDescription();  // argc: 3, index: 45, ipc args: [bytes8, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFileVisibility();  // argc: 3, index: 46, ipc args: [bytes8, bytes4], ipc returns: [bytes1]
+    public unknown UpdatePublishedFileVisibility();  // argc: 3, index: 46, ipc args: [bytes8, bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFileTags();  // argc: 3, index: 47, ipc args: [bytes8, utlvector], ipc returns: [bytes1]
+    public unknown UpdatePublishedFileTags();  // argc: 3, index: 47, ipc args: [bytes8, utlvector], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdatePublishedFileURL();  // argc: 3, index: 48, ipc args: [bytes8, string], ipc returns: [bytes1]
+    public unknown UpdatePublishedFileURL();  // argc: 3, index: 48, ipc args: [bytes8, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret CommitPublishedFileUpdate();  // argc: 4, index: 49, ipc args: [bytes4, bytes4, bytes8], ipc returns: [bytes8]
+    public unknown CommitPublishedFileUpdate();  // argc: 4, index: 49, ipc args: [bytes4, bytes4, bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetPublishedFileDetails();  // argc: 4, index: 50, ipc args: [bytes8, bytes1, bytes4], ipc returns: [bytes8]
+    public unknown GetPublishedFileDetails();  // argc: 4, index: 50, ipc args: [bytes8, bytes1, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret DeletePublishedFile();  // argc: 2, index: 51, ipc args: [bytes8], ipc returns: [bytes8]
+    public unknown DeletePublishedFile();  // argc: 2, index: 51, ipc args: [bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret EnumerateUserPublishedFiles();  // argc: 3, index: 52, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
+    public unknown EnumerateUserPublishedFiles();  // argc: 3, index: 52, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret SubscribePublishedFile();  // argc: 3, index: 53, ipc args: [bytes4, bytes8], ipc returns: [bytes8]
+    public unknown SubscribePublishedFile();  // argc: 3, index: 53, ipc args: [bytes4, bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret EnumerateUserSubscribedFiles();  // argc: 4, index: 54, ipc args: [bytes4, bytes4, bytes1, bytes4], ipc returns: [bytes8]
+    public unknown EnumerateUserSubscribedFiles();  // argc: 4, index: 54, ipc args: [bytes4, bytes4, bytes1, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret UnsubscribePublishedFile();  // argc: 3, index: 55, ipc args: [bytes4, bytes8], ipc returns: [bytes8]
+    public unknown UnsubscribePublishedFile();  // argc: 3, index: 55, ipc args: [bytes4, bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret SetUserPublishedFileAction();  // argc: 4, index: 56, ipc args: [bytes4, bytes8, bytes4], ipc returns: [bytes8]
+    public unknown SetUserPublishedFileAction();  // argc: 4, index: 56, ipc args: [bytes4, bytes8, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret EnumeratePublishedFilesByUserAction();  // argc: 3, index: 57, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
+    public unknown EnumeratePublishedFilesByUserAction();  // argc: 3, index: 57, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret EnumerateUserSubscribedFilesWithUpdates();  // argc: 3, index: 58, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
+    public unknown EnumerateUserSubscribedFilesWithUpdates();  // argc: 3, index: 58, ipc args: [bytes4, bytes4, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetCREItemVoteSummary();  // argc: 2, index: 59, ipc args: [bytes8], ipc returns: [bytes8]
+    public unknown GetCREItemVoteSummary();  // argc: 2, index: 59, ipc args: [bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret UpdateUserPublishedItemVote();  // argc: 3, index: 60, ipc args: [bytes8, bytes1], ipc returns: [bytes8]
+    public unknown UpdateUserPublishedItemVote();  // argc: 3, index: 60, ipc args: [bytes8, bytes1], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret GetUserPublishedItemVoteDetails();  // argc: 2, index: 61, ipc args: [bytes8], ipc returns: [bytes8]
+    public unknown GetUserPublishedItemVoteDetails();  // argc: 2, index: 61, ipc args: [bytes8], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret EnumerateUserSharedWorkshopFiles();  // argc: 6, index: 62, ipc args: [bytes4, uint64, bytes4, utlvector, utlvector], ipc returns: [bytes8]
+    public unknown EnumerateUserSharedWorkshopFiles();  // argc: 6, index: 62, ipc args: [bytes4, uint64, bytes4, utlvector, utlvector], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret EnumeratePublishedWorkshopFiles();  // argc: 8, index: 63, ipc args: [bytes4, bytes4, bytes4, bytes4, bytes4, bytes4, utlvector, utlvector], ipc returns: [bytes8]
+    public unknown EnumeratePublishedWorkshopFiles();  // argc: 8, index: 63, ipc args: [bytes4, bytes4, bytes4, bytes4, bytes4, bytes4, utlvector, utlvector], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown_ret EGetFileSyncState();  // argc: 3, index: 64, ipc args: [bytes4, bytes4, string], ipc returns: [bytes4]
+    public unknown EGetFileSyncState();  // argc: 3, index: 64, ipc args: [bytes4, bytes4, string], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret BIsFileSyncing();  // argc: 3, index: 65, ipc args: [bytes4, bytes4, string], ipc returns: [boolean]
+    public unknown BIsFileSyncing();  // argc: 3, index: 65, ipc args: [bytes4, bytes4, string], ipc returns: [boolean]
     // WARNING: Arguments are unknown!
-    public unknown_ret FilePersist();  // argc: 3, index: 66, ipc args: [bytes4, bytes4, string], ipc returns: [bytes4]
+    public unknown FilePersist();  // argc: 3, index: 66, ipc args: [bytes4, bytes4, string], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret FileFetch();  // argc: 3, index: 67, ipc args: [bytes4, bytes4, string], ipc returns: [bytes1]
+    public unknown FileFetch();  // argc: 3, index: 67, ipc args: [bytes4, bytes4, string], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret ResolvePath();  // argc: 5, index: 68, ipc args: [bytes4, bytes4, string, bytes4], ipc returns: [bytes1, bytes_length_from_mem]
+    public unknown ResolvePath();  // argc: 5, index: 68, ipc args: [bytes4, bytes4, string, bytes4], ipc returns: [bytes1, bytes_length_from_mem]
     // WARNING: Arguments are unknown!
-    public unknown_ret FileTouch();  // argc: 4, index: 69, ipc args: [bytes4, bytes4, string, bytes1], ipc returns: [bytes4]
+    public unknown FileTouch();  // argc: 4, index: 69, ipc args: [bytes4, bytes4, string, bytes1], ipc returns: [bytes4]
     public void SetCloudEnabledForAccount(bool val);  // argc: 1, index: 70, ipc args: [bytes1], ipc returns: []
     public void LoadLocalFileInfoCache(AppId_t nAppId);  // argc: 1, index: 71, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
@@ -188,16 +188,16 @@ public unsafe interface IClientRemoteStorage
     // WARNING: Arguments are unknown!
     public string GetLocalFileChange(AppId_t app, int index, out uint unk, out uint unk2);  // argc: 4, index: 94, ipc args: [bytes4, bytes4], ipc returns: [string, bytes4, bytes4]
     // WARNING: Arguments are unknown!
-    public unknown_ret BeginFileWriteBatch();  // argc: 1, index: 95, ipc args: [bytes4], ipc returns: [bytes1]
+    public unknown BeginFileWriteBatch();  // argc: 1, index: 95, ipc args: [bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown_ret EndFileWriteBatch();  // argc: 1, index: 96, ipc args: [bytes4], ipc returns: [bytes1]
+    public unknown EndFileWriteBatch();  // argc: 1, index: 96, ipc args: [bytes4], ipc returns: [bytes1]
     [BlacklistedInCrossProcessIPC]
     public void GetCloudEnabledForAppMap(CUtlMap<AppId_t, bool>* map);  // argc: 1, index: 97, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
     [BlacklistedInCrossProcessIPC]
     public void GetLastKnownSyncStateMap(CUtlMap<AppId_t, ERemoteStorageSyncState>* map);  // argc: 2, index: 98, ipc args: [bytes4, bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown_ret PerformAppPlatformChangeFileBackup();  // argc: 1, index: 99, ipc args: [bytes4], ipc returns: []
+    public unknown PerformAppPlatformChangeFileBackup();  // argc: 1, index: 99, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown_ret PerformAppPlatformChangeFileRestore();  // argc: 1, index: 100, ipc args: [bytes4], ipc returns: []
+    public unknown PerformAppPlatformChangeFileRestore();  // argc: 1, index: 100, ipc args: [bytes4], ipc returns: []
 }

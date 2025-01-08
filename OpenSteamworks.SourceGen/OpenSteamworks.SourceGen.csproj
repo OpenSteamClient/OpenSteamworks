@@ -15,4 +15,9 @@
   <ItemGroup>
     <ProjectReference Include="..\SourceGeneratorsKit\SourceGeneratorsKit.csproj" OutputItemType="Analyzer"/>
   </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="AnalyzerReleases.Shipped.md" />
+    <AdditionalFiles Include="AnalyzerReleases.Unshipped.md" />
+  </ItemGroup>
 </Project>

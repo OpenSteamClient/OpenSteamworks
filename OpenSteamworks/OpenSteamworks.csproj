@@ -41,6 +41,8 @@
       <OutputItemType>Analyzer</OutputItemType>
     </ProjectReference>
 
+    <PackageReference Include="JetBrains.Annotations" Version="2024.3.0" />
+
     <!-- When you change any of these, you MUST also update the .nuspec file manually. Blame .NET -->
     <PackageReference Include="OpenSteamClient.Logging" Version="1.0.3"/>
     <PackageReference Include="OpenSteamworks.Native" Version="1.1.5"/>

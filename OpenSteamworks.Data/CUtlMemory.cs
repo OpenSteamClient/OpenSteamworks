@@ -1,47 +1,37 @@
-using System;
 using System.Runtime.InteropServices;
 using OpenSteamClient.Logging;
 
 namespace OpenSteamworks.Data;
 
 [StructLayout(LayoutKind.Sequential)]
-public unsafe struct CUtlMemory<T> where T : unmanaged {
-	public void* m_pMemory = null;
-	public int m_nAllocationCount = 0;
-	public int m_nGrowSize = 0;
+public unsafe struct CUtlMemory<T> : IDisposable where T : unmanaged
+{
+    /// <summary>
+    /// Use with care. This may change on reallocation.
+    /// </summary>
+	public T* Pointer { get; private set; }
+    public int AllocationCount { get; private set; }
+    public int GrowSize { get; private set;  }
 
-    // NOT REQUIRED BY ABI
-    private int m_unSizeOfElements => sizeof(T);
+    private const int EXTERNAL_BUFFER_MARKER = -1;
+    private const int EXTERNAL_CONST_BUFFER_MARKER = -2;
 
     public CUtlMemory(int growSize = 0, int nInitSize = 0) {
-        this.m_nAllocationCount = nInitSize;
-        nuint size = (nuint)(this.m_unSizeOfElements * this.m_nAllocationCount);
-        UtlLogging.UtlMemory.Debug("Allocating CUtlMemory of size " + size);
-        this.m_pMemory = NativeMemory.AllocZeroed(size);
-        this.m_nGrowSize = growSize;
+        this.AllocationCount = nInitSize;
+        nuint size = (nuint)(sizeof(T) * this.AllocationCount);
+        UtlLogging.UtlMemory.Debug($"Allocating CUtlMemory of size {size}");
+        this.Pointer = (T*)NativeMemory.AllocZeroed(size);
+        this.GrowSize = growSize;
     }
 
-    public CUtlMemory(IntPtr pBuffer, int nSize) {
-        this.m_pMemory = (void*)pBuffer;
-        this.m_nAllocationCount = nSize;
+    public CUtlMemory(bool isConst, T* ptr, int len)
+    {
+        this.Pointer = ptr;
+        this.AllocationCount = len;
+        this.GrowSize = isConst ? EXTERNAL_CONST_BUFFER_MARKER : EXTERNAL_BUFFER_MARKER;
     }
-
-    public void Free() {
-        UtlLogging.UtlMemory.Debug("Freeing CUtlMemory");
-        NativeMemory.Free(this.m_pMemory);
-    }
-
-    public T* Base() {
-        return (T*)m_pMemory;
-    }
-
-    public T[] ToManagedAndFree() {
-        var str = this.ToManaged();
-        this.Free();
-        return str;
-    }
-
-    private int UtlMemory_CalcNewAllocationCount( int nAllocationCount, int nGrowSize, int nNewSize, int nBytesItem )
+    
+    private static int UtlMemory_CalcNewAllocationCount( int nAllocationCount, int nGrowSize, int nNewSize, int nBytesItem )
     {
         if ( nGrowSize != 0 )
         { 
@@ -78,30 +68,82 @@ public unsafe struct CUtlMemory<T> where T : unmanaged {
         return nAllocationCount;
     }
 
+    public bool IsExternal => GrowSize < 0;
+    public bool IsReadOnly => GrowSize is EXTERNAL_CONST_BUFFER_MARKER;
+    
+    public void ConvertToGrowableMemory(int growSize)
+    {
+        if (!IsExternal)
+            return;
+
+        GrowSize = growSize;
+        if (AllocationCount == 0)
+        {
+            Pointer = null;
+            return;
+        }
+
+        var bytesSize = (nuint)(AllocationCount * sizeof(T));
+        var newMemory = (T*)NativeMemory.Alloc(bytesSize);
+        NativeMemory.Copy(Pointer, newMemory, bytesSize);
+        Pointer = newMemory;
+    }
+    
     public void Grow(int num) {
+        ThrowIfDisposed();
+        
+        if (IsExternal)
+            throw new InvalidOperationException("Attempt to grow buffer that is externally allocated");
+        
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(num);
+        
         // Make sure we have at least numallocated + num allocations.
         // Use the grow rules specified for this memory (in m_nGrowSize)
-        int nAllocationRequested = m_nAllocationCount + num;
+        int nAllocationRequested = AllocationCount + num;
 
-        var was = m_nAllocationCount * m_unSizeOfElements;
-        this.m_nAllocationCount = UtlMemory_CalcNewAllocationCount(m_nAllocationCount, m_nGrowSize, nAllocationRequested, (int)m_unSizeOfElements);
-        UtlLogging.UtlMemory.Info("Growing memory to " + m_nAllocationCount * m_unSizeOfElements + ", was: " + was);
-        this.m_pMemory = NativeMemory.Realloc(this.m_pMemory, (nuint)(m_nAllocationCount * m_unSizeOfElements));
+        var was = AllocationCount * sizeof(T);
+        this.AllocationCount = UtlMemory_CalcNewAllocationCount(AllocationCount, GrowSize, nAllocationRequested, sizeof(T));
+        UtlLogging.UtlMemory.Info("Growing memory to " + AllocationCount * sizeof(T) + ", was: " + was);
+        this.Pointer = (T*)NativeMemory.Realloc(this.Pointer, (nuint)(AllocationCount * sizeof(T)));
+    }
+    
+    public ReadOnlySpan<T> GetSpan()
+    {
+        ThrowIfDisposed();
+        return new(this.Pointer, this.AllocationCount);
     }
 
-    public unsafe T[] ToManaged()
-        => GetSpan().ToArray();
-
-    public Span<T> GetSpan()
-        => new(this.m_pMemory, this.m_unSizeOfElements * this.m_nAllocationCount);
-
-    public readonly int NumAllocated()
+    public Span<T> GetWritableSpan()
     {
-        return m_nAllocationCount;
+        ThrowIfDisposed();
+        if (IsReadOnly)
+            throw new InvalidOperationException("Buffer is read-only but a write was attempted.");
+        
+        return new(this.Pointer, this.AllocationCount);
     }
 
     public T this[int i] {
-        get => Base()[i];
-        set => Base()[i] = value;
+        get => GetSpan()[i];
+        set => GetWritableSpan()[i] = value;
+    }
+
+    private readonly bool isDisposed 
+        => Pointer == null && AllocationCount == 0 && GrowSize == 0;
+
+    public void Dispose()
+    {
+        ThrowIfDisposed();
+        
+        GrowSize = 0;
+        AllocationCount = 0;
+        Pointer = null;
+        
+        UtlLogging.UtlMemory.Debug("Disposing CUtlMemory");
+        NativeMemory.Free(this.Pointer);
+    }
+
+    public readonly void ThrowIfDisposed()
+    {
+        ObjectDisposedException.ThrowIf(isDisposed, typeof(CUtlMemory<T>));
     }
 }

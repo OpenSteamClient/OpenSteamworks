@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -11,8 +8,8 @@ namespace OpenSteamworks.Data;
 /// <summary>
 /// Creates a LessFunc for an IComparisonOperators value.
 /// </summary>
-public class LessFuncFactory {
-	private static Dictionary<IntPtr, GCHandle> usedFuncs = new();
+public static class LessFuncFactory {
+	private static readonly Dictionary<IntPtr, GCHandle> usedFuncs = new();
 
 	/// <summary>
 	/// Compare the two blocks of data for equality.
@@ -20,31 +17,34 @@ public class LessFuncFactory {
 	/// <param name="firstPtr"></param>
 	/// <param name="secondPtr"></param>
 	/// <returns>1 if first parameter is less than the second, 0 otherwise.</returns>
+	[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 	delegate byte LessFunc(IntPtr firstPtr, IntPtr secondPtr);
 	public static unsafe IntPtr CreateLessFunc<T>() where T: unmanaged, IComparisonOperators<T, T, bool> {
-		var type = typeof(T);
-		var func = new LessFunc(new Func<IntPtr, IntPtr, byte>((IntPtr firstPtr, IntPtr secondPtr) => {
-			if (firstPtr == IntPtr.Zero && secondPtr != IntPtr.Zero) {
+		LessFunc func = (first, second) => {
+			if (first == IntPtr.Zero && second != IntPtr.Zero) {
 				return 1;
 			}
 
-			if (firstPtr != IntPtr.Zero && secondPtr == IntPtr.Zero) {
+			if (first != IntPtr.Zero && second == IntPtr.Zero) {
 				return 0;
 			}
 
-			T first = *(T*)firstPtr;
-			T second = *(T*)secondPtr;
+			if (first == IntPtr.Zero && second == IntPtr.Zero)
+			{
+				return 0;
+			}
 			
-			return Convert.ToByte(first < second);
-		}));
+			return Convert.ToByte(*(T*)first < *(T*)second);
+		};
 
 		GCHandle handle = GCHandle.Alloc(func);
-		IntPtr ptr = Marshal.GetFunctionPointerForDelegate<LessFunc>(func);
+		IntPtr ptr = Marshal.GetFunctionPointerForDelegate(func);
 		UtlLogging.UtlMap.Debug("Allocated LessFunc " + ptr);
 		usedFuncs.Add(ptr, handle);
 		return ptr;
 	}
-	public static unsafe void Free(IntPtr func) {
+	
+	public static void Free(IntPtr func) {
 		if (!usedFuncs.TryGetValue(func, out GCHandle value)) {
 			throw new ArgumentException("Func not found in usedFuncs");
 		}
@@ -56,7 +56,7 @@ public class LessFuncFactory {
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public unsafe struct CUtlMap<KeyType_t, ElemType_t> where KeyType_t : unmanaged, IComparisonOperators<KeyType_t, KeyType_t, bool> where ElemType_t : unmanaged {
+public unsafe struct CUtlMap<KeyType_t, ElemType_t>: IDisposable where KeyType_t : unmanaged, IComparisonOperators<KeyType_t, KeyType_t, bool> where ElemType_t : unmanaged {
     public CUtlRBTree<Node_t, int, KeyType_t, CKeyLess> m_Tree;
 
 	/// <summary>
@@ -70,6 +70,8 @@ public unsafe struct CUtlMap<KeyType_t, ElemType_t> where KeyType_t : unmanaged,
 
 	public Dictionary<KeyType_t, ElemType_t> ToManaged()
     {
+	    m_Tree.m_Elements.ThrowIfDisposed();
+	    
         var dict = new Dictionary<KeyType_t, ElemType_t>();
 		for (int i = 0; i < this.Count(); i++)
 		{
@@ -85,17 +87,6 @@ public unsafe struct CUtlMap<KeyType_t, ElemType_t> where KeyType_t : unmanaged,
 		return dict;
     }
 
-    public Dictionary<KeyType_t, ElemType_t> ToManagedAndFree() {
-        var dict = this.ToManaged();
-        this.Free();
-        return dict;
-    }
-
-	public void Free() {
-		LessFuncFactory.Free((nint)this.m_Tree.m_LessFunc);
-		this.m_Tree.Free();
-	}
-
 	public ElemType_t Element( int i ) { 
 		return m_Tree.Element( i ).elem; 
 	}
@@ -109,28 +100,22 @@ public unsafe struct CUtlMap<KeyType_t, ElemType_t> where KeyType_t : unmanaged,
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    public unsafe struct Node_t
+    public struct Node_t
 	{
-		public Node_t()
-		{
-		}
-
-		public Node_t( Node_t from )
-		{
-            this.key = from.key;
-            this.elem = from.elem;
-		}
-
 		public KeyType_t key;
 		public ElemType_t elem;
 	};
 
     [StructLayout(LayoutKind.Sequential)]
-    public unsafe struct CKeyLess
+    public struct CKeyLess
 	{
-		public CKeyLess( delegate* unmanaged[Cdecl]<KeyType_t*, KeyType_t*, byte> lessFunc ) {
-            this.m_LessFunc = lessFunc;
-        }
 		public delegate* unmanaged[Cdecl]<KeyType_t*, KeyType_t*, byte> m_LessFunc;
 	};
+    
+	public void Dispose()
+	{
+		m_Tree.m_Elements.ThrowIfDisposed();
+		LessFuncFactory.Free((nint)m_Tree.m_LessFunc);
+		m_Tree.Dispose();
+	}
 }

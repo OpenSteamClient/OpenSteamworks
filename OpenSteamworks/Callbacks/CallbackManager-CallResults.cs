@@ -13,35 +13,65 @@ public partial class CallbackManager {
 	private unsafe CallResult<T> GetCompletedCall<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(SteamAPICall_t handle) where T: struct {
 		int expectedCallbackID = CallbackMetadata.GetIDFromType<T>();
 		int expectedSize = Marshal.SizeOf<T>();
-		using var mem = NativeMemoryBlock.AllocZeroed((nuint)expectedSize);
+		var buf = new byte[expectedSize];
 
-		if (!clientUtils.GetAPICallResult(handle, mem.Ptr, expectedSize, expectedCallbackID, out bool failed)) {
+		if (!clientUtils.GetAPICallResult(handle, buf, expectedSize, expectedCallbackID, out bool failed)) {
 			throw new Exception("API call not completed");
 		}
 
 		if (failed) {
-			return new CallResult<T>(failed, clientUtils.GetAPICallFailureReason(handle), new());
+			return new(failed, clientUtils.GetAPICallFailureReason(handle), new());
 		}
 
 		T inst;
-		inst = Marshal.PtrToStructure<T>((nint)mem.Ptr);
+		fixed (byte* bptr = buf) 
+			inst = Marshal.PtrToStructure<T>((nint)bptr);
 
-		return new CallResult<T>(failed, clientUtils.GetAPICallFailureReason(handle), inst);
+		return new(failed, clientUtils.GetAPICallFailureReason(handle), inst);
+	}
+	
+	private CallResult GetCompletedCall(SteamAPICall_t handle) {
+		if (!clientUtils.IsAPICallCompleted(handle, out bool failed)) {
+			throw new Exception("API call not completed");
+		}
+		
+		return new(failed, clientUtils.GetAPICallFailureReason(handle));
 	}
 	
 	private async Task<CallResult<T>> WaitCallResultAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(SteamAPICall_t handle, CancellationToken cancellationToken = default) where T: struct
 	{
-		int expectedCallbackID = CallbackMetadata.GetIDFromType<T>();
-		int expectedSize = Marshal.SizeOf<T>();
-
-		// Check to see if the call has already completed, before starting to wait.
-		if (clientUtils.IsAPICallCompleted(handle, out bool failed)) {
-			return GetCompletedCall<T>(handle);
+		if (!clientUtils.IsAPICallCompleted(handle, out bool failed)) {
+			await WaitAsync<SteamAPICallCompleted_t>(cb => cb.m_hAsyncCall == handle, cancellationToken);
 		}
-
-		// If the call isn't complete yet, wait for the callback.
-		await WaitAsync<SteamAPICallCompleted_t>(cb => cb.m_hAsyncCall == handle, cancellationToken);
+		
 		return GetCompletedCall<T>(handle);
+	}
+
+	private async Task<CallResult> WaitCallResultAsync(SteamAPICall_t handle,
+		CancellationToken cancellationToken = default)
+	{
+		if (!clientUtils.IsAPICallCompleted(handle, out bool failed)) {
+			await WaitAsync<SteamAPICallCompleted_t>(cb => cb.m_hAsyncCall == handle, cancellationToken);
+		}
+		
+		return GetCompletedCall(handle);
+	}
+	
+	
+	/// <summary>
+	/// Run an async call. If a function returns SteamApiCall_t, only ever call it with this function. This takes care of avoiding deadlocks.
+	/// </summary>
+	/// <typeparam name="T">The type of callback that will be received</typeparam>
+	/// <param name="apiCall">The function to call, which will return a call handle. </param>
+	/// <param name="cancellationToken">A cancellation token, if wanted.</param>
+	/// <returns></returns>
+	public async Task<CallResult> RunAsyncCall(Func<SteamAPICall_t> apiCall, CancellationToken cancellationToken = default)
+	{
+		await PauseThreadAsync();
+		var task = WaitCallResultAsync(apiCall(), cancellationToken);
+		ResumeThread();
+
+		return await task;
 	}
 
 	/// <summary>

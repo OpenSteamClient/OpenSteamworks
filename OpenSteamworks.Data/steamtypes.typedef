@@ -4,6 +4,22 @@
 
 namespace OpenSteamworks.Data;
 
+// Ideally these would be in interop.typedef as they make more sense there, but it would require consumers to import OpenSteamworks.Data.Interop which is not intended.
+typedef Int32 unknown;
+typedef Int64 unknown64;
+
+xmldoc unknown {
+    /// <summary>
+    /// Used for unknown returns and arguments. 32-bit.
+    /// </summary>
+}
+
+xmldoc unknown64 {
+    /// <summary>
+    /// Used for unknown returns and arguments. 64-bit.
+    /// </summary>
+}
+
 // Handle types
 typedef Int32 HSteamPipe;
 typedef Int32 HSteamUser;
@@ -12,6 +28,8 @@ typedef UInt32 HHTMLBrowser;
 typedef UInt32 HImage;
 typedef UInt32 HSharedConnection;
 typedef UInt32 HSharedConnectionMsg;
+typedef UInt32 HHTTPRequest;
+typedef UInt32 HHTTPCookieContainer;
 
 // _t types
 typedef Int32 LibraryFolder_t;

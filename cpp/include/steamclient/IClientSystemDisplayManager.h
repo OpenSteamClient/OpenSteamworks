@@ -14,10 +14,10 @@
 class IClientSystemDisplayManager
 {
 public:
-    virtual unknown_ret IsInterfaceValid() = 0; //argc: 0, index 1
-    virtual unknown_ret GetState() = 0; //argc: 1, index 2
-    virtual unknown_ret SetMode() = 0; //argc: 1, index 3
-    virtual unknown_ret ClearModeOverride() = 0; //argc: 1, index 4
-    virtual unknown_ret SetCompatibilityMode() = 0; //argc: 1, index 5
-    virtual unknown_ret SetGameResolutionGlobal() = 0; //argc: 1, index 6
+    virtual unknown IsInterfaceValid() = 0; //argc: 0, index 1
+    virtual unknown GetState() = 0; //argc: 1, index 2
+    virtual unknown SetMode() = 0; //argc: 1, index 3
+    virtual unknown ClearModeOverride() = 0; //argc: 1, index 4
+    virtual unknown SetCompatibilityMode() = 0; //argc: 1, index 5
+    virtual unknown SetGameResolutionGlobal() = 0; //argc: 1, index 6
 };

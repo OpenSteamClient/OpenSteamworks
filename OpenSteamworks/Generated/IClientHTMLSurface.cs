@@ -19,10 +19,10 @@ namespace OpenSteamworks.Generated;
 [CppClass]
 public unsafe interface IClientHTMLSurface
 {
-    public unknown_ret Unknown_0_DONTUSE();
+    public unknown Unknown_0_DONTUSE();
     // The second destructor only exists on Linux (and maybe macos?)
 #if !_WINDOWS
-    public unknown_ret Unknown_1_DONTUSE();
+    public unknown Unknown_1_DONTUSE();
 #endif
     public bool Init();
     public bool Shutdown();
@@ -70,6 +70,6 @@ public unsafe interface IClientHTMLSurface
     public void SetPageScaleFactor(HHTMLBrowser handle, float zoom, int x, int y);
     public void SetBackgroundMode(HHTMLBrowser handle, bool backgroundMode);
     public void SetDPIScalingFactor(HHTMLBrowser handle, float scaleFactor);
-    public unknown_ret OpenDeveloperTools(HHTMLBrowser handle);
-    public unknown_ret Validate(void* cvalidator, string unk);
+    public unknown OpenDeveloperTools(HHTMLBrowser handle);
+    public unknown Validate(void* cvalidator, string unk);
 }

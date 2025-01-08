@@ -9,9 +9,12 @@ namespace OpenSteamworks;
 /// </summary>
 public sealed class SteamClientBuilder
 {
+    internal delegate ISteamClientImpl CreateImplFn(ILogger logger, SteamClient wrapper);
+    
+    
     private BaseSteamClientCreateOptions? options;
-    private Func<ILogger, ISteamClientImpl>? fnImplFactory;
-    internal SteamClientBuilder WithImpl(Func<ILogger, ISteamClientImpl> implFactory)
+    private CreateImplFn? fnImplFactory;
+    internal SteamClientBuilder WithImpl(CreateImplFn implFactory)
     {
         this.fnImplFactory = implFactory;
         return this;
