@@ -267,7 +267,7 @@ namespace OpenSteamworks.Protobuf {
             "c3RfV2ViUlRDQWRkVmlld2VyQ2FuZGlkYXRlX05vdGlmaWNhdGlvbhIcChRi",
             "cm9hZGNhc3Rfc2Vzc2lvbl9pZBgBIAEoBhIZChF3ZWJydGNfc2Vzc2lvbl9p",
             "ZBgCIAEoBhIvCgljYW5kaWRhdGUYAyABKAsyHC5DQnJvYWRjYXN0X1dlYlJU",
-            "Q19DYW5kaWRhdGUqiAUKF0VCcm9hZGNhc3RXYXRjaExvY2F0aW9uEiMKH0VC",
+            "Q19DYW5kaWRhdGUqtQUKF0VCcm9hZGNhc3RXYXRjaExvY2F0aW9uEiMKH0VC",
             "cm9hZGNhc3RXYXRjaExvY2F0aW9uX0ludmFsaWQQABInCiNFQnJvYWRjYXN0",
             "V2F0Y2hMb2NhdGlvbl9TdGVhbVRWX1RhYhABEi4KKkVCcm9hZGNhc3RXYXRj",
             "aExvY2F0aW9uX1N0ZWFtVFZfV2F0Y2hQYXJ0eRACEiQKIEVCcm9hZGNhc3RX",
@@ -281,7 +281,8 @@ namespace OpenSteamworks.Protobuf {
             "cm9hZGNhc3RXYXRjaExvY2F0aW9uX0RldmVsb3BlclBhZ2UQCxIoCiRFQnJv",
             "YWRjYXN0V2F0Y2hMb2NhdGlvbl9DaGF0X0ZyaWVuZHMQDBInCiNFQnJvYWRj",
             "YXN0V2F0Y2hMb2NhdGlvbl9TdGVhbVRWX1dlYhANEi0KKUVCcm9hZGNhc3RX",
-            "YXRjaExvY2F0aW9uX0Rlc2t0b3BVSV9PdmVybGF5EA4qYwoYRUJyb2FkY2Fz",
+            "YXRjaExvY2F0aW9uX0Rlc2t0b3BVSV9PdmVybGF5EA4SKwonRUJyb2FkY2Fz",
+            "dFdhdGNoTG9jYXRpb25fVHJhaWxlckNhcm91c2VsEA8qYwoYRUJyb2FkY2Fz",
             "dENoYXRQZXJtaXNzaW9uEiIKHkVCcm9hZGNhc3RDaGF0UGVybWlzc2lvblB1",
             "YmxpYxAAEiMKH0VCcm9hZGNhc3RDaGF0UGVybWlzc2lvbk93bnNBcHAQATK3",
             "GwoJQnJvYWRjYXN0Em4KFUJlZ2luQnJvYWRjYXN0U2Vzc2lvbhIpLkNCcm9h",
@@ -492,6 +493,7 @@ namespace OpenSteamworks.Protobuf {
     [pbr::OriginalName("EBroadcastWatchLocation_Chat_Friends")] ChatFriends = 12,
     [pbr::OriginalName("EBroadcastWatchLocation_SteamTV_Web")] SteamTvWeb = 13,
     [pbr::OriginalName("EBroadcastWatchLocation_DesktopUI_Overlay")] DesktopUiOverlay = 14,
+    [pbr::OriginalName("EBroadcastWatchLocation_TrailerCarousel")] TrailerCarousel = 15,
   }
 
   public enum EBroadcastChatPermission {

@@ -1,112 +1,110 @@
 {
-    "name": "IClientBillingMap",
-    "functions": [ 
-        {
-            "name": "PurchaseWithActivationCode",
-            "argc": "2",
-            "interfaceid": "5",
-            "functionid": "2421628175",
-            "fencepost": "2447999725",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "HasActiveLicense",
-            "argc": "2",
-            "interfaceid": "5",
-            "functionid": "2284793234",
-            "fencepost": "2310793817",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetLicenseInfo",
-            "argc": "10",
-            "interfaceid": "5",
-            "functionid": "1610490805",
-            "fencepost": "1636684936",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes3"
-            ]
-        },
-        {
-            "name": "EnableTestLicense",
-            "argc": "2",
-            "interfaceid": "5",
-            "functionid": "3674115728",
-            "fencepost": "3700519536",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "DisableTestLicense",
-            "argc": "2",
-            "interfaceid": "5",
-            "functionid": "3887274692",
-            "fencepost": "3913694629",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetAppsInPackage",
-            "argc": "4",
-            "interfaceid": "5",
-            "functionid": "3837911398",
-            "fencepost": "3864460367",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "RequestFreeLicenseForApps",
-            "argc": "3",
-            "interfaceid": "5",
-            "functionid": "3800613871",
-            "fencepost": "3827275743",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        }
-    ]
+  "name": "IClientBilling",
+  "functions": [
+    {
+      "name": "PurchaseWithActivationCode",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "2421628214",
+      "fencepost": "2447854603",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "HasActiveLicense",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "2284793245",
+      "fencepost": "2310648667",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetLicenseInfo",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "1610490814",
+      "fencepost": "1636539784",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes3"
+      ]
+    },
+    {
+      "name": "EnableTestLicense",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "3674115753",
+      "fencepost": "3700374400",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "DisableTestLicense",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "3887274751",
+      "fencepost": "3913549527",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetAppsInPackage",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "3837911405",
+      "fencepost": "3864315213",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "RequestFreeLicenseForApps",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "3800613876",
+      "fencepost": "3827130587",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    }
+  ]
 }

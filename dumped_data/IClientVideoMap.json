@@ -1,658 +1,626 @@
 {
-    "name": "IClientVideoMap",
-    "functions": [ 
-        {
-            "name": "UnlockH264",
-            "argc": "3",
-            "interfaceid": "38",
-            "functionid": "1379391401",
-            "fencepost": "1463154124",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "EGetBroadcastReady",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "3044508515",
-            "fencepost": "3128303496",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BeginBroadcastSession",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "3763885691",
-            "fencepost": "3847696801",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "EndBroadcastSession",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "3431363556",
-            "fencepost": "3515352085",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "IsBroadcasting",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "3055338784",
-            "fencepost": "3139198281",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BIsUploadingThumbnails",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "1519485105",
-            "fencepost": "1603392989",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "GetBroadcastSessionID",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "1211423199",
-            "fencepost": "1295347212",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "ReceiveBroadcastChat",
-            "argc": "6",
-            "interfaceid": "38",
-            "functionid": "3152607799",
-            "fencepost": "3236564070",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "uint64",
-                "bytes8",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "PostBroadcastChat",
-            "argc": "4",
-            "interfaceid": "38",
-            "functionid": "1556818656",
-            "fencepost": "1640758798",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "MuteBroadcastChatUser",
-            "argc": "5",
-            "interfaceid": "38",
-            "functionid": "942986687",
-            "fencepost": "1026959087",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "uint64"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "InitBroadcastVideo",
-            "argc": "9",
-            "interfaceid": "38",
-            "functionid": "1206692586",
-            "fencepost": "1290858534",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes_length_from_mem",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "InitBroadcastAudio",
-            "argc": "8",
-            "interfaceid": "38",
-            "functionid": "2687531555",
-            "fencepost": "2771874922",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "Unknown_12",
-            "argc": "0",
-            "interfaceid": "0",
-            "functionid": "0",
-            "fencepost": "0",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "UploadBroadcastThumbnail",
-            "argc": "5",
-            "interfaceid": "38",
-            "functionid": "629797903",
-            "fencepost": "714447721",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "DroppedVideoFrames",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "4078851072",
-            "fencepost": "4163549277",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "SetCurrentVideoEncodingRate",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "990638640",
-            "fencepost": "1075369103",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "SetMicrophoneState",
-            "argc": "3",
-            "interfaceid": "38",
-            "functionid": "1250769836",
-            "fencepost": "1335516428",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1",
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "SetVideoSource",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "1068035656",
-            "fencepost": "1152798377",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "BroadcastRecorderError",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "48081493",
-            "fencepost": "132860343",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "LoadBroadcastSettings",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "2172981335",
-            "fencepost": "2257792443",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "SetBroadcastPermissions",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "3296847756",
-            "fencepost": "3381674993",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetBroadcastPermissions",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "784666505",
-            "fencepost": "869509871",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetBroadcastMaxKbps",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "3467171454",
-            "fencepost": "3552030949",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetBroadcastDelaySeconds",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "3167311854",
-            "fencepost": "3252397155",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BGetBroadcastDimensions",
-            "argc": "3",
-            "interfaceid": "38",
-            "functionid": "2641588941",
-            "fencepost": "2726512952",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetBroadcastIncludeDesktop",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "79477987",
-            "fencepost": "164466514",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetBroadcastRecordSystemAudio",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "2234419570",
-            "fencepost": "2319424226",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetBroadcastRecordMic",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "2620545",
-            "fencepost": "87641330",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetBroadcastShowChatCorner",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "2917174315",
-            "fencepost": "3002211229",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetBroadcastShowDebugInfo",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "2459683947",
-            "fencepost": "2544736990",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetBroadcastShowReminderBanner",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "3072211735",
-            "fencepost": "3157280907",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetBroadcastEncoderSetting",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "1543782944",
-            "fencepost": "1628884374",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "InviteToBroadcast",
-            "argc": "5",
-            "interfaceid": "38",
-            "functionid": "2157910297",
-            "fencepost": "2243043985",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "uint64",
-                "bytes1",
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "IgnoreApprovalRequest",
-            "argc": "4",
-            "interfaceid": "38",
-            "functionid": "2210230019",
-            "fencepost": "2295379836",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "uint64",
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "BroadcastFirstTimeComplete",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "3139031254",
-            "fencepost": "3224197200",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "SetInHomeStreamState",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "1846187355",
-            "fencepost": "1931369430",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "WatchBroadcast",
-            "argc": "3",
-            "interfaceid": "38",
-            "functionid": "1889671566",
-            "fencepost": "1974885899",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "uint64"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetWatchBroadcastMPD",
-            "argc": "3",
-            "interfaceid": "38",
-            "functionid": "76081195",
-            "fencepost": "161311657",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "uint64"
-            ],
-            "serializedreturns": [
-                "string"
-            ]
-        },
-        {
-            "name": "GetApprovalRequestCount",
-            "argc": "1",
-            "interfaceid": "38",
-            "functionid": "2841981562",
-            "fencepost": "2927244282",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetApprovalRequests",
-            "argc": "3",
-            "interfaceid": "38",
-            "functionid": "4130849937",
-            "fencepost": "4216177173",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "GetVideoURL",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "3946523240",
-            "fencepost": "4031914992",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetOPFSettings",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "4227402717",
-            "fencepost": "17843302",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetOPFStringForApp",
-            "argc": "5",
-            "interfaceid": "38",
-            "functionid": "3265263598",
-            "fencepost": "3350768253",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes_length_from_mem",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "WebRTCGetTURNAddress",
-            "argc": "2",
-            "interfaceid": "38",
-            "functionid": "2702725194",
-            "fencepost": "2788310494",
-            "cannotcallincrossprocess": "1",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "WebRTCStartResult",
-            "argc": "5",
-            "interfaceid": "38",
-            "functionid": "70579221",
-            "fencepost": "156180650",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes1",
-                "string"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "WebRTCAddCandidate",
-            "argc": "6",
-            "interfaceid": "38",
-            "functionid": "3245444325",
-            "fencepost": "3331061883",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "WebRTCGetAnswer",
-            "argc": "4",
-            "interfaceid": "38",
-            "functionid": "504396234",
-            "fencepost": "590029921",
-            "cannotcallincrossprocess": "1",
-            "serializedargs": [
-                "bytes8",
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        }
-    ]
+  "name": "IClientVideo",
+  "functions": [
+    {
+      "name": "UnlockH264",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1379391405",
+      "fencepost": "1463218644",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "EGetBroadcastReady",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3044508519",
+      "fencepost": "3128368016",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BeginBroadcastSession",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3763885671",
+      "fencepost": "3847761297",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "EndBroadcastSession",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3431363560",
+      "fencepost": "3515416605",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "IsBroadcasting",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3055338812",
+      "fencepost": "3139262825",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BIsUploadingThumbnails",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1519485109",
+      "fencepost": "1603457509",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "GetBroadcastSessionID",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1211423195",
+      "fencepost": "1295411724",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "ReceiveBroadcastChat",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3152607803",
+      "fencepost": "3236628590",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "uint64",
+        "bytes8",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "PostBroadcastChat",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1556818668",
+      "fencepost": "1640823326",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "MuteBroadcastChatUser",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "942986675",
+      "fencepost": "1027023591",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "uint64"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "InitBroadcastVideo",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1206692590",
+      "fencepost": "1290923054",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes_external_length",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "InitBroadcastAudio",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2687531567",
+      "fencepost": "2771939450",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UploadBroadcastFrame",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1531221368",
+      "fencepost": "1615806670",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1",
+        "bytes1",
+        "bytes4",
+        "bytes8",
+        "bytes8",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UploadBroadcastThumbnail",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "629797899",
+      "fencepost": "714512233",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "DroppedVideoFrames",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "4078851076",
+      "fencepost": "4163613797",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "SetCurrentVideoEncodingRate",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "990638652",
+      "fencepost": "1075433631",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "SetMicrophoneState",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1250769824",
+      "fencepost": "1335580932",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1",
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "SetVideoSource",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1068035652",
+      "fencepost": "1152862889",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "BroadcastRecorderError",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "48081489",
+      "fencepost": "132924855",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "LoadBroadcastSettings",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2172981331",
+      "fencepost": "2257856955",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "SetBroadcastPermissions",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3296847752",
+      "fencepost": "3381739505",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetBroadcastPermissions",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "784666517",
+      "fencepost": "869574399",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetBroadcastMaxKbps",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3467171426",
+      "fencepost": "3552095437",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetBroadcastDelaySeconds",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3167311850",
+      "fencepost": "3252461667",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BGetBroadcastDimensions",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2641588945",
+      "fencepost": "2726577472",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetBroadcastIncludeDesktop",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "79477999",
+      "fencepost": "164531042",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetBroadcastRecordSystemAudio",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2234419582",
+      "fencepost": "2319488754",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetBroadcastRecordMic",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2620557",
+      "fencepost": "87705858",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetBroadcastShowChatCorner",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2917174319",
+      "fencepost": "3002275749",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetBroadcastShowDebugInfo",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2459683951",
+      "fencepost": "2544801510",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetBroadcastShowReminderBanner",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3072211731",
+      "fencepost": "3157345419",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetBroadcastEncoderSetting",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1543782940",
+      "fencepost": "1628948886",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "InviteToBroadcast",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2157910309",
+      "fencepost": "2243108513",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "uint64",
+        "bytes1",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "IgnoreApprovalRequest",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2210230079",
+      "fencepost": "2295444412",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "uint64",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "BroadcastFirstTimeComplete",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3139031250",
+      "fencepost": "3224261712",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "SetInHomeStreamState",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1846187359",
+      "fencepost": "1931433950",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "WatchBroadcast",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "1889671562",
+      "fencepost": "1974950411",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "uint64"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetWatchBroadcastMPD",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "76081191",
+      "fencepost": "161376169",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "uint64"
+      ],
+      "serializedreturns": [
+        "string"
+      ]
+    },
+    {
+      "name": "GetApprovalRequestCount",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2841981558",
+      "fencepost": "2927308794",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetApprovalRequests",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "4130849949",
+      "fencepost": "4216241701",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "GetVideoURL",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3946523252",
+      "fencepost": "4031979520",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetOPFSettings",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "4227402689",
+      "fencepost": "0",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetOPFStringForApp",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3265263594",
+      "fencepost": "3350832765",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes_external_length",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "WebRTCGetTURNAddress",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "2702725198",
+      "fencepost": "2788375014",
+      "cannotcallincrossprocess": "1",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "WebRTCStartResult",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "70579217",
+      "fencepost": "156245162",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes1",
+        "string"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "WebRTCAddCandidate",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "3245444249",
+      "fencepost": "3331126323",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "WebRTCGetAnswer",
+      "argc": "-1",
+      "interfaceid": "38",
+      "functionid": "504396214",
+      "fencepost": "590094417",
+      "cannotcallincrossprocess": "1",
+      "serializedargs": [
+        "bytes8",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    }
+  ]
 }

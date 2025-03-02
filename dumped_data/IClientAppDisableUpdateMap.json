@@ -1,19 +1,18 @@
 {
-    "name": "IClientAppDisableUpdateMap",
-    "functions": [ 
-        {
-            "name": "SetAppUpdateDisabledSecondsRemaining",
-            "argc": "3",
-            "interfaceid": "42",
-            "functionid": "2352926874",
-            "fencepost": "2443964284",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        }
-    ]
+  "name": "IClientAppDisableUpdate",
+  "functions": [
+    {
+      "name": "SetAppUpdateDisabledSecondsRemaining",
+      "argc": "-1",
+      "interfaceid": "42",
+      "functionid": "2352926852",
+      "fencepost": "2444061036",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    }
+  ]
 }

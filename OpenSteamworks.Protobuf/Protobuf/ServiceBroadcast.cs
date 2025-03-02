@@ -133,224 +133,230 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "Y2FzdF9SZXNwb25zZRIPCgdzdWNjZXNzGAEgASgIImAKKENCcm9hZGNhc3Rf",
             "TXV0ZUJyb2FkY2FzdENoYXRVc2VyX1JlcXVlc3QSDwoHY2hhdF9pZBgBIAEo",
             "BhIUCgx1c2VyX3N0ZWFtaWQYAiABKAYSDQoFbXV0ZWQYAyABKAgiKwopQ0Jy",
-            "b2FkY2FzdF9NdXRlQnJvYWRjYXN0Q2hhdFVzZXJfUmVzcG9uc2UihgEKIkNC",
-            "cm9hZGNhc3RfUG9zdENoYXRNZXNzYWdlX1JlcXVlc3QSDwoHY2hhdF9pZBgB",
-            "IAEoBhIPCgdtZXNzYWdlGAIgASgJEhMKC2luc3RhbmNlX2lkGAMgASgNEhMK",
-            "CGxhbmd1YWdlGAQgASgNOgEwEhQKDGNvdW50cnlfY29kZRgFIAEoCSJ7CiND",
-            "QnJvYWRjYXN0X1Bvc3RDaGF0TWVzc2FnZV9SZXNwb25zZRIUCgxwZXJzb25h",
-            "X25hbWUYASABKAkSDwoHaW5fZ2FtZRgCIAEoCBIOCgZyZXN1bHQYAyABKAUS",
-            "HQoVY29vbGRvd25fdGltZV9zZWNvbmRzGAQgASgFIk4KJUNCcm9hZGNhc3Rf",
-            "UmVtb3ZlVXNlckNoYXRUZXh0X1JlcXVlc3QSDwoHY2hhdF9pZBgBIAEoBhIU",
-            "Cgx1c2VyX3N0ZWFtaWQYAiABKAYiKAomQ0Jyb2FkY2FzdF9SZW1vdmVVc2Vy",
-            "Q2hhdFRleHRfUmVzcG9uc2UifAotQ0Jyb2FkY2FzdF9TZW5kQnJvYWRjYXN0",
-            "U3RhdGVUb1NlcnZlcl9SZXF1ZXN0EhIKCnBlcm1pc3Npb24YASABKAUSDgoG",
-            "Z2FtZWlkGAIgASgEEg0KBXRpdGxlGAMgASgJEhgKEGdhbWVfZGF0YV9jb25m",
-            "aWcYBCABKAkiMAouQ0Jyb2FkY2FzdF9TZW5kQnJvYWRjYXN0U3RhdGVUb1Nl",
-            "cnZlcl9SZXNwb25zZSLBAQosQ0Jyb2FkY2FzdF9TZW5kVGh1bWJuYWlsVG9S",
-            "ZWxheV9Ob3RpZmljYXRpb24SHgoWdGh1bWJuYWlsX3VwbG9hZF90b2tlbhgB",
-            "IAEoCRImCh50aHVtYm5haWxfYnJvYWRjYXN0X3Nlc3Npb25faWQYAiABKAYS",
-            "FgoOdGh1bWJuYWlsX2RhdGEYAyABKAwSFwoPdGh1bWJuYWlsX3dpZHRoGAQg",
-            "ASgNEhgKEHRodW1ibmFpbF9oZWlnaHQYBSABKA0iPQolQ0Jyb2FkY2FzdF9T",
-            "ZXNzaW9uQ2xvc2VkX05vdGlmaWNhdGlvbhIUCgxicm9hZGNhc3RfaWQYASAB",
-            "KAYifwohQ0Jyb2FkY2FzdF9TZXRDbGlwRGV0YWlsc19SZXF1ZXN0EhkKEWJy",
-            "b2FkY2FzdF9jbGlwX2lkGAEgASgEEhIKCnN0YXJ0X3RpbWUYAiABKA0SEAoI",
-            "ZW5kX3RpbWUYAyABKA0SGQoRdmlkZW9fZGVzY3JpcHRpb24YBCABKAkiJAoi",
-            "Q0Jyb2FkY2FzdF9TZXRDbGlwRGV0YWlsc19SZXNwb25zZSLVAgoeQ0Jyb2Fk",
-            "Y2FzdF9TZXRSVE1QSW5mb19SZXF1ZXN0EhwKFGJyb2FkY2FzdF9wZXJtaXNz",
-            "aW9uGAEgASgFEhQKDHVwZGF0ZV90b2tlbhgCIAEoCBIXCg9icm9hZGNhc3Rf",
-            "ZGVsYXkYAyABKAUSDgoGYXBwX2lkGAQgASgNEhcKD3JlcXVpcmVkX2FwcF9p",
-            "ZBgFIAEoDRIuChlicm9hZGNhc3RfY2hhdF9wZXJtaXNzaW9uGAYgASgFOgEw",
-            "QgiCtRgEZW51bRIYChBicm9hZGNhc3RfYnVmZmVyGAcgASgFEg8KB3N0ZWFt",
-            "aWQYCCABKAYSFwoPY2hhdF9yYXRlX2xpbWl0GAkgASgNEhUKDWVuYWJsZV9y",
-            "ZXBsYXkYCiABKAgSHAoUaXNfcGFydG5lcl9jaGF0X29ubHkYCyABKAgSFAoM",
-            "d29yZGJhbl9saXN0GAwgASgJIiEKH0NCcm9hZGNhc3RfU2V0UlRNUEluZm9f",
-            "UmVzcG9uc2UiywEKJ0NCcm9hZGNhc3RfU3RhcnRCcm9hZGNhc3RVcGxvYWRf",
-            "UmVxdWVzdBIUCgxicm9hZGNhc3RfaWQYASABKAYSDgoGY2VsbGlkGAIgASgN",
-            "Eg8KB2FzX3J0bXAYAyABKAgSFQoNZGVsYXlfc2Vjb25kcxgEIAEoDRIVCgpy",
-            "dG1wX3Rva2VuGAUgASgEOgEwEhkKEXVwbG9hZF9pcF9hZGRyZXNzGAYgASgN",
-            "EhEKCWlzX3JlcGxheRgHIAEoCBINCgVzeXNpZBgIIAEoDSKiAQooQ0Jyb2Fk",
-            "Y2FzdF9TdGFydEJyb2FkY2FzdFVwbG9hZF9SZXNwb25zZRIUCgx1cGxvYWRf",
-            "dG9rZW4YASABKAkSFgoOdXBsb2FkX2FkZHJlc3MYAiABKAkSGwoTYnJvYWRj",
-            "YXN0X3VwbG9hZF9pZBgDIAEoBhIVCg1lbmFibGVfcmVwbGF5GAYgASgIEhQK",
-            "DGh0dHBfYWRkcmVzcxgHIAEoCSKZAQohQ0Jyb2FkY2FzdF9TdGFydEJ1aWxk",
-            "Q2xpcF9SZXF1ZXN0Eg8KB3N0ZWFtaWQYASABKAYSHAoUYnJvYWRjYXN0X3Nl",
-            "c3Npb25faWQYAiABKAYSFQoNZmlyc3Rfc2VnbWVudBgDIAEoBRIUCgxudW1f",
-            "c2VnbWVudHMYBCABKAUSGAoQY2xpcF9kZXNjcmlwdGlvbhgFIAEoCSI/CiJD",
-            "QnJvYWRjYXN0X1N0YXJ0QnVpbGRDbGlwX1Jlc3BvbnNlEhkKEWJyb2FkY2Fz",
-            "dF9jbGlwX2lkGAEgASgGIpUBCitDQnJvYWRjYXN0X1N0b3BCcm9hZGNhc3RV",
-            "cGxvYWRfTm90aWZpY2F0aW9uEhQKDGJyb2FkY2FzdF9pZBgBIAEoBhIaChJi",
-            "cm9hZGNhc3RfcmVsYXlfaWQYAiABKAYSFQoNdXBsb2FkX3Jlc3VsdBgDIAEo",
-            "DRIdChV0b29fbWFueV9wb29yX3VwbG9hZHMYBCABKAgibAotQ0Jyb2FkY2Fz",
-            "dF9TdG9wV2F0Y2hpbmdCcm9hZGNhc3RfTm90aWZpY2F0aW9uEg8KB3N0ZWFt",
-            "aWQYASABKAYSFAoMYnJvYWRjYXN0X2lkGAIgASgGEhQKDHZpZXdlcl90b2tl",
-            "bhgDIAEoBiJLCilDQnJvYWRjYXN0X1VwZGF0ZUNoYXRNZXNzYWdlRmxhaXJf",
-            "UmVxdWVzdBIPCgdjaGF0X2lkGAEgASgGEg0KBWZsYWlyGAIgASgJIlwKKkNC",
-            "cm9hZGNhc3RfVXBkYXRlQ2hhdE1lc3NhZ2VGbGFpcl9SZXNwb25zZRIOCgZy",
-            "ZXN1bHQYASABKAUSDwoHY2hhdF9pZBgCIAEoBhINCgVmbGFpchgDIAEoCSJM",
-            "Ci1DQnJvYWRjYXN0X1ZpZXdlckJyb2FkY2FzdEludml0ZV9Ob3RpZmljYXRp",
-            "b24SGwoTYnJvYWRjYXN0ZXJfc3RlYW1pZBgBIAEoBiJGCi5DQnJvYWRjYXN0",
-            "X1dhaXRpbmdCcm9hZGNhc3RWaWV3ZXJfTm90aWZpY2F0aW9uEhQKDGJyb2Fk",
-            "Y2FzdF9pZBgBIAEoBiLGAQohQ0Jyb2FkY2FzdF9XYXRjaEJyb2FkY2FzdF9S",
-            "ZXF1ZXN0Eg8KB3N0ZWFtaWQYASABKAYSHQoVZXhpc3RpbmdfYnJvYWRjYXN0",
-            "X2lkGAIgASgGEhQKDHZpZXdlcl90b2tlbhgDIAEoBhIRCgljbGllbnRfaXAY",
-            "BCABKA0SEwoLY2xpZW50X2NlbGwYBSABKA0SIAoOd2F0Y2hfbG9jYXRpb24Y",
-            "BiABKAVCCIK1GARlbnVtEhEKCWlzX3dlYnJ0YxgHIAEoCCLnAwoiQ0Jyb2Fk",
-            "Y2FzdF9XYXRjaEJyb2FkY2FzdF9SZXNwb25zZRIaCghyZXNwb25zZRgBIAEo",
-            "BUIIgrUYBGVudW0SDwoHbXBkX3VybBgCIAEoCRIUCgxicm9hZGNhc3RfaWQY",
-            "AyABKAYSDgoGZ2FtZWlkGAQgASgEEg0KBXRpdGxlGAUgASgJEhMKC251bV92",
-            "aWV3ZXJzGAYgASgNEhIKCnBlcm1pc3Npb24YByABKAUSDwoHaXNfcnRtcBgI",
-            "IAEoCBIVCg1zZWNvbmRzX2RlbGF5GAkgASgFEhQKDHZpZXdlcl90b2tlbhgK",
-            "IAEoBhIbChNobHNfbTN1OF9tYXN0ZXJfdXJsGAsgASgJEhoKEmhlYXJ0YmVh",
-            "dF9pbnRlcnZhbBgMIAEoBRIVCg10aHVtYm5haWxfdXJsGA0gASgJEhEKCWlz",
-            "X3dlYnJ0YxgOIAEoCBIZChF3ZWJydGNfc2Vzc2lvbl9pZBgPIAEoBhIYChB3",
-            "ZWJydGNfb2ZmZXJfc2RwGBAgASgJEhoKEndlYnJ0Y190dXJuX3NlcnZlchgR",
-            "IAEoCRIRCglpc19yZXBsYXkYEiABKAgSEAoIZHVyYXRpb24YEyABKAUSHwoX",
-            "Y2RuX2F1dGhfdXJsX3BhcmFtZXRlcnMYFCABKAkiWgobQ0Jyb2FkY2FzdF9X",
-            "ZWJSVENfQ2FuZGlkYXRlEg8KB3NkcF9taWQYASABKAkSFwoPc2RwX21saW5l",
-            "X2luZGV4GAIgASgFEhEKCWNhbmRpZGF0ZRgDIAEoCSJ3CilDQnJvYWRjYXN0",
-            "X1dlYlJUQ0FkZEhvc3RDYW5kaWRhdGVfUmVxdWVzdBIZChF3ZWJydGNfc2Vz",
-            "c2lvbl9pZBgBIAEoBhIvCgljYW5kaWRhdGUYAiABKAsyHC5DQnJvYWRjYXN0",
-            "X1dlYlJUQ19DYW5kaWRhdGUiLAoqQ0Jyb2FkY2FzdF9XZWJSVENBZGRIb3N0",
-            "Q2FuZGlkYXRlX1Jlc3BvbnNlIpwBCjBDQnJvYWRjYXN0X1dlYlJUQ0FkZFZp",
-            "ZXdlckNhbmRpZGF0ZV9Ob3RpZmljYXRpb24SHAoUYnJvYWRjYXN0X3Nlc3Np",
-            "b25faWQYASABKAYSGQoRd2VicnRjX3Nlc3Npb25faWQYAiABKAYSLwoJY2Fu",
-            "ZGlkYXRlGAMgASgLMhwuQ0Jyb2FkY2FzdF9XZWJSVENfQ2FuZGlkYXRlIpYB",
-            "CitDQnJvYWRjYXN0X1dlYlJUQ0FkZFZpZXdlckNhbmRpZGF0ZV9SZXF1ZXN0",
-            "EhsKE2Jyb2FkY2FzdGVyX3N0ZWFtaWQYASABKAYSGQoRd2VicnRjX3Nlc3Np",
-            "b25faWQYAiABKAYSLwoJY2FuZGlkYXRlGAMgASgLMhwuQ0Jyb2FkY2FzdF9X",
-            "ZWJSVENfQ2FuZGlkYXRlIi4KLENCcm9hZGNhc3RfV2ViUlRDQWRkVmlld2Vy",
-            "Q2FuZGlkYXRlX1Jlc3BvbnNlIoIBCipDQnJvYWRjYXN0X1dlYlJUQ0dldEhv",
-            "c3RDYW5kaWRhdGVzX1JlcXVlc3QSGwoTYnJvYWRjYXN0ZXJfc3RlYW1pZBgB",
-            "IAEoBhIZChF3ZWJydGNfc2Vzc2lvbl9pZBgCIAEoBhIcChRjYW5kaWRhdGVf",
-            "Z2VuZXJhdGlvbhgDIAEoDSJ9CitDQnJvYWRjYXN0X1dlYlJUQ0dldEhvc3RD",
-            "YW5kaWRhdGVzX1Jlc3BvbnNlEhwKFGNhbmRpZGF0ZV9nZW5lcmF0aW9uGAEg",
-            "ASgNEjAKCmNhbmRpZGF0ZXMYAiADKAsyHC5DQnJvYWRjYXN0X1dlYlJUQ19D",
-            "YW5kaWRhdGUiYQosQ0Jyb2FkY2FzdF9XZWJSVENIYXZlVFVSTlNlcnZlcl9O",
-            "b3RpZmljYXRpb24SHAoUYnJvYWRjYXN0X3Nlc3Npb25faWQYASABKAYSEwoL",
-            "dHVybl9zZXJ2ZXIYAiABKAkiOwopQ0Jyb2FkY2FzdF9XZWJSVENMb29rdXBU",
-            "VVJOU2VydmVyX1JlcXVlc3QSDgoGY2VsbGlkGAEgASgNIkEKKkNCcm9hZGNh",
-            "c3RfV2ViUlRDTG9va3VwVFVSTlNlcnZlcl9SZXNwb25zZRITCgt0dXJuX3Nl",
-            "cnZlchgBIAEoCSJMCixDQnJvYWRjYXN0X1dlYlJUQ05lZWRUVVJOU2VydmVy",
-            "X05vdGlmaWNhdGlvbhIcChRicm9hZGNhc3Rfc2Vzc2lvbl9pZBgBIAEoBiJy",
-            "CidDQnJvYWRjYXN0X1dlYlJUQ1NldEFuc3dlcl9Ob3RpZmljYXRpb24SHAoU",
-            "YnJvYWRjYXN0X3Nlc3Npb25faWQYASABKAYSGQoRd2VicnRjX3Nlc3Npb25f",
-            "aWQYAiABKAYSDgoGYW5zd2VyGAMgASgJImwKIkNCcm9hZGNhc3RfV2ViUlRD",
-            "U2V0QW5zd2VyX1JlcXVlc3QSGwoTYnJvYWRjYXN0ZXJfc3RlYW1pZBgBIAEo",
-            "BhIZChF3ZWJydGNfc2Vzc2lvbl9pZBgCIAEoBhIOCgZhbnN3ZXIYAyABKAki",
-            "JQojQ0Jyb2FkY2FzdF9XZWJSVENTZXRBbnN3ZXJfUmVzcG9uc2UijAEKI0NC",
-            "cm9hZGNhc3RfV2ViUlRDU3RhcnRfTm90aWZpY2F0aW9uEhwKFGJyb2FkY2Fz",
-            "dF9zZXNzaW9uX2lkGAEgASgGEhkKEXdlYnJ0Y19zZXNzaW9uX2lkGAIgASgG",
-            "EhYKDnZpZXdlcl9zdGVhbWlkGAMgASgGEhQKDHZpZXdlcl90b2tlbhgEIAEo",
-            "BiKaAQokQ0Jyb2FkY2FzdF9XZWJSVENTdGFydFJlc3VsdF9SZXF1ZXN0EhkK",
-            "EXdlYnJ0Y19zZXNzaW9uX2lkGAEgASgGEg8KB3N0YXJ0ZWQYAiABKAgSDQoF",
-            "b2ZmZXIYAyABKAkSFAoMcmVzb2x1dGlvbl94GAQgASgNEhQKDHJlc29sdXRp",
-            "b25feRgFIAEoDRILCgNmcHMYBiABKA0iJwolQ0Jyb2FkY2FzdF9XZWJSVENT",
-            "dGFydFJlc3VsdF9SZXNwb25zZSI9CiBDQnJvYWRjYXN0X1dlYlJUQ1N0b3Bw",
-            "ZWRfUmVxdWVzdBIZChF3ZWJydGNfc2Vzc2lvbl9pZBgBIAEoBiIjCiFDQnJv",
-            "YWRjYXN0X1dlYlJUQ1N0b3BwZWRfUmVzcG9uc2Uy6xoKCUJyb2FkY2FzdBJu",
-            "ChVCZWdpbkJyb2FkY2FzdFNlc3Npb24SKS5DQnJvYWRjYXN0X0JlZ2luQnJv",
-            "YWRjYXN0U2Vzc2lvbl9SZXF1ZXN0GiouQ0Jyb2FkY2FzdF9CZWdpbkJyb2Fk",
-            "Y2FzdFNlc3Npb25fUmVzcG9uc2USaAoTRW5kQnJvYWRjYXN0U2Vzc2lvbhIn",
-            "LkNCcm9hZGNhc3RfRW5kQnJvYWRjYXN0U2Vzc2lvbl9SZXF1ZXN0GiguQ0Jy",
-            "b2FkY2FzdF9FbmRCcm9hZGNhc3RTZXNzaW9uX1Jlc3BvbnNlEmsKFEdldEJy",
-            "b2FkY2FzdENoYXRJbmZvEiguQ0Jyb2FkY2FzdF9HZXRCcm9hZGNhc3RDaGF0",
-            "SW5mb19SZXF1ZXN0GikuQ0Jyb2FkY2FzdF9HZXRCcm9hZGNhc3RDaGF0SW5m",
-            "b19SZXNwb25zZRJ6ChlHZXRCcm9hZGNhc3RDaGF0VXNlck5hbWVzEi0uQ0Jy",
-            "b2FkY2FzdF9HZXRCcm9hZGNhc3RDaGF0VXNlck5hbWVzX1JlcXVlc3QaLi5D",
-            "QnJvYWRjYXN0X0dldEJyb2FkY2FzdENoYXRVc2VyTmFtZXNfUmVzcG9uc2US",
-            "ZQoSR2V0QnJvYWRjYXN0U3RhdHVzEiYuQ0Jyb2FkY2FzdF9HZXRCcm9hZGNh",
-            "c3RTdGF0dXNfUmVxdWVzdBonLkNCcm9hZGNhc3RfR2V0QnJvYWRjYXN0U3Rh",
-            "dHVzX1Jlc3BvbnNlEm4KFUdldEJyb2FkY2FzdFRodW1ibmFpbBIpLkNCcm9h",
-            "ZGNhc3RfR2V0QnJvYWRjYXN0VGh1bWJuYWlsX1JlcXVlc3QaKi5DQnJvYWRj",
-            "YXN0X0dldEJyb2FkY2FzdFRodW1ibmFpbF9SZXNwb25zZRJ0ChdHZXRCcm9h",
-            "ZGNhc3RVcGxvYWRTdGF0cxIrLkNCcm9hZGNhc3RfR2V0QnJvYWRjYXN0VXBs",
-            "b2FkU3RhdHNfUmVxdWVzdBosLkNCcm9hZGNhc3RfR2V0QnJvYWRjYXN0VXBs",
-            "b2FkU3RhdHNfUmVzcG9uc2USdAoXR2V0QnJvYWRjYXN0Vmlld2VyU3RhdHMS",
-            "Ky5DQnJvYWRjYXN0X0dldEJyb2FkY2FzdFZpZXdlclN0YXRzX1JlcXVlc3Qa",
-            "LC5DQnJvYWRjYXN0X0dldEJyb2FkY2FzdFZpZXdlclN0YXRzX1Jlc3BvbnNl",
-            "EmUKEkdldEJ1aWxkQ2xpcFN0YXR1cxImLkNCcm9hZGNhc3RfR2V0QnVpbGRD",
-            "bGlwU3RhdHVzX1JlcXVlc3QaJy5DQnJvYWRjYXN0X0dldEJ1aWxkQ2xpcFN0",
-            "YXR1c19SZXNwb25zZRJZCg5HZXRDbGlwRGV0YWlscxIiLkNCcm9hZGNhc3Rf",
-            "R2V0Q2xpcERldGFpbHNfUmVxdWVzdBojLkNCcm9hZGNhc3RfR2V0Q2xpcERl",
-            "dGFpbHNfUmVzcG9uc2USUAoLR2V0UlRNUEluZm8SHy5DQnJvYWRjYXN0X0dl",
-            "dFJUTVBJbmZvX1JlcXVlc3QaIC5DQnJvYWRjYXN0X0dldFJUTVBJbmZvX1Jl",
-            "c3BvbnNlEk4KEkhlYXJ0YmVhdEJyb2FkY2FzdBIrLkNCcm9hZGNhc3RfSGVh",
-            "cnRiZWF0QnJvYWRjYXN0X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USYgoR",
-            "SW52aXRlVG9Ccm9hZGNhc3QSJS5DQnJvYWRjYXN0X0ludml0ZVRvQnJvYWRj",
-            "YXN0X1JlcXVlc3QaJi5DQnJvYWRjYXN0X0ludml0ZVRvQnJvYWRjYXN0X1Jl",
-            "c3BvbnNlEm4KFU11dGVCcm9hZGNhc3RDaGF0VXNlchIpLkNCcm9hZGNhc3Rf",
-            "TXV0ZUJyb2FkY2FzdENoYXRVc2VyX1JlcXVlc3QaKi5DQnJvYWRjYXN0X011",
-            "dGVCcm9hZGNhc3RDaGF0VXNlcl9SZXNwb25zZRI/Ch9Ob3RpZnlCcm9hZGNh",
-            "c3RTZXNzaW9uSGVhcnRiZWF0Eg8uTm90SW1wbGVtZW50ZWQaCy5Ob1Jlc3Bv",
-            "bnNlEjkKGU5vdGlmeUJyb2FkY2FzdFVwbG9hZFN0b3ASDy5Ob3RJbXBsZW1l",
-            "bnRlZBoLLk5vUmVzcG9uc2USWAoaTm90aWZ5V2ViUlRDSGF2ZVRVUk5TZXJ2",
-            "ZXISLS5DQnJvYWRjYXN0X1dlYlJUQ0hhdmVUVVJOU2VydmVyX05vdGlmaWNh",
-            "dGlvbhoLLk5vUmVzcG9uc2USXAoPUG9zdENoYXRNZXNzYWdlEiMuQ0Jyb2Fk",
-            "Y2FzdF9Qb3N0Q2hhdE1lc3NhZ2VfUmVxdWVzdBokLkNCcm9hZGNhc3RfUG9z",
-            "dENoYXRNZXNzYWdlX1Jlc3BvbnNlEmUKElJlbW92ZVVzZXJDaGF0VGV4dBIm",
-            "LkNCcm9hZGNhc3RfUmVtb3ZlVXNlckNoYXRUZXh0X1JlcXVlc3QaJy5DQnJv",
-            "YWRjYXN0X1JlbW92ZVVzZXJDaGF0VGV4dF9SZXNwb25zZRJ9ChpTZW5kQnJv",
-            "YWRjYXN0U3RhdGVUb1NlcnZlchIuLkNCcm9hZGNhc3RfU2VuZEJyb2FkY2Fz",
-            "dFN0YXRlVG9TZXJ2ZXJfUmVxdWVzdBovLkNCcm9hZGNhc3RfU2VuZEJyb2Fk",
-            "Y2FzdFN0YXRlVG9TZXJ2ZXJfUmVzcG9uc2USWQoOU2V0Q2xpcERldGFpbHMS",
-            "Ii5DQnJvYWRjYXN0X1NldENsaXBEZXRhaWxzX1JlcXVlc3QaIy5DQnJvYWRj",
-            "YXN0X1NldENsaXBEZXRhaWxzX1Jlc3BvbnNlElAKC1NldFJUTVBJbmZvEh8u",
-            "Q0Jyb2FkY2FzdF9TZXRSVE1QSW5mb19SZXF1ZXN0GiAuQ0Jyb2FkY2FzdF9T",
-            "ZXRSVE1QSW5mb19SZXNwb25zZRJrChRTdGFydEJyb2FkY2FzdFVwbG9hZBIo",
-            "LkNCcm9hZGNhc3RfU3RhcnRCcm9hZGNhc3RVcGxvYWRfUmVxdWVzdBopLkNC",
-            "cm9hZGNhc3RfU3RhcnRCcm9hZGNhc3RVcGxvYWRfUmVzcG9uc2USWQoOU3Rh",
-            "cnRCdWlsZENsaXASIi5DQnJvYWRjYXN0X1N0YXJ0QnVpbGRDbGlwX1JlcXVl",
-            "c3QaIy5DQnJvYWRjYXN0X1N0YXJ0QnVpbGRDbGlwX1Jlc3BvbnNlElQKFVN0",
-            "b3BXYXRjaGluZ0Jyb2FkY2FzdBIuLkNCcm9hZGNhc3RfU3RvcFdhdGNoaW5n",
-            "QnJvYWRjYXN0X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2UScQoWVXBkYXRl",
-            "Q2hhdE1lc3NhZ2VGbGFpchIqLkNCcm9hZGNhc3RfVXBkYXRlQ2hhdE1lc3Nh",
-            "Z2VGbGFpcl9SZXF1ZXN0GisuQ0Jyb2FkY2FzdF9VcGRhdGVDaGF0TWVzc2Fn",
-            "ZUZsYWlyX1Jlc3BvbnNlElkKDldhdGNoQnJvYWRjYXN0EiIuQ0Jyb2FkY2Fz",
-            "dF9XYXRjaEJyb2FkY2FzdF9SZXF1ZXN0GiMuQ0Jyb2FkY2FzdF9XYXRjaEJy",
-            "b2FkY2FzdF9SZXNwb25zZRJxChZXZWJSVENBZGRIb3N0Q2FuZGlkYXRlEiou",
-            "Q0Jyb2FkY2FzdF9XZWJSVENBZGRIb3N0Q2FuZGlkYXRlX1JlcXVlc3QaKy5D",
-            "QnJvYWRjYXN0X1dlYlJUQ0FkZEhvc3RDYW5kaWRhdGVfUmVzcG9uc2USdwoY",
-            "V2ViUlRDQWRkVmlld2VyQ2FuZGlkYXRlEiwuQ0Jyb2FkY2FzdF9XZWJSVENB",
-            "ZGRWaWV3ZXJDYW5kaWRhdGVfUmVxdWVzdBotLkNCcm9hZGNhc3RfV2ViUlRD",
-            "QWRkVmlld2VyQ2FuZGlkYXRlX1Jlc3BvbnNlEnQKF1dlYlJUQ0dldEhvc3RD",
-            "YW5kaWRhdGVzEisuQ0Jyb2FkY2FzdF9XZWJSVENHZXRIb3N0Q2FuZGlkYXRl",
-            "c19SZXF1ZXN0GiwuQ0Jyb2FkY2FzdF9XZWJSVENHZXRIb3N0Q2FuZGlkYXRl",
-            "c19SZXNwb25zZRJxChZXZWJSVENMb29rdXBUVVJOU2VydmVyEiouQ0Jyb2Fk",
-            "Y2FzdF9XZWJSVENMb29rdXBUVVJOU2VydmVyX1JlcXVlc3QaKy5DQnJvYWRj",
-            "YXN0X1dlYlJUQ0xvb2t1cFRVUk5TZXJ2ZXJfUmVzcG9uc2USXAoPV2ViUlRD",
-            "U2V0QW5zd2VyEiMuQ0Jyb2FkY2FzdF9XZWJSVENTZXRBbnN3ZXJfUmVxdWVz",
-            "dBokLkNCcm9hZGNhc3RfV2ViUlRDU2V0QW5zd2VyX1Jlc3BvbnNlEmIKEVdl",
-            "YlJUQ1N0YXJ0UmVzdWx0EiUuQ0Jyb2FkY2FzdF9XZWJSVENTdGFydFJlc3Vs",
-            "dF9SZXF1ZXN0GiYuQ0Jyb2FkY2FzdF9XZWJSVENTdGFydFJlc3VsdF9SZXNw",
-            "b25zZRJWCg1XZWJSVENTdG9wcGVkEiEuQ0Jyb2FkY2FzdF9XZWJSVENTdG9w",
-            "cGVkX1JlcXVlc3QaIi5DQnJvYWRjYXN0X1dlYlJUQ1N0b3BwZWRfUmVzcG9u",
-            "c2Uy+QgKD0Jyb2FkY2FzdENsaWVudBJYChpOb3RpZnlCcm9hZGNhc3RDaGFu",
-            "bmVsTGl2ZRItLkNCcm9hZGNhc3RfQnJvYWRjYXN0Q2hhbm5lbExpdmVfTm90",
-            "aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJOChVOb3RpZnlCcm9hZGNhc3RTdGF0",
-            "dXMSKC5DQnJvYWRjYXN0X0Jyb2FkY2FzdFN0YXR1c19Ob3RpZmljYXRpb24a",
-            "Cy5Ob1Jlc3BvbnNlElwKHE5vdGlmeUJyb2FkY2FzdFVwbG9hZFN0YXJ0ZWQS",
-            "Ly5DQnJvYWRjYXN0X0Jyb2FkY2FzdFVwbG9hZFN0YXJ0ZWRfTm90aWZpY2F0",
-            "aW9uGgsuTm9SZXNwb25zZRJYChpOb3RpZnlCcm9hZGNhc3RWaWV3ZXJTdGF0",
-            "ZRItLkNCcm9hZGNhc3RfQnJvYWRjYXN0Vmlld2VyU3RhdGVfTm90aWZpY2F0",
-            "aW9uGgsuTm9SZXNwb25zZRJKChNOb3RpZnlTZXNzaW9uQ2xvc2VkEiYuQ0Jy",
-            "b2FkY2FzdF9TZXNzaW9uQ2xvc2VkX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9u",
-            "c2USVgoZTm90aWZ5U3RvcEJyb2FkY2FzdFVwbG9hZBIsLkNCcm9hZGNhc3Rf",
-            "U3RvcEJyb2FkY2FzdFVwbG9hZF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNl",
-            "EloKG05vdGlmeVZpZXdlckJyb2FkY2FzdEludml0ZRIuLkNCcm9hZGNhc3Rf",
-            "Vmlld2VyQnJvYWRjYXN0SW52aXRlX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9u",
-            "c2USXAocTm90aWZ5V2FpdGluZ0Jyb2FkY2FzdFZpZXdlchIvLkNCcm9hZGNh",
-            "c3RfV2FpdGluZ0Jyb2FkY2FzdFZpZXdlcl9Ob3RpZmljYXRpb24aCy5Ob1Jl",
-            "c3BvbnNlEmAKHk5vdGlmeVdlYlJUQ0FkZFZpZXdlckNhbmRpZGF0ZRIxLkNC",
-            "cm9hZGNhc3RfV2ViUlRDQWRkVmlld2VyQ2FuZGlkYXRlX05vdGlmaWNhdGlv",
-            "bhoLLk5vUmVzcG9uc2USWAoaTm90aWZ5V2ViUlRDTmVlZFRVUk5TZXJ2ZXIS",
-            "LS5DQnJvYWRjYXN0X1dlYlJUQ05lZWRUVVJOU2VydmVyX05vdGlmaWNhdGlv",
-            "bhoLLk5vUmVzcG9uc2USTgoVTm90aWZ5V2ViUlRDU2V0QW5zd2VyEiguQ0Jy",
-            "b2FkY2FzdF9XZWJSVENTZXRBbnN3ZXJfTm90aWZpY2F0aW9uGgsuTm9SZXNw",
-            "b25zZRJGChFOb3RpZnlXZWJSVENTdGFydBIkLkNCcm9hZGNhc3RfV2ViUlRD",
-            "U3RhcnRfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJSChRTZW5kVGh1bWJu",
-            "YWlsVG9SZWxheRItLkNCcm9hZGNhc3RfU2VuZFRodW1ibmFpbFRvUmVsYXlf",
-            "Tm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZUIgqgIdT3BlblN0ZWFtd29ya3Mu",
-            "UHJvdG9idWYuV2ViVUk="));
+            "b2FkY2FzdF9NdXRlQnJvYWRjYXN0Q2hhdFVzZXJfUmVzcG9uc2UiTwo3Q0Jy",
+            "b2FkY2FzdF9Ob3RpZnlCcm9hZGNhc3RTZXNzaW9uSGVhcnRiZWF0X05vdGlm",
+            "aWNhdGlvbhIUCgxicm9hZGNhc3RfaWQYASABKAYiZwoxQ0Jyb2FkY2FzdF9O",
+            "b3RpZnlCcm9hZGNhc3RVcGxvYWRTdG9wX05vdGlmaWNhdGlvbhIbChNicm9h",
+            "ZGNhc3RfdXBsb2FkX2lkGAEgASgGEhUKDXVwbG9hZF9yZXN1bHQYAiABKA0i",
+            "hgEKIkNCcm9hZGNhc3RfUG9zdENoYXRNZXNzYWdlX1JlcXVlc3QSDwoHY2hh",
+            "dF9pZBgBIAEoBhIPCgdtZXNzYWdlGAIgASgJEhMKC2luc3RhbmNlX2lkGAMg",
+            "ASgNEhMKCGxhbmd1YWdlGAQgASgNOgEwEhQKDGNvdW50cnlfY29kZRgFIAEo",
+            "CSJ7CiNDQnJvYWRjYXN0X1Bvc3RDaGF0TWVzc2FnZV9SZXNwb25zZRIUCgxw",
+            "ZXJzb25hX25hbWUYASABKAkSDwoHaW5fZ2FtZRgCIAEoCBIOCgZyZXN1bHQY",
+            "AyABKAUSHQoVY29vbGRvd25fdGltZV9zZWNvbmRzGAQgASgFIk4KJUNCcm9h",
+            "ZGNhc3RfUmVtb3ZlVXNlckNoYXRUZXh0X1JlcXVlc3QSDwoHY2hhdF9pZBgB",
+            "IAEoBhIUCgx1c2VyX3N0ZWFtaWQYAiABKAYiKAomQ0Jyb2FkY2FzdF9SZW1v",
+            "dmVVc2VyQ2hhdFRleHRfUmVzcG9uc2UifAotQ0Jyb2FkY2FzdF9TZW5kQnJv",
+            "YWRjYXN0U3RhdGVUb1NlcnZlcl9SZXF1ZXN0EhIKCnBlcm1pc3Npb24YASAB",
+            "KAUSDgoGZ2FtZWlkGAIgASgEEg0KBXRpdGxlGAMgASgJEhgKEGdhbWVfZGF0",
+            "YV9jb25maWcYBCABKAkiMAouQ0Jyb2FkY2FzdF9TZW5kQnJvYWRjYXN0U3Rh",
+            "dGVUb1NlcnZlcl9SZXNwb25zZSLBAQosQ0Jyb2FkY2FzdF9TZW5kVGh1bWJu",
+            "YWlsVG9SZWxheV9Ob3RpZmljYXRpb24SHgoWdGh1bWJuYWlsX3VwbG9hZF90",
+            "b2tlbhgBIAEoCRImCh50aHVtYm5haWxfYnJvYWRjYXN0X3Nlc3Npb25faWQY",
+            "AiABKAYSFgoOdGh1bWJuYWlsX2RhdGEYAyABKAwSFwoPdGh1bWJuYWlsX3dp",
+            "ZHRoGAQgASgNEhgKEHRodW1ibmFpbF9oZWlnaHQYBSABKA0iPQolQ0Jyb2Fk",
+            "Y2FzdF9TZXNzaW9uQ2xvc2VkX05vdGlmaWNhdGlvbhIUCgxicm9hZGNhc3Rf",
+            "aWQYASABKAYifwohQ0Jyb2FkY2FzdF9TZXRDbGlwRGV0YWlsc19SZXF1ZXN0",
+            "EhkKEWJyb2FkY2FzdF9jbGlwX2lkGAEgASgEEhIKCnN0YXJ0X3RpbWUYAiAB",
+            "KA0SEAoIZW5kX3RpbWUYAyABKA0SGQoRdmlkZW9fZGVzY3JpcHRpb24YBCAB",
+            "KAkiJAoiQ0Jyb2FkY2FzdF9TZXRDbGlwRGV0YWlsc19SZXNwb25zZSLVAgoe",
+            "Q0Jyb2FkY2FzdF9TZXRSVE1QSW5mb19SZXF1ZXN0EhwKFGJyb2FkY2FzdF9w",
+            "ZXJtaXNzaW9uGAEgASgFEhQKDHVwZGF0ZV90b2tlbhgCIAEoCBIXCg9icm9h",
+            "ZGNhc3RfZGVsYXkYAyABKAUSDgoGYXBwX2lkGAQgASgNEhcKD3JlcXVpcmVk",
+            "X2FwcF9pZBgFIAEoDRIuChlicm9hZGNhc3RfY2hhdF9wZXJtaXNzaW9uGAYg",
+            "ASgFOgEwQgiCtRgEZW51bRIYChBicm9hZGNhc3RfYnVmZmVyGAcgASgFEg8K",
+            "B3N0ZWFtaWQYCCABKAYSFwoPY2hhdF9yYXRlX2xpbWl0GAkgASgNEhUKDWVu",
+            "YWJsZV9yZXBsYXkYCiABKAgSHAoUaXNfcGFydG5lcl9jaGF0X29ubHkYCyAB",
+            "KAgSFAoMd29yZGJhbl9saXN0GAwgASgJIiEKH0NCcm9hZGNhc3RfU2V0UlRN",
+            "UEluZm9fUmVzcG9uc2UiywEKJ0NCcm9hZGNhc3RfU3RhcnRCcm9hZGNhc3RV",
+            "cGxvYWRfUmVxdWVzdBIUCgxicm9hZGNhc3RfaWQYASABKAYSDgoGY2VsbGlk",
+            "GAIgASgNEg8KB2FzX3J0bXAYAyABKAgSFQoNZGVsYXlfc2Vjb25kcxgEIAEo",
+            "DRIVCgpydG1wX3Rva2VuGAUgASgEOgEwEhkKEXVwbG9hZF9pcF9hZGRyZXNz",
+            "GAYgASgNEhEKCWlzX3JlcGxheRgHIAEoCBINCgVzeXNpZBgIIAEoDSKiAQoo",
+            "Q0Jyb2FkY2FzdF9TdGFydEJyb2FkY2FzdFVwbG9hZF9SZXNwb25zZRIUCgx1",
+            "cGxvYWRfdG9rZW4YASABKAkSFgoOdXBsb2FkX2FkZHJlc3MYAiABKAkSGwoT",
+            "YnJvYWRjYXN0X3VwbG9hZF9pZBgDIAEoBhIVCg1lbmFibGVfcmVwbGF5GAYg",
+            "ASgIEhQKDGh0dHBfYWRkcmVzcxgHIAEoCSKZAQohQ0Jyb2FkY2FzdF9TdGFy",
+            "dEJ1aWxkQ2xpcF9SZXF1ZXN0Eg8KB3N0ZWFtaWQYASABKAYSHAoUYnJvYWRj",
+            "YXN0X3Nlc3Npb25faWQYAiABKAYSFQoNZmlyc3Rfc2VnbWVudBgDIAEoBRIU",
+            "CgxudW1fc2VnbWVudHMYBCABKAUSGAoQY2xpcF9kZXNjcmlwdGlvbhgFIAEo",
+            "CSI/CiJDQnJvYWRjYXN0X1N0YXJ0QnVpbGRDbGlwX1Jlc3BvbnNlEhkKEWJy",
+            "b2FkY2FzdF9jbGlwX2lkGAEgASgGIpUBCitDQnJvYWRjYXN0X1N0b3BCcm9h",
+            "ZGNhc3RVcGxvYWRfTm90aWZpY2F0aW9uEhQKDGJyb2FkY2FzdF9pZBgBIAEo",
+            "BhIaChJicm9hZGNhc3RfcmVsYXlfaWQYAiABKAYSFQoNdXBsb2FkX3Jlc3Vs",
+            "dBgDIAEoDRIdChV0b29fbWFueV9wb29yX3VwbG9hZHMYBCABKAgibAotQ0Jy",
+            "b2FkY2FzdF9TdG9wV2F0Y2hpbmdCcm9hZGNhc3RfTm90aWZpY2F0aW9uEg8K",
+            "B3N0ZWFtaWQYASABKAYSFAoMYnJvYWRjYXN0X2lkGAIgASgGEhQKDHZpZXdl",
+            "cl90b2tlbhgDIAEoBiJLCilDQnJvYWRjYXN0X1VwZGF0ZUNoYXRNZXNzYWdl",
+            "RmxhaXJfUmVxdWVzdBIPCgdjaGF0X2lkGAEgASgGEg0KBWZsYWlyGAIgASgJ",
+            "IlwKKkNCcm9hZGNhc3RfVXBkYXRlQ2hhdE1lc3NhZ2VGbGFpcl9SZXNwb25z",
+            "ZRIOCgZyZXN1bHQYASABKAUSDwoHY2hhdF9pZBgCIAEoBhINCgVmbGFpchgD",
+            "IAEoCSJMCi1DQnJvYWRjYXN0X1ZpZXdlckJyb2FkY2FzdEludml0ZV9Ob3Rp",
+            "ZmljYXRpb24SGwoTYnJvYWRjYXN0ZXJfc3RlYW1pZBgBIAEoBiJGCi5DQnJv",
+            "YWRjYXN0X1dhaXRpbmdCcm9hZGNhc3RWaWV3ZXJfTm90aWZpY2F0aW9uEhQK",
+            "DGJyb2FkY2FzdF9pZBgBIAEoBiLGAQohQ0Jyb2FkY2FzdF9XYXRjaEJyb2Fk",
+            "Y2FzdF9SZXF1ZXN0Eg8KB3N0ZWFtaWQYASABKAYSHQoVZXhpc3RpbmdfYnJv",
+            "YWRjYXN0X2lkGAIgASgGEhQKDHZpZXdlcl90b2tlbhgDIAEoBhIRCgljbGll",
+            "bnRfaXAYBCABKA0SEwoLY2xpZW50X2NlbGwYBSABKA0SIAoOd2F0Y2hfbG9j",
+            "YXRpb24YBiABKAVCCIK1GARlbnVtEhEKCWlzX3dlYnJ0YxgHIAEoCCLnAwoi",
+            "Q0Jyb2FkY2FzdF9XYXRjaEJyb2FkY2FzdF9SZXNwb25zZRIaCghyZXNwb25z",
+            "ZRgBIAEoBUIIgrUYBGVudW0SDwoHbXBkX3VybBgCIAEoCRIUCgxicm9hZGNh",
+            "c3RfaWQYAyABKAYSDgoGZ2FtZWlkGAQgASgEEg0KBXRpdGxlGAUgASgJEhMK",
+            "C251bV92aWV3ZXJzGAYgASgNEhIKCnBlcm1pc3Npb24YByABKAUSDwoHaXNf",
+            "cnRtcBgIIAEoCBIVCg1zZWNvbmRzX2RlbGF5GAkgASgFEhQKDHZpZXdlcl90",
+            "b2tlbhgKIAEoBhIbChNobHNfbTN1OF9tYXN0ZXJfdXJsGAsgASgJEhoKEmhl",
+            "YXJ0YmVhdF9pbnRlcnZhbBgMIAEoBRIVCg10aHVtYm5haWxfdXJsGA0gASgJ",
+            "EhEKCWlzX3dlYnJ0YxgOIAEoCBIZChF3ZWJydGNfc2Vzc2lvbl9pZBgPIAEo",
+            "BhIYChB3ZWJydGNfb2ZmZXJfc2RwGBAgASgJEhoKEndlYnJ0Y190dXJuX3Nl",
+            "cnZlchgRIAEoCRIRCglpc19yZXBsYXkYEiABKAgSEAoIZHVyYXRpb24YEyAB",
+            "KAUSHwoXY2RuX2F1dGhfdXJsX3BhcmFtZXRlcnMYFCABKAkiWgobQ0Jyb2Fk",
+            "Y2FzdF9XZWJSVENfQ2FuZGlkYXRlEg8KB3NkcF9taWQYASABKAkSFwoPc2Rw",
+            "X21saW5lX2luZGV4GAIgASgFEhEKCWNhbmRpZGF0ZRgDIAEoCSJ3CilDQnJv",
+            "YWRjYXN0X1dlYlJUQ0FkZEhvc3RDYW5kaWRhdGVfUmVxdWVzdBIZChF3ZWJy",
+            "dGNfc2Vzc2lvbl9pZBgBIAEoBhIvCgljYW5kaWRhdGUYAiABKAsyHC5DQnJv",
+            "YWRjYXN0X1dlYlJUQ19DYW5kaWRhdGUiLAoqQ0Jyb2FkY2FzdF9XZWJSVENB",
+            "ZGRIb3N0Q2FuZGlkYXRlX1Jlc3BvbnNlIpwBCjBDQnJvYWRjYXN0X1dlYlJU",
+            "Q0FkZFZpZXdlckNhbmRpZGF0ZV9Ob3RpZmljYXRpb24SHAoUYnJvYWRjYXN0",
+            "X3Nlc3Npb25faWQYASABKAYSGQoRd2VicnRjX3Nlc3Npb25faWQYAiABKAYS",
+            "LwoJY2FuZGlkYXRlGAMgASgLMhwuQ0Jyb2FkY2FzdF9XZWJSVENfQ2FuZGlk",
+            "YXRlIpYBCitDQnJvYWRjYXN0X1dlYlJUQ0FkZFZpZXdlckNhbmRpZGF0ZV9S",
+            "ZXF1ZXN0EhsKE2Jyb2FkY2FzdGVyX3N0ZWFtaWQYASABKAYSGQoRd2VicnRj",
+            "X3Nlc3Npb25faWQYAiABKAYSLwoJY2FuZGlkYXRlGAMgASgLMhwuQ0Jyb2Fk",
+            "Y2FzdF9XZWJSVENfQ2FuZGlkYXRlIi4KLENCcm9hZGNhc3RfV2ViUlRDQWRk",
+            "Vmlld2VyQ2FuZGlkYXRlX1Jlc3BvbnNlIoIBCipDQnJvYWRjYXN0X1dlYlJU",
+            "Q0dldEhvc3RDYW5kaWRhdGVzX1JlcXVlc3QSGwoTYnJvYWRjYXN0ZXJfc3Rl",
+            "YW1pZBgBIAEoBhIZChF3ZWJydGNfc2Vzc2lvbl9pZBgCIAEoBhIcChRjYW5k",
+            "aWRhdGVfZ2VuZXJhdGlvbhgDIAEoDSJ9CitDQnJvYWRjYXN0X1dlYlJUQ0dl",
+            "dEhvc3RDYW5kaWRhdGVzX1Jlc3BvbnNlEhwKFGNhbmRpZGF0ZV9nZW5lcmF0",
+            "aW9uGAEgASgNEjAKCmNhbmRpZGF0ZXMYAiADKAsyHC5DQnJvYWRjYXN0X1dl",
+            "YlJUQ19DYW5kaWRhdGUiYQosQ0Jyb2FkY2FzdF9XZWJSVENIYXZlVFVSTlNl",
+            "cnZlcl9Ob3RpZmljYXRpb24SHAoUYnJvYWRjYXN0X3Nlc3Npb25faWQYASAB",
+            "KAYSEwoLdHVybl9zZXJ2ZXIYAiABKAkiOwopQ0Jyb2FkY2FzdF9XZWJSVENM",
+            "b29rdXBUVVJOU2VydmVyX1JlcXVlc3QSDgoGY2VsbGlkGAEgASgNIkEKKkNC",
+            "cm9hZGNhc3RfV2ViUlRDTG9va3VwVFVSTlNlcnZlcl9SZXNwb25zZRITCgt0",
+            "dXJuX3NlcnZlchgBIAEoCSJMCixDQnJvYWRjYXN0X1dlYlJUQ05lZWRUVVJO",
+            "U2VydmVyX05vdGlmaWNhdGlvbhIcChRicm9hZGNhc3Rfc2Vzc2lvbl9pZBgB",
+            "IAEoBiJyCidDQnJvYWRjYXN0X1dlYlJUQ1NldEFuc3dlcl9Ob3RpZmljYXRp",
+            "b24SHAoUYnJvYWRjYXN0X3Nlc3Npb25faWQYASABKAYSGQoRd2VicnRjX3Nl",
+            "c3Npb25faWQYAiABKAYSDgoGYW5zd2VyGAMgASgJImwKIkNCcm9hZGNhc3Rf",
+            "V2ViUlRDU2V0QW5zd2VyX1JlcXVlc3QSGwoTYnJvYWRjYXN0ZXJfc3RlYW1p",
+            "ZBgBIAEoBhIZChF3ZWJydGNfc2Vzc2lvbl9pZBgCIAEoBhIOCgZhbnN3ZXIY",
+            "AyABKAkiJQojQ0Jyb2FkY2FzdF9XZWJSVENTZXRBbnN3ZXJfUmVzcG9uc2Ui",
+            "jAEKI0NCcm9hZGNhc3RfV2ViUlRDU3RhcnRfTm90aWZpY2F0aW9uEhwKFGJy",
+            "b2FkY2FzdF9zZXNzaW9uX2lkGAEgASgGEhkKEXdlYnJ0Y19zZXNzaW9uX2lk",
+            "GAIgASgGEhYKDnZpZXdlcl9zdGVhbWlkGAMgASgGEhQKDHZpZXdlcl90b2tl",
+            "bhgEIAEoBiKaAQokQ0Jyb2FkY2FzdF9XZWJSVENTdGFydFJlc3VsdF9SZXF1",
+            "ZXN0EhkKEXdlYnJ0Y19zZXNzaW9uX2lkGAEgASgGEg8KB3N0YXJ0ZWQYAiAB",
+            "KAgSDQoFb2ZmZXIYAyABKAkSFAoMcmVzb2x1dGlvbl94GAQgASgNEhQKDHJl",
+            "c29sdXRpb25feRgFIAEoDRILCgNmcHMYBiABKA0iJwolQ0Jyb2FkY2FzdF9X",
+            "ZWJSVENTdGFydFJlc3VsdF9SZXNwb25zZSI9CiBDQnJvYWRjYXN0X1dlYlJU",
+            "Q1N0b3BwZWRfUmVxdWVzdBIZChF3ZWJydGNfc2Vzc2lvbl9pZBgBIAEoBiIj",
+            "CiFDQnJvYWRjYXN0X1dlYlJUQ1N0b3BwZWRfUmVzcG9uc2UytxsKCUJyb2Fk",
+            "Y2FzdBJuChVCZWdpbkJyb2FkY2FzdFNlc3Npb24SKS5DQnJvYWRjYXN0X0Jl",
+            "Z2luQnJvYWRjYXN0U2Vzc2lvbl9SZXF1ZXN0GiouQ0Jyb2FkY2FzdF9CZWdp",
+            "bkJyb2FkY2FzdFNlc3Npb25fUmVzcG9uc2USaAoTRW5kQnJvYWRjYXN0U2Vz",
+            "c2lvbhInLkNCcm9hZGNhc3RfRW5kQnJvYWRjYXN0U2Vzc2lvbl9SZXF1ZXN0",
+            "GiguQ0Jyb2FkY2FzdF9FbmRCcm9hZGNhc3RTZXNzaW9uX1Jlc3BvbnNlEmsK",
+            "FEdldEJyb2FkY2FzdENoYXRJbmZvEiguQ0Jyb2FkY2FzdF9HZXRCcm9hZGNh",
+            "c3RDaGF0SW5mb19SZXF1ZXN0GikuQ0Jyb2FkY2FzdF9HZXRCcm9hZGNhc3RD",
+            "aGF0SW5mb19SZXNwb25zZRJ6ChlHZXRCcm9hZGNhc3RDaGF0VXNlck5hbWVz",
+            "Ei0uQ0Jyb2FkY2FzdF9HZXRCcm9hZGNhc3RDaGF0VXNlck5hbWVzX1JlcXVl",
+            "c3QaLi5DQnJvYWRjYXN0X0dldEJyb2FkY2FzdENoYXRVc2VyTmFtZXNfUmVz",
+            "cG9uc2USZQoSR2V0QnJvYWRjYXN0U3RhdHVzEiYuQ0Jyb2FkY2FzdF9HZXRC",
+            "cm9hZGNhc3RTdGF0dXNfUmVxdWVzdBonLkNCcm9hZGNhc3RfR2V0QnJvYWRj",
+            "YXN0U3RhdHVzX1Jlc3BvbnNlEm4KFUdldEJyb2FkY2FzdFRodW1ibmFpbBIp",
+            "LkNCcm9hZGNhc3RfR2V0QnJvYWRjYXN0VGh1bWJuYWlsX1JlcXVlc3QaKi5D",
+            "QnJvYWRjYXN0X0dldEJyb2FkY2FzdFRodW1ibmFpbF9SZXNwb25zZRJ0ChdH",
+            "ZXRCcm9hZGNhc3RVcGxvYWRTdGF0cxIrLkNCcm9hZGNhc3RfR2V0QnJvYWRj",
+            "YXN0VXBsb2FkU3RhdHNfUmVxdWVzdBosLkNCcm9hZGNhc3RfR2V0QnJvYWRj",
+            "YXN0VXBsb2FkU3RhdHNfUmVzcG9uc2USdAoXR2V0QnJvYWRjYXN0Vmlld2Vy",
+            "U3RhdHMSKy5DQnJvYWRjYXN0X0dldEJyb2FkY2FzdFZpZXdlclN0YXRzX1Jl",
+            "cXVlc3QaLC5DQnJvYWRjYXN0X0dldEJyb2FkY2FzdFZpZXdlclN0YXRzX1Jl",
+            "c3BvbnNlEmUKEkdldEJ1aWxkQ2xpcFN0YXR1cxImLkNCcm9hZGNhc3RfR2V0",
+            "QnVpbGRDbGlwU3RhdHVzX1JlcXVlc3QaJy5DQnJvYWRjYXN0X0dldEJ1aWxk",
+            "Q2xpcFN0YXR1c19SZXNwb25zZRJZCg5HZXRDbGlwRGV0YWlscxIiLkNCcm9h",
+            "ZGNhc3RfR2V0Q2xpcERldGFpbHNfUmVxdWVzdBojLkNCcm9hZGNhc3RfR2V0",
+            "Q2xpcERldGFpbHNfUmVzcG9uc2USUAoLR2V0UlRNUEluZm8SHy5DQnJvYWRj",
+            "YXN0X0dldFJUTVBJbmZvX1JlcXVlc3QaIC5DQnJvYWRjYXN0X0dldFJUTVBJ",
+            "bmZvX1Jlc3BvbnNlEk4KEkhlYXJ0YmVhdEJyb2FkY2FzdBIrLkNCcm9hZGNh",
+            "c3RfSGVhcnRiZWF0QnJvYWRjYXN0X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9u",
+            "c2USYgoRSW52aXRlVG9Ccm9hZGNhc3QSJS5DQnJvYWRjYXN0X0ludml0ZVRv",
+            "QnJvYWRjYXN0X1JlcXVlc3QaJi5DQnJvYWRjYXN0X0ludml0ZVRvQnJvYWRj",
+            "YXN0X1Jlc3BvbnNlEm4KFU11dGVCcm9hZGNhc3RDaGF0VXNlchIpLkNCcm9h",
+            "ZGNhc3RfTXV0ZUJyb2FkY2FzdENoYXRVc2VyX1JlcXVlc3QaKi5DQnJvYWRj",
+            "YXN0X011dGVCcm9hZGNhc3RDaGF0VXNlcl9SZXNwb25zZRJoCh9Ob3RpZnlC",
+            "cm9hZGNhc3RTZXNzaW9uSGVhcnRiZWF0EjguQ0Jyb2FkY2FzdF9Ob3RpZnlC",
+            "cm9hZGNhc3RTZXNzaW9uSGVhcnRiZWF0X05vdGlmaWNhdGlvbhoLLk5vUmVz",
+            "cG9uc2USXAoZTm90aWZ5QnJvYWRjYXN0VXBsb2FkU3RvcBIyLkNCcm9hZGNh",
+            "c3RfTm90aWZ5QnJvYWRjYXN0VXBsb2FkU3RvcF9Ob3RpZmljYXRpb24aCy5O",
+            "b1Jlc3BvbnNlElgKGk5vdGlmeVdlYlJUQ0hhdmVUVVJOU2VydmVyEi0uQ0Jy",
+            "b2FkY2FzdF9XZWJSVENIYXZlVFVSTlNlcnZlcl9Ob3RpZmljYXRpb24aCy5O",
+            "b1Jlc3BvbnNlElwKD1Bvc3RDaGF0TWVzc2FnZRIjLkNCcm9hZGNhc3RfUG9z",
+            "dENoYXRNZXNzYWdlX1JlcXVlc3QaJC5DQnJvYWRjYXN0X1Bvc3RDaGF0TWVz",
+            "c2FnZV9SZXNwb25zZRJlChJSZW1vdmVVc2VyQ2hhdFRleHQSJi5DQnJvYWRj",
+            "YXN0X1JlbW92ZVVzZXJDaGF0VGV4dF9SZXF1ZXN0GicuQ0Jyb2FkY2FzdF9S",
+            "ZW1vdmVVc2VyQ2hhdFRleHRfUmVzcG9uc2USfQoaU2VuZEJyb2FkY2FzdFN0",
+            "YXRlVG9TZXJ2ZXISLi5DQnJvYWRjYXN0X1NlbmRCcm9hZGNhc3RTdGF0ZVRv",
+            "U2VydmVyX1JlcXVlc3QaLy5DQnJvYWRjYXN0X1NlbmRCcm9hZGNhc3RTdGF0",
+            "ZVRvU2VydmVyX1Jlc3BvbnNlElkKDlNldENsaXBEZXRhaWxzEiIuQ0Jyb2Fk",
+            "Y2FzdF9TZXRDbGlwRGV0YWlsc19SZXF1ZXN0GiMuQ0Jyb2FkY2FzdF9TZXRD",
+            "bGlwRGV0YWlsc19SZXNwb25zZRJQCgtTZXRSVE1QSW5mbxIfLkNCcm9hZGNh",
+            "c3RfU2V0UlRNUEluZm9fUmVxdWVzdBogLkNCcm9hZGNhc3RfU2V0UlRNUElu",
+            "Zm9fUmVzcG9uc2USawoUU3RhcnRCcm9hZGNhc3RVcGxvYWQSKC5DQnJvYWRj",
+            "YXN0X1N0YXJ0QnJvYWRjYXN0VXBsb2FkX1JlcXVlc3QaKS5DQnJvYWRjYXN0",
+            "X1N0YXJ0QnJvYWRjYXN0VXBsb2FkX1Jlc3BvbnNlElkKDlN0YXJ0QnVpbGRD",
+            "bGlwEiIuQ0Jyb2FkY2FzdF9TdGFydEJ1aWxkQ2xpcF9SZXF1ZXN0GiMuQ0Jy",
+            "b2FkY2FzdF9TdGFydEJ1aWxkQ2xpcF9SZXNwb25zZRJUChVTdG9wV2F0Y2hp",
+            "bmdCcm9hZGNhc3QSLi5DQnJvYWRjYXN0X1N0b3BXYXRjaGluZ0Jyb2FkY2Fz",
+            "dF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlEnEKFlVwZGF0ZUNoYXRNZXNz",
+            "YWdlRmxhaXISKi5DQnJvYWRjYXN0X1VwZGF0ZUNoYXRNZXNzYWdlRmxhaXJf",
+            "UmVxdWVzdBorLkNCcm9hZGNhc3RfVXBkYXRlQ2hhdE1lc3NhZ2VGbGFpcl9S",
+            "ZXNwb25zZRJZCg5XYXRjaEJyb2FkY2FzdBIiLkNCcm9hZGNhc3RfV2F0Y2hC",
+            "cm9hZGNhc3RfUmVxdWVzdBojLkNCcm9hZGNhc3RfV2F0Y2hCcm9hZGNhc3Rf",
+            "UmVzcG9uc2UScQoWV2ViUlRDQWRkSG9zdENhbmRpZGF0ZRIqLkNCcm9hZGNh",
+            "c3RfV2ViUlRDQWRkSG9zdENhbmRpZGF0ZV9SZXF1ZXN0GisuQ0Jyb2FkY2Fz",
+            "dF9XZWJSVENBZGRIb3N0Q2FuZGlkYXRlX1Jlc3BvbnNlEncKGFdlYlJUQ0Fk",
+            "ZFZpZXdlckNhbmRpZGF0ZRIsLkNCcm9hZGNhc3RfV2ViUlRDQWRkVmlld2Vy",
+            "Q2FuZGlkYXRlX1JlcXVlc3QaLS5DQnJvYWRjYXN0X1dlYlJUQ0FkZFZpZXdl",
+            "ckNhbmRpZGF0ZV9SZXNwb25zZRJ0ChdXZWJSVENHZXRIb3N0Q2FuZGlkYXRl",
+            "cxIrLkNCcm9hZGNhc3RfV2ViUlRDR2V0SG9zdENhbmRpZGF0ZXNfUmVxdWVz",
+            "dBosLkNCcm9hZGNhc3RfV2ViUlRDR2V0SG9zdENhbmRpZGF0ZXNfUmVzcG9u",
+            "c2UScQoWV2ViUlRDTG9va3VwVFVSTlNlcnZlchIqLkNCcm9hZGNhc3RfV2Vi",
+            "UlRDTG9va3VwVFVSTlNlcnZlcl9SZXF1ZXN0GisuQ0Jyb2FkY2FzdF9XZWJS",
+            "VENMb29rdXBUVVJOU2VydmVyX1Jlc3BvbnNlElwKD1dlYlJUQ1NldEFuc3dl",
+            "chIjLkNCcm9hZGNhc3RfV2ViUlRDU2V0QW5zd2VyX1JlcXVlc3QaJC5DQnJv",
+            "YWRjYXN0X1dlYlJUQ1NldEFuc3dlcl9SZXNwb25zZRJiChFXZWJSVENTdGFy",
+            "dFJlc3VsdBIlLkNCcm9hZGNhc3RfV2ViUlRDU3RhcnRSZXN1bHRfUmVxdWVz",
+            "dBomLkNCcm9hZGNhc3RfV2ViUlRDU3RhcnRSZXN1bHRfUmVzcG9uc2USVgoN",
+            "V2ViUlRDU3RvcHBlZBIhLkNCcm9hZGNhc3RfV2ViUlRDU3RvcHBlZF9SZXF1",
+            "ZXN0GiIuQ0Jyb2FkY2FzdF9XZWJSVENTdG9wcGVkX1Jlc3BvbnNlMvkICg9C",
+            "cm9hZGNhc3RDbGllbnQSWAoaTm90aWZ5QnJvYWRjYXN0Q2hhbm5lbExpdmUS",
+            "LS5DQnJvYWRjYXN0X0Jyb2FkY2FzdENoYW5uZWxMaXZlX05vdGlmaWNhdGlv",
+            "bhoLLk5vUmVzcG9uc2USTgoVTm90aWZ5QnJvYWRjYXN0U3RhdHVzEiguQ0Jy",
+            "b2FkY2FzdF9Ccm9hZGNhc3RTdGF0dXNfTm90aWZpY2F0aW9uGgsuTm9SZXNw",
+            "b25zZRJcChxOb3RpZnlCcm9hZGNhc3RVcGxvYWRTdGFydGVkEi8uQ0Jyb2Fk",
+            "Y2FzdF9Ccm9hZGNhc3RVcGxvYWRTdGFydGVkX05vdGlmaWNhdGlvbhoLLk5v",
+            "UmVzcG9uc2USWAoaTm90aWZ5QnJvYWRjYXN0Vmlld2VyU3RhdGUSLS5DQnJv",
+            "YWRjYXN0X0Jyb2FkY2FzdFZpZXdlclN0YXRlX05vdGlmaWNhdGlvbhoLLk5v",
+            "UmVzcG9uc2USSgoTTm90aWZ5U2Vzc2lvbkNsb3NlZBImLkNCcm9hZGNhc3Rf",
+            "U2Vzc2lvbkNsb3NlZF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElYKGU5v",
+            "dGlmeVN0b3BCcm9hZGNhc3RVcGxvYWQSLC5DQnJvYWRjYXN0X1N0b3BCcm9h",
+            "ZGNhc3RVcGxvYWRfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJaChtOb3Rp",
+            "ZnlWaWV3ZXJCcm9hZGNhc3RJbnZpdGUSLi5DQnJvYWRjYXN0X1ZpZXdlckJy",
+            "b2FkY2FzdEludml0ZV9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElwKHE5v",
+            "dGlmeVdhaXRpbmdCcm9hZGNhc3RWaWV3ZXISLy5DQnJvYWRjYXN0X1dhaXRp",
+            "bmdCcm9hZGNhc3RWaWV3ZXJfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJg",
+            "Ch5Ob3RpZnlXZWJSVENBZGRWaWV3ZXJDYW5kaWRhdGUSMS5DQnJvYWRjYXN0",
+            "X1dlYlJUQ0FkZFZpZXdlckNhbmRpZGF0ZV9Ob3RpZmljYXRpb24aCy5Ob1Jl",
+            "c3BvbnNlElgKGk5vdGlmeVdlYlJUQ05lZWRUVVJOU2VydmVyEi0uQ0Jyb2Fk",
+            "Y2FzdF9XZWJSVENOZWVkVFVSTlNlcnZlcl9Ob3RpZmljYXRpb24aCy5Ob1Jl",
+            "c3BvbnNlEk4KFU5vdGlmeVdlYlJUQ1NldEFuc3dlchIoLkNCcm9hZGNhc3Rf",
+            "V2ViUlRDU2V0QW5zd2VyX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USRgoR",
+            "Tm90aWZ5V2ViUlRDU3RhcnQSJC5DQnJvYWRjYXN0X1dlYlJUQ1N0YXJ0X05v",
+            "dGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USUgoUU2VuZFRodW1ibmFpbFRvUmVs",
+            "YXkSLS5DQnJvYWRjYXN0X1NlbmRUaHVtYm5haWxUb1JlbGF5X05vdGlmaWNh",
+            "dGlvbhoLLk5vUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtzLlByb3RvYnVm",
+            "LldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -389,6 +395,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_InviteToBroadcast_Response), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_InviteToBroadcast_Response.Parser, new[]{ "Success" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_MuteBroadcastChatUser_Request), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_MuteBroadcastChatUser_Request.Parser, new[]{ "ChatId", "UserSteamid", "Muted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_MuteBroadcastChatUser_Response), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_MuteBroadcastChatUser_Response.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_NotifyBroadcastSessionHeartbeat_Notification), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_NotifyBroadcastSessionHeartbeat_Notification.Parser, new[]{ "BroadcastId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_NotifyBroadcastUploadStop_Notification), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_NotifyBroadcastUploadStop_Notification.Parser, new[]{ "BroadcastUploadId", "UploadResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_PostChatMessage_Request), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_PostChatMessage_Request.Parser, new[]{ "ChatId", "Message", "InstanceId", "Language", "CountryCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_PostChatMessage_Response), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_PostChatMessage_Response.Parser, new[]{ "PersonaName", "InGame", "Result", "CooldownTimeSeconds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBroadcast_RemoveUserChatText_Request), global::OpenSteamworks.Protobuf.WebUI.CBroadcast_RemoveUserChatText_Request.Parser, new[]{ "ChatId", "UserSteamid" }, null, null, null, null),
@@ -12978,6 +12986,488 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CBroadcast_NotifyBroadcastSessionHeartbeat_Notification : pb::IMessage<CBroadcast_NotifyBroadcastSessionHeartbeat_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CBroadcast_NotifyBroadcastSessionHeartbeat_Notification> _parser = new pb::MessageParser<CBroadcast_NotifyBroadcastSessionHeartbeat_Notification>(() => new CBroadcast_NotifyBroadcastSessionHeartbeat_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CBroadcast_NotifyBroadcastSessionHeartbeat_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[35]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBroadcast_NotifyBroadcastSessionHeartbeat_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBroadcast_NotifyBroadcastSessionHeartbeat_Notification(CBroadcast_NotifyBroadcastSessionHeartbeat_Notification other) : this() {
+      _hasBits0 = other._hasBits0;
+      broadcastId_ = other.broadcastId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBroadcast_NotifyBroadcastSessionHeartbeat_Notification Clone() {
+      return new CBroadcast_NotifyBroadcastSessionHeartbeat_Notification(this);
+    }
+
+    /// <summary>Field number for the "broadcast_id" field.</summary>
+    public const int BroadcastIdFieldNumber = 1;
+    private readonly static ulong BroadcastIdDefaultValue = 0UL;
+
+    private ulong broadcastId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong BroadcastId {
+      get { if ((_hasBits0 & 1) != 0) { return broadcastId_; } else { return BroadcastIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        broadcastId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "broadcast_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBroadcastId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "broadcast_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBroadcastId() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CBroadcast_NotifyBroadcastSessionHeartbeat_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CBroadcast_NotifyBroadcastSessionHeartbeat_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BroadcastId != other.BroadcastId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasBroadcastId) hash ^= BroadcastId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasBroadcastId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(BroadcastId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasBroadcastId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(BroadcastId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasBroadcastId) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CBroadcast_NotifyBroadcastSessionHeartbeat_Notification other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasBroadcastId) {
+        BroadcastId = other.BroadcastId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            BroadcastId = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            BroadcastId = input.ReadFixed64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CBroadcast_NotifyBroadcastUploadStop_Notification : pb::IMessage<CBroadcast_NotifyBroadcastUploadStop_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CBroadcast_NotifyBroadcastUploadStop_Notification> _parser = new pb::MessageParser<CBroadcast_NotifyBroadcastUploadStop_Notification>(() => new CBroadcast_NotifyBroadcastUploadStop_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CBroadcast_NotifyBroadcastUploadStop_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[36]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBroadcast_NotifyBroadcastUploadStop_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBroadcast_NotifyBroadcastUploadStop_Notification(CBroadcast_NotifyBroadcastUploadStop_Notification other) : this() {
+      _hasBits0 = other._hasBits0;
+      broadcastUploadId_ = other.broadcastUploadId_;
+      uploadResult_ = other.uploadResult_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBroadcast_NotifyBroadcastUploadStop_Notification Clone() {
+      return new CBroadcast_NotifyBroadcastUploadStop_Notification(this);
+    }
+
+    /// <summary>Field number for the "broadcast_upload_id" field.</summary>
+    public const int BroadcastUploadIdFieldNumber = 1;
+    private readonly static ulong BroadcastUploadIdDefaultValue = 0UL;
+
+    private ulong broadcastUploadId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong BroadcastUploadId {
+      get { if ((_hasBits0 & 1) != 0) { return broadcastUploadId_; } else { return BroadcastUploadIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        broadcastUploadId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "broadcast_upload_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBroadcastUploadId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "broadcast_upload_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBroadcastUploadId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "upload_result" field.</summary>
+    public const int UploadResultFieldNumber = 2;
+    private readonly static uint UploadResultDefaultValue = 0;
+
+    private uint uploadResult_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint UploadResult {
+      get { if ((_hasBits0 & 2) != 0) { return uploadResult_; } else { return UploadResultDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        uploadResult_ = value;
+      }
+    }
+    /// <summary>Gets whether the "upload_result" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUploadResult {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "upload_result" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUploadResult() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CBroadcast_NotifyBroadcastUploadStop_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CBroadcast_NotifyBroadcastUploadStop_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BroadcastUploadId != other.BroadcastUploadId) return false;
+      if (UploadResult != other.UploadResult) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasBroadcastUploadId) hash ^= BroadcastUploadId.GetHashCode();
+      if (HasUploadResult) hash ^= UploadResult.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasBroadcastUploadId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(BroadcastUploadId);
+      }
+      if (HasUploadResult) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(UploadResult);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasBroadcastUploadId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(BroadcastUploadId);
+      }
+      if (HasUploadResult) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(UploadResult);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasBroadcastUploadId) {
+        size += 1 + 8;
+      }
+      if (HasUploadResult) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(UploadResult);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CBroadcast_NotifyBroadcastUploadStop_Notification other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasBroadcastUploadId) {
+        BroadcastUploadId = other.BroadcastUploadId;
+      }
+      if (other.HasUploadResult) {
+        UploadResult = other.UploadResult;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            BroadcastUploadId = input.ReadFixed64();
+            break;
+          }
+          case 16: {
+            UploadResult = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            BroadcastUploadId = input.ReadFixed64();
+            break;
+          }
+          case 16: {
+            UploadResult = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CBroadcast_PostChatMessage_Request : pb::IMessage<CBroadcast_PostChatMessage_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12993,7 +13483,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[35]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[37]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13414,7 +13904,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[36]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13784,7 +14274,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[37]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14050,7 +14540,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[38]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14212,7 +14702,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[39]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[41]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14580,7 +15070,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[40]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[42]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14742,7 +15232,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[41]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[43]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15163,7 +15653,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[42]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[44]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15378,7 +15868,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[43]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[45]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15747,7 +16237,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[44]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[46]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15909,7 +16399,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[45]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[47]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16694,7 +17184,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[46]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[48]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16856,7 +17346,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[47]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[49]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17435,7 +17925,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[48]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[50]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17855,7 +18345,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[49]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[51]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18277,7 +18767,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[50]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[52]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18492,7 +18982,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[51]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[53]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18863,7 +19353,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[52]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[54]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19182,7 +19672,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[53]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[55]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19448,7 +19938,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[54]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[56]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19766,7 +20256,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[55]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[57]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19981,7 +20471,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[56]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[58]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20196,7 +20686,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[57]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[59]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20723,7 +21213,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[58]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[60]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21919,7 +22409,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[59]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[61]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22236,7 +22726,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[60]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[62]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22496,7 +22986,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[61]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22658,7 +23148,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[62]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22971,7 +23461,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[63]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23283,7 +23773,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[64]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23445,7 +23935,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[65]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23764,7 +24254,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[66]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[68]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24005,7 +24495,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[67]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[69]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24271,7 +24761,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[68]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[70]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24485,7 +24975,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[69]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[71]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24698,7 +25188,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[70]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[72]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24913,7 +25403,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[71]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[73]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25231,7 +25721,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[72]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[74]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25548,7 +26038,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[73]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[75]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25710,7 +26200,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[74]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[76]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26081,7 +26571,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[75]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[77]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26554,7 +27044,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[76]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[78]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26716,7 +27206,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[77]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[79]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26930,7 +27420,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[78]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBroadcastReflection.Descriptor.MessageTypes[80]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

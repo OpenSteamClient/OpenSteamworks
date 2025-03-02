@@ -1,57 +1,57 @@
 {
-    "name": "IClientProductBuilderMap",
-    "functions": [ 
-        {
-            "name": "SignInstallScript",
-            "argc": "4",
-            "interfaceid": "34",
-            "functionid": "3980647606",
-            "fencepost": "4021909906",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "DRMWrap",
-            "argc": "7",
-            "interfaceid": "34",
-            "functionid": "437430666",
-            "fencepost": "478709095",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string",
-                "string",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "CEGWrap",
-            "argc": "5",
-            "interfaceid": "34",
-            "functionid": "1355770295",
-            "fencepost": "1397064853",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        }
-    ]
+  "name": "IClientProductBuilder",
+  "functions": [
+    {
+      "name": "SignInstallScript",
+      "argc": "-1",
+      "interfaceid": "34",
+      "functionid": "3980647610",
+      "fencepost": "4021716362",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "DRMWrap",
+      "argc": "-1",
+      "interfaceid": "34",
+      "functionid": "437430662",
+      "fencepost": "478515543",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string",
+        "string",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "CEGWrap",
+      "argc": "-1",
+      "interfaceid": "34",
+      "functionid": "1355770435",
+      "fencepost": "1396871445",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    }
+  ]
 }

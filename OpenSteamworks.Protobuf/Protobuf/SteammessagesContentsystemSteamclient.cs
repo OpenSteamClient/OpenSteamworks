@@ -79,32 +79,66 @@ namespace OpenSteamworks.Protobuf {
             "dGVhbWlkGAIgASgEEh8KF3NlcnZlcl9yZW1vdGVfY2xpZW50X2lkGAMgASgE",
             "IlgKM0NDb250ZW50U2VydmVyRGlyZWN0b3J5X0dldFBlZXJDb250ZW50SW5m",
             "b19SZXNwb25zZRIOCgZhcHBpZHMYASADKA0SEQoJaXBfcHVibGljGAIgASgJ",
-            "MscHChZDb250ZW50U2VydmVyRGlyZWN0b3J5EosBChZHZXRTZXJ2ZXJzRm9y",
-            "U3RlYW1QaXBlEjcuQ0NvbnRlbnRTZXJ2ZXJEaXJlY3RvcnlfR2V0U2VydmVy",
-            "c0ZvclN0ZWFtUGlwZV9SZXF1ZXN0GjguQ0NvbnRlbnRTZXJ2ZXJEaXJlY3Rv",
-            "cnlfR2V0U2VydmVyc0ZvclN0ZWFtUGlwZV9SZXNwb25zZRJ8ChFHZXREZXBv",
-            "dFBhdGNoSW5mbxIyLkNDb250ZW50U2VydmVyRGlyZWN0b3J5X0dldERlcG90",
-            "UGF0Y2hJbmZvX1JlcXVlc3QaMy5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9H",
-            "ZXREZXBvdFBhdGNoSW5mb19SZXNwb25zZRKFAQoUR2V0Q2xpZW50VXBkYXRl",
-            "SG9zdHMSNS5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9HZXRDbGllbnRVcGRh",
-            "dGVIb3N0c19SZXF1ZXN0GjYuQ0NvbnRlbnRTZXJ2ZXJEaXJlY3RvcnlfR2V0",
-            "Q2xpZW50VXBkYXRlSG9zdHNfUmVzcG9uc2USiwEKFkdldE1hbmlmZXN0UmVx",
-            "dWVzdENvZGUSNy5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9HZXRNYW5pZmVz",
-            "dFJlcXVlc3RDb2RlX1JlcXVlc3QaOC5DQ29udGVudFNlcnZlckRpcmVjdG9y",
-            "eV9HZXRNYW5pZmVzdFJlcXVlc3RDb2RlX1Jlc3BvbnNlEnYKD0dldENETkF1",
-            "dGhUb2tlbhIwLkNDb250ZW50U2VydmVyRGlyZWN0b3J5X0dldENETkF1dGhU",
-            "b2tlbl9SZXF1ZXN0GjEuQ0NvbnRlbnRTZXJ2ZXJEaXJlY3RvcnlfR2V0Q0RO",
-            "QXV0aFRva2VuX1Jlc3BvbnNlEpEBChhSZXF1ZXN0UGVlckNvbnRlbnRTZXJ2",
-            "ZXISOS5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9SZXF1ZXN0UGVlckNvbnRl",
-            "bnRTZXJ2ZXJfUmVxdWVzdBo6LkNDb250ZW50U2VydmVyRGlyZWN0b3J5X1Jl",
-            "cXVlc3RQZWVyQ29udGVudFNlcnZlcl9SZXNwb25zZRJ/ChJHZXRQZWVyQ29u",
-            "dGVudEluZm8SMy5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9HZXRQZWVyQ29u",
-            "dGVudEluZm9fUmVxdWVzdBo0LkNDb250ZW50U2VydmVyRGlyZWN0b3J5X0dl",
-            "dFBlZXJDb250ZW50SW5mb19SZXNwb25zZUIdgAEBqgIXT3BlblN0ZWFtd29y",
-            "a3MuUHJvdG9idWY="));
+            "IosBCjdDRGVwb3RDb250ZW50RGV0ZWN0aW9uX0dldEFsbERldGVjdGVkQXBw",
+            "Q29udGVudF9SZXF1ZXN0ElAKDmRldGVjdGlvbl90eXBlGAEgASgOMhkuRUFw",
+            "cENvbnRlbnREZXRlY3Rpb25UeXBlOh1FQXBwQ29udGVudERldGVjdGlvblR5",
+            "cGVfTm9uZSJQChJEZXRlY3RlZEFwcENvbnRlbnQSDgoGYXBwX2lkGAEgASgN",
+            "EhAKCGRlcG90X2lkGAIgASgNEhgKEGRldGVjdGVkX2NvbnRlbnQYAyABKAUi",
+            "bQo4Q0RlcG90Q29udGVudERldGVjdGlvbl9HZXRBbGxEZXRlY3RlZEFwcENv",
+            "bnRlbnRfUmVzcG9uc2USMQoUZGV0ZWN0ZWRfYXBwX2NvbnRlbnQYASADKAsy",
+            "Ey5EZXRlY3RlZEFwcENvbnRlbnQiSwo6Q0RlcG90Q29udGVudERldGVjdGlv",
+            "bl9HZXREZXRlY3RlZENvbnRlbnRTaW5nbGVBcHBfUmVxdWVzdBINCgVhcHBp",
+            "ZBgBIAEoDSLOAQo7Q0RlcG90Q29udGVudERldGVjdGlvbl9HZXREZXRlY3Rl",
+            "ZENvbnRlbnRTaW5nbGVBcHBfUmVzcG9uc2USRQoSZGV0ZWN0ZWRfYW50aWNo",
+            "ZWF0GAEgASgOMhIuRUFwcEFudGlDaGVhdFR5cGU6FUVBcHBBbnRpQ2hlYXRU",
+            "eXBlTm9uZRJIChNkZXRlY3RlZF9nYW1lZW5naW5lGAIgASgOMhMuRUFwcEdh",
+            "bWVFbmdpbmVUeXBlOhZFQXBwR2FtZUVuZ2luZVR5cGVOb25lKo4BChhFQXBw",
+            "Q29udGVudERldGVjdGlvblR5cGUSIQodRUFwcENvbnRlbnREZXRlY3Rpb25U",
+            "eXBlX05vbmUQABImCiJFQXBwQ29udGVudERldGVjdGlvblR5cGVfQW50aUNo",
+            "ZWF0EAESJwojRUFwcENvbnRlbnREZXRlY3Rpb25UeXBlX0dhbWVFbmdpbmUQ",
+            "AirkAgoRRUFwcEFudGlDaGVhdFR5cGUSGQoVRUFwcEFudGlDaGVhdFR5cGVO",
+            "b25lEAASGwoXRUFwcEFudGlDaGVhdFR5cGVFYXN5QUMQARIbChdFQXBwQW50",
+            "aUNoZWF0VHlwZURlbnV2bxACEh0KGUVBcHBBbnRpQ2hlYXRUeXBlQmF0dGxF",
+            "eWUQAxIdChlFQXBwQW50aUNoZWF0VHlwZVhpZ25Db2RlEAQSHwobRUFwcEFu",
+            "dGlDaGVhdFR5cGVQdW5rQnVzdGVyEAUSGAoURUFwcEFudGlDaGVhdFR5cGVW",
+            "QUMQBhIeChpFQXBwQW50aUNoZWF0VHlwZUdhbWVHdWFyZBAHEh8KG0VBcHBB",
+            "bnRpQ2hlYXRUeXBlSGFja1NoaWVsZBAIEiQKIEVBcHBBbnRpQ2hlYXRUeXBl",
+            "QW50aUNoZWF0RXhwZXJ0EAkSGgoWRUFwcEFudGlDaGVhdFR5cGVPdGhlchAK",
+            "Kk4KEkVBcHBHYW1lRW5naW5lVHlwZRIaChZFQXBwR2FtZUVuZ2luZVR5cGVO",
+            "b25lEAASHAoYRUFwcEdhbWVFbmdpbmVUeXBlVW5yZWFsEAEyxwcKFkNvbnRl",
+            "bnRTZXJ2ZXJEaXJlY3RvcnkSiwEKFkdldFNlcnZlcnNGb3JTdGVhbVBpcGUS",
+            "Ny5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9HZXRTZXJ2ZXJzRm9yU3RlYW1Q",
+            "aXBlX1JlcXVlc3QaOC5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9HZXRTZXJ2",
+            "ZXJzRm9yU3RlYW1QaXBlX1Jlc3BvbnNlEnwKEUdldERlcG90UGF0Y2hJbmZv",
+            "EjIuQ0NvbnRlbnRTZXJ2ZXJEaXJlY3RvcnlfR2V0RGVwb3RQYXRjaEluZm9f",
+            "UmVxdWVzdBozLkNDb250ZW50U2VydmVyRGlyZWN0b3J5X0dldERlcG90UGF0",
+            "Y2hJbmZvX1Jlc3BvbnNlEoUBChRHZXRDbGllbnRVcGRhdGVIb3N0cxI1LkND",
+            "b250ZW50U2VydmVyRGlyZWN0b3J5X0dldENsaWVudFVwZGF0ZUhvc3RzX1Jl",
+            "cXVlc3QaNi5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9HZXRDbGllbnRVcGRh",
+            "dGVIb3N0c19SZXNwb25zZRKLAQoWR2V0TWFuaWZlc3RSZXF1ZXN0Q29kZRI3",
+            "LkNDb250ZW50U2VydmVyRGlyZWN0b3J5X0dldE1hbmlmZXN0UmVxdWVzdENv",
+            "ZGVfUmVxdWVzdBo4LkNDb250ZW50U2VydmVyRGlyZWN0b3J5X0dldE1hbmlm",
+            "ZXN0UmVxdWVzdENvZGVfUmVzcG9uc2USdgoPR2V0Q0ROQXV0aFRva2VuEjAu",
+            "Q0NvbnRlbnRTZXJ2ZXJEaXJlY3RvcnlfR2V0Q0ROQXV0aFRva2VuX1JlcXVl",
+            "c3QaMS5DQ29udGVudFNlcnZlckRpcmVjdG9yeV9HZXRDRE5BdXRoVG9rZW5f",
+            "UmVzcG9uc2USkQEKGFJlcXVlc3RQZWVyQ29udGVudFNlcnZlchI5LkNDb250",
+            "ZW50U2VydmVyRGlyZWN0b3J5X1JlcXVlc3RQZWVyQ29udGVudFNlcnZlcl9S",
+            "ZXF1ZXN0GjouQ0NvbnRlbnRTZXJ2ZXJEaXJlY3RvcnlfUmVxdWVzdFBlZXJD",
+            "b250ZW50U2VydmVyX1Jlc3BvbnNlEn8KEkdldFBlZXJDb250ZW50SW5mbxIz",
+            "LkNDb250ZW50U2VydmVyRGlyZWN0b3J5X0dldFBlZXJDb250ZW50SW5mb19S",
+            "ZXF1ZXN0GjQuQ0NvbnRlbnRTZXJ2ZXJEaXJlY3RvcnlfR2V0UGVlckNvbnRl",
+            "bnRJbmZvX1Jlc3BvbnNlMsQCChVEZXBvdENvbnRlbnREZXRlY3Rpb24SjwEK",
+            "GEdldEFsbERldGVjdGVkQXBwQ29udGVudBI4LkNEZXBvdENvbnRlbnREZXRl",
+            "Y3Rpb25fR2V0QWxsRGV0ZWN0ZWRBcHBDb250ZW50X1JlcXVlc3QaOS5DRGVw",
+            "b3RDb250ZW50RGV0ZWN0aW9uX0dldEFsbERldGVjdGVkQXBwQ29udGVudF9S",
+            "ZXNwb25zZRKYAQobR2V0RGV0ZWN0ZWRDb250ZW50U2luZ2xlQXBwEjsuQ0Rl",
+            "cG90Q29udGVudERldGVjdGlvbl9HZXREZXRlY3RlZENvbnRlbnRTaW5nbGVB",
+            "cHBfUmVxdWVzdBo8LkNEZXBvdENvbnRlbnREZXRlY3Rpb25fR2V0RGV0ZWN0",
+            "ZWRDb250ZW50U2luZ2xlQXBwX1Jlc3BvbnNlQh2AAQGqAhdPcGVuU3RlYW13",
+            "b3Jrcy5Qcm90b2J1Zg=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesUnifiedBaseSteamclientReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OpenSteamworks.Protobuf.EAppContentDetectionType), typeof(global::OpenSteamworks.Protobuf.EAppAntiCheatType), typeof(global::OpenSteamworks.Protobuf.EAppGameEngineType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_ConnectedSteamPipeServerInfo), global::OpenSteamworks.Protobuf.CContentServerDirectory_ConnectedSteamPipeServerInfo.Parser, new[]{ "Type", "SourceId", "Hostname" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_GetServersForSteamPipe_Request), global::OpenSteamworks.Protobuf.CContentServerDirectory_GetServersForSteamPipe_Request.Parser, new[]{ "CellId", "MaxServers", "IpOverride", "LauncherType", "Ipv6Public", "CurrentConnections" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_ServerInfo), global::OpenSteamworks.Protobuf.CContentServerDirectory_ServerInfo.Parser, new[]{ "Type", "SourceId", "CellId", "Load", "WeightedLoad", "NumEntriesInClientList", "SteamChinaOnly", "Host", "Vhost", "UseAsProxy", "ProxyRequestPathTemplate", "HttpsSupport", "AllowedAppIds", "PriorityClass", "BypassProxiesOfType" }, null, null, null, null),
@@ -120,12 +154,45 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_RequestPeerContentServer_Request), global::OpenSteamworks.Protobuf.CContentServerDirectory_RequestPeerContentServer_Request.Parser, new[]{ "RemoteClientId", "Steamid", "ServerRemoteClientId", "AppId", "CurrentBuildId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_RequestPeerContentServer_Response), global::OpenSteamworks.Protobuf.CContentServerDirectory_RequestPeerContentServer_Response.Parser, new[]{ "ServerPort", "InstalledDepots", "AccessToken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_GetPeerContentInfo_Request), global::OpenSteamworks.Protobuf.CContentServerDirectory_GetPeerContentInfo_Request.Parser, new[]{ "RemoteClientId", "Steamid", "ServerRemoteClientId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_GetPeerContentInfo_Response), global::OpenSteamworks.Protobuf.CContentServerDirectory_GetPeerContentInfo_Response.Parser, new[]{ "Appids", "IpPublic" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CContentServerDirectory_GetPeerContentInfo_Response), global::OpenSteamworks.Protobuf.CContentServerDirectory_GetPeerContentInfo_Response.Parser, new[]{ "Appids", "IpPublic" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDepotContentDetection_GetAllDetectedAppContent_Request), global::OpenSteamworks.Protobuf.CDepotContentDetection_GetAllDetectedAppContent_Request.Parser, new[]{ "DetectionType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.DetectedAppContent), global::OpenSteamworks.Protobuf.DetectedAppContent.Parser, new[]{ "AppId", "DepotId", "DetectedContent" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDepotContentDetection_GetAllDetectedAppContent_Response), global::OpenSteamworks.Protobuf.CDepotContentDetection_GetAllDetectedAppContent_Response.Parser, new[]{ "DetectedAppContent" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDepotContentDetection_GetDetectedContentSingleApp_Request), global::OpenSteamworks.Protobuf.CDepotContentDetection_GetDetectedContentSingleApp_Request.Parser, new[]{ "Appid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CDepotContentDetection_GetDetectedContentSingleApp_Response), global::OpenSteamworks.Protobuf.CDepotContentDetection_GetDetectedContentSingleApp_Response.Parser, new[]{ "DetectedAnticheat", "DetectedGameengine" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum EAppContentDetectionType {
+    [pbr::OriginalName("EAppContentDetectionType_None")] None = 0,
+    [pbr::OriginalName("EAppContentDetectionType_AntiCheat")] AntiCheat = 1,
+    [pbr::OriginalName("EAppContentDetectionType_GameEngine")] GameEngine = 2,
+  }
+
+  public enum EAppAntiCheatType {
+    [pbr::OriginalName("EAppAntiCheatTypeNone")] None = 0,
+    [pbr::OriginalName("EAppAntiCheatTypeEasyAC")] EasyAc = 1,
+    [pbr::OriginalName("EAppAntiCheatTypeDenuvo")] Denuvo = 2,
+    [pbr::OriginalName("EAppAntiCheatTypeBattlEye")] BattlEye = 3,
+    [pbr::OriginalName("EAppAntiCheatTypeXignCode")] XignCode = 4,
+    [pbr::OriginalName("EAppAntiCheatTypePunkBuster")] PunkBuster = 5,
+    [pbr::OriginalName("EAppAntiCheatTypeVAC")] Vac = 6,
+    [pbr::OriginalName("EAppAntiCheatTypeGameGuard")] GameGuard = 7,
+    [pbr::OriginalName("EAppAntiCheatTypeHackShield")] HackShield = 8,
+    [pbr::OriginalName("EAppAntiCheatTypeAntiCheatExpert")] AntiCheatExpert = 9,
+    [pbr::OriginalName("EAppAntiCheatTypeOther")] Other = 10,
+  }
+
+  public enum EAppGameEngineType {
+    [pbr::OriginalName("EAppGameEngineTypeNone")] None = 0,
+    [pbr::OriginalName("EAppGameEngineTypeUnreal")] Unreal = 1,
+  }
+
+  #endregion
+
   #region Messages
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CContentServerDirectory_ConnectedSteamPipeServerInfo : pb::IMessage<CContentServerDirectory_ConnectedSteamPipeServerInfo>
@@ -5727,6 +5794,1209 @@ namespace OpenSteamworks.Protobuf {
           }
           case 18: {
             IpPublic = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CDepotContentDetection_GetAllDetectedAppContent_Request : pb::IMessage<CDepotContentDetection_GetAllDetectedAppContent_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CDepotContentDetection_GetAllDetectedAppContent_Request> _parser = new pb::MessageParser<CDepotContentDetection_GetAllDetectedAppContent_Request>(() => new CDepotContentDetection_GetAllDetectedAppContent_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CDepotContentDetection_GetAllDetectedAppContent_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesContentsystemSteamclientReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetAllDetectedAppContent_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetAllDetectedAppContent_Request(CDepotContentDetection_GetAllDetectedAppContent_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      detectionType_ = other.detectionType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetAllDetectedAppContent_Request Clone() {
+      return new CDepotContentDetection_GetAllDetectedAppContent_Request(this);
+    }
+
+    /// <summary>Field number for the "detection_type" field.</summary>
+    public const int DetectionTypeFieldNumber = 1;
+    private readonly static global::OpenSteamworks.Protobuf.EAppContentDetectionType DetectionTypeDefaultValue = global::OpenSteamworks.Protobuf.EAppContentDetectionType.None;
+
+    private global::OpenSteamworks.Protobuf.EAppContentDetectionType detectionType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.EAppContentDetectionType DetectionType {
+      get { if ((_hasBits0 & 1) != 0) { return detectionType_; } else { return DetectionTypeDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        detectionType_ = value;
+      }
+    }
+    /// <summary>Gets whether the "detection_type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDetectionType {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "detection_type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDetectionType() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CDepotContentDetection_GetAllDetectedAppContent_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CDepotContentDetection_GetAllDetectedAppContent_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (DetectionType != other.DetectionType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasDetectionType) hash ^= DetectionType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasDetectionType) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) DetectionType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasDetectionType) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) DetectionType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasDetectionType) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DetectionType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CDepotContentDetection_GetAllDetectedAppContent_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasDetectionType) {
+        DetectionType = other.DetectionType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            DetectionType = (global::OpenSteamworks.Protobuf.EAppContentDetectionType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            DetectionType = (global::OpenSteamworks.Protobuf.EAppContentDetectionType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class DetectedAppContent : pb::IMessage<DetectedAppContent>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DetectedAppContent> _parser = new pb::MessageParser<DetectedAppContent>(() => new DetectedAppContent());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DetectedAppContent> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesContentsystemSteamclientReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DetectedAppContent() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DetectedAppContent(DetectedAppContent other) : this() {
+      _hasBits0 = other._hasBits0;
+      appId_ = other.appId_;
+      depotId_ = other.depotId_;
+      detectedContent_ = other.detectedContent_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DetectedAppContent Clone() {
+      return new DetectedAppContent(this);
+    }
+
+    /// <summary>Field number for the "app_id" field.</summary>
+    public const int AppIdFieldNumber = 1;
+    private readonly static uint AppIdDefaultValue = 0;
+
+    private uint appId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint AppId {
+      get { if ((_hasBits0 & 1) != 0) { return appId_; } else { return AppIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "app_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "app_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "depot_id" field.</summary>
+    public const int DepotIdFieldNumber = 2;
+    private readonly static uint DepotIdDefaultValue = 0;
+
+    private uint depotId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint DepotId {
+      get { if ((_hasBits0 & 2) != 0) { return depotId_; } else { return DepotIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        depotId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "depot_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDepotId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "depot_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDepotId() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "detected_content" field.</summary>
+    public const int DetectedContentFieldNumber = 3;
+    private readonly static int DetectedContentDefaultValue = 0;
+
+    private int detectedContent_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int DetectedContent {
+      get { if ((_hasBits0 & 4) != 0) { return detectedContent_; } else { return DetectedContentDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        detectedContent_ = value;
+      }
+    }
+    /// <summary>Gets whether the "detected_content" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDetectedContent {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "detected_content" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDetectedContent() {
+      _hasBits0 &= ~4;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as DetectedAppContent);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(DetectedAppContent other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AppId != other.AppId) return false;
+      if (DepotId != other.DepotId) return false;
+      if (DetectedContent != other.DetectedContent) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppId) hash ^= AppId.GetHashCode();
+      if (HasDepotId) hash ^= DepotId.GetHashCode();
+      if (HasDetectedContent) hash ^= DetectedContent.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(AppId);
+      }
+      if (HasDepotId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(DepotId);
+      }
+      if (HasDetectedContent) {
+        output.WriteRawTag(24);
+        output.WriteInt32(DetectedContent);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppId) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(AppId);
+      }
+      if (HasDepotId) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(DepotId);
+      }
+      if (HasDetectedContent) {
+        output.WriteRawTag(24);
+        output.WriteInt32(DetectedContent);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AppId);
+      }
+      if (HasDepotId) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DepotId);
+      }
+      if (HasDetectedContent) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DetectedContent);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(DetectedAppContent other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppId) {
+        AppId = other.AppId;
+      }
+      if (other.HasDepotId) {
+        DepotId = other.DepotId;
+      }
+      if (other.HasDetectedContent) {
+        DetectedContent = other.DetectedContent;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AppId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            DepotId = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            DetectedContent = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            AppId = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            DepotId = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            DetectedContent = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CDepotContentDetection_GetAllDetectedAppContent_Response : pb::IMessage<CDepotContentDetection_GetAllDetectedAppContent_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CDepotContentDetection_GetAllDetectedAppContent_Response> _parser = new pb::MessageParser<CDepotContentDetection_GetAllDetectedAppContent_Response>(() => new CDepotContentDetection_GetAllDetectedAppContent_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CDepotContentDetection_GetAllDetectedAppContent_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesContentsystemSteamclientReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetAllDetectedAppContent_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetAllDetectedAppContent_Response(CDepotContentDetection_GetAllDetectedAppContent_Response other) : this() {
+      detectedAppContent_ = other.detectedAppContent_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetAllDetectedAppContent_Response Clone() {
+      return new CDepotContentDetection_GetAllDetectedAppContent_Response(this);
+    }
+
+    /// <summary>Field number for the "detected_app_content" field.</summary>
+    public const int DetectedAppContentFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.DetectedAppContent> _repeated_detectedAppContent_codec
+        = pb::FieldCodec.ForMessage(10, global::OpenSteamworks.Protobuf.DetectedAppContent.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.DetectedAppContent> detectedAppContent_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.DetectedAppContent>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.DetectedAppContent> DetectedAppContent {
+      get { return detectedAppContent_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CDepotContentDetection_GetAllDetectedAppContent_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CDepotContentDetection_GetAllDetectedAppContent_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!detectedAppContent_.Equals(other.detectedAppContent_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= detectedAppContent_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      detectedAppContent_.WriteTo(output, _repeated_detectedAppContent_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      detectedAppContent_.WriteTo(ref output, _repeated_detectedAppContent_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += detectedAppContent_.CalculateSize(_repeated_detectedAppContent_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CDepotContentDetection_GetAllDetectedAppContent_Response other) {
+      if (other == null) {
+        return;
+      }
+      detectedAppContent_.Add(other.detectedAppContent_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            detectedAppContent_.AddEntriesFrom(input, _repeated_detectedAppContent_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            detectedAppContent_.AddEntriesFrom(ref input, _repeated_detectedAppContent_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CDepotContentDetection_GetDetectedContentSingleApp_Request : pb::IMessage<CDepotContentDetection_GetDetectedContentSingleApp_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CDepotContentDetection_GetDetectedContentSingleApp_Request> _parser = new pb::MessageParser<CDepotContentDetection_GetDetectedContentSingleApp_Request>(() => new CDepotContentDetection_GetDetectedContentSingleApp_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CDepotContentDetection_GetDetectedContentSingleApp_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesContentsystemSteamclientReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetDetectedContentSingleApp_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetDetectedContentSingleApp_Request(CDepotContentDetection_GetDetectedContentSingleApp_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      appid_ = other.appid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetDetectedContentSingleApp_Request Clone() {
+      return new CDepotContentDetection_GetDetectedContentSingleApp_Request(this);
+    }
+
+    /// <summary>Field number for the "appid" field.</summary>
+    public const int AppidFieldNumber = 1;
+    private readonly static uint AppidDefaultValue = 0;
+
+    private uint appid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Appid {
+      get { if ((_hasBits0 & 1) != 0) { return appid_; } else { return AppidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppid() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CDepotContentDetection_GetDetectedContentSingleApp_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CDepotContentDetection_GetDetectedContentSingleApp_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Appid != other.Appid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppid) hash ^= Appid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Appid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CDepotContentDetection_GetDetectedContentSingleApp_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppid) {
+        Appid = other.Appid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CDepotContentDetection_GetDetectedContentSingleApp_Response : pb::IMessage<CDepotContentDetection_GetDetectedContentSingleApp_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CDepotContentDetection_GetDetectedContentSingleApp_Response> _parser = new pb::MessageParser<CDepotContentDetection_GetDetectedContentSingleApp_Response>(() => new CDepotContentDetection_GetDetectedContentSingleApp_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CDepotContentDetection_GetDetectedContentSingleApp_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesContentsystemSteamclientReflection.Descriptor.MessageTypes[20]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetDetectedContentSingleApp_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetDetectedContentSingleApp_Response(CDepotContentDetection_GetDetectedContentSingleApp_Response other) : this() {
+      _hasBits0 = other._hasBits0;
+      detectedAnticheat_ = other.detectedAnticheat_;
+      detectedGameengine_ = other.detectedGameengine_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CDepotContentDetection_GetDetectedContentSingleApp_Response Clone() {
+      return new CDepotContentDetection_GetDetectedContentSingleApp_Response(this);
+    }
+
+    /// <summary>Field number for the "detected_anticheat" field.</summary>
+    public const int DetectedAnticheatFieldNumber = 1;
+    private readonly static global::OpenSteamworks.Protobuf.EAppAntiCheatType DetectedAnticheatDefaultValue = global::OpenSteamworks.Protobuf.EAppAntiCheatType.None;
+
+    private global::OpenSteamworks.Protobuf.EAppAntiCheatType detectedAnticheat_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.EAppAntiCheatType DetectedAnticheat {
+      get { if ((_hasBits0 & 1) != 0) { return detectedAnticheat_; } else { return DetectedAnticheatDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        detectedAnticheat_ = value;
+      }
+    }
+    /// <summary>Gets whether the "detected_anticheat" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDetectedAnticheat {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "detected_anticheat" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDetectedAnticheat() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "detected_gameengine" field.</summary>
+    public const int DetectedGameengineFieldNumber = 2;
+    private readonly static global::OpenSteamworks.Protobuf.EAppGameEngineType DetectedGameengineDefaultValue = global::OpenSteamworks.Protobuf.EAppGameEngineType.None;
+
+    private global::OpenSteamworks.Protobuf.EAppGameEngineType detectedGameengine_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.EAppGameEngineType DetectedGameengine {
+      get { if ((_hasBits0 & 2) != 0) { return detectedGameengine_; } else { return DetectedGameengineDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        detectedGameengine_ = value;
+      }
+    }
+    /// <summary>Gets whether the "detected_gameengine" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDetectedGameengine {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "detected_gameengine" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDetectedGameengine() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CDepotContentDetection_GetDetectedContentSingleApp_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CDepotContentDetection_GetDetectedContentSingleApp_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (DetectedAnticheat != other.DetectedAnticheat) return false;
+      if (DetectedGameengine != other.DetectedGameengine) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasDetectedAnticheat) hash ^= DetectedAnticheat.GetHashCode();
+      if (HasDetectedGameengine) hash ^= DetectedGameengine.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasDetectedAnticheat) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) DetectedAnticheat);
+      }
+      if (HasDetectedGameengine) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) DetectedGameengine);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasDetectedAnticheat) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) DetectedAnticheat);
+      }
+      if (HasDetectedGameengine) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) DetectedGameengine);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasDetectedAnticheat) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DetectedAnticheat);
+      }
+      if (HasDetectedGameengine) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DetectedGameengine);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CDepotContentDetection_GetDetectedContentSingleApp_Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasDetectedAnticheat) {
+        DetectedAnticheat = other.DetectedAnticheat;
+      }
+      if (other.HasDetectedGameengine) {
+        DetectedGameengine = other.DetectedGameengine;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            DetectedAnticheat = (global::OpenSteamworks.Protobuf.EAppAntiCheatType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            DetectedGameengine = (global::OpenSteamworks.Protobuf.EAppGameEngineType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            DetectedAnticheat = (global::OpenSteamworks.Protobuf.EAppAntiCheatType) input.ReadEnum();
+            break;
+          }
+          case 16: {
+            DetectedGameengine = (global::OpenSteamworks.Protobuf.EAppGameEngineType) input.ReadEnum();
             break;
           }
         }

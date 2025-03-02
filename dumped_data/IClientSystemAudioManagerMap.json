@@ -1,47 +1,46 @@
 {
-    "name": "IClientSystemAudioManagerMap",
-    "functions": [ 
-        {
-            "name": "IsInterfaceValid",
-            "argc": "1",
-            "interfaceid": "59",
-            "functionid": "862246305",
-            "fencepost": "907334353",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "GetState",
-            "argc": "3",
-            "interfaceid": "59",
-            "functionid": "3936378762",
-            "fencepost": "3981547455",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "unknown"
-            ]
-        },
-        {
-            "name": "UpdateSomething",
-            "argc": "2",
-            "interfaceid": "59",
-            "functionid": "3365237363",
-            "fencepost": "3410502830",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "protobuf"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        }
-    ]
+  "name": "IClientSystemAudioManager",
+  "functions": [
+    {
+      "name": "IsInterfaceValid",
+      "argc": "-1",
+      "interfaceid": "59",
+      "functionid": "862246314",
+      "fencepost": "907156943",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "GetState",
+      "argc": "-1",
+      "interfaceid": "59",
+      "functionid": "3936378757",
+      "fencepost": "3981370031",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "protobuf"
+      ]
+    },
+    {
+      "name": "UpdateSomething",
+      "argc": "-1",
+      "interfaceid": "59",
+      "functionid": "3365237358",
+      "fencepost": "3410325406",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "protobuf"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    }
+  ]
 }

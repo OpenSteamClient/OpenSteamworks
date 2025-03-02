@@ -75,26 +75,27 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "dGVnb3JpZXNfUmVxdWVzdBIQCghsYW5ndWFnZRgBIAEoCRIVCgllbGFuZ3Vh",
             "Z2UYAiABKAU6Ai0xInIKKENTdG9yZUJyb3dzZV9HZXRTdG9yZUNhdGVnb3Jp",
             "ZXNfUmVzcG9uc2USRgoKY2F0ZWdvcmllcxgBIAMoCzIyLkNTdG9yZUJyb3dz",
-            "ZV9HZXRTdG9yZUNhdGVnb3JpZXNfUmVzcG9uc2VfQ2F0ZWdvcnkiyQEKMUNT",
+            "ZV9HZXRTdG9yZUNhdGVnb3JpZXNfUmVzcG9uc2VfQ2F0ZWdvcnki9AEKMUNT",
             "dG9yZUJyb3dzZV9HZXRTdG9yZUNhdGVnb3JpZXNfUmVzcG9uc2VfQ2F0ZWdv",
             "cnkSEgoKY2F0ZWdvcnlpZBgBIAEoDRIWCgR0eXBlGAIgASgFQgiCtRgEZW51",
             "bRIVCg1pbnRlcm5hbF9uYW1lGAMgASgJEhQKDGRpc3BsYXlfbmFtZRgEIAEo",
             "CRIRCglpbWFnZV91cmwYBSABKAkSFgoOc2hvd19pbl9zZWFyY2gYBiABKAgS",
-            "EAoIY29tcHV0ZWQYByABKAgyygQKC1N0b3JlQnJvd3NlEloKDUdldERMQ0Zv",
-            "ckFwcHMSIy5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc19SZXF1ZXN0GiQu",
-            "Q1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNfUmVzcG9uc2USZgoRR2V0RExD",
-            "Rm9yQXBwc1NvbHISJy5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc1NvbHJf",
-            "UmVxdWVzdBooLkNTdG9yZUJyb3dzZV9HZXRETENGb3JBcHBzU29scl9SZXNw",
-            "b25zZRJjChBHZXRIYXJkd2FyZUl0ZW1zEiYuQ1N0b3JlQnJvd3NlX0dldEhh",
-            "cmR3YXJlSXRlbXNfUmVxdWVzdBonLkNTdG9yZUJyb3dzZV9HZXRIYXJkd2Fy",
-            "ZUl0ZW1zX1Jlc3BvbnNlEksKCEdldEl0ZW1zEh4uQ1N0b3JlQnJvd3NlX0dl",
-            "dEl0ZW1zX1JlcXVlc3QaHy5DU3RvcmVCcm93c2VfR2V0SXRlbXNfUmVzcG9u",
-            "c2USWgoNR2V0UHJpY2VTdG9wcxIjLkNTdG9yZUJyb3dzZV9HZXRQcmljZVN0",
-            "b3BzX1JlcXVlc3QaJC5DU3RvcmVCcm93c2VfR2V0UHJpY2VTdG9wc19SZXNw",
-            "b25zZRJpChJHZXRTdG9yZUNhdGVnb3JpZXMSKC5DU3RvcmVCcm93c2VfR2V0",
-            "U3RvcmVDYXRlZ29yaWVzX1JlcXVlc3QaKS5DU3RvcmVCcm93c2VfR2V0U3Rv",
-            "cmVDYXRlZ29yaWVzX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90",
-            "b2J1Zi5XZWJVSQ=="));
+            "EAoIY29tcHV0ZWQYByABKAgSEAoIZWRpdF91cmwYCCABKAkSFwoPZWRpdF9z",
+            "b3J0X29yZGVyGAkgASgNMsoECgtTdG9yZUJyb3dzZRJaCg1HZXRETENGb3JB",
+            "cHBzEiMuQ1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNfUmVxdWVzdBokLkNT",
+            "dG9yZUJyb3dzZV9HZXRETENGb3JBcHBzX1Jlc3BvbnNlEmYKEUdldERMQ0Zv",
+            "ckFwcHNTb2xyEicuQ1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNTb2xyX1Jl",
+            "cXVlc3QaKC5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc1NvbHJfUmVzcG9u",
+            "c2USYwoQR2V0SGFyZHdhcmVJdGVtcxImLkNTdG9yZUJyb3dzZV9HZXRIYXJk",
+            "d2FyZUl0ZW1zX1JlcXVlc3QaJy5DU3RvcmVCcm93c2VfR2V0SGFyZHdhcmVJ",
+            "dGVtc19SZXNwb25zZRJLCghHZXRJdGVtcxIeLkNTdG9yZUJyb3dzZV9HZXRJ",
+            "dGVtc19SZXF1ZXN0Gh8uQ1N0b3JlQnJvd3NlX0dldEl0ZW1zX1Jlc3BvbnNl",
+            "EloKDUdldFByaWNlU3RvcHMSIy5DU3RvcmVCcm93c2VfR2V0UHJpY2VTdG9w",
+            "c19SZXF1ZXN0GiQuQ1N0b3JlQnJvd3NlX0dldFByaWNlU3RvcHNfUmVzcG9u",
+            "c2USaQoSR2V0U3RvcmVDYXRlZ29yaWVzEiguQ1N0b3JlQnJvd3NlX0dldFN0",
+            "b3JlQ2F0ZWdvcmllc19SZXF1ZXN0GikuQ1N0b3JlQnJvd3NlX0dldFN0b3Jl",
+            "Q2F0ZWdvcmllc19SZXNwb25zZUIgqgIdT3BlblN0ZWFtd29ya3MuUHJvdG9i",
+            "dWYuV2ViVUk="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -113,7 +114,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetPriceStops_Response_PriceStop.Parser, new[]{ "FormattedAmount", "AmountInCents" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Request), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Request.Parser, new[]{ "Language", "Elanguage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response.Parser, new[]{ "Categories" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response_Category), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response_Category.Parser, new[]{ "Categoryid", "Type", "InternalName", "DisplayName", "ImageUrl", "ShowInSearch", "Computed" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response_Category), global::OpenSteamworks.Protobuf.WebUI.CStoreBrowse_GetStoreCategories_Response_Category.Parser, new[]{ "Categoryid", "Type", "InternalName", "DisplayName", "ImageUrl", "ShowInSearch", "Computed", "EditUrl", "EditSortOrder" }, null, null, null, null)
           }));
     }
     #endregion
@@ -5008,6 +5009,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
       imageUrl_ = other.imageUrl_;
       showInSearch_ = other.showInSearch_;
       computed_ = other.computed_;
+      editUrl_ = other.editUrl_;
+      editSortOrder_ = other.editSortOrder_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5203,6 +5206,59 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~8;
     }
 
+    /// <summary>Field number for the "edit_url" field.</summary>
+    public const int EditUrlFieldNumber = 8;
+    private readonly static string EditUrlDefaultValue = "";
+
+    private string editUrl_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string EditUrl {
+      get { return editUrl_ ?? EditUrlDefaultValue; }
+      set {
+        editUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "edit_url" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasEditUrl {
+      get { return editUrl_ != null; }
+    }
+    /// <summary>Clears the value of the "edit_url" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearEditUrl() {
+      editUrl_ = null;
+    }
+
+    /// <summary>Field number for the "edit_sort_order" field.</summary>
+    public const int EditSortOrderFieldNumber = 9;
+    private readonly static uint EditSortOrderDefaultValue = 0;
+
+    private uint editSortOrder_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint EditSortOrder {
+      get { if ((_hasBits0 & 16) != 0) { return editSortOrder_; } else { return EditSortOrderDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        editSortOrder_ = value;
+      }
+    }
+    /// <summary>Gets whether the "edit_sort_order" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasEditSortOrder {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "edit_sort_order" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearEditSortOrder() {
+      _hasBits0 &= ~16;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5225,6 +5281,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (ImageUrl != other.ImageUrl) return false;
       if (ShowInSearch != other.ShowInSearch) return false;
       if (Computed != other.Computed) return false;
+      if (EditUrl != other.EditUrl) return false;
+      if (EditSortOrder != other.EditSortOrder) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5239,6 +5297,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasImageUrl) hash ^= ImageUrl.GetHashCode();
       if (HasShowInSearch) hash ^= ShowInSearch.GetHashCode();
       if (HasComputed) hash ^= Computed.GetHashCode();
+      if (HasEditUrl) hash ^= EditUrl.GetHashCode();
+      if (HasEditSortOrder) hash ^= EditSortOrder.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5285,6 +5345,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(56);
         output.WriteBool(Computed);
       }
+      if (HasEditUrl) {
+        output.WriteRawTag(66);
+        output.WriteString(EditUrl);
+      }
+      if (HasEditSortOrder) {
+        output.WriteRawTag(72);
+        output.WriteUInt32(EditSortOrder);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5323,6 +5391,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(56);
         output.WriteBool(Computed);
       }
+      if (HasEditUrl) {
+        output.WriteRawTag(66);
+        output.WriteString(EditUrl);
+      }
+      if (HasEditSortOrder) {
+        output.WriteRawTag(72);
+        output.WriteUInt32(EditSortOrder);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5353,6 +5429,12 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasComputed) {
         size += 1 + 1;
+      }
+      if (HasEditUrl) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(EditUrl);
+      }
+      if (HasEditSortOrder) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EditSortOrder);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5386,6 +5468,12 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasComputed) {
         Computed = other.Computed;
+      }
+      if (other.HasEditUrl) {
+        EditUrl = other.EditUrl;
+      }
+      if (other.HasEditSortOrder) {
+        EditSortOrder = other.EditSortOrder;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5434,6 +5522,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
             Computed = input.ReadBool();
             break;
           }
+          case 66: {
+            EditUrl = input.ReadString();
+            break;
+          }
+          case 72: {
+            EditSortOrder = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -5479,6 +5575,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 56: {
             Computed = input.ReadBool();
+            break;
+          }
+          case 66: {
+            EditUrl = input.ReadString();
+            break;
+          }
+          case 72: {
+            EditSortOrder = input.ReadUInt32();
             break;
           }
         }

@@ -1,59 +1,56 @@
 {
-    "name": "IClientSystemDockManagerMap",
-    "functions": [ 
-        {
-            "name": "IsInterfaceValid",
-            "argc": "1",
-            "interfaceid": "58",
-            "functionid": "862246301",
-            "fencepost": "907011642",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "GetState",
-            "argc": "2",
-            "interfaceid": "58",
-            "functionid": "724788092",
-            "fencepost": "769617949",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "unknown"
-            ]
-        },
-        {
-            "name": "UpdateFirmware",
-            "argc": "2",
-            "interfaceid": "58",
-            "functionid": "1231225212",
-            "fencepost": "1276151843",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "protobuf"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "DisarmSafetyNet",
-            "argc": "1",
-            "interfaceid": "58",
-            "functionid": "874836112",
-            "fencepost": "919811130",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        }
-    ]
+  "name": "IClientSystemDockManager",
+  "functions": [
+    {
+      "name": "IsInterfaceValid",
+      "argc": "-1",
+      "interfaceid": "58",
+      "functionid": "862246278",
+      "fencepost": "906834200",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "GetState",
+      "argc": "-1",
+      "interfaceid": "58",
+      "functionid": "724788075",
+      "fencepost": "769440513",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1",
+        "protobuf"
+      ]
+    },
+    {
+      "name": "UpdateFirmware",
+      "argc": "-1",
+      "interfaceid": "58",
+      "functionid": "1231225207",
+      "fencepost": "1275974419",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "protobuf"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "DisarmSafetyNet",
+      "argc": "-1",
+      "interfaceid": "58",
+      "functionid": "874836141",
+      "fencepost": "919633740",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    }
+  ]
 }

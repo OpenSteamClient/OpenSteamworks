@@ -60,50 +60,51 @@ namespace OpenSteamworks.Protobuf {
             "bnRyb2xsZXJWZWN0b3IyEisKD3RyYWNrcGFkX2NlbnRlchgGIAEoCzISLkNv",
             "bnRyb2xsZXJWZWN0b3IyEh4KFnRyYWNrcGFkX3ByZXNzdXJlX2xlZnQYByAB",
             "KAISHwoXdHJhY2twYWRfcHJlc3N1cmVfcmlnaHQYCCABKAISFAoMdHJpZ2dl",
-            "cl9sZWZ0GAkgASgCEhUKDXRyaWdnZXJfcmlnaHQYCiABKAIi8AEKNUNTdGVh",
+            "cl9sZWZ0GAkgASgCEhUKDXRyaWdnZXJfcmlnaHQYCiABKAIihwIKNUNTdGVh",
             "bUlucHV0U2VydmljZV9HeXJvUXVhdGVybmlvbkNoYW5nZWRfTm90aWZpY2F0",
             "aW9uEhgKEGNvbnRyb2xsZXJfaW5kZXgYASABKA0SEQoJaW11X2luZGV4GAIg",
             "ASgNEjIKE2d5cm9fcmF3X3F1YXRlcm5pb24YAyABKAsyFS5Db250cm9sbGVy",
             "UXVhdGVybmlvbhI3ChhneXJvX2ZpbHRlcmVkX3F1YXRlcm5pb24YBCABKAsy",
             "FS5Db250cm9sbGVyUXVhdGVybmlvbhIdChVpbXVfc2Vuc29yX2RlbHRhX3Rp",
-            "bWUYBSABKA0izAEKMENTdGVhbUlucHV0U2VydmljZV9HeXJvU3BlZWRDaGFu",
-            "Z2VkX05vdGlmaWNhdGlvbhIYChBjb250cm9sbGVyX2luZGV4GAEgASgNEhEK",
-            "CWltdV9pbmRleBgCIAEoDRIyCg5neXJvX3Jhd19zcGVlZBgDIAEoCzIaLkNv",
-            "bnRyb2xsZXJHeXJvRXVsZXJBbmdsZXMSNwoTZ3lyb19maWx0ZXJlZF9zcGVl",
-            "ZBgEIAEoCzIaLkNvbnRyb2xsZXJHeXJvRXVsZXJBbmdsZXMixAEKOENTdGVh",
-            "bUlucHV0U2VydmljZV9HeXJvQWNjZWxlcm9tZXRlckNoYW5nZWRfTm90aWZp",
-            "Y2F0aW9uEhgKEGNvbnRyb2xsZXJfaW5kZXgYASABKA0SEQoJaW11X2luZGV4",
-            "GAIgASgNEisKD2FjY2VsZXJvbXRlcl8xZxgEIAEoCzISLkNvbnRyb2xsZXJW",
-            "ZWN0b3IzEi4KEnRydXN0ZWRfZ3Jhdml0eV8xZxgFIAEoCzISLkNvbnRyb2xs",
-            "ZXJWZWN0b3IzIrEBCi9DU3RlYW1JbnB1dFNlcnZpY2VfR3lyb0NhbGlicmF0",
-            "aW9uX05vdGlmaWNhdGlvbhIYChBjb250cm9sbGVyX2luZGV4GAEgASgNEhEK",
-            "CWltdV9pbmRleBgCIAEoDRIaChJhY2NlbGVyb210ZXJfbm9pc2UYAyABKAIS",
-            "FwoPZ3lyb3Njb3BlX25vaXNlGAQgASgCEhwKFGNhbGlicmF0aW9uX3Byb2dy",
-            "ZXNzGAUgASgCIl0KLkNTdGVhbUlucHV0U2VydmljZV9Db250cm9sbGVyU3Rh",
-            "dGVGbG93X1JlcXVlc3QSGAoQY29udHJvbGxlcl9pbmRleBgBIAEoDRIRCglm",
-            "bG93X21vZGUYAiABKA0iMQovQ1N0ZWFtSW5wdXRTZXJ2aWNlX0NvbnRyb2xs",
-            "ZXJTdGF0ZUZsb3dfUmVzcG9uc2UymQcKEVN0ZWFtSW5wdXRNYW5hZ2VyEmsK",
-            "GE5vdGlmeUJ1dHRvblN0YXRlQ2hhbmdlZBI9LkNTdGVhbUlucHV0U2Vydmlj",
-            "ZV9Db250cm9sbGVyQnV0dG9uU3RhdGVDaGFuZ2VkX05vdGlmaWNhdGlvbhoQ",
-            "LldlYlVJTm9SZXNwb25zZRJmChZOb3RpZnlBeGVzU3RhdGVDaGFuZ2VkEjou",
-            "Q1N0ZWFtSW5wdXRTZXJ2aWNlX0NvbnRyb2xsZXJBeGVzU3RhdGVDaGFuZ2Vf",
-            "Tm90aWZpY2F0aW9uGhAuV2ViVUlOb1Jlc3BvbnNlEmwKIE5vdGlmeUd5cm9R",
-            "dWF0ZXJuaW9uU3RhdGVDaGFuZ2VkEjYuQ1N0ZWFtSW5wdXRTZXJ2aWNlX0d5",
-            "cm9RdWF0ZXJuaW9uQ2hhbmdlZF9Ob3RpZmljYXRpb24aEC5XZWJVSU5vUmVz",
-            "cG9uc2USYgobTm90aWZ5R3lyb1NwZWVkU3RhdGVDaGFuZ2VkEjEuQ1N0ZWFt",
-            "SW5wdXRTZXJ2aWNlX0d5cm9TcGVlZENoYW5nZWRfTm90aWZpY2F0aW9uGhAu",
-            "V2ViVUlOb1Jlc3BvbnNlEnIKI05vdGlmeUd5cm9BY2NlbGVyb21ldGVyU3Rh",
-            "dGVDaGFuZ2VkEjkuQ1N0ZWFtSW5wdXRTZXJ2aWNlX0d5cm9BY2NlbGVyb21l",
-            "dGVyQ2hhbmdlZF9Ob3RpZmljYXRpb24aEC5XZWJVSU5vUmVzcG9uc2USZwoh",
-            "Tm90aWZ5R3lyb0NhbGlicmF0aW9uU3RhdGVDaGFuZ2VkEjAuQ1N0ZWFtSW5w",
-            "dXRTZXJ2aWNlX0d5cm9DYWxpYnJhdGlvbl9Ob3RpZmljYXRpb24aEC5XZWJV",
-            "SU5vUmVzcG9uc2USfQoYU3RhcnRDb250cm9sbGVyU3RhdGVGbG93Ei8uQ1N0",
-            "ZWFtSW5wdXRTZXJ2aWNlX0NvbnRyb2xsZXJTdGF0ZUZsb3dfUmVxdWVzdBow",
-            "LkNTdGVhbUlucHV0U2VydmljZV9Db250cm9sbGVyU3RhdGVGbG93X1Jlc3Bv",
-            "bnNlEnsKFkVuZENvbnRyb2xsZXJTdGF0ZUZsb3cSLy5DU3RlYW1JbnB1dFNl",
-            "cnZpY2VfQ29udHJvbGxlclN0YXRlRmxvd19SZXF1ZXN0GjAuQ1N0ZWFtSW5w",
-            "dXRTZXJ2aWNlX0NvbnRyb2xsZXJTdGF0ZUZsb3dfUmVzcG9uc2UaBICXIgJC",
-            "H0gBgAEBqgIXT3BlblN0ZWFtd29ya3MuUHJvdG9idWY="));
+            "bWUYBSABKA0SFQoNcGFja2V0X251bWJlchgGIAEoDSLMAQowQ1N0ZWFtSW5w",
+            "dXRTZXJ2aWNlX0d5cm9TcGVlZENoYW5nZWRfTm90aWZpY2F0aW9uEhgKEGNv",
+            "bnRyb2xsZXJfaW5kZXgYASABKA0SEQoJaW11X2luZGV4GAIgASgNEjIKDmd5",
+            "cm9fcmF3X3NwZWVkGAMgASgLMhouQ29udHJvbGxlckd5cm9FdWxlckFuZ2xl",
+            "cxI3ChNneXJvX2ZpbHRlcmVkX3NwZWVkGAQgASgLMhouQ29udHJvbGxlckd5",
+            "cm9FdWxlckFuZ2xlcyLEAQo4Q1N0ZWFtSW5wdXRTZXJ2aWNlX0d5cm9BY2Nl",
+            "bGVyb21ldGVyQ2hhbmdlZF9Ob3RpZmljYXRpb24SGAoQY29udHJvbGxlcl9p",
+            "bmRleBgBIAEoDRIRCglpbXVfaW5kZXgYAiABKA0SKwoPYWNjZWxlcm9tdGVy",
+            "XzFnGAQgASgLMhIuQ29udHJvbGxlclZlY3RvcjMSLgoSdHJ1c3RlZF9ncmF2",
+            "aXR5XzFnGAUgASgLMhIuQ29udHJvbGxlclZlY3RvcjMisQEKL0NTdGVhbUlu",
+            "cHV0U2VydmljZV9HeXJvQ2FsaWJyYXRpb25fTm90aWZpY2F0aW9uEhgKEGNv",
+            "bnRyb2xsZXJfaW5kZXgYASABKA0SEQoJaW11X2luZGV4GAIgASgNEhoKEmFj",
+            "Y2VsZXJvbXRlcl9ub2lzZRgDIAEoAhIXCg9neXJvc2NvcGVfbm9pc2UYBCAB",
+            "KAISHAoUY2FsaWJyYXRpb25fcHJvZ3Jlc3MYBSABKAIiXQouQ1N0ZWFtSW5w",
+            "dXRTZXJ2aWNlX0NvbnRyb2xsZXJTdGF0ZUZsb3dfUmVxdWVzdBIYChBjb250",
+            "cm9sbGVyX2luZGV4GAEgASgNEhEKCWZsb3dfbW9kZRgCIAEoDSIxCi9DU3Rl",
+            "YW1JbnB1dFNlcnZpY2VfQ29udHJvbGxlclN0YXRlRmxvd19SZXNwb25zZTKZ",
+            "BwoRU3RlYW1JbnB1dE1hbmFnZXISawoYTm90aWZ5QnV0dG9uU3RhdGVDaGFu",
+            "Z2VkEj0uQ1N0ZWFtSW5wdXRTZXJ2aWNlX0NvbnRyb2xsZXJCdXR0b25TdGF0",
+            "ZUNoYW5nZWRfTm90aWZpY2F0aW9uGhAuV2ViVUlOb1Jlc3BvbnNlEmYKFk5v",
+            "dGlmeUF4ZXNTdGF0ZUNoYW5nZWQSOi5DU3RlYW1JbnB1dFNlcnZpY2VfQ29u",
+            "dHJvbGxlckF4ZXNTdGF0ZUNoYW5nZV9Ob3RpZmljYXRpb24aEC5XZWJVSU5v",
+            "UmVzcG9uc2USbAogTm90aWZ5R3lyb1F1YXRlcm5pb25TdGF0ZUNoYW5nZWQS",
+            "Ni5DU3RlYW1JbnB1dFNlcnZpY2VfR3lyb1F1YXRlcm5pb25DaGFuZ2VkX05v",
+            "dGlmaWNhdGlvbhoQLldlYlVJTm9SZXNwb25zZRJiChtOb3RpZnlHeXJvU3Bl",
+            "ZWRTdGF0ZUNoYW5nZWQSMS5DU3RlYW1JbnB1dFNlcnZpY2VfR3lyb1NwZWVk",
+            "Q2hhbmdlZF9Ob3RpZmljYXRpb24aEC5XZWJVSU5vUmVzcG9uc2UScgojTm90",
+            "aWZ5R3lyb0FjY2VsZXJvbWV0ZXJTdGF0ZUNoYW5nZWQSOS5DU3RlYW1JbnB1",
+            "dFNlcnZpY2VfR3lyb0FjY2VsZXJvbWV0ZXJDaGFuZ2VkX05vdGlmaWNhdGlv",
+            "bhoQLldlYlVJTm9SZXNwb25zZRJnCiFOb3RpZnlHeXJvQ2FsaWJyYXRpb25T",
+            "dGF0ZUNoYW5nZWQSMC5DU3RlYW1JbnB1dFNlcnZpY2VfR3lyb0NhbGlicmF0",
+            "aW9uX05vdGlmaWNhdGlvbhoQLldlYlVJTm9SZXNwb25zZRJ9ChhTdGFydENv",
+            "bnRyb2xsZXJTdGF0ZUZsb3cSLy5DU3RlYW1JbnB1dFNlcnZpY2VfQ29udHJv",
+            "bGxlclN0YXRlRmxvd19SZXF1ZXN0GjAuQ1N0ZWFtSW5wdXRTZXJ2aWNlX0Nv",
+            "bnRyb2xsZXJTdGF0ZUZsb3dfUmVzcG9uc2USewoWRW5kQ29udHJvbGxlclN0",
+            "YXRlRmxvdxIvLkNTdGVhbUlucHV0U2VydmljZV9Db250cm9sbGVyU3RhdGVG",
+            "bG93X1JlcXVlc3QaMC5DU3RlYW1JbnB1dFNlcnZpY2VfQ29udHJvbGxlclN0",
+            "YXRlRmxvd19SZXNwb25zZRoEgJciAkIfSAGAAQGqAhdPcGVuU3RlYW13b3Jr",
+            "cy5Qcm90b2J1Zg=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.WebuimessagesBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -113,7 +114,7 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.ControllerQuaternion), global::OpenSteamworks.Protobuf.ControllerQuaternion.Parser, new[]{ "W", "X", "Y", "Z" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.ControllerGyroEulerAngles), global::OpenSteamworks.Protobuf.ControllerGyroEulerAngles.Parser, new[]{ "Pitch", "Yaw", "Roll" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamInputService_ControllerAxesStateChange_Notification), global::OpenSteamworks.Protobuf.CSteamInputService_ControllerAxesStateChange_Notification.Parser, new[]{ "ControllerIndex", "Joysticleft", "Joysticright", "TrackpadLeft", "TrackpadRight", "TrackpadCenter", "TrackpadPressureLeft", "TrackpadPressureRight", "TriggerLeft", "TriggerRight" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamInputService_GyroQuaternionChanged_Notification), global::OpenSteamworks.Protobuf.CSteamInputService_GyroQuaternionChanged_Notification.Parser, new[]{ "ControllerIndex", "ImuIndex", "GyroRawQuaternion", "GyroFilteredQuaternion", "ImuSensorDeltaTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamInputService_GyroQuaternionChanged_Notification), global::OpenSteamworks.Protobuf.CSteamInputService_GyroQuaternionChanged_Notification.Parser, new[]{ "ControllerIndex", "ImuIndex", "GyroRawQuaternion", "GyroFilteredQuaternion", "ImuSensorDeltaTime", "PacketNumber" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamInputService_GyroSpeedChanged_Notification), global::OpenSteamworks.Protobuf.CSteamInputService_GyroSpeedChanged_Notification.Parser, new[]{ "ControllerIndex", "ImuIndex", "GyroRawSpeed", "GyroFilteredSpeed" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamInputService_GyroAccelerometerChanged_Notification), global::OpenSteamworks.Protobuf.CSteamInputService_GyroAccelerometerChanged_Notification.Parser, new[]{ "ControllerIndex", "ImuIndex", "Acceleromter1G", "TrustedGravity1G" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamInputService_GyroCalibration_Notification), global::OpenSteamworks.Protobuf.CSteamInputService_GyroCalibration_Notification.Parser, new[]{ "ControllerIndex", "ImuIndex", "AcceleromterNoise", "GyroscopeNoise", "CalibrationProgress" }, null, null, null, null),
@@ -4133,6 +4134,7 @@ namespace OpenSteamworks.Protobuf {
       gyroRawQuaternion_ = other.gyroRawQuaternion_ != null ? other.gyroRawQuaternion_.Clone() : null;
       gyroFilteredQuaternion_ = other.gyroFilteredQuaternion_ != null ? other.gyroFilteredQuaternion_.Clone() : null;
       imuSensorDeltaTime_ = other.imuSensorDeltaTime_;
+      packetNumber_ = other.packetNumber_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4247,6 +4249,33 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~4;
     }
 
+    /// <summary>Field number for the "packet_number" field.</summary>
+    public const int PacketNumberFieldNumber = 6;
+    private readonly static uint PacketNumberDefaultValue = 0;
+
+    private uint packetNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint PacketNumber {
+      get { if ((_hasBits0 & 8) != 0) { return packetNumber_; } else { return PacketNumberDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        packetNumber_ = value;
+      }
+    }
+    /// <summary>Gets whether the "packet_number" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPacketNumber {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "packet_number" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPacketNumber() {
+      _hasBits0 &= ~8;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4267,6 +4296,7 @@ namespace OpenSteamworks.Protobuf {
       if (!object.Equals(GyroRawQuaternion, other.GyroRawQuaternion)) return false;
       if (!object.Equals(GyroFilteredQuaternion, other.GyroFilteredQuaternion)) return false;
       if (ImuSensorDeltaTime != other.ImuSensorDeltaTime) return false;
+      if (PacketNumber != other.PacketNumber) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4279,6 +4309,7 @@ namespace OpenSteamworks.Protobuf {
       if (gyroRawQuaternion_ != null) hash ^= GyroRawQuaternion.GetHashCode();
       if (gyroFilteredQuaternion_ != null) hash ^= GyroFilteredQuaternion.GetHashCode();
       if (HasImuSensorDeltaTime) hash ^= ImuSensorDeltaTime.GetHashCode();
+      if (HasPacketNumber) hash ^= PacketNumber.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4317,6 +4348,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(40);
         output.WriteUInt32(ImuSensorDeltaTime);
       }
+      if (HasPacketNumber) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(PacketNumber);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4347,6 +4382,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(40);
         output.WriteUInt32(ImuSensorDeltaTime);
       }
+      if (HasPacketNumber) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(PacketNumber);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4371,6 +4410,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasImuSensorDeltaTime) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ImuSensorDeltaTime);
+      }
+      if (HasPacketNumber) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PacketNumber);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4404,6 +4446,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasImuSensorDeltaTime) {
         ImuSensorDeltaTime = other.ImuSensorDeltaTime;
+      }
+      if (other.HasPacketNumber) {
+        PacketNumber = other.PacketNumber;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4450,6 +4495,10 @@ namespace OpenSteamworks.Protobuf {
             ImuSensorDeltaTime = input.ReadUInt32();
             break;
           }
+          case 48: {
+            PacketNumber = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -4493,6 +4542,10 @@ namespace OpenSteamworks.Protobuf {
           }
           case 40: {
             ImuSensorDeltaTime = input.ReadUInt32();
+            break;
+          }
+          case 48: {
+            PacketNumber = input.ReadUInt32();
             break;
           }
         }

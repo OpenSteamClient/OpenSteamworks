@@ -1,341 +1,342 @@
 {
-    "name": "IClientConfigStoreMap",
-    "functions": [ 
-        {
-            "name": "IsSet",
-            "argc": "3",
-            "interfaceid": "18",
-            "functionid": "763467761",
-            "fencepost": "821502189",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "GetBool",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "644952152",
-            "fencepost": "703002709",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetInt",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "4275332430",
-            "fencepost": "38431820",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetUint64",
-            "argc": "5",
-            "interfaceid": "18",
-            "functionid": "357972612",
-            "fencepost": "416055427",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetFloat",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "346805757",
-            "fencepost": "404904701",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetString",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "1373136866",
-            "fencepost": "1431251939",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "string"
-            ]
-        },
-        {
-            "name": "GetBinary",
-            "argc": "5",
-            "interfaceid": "18",
-            "functionid": "1340133777",
-            "fencepost": "1398361753",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "GetBinary",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "2252190693",
-            "fencepost": "2310547701",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "unknown"
-            ]
-        },
-        {
-            "name": "GetBinaryWatermarked",
-            "argc": "5",
-            "interfaceid": "18",
-            "functionid": "964528311",
-            "fencepost": "1023046609",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "SetBool",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "1815054611",
-            "fencepost": "1873637425",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SetInt",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "2644871492",
-            "fencepost": "2703470435",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SetUint64",
-            "argc": "5",
-            "interfaceid": "18",
-            "functionid": "884759709",
-            "fencepost": "943374781",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SetFloat",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "672446312",
-            "fencepost": "731077513",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SetString",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "3108763876",
-            "fencepost": "3167411206",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SetBinary",
-            "argc": "5",
-            "interfaceid": "18",
-            "functionid": "3274042978",
-            "fencepost": "3332803211",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SetBinaryWatermarked",
-            "argc": "5",
-            "interfaceid": "18",
-            "functionid": "3965166119",
-            "fencepost": "4024055384",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "RemoveKey",
-            "argc": "3",
-            "interfaceid": "18",
-            "functionid": "2461762940",
-            "fencepost": "2520700592",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetKeySerialized",
-            "argc": "5",
-            "interfaceid": "18",
-            "functionid": "1994832129",
-            "fencepost": "2053882684",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "FlushToDisk",
-            "argc": "2",
-            "interfaceid": "18",
-            "functionid": "1231293474",
-            "fencepost": "1290408545",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetSubKeyCount",
-            "argc": "3",
-            "interfaceid": "18",
-            "functionid": "3233798349",
-            "fencepost": "3292945678",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetSubKeyName",
-            "argc": "4",
-            "interfaceid": "18",
-            "functionid": "1685386714",
-            "fencepost": "1744566301",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "string"
-            ]
-        }
-    ]
+  "name": "IClientConfigStore",
+  "functions": [
+    {
+      "name": "IsSet",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "763466760",
+      "fencepost": "821130221",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "GetBool",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "644953007",
+      "fencepost": "702632597",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetInt",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "4275332775",
+      "fencepost": "0",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetUint64",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "357972335",
+      "fencepost": "415684183",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetFloat",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "346805780",
+      "fencepost": "404533757",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetString",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "1373135885",
+      "fencepost": "1430879991",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "string"
+      ]
+    },
+    {
+      "name": "GetBinary",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "1340134010",
+      "fencepost": "1397991019",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "GetBinary",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "2252190716",
+      "fencepost": "2310176757",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "utlbuf"
+      ]
+    },
+    {
+      "name": "GetBinaryWatermarked",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "964528286",
+      "fencepost": "1022675617",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "SetBool",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "1815054650",
+      "fencepost": "1873266497",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SetInt",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "2644871535",
+      "fencepost": "2703099511",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SetUint64",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "884759732",
+      "fencepost": "943003837",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SetFloat",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "672446279",
+      "fencepost": "730706513",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SetString",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "3108763853",
+      "fencepost": "3167040216",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SetBinary",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "3274042955",
+      "fencepost": "3332432221",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SetBinaryWatermarked",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "3965166142",
+      "fencepost": "4023684440",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "RemoveKey",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "2461762837",
+      "fencepost": "2520329522",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetKeySerialized",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "1994832248",
+      "fencepost": "2053511836",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "FlushToDisk",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "1231293513",
+      "fencepost": "1290037617",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetSubKeyCount",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "3233798306",
+      "fencepost": "3292574668",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetSubKeyName",
+      "argc": "-1",
+      "interfaceid": "18",
+      "functionid": "1685386673",
+      "fencepost": "1744195293",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "string"
+      ]
+    }
+  ]
 }

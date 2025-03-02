@@ -38,7 +38,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "DmNvbm5lY3Rvcl9uYW1lGAMgASgJEh8KF3N1cHBvcnRlZF9yZWZyZXNoX3Jh",
             "dGVzGAQgAygFEh0KFXN1cHBvcnRlZF9mcmFtZV9yYXRlcxgFIAMoBRITCgtp",
             "c19leHRlcm5hbBgGIAEoCBIWCg5pc19oZHJfY2FwYWJsZRgHIAEoCBIWCg5p",
-            "c192cnJfY2FwYWJsZRgIIAEoCCKQAwoSQ01zZ0dhbWVzY29wZVN0YXRlEhwK",
+            "c192cnJfY2FwYWJsZRgIIAEoCCK8AwoSQ01zZ0dhbWVzY29wZVN0YXRlEhwK",
             "FGlzX3NlcnZpY2VfYXZhaWxhYmxlGAEgASgIEhwKFGlzX3Jlc2hhZGVfc3Vw",
             "cG9ydGVkGAIgASgIEhoKEmlzX2FwcF9oZHJfZW5hYmxlZBgDIAEoCBIlCh1p",
             "c19hcHBfcmVmcmVzaF9yYXRlX3N1cHBvcnRlZBgEIAEoCBItChNhY3RpdmVf",
@@ -47,16 +47,17 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "dGVfc3dpdGNoaW5nX3N1cHBvcnRlZBgHIAEoCBIsCiRpc19yZWZyZXNoX3Jh",
             "dGVfc3dpdGNoaW5nX3Jlc3RyaWN0ZWQYCCABKAgSJgoeaXNfaGRyX3Zpc3Vh",
             "bGl6YXRpb25fc3VwcG9ydGVkGAkgASgIEiQKHGlzX211cmFfY29ycmVjdGlv",
-            "bl9zdXBwb3J0ZWQYCiABKAgy4wIKCUdhbWVzY29wZRJHCghHZXRTdGF0ZRIc",
-            "LkNHYW1lc2NvcGVfR2V0U3RhdGVfUmVxdWVzdBodLkNHYW1lc2NvcGVfR2V0",
-            "U3RhdGVfUmVzcG9uc2USSAoSTm90aWZ5U3RhdGVDaGFuZ2VkEiUuQ0dhbWVz",
-            "Y29wZV9TdGF0ZUNoYW5nZWRfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJr",
-            "ChRSZUFybU11cmFDYWxpYnJhdGlvbhIoLkNHYW1lc2NvcGVfUmVBcm1NdXJh",
-            "Q2FsaWJyYXRpb25fUmVxdWVzdBopLkNHYW1lc2NvcGVfUmVBcm1NdXJhQ2Fs",
-            "aWJyYXRpb25fUmVzcG9uc2USVgoNU2V0Qmx1clBhcmFtcxIhLkNHYW1lc2Nv",
-            "cGVfU2V0Qmx1clBhcmFtc19SZXF1ZXN0GiIuQ0dhbWVzY29wZV9TZXRCbHVy",
-            "UGFyYW1zX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5X",
-            "ZWJVSQ=="));
+            "bl9zdXBwb3J0ZWQYCiABKAgSKgoiaXNfZ2xvYmFsX2FjdGlvbl9iaW5kaW5n",
+            "X3N1cHBvcnRlZBgLIAEoCDLjAgoJR2FtZXNjb3BlEkcKCEdldFN0YXRlEhwu",
+            "Q0dhbWVzY29wZV9HZXRTdGF0ZV9SZXF1ZXN0Gh0uQ0dhbWVzY29wZV9HZXRT",
+            "dGF0ZV9SZXNwb25zZRJIChJOb3RpZnlTdGF0ZUNoYW5nZWQSJS5DR2FtZXNj",
+            "b3BlX1N0YXRlQ2hhbmdlZF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlEmsK",
+            "FFJlQXJtTXVyYUNhbGlicmF0aW9uEiguQ0dhbWVzY29wZV9SZUFybU11cmFD",
+            "YWxpYnJhdGlvbl9SZXF1ZXN0GikuQ0dhbWVzY29wZV9SZUFybU11cmFDYWxp",
+            "YnJhdGlvbl9SZXNwb25zZRJWCg1TZXRCbHVyUGFyYW1zEiEuQ0dhbWVzY29w",
+            "ZV9TZXRCbHVyUGFyYW1zX1JlcXVlc3QaIi5DR2FtZXNjb3BlX1NldEJsdXJQ",
+            "YXJhbXNfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtzLlByb3RvYnVmLldl",
+            "YlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -68,7 +69,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CGamescope_SetBlurParams_Response), global::OpenSteamworks.Protobuf.WebUI.CGamescope_SetBlurParams_Response.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CGamescope_StateChanged_Notification), global::OpenSteamworks.Protobuf.WebUI.CGamescope_StateChanged_Notification.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgDisplayInfo), global::OpenSteamworks.Protobuf.WebUI.CMsgDisplayInfo.Parser, new[]{ "Make", "Model", "ConnectorName", "SupportedRefreshRates", "SupportedFrameRates", "IsExternal", "IsHdrCapable", "IsVrrCapable" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgGamescopeState), global::OpenSteamworks.Protobuf.WebUI.CMsgGamescopeState.Parser, new[]{ "IsServiceAvailable", "IsReshadeSupported", "IsAppHdrEnabled", "IsAppRefreshRateSupported", "ActiveDisplayInfo", "IsAppRefreshRateCapable", "IsRefreshRateSwitchingSupported", "IsRefreshRateSwitchingRestricted", "IsHdrVisualizationSupported", "IsMuraCorrectionSupported" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgGamescopeState), global::OpenSteamworks.Protobuf.WebUI.CMsgGamescopeState.Parser, new[]{ "IsServiceAvailable", "IsReshadeSupported", "IsAppHdrEnabled", "IsAppRefreshRateSupported", "ActiveDisplayInfo", "IsAppRefreshRateCapable", "IsRefreshRateSwitchingSupported", "IsRefreshRateSwitchingRestricted", "IsHdrVisualizationSupported", "IsMuraCorrectionSupported", "IsGlobalActionBindingSupported" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1981,6 +1982,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       isRefreshRateSwitchingRestricted_ = other.isRefreshRateSwitchingRestricted_;
       isHdrVisualizationSupported_ = other.isHdrVisualizationSupported_;
       isMuraCorrectionSupported_ = other.isMuraCorrectionSupported_;
+      isGlobalActionBindingSupported_ = other.isGlobalActionBindingSupported_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2245,6 +2247,33 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~256;
     }
 
+    /// <summary>Field number for the "is_global_action_binding_supported" field.</summary>
+    public const int IsGlobalActionBindingSupportedFieldNumber = 11;
+    private readonly static bool IsGlobalActionBindingSupportedDefaultValue = false;
+
+    private bool isGlobalActionBindingSupported_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsGlobalActionBindingSupported {
+      get { if ((_hasBits0 & 512) != 0) { return isGlobalActionBindingSupported_; } else { return IsGlobalActionBindingSupportedDefaultValue; } }
+      set {
+        _hasBits0 |= 512;
+        isGlobalActionBindingSupported_ = value;
+      }
+    }
+    /// <summary>Gets whether the "is_global_action_binding_supported" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIsGlobalActionBindingSupported {
+      get { return (_hasBits0 & 512) != 0; }
+    }
+    /// <summary>Clears the value of the "is_global_action_binding_supported" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIsGlobalActionBindingSupported() {
+      _hasBits0 &= ~512;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2270,6 +2299,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (IsRefreshRateSwitchingRestricted != other.IsRefreshRateSwitchingRestricted) return false;
       if (IsHdrVisualizationSupported != other.IsHdrVisualizationSupported) return false;
       if (IsMuraCorrectionSupported != other.IsMuraCorrectionSupported) return false;
+      if (IsGlobalActionBindingSupported != other.IsGlobalActionBindingSupported) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2287,6 +2317,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasIsRefreshRateSwitchingRestricted) hash ^= IsRefreshRateSwitchingRestricted.GetHashCode();
       if (HasIsHdrVisualizationSupported) hash ^= IsHdrVisualizationSupported.GetHashCode();
       if (HasIsMuraCorrectionSupported) hash ^= IsMuraCorrectionSupported.GetHashCode();
+      if (HasIsGlobalActionBindingSupported) hash ^= IsGlobalActionBindingSupported.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2345,6 +2376,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(80);
         output.WriteBool(IsMuraCorrectionSupported);
       }
+      if (HasIsGlobalActionBindingSupported) {
+        output.WriteRawTag(88);
+        output.WriteBool(IsGlobalActionBindingSupported);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2395,6 +2430,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(80);
         output.WriteBool(IsMuraCorrectionSupported);
       }
+      if (HasIsGlobalActionBindingSupported) {
+        output.WriteRawTag(88);
+        output.WriteBool(IsGlobalActionBindingSupported);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2433,6 +2472,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
         size += 1 + 1;
       }
       if (HasIsMuraCorrectionSupported) {
+        size += 1 + 1;
+      }
+      if (HasIsGlobalActionBindingSupported) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -2479,6 +2521,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasIsMuraCorrectionSupported) {
         IsMuraCorrectionSupported = other.IsMuraCorrectionSupported;
+      }
+      if (other.HasIsGlobalActionBindingSupported) {
+        IsGlobalActionBindingSupported = other.IsGlobalActionBindingSupported;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2542,6 +2587,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             IsMuraCorrectionSupported = input.ReadBool();
             break;
           }
+          case 88: {
+            IsGlobalActionBindingSupported = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -2602,6 +2651,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 80: {
             IsMuraCorrectionSupported = input.ReadBool();
+            break;
+          }
+          case 88: {
+            IsGlobalActionBindingSupported = input.ReadBool();
             break;
           }
         }

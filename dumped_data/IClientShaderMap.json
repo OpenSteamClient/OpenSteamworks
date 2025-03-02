@@ -1,370 +1,357 @@
 {
-    "name": "IClientShaderMap",
-    "functions": [ 
-        {
-            "name": "BIsShaderManagementEnabled",
-            "argc": "1",
-            "interfaceid": "45",
-            "functionid": "3307265083",
-            "fencepost": "3398415777",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "BIsShaderBackgroundProcessingEnabled",
-            "argc": "1",
-            "interfaceid": "45",
-            "functionid": "2895967680",
-            "fencepost": "2987134503",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "EnableShaderManagement",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "1673802611",
-            "fencepost": "1764985563",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "EnableShaderBackgroundProcessing",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "1839618460",
-            "fencepost": "1930817541",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetShaderDepotsTotalDiskUsage",
-            "argc": "1",
-            "interfaceid": "45",
-            "functionid": "3076024084",
-            "fencepost": "3167239294",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetShaderCacheDiskSize",
-            "argc": "4",
-            "interfaceid": "45",
-            "functionid": "3732311536",
-            "fencepost": "3823542875",
-            "cannotcallincrossprocess": "1",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "StartShaderScan",
-            "argc": "3",
-            "interfaceid": "45",
-            "functionid": "433933046",
-            "fencepost": "525180514",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "StartPipelineBuild",
-            "argc": "3",
-            "interfaceid": "45",
-            "functionid": "3246759031",
-            "fencepost": "3338022628",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "StartShaderConversion",
-            "argc": "5",
-            "interfaceid": "45",
-            "functionid": "3747612618",
-            "fencepost": "3838892344",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "StartShaderPruning",
-            "argc": "1",
-            "interfaceid": "45",
-            "functionid": "3583147189",
-            "fencepost": "3674443044",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "ProcessShaderCache",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "3854324901",
-            "fencepost": "3945636885",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetShaderCacheProcessingCompletion",
-            "argc": "1",
-            "interfaceid": "45",
-            "functionid": "1473017497",
-            "fencepost": "1564345610",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetShaderCacheProcessingAppID",
-            "argc": "1",
-            "interfaceid": "45",
-            "functionid": "3879570991",
-            "fencepost": "3970915233",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "SkipShaderProcessing",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "4097072141",
-            "fencepost": "4188432512",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "BAppHasPendingShaderContentDownload",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "2473002577",
-            "fencepost": "2564379077",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "GetAppPendingShaderDownloadSize",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "3001655678",
-            "fencepost": "3093048307",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "CheckDepotManifestID",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "2504194208",
-            "fencepost": "2595602966",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetBucketManifest",
-            "argc": "4",
-            "interfaceid": "45",
-            "functionid": "3529086976",
-            "fencepost": "3620511863",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetStaleBucket",
-            "argc": "3",
-            "interfaceid": "45",
-            "functionid": "3968324386",
-            "fencepost": "4059765402",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "ReportExternalBuild",
-            "argc": "10",
-            "interfaceid": "45",
-            "functionid": "2279255733",
-            "fencepost": "2370712878",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string",
-                "bytes8",
-                "string",
-                "string",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "PrepopulatePrecompiledCache",
-            "argc": "8",
-            "interfaceid": "45",
-            "functionid": "283528010",
-            "fencepost": "375017413",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "string",
-                "string",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "WritePrecompiledCache",
-            "argc": "5",
-            "interfaceid": "45",
-            "functionid": "3324214572",
-            "fencepost": "3415720104",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "string",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "CompileShaders",
-            "argc": "5",
-            "interfaceid": "45",
-            "functionid": "2708257000",
-            "fencepost": "2799730274",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetShaderBucketForGraphicsAPI",
-            "argc": "3",
-            "interfaceid": "45",
-            "functionid": "566475796",
-            "fencepost": "657997457",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EnableShaderManagementSystem",
-            "argc": "2",
-            "interfaceid": "45",
-            "functionid": "3546554650",
-            "fencepost": "3638092440",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        }
-    ]
+  "name": "IClientShader",
+  "functions": [
+    {
+      "name": "BIsShaderManagementEnabled",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3307265073",
+      "fencepost": "3398512541",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "BIsShaderBackgroundProcessingEnabled",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "2895967694",
+      "fencepost": "2987231291",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "EnableShaderManagement",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "1673802621",
+      "fencepost": "1765082347",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "EnableShaderBackgroundProcessing",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "1839618454",
+      "fencepost": "1930914309",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetShaderDepotsTotalDiskUsage",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3076024094",
+      "fencepost": "3167336078",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetShaderCacheDiskSize",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3732311542",
+      "fencepost": "3823639655",
+      "cannotcallincrossprocess": "1",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "StartShaderScan",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "433933040",
+      "fencepost": "525277282",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "StartPipelineBuild",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3246758989",
+      "fencepost": "3338119360",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "StartShaderConversion",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3747612656",
+      "fencepost": "3838989156",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "StartShaderPruning",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3583147147",
+      "fencepost": "3674539776",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "ProcessShaderCache",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3854324891",
+      "fencepost": "3945733649",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetShaderCacheProcessingCompletion",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "1473017507",
+      "fencepost": "1564442394",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetShaderCacheProcessingAppID",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3879570965",
+      "fencepost": "3971011981",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "SkipShaderProcessing",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "4097072139",
+      "fencepost": "4188529284",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "BAppHasPendingShaderContentDownload",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "2473002583",
+      "fencepost": "2564475857",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "GetAppPendingShaderDownloadSize",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3001655668",
+      "fencepost": "3093145071",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "CheckDepotManifestID",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "2504194218",
+      "fencepost": "2595699750",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetBucketManifest",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3529086990",
+      "fencepost": "3620608651",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetStaleBucket",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3968324396",
+      "fencepost": "4059862186",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "ReportExternalBuild",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "2279255743",
+      "fencepost": "2370809662",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string",
+        "bytes8",
+        "string",
+        "string",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "PrepopulatePrecompiledCache",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "283528012",
+      "fencepost": "375114189",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "WritePrecompiledCache",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3324214570",
+      "fencepost": "3415816876",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "string",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "CompileShaders",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "2708256994",
+      "fencepost": "2799827042",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetShaderBucketForGraphicsAPI",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "566475790",
+      "fencepost": "658094225",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EnableShaderManagementSystem",
+      "argc": "-1",
+      "interfaceid": "45",
+      "functionid": "3546554624",
+      "fencepost": "3638189188",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1"
+      ],
+      "serializedreturns": []
+    }
+  ]
 }

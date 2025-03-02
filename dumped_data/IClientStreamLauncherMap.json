@@ -1,31 +1,29 @@
 {
-    "name": "IClientStreamLauncherMap",
-    "functions": [ 
-        {
-            "name": "StartStreaming",
-            "argc": "2",
-            "interfaceid": "26",
-            "functionid": "953502552",
-            "fencepost": "1021279912",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "StopStreaming",
-            "argc": "1",
-            "interfaceid": "26",
-            "functionid": "2311541892",
-            "fencepost": "2379335381",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        }
-    ]
+  "name": "IClientStreamLauncher",
+  "functions": [
+    {
+      "name": "StartStreaming",
+      "argc": "-1",
+      "interfaceid": "26",
+      "functionid": "953502588",
+      "fencepost": "1020828336",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "StopStreaming",
+      "argc": "-1",
+      "interfaceid": "26",
+      "functionid": "2311541920",
+      "fencepost": "2378883797",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    }
+  ]
 }

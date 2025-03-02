@@ -25,63 +25,78 @@ namespace OpenSteamworks.Protobuf.WebUI {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRzZXJ2aWNlX3JlbW90ZS5wcm90bxogZ29vZ2xlL3Byb3RvYnVmL2Rlc2Ny",
-            "aXB0b3IucHJvdG8aDGNvbW1vbi5wcm90byJQCilDUmVtb3RlQ2xpZW50X0Fs",
-            "bG9jYXRlUmVsYXlTZXJ2ZXJfUmVxdWVzdBIOCgZjZWxsaWQYASABKA0SEwoL",
-            "Y3JlZGVudGlhbHMYAiABKAkiQgoqQ1JlbW90ZUNsaWVudF9BbGxvY2F0ZVJl",
-            "bGF5U2VydmVyX1Jlc3BvbnNlEhQKDHJlbGF5X3NlcnZlchgBIAEoCSIyCiFD",
-            "UmVtb3RlQ2xpZW50X0FsbG9jYXRlU0RSX1JlcXVlc3QSDQoFYXBwaWQYASAB",
-            "KA0iJAoiQ1JlbW90ZUNsaWVudF9BbGxvY2F0ZVNEUl9SZXNwb25zZSLBAQob",
-            "Q1JlbW90ZUNsaWVudF9DbGllbnREZXRhaWxzEhgKEHJlbW90ZV9jbGllbnRf",
-            "aWQYASABKAYSNAoOZGV2aWNlX2RldGFpbHMYAiABKAsyHC5DUmVtb3RlQ2xp",
-            "ZW50X0RldmljZURldGFpbHMSEQoJbGFzdF9zZWVuGAQgASgEEgwKBGNpdHkY",
-            "BSABKAkSDQoFc3RhdGUYBiABKAkSDwoHY291bnRyeRgHIAEoCRIRCglpc19v",
-            "bmxpbmUYCCABKAgiZAo4Q1JlbW90ZUNsaWVudF9DcmVhdGVSZW1vdGVQbGF5",
-            "VG9nZXRoZXJJbnZpdGF0aW9uX1JlcXVlc3QSDQoFYXBwaWQYASABKA0SGQoR",
-            "bGF1bmNoX3BhcmFtZXRlcnMYAiABKAkiVAo5Q1JlbW90ZUNsaWVudF9DcmVh",
-            "dGVSZW1vdGVQbGF5VG9nZXRoZXJJbnZpdGF0aW9uX1Jlc3BvbnNlEhcKD2lu",
-            "dml0YXRpb25fY29kZRgBIAEoCSJTCjhDUmVtb3RlQ2xpZW50X0RlbGV0ZVJl",
-            "bW90ZVBsYXlUb2dldGhlckludml0YXRpb25fUmVxdWVzdBIXCg9pbnZpdGF0",
-            "aW9uX2NvZGUYASABKAkiOwo5Q1JlbW90ZUNsaWVudF9EZWxldGVSZW1vdGVQ",
-            "bGF5VG9nZXRoZXJJbnZpdGF0aW9uX1Jlc3BvbnNlIjMKJENSZW1vdGVDbGll",
-            "bnRfR2V0UGFpcmluZ0luZm9fUmVxdWVzdBILCgNwaW4YASABKA0iXwolQ1Jl",
-            "bW90ZUNsaWVudF9HZXRQYWlyaW5nSW5mb19SZXNwb25zZRISCgpzZXNzaW9u",
-            "X2lkGAEgASgGEhEKCWRldmljZV9pZBgCIAEoBhIPCgdyZXF1ZXN0GAMgASgM",
-            "IigKJkNSZW1vdGVDbGllbnRfR2V0UmVjZW50Q2xpZW50c19SZXF1ZXN0IlgK",
-            "J0NSZW1vdGVDbGllbnRfR2V0UmVjZW50Q2xpZW50c19SZXNwb25zZRItCgdj",
-            "bGllbnRzGAEgAygLMhwuQ1JlbW90ZUNsaWVudF9DbGllbnREZXRhaWxzImUK",
-            "JkNSZW1vdGVDbGllbnRfTWFya1Rhc2tDb21wbGV0ZV9SZXF1ZXN0EhgKEHJl",
-            "bW90ZV9jbGllbnRfaWQYASABKAYSDQoFdGFzaWQYAiABKAYSEgoKY29udGVu",
-            "dF9pZBgDIAEoCSIpCidDUmVtb3RlQ2xpZW50X01hcmtUYXNrQ29tcGxldGVf",
-            "UmVzcG9uc2UiuAEKIkNSZW1vdGVQbGF5X1Nlc3Npb25TdGFydGVkX1JlcXVl",
-            "c3QSFwoPaG9zdF9hY2NvdW50X2lkGAEgASgNEhkKEWNsaWVudF9hY2NvdW50",
-            "X2lkGAIgASgNEg0KBWFwcGlkGAMgASgNEhoKEmRldmljZV9mb3JtX2ZhY3Rv",
-            "chgEIAEoBRIcChRyZW1vdGVfcGxheV90b2dldGhlchgFIAEoCBIVCg1ndWVz",
-            "dF9zZXNzaW9uGAYgASgIIjgKI0NSZW1vdGVQbGF5X1Nlc3Npb25TdGFydGVk",
-            "X1Jlc3BvbnNlEhEKCXJlY29yZF9pZBgBIAEoBjKsBwoMUmVtb3RlQ2xpZW50",
-            "Em4KE0FsbG9jYXRlUmVsYXlTZXJ2ZXISKi5DUmVtb3RlQ2xpZW50X0FsbG9j",
-            "YXRlUmVsYXlTZXJ2ZXJfUmVxdWVzdBorLkNSZW1vdGVDbGllbnRfQWxsb2Nh",
-            "dGVSZWxheVNlcnZlcl9SZXNwb25zZRJWCgtBbGxvY2F0ZVNEUhIiLkNSZW1v",
-            "dGVDbGllbnRfQWxsb2NhdGVTRFJfUmVxdWVzdBojLkNSZW1vdGVDbGllbnRf",
-            "QWxsb2NhdGVTRFJfUmVzcG9uc2USmwEKIkNyZWF0ZVJlbW90ZVBsYXlUb2dl",
-            "dGhlckludml0YXRpb24SOS5DUmVtb3RlQ2xpZW50X0NyZWF0ZVJlbW90ZVBs",
-            "YXlUb2dldGhlckludml0YXRpb25fUmVxdWVzdBo6LkNSZW1vdGVDbGllbnRf",
-            "Q3JlYXRlUmVtb3RlUGxheVRvZ2V0aGVySW52aXRhdGlvbl9SZXNwb25zZRKb",
-            "AQoiRGVsZXRlUmVtb3RlUGxheVRvZ2V0aGVySW52aXRhdGlvbhI5LkNSZW1v",
-            "dGVDbGllbnRfRGVsZXRlUmVtb3RlUGxheVRvZ2V0aGVySW52aXRhdGlvbl9S",
-            "ZXF1ZXN0GjouQ1JlbW90ZUNsaWVudF9EZWxldGVSZW1vdGVQbGF5VG9nZXRo",
-            "ZXJJbnZpdGF0aW9uX1Jlc3BvbnNlEl8KDkdldFBhaXJpbmdJbmZvEiUuQ1Jl",
-            "bW90ZUNsaWVudF9HZXRQYWlyaW5nSW5mb19SZXF1ZXN0GiYuQ1JlbW90ZUNs",
-            "aWVudF9HZXRQYWlyaW5nSW5mb19SZXNwb25zZRJlChBHZXRSZWNlbnRDbGll",
-            "bnRzEicuQ1JlbW90ZUNsaWVudF9HZXRSZWNlbnRDbGllbnRzX1JlcXVlc3Qa",
-            "KC5DUmVtb3RlQ2xpZW50X0dldFJlY2VudENsaWVudHNfUmVzcG9uc2USZQoQ",
-            "TWFya1Rhc2tDb21wbGV0ZRInLkNSZW1vdGVDbGllbnRfTWFya1Rhc2tDb21w",
-            "bGV0ZV9SZXF1ZXN0GiguQ1JlbW90ZUNsaWVudF9NYXJrVGFza0NvbXBsZXRl",
-            "X1Jlc3BvbnNlEmkKHFNlbmRSZW1vdGVQbGF5U2Vzc2lvblN0YXJ0ZWQSIy5D",
-            "UmVtb3RlUGxheV9TZXNzaW9uU3RhcnRlZF9SZXF1ZXN0GiQuQ1JlbW90ZVBs",
-            "YXlfU2Vzc2lvblN0YXJ0ZWRfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtz",
-            "LlByb3RvYnVmLldlYlVJ"));
+            "aXB0b3IucHJvdG8aEWNvbW1vbl9iYXNlLnByb3RvIlAKKUNSZW1vdGVDbGll",
+            "bnRfQWxsb2NhdGVSZWxheVNlcnZlcl9SZXF1ZXN0Eg4KBmNlbGxpZBgBIAEo",
+            "DRITCgtjcmVkZW50aWFscxgCIAEoCSJCCipDUmVtb3RlQ2xpZW50X0FsbG9j",
+            "YXRlUmVsYXlTZXJ2ZXJfUmVzcG9uc2USFAoMcmVsYXlfc2VydmVyGAEgASgJ",
+            "IjIKIUNSZW1vdGVDbGllbnRfQWxsb2NhdGVTRFJfUmVxdWVzdBINCgVhcHBp",
+            "ZBgBIAEoDSIkCiJDUmVtb3RlQ2xpZW50X0FsbG9jYXRlU0RSX1Jlc3BvbnNl",
+            "IsEBChtDUmVtb3RlQ2xpZW50X0NsaWVudERldGFpbHMSGAoQcmVtb3RlX2Ns",
+            "aWVudF9pZBgBIAEoBhI0Cg5kZXZpY2VfZGV0YWlscxgCIAEoCzIcLkNSZW1v",
+            "dGVDbGllbnRfRGV2aWNlRGV0YWlscxIRCglsYXN0X3NlZW4YBCABKAQSDAoE",
+            "Y2l0eRgFIAEoCRINCgVzdGF0ZRgGIAEoCRIPCgdjb3VudHJ5GAcgASgJEhEK",
+            "CWlzX29ubGluZRgIIAEoCCJkCjhDUmVtb3RlQ2xpZW50X0NyZWF0ZVJlbW90",
+            "ZVBsYXlUb2dldGhlckludml0YXRpb25fUmVxdWVzdBINCgVhcHBpZBgBIAEo",
+            "DRIZChFsYXVuY2hfcGFyYW1ldGVycxgCIAEoCSJUCjlDUmVtb3RlQ2xpZW50",
+            "X0NyZWF0ZVJlbW90ZVBsYXlUb2dldGhlckludml0YXRpb25fUmVzcG9uc2US",
+            "FwoPaW52aXRhdGlvbl9jb2RlGAEgASgJIlMKOENSZW1vdGVDbGllbnRfRGVs",
+            "ZXRlUmVtb3RlUGxheVRvZ2V0aGVySW52aXRhdGlvbl9SZXF1ZXN0EhcKD2lu",
+            "dml0YXRpb25fY29kZRgBIAEoCSI7CjlDUmVtb3RlQ2xpZW50X0RlbGV0ZVJl",
+            "bW90ZVBsYXlUb2dldGhlckludml0YXRpb25fUmVzcG9uc2UiaAobQ1JlbW90",
+            "ZUNsaWVudF9EZXZpY2VEZXRhaWxzEhwKFGRldmljZV9mcmllbmRseV9uYW1l",
+            "GAEgASgJEg8KB29zX3R5cGUYAiABKAUSGgoSZ2FtaW5nX2RldmljZV90eXBl",
+            "GAMgASgNIjMKJENSZW1vdGVDbGllbnRfR2V0UGFpcmluZ0luZm9fUmVxdWVz",
+            "dBILCgNwaW4YASABKA0iXwolQ1JlbW90ZUNsaWVudF9HZXRQYWlyaW5nSW5m",
+            "b19SZXNwb25zZRISCgpzZXNzaW9uX2lkGAEgASgGEhEKCWRldmljZV9pZBgC",
+            "IAEoBhIPCgdyZXF1ZXN0GAMgASgMIigKJkNSZW1vdGVDbGllbnRfR2V0UmVj",
+            "ZW50Q2xpZW50c19SZXF1ZXN0IlgKJ0NSZW1vdGVDbGllbnRfR2V0UmVjZW50",
+            "Q2xpZW50c19SZXNwb25zZRItCgdjbGllbnRzGAEgAygLMhwuQ1JlbW90ZUNs",
+            "aWVudF9DbGllbnREZXRhaWxzImUKJkNSZW1vdGVDbGllbnRfTWFya1Rhc2tD",
+            "b21wbGV0ZV9SZXF1ZXN0EhgKEHJlbW90ZV9jbGllbnRfaWQYASABKAYSDQoF",
+            "dGFzaWQYAiABKAYSEgoKY29udGVudF9pZBgDIAEoCSIpCidDUmVtb3RlQ2xp",
+            "ZW50X01hcmtUYXNrQ29tcGxldGVfUmVzcG9uc2UihAEKIUNSZW1vdGVDbGll",
+            "bnRfT25saW5lX05vdGlmaWNhdGlvbhIPCgdzdGVhbWlkGAEgASgGEhgKEHJl",
+            "bW90ZV9jbGllbnRfaWQYAiABKAYSNAoOZGV2aWNlX2RldGFpbHMYAyABKAsy",
+            "HC5DUmVtb3RlQ2xpZW50X0RldmljZURldGFpbHMiTQomQ1JlbW90ZUNsaWVu",
+            "dF9SZXBseVBhY2tldF9Ob3RpZmljYXRpb24SEgoKc2Vzc2lvbl9pZBgBIAEo",
+            "BhIPCgdwYXlsb2FkGAIgASgMIrgBCiJDUmVtb3RlUGxheV9TZXNzaW9uU3Rh",
+            "cnRlZF9SZXF1ZXN0EhcKD2hvc3RfYWNjb3VudF9pZBgBIAEoDRIZChFjbGll",
+            "bnRfYWNjb3VudF9pZBgCIAEoDRINCgVhcHBpZBgDIAEoDRIaChJkZXZpY2Vf",
+            "Zm9ybV9mYWN0b3IYBCABKAUSHAoUcmVtb3RlX3BsYXlfdG9nZXRoZXIYBSAB",
+            "KAgSFQoNZ3Vlc3Rfc2Vzc2lvbhgGIAEoCCI4CiNDUmVtb3RlUGxheV9TZXNz",
+            "aW9uU3RhcnRlZF9SZXNwb25zZRIRCglyZWNvcmRfaWQYASABKAYypgoKDFJl",
+            "bW90ZUNsaWVudBJuChNBbGxvY2F0ZVJlbGF5U2VydmVyEiouQ1JlbW90ZUNs",
+            "aWVudF9BbGxvY2F0ZVJlbGF5U2VydmVyX1JlcXVlc3QaKy5DUmVtb3RlQ2xp",
+            "ZW50X0FsbG9jYXRlUmVsYXlTZXJ2ZXJfUmVzcG9uc2USVgoLQWxsb2NhdGVT",
+            "RFISIi5DUmVtb3RlQ2xpZW50X0FsbG9jYXRlU0RSX1JlcXVlc3QaIy5DUmVt",
+            "b3RlQ2xpZW50X0FsbG9jYXRlU0RSX1Jlc3BvbnNlEpsBCiJDcmVhdGVSZW1v",
+            "dGVQbGF5VG9nZXRoZXJJbnZpdGF0aW9uEjkuQ1JlbW90ZUNsaWVudF9DcmVh",
+            "dGVSZW1vdGVQbGF5VG9nZXRoZXJJbnZpdGF0aW9uX1JlcXVlc3QaOi5DUmVt",
+            "b3RlQ2xpZW50X0NyZWF0ZVJlbW90ZVBsYXlUb2dldGhlckludml0YXRpb25f",
+            "UmVzcG9uc2USmwEKIkRlbGV0ZVJlbW90ZVBsYXlUb2dldGhlckludml0YXRp",
+            "b24SOS5DUmVtb3RlQ2xpZW50X0RlbGV0ZVJlbW90ZVBsYXlUb2dldGhlcklu",
+            "dml0YXRpb25fUmVxdWVzdBo6LkNSZW1vdGVDbGllbnRfRGVsZXRlUmVtb3Rl",
+            "UGxheVRvZ2V0aGVySW52aXRhdGlvbl9SZXNwb25zZRJfCg5HZXRQYWlyaW5n",
+            "SW5mbxIlLkNSZW1vdGVDbGllbnRfR2V0UGFpcmluZ0luZm9fUmVxdWVzdBom",
+            "LkNSZW1vdGVDbGllbnRfR2V0UGFpcmluZ0luZm9fUmVzcG9uc2USZQoQR2V0",
+            "UmVjZW50Q2xpZW50cxInLkNSZW1vdGVDbGllbnRfR2V0UmVjZW50Q2xpZW50",
+            "c19SZXF1ZXN0GiguQ1JlbW90ZUNsaWVudF9HZXRSZWNlbnRDbGllbnRzX1Jl",
+            "c3BvbnNlEmUKEE1hcmtUYXNrQ29tcGxldGUSJy5DUmVtb3RlQ2xpZW50X01h",
+            "cmtUYXNrQ29tcGxldGVfUmVxdWVzdBooLkNSZW1vdGVDbGllbnRfTWFya1Rh",
+            "c2tDb21wbGV0ZV9SZXNwb25zZRI/CgxOb3RpZnlPbmxpbmUSIi5DUmVtb3Rl",
+            "Q2xpZW50X09ubGluZV9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlEkkKEU5v",
+            "dGlmeVJlcGx5UGFja2V0EicuQ1JlbW90ZUNsaWVudF9SZXBseVBhY2tldF9O",
+            "b3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlEmkKHFNlbmRSZW1vdGVQbGF5U2Vz",
+            "c2lvblN0YXJ0ZWQSIy5DUmVtb3RlUGxheV9TZXNzaW9uU3RhcnRlZF9SZXF1",
+            "ZXN0GiQuQ1JlbW90ZVBsYXlfU2Vzc2lvblN0YXJ0ZWRfUmVzcG9uc2USPAoc",
+            "U2VuZFJlbW90ZVBsYXlTZXNzaW9uU3RvcHBlZBIPLk5vdEltcGxlbWVudGVk",
+            "GgsuTm9SZXNwb25zZRI8ChxTZW5kUmVtb3RlUGxheVRvZ2V0aGVyUGFja2V0",
+            "Eg8uTm90SW1wbGVtZW50ZWQaCy5Ob1Jlc3BvbnNlEjgKGFNlbmRTdGVhbUJy",
+            "b2FkY2FzdFBhY2tldBIPLk5vdEltcGxlbWVudGVkGgsuTm9SZXNwb25zZRI2",
+            "ChZTZW5kU3RlYW1Ub1N0ZWFtUGFja2V0Eg8uTm90SW1wbGVtZW50ZWQaCy5O",
+            "b1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJVSQ=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_AllocateRelayServer_Request), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_AllocateRelayServer_Request.Parser, new[]{ "Cellid", "Credentials" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_AllocateRelayServer_Response), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_AllocateRelayServer_Response.Parser, new[]{ "RelayServer" }, null, null, null, null),
@@ -92,12 +107,15 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_CreateRemotePlayTogetherInvitation_Response), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_CreateRemotePlayTogetherInvitation_Response.Parser, new[]{ "InvitationCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeleteRemotePlayTogetherInvitation_Request), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeleteRemotePlayTogetherInvitation_Request.Parser, new[]{ "InvitationCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeleteRemotePlayTogetherInvitation_Response), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeleteRemotePlayTogetherInvitation_Response.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeviceDetails), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeviceDetails.Parser, new[]{ "DeviceFriendlyName", "OsType", "GamingDeviceType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetPairingInfo_Request), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetPairingInfo_Request.Parser, new[]{ "Pin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetPairingInfo_Response), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetPairingInfo_Response.Parser, new[]{ "SessionId", "DeviceId", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetRecentClients_Request), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetRecentClients_Request.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetRecentClients_Response), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_GetRecentClients_Response.Parser, new[]{ "Clients" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_MarkTaskComplete_Request), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_MarkTaskComplete_Request.Parser, new[]{ "RemoteClientId", "Tasid", "ContentId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_MarkTaskComplete_Response), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_MarkTaskComplete_Response.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_Online_Notification), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_Online_Notification.Parser, new[]{ "Steamid", "RemoteClientId", "DeviceDetails" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_ReplyPacket_Notification), global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_ReplyPacket_Notification.Parser, new[]{ "SessionId", "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemotePlay_SessionStarted_Request), global::OpenSteamworks.Protobuf.WebUI.CRemotePlay_SessionStarted_Request.Parser, new[]{ "HostAccountId", "ClientAccountId", "Appid", "DeviceFormFactor", "RemotePlayTogether", "GuestSession" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CRemotePlay_SessionStarted_Response), global::OpenSteamworks.Protobuf.WebUI.CRemotePlay_SessionStarted_Response.Parser, new[]{ "RecordId" }, null, null, null, null)
           }));
@@ -2330,6 +2348,324 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CRemoteClient_DeviceDetails : pb::IMessage<CRemoteClient_DeviceDetails>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CRemoteClient_DeviceDetails> _parser = new pb::MessageParser<CRemoteClient_DeviceDetails>(() => new CRemoteClient_DeviceDetails());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CRemoteClient_DeviceDetails> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_DeviceDetails() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_DeviceDetails(CRemoteClient_DeviceDetails other) : this() {
+      _hasBits0 = other._hasBits0;
+      deviceFriendlyName_ = other.deviceFriendlyName_;
+      osType_ = other.osType_;
+      gamingDeviceType_ = other.gamingDeviceType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_DeviceDetails Clone() {
+      return new CRemoteClient_DeviceDetails(this);
+    }
+
+    /// <summary>Field number for the "device_friendly_name" field.</summary>
+    public const int DeviceFriendlyNameFieldNumber = 1;
+    private readonly static string DeviceFriendlyNameDefaultValue = "";
+
+    private string deviceFriendlyName_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DeviceFriendlyName {
+      get { return deviceFriendlyName_ ?? DeviceFriendlyNameDefaultValue; }
+      set {
+        deviceFriendlyName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "device_friendly_name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDeviceFriendlyName {
+      get { return deviceFriendlyName_ != null; }
+    }
+    /// <summary>Clears the value of the "device_friendly_name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDeviceFriendlyName() {
+      deviceFriendlyName_ = null;
+    }
+
+    /// <summary>Field number for the "os_type" field.</summary>
+    public const int OsTypeFieldNumber = 2;
+    private readonly static int OsTypeDefaultValue = 0;
+
+    private int osType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int OsType {
+      get { if ((_hasBits0 & 1) != 0) { return osType_; } else { return OsTypeDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        osType_ = value;
+      }
+    }
+    /// <summary>Gets whether the "os_type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOsType {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "os_type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOsType() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "gaming_device_type" field.</summary>
+    public const int GamingDeviceTypeFieldNumber = 3;
+    private readonly static uint GamingDeviceTypeDefaultValue = 0;
+
+    private uint gamingDeviceType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint GamingDeviceType {
+      get { if ((_hasBits0 & 2) != 0) { return gamingDeviceType_; } else { return GamingDeviceTypeDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        gamingDeviceType_ = value;
+      }
+    }
+    /// <summary>Gets whether the "gaming_device_type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGamingDeviceType {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "gaming_device_type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGamingDeviceType() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CRemoteClient_DeviceDetails);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CRemoteClient_DeviceDetails other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (DeviceFriendlyName != other.DeviceFriendlyName) return false;
+      if (OsType != other.OsType) return false;
+      if (GamingDeviceType != other.GamingDeviceType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasDeviceFriendlyName) hash ^= DeviceFriendlyName.GetHashCode();
+      if (HasOsType) hash ^= OsType.GetHashCode();
+      if (HasGamingDeviceType) hash ^= GamingDeviceType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasDeviceFriendlyName) {
+        output.WriteRawTag(10);
+        output.WriteString(DeviceFriendlyName);
+      }
+      if (HasOsType) {
+        output.WriteRawTag(16);
+        output.WriteInt32(OsType);
+      }
+      if (HasGamingDeviceType) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(GamingDeviceType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasDeviceFriendlyName) {
+        output.WriteRawTag(10);
+        output.WriteString(DeviceFriendlyName);
+      }
+      if (HasOsType) {
+        output.WriteRawTag(16);
+        output.WriteInt32(OsType);
+      }
+      if (HasGamingDeviceType) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(GamingDeviceType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasDeviceFriendlyName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeviceFriendlyName);
+      }
+      if (HasOsType) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OsType);
+      }
+      if (HasGamingDeviceType) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GamingDeviceType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CRemoteClient_DeviceDetails other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasDeviceFriendlyName) {
+        DeviceFriendlyName = other.DeviceFriendlyName;
+      }
+      if (other.HasOsType) {
+        OsType = other.OsType;
+      }
+      if (other.HasGamingDeviceType) {
+        GamingDeviceType = other.GamingDeviceType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            DeviceFriendlyName = input.ReadString();
+            break;
+          }
+          case 16: {
+            OsType = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            GamingDeviceType = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            DeviceFriendlyName = input.ReadString();
+            break;
+          }
+          case 16: {
+            OsType = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            GamingDeviceType = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CRemoteClient_GetPairingInfo_Request : pb::IMessage<CRemoteClient_GetPairingInfo_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2345,7 +2681,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[9]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2560,7 +2896,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[10]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2877,7 +3213,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[11]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3038,7 +3374,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[12]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3226,7 +3562,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[13]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3543,7 +3879,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[14]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3690,6 +4026,585 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CRemoteClient_Online_Notification : pb::IMessage<CRemoteClient_Online_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CRemoteClient_Online_Notification> _parser = new pb::MessageParser<CRemoteClient_Online_Notification>(() => new CRemoteClient_Online_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CRemoteClient_Online_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_Online_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_Online_Notification(CRemoteClient_Online_Notification other) : this() {
+      _hasBits0 = other._hasBits0;
+      steamid_ = other.steamid_;
+      remoteClientId_ = other.remoteClientId_;
+      deviceDetails_ = other.deviceDetails_ != null ? other.deviceDetails_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_Online_Notification Clone() {
+      return new CRemoteClient_Online_Notification(this);
+    }
+
+    /// <summary>Field number for the "steamid" field.</summary>
+    public const int SteamidFieldNumber = 1;
+    private readonly static ulong SteamidDefaultValue = 0UL;
+
+    private ulong steamid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong Steamid {
+      get { if ((_hasBits0 & 1) != 0) { return steamid_; } else { return SteamidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        steamid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "steamid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSteamid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "steamid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSteamid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "remote_client_id" field.</summary>
+    public const int RemoteClientIdFieldNumber = 2;
+    private readonly static ulong RemoteClientIdDefaultValue = 0UL;
+
+    private ulong remoteClientId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong RemoteClientId {
+      get { if ((_hasBits0 & 2) != 0) { return remoteClientId_; } else { return RemoteClientIdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        remoteClientId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "remote_client_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRemoteClientId {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "remote_client_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRemoteClientId() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "device_details" field.</summary>
+    public const int DeviceDetailsFieldNumber = 3;
+    private global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeviceDetails deviceDetails_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeviceDetails DeviceDetails {
+      get { return deviceDetails_; }
+      set {
+        deviceDetails_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CRemoteClient_Online_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CRemoteClient_Online_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Steamid != other.Steamid) return false;
+      if (RemoteClientId != other.RemoteClientId) return false;
+      if (!object.Equals(DeviceDetails, other.DeviceDetails)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasSteamid) hash ^= Steamid.GetHashCode();
+      if (HasRemoteClientId) hash ^= RemoteClientId.GetHashCode();
+      if (deviceDetails_ != null) hash ^= DeviceDetails.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (HasRemoteClientId) {
+        output.WriteRawTag(17);
+        output.WriteFixed64(RemoteClientId);
+      }
+      if (deviceDetails_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DeviceDetails);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasSteamid) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(Steamid);
+      }
+      if (HasRemoteClientId) {
+        output.WriteRawTag(17);
+        output.WriteFixed64(RemoteClientId);
+      }
+      if (deviceDetails_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DeviceDetails);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasSteamid) {
+        size += 1 + 8;
+      }
+      if (HasRemoteClientId) {
+        size += 1 + 8;
+      }
+      if (deviceDetails_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeviceDetails);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CRemoteClient_Online_Notification other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasSteamid) {
+        Steamid = other.Steamid;
+      }
+      if (other.HasRemoteClientId) {
+        RemoteClientId = other.RemoteClientId;
+      }
+      if (other.deviceDetails_ != null) {
+        if (deviceDetails_ == null) {
+          DeviceDetails = new global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeviceDetails();
+        }
+        DeviceDetails.MergeFrom(other.DeviceDetails);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+          case 17: {
+            RemoteClientId = input.ReadFixed64();
+            break;
+          }
+          case 26: {
+            if (deviceDetails_ == null) {
+              DeviceDetails = new global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeviceDetails();
+            }
+            input.ReadMessage(DeviceDetails);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Steamid = input.ReadFixed64();
+            break;
+          }
+          case 17: {
+            RemoteClientId = input.ReadFixed64();
+            break;
+          }
+          case 26: {
+            if (deviceDetails_ == null) {
+              DeviceDetails = new global::OpenSteamworks.Protobuf.WebUI.CRemoteClient_DeviceDetails();
+            }
+            input.ReadMessage(DeviceDetails);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CRemoteClient_ReplyPacket_Notification : pb::IMessage<CRemoteClient_ReplyPacket_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CRemoteClient_ReplyPacket_Notification> _parser = new pb::MessageParser<CRemoteClient_ReplyPacket_Notification>(() => new CRemoteClient_ReplyPacket_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CRemoteClient_ReplyPacket_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_ReplyPacket_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_ReplyPacket_Notification(CRemoteClient_ReplyPacket_Notification other) : this() {
+      _hasBits0 = other._hasBits0;
+      sessionId_ = other.sessionId_;
+      payload_ = other.payload_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CRemoteClient_ReplyPacket_Notification Clone() {
+      return new CRemoteClient_ReplyPacket_Notification(this);
+    }
+
+    /// <summary>Field number for the "session_id" field.</summary>
+    public const int SessionIdFieldNumber = 1;
+    private readonly static ulong SessionIdDefaultValue = 0UL;
+
+    private ulong sessionId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong SessionId {
+      get { if ((_hasBits0 & 1) != 0) { return sessionId_; } else { return SessionIdDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        sessionId_ = value;
+      }
+    }
+    /// <summary>Gets whether the "session_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSessionId {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "session_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSessionId() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "payload" field.</summary>
+    public const int PayloadFieldNumber = 2;
+    private readonly static pb::ByteString PayloadDefaultValue = pb::ByteString.Empty;
+
+    private pb::ByteString payload_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString Payload {
+      get { return payload_ ?? PayloadDefaultValue; }
+      set {
+        payload_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "payload" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPayload {
+      get { return payload_ != null; }
+    }
+    /// <summary>Clears the value of the "payload" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPayload() {
+      payload_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CRemoteClient_ReplyPacket_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CRemoteClient_ReplyPacket_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SessionId != other.SessionId) return false;
+      if (Payload != other.Payload) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasSessionId) hash ^= SessionId.GetHashCode();
+      if (HasPayload) hash ^= Payload.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasSessionId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(SessionId);
+      }
+      if (HasPayload) {
+        output.WriteRawTag(18);
+        output.WriteBytes(Payload);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasSessionId) {
+        output.WriteRawTag(9);
+        output.WriteFixed64(SessionId);
+      }
+      if (HasPayload) {
+        output.WriteRawTag(18);
+        output.WriteBytes(Payload);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasSessionId) {
+        size += 1 + 8;
+      }
+      if (HasPayload) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Payload);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CRemoteClient_ReplyPacket_Notification other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasSessionId) {
+        SessionId = other.SessionId;
+      }
+      if (other.HasPayload) {
+        Payload = other.Payload;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            SessionId = input.ReadFixed64();
+            break;
+          }
+          case 18: {
+            Payload = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            SessionId = input.ReadFixed64();
+            break;
+          }
+          case 18: {
+            Payload = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CRemotePlay_SessionStarted_Request : pb::IMessage<CRemotePlay_SessionStarted_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3705,7 +4620,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[15]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4180,7 +5095,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[16]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceRemoteReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

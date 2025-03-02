@@ -49,7 +49,7 @@ namespace OpenSteamworks.Protobuf {
             "aW5rcxgRIAEoCCKTAQodQ1N0b3JlQnJvd3NlX0dldEl0ZW1zX1JlcXVlc3QS",
             "GQoDaWRzGAEgAygLMgwuU3RvcmVJdGVtSUQSJAoHY29udGV4dBgCIAEoCzIT",
             "LlN0b3JlQnJvd3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QYAyABKAsyGy5T",
-            "dG9yZUJyb3dzZUl0ZW1EYXRhUmVxdWVzdCL4KwoJU3RvcmVJdGVtEjoKCWl0",
+            "dG9yZUJyb3dzZUl0ZW1EYXRhUmVxdWVzdCKFLAoJU3RvcmVJdGVtEjoKCWl0",
             "ZW1fdHlwZRgBIAEoDjIPLkVTdG9yZUl0ZW1UeXBlOhZFU3RvcmVJdGVtVHlw",
             "ZV9JbnZhbGlkEgoKAmlkGAIgASgNEg8KB3N1Y2Nlc3MYAyABKA0SDwoHdmlz",
             "aWJsZRgEIAEoCBIqCiJ1bnZhaWxhYmxlX2Zvcl9jb3VudHJ5X3Jlc3RyaWN0",
@@ -68,247 +68,256 @@ namespace OpenSteamworks.Protobuf {
             "IQoGYXNzZXRzGB4gASgLMhEuU3RvcmVJdGVtLkFzc2V0cxInCgdyZWxlYXNl",
             "GB8gASgLMhYuU3RvcmVJdGVtLlJlbGVhc2VJbmZvEicKCXBsYXRmb3Jtcxgg",
             "IAEoCzIULlN0b3JlSXRlbS5QbGF0Zm9ybXMSJQoLZ2FtZV9yYXRpbmcYISAB",
-            "KAsyEC5TdG9yZUdhbWVSYXRpbmcSNwoUYmVzdF9wdXJjaGFzZV9vcHRpb24Y",
-            "KCABKAsyGS5TdG9yZUl0ZW0uUHVyY2hhc2VPcHRpb24SMwoQcHVyY2hhc2Vf",
-            "b3B0aW9ucxgpIAMoCzIZLlN0b3JlSXRlbS5QdXJjaGFzZU9wdGlvbhIuCgth",
-            "Y2Nlc3NvcmllcxgqIAMoCzIZLlN0b3JlSXRlbS5QdXJjaGFzZU9wdGlvbhI3",
-            "ChRzZWxmX3B1cmNoYXNlX29wdGlvbhgrIAEoCzIZLlN0b3JlSXRlbS5QdXJj",
-            "aGFzZU9wdGlvbhIrCgtzY3JlZW5zaG90cxgyIAEoCzIWLlN0b3JlSXRlbS5T",
-            "Y3JlZW5zaG90cxIlCgh0cmFpbGVycxgzIAEoCzITLlN0b3JlSXRlbS5UcmFp",
-            "bGVycxI5ChNzdXBwb3J0ZWRfbGFuZ3VhZ2VzGDQgAygLMhwuU3RvcmVJdGVt",
-            "LlN1cHBvcnRlZExhbmd1YWdlEh8KF3N0b3JlX3VybF9wYXRoX292ZXJyaWRl",
-            "GDUgASgJEiwKDGZyZWVfd2Vla2VuZBg2IAEoCzIWLlN0b3JlSXRlbS5GcmVl",
-            "V2Vla2VuZBIQCgh1bmxpc3RlZBg3IAEoCBISCgpnYW1lX2NvdW50GDggASgN",
-            "EhUKDWludGVybmFsX25hbWUYOSABKAkSGAoQZnVsbF9kZXNjcmlwdGlvbhg6",
-            "IAEoCRIbChNpc19mcmVlX3RlbXBvcmFyaWx5GDsgASgIEjMKGGFzc2V0c193",
-            "aXRob3V0X292ZXJyaWRlcxg8IAEoCzIRLlN0b3JlSXRlbS5Bc3NldHMSNgoT",
-            "dXNlcl9maWx0ZXJfZmFpbHVyZRhGIAEoCzIZLlN0b3JlQnJvd3NlRmlsdGVy",
-            "RmFpbHVyZRIeCgVsaW5rcxhHIAMoCzIPLlN0b3JlSXRlbS5MaW5rGlcKDFJl",
-            "bGF0ZWRJdGVtcxIUCgxwYXJlbnRfYXBwaWQYASABKA0SEgoKZGVtb19hcHBp",
-            "ZBgCIAMoDRIdChVzdGFuZGFsb25lX2RlbW9fYXBwaWQYAyADKA0aWQoNSW5j",
-            "bHVkZWRJdGVtcxIhCg1pbmNsdWRlZF9hcHBzGAEgAygLMgouU3RvcmVJdGVt",
-            "EiUKEWluY2x1ZGVkX3BhY2thZ2VzGAIgAygLMgouU3RvcmVJdGVtGm8KCkNh",
-            "dGVnb3JpZXMSJAocc3VwcG9ydGVkX3BsYXllcl9jYXRlZ29yeWlkcxgCIAMo",
-            "DRIbChNmZWF0dXJlX2NhdGVnb3J5aWRzGAMgAygNEh4KFmNvbnRyb2xsZXJf",
-            "Y2F0ZWdvcnlpZHMYBCADKA0asAIKB1Jldmlld3MSPwoQc3VtbWFyeV9maWx0",
-            "ZXJlZBgBIAEoCzIlLlN0b3JlSXRlbS5SZXZpZXdzLlN0b3JlUmV2aWV3U3Vt",
-            "bWFyeRJBChJzdW1tYXJ5X3VuZmlsdGVyZWQYAiABKAsyJS5TdG9yZUl0ZW0u",
-            "UmV2aWV3cy5TdG9yZVJldmlld1N1bW1hcnkaoAEKElN0b3JlUmV2aWV3U3Vt",
-            "bWFyeRIUCgxyZXZpZXdfY291bnQYASABKA0SGAoQcGVyY2VudF9wb3NpdGl2",
-            "ZRgCIAEoBRI+CgxyZXZpZXdfc2NvcmUYAyABKA4yES5FVXNlclJldmlld1Nj",
-            "b3JlOhVFVXNlclJldmlld1Njb3JlX05vbmUSGgoScmV2aWV3X3Njb3JlX2xh",
-            "YmVsGAQgASgJGrACCglCYXNpY0luZm8SGQoRc2hvcnRfZGVzY3JpcHRpb24Y",
-            "ASABKAkSOAoKcHVibGlzaGVycxgCIAMoCzIkLlN0b3JlSXRlbS5CYXNpY0lu",
-            "Zm8uQ3JlYXRvckhvbWVMaW5rEjgKCmRldmVsb3BlcnMYAyADKAsyJC5TdG9y",
-            "ZUl0ZW0uQmFzaWNJbmZvLkNyZWF0b3JIb21lTGluaxI4CgpmcmFuY2hpc2Vz",
-            "GAQgAygLMiQuU3RvcmVJdGVtLkJhc2ljSW5mby5DcmVhdG9ySG9tZUxpbmsS",
-            "GAoQY2Fwc3VsZV9oZWFkbGluZRgFIAEoCRpACg9DcmVhdG9ySG9tZUxpbmsS",
-            "DAoEbmFtZRgBIAEoCRIfChdjcmVhdG9yX2NsYW5fYWNjb3VudF9pZBgCIAEo",
-            "DRokCgNUYWcSDQoFdGFnaWQYASABKA0SDgoGd2VpZ2h0GAIgASgNGtACCgZB",
-            "c3NldHMSGAoQYXNzZXRfdXJsX2Zvcm1hdBgBIAEoCRIUCgxtYWluX2NhcHN1",
-            "bGUYAiABKAkSFQoNc21hbGxfY2Fwc3VsZRgDIAEoCRIOCgZoZWFkZXIYBCAB",
-            "KAkSFgoOcGFja2FnZV9oZWFkZXIYBSABKAkSFwoPcGFnZV9iYWNrZ3JvdW5k",
-            "GAYgASgJEhQKDGhlcm9fY2Fwc3VsZRgHIAEoCRIXCg9oZXJvX2NhcHN1bGVf",
-            "MngYCCABKAkSFwoPbGlicmFyeV9jYXBzdWxlGAkgASgJEhoKEmxpYnJhcnlf",
-            "Y2Fwc3VsZV8yeBgKIAEoCRIUCgxsaWJyYXJ5X2hlcm8YCyABKAkSFwoPbGli",
-            "cmFyeV9oZXJvXzJ4GAwgASgJEhYKDmNvbW11bml0eV9pY29uGA0gASgJEhMK",
-            "C2NsYW5fYXZhdGFyGA4gASgJGswCCgtSZWxlYXNlSW5mbxIaChJzdGVhbV9y",
-            "ZWxlYXNlX2RhdGUYASABKA0SHQoVb3JpZ2luYWxfcmVsZWFzZV9kYXRlGAIg",
-            "ASgNEiMKG29yaWdpbmFsX3N0ZWFtX3JlbGVhc2VfZGF0ZRgDIAEoDRIWCg5p",
-            "c19jb21pbmdfc29vbhgEIAEoCBISCgppc19wcmVsb2FkGAUgASgIEiMKG2N1",
-            "c3RvbV9yZWxlYXNlX2RhdGVfbWVzc2FnZRgGIAEoCRIgChhpc19hYnJpZGdl",
-            "ZF9yZWxlYXNlX2RhdGUYByABKAgSGwoTY29taW5nX3Nvb25fZGlzcGxheRgI",
-            "IAEoCRIXCg9pc19lYXJseV9hY2Nlc3MYCiABKAgSGAoQbWFjX3JlbGVhc2Vf",
-            "ZGF0ZRgUIAEoDRIaChJsaW51eF9yZWxlYXNlX2RhdGUYFSABKA0a4QIKCVBs",
-            "YXRmb3JtcxIPCgd3aW5kb3dzGAEgASgIEgsKA21hYxgCIAEoCBIVCg1zdGVh",
-            "bW9zX2xpbnV4GAMgASgIEjIKCnZyX3N1cHBvcnQYCiABKAsyHi5TdG9yZUl0",
-            "ZW0uUGxhdGZvcm1zLlZSU3VwcG9ydBJrChhzdGVhbV9kZWNjb21wYXRfY2F0",
-            "ZWdvcnkYCyABKA4yIC5FU3RlYW1EZWNrQ29tcGF0aWJpbGl0eUNhdGVnb3J5",
-            "OidFU3RlYW1EZWNrQ29tcGF0aWJpbGl0eUNhdGVnb3J5X1Vua25vd24afgoJ",
-            "VlJTdXBwb3J0Eg0KBXZyaG1kGAEgASgIEhIKCnZyaG1kX29ubHkYAiABKAgS",
-            "EAoIaHRjX3ZpdmUYKCABKAgSEwoLb2N1bHVzX3JpZnQYKSABKAgSEgoKd2lu",
-            "ZG93c19tchgqIAEoCBITCgt2YWx2ZV9pbmRleBgrIAEoCBr6CAoOUHVyY2hh",
-            "c2VPcHRpb24SEQoJcGFja2FnZWlkGAEgASgFEhAKCGJ1bmRsZWlkGAIgASgF",
-            "EhwKFHB1cmNoYXNlX29wdGlvbl9uYW1lGAMgASgJEhwKFGZpbmFsX3ByaWNl",
-            "X2luX2NlbnRzGAUgASgDEh8KF29yaWdpbmFsX3ByaWNlX2luX2NlbnRzGAYg",
-            "ASgDEiEKGXVzZXJfZmluYWxfcHJpY2VfaW5fY2VudHMYByABKAMSHQoVZm9y",
-            "bWF0dGVkX2ZpbmFsX3ByaWNlGAggASgJEiAKGGZvcm1hdHRlZF9vcmlnaW5h",
-            "bF9wcmljZRgJIAEoCRIUCgxkaXNjb3VudF9wY3QYCiABKAUSGQoRdXNlcl9k",
-            "aXNjb3VudF9wY3QYCyABKAUSGwoTYnVuZGxlX2Rpc2NvdW50X3BjdBgMIAEo",
-            "BRI8ChBhY3RpdmVfZGlzY291bnRzGBQgAygLMiIuU3RvcmVJdGVtLlB1cmNo",
-            "YXNlT3B0aW9uLkRpc2NvdW50EkEKFXVzZXJfYWN0aXZlX2Rpc2NvdW50cxgV",
-            "IAMoCzIiLlN0b3JlSXRlbS5QdXJjaGFzZU9wdGlvbi5EaXNjb3VudBI+ChJp",
-            "bmFjdGl2ZV9kaXNjb3VudHMYFiADKAsyIi5TdG9yZUl0ZW0uUHVyY2hhc2VP",
-            "cHRpb24uRGlzY291bnQSGQoRdXNlcl9jYW5fcHVyY2hhc2UYHiABKAgSIQoZ",
-            "dXNlcl9jYW5fcHVyY2hhc2VfYXNfZ2lmdBgfIAEoCBIdChVpc19jb21tZXJj",
-            "aWFsX2xpY2Vuc2UYKCABKAgSJAocc2hvdWxkX3N1cHByZXNzX2Rpc2NvdW50",
-            "X3BjdBgpIAEoCBIvCiBoaWRlX2Rpc2NvdW50X3BjdF9mb3JfY29tcGxpYW5j",
-            "ZRgqIAEoCDoFZmFsc2USHgoTaW5jbHVkZWRfZ2FtZV9jb3VudBgrIAEoBToB",
-            "MRIkChxsb3dlc3RfcmVjZW50X3ByaWNlX2luX2NlbnRzGCwgASgDEhkKEXJl",
-            "cXVpcmVzX3NoaXBwaW5nGC0gASgIEkEKD3JlY3VycmVuY2VfaW5mbxguIAEo",
-            "CzIoLlN0b3JlSXRlbS5QdXJjaGFzZU9wdGlvbi5SZWN1cnJlbmNlSW5mbxpc",
-            "CghEaXNjb3VudBIXCg9kaXNjb3VudF9hbW91bnQYASABKAMSHAoUZGlzY291",
-            "bnRfZGVzY3JpcHRpb24YAiABKAkSGQoRZGlzY291bnRfZW5kX2RhdGUYAyAB",
-            "KA0avAEKDlJlY3VycmVuY2VJbmZvEhEKCXBhY2thZ2VpZBgBIAEoBRIeChZi",
-            "aWxsaW5nX2FncmVlbWVudF90eXBlGAIgASgFEhkKEXJlbmV3YWxfdGltZV91",
-            "bml0GAMgASgFEhsKE3JlbmV3YWxfdGltZV9wZXJpb2QYBCABKAUSHgoWcmVu",
-            "ZXdhbF9wcmljZV9pbl9jZW50cxgFIAEoAxIfChdmb3JtYXR0ZWRfcmVuZXdh",
-            "bF9wcmljZRgGIAEoCRrGAQoLU2NyZWVuc2hvdHMSPwoUYWxsX2FnZXNfc2Ny",
-            "ZWVuc2hvdHMYAiADKAsyIS5TdG9yZUl0ZW0uU2NyZWVuc2hvdHMuU2NyZWVu",
-            "c2hvdBJFChptYXR1cmVfY29udGVudF9zY3JlZW5zaG90cxgDIAMoCzIhLlN0",
-            "b3JlSXRlbS5TY3JlZW5zaG90cy5TY3JlZW5zaG90Gi8KClNjcmVlbnNob3QS",
-            "EAoIZmlsZW5hbWUYASABKAkSDwoHb3JkaW5hbBgCIAEoBRrOAwoIVHJhaWxl",
-            "cnMSLwoKaGlnaGxpZ2h0cxgBIAMoCzIbLlN0b3JlSXRlbS5UcmFpbGVycy5U",
-            "cmFpbGVyEjMKDm90aGVyX3RyYWlsZXJzGAIgAygLMhsuU3RvcmVJdGVtLlRy",
-            "YWlsZXJzLlRyYWlsZXIaLQoLVmlkZW9Tb3VyY2USEAoIZmlsZW5hbWUYASAB",
-            "KAkSDAoEdHlwZRgCIAEoCRqsAgoHVHJhaWxlchIUCgx0cmFpbGVyX25hbWUY",
-            "ASABKAkSGgoSdHJhaWxlcl91cmxfZm9ybWF0GAIgASgJEjUKDHRyYWlsZXJf",
-            "NDgwcBgDIAMoCzIfLlN0b3JlSXRlbS5UcmFpbGVycy5WaWRlb1NvdXJjZRI0",
-            "Cgt0cmFpbGVyX21heBgEIAMoCzIfLlN0b3JlSXRlbS5UcmFpbGVycy5WaWRl",
-            "b1NvdXJjZRI1CgxtaWNyb3RyYWlsZXIYBSADKAsyHy5TdG9yZUl0ZW0uVHJh",
-            "aWxlcnMuVmlkZW9Tb3VyY2USGQoRc2NyZWVuc2hvdF9tZWRpdW0YCiABKAkS",
-            "FwoPc2NyZWVuc2hvdF9mdWxsGAsgASgJEhcKD3RyYWlsZXJfYmFzZV9pZBgM",
-            "IAEoBRqFAQoRU3VwcG9ydGVkTGFuZ3VhZ2USFQoJZWxhbmd1YWdlGAEgASgF",
-            "OgItMRIfChNlYWRkaXRpb25hbGxhbmd1YWdlGAUgASgFOgItMRIRCglzdXBw",
-            "b3J0ZWQYAiABKAgSEgoKZnVsbF9hdWRpbxgDIAEoCBIRCglzdWJ0aXRsZXMY",
-            "BCABKAgaQQoLRnJlZVdlZWtlbmQSEgoKc3RhcnRfdGltZRgBIAEoDRIQCghl",
-            "bmRfdGltZRgCIAEoDRIMCgR0ZXh0GAMgASgJGlgKBExpbmsSNQoHbGludHlw",
-            "ZRgBIAEoDjIPLkVTdG9yZUxpbmtUeXBlOhNFU3RvcmVMaW5rVHlwZV9Ob25l",
-            "EgsKA3VybBgCIAEoCRIMCgR0ZXh0GAMgASgJIrcBCg9TdG9yZUdhbWVSYXRp",
-            "bmcSDAoEdHlwZRgBIAEoCRIOCgZyYXRpbmcYAiABKAkSEwoLZGVzY3JpcHRv",
-            "cnMYAyADKAkSHAoUaW50ZXJhY3RpdmVfZWxlbWVudHMYBCABKAkSFAoMcmVx",
-            "dWlyZWRfYWdlGAogASgFEhQKDHVzZV9hZ2VfZ2F0ZRgLIAEoCBIRCglpbWFn",
-            "ZV91cmwYFCABKAkSFAoMaW1hZ2VfdGFyZ2V0GBUgASgJIp8DChhTdG9yZUJy",
-            "b3dzZUZpbHRlckZhaWx1cmUSUgoOZmlsdGVyX2ZhaWx1cmUYASABKA4yGi5F",
-            "U3RvcmVCcm93c2VGaWx0ZXJGYWlsdXJlOh5FU3RvcmVCcm93c2VGaWx0ZXJG",
-            "YWlsdXJlX05vbmUSFQoNYWxyZWFkeV9vd25lZBgFIAEoCBITCgtvbl93aXNo",
-            "bGlzdBgGIAEoCBIPCgdpZ25vcmVkGAcgASgIEh0KFW5vdF9pbl91c2Vyc19s",
-            "YW5ndWFnZRgKIAEoCBIdChVub3Rfb25fdXNlcnNfcGxhdGZvcm0YCyABKAgS",
-            "GwoTZGVtb19mb3Jfb3duZWRfZ2FtZRgMIAEoCBIcChRkbGNfZm9yX3Vub3du",
-            "ZWRfZ2FtZRgNIAEoCBIhChlub25wcmVmZXJyZWRfcHJvZHVjdF90eXBlGBQg",
-            "ASgIEhcKD2V4Y2x1ZGVkX3RhZ2lkcxgVIAMoDRI9Ch5leGNsdWRlZF9jb250",
-            "ZW50X2Rlc2NyaXB0b3JpZHMYHiADKA4yFS5FQ29udGVudERlc2NyaXB0b3JJ",
-            "RCJBCh5DU3RvcmVCcm93c2VfR2V0SXRlbXNfUmVzcG9uc2USHwoLc3RvcmVf",
-            "aXRlbXMYASADKAsyCi5TdG9yZUl0ZW0iUgonQ1N0b3JlQnJvd3NlX0dldFN0",
-            "b3JlQ2F0ZWdvcmllc19SZXF1ZXN0EhAKCGxhbmd1YWdlGAEgASgJEhUKCWVs",
-            "YW5ndWFnZRgCIAEoBToCLTEivQIKKENTdG9yZUJyb3dzZV9HZXRTdG9yZUNh",
-            "dGVnb3JpZXNfUmVzcG9uc2USRgoKY2F0ZWdvcmllcxgBIAMoCzIyLkNTdG9y",
-            "ZUJyb3dzZV9HZXRTdG9yZUNhdGVnb3JpZXNfUmVzcG9uc2UuQ2F0ZWdvcnka",
-            "yAEKCENhdGVnb3J5EhIKCmNhdGVnb3J5aWQYASABKA0SPgoEdHlwZRgCIAEo",
-            "DjITLkVTdG9yZUNhdGVnb3J5VHlwZTobRVN0b3JlQ2F0ZWdvcnlUeXBlX0Nh",
-            "dGVnb3J5EhUKDWludGVybmFsX25hbWUYAyABKAkSFAoMZGlzcGxheV9uYW1l",
-            "GAQgASgJEhEKCWltYWdlX3VybBgFIAEoCRIWCg5zaG93X2luX3NlYXJjaBgG",
-            "IAEoCBIQCghjb21wdXRlZBgHIAEoCCJRCiJDU3RvcmVCcm93c2VfR2V0UHJp",
-            "Y2VTdG9wc19SZXF1ZXN0EhQKDGNvdW50cnlfY29kZRgBIAEoCRIVCg1jdXJy",
-            "ZW5jeV9jb2RlGAIgASgJIsEBCiNDU3RvcmVCcm93c2VfR2V0UHJpY2VTdG9w",
-            "c19SZXNwb25zZRJDCgtwcmljZV9zdG9wcxgBIAMoCzIuLkNTdG9yZUJyb3dz",
-            "ZV9HZXRQcmljZVN0b3BzX1Jlc3BvbnNlLlByaWNlU3RvcBIVCg1jdXJyZW5j",
-            "eV9jb2RlGAIgASgJGj4KCVByaWNlU3RvcBIYChBmb3JtYXR0ZWRfYW1vdW50",
-            "GAEgASgJEhcKD2Ftb3VudF9pbl9jZW50cxgCIAEoAyKnAQoiQ1N0b3JlQnJv",
-            "d3NlX0dldERMQ0ZvckFwcHNfUmVxdWVzdBIkCgdjb250ZXh0GAEgASgLMhMu",
-            "U3RvcmVCcm93c2VDb250ZXh0EiwKEXN0b3JlX3BhZ2VfZmlsdGVyGAIgASgL",
-            "MhEuQ1N0b3JlUGFnZUZpbHRlchIcCgZhcHBpZHMYAyADKAsyDC5TdG9yZUl0",
-            "ZW1JRBIPCgdzdGVhbWlkGAQgASgEIv4CCiNDU3RvcmVCcm93c2VfR2V0RExD",
-            "Rm9yQXBwc19SZXNwb25zZRI+CghkbGNfZGF0YRgBIAMoCzIsLkNTdG9yZUJy",
-            "b3dzZV9HZXRETENGb3JBcHBzX1Jlc3BvbnNlLkRMQ0RhdGESRQoIcGxheXRp",
-            "bWUYAiADKAsyMy5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc19SZXNwb25z",
-            "ZS5QbGF5dGltZUZvckFwcBqHAQoHRExDRGF0YRINCgVhcHBpZBgBIAEoDRIT",
-            "CgtwYXJlbnRhcHBpZBgCIAEoDRIUCgxyZWxlYXNlX2RhdGUYAyABKA0SEwoL",
-            "Y29taW5nX3Nvb24YBCABKAgSDQoFcHJpY2UYBSABKAMSEAoIZGlzY291bnQY",
-            "BiABKA0SDAoEZnJlZRgHIAEoCBpGCg5QbGF5dGltZUZvckFwcBINCgVhcHBp",
-            "ZBgBIAEoDRIQCghwbGF5dGltZRgCIAEoDRITCgtsYXN0X3BsYXllZBgDIAEo",
-            "DSKrAQomQ1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNTb2xyX1JlcXVlc3QS",
-            "JAoHY29udGV4dBgBIAEoCzITLlN0b3JlQnJvd3NlQ29udGV4dBIOCgZhcHBp",
-            "ZHMYAiADKA0SDgoGZmxhdm9yGAMgASgJEg0KBWNvdW50GAQgASgNEiwKEXN0",
-            "b3JlX3BhZ2VfZmlsdGVyGAUgASgLMhEuQ1N0b3JlUGFnZUZpbHRlciKjAQon",
-            "Q1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNTb2xyX1Jlc3BvbnNlEkMKCWRs",
-            "Y19saXN0cxgBIAMoCzIwLkNTdG9yZUJyb3dzZV9HZXRETENGb3JBcHBzU29s",
-            "cl9SZXNwb25zZS5ETENMaXN0GjMKB0RMQ0xpc3QSFAoMcGFyZW50X2FwcGlk",
-            "GAEgASgNEhIKCmRsY19hcHBpZHMYAiADKA0iYAolQ1N0b3JlQnJvd3NlX0dl",
-            "dEhhcmR3YXJlSXRlbXNfUmVxdWVzdBIRCglwYWNrYWdlaWQYASADKA0SJAoH",
-            "Y29udGV4dBgCIAEoCzITLlN0b3JlQnJvd3NlQ29udGV4dCKUBAoXQ0hhcmR3",
-            "YXJlUGFja2FnZURldGFpbHMSEQoJcGFja2FnZWlkGAEgASgNEhsKE2ludmVu",
-            "dG9yeV9hdmFpbGFibGUYAyABKAgSGwoTaGlnaF9wZW5kaW5nX29yZGVycxgE",
-            "IAEoCBIqCiJhY2NvdW50X3Jlc3RyaWN0ZWRfZnJvbV9wdXJjaGFzaW5nGAUg",
-            "ASgIEhwKFHJlcXVpcmVzX3Jlc2VydmF0aW9uGAYgASgIEiQKHHJ0aW1lX2Vz",
-            "dGltYXRlZF9ub3RpZmljYXRpb24YByABKA0SGQoRbm90aWZpY2F0b25fdG9r",
-            "ZW4YCCABKAkSGQoRcmVzZXJ2YXRpb25fc3RhdGUYCSABKAUSDwoHZXhwaXJl",
-            "ZBgKIAEoCBIUCgx0aW1lX2V4cGlyZXMYCyABKA0SFQoNdGltZV9yZXNlcnZl",
-            "ZBgMIAEoDRIfChdhbGxvd19xdWFudGl0eV9wdXJjaGFzZRgNIAEoCBIhChlt",
-            "YXhfcXVhbnRpdHlfcGVyX3B1cmNoYXNlGA4gASgFEiEKGWFsbG93X3B1cmNo",
-            "YXNlX2luX2NvdW50cnkYDyABKAgSMAooZXN0aW1hdGVkX2RlbGl2ZXJ5X3Nv",
-            "b25lc3RfYnVzaW5lc3NfZGF5cxgRIAEoDRIvCidlc3RpbWF0ZWRfZGVsaXZl",
-            "cnlfbGF0ZXN0X2J1c2luZXNzX2RheXMYEiABKA0iUwomQ1N0b3JlQnJvd3Nl",
-            "X0dldEhhcmR3YXJlSXRlbXNfUmVzcG9uc2USKQoHZGV0YWlscxgBIAMoCzIY",
-            "LkNIYXJkd2FyZVBhY2thZ2VEZXRhaWxzKvABCg5FU3RvcmVJdGVtVHlwZRIj",
-            "ChZFU3RvcmVJdGVtVHlwZV9JbnZhbGlkEP///////////wESFgoSRVN0b3Jl",
-            "SXRlbVR5cGVfQXBwEAASGgoWRVN0b3JlSXRlbVR5cGVfUGFja2FnZRABEhkK",
-            "FUVTdG9yZUl0ZW1UeXBlX0J1bmRsZRACEhYKEkVTdG9yZUl0ZW1UeXBlX010",
-            "eBADEhYKEkVTdG9yZUl0ZW1UeXBlX1RhZxAEEhoKFkVTdG9yZUl0ZW1UeXBl",
-            "X0NyZWF0b3IQBRIeChpFU3RvcmVJdGVtVHlwZV9IdWJDYXRlZ29yeRAGKo0D",
-            "Cg1FU3RvcmVBcHBUeXBlEhYKEkVTdG9yZUFwcFR5cGVfR2FtZRAAEhYKEkVT",
-            "dG9yZUFwcFR5cGVfRGVtbxABEhUKEUVTdG9yZUFwcFR5cGVfTW9kEAISFwoT",
-            "RVN0b3JlQXBwVHlwZV9Nb3ZpZRADEhUKEUVTdG9yZUFwcFR5cGVfRExDEAQS",
-            "FwoTRVN0b3JlQXBwVHlwZV9HdWlkZRAFEhoKFkVTdG9yZUFwcFR5cGVfU29m",
-            "dHdhcmUQBhIXChNFU3RvcmVBcHBUeXBlX1ZpZGVvEAcSGAoURVN0b3JlQXBw",
-            "VHlwZV9TZXJpZXMQCBIZChVFU3RvcmVBcHBUeXBlX0VwaXNvZGUQCRIaChZF",
-            "U3RvcmVBcHBUeXBlX0hhcmR3YXJlEAoSFwoTRVN0b3JlQXBwVHlwZV9NdXNp",
-            "YxALEhYKEkVTdG9yZUFwcFR5cGVfQmV0YRAMEhYKEkVTdG9yZUFwcFR5cGVf",
-            "VG9vbBANEh0KGUVTdG9yZUFwcFR5cGVfQWR2ZXJ0aXNpbmcQDirxAgoQRVVz",
-            "ZXJSZXZpZXdTY29yZRIZChVFVXNlclJldmlld1Njb3JlX05vbmUQABIrCidF",
-            "VXNlclJldmlld1Njb3JlX092ZXJ3aGVsbWluZ2x5TmVnYXRpdmUQARIhCh1F",
-            "VXNlclJldmlld1Njb3JlX1ZlcnlOZWdhdGl2ZRACEh0KGUVVc2VyUmV2aWV3",
-            "U2NvcmVfTmVnYXRpdmUQAxIjCh9FVXNlclJldmlld1Njb3JlX01vc3RseU5l",
-            "Z2F0aXZlEAQSGgoWRVVzZXJSZXZpZXdTY29yZV9NaXhlZBAFEiMKH0VVc2Vy",
-            "UmV2aWV3U2NvcmVfTW9zdGx5UG9zaXRpdmUQBhIdChlFVXNlclJldmlld1Nj",
-            "b3JlX1Bvc2l0aXZlEAcSIQodRVVzZXJSZXZpZXdTY29yZV9WZXJ5UG9zaXRp",
-            "dmUQCBIrCidFVXNlclJldmlld1Njb3JlX092ZXJ3aGVsbWluZ2x5UG9zaXRp",
-            "dmUQCSqbAgoZRVN0b3JlQnJvd3NlRmlsdGVyRmFpbHVyZRIiCh5FU3RvcmVC",
-            "cm93c2VGaWx0ZXJGYWlsdXJlX05vbmUQABInCiNFU3RvcmVCcm93c2VGaWx0",
-            "ZXJGYWlsdXJlX1JlZHVuZGFudBAKEioKJkVTdG9yZUJyb3dzZUZpbHRlckZh",
-            "aWx1cmVfTm90UHJlZmVycmVkEBQSKwonRVN0b3JlQnJvd3NlRmlsdGVyRmFp",
-            "bHVyZV9Ob3RJbnRlcmVzdGVkEB4SLQopRVN0b3JlQnJvd3NlRmlsdGVyRmFp",
-            "bHVyZV9VbndhbnRlZENvbnRlbnQQKBIpCiVFU3RvcmVCcm93c2VGaWx0ZXJG",
-            "YWlsdXJlX1VuYXZhaWxhYmxlEDIqqwQKDkVTdG9yZUxpbmtUeXBlEhcKE0VT",
-            "dG9yZUxpbmtUeXBlX05vbmUQABIaChZFU3RvcmVMaW5rVHlwZV9Zb3VUdWJl",
-            "EAESGwoXRVN0b3JlTGlua1R5cGVfRmFjZWJvb2sQAhIaChZFU3RvcmVMaW5r",
-            "VHlwZV9Ud2l0dGVyEAMSGQoVRVN0b3JlTGlua1R5cGVfVHdpdGNoEAQSGgoW",
-            "RVN0b3JlTGlua1R5cGVfRGlzY29yZBAFEhUKEUVTdG9yZUxpbmtUeXBlX1FR",
-            "EAYSFQoRRVN0b3JlTGlua1R5cGVfVksQBxIbChdFU3RvcmVMaW5rVHlwZV9C",
-            "aWxpYmlsaRAIEhgKFEVTdG9yZUxpbmtUeXBlX1dlaWJvEAkSGQoVRVN0b3Jl",
-            "TGlua1R5cGVfUmVkZGl0EAoSHAoYRVN0b3JlTGlua1R5cGVfSW5zdGFncmFt",
-            "EAsSGQoVRVN0b3JlTGlua1R5cGVfVHVtYmxyEAwSGAoURVN0b3JlTGlua1R5",
-            "cGVfVGllYmEQDRIZChVFU3RvcmVMaW5rVHlwZV9UaWt0b2sQDhIbChdFU3Rv",
-            "cmVMaW5rVHlwZV9UZWxlZ3JhbRAPEhsKF0VTdG9yZUxpbmtUeXBlX0xpbmtl",
-            "ZEluEBASGQoVRVN0b3JlTGlua1R5cGVfV2VDaGF0EBESGQoVRVN0b3JlTGlu",
-            "a1R5cGVfUVFMaW5rEBISFgoSRVN0b3JlTGlua1R5cGVfTUFYEBMq6AEKEkVT",
-            "dG9yZUNhdGVnb3J5VHlwZRIfChtFU3RvcmVDYXRlZ29yeVR5cGVfQ2F0ZWdv",
-            "cnkQABInCiNFU3RvcmVDYXRlZ29yeVR5cGVfU3VwcG9ydGVkUGxheWVycxAB",
-            "Eh4KGkVTdG9yZUNhdGVnb3J5VHlwZV9GZWF0dXJlEAISKAokRVN0b3JlQ2F0",
-            "ZWdvcnlUeXBlX0NvbnRyb2xsZXJTdXBwb3J0EAMSIgoeRVN0b3JlQ2F0ZWdv",
-            "cnlUeXBlX0Nsb3VkR2FtaW5nEAQSGgoWRVN0b3JlQ2F0ZWdvcnlUeXBlX01B",
-            "WBAFMsoECgtTdG9yZUJyb3dzZRJLCghHZXRJdGVtcxIeLkNTdG9yZUJyb3dz",
-            "ZV9HZXRJdGVtc19SZXF1ZXN0Gh8uQ1N0b3JlQnJvd3NlX0dldEl0ZW1zX1Jl",
-            "c3BvbnNlEmkKEkdldFN0b3JlQ2F0ZWdvcmllcxIoLkNTdG9yZUJyb3dzZV9H",
-            "ZXRTdG9yZUNhdGVnb3JpZXNfUmVxdWVzdBopLkNTdG9yZUJyb3dzZV9HZXRT",
-            "dG9yZUNhdGVnb3JpZXNfUmVzcG9uc2USWgoNR2V0UHJpY2VTdG9wcxIjLkNT",
-            "dG9yZUJyb3dzZV9HZXRQcmljZVN0b3BzX1JlcXVlc3QaJC5DU3RvcmVCcm93",
-            "c2VfR2V0UHJpY2VTdG9wc19SZXNwb25zZRJaCg1HZXRETENGb3JBcHBzEiMu",
-            "Q1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNfUmVxdWVzdBokLkNTdG9yZUJy",
-            "b3dzZV9HZXRETENGb3JBcHBzX1Jlc3BvbnNlEmYKEUdldERMQ0ZvckFwcHNT",
-            "b2xyEicuQ1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNTb2xyX1JlcXVlc3Qa",
-            "KC5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc1NvbHJfUmVzcG9uc2USYwoQ",
-            "R2V0SGFyZHdhcmVJdGVtcxImLkNTdG9yZUJyb3dzZV9HZXRIYXJkd2FyZUl0",
-            "ZW1zX1JlcXVlc3QaJy5DU3RvcmVCcm93c2VfR2V0SGFyZHdhcmVJdGVtc19S",
-            "ZXNwb25zZUIdgAEBqgIXT3BlblN0ZWFtd29ya3MuUHJvdG9idWY="));
+            "KAsyEC5TdG9yZUdhbWVSYXRpbmcSFgoOaXNfY29taW5nX3Nvb24YIiABKAgS",
+            "NwoUYmVzdF9wdXJjaGFzZV9vcHRpb24YKCABKAsyGS5TdG9yZUl0ZW0uUHVy",
+            "Y2hhc2VPcHRpb24SMwoQcHVyY2hhc2Vfb3B0aW9ucxgpIAMoCzIZLlN0b3Jl",
+            "SXRlbS5QdXJjaGFzZU9wdGlvbhIuCgthY2Nlc3NvcmllcxgqIAMoCzIZLlN0",
+            "b3JlSXRlbS5QdXJjaGFzZU9wdGlvbhI3ChRzZWxmX3B1cmNoYXNlX29wdGlv",
+            "bhgrIAEoCzIZLlN0b3JlSXRlbS5QdXJjaGFzZU9wdGlvbhIrCgtzY3JlZW5z",
+            "aG90cxgyIAEoCzIWLlN0b3JlSXRlbS5TY3JlZW5zaG90cxIlCgh0cmFpbGVy",
+            "cxgzIAEoCzITLlN0b3JlSXRlbS5UcmFpbGVycxI5ChNzdXBwb3J0ZWRfbGFu",
+            "Z3VhZ2VzGDQgAygLMhwuU3RvcmVJdGVtLlN1cHBvcnRlZExhbmd1YWdlEh8K",
+            "F3N0b3JlX3VybF9wYXRoX292ZXJyaWRlGDUgASgJEiwKDGZyZWVfd2Vla2Vu",
+            "ZBg2IAEoCzIWLlN0b3JlSXRlbS5GcmVlV2Vla2VuZBIQCgh1bmxpc3RlZBg3",
+            "IAEoCBISCgpnYW1lX2NvdW50GDggASgNEhUKDWludGVybmFsX25hbWUYOSAB",
+            "KAkSGAoQZnVsbF9kZXNjcmlwdGlvbhg6IAEoCRIbChNpc19mcmVlX3RlbXBv",
+            "cmFyaWx5GDsgASgIEjMKGGFzc2V0c193aXRob3V0X292ZXJyaWRlcxg8IAEo",
+            "CzIRLlN0b3JlSXRlbS5Bc3NldHMSNgoTdXNlcl9maWx0ZXJfZmFpbHVyZRhG",
+            "IAEoCzIZLlN0b3JlQnJvd3NlRmlsdGVyRmFpbHVyZRIeCgVsaW5rcxhHIAMo",
+            "CzIPLlN0b3JlSXRlbS5MaW5rGlcKDFJlbGF0ZWRJdGVtcxIUCgxwYXJlbnRf",
+            "YXBwaWQYASABKA0SEgoKZGVtb19hcHBpZBgCIAMoDRIdChVzdGFuZGFsb25l",
+            "X2RlbW9fYXBwaWQYAyADKA0aWQoNSW5jbHVkZWRJdGVtcxIhCg1pbmNsdWRl",
+            "ZF9hcHBzGAEgAygLMgouU3RvcmVJdGVtEiUKEWluY2x1ZGVkX3BhY2thZ2Vz",
+            "GAIgAygLMgouU3RvcmVJdGVtGm8KCkNhdGVnb3JpZXMSJAocc3VwcG9ydGVk",
+            "X3BsYXllcl9jYXRlZ29yeWlkcxgCIAMoDRIbChNmZWF0dXJlX2NhdGVnb3J5",
+            "aWRzGAMgAygNEh4KFmNvbnRyb2xsZXJfY2F0ZWdvcnlpZHMYBCADKA0asAIK",
+            "B1Jldmlld3MSPwoQc3VtbWFyeV9maWx0ZXJlZBgBIAEoCzIlLlN0b3JlSXRl",
+            "bS5SZXZpZXdzLlN0b3JlUmV2aWV3U3VtbWFyeRJBChJzdW1tYXJ5X3VuZmls",
+            "dGVyZWQYAiABKAsyJS5TdG9yZUl0ZW0uUmV2aWV3cy5TdG9yZVJldmlld1N1",
+            "bW1hcnkaoAEKElN0b3JlUmV2aWV3U3VtbWFyeRIUCgxyZXZpZXdfY291bnQY",
+            "ASABKA0SGAoQcGVyY2VudF9wb3NpdGl2ZRgCIAEoBRI+CgxyZXZpZXdfc2Nv",
+            "cmUYAyABKA4yES5FVXNlclJldmlld1Njb3JlOhVFVXNlclJldmlld1Njb3Jl",
+            "X05vbmUSGgoScmV2aWV3X3Njb3JlX2xhYmVsGAQgASgJGrACCglCYXNpY0lu",
+            "Zm8SGQoRc2hvcnRfZGVzY3JpcHRpb24YASABKAkSOAoKcHVibGlzaGVycxgC",
+            "IAMoCzIkLlN0b3JlSXRlbS5CYXNpY0luZm8uQ3JlYXRvckhvbWVMaW5rEjgK",
+            "CmRldmVsb3BlcnMYAyADKAsyJC5TdG9yZUl0ZW0uQmFzaWNJbmZvLkNyZWF0",
+            "b3JIb21lTGluaxI4CgpmcmFuY2hpc2VzGAQgAygLMiQuU3RvcmVJdGVtLkJh",
+            "c2ljSW5mby5DcmVhdG9ySG9tZUxpbmsSGAoQY2Fwc3VsZV9oZWFkbGluZRgF",
+            "IAEoCRpACg9DcmVhdG9ySG9tZUxpbmsSDAoEbmFtZRgBIAEoCRIfChdjcmVh",
+            "dG9yX2NsYW5fYWNjb3VudF9pZBgCIAEoDRokCgNUYWcSDQoFdGFnaWQYASAB",
+            "KA0SDgoGd2VpZ2h0GAIgASgNGtACCgZBc3NldHMSGAoQYXNzZXRfdXJsX2Zv",
+            "cm1hdBgBIAEoCRIUCgxtYWluX2NhcHN1bGUYAiABKAkSFQoNc21hbGxfY2Fw",
+            "c3VsZRgDIAEoCRIOCgZoZWFkZXIYBCABKAkSFgoOcGFja2FnZV9oZWFkZXIY",
+            "BSABKAkSFwoPcGFnZV9iYWNrZ3JvdW5kGAYgASgJEhQKDGhlcm9fY2Fwc3Vs",
+            "ZRgHIAEoCRIXCg9oZXJvX2NhcHN1bGVfMngYCCABKAkSFwoPbGlicmFyeV9j",
+            "YXBzdWxlGAkgASgJEhoKEmxpYnJhcnlfY2Fwc3VsZV8yeBgKIAEoCRIUCgxs",
+            "aWJyYXJ5X2hlcm8YCyABKAkSFwoPbGlicmFyeV9oZXJvXzJ4GAwgASgJEhYK",
+            "DmNvbW11bml0eV9pY29uGA0gASgJEhMKC2NsYW5fYXZhdGFyGA4gASgJGswC",
+            "CgtSZWxlYXNlSW5mbxIaChJzdGVhbV9yZWxlYXNlX2RhdGUYASABKA0SHQoV",
+            "b3JpZ2luYWxfcmVsZWFzZV9kYXRlGAIgASgNEiMKG29yaWdpbmFsX3N0ZWFt",
+            "X3JlbGVhc2VfZGF0ZRgDIAEoDRIWCg5pc19jb21pbmdfc29vbhgEIAEoCBIS",
+            "Cgppc19wcmVsb2FkGAUgASgIEiMKG2N1c3RvbV9yZWxlYXNlX2RhdGVfbWVz",
+            "c2FnZRgGIAEoCRIgChhpc19hYnJpZGdlZF9yZWxlYXNlX2RhdGUYByABKAgS",
+            "GwoTY29taW5nX3Nvb25fZGlzcGxheRgIIAEoCRIXCg9pc19lYXJseV9hY2Nl",
+            "c3MYCiABKAgSGAoQbWFjX3JlbGVhc2VfZGF0ZRgUIAEoDRIaChJsaW51eF9y",
+            "ZWxlYXNlX2RhdGUYFSABKA0a4QIKCVBsYXRmb3JtcxIPCgd3aW5kb3dzGAEg",
+            "ASgIEgsKA21hYxgCIAEoCBIVCg1zdGVhbW9zX2xpbnV4GAMgASgIEjIKCnZy",
+            "X3N1cHBvcnQYCiABKAsyHi5TdG9yZUl0ZW0uUGxhdGZvcm1zLlZSU3VwcG9y",
+            "dBJrChhzdGVhbV9kZWNjb21wYXRfY2F0ZWdvcnkYCyABKA4yIC5FU3RlYW1E",
+            "ZWNrQ29tcGF0aWJpbGl0eUNhdGVnb3J5OidFU3RlYW1EZWNrQ29tcGF0aWJp",
+            "bGl0eUNhdGVnb3J5X1Vua25vd24afgoJVlJTdXBwb3J0Eg0KBXZyaG1kGAEg",
+            "ASgIEhIKCnZyaG1kX29ubHkYAiABKAgSEAoIaHRjX3ZpdmUYKCABKAgSEwoL",
+            "b2N1bHVzX3JpZnQYKSABKAgSEgoKd2luZG93c19tchgqIAEoCBITCgt2YWx2",
+            "ZV9pbmRleBgrIAEoCBqoCAoOUHVyY2hhc2VPcHRpb24SEQoJcGFja2FnZWlk",
+            "GAEgASgFEhAKCGJ1bmRsZWlkGAIgASgFEhwKFHB1cmNoYXNlX29wdGlvbl9u",
+            "YW1lGAMgASgJEhwKFGZpbmFsX3ByaWNlX2luX2NlbnRzGAUgASgDEh8KF29y",
+            "aWdpbmFsX3ByaWNlX2luX2NlbnRzGAYgASgDEh0KFWZvcm1hdHRlZF9maW5h",
+            "bF9wcmljZRgIIAEoCRIgChhmb3JtYXR0ZWRfb3JpZ2luYWxfcHJpY2UYCSAB",
+            "KAkSFAoMZGlzY291bnRfcGN0GAogASgFEhsKE2J1bmRsZV9kaXNjb3VudF9w",
+            "Y3QYDCABKAUSFwoPaXNfZnJlZV90b19rZWVwGA0gASgIEiQKHHByaWNlX2Jl",
+            "Zm9yZV9idW5kbGVfZGlzY291bnQYDiABKAMSLgomZm9ybWF0dGVkX3ByaWNl",
+            "X2JlZm9yZV9idW5kbGVfZGlzY291bnQYDyABKAkSPAoQYWN0aXZlX2Rpc2Nv",
+            "dW50cxgUIAMoCzIiLlN0b3JlSXRlbS5QdXJjaGFzZU9wdGlvbi5EaXNjb3Vu",
+            "dBIhChl1c2VyX2Nhbl9wdXJjaGFzZV9hc19naWZ0GB8gASgIEh0KFWlzX2Nv",
+            "bW1lcmNpYWxfbGljZW5zZRgoIAEoCBIkChxzaG91bGRfc3VwcHJlc3NfZGlz",
+            "Y291bnRfcGN0GCkgASgIEi8KIGhpZGVfZGlzY291bnRfcGN0X2Zvcl9jb21w",
+            "bGlhbmNlGCogASgIOgVmYWxzZRIeChNpbmNsdWRlZF9nYW1lX2NvdW50GCsg",
+            "ASgFOgExEiQKHGxvd2VzdF9yZWNlbnRfcHJpY2VfaW5fY2VudHMYLCABKAMS",
+            "GQoRcmVxdWlyZXNfc2hpcHBpbmcYLSABKAgSQQoPcmVjdXJyZW5jZV9pbmZv",
+            "GC4gASgLMiguU3RvcmVJdGVtLlB1cmNoYXNlT3B0aW9uLlJlY3VycmVuY2VJ",
+            "bmZvEhkKEWZyZWVfdG9fa2VlcF9lbmRzGC8gASgNGlwKCERpc2NvdW50EhcK",
+            "D2Rpc2NvdW50X2Ftb3VudBgBIAEoAxIcChRkaXNjb3VudF9kZXNjcmlwdGlv",
+            "bhgCIAEoCRIZChFkaXNjb3VudF9lbmRfZGF0ZRgDIAEoDRq8AQoOUmVjdXJy",
+            "ZW5jZUluZm8SEQoJcGFja2FnZWlkGAEgASgFEh4KFmJpbGxpbmdfYWdyZWVt",
+            "ZW50X3R5cGUYAiABKAUSGQoRcmVuZXdhbF90aW1lX3VuaXQYAyABKAUSGwoT",
+            "cmVuZXdhbF90aW1lX3BlcmlvZBgEIAEoBRIeChZyZW5ld2FsX3ByaWNlX2lu",
+            "X2NlbnRzGAUgASgDEh8KF2Zvcm1hdHRlZF9yZW5ld2FsX3ByaWNlGAYgASgJ",
+            "GsYBCgtTY3JlZW5zaG90cxI/ChRhbGxfYWdlc19zY3JlZW5zaG90cxgCIAMo",
+            "CzIhLlN0b3JlSXRlbS5TY3JlZW5zaG90cy5TY3JlZW5zaG90EkUKGm1hdHVy",
+            "ZV9jb250ZW50X3NjcmVlbnNob3RzGAMgAygLMiEuU3RvcmVJdGVtLlNjcmVl",
+            "bnNob3RzLlNjcmVlbnNob3QaLwoKU2NyZWVuc2hvdBIQCghmaWxlbmFtZRgB",
+            "IAEoCRIPCgdvcmRpbmFsGAIgASgFGpUECghUcmFpbGVycxIvCgpoaWdobGln",
+            "aHRzGAEgAygLMhsuU3RvcmVJdGVtLlRyYWlsZXJzLlRyYWlsZXISMwoOb3Ro",
+            "ZXJfdHJhaWxlcnMYAiADKAsyGy5TdG9yZUl0ZW0uVHJhaWxlcnMuVHJhaWxl",
+            "chotCgtWaWRlb1NvdXJjZRIQCghmaWxlbmFtZRgBIAEoCRIMCgR0eXBlGAIg",
+            "ASgJGvMCCgdUcmFpbGVyEhQKDHRyYWlsZXJfbmFtZRgBIAEoCRIaChJ0cmFp",
+            "bGVyX3VybF9mb3JtYXQYAiABKAkSRQoQdHJhaWxlcl9jYXRlZ29yeRgNIAEo",
+            "DjIRLkVUcmFpbGVyQ2F0ZWdvcnk6GEVUcmFpbGVyQ2F0ZWdvcnlfSW52YWxp",
+            "ZBI1Cgx0cmFpbGVyXzQ4MHAYAyADKAsyHy5TdG9yZUl0ZW0uVHJhaWxlcnMu",
+            "VmlkZW9Tb3VyY2USNAoLdHJhaWxlcl9tYXgYBCADKAsyHy5TdG9yZUl0ZW0u",
+            "VHJhaWxlcnMuVmlkZW9Tb3VyY2USNQoMbWljcm90cmFpbGVyGAUgAygLMh8u",
+            "U3RvcmVJdGVtLlRyYWlsZXJzLlZpZGVvU291cmNlEhkKEXNjcmVlbnNob3Rf",
+            "bWVkaXVtGAogASgJEhcKD3NjcmVlbnNob3RfZnVsbBgLIAEoCRIXCg90cmFp",
+            "bGVyX2Jhc2VfaWQYDCABKAUahQEKEVN1cHBvcnRlZExhbmd1YWdlEhUKCWVs",
+            "YW5ndWFnZRgBIAEoBToCLTESHwoTZWFkZGl0aW9uYWxsYW5ndWFnZRgFIAEo",
+            "BToCLTESEQoJc3VwcG9ydGVkGAIgASgIEhIKCmZ1bGxfYXVkaW8YAyABKAgS",
+            "EQoJc3VidGl0bGVzGAQgASgIGkEKC0ZyZWVXZWVrZW5kEhIKCnN0YXJ0X3Rp",
+            "bWUYASABKA0SEAoIZW5kX3RpbWUYAiABKA0SDAoEdGV4dBgDIAEoCRpYCgRM",
+            "aW5rEjUKB2xpbnR5cGUYASABKA4yDy5FU3RvcmVMaW5rVHlwZToTRVN0b3Jl",
+            "TGlua1R5cGVfTm9uZRILCgN1cmwYAiABKAkSDAoEdGV4dBgDIAEoCSK3AQoP",
+            "U3RvcmVHYW1lUmF0aW5nEgwKBHR5cGUYASABKAkSDgoGcmF0aW5nGAIgASgJ",
+            "EhMKC2Rlc2NyaXB0b3JzGAMgAygJEhwKFGludGVyYWN0aXZlX2VsZW1lbnRz",
+            "GAQgASgJEhQKDHJlcXVpcmVkX2FnZRgKIAEoBRIUCgx1c2VfYWdlX2dhdGUY",
+            "CyABKAgSEQoJaW1hZ2VfdXJsGBQgASgJEhQKDGltYWdlX3RhcmdldBgVIAEo",
+            "CSKfAwoYU3RvcmVCcm93c2VGaWx0ZXJGYWlsdXJlElIKDmZpbHRlcl9mYWls",
+            "dXJlGAEgASgOMhouRVN0b3JlQnJvd3NlRmlsdGVyRmFpbHVyZToeRVN0b3Jl",
+            "QnJvd3NlRmlsdGVyRmFpbHVyZV9Ob25lEhUKDWFscmVhZHlfb3duZWQYBSAB",
+            "KAgSEwoLb25fd2lzaGxpc3QYBiABKAgSDwoHaWdub3JlZBgHIAEoCBIdChVu",
+            "b3RfaW5fdXNlcnNfbGFuZ3VhZ2UYCiABKAgSHQoVbm90X29uX3VzZXJzX3Bs",
+            "YXRmb3JtGAsgASgIEhsKE2RlbW9fZm9yX293bmVkX2dhbWUYDCABKAgSHAoU",
+            "ZGxjX2Zvcl91bm93bmVkX2dhbWUYDSABKAgSIQoZbm9ucHJlZmVycmVkX3By",
+            "b2R1Y3RfdHlwZRgUIAEoCBIXCg9leGNsdWRlZF90YWdpZHMYFSADKA0SPQoe",
+            "ZXhjbHVkZWRfY29udGVudF9kZXNjcmlwdG9yaWRzGB4gAygOMhUuRUNvbnRl",
+            "bnREZXNjcmlwdG9ySUQiQQoeQ1N0b3JlQnJvd3NlX0dldEl0ZW1zX1Jlc3Bv",
+            "bnNlEh8KC3N0b3JlX2l0ZW1zGAEgAygLMgouU3RvcmVJdGVtIlIKJ0NTdG9y",
+            "ZUJyb3dzZV9HZXRTdG9yZUNhdGVnb3JpZXNfUmVxdWVzdBIQCghsYW5ndWFn",
+            "ZRgBIAEoCRIVCgllbGFuZ3VhZ2UYAiABKAU6Ai0xIugCCihDU3RvcmVCcm93",
+            "c2VfR2V0U3RvcmVDYXRlZ29yaWVzX1Jlc3BvbnNlEkYKCmNhdGVnb3JpZXMY",
+            "ASADKAsyMi5DU3RvcmVCcm93c2VfR2V0U3RvcmVDYXRlZ29yaWVzX1Jlc3Bv",
+            "bnNlLkNhdGVnb3J5GvMBCghDYXRlZ29yeRISCgpjYXRlZ29yeWlkGAEgASgN",
+            "Ej4KBHR5cGUYAiABKA4yEy5FU3RvcmVDYXRlZ29yeVR5cGU6G0VTdG9yZUNh",
+            "dGVnb3J5VHlwZV9DYXRlZ29yeRIVCg1pbnRlcm5hbF9uYW1lGAMgASgJEhQK",
+            "DGRpc3BsYXlfbmFtZRgEIAEoCRIRCglpbWFnZV91cmwYBSABKAkSFgoOc2hv",
+            "d19pbl9zZWFyY2gYBiABKAgSEAoIY29tcHV0ZWQYByABKAgSEAoIZWRpdF91",
+            "cmwYCCABKAkSFwoPZWRpdF9zb3J0X29yZGVyGAkgASgNIlEKIkNTdG9yZUJy",
+            "b3dzZV9HZXRQcmljZVN0b3BzX1JlcXVlc3QSFAoMY291bnRyeV9jb2RlGAEg",
+            "ASgJEhUKDWN1cnJlbmN5X2NvZGUYAiABKAkiwQEKI0NTdG9yZUJyb3dzZV9H",
+            "ZXRQcmljZVN0b3BzX1Jlc3BvbnNlEkMKC3ByaWNlX3N0b3BzGAEgAygLMi4u",
+            "Q1N0b3JlQnJvd3NlX0dldFByaWNlU3RvcHNfUmVzcG9uc2UuUHJpY2VTdG9w",
+            "EhUKDWN1cnJlbmN5X2NvZGUYAiABKAkaPgoJUHJpY2VTdG9wEhgKEGZvcm1h",
+            "dHRlZF9hbW91bnQYASABKAkSFwoPYW1vdW50X2luX2NlbnRzGAIgASgDIqcB",
+            "CiJDU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc19SZXF1ZXN0EiQKB2NvbnRl",
+            "eHQYASABKAsyEy5TdG9yZUJyb3dzZUNvbnRleHQSLAoRc3RvcmVfcGFnZV9m",
+            "aWx0ZXIYAiABKAsyES5DU3RvcmVQYWdlRmlsdGVyEhwKBmFwcGlkcxgDIAMo",
+            "CzIMLlN0b3JlSXRlbUlEEg8KB3N0ZWFtaWQYBCABKAQi/gIKI0NTdG9yZUJy",
+            "b3dzZV9HZXRETENGb3JBcHBzX1Jlc3BvbnNlEj4KCGRsY19kYXRhGAEgAygL",
+            "MiwuQ1N0b3JlQnJvd3NlX0dldERMQ0ZvckFwcHNfUmVzcG9uc2UuRExDRGF0",
+            "YRJFCghwbGF5dGltZRgCIAMoCzIzLkNTdG9yZUJyb3dzZV9HZXRETENGb3JB",
+            "cHBzX1Jlc3BvbnNlLlBsYXl0aW1lRm9yQXBwGocBCgdETENEYXRhEg0KBWFw",
+            "cGlkGAEgASgNEhMKC3BhcmVudGFwcGlkGAIgASgNEhQKDHJlbGVhc2VfZGF0",
+            "ZRgDIAEoDRITCgtjb21pbmdfc29vbhgEIAEoCBINCgVwcmljZRgFIAEoAxIQ",
+            "CghkaXNjb3VudBgGIAEoDRIMCgRmcmVlGAcgASgIGkYKDlBsYXl0aW1lRm9y",
+            "QXBwEg0KBWFwcGlkGAEgASgNEhAKCHBsYXl0aW1lGAIgASgNEhMKC2xhc3Rf",
+            "cGxheWVkGAMgASgNIqsBCiZDU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc1Nv",
+            "bHJfUmVxdWVzdBIkCgdjb250ZXh0GAEgASgLMhMuU3RvcmVCcm93c2VDb250",
+            "ZXh0Eg4KBmFwcGlkcxgCIAMoDRIOCgZmbGF2b3IYAyABKAkSDQoFY291bnQY",
+            "BCABKA0SLAoRc3RvcmVfcGFnZV9maWx0ZXIYBSABKAsyES5DU3RvcmVQYWdl",
+            "RmlsdGVyIqMBCidDU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc1NvbHJfUmVz",
+            "cG9uc2USQwoJZGxjX2xpc3RzGAEgAygLMjAuQ1N0b3JlQnJvd3NlX0dldERM",
+            "Q0ZvckFwcHNTb2xyX1Jlc3BvbnNlLkRMQ0xpc3QaMwoHRExDTGlzdBIUCgxw",
+            "YXJlbnRfYXBwaWQYASABKA0SEgoKZGxjX2FwcGlkcxgCIAMoDSJgCiVDU3Rv",
+            "cmVCcm93c2VfR2V0SGFyZHdhcmVJdGVtc19SZXF1ZXN0EhEKCXBhY2thZ2Vp",
+            "ZBgBIAMoDRIkCgdjb250ZXh0GAIgASgLMhMuU3RvcmVCcm93c2VDb250ZXh0",
+            "IpQEChdDSGFyZHdhcmVQYWNrYWdlRGV0YWlscxIRCglwYWNrYWdlaWQYASAB",
+            "KA0SGwoTaW52ZW50b3J5X2F2YWlsYWJsZRgDIAEoCBIbChNoaWdoX3BlbmRp",
+            "bmdfb3JkZXJzGAQgASgIEioKImFjY291bnRfcmVzdHJpY3RlZF9mcm9tX3B1",
+            "cmNoYXNpbmcYBSABKAgSHAoUcmVxdWlyZXNfcmVzZXJ2YXRpb24YBiABKAgS",
+            "JAoccnRpbWVfZXN0aW1hdGVkX25vdGlmaWNhdGlvbhgHIAEoDRIZChFub3Rp",
+            "ZmljYXRvbl90b2tlbhgIIAEoCRIZChFyZXNlcnZhdGlvbl9zdGF0ZRgJIAEo",
+            "BRIPCgdleHBpcmVkGAogASgIEhQKDHRpbWVfZXhwaXJlcxgLIAEoDRIVCg10",
+            "aW1lX3Jlc2VydmVkGAwgASgNEh8KF2FsbG93X3F1YW50aXR5X3B1cmNoYXNl",
+            "GA0gASgIEiEKGW1heF9xdWFudGl0eV9wZXJfcHVyY2hhc2UYDiABKAUSIQoZ",
+            "YWxsb3dfcHVyY2hhc2VfaW5fY291bnRyeRgPIAEoCBIwCihlc3RpbWF0ZWRf",
+            "ZGVsaXZlcnlfc29vbmVzdF9idXNpbmVzc19kYXlzGBEgASgNEi8KJ2VzdGlt",
+            "YXRlZF9kZWxpdmVyeV9sYXRlc3RfYnVzaW5lc3NfZGF5cxgSIAEoDSJTCiZD",
+            "U3RvcmVCcm93c2VfR2V0SGFyZHdhcmVJdGVtc19SZXNwb25zZRIpCgdkZXRh",
+            "aWxzGAEgAygLMhguQ0hhcmR3YXJlUGFja2FnZURldGFpbHMq8AEKDkVTdG9y",
+            "ZUl0ZW1UeXBlEiMKFkVTdG9yZUl0ZW1UeXBlX0ludmFsaWQQ////////////",
+            "ARIWChJFU3RvcmVJdGVtVHlwZV9BcHAQABIaChZFU3RvcmVJdGVtVHlwZV9Q",
+            "YWNrYWdlEAESGQoVRVN0b3JlSXRlbVR5cGVfQnVuZGxlEAISFgoSRVN0b3Jl",
+            "SXRlbVR5cGVfTXR4EAMSFgoSRVN0b3JlSXRlbVR5cGVfVGFnEAQSGgoWRVN0",
+            "b3JlSXRlbVR5cGVfQ3JlYXRvchAFEh4KGkVTdG9yZUl0ZW1UeXBlX0h1YkNh",
+            "dGVnb3J5EAYqjQMKDUVTdG9yZUFwcFR5cGUSFgoSRVN0b3JlQXBwVHlwZV9H",
+            "YW1lEAASFgoSRVN0b3JlQXBwVHlwZV9EZW1vEAESFQoRRVN0b3JlQXBwVHlw",
+            "ZV9Nb2QQAhIXChNFU3RvcmVBcHBUeXBlX01vdmllEAMSFQoRRVN0b3JlQXBw",
+            "VHlwZV9ETEMQBBIXChNFU3RvcmVBcHBUeXBlX0d1aWRlEAUSGgoWRVN0b3Jl",
+            "QXBwVHlwZV9Tb2Z0d2FyZRAGEhcKE0VTdG9yZUFwcFR5cGVfVmlkZW8QBxIY",
+            "ChRFU3RvcmVBcHBUeXBlX1NlcmllcxAIEhkKFUVTdG9yZUFwcFR5cGVfRXBp",
+            "c29kZRAJEhoKFkVTdG9yZUFwcFR5cGVfSGFyZHdhcmUQChIXChNFU3RvcmVB",
+            "cHBUeXBlX011c2ljEAsSFgoSRVN0b3JlQXBwVHlwZV9CZXRhEAwSFgoSRVN0",
+            "b3JlQXBwVHlwZV9Ub29sEA0SHQoZRVN0b3JlQXBwVHlwZV9BZHZlcnRpc2lu",
+            "ZxAOKvECChBFVXNlclJldmlld1Njb3JlEhkKFUVVc2VyUmV2aWV3U2NvcmVf",
+            "Tm9uZRAAEisKJ0VVc2VyUmV2aWV3U2NvcmVfT3ZlcndoZWxtaW5nbHlOZWdh",
+            "dGl2ZRABEiEKHUVVc2VyUmV2aWV3U2NvcmVfVmVyeU5lZ2F0aXZlEAISHQoZ",
+            "RVVzZXJSZXZpZXdTY29yZV9OZWdhdGl2ZRADEiMKH0VVc2VyUmV2aWV3U2Nv",
+            "cmVfTW9zdGx5TmVnYXRpdmUQBBIaChZFVXNlclJldmlld1Njb3JlX01peGVk",
+            "EAUSIwofRVVzZXJSZXZpZXdTY29yZV9Nb3N0bHlQb3NpdGl2ZRAGEh0KGUVV",
+            "c2VyUmV2aWV3U2NvcmVfUG9zaXRpdmUQBxIhCh1FVXNlclJldmlld1Njb3Jl",
+            "X1ZlcnlQb3NpdGl2ZRAIEisKJ0VVc2VyUmV2aWV3U2NvcmVfT3ZlcndoZWxt",
+            "aW5nbHlQb3NpdGl2ZRAJKukBChBFVHJhaWxlckNhdGVnb3J5EhwKGEVUcmFp",
+            "bGVyQ2F0ZWdvcnlfSW52YWxpZBAAEh0KGUVUcmFpbGVyQ2F0ZWdvcnlfR2Ft",
+            "ZXBsYXkQARIbChdFVHJhaWxlckNhdGVnb3J5X1RlYXNlchACEh4KGkVUcmFp",
+            "bGVyQ2F0ZWdvcnlfQ2luZW1hdGljEAMSGwoXRVRyYWlsZXJDYXRlZ29yeV9V",
+            "cGRhdGUQBBIeChpFVHJhaWxlckNhdGVnb3J5X0FjY29sYWRlcxAFEh4KGkVU",
+            "cmFpbGVyQ2F0ZWdvcnlfSW50ZXJ2aWV3EAYqmwIKGUVTdG9yZUJyb3dzZUZp",
+            "bHRlckZhaWx1cmUSIgoeRVN0b3JlQnJvd3NlRmlsdGVyRmFpbHVyZV9Ob25l",
+            "EAASJwojRVN0b3JlQnJvd3NlRmlsdGVyRmFpbHVyZV9SZWR1bmRhbnQQChIq",
+            "CiZFU3RvcmVCcm93c2VGaWx0ZXJGYWlsdXJlX05vdFByZWZlcnJlZBAUEisK",
+            "J0VTdG9yZUJyb3dzZUZpbHRlckZhaWx1cmVfTm90SW50ZXJlc3RlZBAeEi0K",
+            "KUVTdG9yZUJyb3dzZUZpbHRlckZhaWx1cmVfVW53YW50ZWRDb250ZW50ECgS",
+            "KQolRVN0b3JlQnJvd3NlRmlsdGVyRmFpbHVyZV9VbmF2YWlsYWJsZRAyKpsF",
+            "Cg5FU3RvcmVMaW5rVHlwZRIXChNFU3RvcmVMaW5rVHlwZV9Ob25lEAASGgoW",
+            "RVN0b3JlTGlua1R5cGVfWW91VHViZRABEhsKF0VTdG9yZUxpbmtUeXBlX0Zh",
+            "Y2Vib29rEAISGgoWRVN0b3JlTGlua1R5cGVfVHdpdHRlchADEhkKFUVTdG9y",
+            "ZUxpbmtUeXBlX1R3aXRjaBAEEhoKFkVTdG9yZUxpbmtUeXBlX0Rpc2NvcmQQ",
+            "BRIVChFFU3RvcmVMaW5rVHlwZV9RURAGEhUKEUVTdG9yZUxpbmtUeXBlX1ZL",
+            "EAcSGwoXRVN0b3JlTGlua1R5cGVfQmlsaWJpbGkQCBIYChRFU3RvcmVMaW5r",
+            "VHlwZV9XZWlibxAJEhkKFUVTdG9yZUxpbmtUeXBlX1JlZGRpdBAKEhwKGEVT",
+            "dG9yZUxpbmtUeXBlX0luc3RhZ3JhbRALEhkKFUVTdG9yZUxpbmtUeXBlX1R1",
+            "bWJschAMEhgKFEVTdG9yZUxpbmtUeXBlX1RpZWJhEA0SGQoVRVN0b3JlTGlu",
+            "a1R5cGVfVGlrdG9rEA4SGwoXRVN0b3JlTGlua1R5cGVfVGVsZWdyYW0QDxIb",
+            "ChdFU3RvcmVMaW5rVHlwZV9MaW5rZWRJbhAQEhkKFUVTdG9yZUxpbmtUeXBl",
+            "X1dlQ2hhdBAREhkKFUVTdG9yZUxpbmtUeXBlX1FRTGluaxASEhkKFUVTdG9y",
+            "ZUxpbmtUeXBlX0RvdXlpbhATEhoKFkVTdG9yZUxpbmtUeXBlX0JsdWVza3kQ",
+            "FBIbChdFU3RvcmVMaW5rVHlwZV9NYXN0b2RvbhAVEhoKFkVTdG9yZUxpbmtU",
+            "eXBlX1RocmVhZHMQFhIWChJFU3RvcmVMaW5rVHlwZV9NQVgQFyroAQoSRVN0",
+            "b3JlQ2F0ZWdvcnlUeXBlEh8KG0VTdG9yZUNhdGVnb3J5VHlwZV9DYXRlZ29y",
+            "eRAAEicKI0VTdG9yZUNhdGVnb3J5VHlwZV9TdXBwb3J0ZWRQbGF5ZXJzEAES",
+            "HgoaRVN0b3JlQ2F0ZWdvcnlUeXBlX0ZlYXR1cmUQAhIoCiRFU3RvcmVDYXRl",
+            "Z29yeVR5cGVfQ29udHJvbGxlclN1cHBvcnQQAxIiCh5FU3RvcmVDYXRlZ29y",
+            "eVR5cGVfQ2xvdWRHYW1pbmcQBBIaChZFU3RvcmVDYXRlZ29yeVR5cGVfTUFY",
+            "EAUyygQKC1N0b3JlQnJvd3NlEksKCEdldEl0ZW1zEh4uQ1N0b3JlQnJvd3Nl",
+            "X0dldEl0ZW1zX1JlcXVlc3QaHy5DU3RvcmVCcm93c2VfR2V0SXRlbXNfUmVz",
+            "cG9uc2USaQoSR2V0U3RvcmVDYXRlZ29yaWVzEiguQ1N0b3JlQnJvd3NlX0dl",
+            "dFN0b3JlQ2F0ZWdvcmllc19SZXF1ZXN0GikuQ1N0b3JlQnJvd3NlX0dldFN0",
+            "b3JlQ2F0ZWdvcmllc19SZXNwb25zZRJaCg1HZXRQcmljZVN0b3BzEiMuQ1N0",
+            "b3JlQnJvd3NlX0dldFByaWNlU3RvcHNfUmVxdWVzdBokLkNTdG9yZUJyb3dz",
+            "ZV9HZXRQcmljZVN0b3BzX1Jlc3BvbnNlEloKDUdldERMQ0ZvckFwcHMSIy5D",
+            "U3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc19SZXF1ZXN0GiQuQ1N0b3JlQnJv",
+            "d3NlX0dldERMQ0ZvckFwcHNfUmVzcG9uc2USZgoRR2V0RExDRm9yQXBwc1Nv",
+            "bHISJy5DU3RvcmVCcm93c2VfR2V0RExDRm9yQXBwc1NvbHJfUmVxdWVzdBoo",
+            "LkNTdG9yZUJyb3dzZV9HZXRETENGb3JBcHBzU29scl9SZXNwb25zZRJjChBH",
+            "ZXRIYXJkd2FyZUl0ZW1zEiYuQ1N0b3JlQnJvd3NlX0dldEhhcmR3YXJlSXRl",
+            "bXNfUmVxdWVzdBonLkNTdG9yZUJyb3dzZV9HZXRIYXJkd2FyZUl0ZW1zX1Jl",
+            "c3BvbnNlQh2AAQGqAhdPcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zg=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesUnifiedBaseSteamclientReflection.Descriptor, global::OpenSteamworks.Protobuf.EnumsProductinfoReflection.Descriptor, global::OpenSteamworks.Protobuf.EnumsReflection.Descriptor, global::OpenSteamworks.Protobuf.ContenthubsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OpenSteamworks.Protobuf.EStoreItemType), typeof(global::OpenSteamworks.Protobuf.EStoreAppType), typeof(global::OpenSteamworks.Protobuf.EUserReviewScore), typeof(global::OpenSteamworks.Protobuf.EStoreBrowseFilterFailure), typeof(global::OpenSteamworks.Protobuf.EStoreLinkType), typeof(global::OpenSteamworks.Protobuf.EStoreCategoryType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OpenSteamworks.Protobuf.EStoreItemType), typeof(global::OpenSteamworks.Protobuf.EStoreAppType), typeof(global::OpenSteamworks.Protobuf.EUserReviewScore), typeof(global::OpenSteamworks.Protobuf.ETrailerCategory), typeof(global::OpenSteamworks.Protobuf.EStoreBrowseFilterFailure), typeof(global::OpenSteamworks.Protobuf.EStoreLinkType), typeof(global::OpenSteamworks.Protobuf.EStoreCategoryType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItemID), global::OpenSteamworks.Protobuf.StoreItemID.Parser, new[]{ "Appid", "Packageid", "Bundleid", "Tagid", "Creatorid", "Hubcategoryid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreBrowseContext), global::OpenSteamworks.Protobuf.StoreBrowseContext.Parser, new[]{ "Language", "Elanguage", "CountryCode", "SteamRealm" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreBrowseItemDataRequest), global::OpenSteamworks.Protobuf.StoreBrowseItemDataRequest.Parser, new[]{ "IncludeAssets", "IncludeRelease", "IncludePlatforms", "IncludeAllPurchaseOptions", "IncludeScreenshots", "IncludeTrailers", "IncludeRatings", "IncludeTagCount", "IncludeReviews", "IncludeBasicInfo", "IncludeSupportedLanguages", "IncludeFullDescription", "IncludeIncludedItems", "IncludedItemDataRequest", "IncludeAssetsWithoutOverrides", "ApplyUserFilters", "IncludeLinks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetItems_Request), global::OpenSteamworks.Protobuf.CStoreBrowse_GetItems_Request.Parser, new[]{ "Ids", "Context", "DataRequest" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem), global::OpenSteamworks.Protobuf.StoreItem.Parser, new[]{ "ItemType", "Id", "Success", "Visible", "UnvailableForCountryRestriction", "Name", "StoreUrlPath", "Appid", "Type", "IncludedTypes", "IncludedAppids", "IsFree", "IsEarlyAccess", "RelatedItems", "IncludedItems", "ContentDescriptorids", "Tagids", "Categories", "Reviews", "BasicInfo", "Tags", "Assets", "Release", "Platforms", "GameRating", "BestPurchaseOption", "PurchaseOptions", "Accessories", "SelfPurchaseOption", "Screenshots", "Trailers", "SupportedLanguages", "StoreUrlPathOverride", "FreeWeekend", "Unlisted", "GameCount", "InternalName", "FullDescription", "IsFreeTemporarily", "AssetsWithoutOverrides", "UserFilterFailure", "Links" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.RelatedItems), global::OpenSteamworks.Protobuf.StoreItem.Types.RelatedItems.Parser, new[]{ "ParentAppid", "DemoAppid", "StandaloneDemoAppid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem), global::OpenSteamworks.Protobuf.StoreItem.Parser, new[]{ "ItemType", "Id", "Success", "Visible", "UnvailableForCountryRestriction", "Name", "StoreUrlPath", "Appid", "Type", "IncludedTypes", "IncludedAppids", "IsFree", "IsEarlyAccess", "RelatedItems", "IncludedItems", "ContentDescriptorids", "Tagids", "Categories", "Reviews", "BasicInfo", "Tags", "Assets", "Release", "Platforms", "GameRating", "IsComingSoon", "BestPurchaseOption", "PurchaseOptions", "Accessories", "SelfPurchaseOption", "Screenshots", "Trailers", "SupportedLanguages", "StoreUrlPathOverride", "FreeWeekend", "Unlisted", "GameCount", "InternalName", "FullDescription", "IsFreeTemporarily", "AssetsWithoutOverrides", "UserFilterFailure", "Links" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.RelatedItems), global::OpenSteamworks.Protobuf.StoreItem.Types.RelatedItems.Parser, new[]{ "ParentAppid", "DemoAppid", "StandaloneDemoAppid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.IncludedItems), global::OpenSteamworks.Protobuf.StoreItem.Types.IncludedItems.Parser, new[]{ "IncludedApps", "IncludedPackages" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Categories), global::OpenSteamworks.Protobuf.StoreItem.Types.Categories.Parser, new[]{ "SupportedPlayerCategoryids", "FeatureCategoryids", "ControllerCategoryids" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Reviews), global::OpenSteamworks.Protobuf.StoreItem.Types.Reviews.Parser, new[]{ "SummaryFiltered", "SummaryUnfiltered" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Reviews.Types.StoreReviewSummary), global::OpenSteamworks.Protobuf.StoreItem.Types.Reviews.Types.StoreReviewSummary.Parser, new[]{ "ReviewCount", "PercentPositive", "ReviewScore", "ReviewScoreLabel" }, null, null, null, null)}),
@@ -317,11 +326,11 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Assets), global::OpenSteamworks.Protobuf.StoreItem.Types.Assets.Parser, new[]{ "AssetUrlFormat", "MainCapsule", "SmallCapsule", "Header", "PackageHeader", "PageBackground", "HeroCapsule", "HeroCapsule2X", "LibraryCapsule", "LibraryCapsule2X", "LibraryHero", "LibraryHero2X", "CommunityIcon", "ClanAvatar" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.ReleaseInfo), global::OpenSteamworks.Protobuf.StoreItem.Types.ReleaseInfo.Parser, new[]{ "SteamReleaseDate", "OriginalReleaseDate", "OriginalSteamReleaseDate", "IsComingSoon", "IsPreload", "CustomReleaseDateMessage", "IsAbridgedReleaseDate", "ComingSoonDisplay", "IsEarlyAccess", "MacReleaseDate", "LinuxReleaseDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Platforms), global::OpenSteamworks.Protobuf.StoreItem.Types.Platforms.Parser, new[]{ "Windows", "Mac", "SteamosLinux", "VrSupport", "SteamDeccompatCategory" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Platforms.Types.VRSupport), global::OpenSteamworks.Protobuf.StoreItem.Types.Platforms.Types.VRSupport.Parser, new[]{ "Vrhmd", "VrhmdOnly", "HtcVive", "OculusRift", "WindowsMr", "ValveIndex" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption), global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Parser, new[]{ "Packageid", "Bundleid", "PurchaseOptionName", "FinalPriceInCents", "OriginalPriceInCents", "UserFinalPriceInCents", "FormattedFinalPrice", "FormattedOriginalPrice", "DiscountPct", "UserDiscountPct", "BundleDiscountPct", "ActiveDiscounts", "UserActiveDiscounts", "InactiveDiscounts", "UserCanPurchase", "UserCanPurchaseAsGift", "IsCommercialLicense", "ShouldSuppressDiscountPct", "HideDiscountPctForCompliance", "IncludedGameCount", "LowestRecentPriceInCents", "RequiresShipping", "RecurrenceInfo" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount), global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount.Parser, new[]{ "DiscountAmount", "DiscountDescription", "DiscountEndDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption), global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Parser, new[]{ "Packageid", "Bundleid", "PurchaseOptionName", "FinalPriceInCents", "OriginalPriceInCents", "FormattedFinalPrice", "FormattedOriginalPrice", "DiscountPct", "BundleDiscountPct", "IsFreeToKeep", "PriceBeforeBundleDiscount", "FormattedPriceBeforeBundleDiscount", "ActiveDiscounts", "UserCanPurchaseAsGift", "IsCommercialLicense", "ShouldSuppressDiscountPct", "HideDiscountPctForCompliance", "IncludedGameCount", "LowestRecentPriceInCents", "RequiresShipping", "RecurrenceInfo", "FreeToKeepEnds" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount), global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount.Parser, new[]{ "DiscountAmount", "DiscountDescription", "DiscountEndDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.RecurrenceInfo), global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.RecurrenceInfo.Parser, new[]{ "Packageid", "BillingAgreementType", "RenewalTimeUnit", "RenewalTimePeriod", "RenewalPriceInCents", "FormattedRenewalPrice" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Screenshots), global::OpenSteamworks.Protobuf.StoreItem.Types.Screenshots.Parser, new[]{ "AllAgesScreenshots", "MatureContentScreenshots" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Screenshots.Types.Screenshot), global::OpenSteamworks.Protobuf.StoreItem.Types.Screenshots.Types.Screenshot.Parser, new[]{ "Filename", "Ordinal" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers), global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers.Parser, new[]{ "Highlights", "OtherTrailers" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers.Types.VideoSource), global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers.Types.VideoSource.Parser, new[]{ "Filename", "Type" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers.Types.Trailer), global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers.Types.Trailer.Parser, new[]{ "TrailerName", "TrailerUrlFormat", "Trailer480P", "TrailerMax", "Microtrailer", "ScreenshotMedium", "ScreenshotFull", "TrailerBaseId" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers.Types.Trailer), global::OpenSteamworks.Protobuf.StoreItem.Types.Trailers.Types.Trailer.Parser, new[]{ "TrailerName", "TrailerUrlFormat", "TrailerCategory", "Trailer480P", "TrailerMax", "Microtrailer", "ScreenshotMedium", "ScreenshotFull", "TrailerBaseId" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.SupportedLanguage), global::OpenSteamworks.Protobuf.StoreItem.Types.SupportedLanguage.Parser, new[]{ "Elanguage", "Eadditionallanguage", "Supported", "FullAudio", "Subtitles" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.FreeWeekend), global::OpenSteamworks.Protobuf.StoreItem.Types.FreeWeekend.Parser, new[]{ "StartTime", "EndTime", "Text" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreItem.Types.Link), global::OpenSteamworks.Protobuf.StoreItem.Types.Link.Parser, new[]{ "Lintype", "Url", "Text" }, null, null, null, null)}),
@@ -329,7 +338,7 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.StoreBrowseFilterFailure), global::OpenSteamworks.Protobuf.StoreBrowseFilterFailure.Parser, new[]{ "FilterFailure", "AlreadyOwned", "OnWishlist", "Ignored", "NotInUsersLanguage", "NotOnUsersPlatform", "DemoForOwnedGame", "DlcForUnownedGame", "NonpreferredProductType", "ExcludedTagids", "ExcludedContentDescriptorids" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetItems_Response), global::OpenSteamworks.Protobuf.CStoreBrowse_GetItems_Response.Parser, new[]{ "StoreItems" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Request), global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Request.Parser, new[]{ "Language", "Elanguage" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response), global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response.Parser, new[]{ "Categories" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response.Types.Category), global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response.Types.Category.Parser, new[]{ "Categoryid", "Type", "InternalName", "DisplayName", "ImageUrl", "ShowInSearch", "Computed" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response), global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response.Parser, new[]{ "Categories" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response.Types.Category), global::OpenSteamworks.Protobuf.CStoreBrowse_GetStoreCategories_Response.Types.Category.Parser, new[]{ "Categoryid", "Type", "InternalName", "DisplayName", "ImageUrl", "ShowInSearch", "Computed", "EditUrl", "EditSortOrder" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetPriceStops_Request), global::OpenSteamworks.Protobuf.CStoreBrowse_GetPriceStops_Request.Parser, new[]{ "CountryCode", "CurrencyCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetPriceStops_Response), global::OpenSteamworks.Protobuf.CStoreBrowse_GetPriceStops_Response.Parser, new[]{ "PriceStops", "CurrencyCode" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetPriceStops_Response.Types.PriceStop), global::OpenSteamworks.Protobuf.CStoreBrowse_GetPriceStops_Response.Types.PriceStop.Parser, new[]{ "FormattedAmount", "AmountInCents" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CStoreBrowse_GetDLCForApps_Request), global::OpenSteamworks.Protobuf.CStoreBrowse_GetDLCForApps_Request.Parser, new[]{ "Context", "StorePageFilter", "Appids", "Steamid" }, null, null, null, null),
@@ -388,6 +397,16 @@ namespace OpenSteamworks.Protobuf {
     [pbr::OriginalName("EUserReviewScore_OverwhelminglyPositive")] OverwhelminglyPositive = 9,
   }
 
+  public enum ETrailerCategory {
+    [pbr::OriginalName("ETrailerCategory_Invalid")] Invalid = 0,
+    [pbr::OriginalName("ETrailerCategory_Gameplay")] Gameplay = 1,
+    [pbr::OriginalName("ETrailerCategory_Teaser")] Teaser = 2,
+    [pbr::OriginalName("ETrailerCategory_Cinematic")] Cinematic = 3,
+    [pbr::OriginalName("ETrailerCategory_Update")] Update = 4,
+    [pbr::OriginalName("ETrailerCategory_Accolades")] Accolades = 5,
+    [pbr::OriginalName("ETrailerCategory_Interview")] Interview = 6,
+  }
+
   public enum EStoreBrowseFilterFailure {
     [pbr::OriginalName("EStoreBrowseFilterFailure_None")] None = 0,
     [pbr::OriginalName("EStoreBrowseFilterFailure_Redundant")] Redundant = 10,
@@ -417,7 +436,11 @@ namespace OpenSteamworks.Protobuf {
     [pbr::OriginalName("EStoreLinkType_LinkedIn")] LinkedIn = 16,
     [pbr::OriginalName("EStoreLinkType_WeChat")] WeChat = 17,
     [pbr::OriginalName("EStoreLinkType_QQLink")] Qqlink = 18,
-    [pbr::OriginalName("EStoreLinkType_MAX")] Max = 19,
+    [pbr::OriginalName("EStoreLinkType_Douyin")] Douyin = 19,
+    [pbr::OriginalName("EStoreLinkType_Bluesky")] Bluesky = 20,
+    [pbr::OriginalName("EStoreLinkType_Mastodon")] Mastodon = 21,
+    [pbr::OriginalName("EStoreLinkType_Threads")] Threads = 22,
+    [pbr::OriginalName("EStoreLinkType_MAX")] Max = 23,
   }
 
   public enum EStoreCategoryType {
@@ -2658,6 +2681,7 @@ namespace OpenSteamworks.Protobuf {
       release_ = other.release_ != null ? other.release_.Clone() : null;
       platforms_ = other.platforms_ != null ? other.platforms_.Clone() : null;
       gameRating_ = other.gameRating_ != null ? other.gameRating_.Clone() : null;
+      isComingSoon_ = other.isComingSoon_;
       bestPurchaseOption_ = other.bestPurchaseOption_ != null ? other.bestPurchaseOption_.Clone() : null;
       purchaseOptions_ = other.purchaseOptions_.Clone();
       accessories_ = other.accessories_.Clone();
@@ -3142,6 +3166,33 @@ namespace OpenSteamworks.Protobuf {
       }
     }
 
+    /// <summary>Field number for the "is_coming_soon" field.</summary>
+    public const int IsComingSoonFieldNumber = 34;
+    private readonly static bool IsComingSoonDefaultValue = false;
+
+    private bool isComingSoon_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsComingSoon {
+      get { if ((_hasBits0 & 512) != 0) { return isComingSoon_; } else { return IsComingSoonDefaultValue; } }
+      set {
+        _hasBits0 |= 512;
+        isComingSoon_ = value;
+      }
+    }
+    /// <summary>Gets whether the "is_coming_soon" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIsComingSoon {
+      get { return (_hasBits0 & 512) != 0; }
+    }
+    /// <summary>Clears the value of the "is_coming_soon" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIsComingSoon() {
+      _hasBits0 &= ~512;
+    }
+
     /// <summary>Field number for the "best_purchase_option" field.</summary>
     public const int BestPurchaseOptionFieldNumber = 40;
     private global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption bestPurchaseOption_;
@@ -3269,9 +3320,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Unlisted {
-      get { if ((_hasBits0 & 512) != 0) { return unlisted_; } else { return UnlistedDefaultValue; } }
+      get { if ((_hasBits0 & 1024) != 0) { return unlisted_; } else { return UnlistedDefaultValue; } }
       set {
-        _hasBits0 |= 512;
+        _hasBits0 |= 1024;
         unlisted_ = value;
       }
     }
@@ -3279,13 +3330,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUnlisted {
-      get { return (_hasBits0 & 512) != 0; }
+      get { return (_hasBits0 & 1024) != 0; }
     }
     /// <summary>Clears the value of the "unlisted" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUnlisted() {
-      _hasBits0 &= ~512;
+      _hasBits0 &= ~1024;
     }
 
     /// <summary>Field number for the "game_count" field.</summary>
@@ -3296,9 +3347,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint GameCount {
-      get { if ((_hasBits0 & 1024) != 0) { return gameCount_; } else { return GameCountDefaultValue; } }
+      get { if ((_hasBits0 & 2048) != 0) { return gameCount_; } else { return GameCountDefaultValue; } }
       set {
-        _hasBits0 |= 1024;
+        _hasBits0 |= 2048;
         gameCount_ = value;
       }
     }
@@ -3306,13 +3357,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasGameCount {
-      get { return (_hasBits0 & 1024) != 0; }
+      get { return (_hasBits0 & 2048) != 0; }
     }
     /// <summary>Clears the value of the "game_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearGameCount() {
-      _hasBits0 &= ~1024;
+      _hasBits0 &= ~2048;
     }
 
     /// <summary>Field number for the "internal_name" field.</summary>
@@ -3375,9 +3426,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsFreeTemporarily {
-      get { if ((_hasBits0 & 2048) != 0) { return isFreeTemporarily_; } else { return IsFreeTemporarilyDefaultValue; } }
+      get { if ((_hasBits0 & 4096) != 0) { return isFreeTemporarily_; } else { return IsFreeTemporarilyDefaultValue; } }
       set {
-        _hasBits0 |= 2048;
+        _hasBits0 |= 4096;
         isFreeTemporarily_ = value;
       }
     }
@@ -3385,13 +3436,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsFreeTemporarily {
-      get { return (_hasBits0 & 2048) != 0; }
+      get { return (_hasBits0 & 4096) != 0; }
     }
     /// <summary>Clears the value of the "is_free_temporarily" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsFreeTemporarily() {
-      _hasBits0 &= ~2048;
+      _hasBits0 &= ~4096;
     }
 
     /// <summary>Field number for the "assets_without_overrides" field.</summary>
@@ -3469,6 +3520,7 @@ namespace OpenSteamworks.Protobuf {
       if (!object.Equals(Release, other.Release)) return false;
       if (!object.Equals(Platforms, other.Platforms)) return false;
       if (!object.Equals(GameRating, other.GameRating)) return false;
+      if (IsComingSoon != other.IsComingSoon) return false;
       if (!object.Equals(BestPurchaseOption, other.BestPurchaseOption)) return false;
       if(!purchaseOptions_.Equals(other.purchaseOptions_)) return false;
       if(!accessories_.Equals(other.accessories_)) return false;
@@ -3518,6 +3570,7 @@ namespace OpenSteamworks.Protobuf {
       if (release_ != null) hash ^= Release.GetHashCode();
       if (platforms_ != null) hash ^= Platforms.GetHashCode();
       if (gameRating_ != null) hash ^= GameRating.GetHashCode();
+      if (HasIsComingSoon) hash ^= IsComingSoon.GetHashCode();
       if (bestPurchaseOption_ != null) hash ^= BestPurchaseOption.GetHashCode();
       hash ^= purchaseOptions_.GetHashCode();
       hash ^= accessories_.GetHashCode();
@@ -3637,6 +3690,10 @@ namespace OpenSteamworks.Protobuf {
       if (gameRating_ != null) {
         output.WriteRawTag(138, 2);
         output.WriteMessage(GameRating);
+      }
+      if (HasIsComingSoon) {
+        output.WriteRawTag(144, 2);
+        output.WriteBool(IsComingSoon);
       }
       if (bestPurchaseOption_ != null) {
         output.WriteRawTag(194, 2);
@@ -3789,6 +3846,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(138, 2);
         output.WriteMessage(GameRating);
       }
+      if (HasIsComingSoon) {
+        output.WriteRawTag(144, 2);
+        output.WriteBool(IsComingSoon);
+      }
       if (bestPurchaseOption_ != null) {
         output.WriteRawTag(194, 2);
         output.WriteMessage(BestPurchaseOption);
@@ -3919,6 +3980,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (gameRating_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(GameRating);
+      }
+      if (HasIsComingSoon) {
+        size += 2 + 1;
       }
       if (bestPurchaseOption_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(BestPurchaseOption);
@@ -4066,6 +4130,9 @@ namespace OpenSteamworks.Protobuf {
           GameRating = new global::OpenSteamworks.Protobuf.StoreGameRating();
         }
         GameRating.MergeFrom(other.GameRating);
+      }
+      if (other.HasIsComingSoon) {
+        IsComingSoon = other.IsComingSoon;
       }
       if (other.bestPurchaseOption_ != null) {
         if (bestPurchaseOption_ == null) {
@@ -4279,6 +4346,10 @@ namespace OpenSteamworks.Protobuf {
               GameRating = new global::OpenSteamworks.Protobuf.StoreGameRating();
             }
             input.ReadMessage(GameRating);
+            break;
+          }
+          case 272: {
+            IsComingSoon = input.ReadBool();
             break;
           }
           case 322: {
@@ -4518,6 +4589,10 @@ namespace OpenSteamworks.Protobuf {
               GameRating = new global::OpenSteamworks.Protobuf.StoreGameRating();
             }
             input.ReadMessage(GameRating);
+            break;
+          }
+          case 272: {
+            IsComingSoon = input.ReadBool();
             break;
           }
           case 322: {
@@ -9411,16 +9486,14 @@ namespace OpenSteamworks.Protobuf {
           purchaseOptionName_ = other.purchaseOptionName_;
           finalPriceInCents_ = other.finalPriceInCents_;
           originalPriceInCents_ = other.originalPriceInCents_;
-          userFinalPriceInCents_ = other.userFinalPriceInCents_;
           formattedFinalPrice_ = other.formattedFinalPrice_;
           formattedOriginalPrice_ = other.formattedOriginalPrice_;
           discountPct_ = other.discountPct_;
-          userDiscountPct_ = other.userDiscountPct_;
           bundleDiscountPct_ = other.bundleDiscountPct_;
+          isFreeToKeep_ = other.isFreeToKeep_;
+          priceBeforeBundleDiscount_ = other.priceBeforeBundleDiscount_;
+          formattedPriceBeforeBundleDiscount_ = other.formattedPriceBeforeBundleDiscount_;
           activeDiscounts_ = other.activeDiscounts_.Clone();
-          userActiveDiscounts_ = other.userActiveDiscounts_.Clone();
-          inactiveDiscounts_ = other.inactiveDiscounts_.Clone();
-          userCanPurchase_ = other.userCanPurchase_;
           userCanPurchaseAsGift_ = other.userCanPurchaseAsGift_;
           isCommercialLicense_ = other.isCommercialLicense_;
           shouldSuppressDiscountPct_ = other.shouldSuppressDiscountPct_;
@@ -9429,6 +9502,7 @@ namespace OpenSteamworks.Protobuf {
           lowestRecentPriceInCents_ = other.lowestRecentPriceInCents_;
           requiresShipping_ = other.requiresShipping_;
           recurrenceInfo_ = other.recurrenceInfo_ != null ? other.recurrenceInfo_.Clone() : null;
+          freeToKeepEnds_ = other.freeToKeepEnds_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -9572,33 +9646,6 @@ namespace OpenSteamworks.Protobuf {
           _hasBits0 &= ~8;
         }
 
-        /// <summary>Field number for the "user_final_price_in_cents" field.</summary>
-        public const int UserFinalPriceInCentsFieldNumber = 7;
-        private readonly static long UserFinalPriceInCentsDefaultValue = 0L;
-
-        private long userFinalPriceInCents_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public long UserFinalPriceInCents {
-          get { if ((_hasBits0 & 16) != 0) { return userFinalPriceInCents_; } else { return UserFinalPriceInCentsDefaultValue; } }
-          set {
-            _hasBits0 |= 16;
-            userFinalPriceInCents_ = value;
-          }
-        }
-        /// <summary>Gets whether the "user_final_price_in_cents" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public bool HasUserFinalPriceInCents {
-          get { return (_hasBits0 & 16) != 0; }
-        }
-        /// <summary>Clears the value of the "user_final_price_in_cents" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public void ClearUserFinalPriceInCents() {
-          _hasBits0 &= ~16;
-        }
-
         /// <summary>Field number for the "formatted_final_price" field.</summary>
         public const int FormattedFinalPriceFieldNumber = 8;
         private readonly static string FormattedFinalPriceDefaultValue = "";
@@ -9659,9 +9706,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int DiscountPct {
-          get { if ((_hasBits0 & 32) != 0) { return discountPct_; } else { return DiscountPctDefaultValue; } }
+          get { if ((_hasBits0 & 16) != 0) { return discountPct_; } else { return DiscountPctDefaultValue; } }
           set {
-            _hasBits0 |= 32;
+            _hasBits0 |= 16;
             discountPct_ = value;
           }
         }
@@ -9669,40 +9716,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasDiscountPct {
-          get { return (_hasBits0 & 32) != 0; }
+          get { return (_hasBits0 & 16) != 0; }
         }
         /// <summary>Clears the value of the "discount_pct" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearDiscountPct() {
-          _hasBits0 &= ~32;
-        }
-
-        /// <summary>Field number for the "user_discount_pct" field.</summary>
-        public const int UserDiscountPctFieldNumber = 11;
-        private readonly static int UserDiscountPctDefaultValue = 0;
-
-        private int userDiscountPct_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public int UserDiscountPct {
-          get { if ((_hasBits0 & 64) != 0) { return userDiscountPct_; } else { return UserDiscountPctDefaultValue; } }
-          set {
-            _hasBits0 |= 64;
-            userDiscountPct_ = value;
-          }
-        }
-        /// <summary>Gets whether the "user_discount_pct" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public bool HasUserDiscountPct {
-          get { return (_hasBits0 & 64) != 0; }
-        }
-        /// <summary>Clears the value of the "user_discount_pct" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public void ClearUserDiscountPct() {
-          _hasBits0 &= ~64;
+          _hasBits0 &= ~16;
         }
 
         /// <summary>Field number for the "bundle_discount_pct" field.</summary>
@@ -9713,9 +9733,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int BundleDiscountPct {
-          get { if ((_hasBits0 & 128) != 0) { return bundleDiscountPct_; } else { return BundleDiscountPctDefaultValue; } }
+          get { if ((_hasBits0 & 32) != 0) { return bundleDiscountPct_; } else { return BundleDiscountPctDefaultValue; } }
           set {
-            _hasBits0 |= 128;
+            _hasBits0 |= 32;
             bundleDiscountPct_ = value;
           }
         }
@@ -9723,13 +9743,93 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasBundleDiscountPct {
-          get { return (_hasBits0 & 128) != 0; }
+          get { return (_hasBits0 & 32) != 0; }
         }
         /// <summary>Clears the value of the "bundle_discount_pct" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearBundleDiscountPct() {
+          _hasBits0 &= ~32;
+        }
+
+        /// <summary>Field number for the "is_free_to_keep" field.</summary>
+        public const int IsFreeToKeepFieldNumber = 13;
+        private readonly static bool IsFreeToKeepDefaultValue = false;
+
+        private bool isFreeToKeep_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool IsFreeToKeep {
+          get { if ((_hasBits0 & 64) != 0) { return isFreeToKeep_; } else { return IsFreeToKeepDefaultValue; } }
+          set {
+            _hasBits0 |= 64;
+            isFreeToKeep_ = value;
+          }
+        }
+        /// <summary>Gets whether the "is_free_to_keep" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasIsFreeToKeep {
+          get { return (_hasBits0 & 64) != 0; }
+        }
+        /// <summary>Clears the value of the "is_free_to_keep" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearIsFreeToKeep() {
+          _hasBits0 &= ~64;
+        }
+
+        /// <summary>Field number for the "price_before_bundle_discount" field.</summary>
+        public const int PriceBeforeBundleDiscountFieldNumber = 14;
+        private readonly static long PriceBeforeBundleDiscountDefaultValue = 0L;
+
+        private long priceBeforeBundleDiscount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public long PriceBeforeBundleDiscount {
+          get { if ((_hasBits0 & 128) != 0) { return priceBeforeBundleDiscount_; } else { return PriceBeforeBundleDiscountDefaultValue; } }
+          set {
+            _hasBits0 |= 128;
+            priceBeforeBundleDiscount_ = value;
+          }
+        }
+        /// <summary>Gets whether the "price_before_bundle_discount" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasPriceBeforeBundleDiscount {
+          get { return (_hasBits0 & 128) != 0; }
+        }
+        /// <summary>Clears the value of the "price_before_bundle_discount" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearPriceBeforeBundleDiscount() {
           _hasBits0 &= ~128;
+        }
+
+        /// <summary>Field number for the "formatted_price_before_bundle_discount" field.</summary>
+        public const int FormattedPriceBeforeBundleDiscountFieldNumber = 15;
+        private readonly static string FormattedPriceBeforeBundleDiscountDefaultValue = "";
+
+        private string formattedPriceBeforeBundleDiscount_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public string FormattedPriceBeforeBundleDiscount {
+          get { return formattedPriceBeforeBundleDiscount_ ?? FormattedPriceBeforeBundleDiscountDefaultValue; }
+          set {
+            formattedPriceBeforeBundleDiscount_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "formatted_price_before_bundle_discount" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasFormattedPriceBeforeBundleDiscount {
+          get { return formattedPriceBeforeBundleDiscount_ != null; }
+        }
+        /// <summary>Clears the value of the "formatted_price_before_bundle_discount" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearFormattedPriceBeforeBundleDiscount() {
+          formattedPriceBeforeBundleDiscount_ = null;
         }
 
         /// <summary>Field number for the "active_discounts" field.</summary>
@@ -9743,55 +9843,6 @@ namespace OpenSteamworks.Protobuf {
           get { return activeDiscounts_; }
         }
 
-        /// <summary>Field number for the "user_active_discounts" field.</summary>
-        public const int UserActiveDiscountsFieldNumber = 21;
-        private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount> _repeated_userActiveDiscounts_codec
-            = pb::FieldCodec.ForMessage(170, global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount.Parser);
-        private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount> userActiveDiscounts_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public pbc::RepeatedField<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount> UserActiveDiscounts {
-          get { return userActiveDiscounts_; }
-        }
-
-        /// <summary>Field number for the "inactive_discounts" field.</summary>
-        public const int InactiveDiscountsFieldNumber = 22;
-        private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount> _repeated_inactiveDiscounts_codec
-            = pb::FieldCodec.ForMessage(178, global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount.Parser);
-        private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount> inactiveDiscounts_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount>();
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public pbc::RepeatedField<global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.Discount> InactiveDiscounts {
-          get { return inactiveDiscounts_; }
-        }
-
-        /// <summary>Field number for the "user_can_purchase" field.</summary>
-        public const int UserCanPurchaseFieldNumber = 30;
-        private readonly static bool UserCanPurchaseDefaultValue = false;
-
-        private bool userCanPurchase_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public bool UserCanPurchase {
-          get { if ((_hasBits0 & 256) != 0) { return userCanPurchase_; } else { return UserCanPurchaseDefaultValue; } }
-          set {
-            _hasBits0 |= 256;
-            userCanPurchase_ = value;
-          }
-        }
-        /// <summary>Gets whether the "user_can_purchase" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public bool HasUserCanPurchase {
-          get { return (_hasBits0 & 256) != 0; }
-        }
-        /// <summary>Clears the value of the "user_can_purchase" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public void ClearUserCanPurchase() {
-          _hasBits0 &= ~256;
-        }
-
         /// <summary>Field number for the "user_can_purchase_as_gift" field.</summary>
         public const int UserCanPurchaseAsGiftFieldNumber = 31;
         private readonly static bool UserCanPurchaseAsGiftDefaultValue = false;
@@ -9800,9 +9851,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool UserCanPurchaseAsGift {
-          get { if ((_hasBits0 & 512) != 0) { return userCanPurchaseAsGift_; } else { return UserCanPurchaseAsGiftDefaultValue; } }
+          get { if ((_hasBits0 & 256) != 0) { return userCanPurchaseAsGift_; } else { return UserCanPurchaseAsGiftDefaultValue; } }
           set {
-            _hasBits0 |= 512;
+            _hasBits0 |= 256;
             userCanPurchaseAsGift_ = value;
           }
         }
@@ -9810,13 +9861,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasUserCanPurchaseAsGift {
-          get { return (_hasBits0 & 512) != 0; }
+          get { return (_hasBits0 & 256) != 0; }
         }
         /// <summary>Clears the value of the "user_can_purchase_as_gift" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearUserCanPurchaseAsGift() {
-          _hasBits0 &= ~512;
+          _hasBits0 &= ~256;
         }
 
         /// <summary>Field number for the "is_commercial_license" field.</summary>
@@ -9827,9 +9878,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool IsCommercialLicense {
-          get { if ((_hasBits0 & 1024) != 0) { return isCommercialLicense_; } else { return IsCommercialLicenseDefaultValue; } }
+          get { if ((_hasBits0 & 512) != 0) { return isCommercialLicense_; } else { return IsCommercialLicenseDefaultValue; } }
           set {
-            _hasBits0 |= 1024;
+            _hasBits0 |= 512;
             isCommercialLicense_ = value;
           }
         }
@@ -9837,13 +9888,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasIsCommercialLicense {
-          get { return (_hasBits0 & 1024) != 0; }
+          get { return (_hasBits0 & 512) != 0; }
         }
         /// <summary>Clears the value of the "is_commercial_license" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearIsCommercialLicense() {
-          _hasBits0 &= ~1024;
+          _hasBits0 &= ~512;
         }
 
         /// <summary>Field number for the "should_suppress_discount_pct" field.</summary>
@@ -9854,9 +9905,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool ShouldSuppressDiscountPct {
-          get { if ((_hasBits0 & 2048) != 0) { return shouldSuppressDiscountPct_; } else { return ShouldSuppressDiscountPctDefaultValue; } }
+          get { if ((_hasBits0 & 1024) != 0) { return shouldSuppressDiscountPct_; } else { return ShouldSuppressDiscountPctDefaultValue; } }
           set {
-            _hasBits0 |= 2048;
+            _hasBits0 |= 1024;
             shouldSuppressDiscountPct_ = value;
           }
         }
@@ -9864,13 +9915,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasShouldSuppressDiscountPct {
-          get { return (_hasBits0 & 2048) != 0; }
+          get { return (_hasBits0 & 1024) != 0; }
         }
         /// <summary>Clears the value of the "should_suppress_discount_pct" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearShouldSuppressDiscountPct() {
-          _hasBits0 &= ~2048;
+          _hasBits0 &= ~1024;
         }
 
         /// <summary>Field number for the "hide_discount_pct_for_compliance" field.</summary>
@@ -9881,9 +9932,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HideDiscountPctForCompliance {
-          get { if ((_hasBits0 & 4096) != 0) { return hideDiscountPctForCompliance_; } else { return HideDiscountPctForComplianceDefaultValue; } }
+          get { if ((_hasBits0 & 2048) != 0) { return hideDiscountPctForCompliance_; } else { return HideDiscountPctForComplianceDefaultValue; } }
           set {
-            _hasBits0 |= 4096;
+            _hasBits0 |= 2048;
             hideDiscountPctForCompliance_ = value;
           }
         }
@@ -9891,13 +9942,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasHideDiscountPctForCompliance {
-          get { return (_hasBits0 & 4096) != 0; }
+          get { return (_hasBits0 & 2048) != 0; }
         }
         /// <summary>Clears the value of the "hide_discount_pct_for_compliance" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearHideDiscountPctForCompliance() {
-          _hasBits0 &= ~4096;
+          _hasBits0 &= ~2048;
         }
 
         /// <summary>Field number for the "included_game_count" field.</summary>
@@ -9908,9 +9959,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int IncludedGameCount {
-          get { if ((_hasBits0 & 8192) != 0) { return includedGameCount_; } else { return IncludedGameCountDefaultValue; } }
+          get { if ((_hasBits0 & 4096) != 0) { return includedGameCount_; } else { return IncludedGameCountDefaultValue; } }
           set {
-            _hasBits0 |= 8192;
+            _hasBits0 |= 4096;
             includedGameCount_ = value;
           }
         }
@@ -9918,13 +9969,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasIncludedGameCount {
-          get { return (_hasBits0 & 8192) != 0; }
+          get { return (_hasBits0 & 4096) != 0; }
         }
         /// <summary>Clears the value of the "included_game_count" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearIncludedGameCount() {
-          _hasBits0 &= ~8192;
+          _hasBits0 &= ~4096;
         }
 
         /// <summary>Field number for the "lowest_recent_price_in_cents" field.</summary>
@@ -9935,9 +9986,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long LowestRecentPriceInCents {
-          get { if ((_hasBits0 & 16384) != 0) { return lowestRecentPriceInCents_; } else { return LowestRecentPriceInCentsDefaultValue; } }
+          get { if ((_hasBits0 & 8192) != 0) { return lowestRecentPriceInCents_; } else { return LowestRecentPriceInCentsDefaultValue; } }
           set {
-            _hasBits0 |= 16384;
+            _hasBits0 |= 8192;
             lowestRecentPriceInCents_ = value;
           }
         }
@@ -9945,13 +9996,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasLowestRecentPriceInCents {
-          get { return (_hasBits0 & 16384) != 0; }
+          get { return (_hasBits0 & 8192) != 0; }
         }
         /// <summary>Clears the value of the "lowest_recent_price_in_cents" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearLowestRecentPriceInCents() {
-          _hasBits0 &= ~16384;
+          _hasBits0 &= ~8192;
         }
 
         /// <summary>Field number for the "requires_shipping" field.</summary>
@@ -9962,9 +10013,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool RequiresShipping {
-          get { if ((_hasBits0 & 32768) != 0) { return requiresShipping_; } else { return RequiresShippingDefaultValue; } }
+          get { if ((_hasBits0 & 16384) != 0) { return requiresShipping_; } else { return RequiresShippingDefaultValue; } }
           set {
-            _hasBits0 |= 32768;
+            _hasBits0 |= 16384;
             requiresShipping_ = value;
           }
         }
@@ -9972,13 +10023,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasRequiresShipping {
-          get { return (_hasBits0 & 32768) != 0; }
+          get { return (_hasBits0 & 16384) != 0; }
         }
         /// <summary>Clears the value of the "requires_shipping" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearRequiresShipping() {
-          _hasBits0 &= ~32768;
+          _hasBits0 &= ~16384;
         }
 
         /// <summary>Field number for the "recurrence_info" field.</summary>
@@ -9991,6 +10042,33 @@ namespace OpenSteamworks.Protobuf {
           set {
             recurrenceInfo_ = value;
           }
+        }
+
+        /// <summary>Field number for the "free_to_keep_ends" field.</summary>
+        public const int FreeToKeepEndsFieldNumber = 47;
+        private readonly static uint FreeToKeepEndsDefaultValue = 0;
+
+        private uint freeToKeepEnds_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public uint FreeToKeepEnds {
+          get { if ((_hasBits0 & 32768) != 0) { return freeToKeepEnds_; } else { return FreeToKeepEndsDefaultValue; } }
+          set {
+            _hasBits0 |= 32768;
+            freeToKeepEnds_ = value;
+          }
+        }
+        /// <summary>Gets whether the "free_to_keep_ends" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasFreeToKeepEnds {
+          get { return (_hasBits0 & 32768) != 0; }
+        }
+        /// <summary>Clears the value of the "free_to_keep_ends" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearFreeToKeepEnds() {
+          _hasBits0 &= ~32768;
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10013,16 +10091,14 @@ namespace OpenSteamworks.Protobuf {
           if (PurchaseOptionName != other.PurchaseOptionName) return false;
           if (FinalPriceInCents != other.FinalPriceInCents) return false;
           if (OriginalPriceInCents != other.OriginalPriceInCents) return false;
-          if (UserFinalPriceInCents != other.UserFinalPriceInCents) return false;
           if (FormattedFinalPrice != other.FormattedFinalPrice) return false;
           if (FormattedOriginalPrice != other.FormattedOriginalPrice) return false;
           if (DiscountPct != other.DiscountPct) return false;
-          if (UserDiscountPct != other.UserDiscountPct) return false;
           if (BundleDiscountPct != other.BundleDiscountPct) return false;
+          if (IsFreeToKeep != other.IsFreeToKeep) return false;
+          if (PriceBeforeBundleDiscount != other.PriceBeforeBundleDiscount) return false;
+          if (FormattedPriceBeforeBundleDiscount != other.FormattedPriceBeforeBundleDiscount) return false;
           if(!activeDiscounts_.Equals(other.activeDiscounts_)) return false;
-          if(!userActiveDiscounts_.Equals(other.userActiveDiscounts_)) return false;
-          if(!inactiveDiscounts_.Equals(other.inactiveDiscounts_)) return false;
-          if (UserCanPurchase != other.UserCanPurchase) return false;
           if (UserCanPurchaseAsGift != other.UserCanPurchaseAsGift) return false;
           if (IsCommercialLicense != other.IsCommercialLicense) return false;
           if (ShouldSuppressDiscountPct != other.ShouldSuppressDiscountPct) return false;
@@ -10031,6 +10107,7 @@ namespace OpenSteamworks.Protobuf {
           if (LowestRecentPriceInCents != other.LowestRecentPriceInCents) return false;
           if (RequiresShipping != other.RequiresShipping) return false;
           if (!object.Equals(RecurrenceInfo, other.RecurrenceInfo)) return false;
+          if (FreeToKeepEnds != other.FreeToKeepEnds) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -10043,16 +10120,14 @@ namespace OpenSteamworks.Protobuf {
           if (HasPurchaseOptionName) hash ^= PurchaseOptionName.GetHashCode();
           if (HasFinalPriceInCents) hash ^= FinalPriceInCents.GetHashCode();
           if (HasOriginalPriceInCents) hash ^= OriginalPriceInCents.GetHashCode();
-          if (HasUserFinalPriceInCents) hash ^= UserFinalPriceInCents.GetHashCode();
           if (HasFormattedFinalPrice) hash ^= FormattedFinalPrice.GetHashCode();
           if (HasFormattedOriginalPrice) hash ^= FormattedOriginalPrice.GetHashCode();
           if (HasDiscountPct) hash ^= DiscountPct.GetHashCode();
-          if (HasUserDiscountPct) hash ^= UserDiscountPct.GetHashCode();
           if (HasBundleDiscountPct) hash ^= BundleDiscountPct.GetHashCode();
+          if (HasIsFreeToKeep) hash ^= IsFreeToKeep.GetHashCode();
+          if (HasPriceBeforeBundleDiscount) hash ^= PriceBeforeBundleDiscount.GetHashCode();
+          if (HasFormattedPriceBeforeBundleDiscount) hash ^= FormattedPriceBeforeBundleDiscount.GetHashCode();
           hash ^= activeDiscounts_.GetHashCode();
-          hash ^= userActiveDiscounts_.GetHashCode();
-          hash ^= inactiveDiscounts_.GetHashCode();
-          if (HasUserCanPurchase) hash ^= UserCanPurchase.GetHashCode();
           if (HasUserCanPurchaseAsGift) hash ^= UserCanPurchaseAsGift.GetHashCode();
           if (HasIsCommercialLicense) hash ^= IsCommercialLicense.GetHashCode();
           if (HasShouldSuppressDiscountPct) hash ^= ShouldSuppressDiscountPct.GetHashCode();
@@ -10061,6 +10136,7 @@ namespace OpenSteamworks.Protobuf {
           if (HasLowestRecentPriceInCents) hash ^= LowestRecentPriceInCents.GetHashCode();
           if (HasRequiresShipping) hash ^= RequiresShipping.GetHashCode();
           if (recurrenceInfo_ != null) hash ^= RecurrenceInfo.GetHashCode();
+          if (HasFreeToKeepEnds) hash ^= FreeToKeepEnds.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -10099,10 +10175,6 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(48);
             output.WriteInt64(OriginalPriceInCents);
           }
-          if (HasUserFinalPriceInCents) {
-            output.WriteRawTag(56);
-            output.WriteInt64(UserFinalPriceInCents);
-          }
           if (HasFormattedFinalPrice) {
             output.WriteRawTag(66);
             output.WriteString(FormattedFinalPrice);
@@ -10115,21 +10187,23 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(80);
             output.WriteInt32(DiscountPct);
           }
-          if (HasUserDiscountPct) {
-            output.WriteRawTag(88);
-            output.WriteInt32(UserDiscountPct);
-          }
           if (HasBundleDiscountPct) {
             output.WriteRawTag(96);
             output.WriteInt32(BundleDiscountPct);
           }
-          activeDiscounts_.WriteTo(output, _repeated_activeDiscounts_codec);
-          userActiveDiscounts_.WriteTo(output, _repeated_userActiveDiscounts_codec);
-          inactiveDiscounts_.WriteTo(output, _repeated_inactiveDiscounts_codec);
-          if (HasUserCanPurchase) {
-            output.WriteRawTag(240, 1);
-            output.WriteBool(UserCanPurchase);
+          if (HasIsFreeToKeep) {
+            output.WriteRawTag(104);
+            output.WriteBool(IsFreeToKeep);
           }
+          if (HasPriceBeforeBundleDiscount) {
+            output.WriteRawTag(112);
+            output.WriteInt64(PriceBeforeBundleDiscount);
+          }
+          if (HasFormattedPriceBeforeBundleDiscount) {
+            output.WriteRawTag(122);
+            output.WriteString(FormattedPriceBeforeBundleDiscount);
+          }
+          activeDiscounts_.WriteTo(output, _repeated_activeDiscounts_codec);
           if (HasUserCanPurchaseAsGift) {
             output.WriteRawTag(248, 1);
             output.WriteBool(UserCanPurchaseAsGift);
@@ -10161,6 +10235,10 @@ namespace OpenSteamworks.Protobuf {
           if (recurrenceInfo_ != null) {
             output.WriteRawTag(242, 2);
             output.WriteMessage(RecurrenceInfo);
+          }
+          if (HasFreeToKeepEnds) {
+            output.WriteRawTag(248, 2);
+            output.WriteUInt32(FreeToKeepEnds);
           }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
@@ -10192,10 +10270,6 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(48);
             output.WriteInt64(OriginalPriceInCents);
           }
-          if (HasUserFinalPriceInCents) {
-            output.WriteRawTag(56);
-            output.WriteInt64(UserFinalPriceInCents);
-          }
           if (HasFormattedFinalPrice) {
             output.WriteRawTag(66);
             output.WriteString(FormattedFinalPrice);
@@ -10208,21 +10282,23 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(80);
             output.WriteInt32(DiscountPct);
           }
-          if (HasUserDiscountPct) {
-            output.WriteRawTag(88);
-            output.WriteInt32(UserDiscountPct);
-          }
           if (HasBundleDiscountPct) {
             output.WriteRawTag(96);
             output.WriteInt32(BundleDiscountPct);
           }
-          activeDiscounts_.WriteTo(ref output, _repeated_activeDiscounts_codec);
-          userActiveDiscounts_.WriteTo(ref output, _repeated_userActiveDiscounts_codec);
-          inactiveDiscounts_.WriteTo(ref output, _repeated_inactiveDiscounts_codec);
-          if (HasUserCanPurchase) {
-            output.WriteRawTag(240, 1);
-            output.WriteBool(UserCanPurchase);
+          if (HasIsFreeToKeep) {
+            output.WriteRawTag(104);
+            output.WriteBool(IsFreeToKeep);
           }
+          if (HasPriceBeforeBundleDiscount) {
+            output.WriteRawTag(112);
+            output.WriteInt64(PriceBeforeBundleDiscount);
+          }
+          if (HasFormattedPriceBeforeBundleDiscount) {
+            output.WriteRawTag(122);
+            output.WriteString(FormattedPriceBeforeBundleDiscount);
+          }
+          activeDiscounts_.WriteTo(ref output, _repeated_activeDiscounts_codec);
           if (HasUserCanPurchaseAsGift) {
             output.WriteRawTag(248, 1);
             output.WriteBool(UserCanPurchaseAsGift);
@@ -10255,6 +10331,10 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(242, 2);
             output.WriteMessage(RecurrenceInfo);
           }
+          if (HasFreeToKeepEnds) {
+            output.WriteRawTag(248, 2);
+            output.WriteUInt32(FreeToKeepEnds);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -10280,9 +10360,6 @@ namespace OpenSteamworks.Protobuf {
           if (HasOriginalPriceInCents) {
             size += 1 + pb::CodedOutputStream.ComputeInt64Size(OriginalPriceInCents);
           }
-          if (HasUserFinalPriceInCents) {
-            size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserFinalPriceInCents);
-          }
           if (HasFormattedFinalPrice) {
             size += 1 + pb::CodedOutputStream.ComputeStringSize(FormattedFinalPrice);
           }
@@ -10292,18 +10369,19 @@ namespace OpenSteamworks.Protobuf {
           if (HasDiscountPct) {
             size += 1 + pb::CodedOutputStream.ComputeInt32Size(DiscountPct);
           }
-          if (HasUserDiscountPct) {
-            size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserDiscountPct);
-          }
           if (HasBundleDiscountPct) {
             size += 1 + pb::CodedOutputStream.ComputeInt32Size(BundleDiscountPct);
           }
-          size += activeDiscounts_.CalculateSize(_repeated_activeDiscounts_codec);
-          size += userActiveDiscounts_.CalculateSize(_repeated_userActiveDiscounts_codec);
-          size += inactiveDiscounts_.CalculateSize(_repeated_inactiveDiscounts_codec);
-          if (HasUserCanPurchase) {
-            size += 2 + 1;
+          if (HasIsFreeToKeep) {
+            size += 1 + 1;
           }
+          if (HasPriceBeforeBundleDiscount) {
+            size += 1 + pb::CodedOutputStream.ComputeInt64Size(PriceBeforeBundleDiscount);
+          }
+          if (HasFormattedPriceBeforeBundleDiscount) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(FormattedPriceBeforeBundleDiscount);
+          }
+          size += activeDiscounts_.CalculateSize(_repeated_activeDiscounts_codec);
           if (HasUserCanPurchaseAsGift) {
             size += 2 + 1;
           }
@@ -10327,6 +10405,9 @@ namespace OpenSteamworks.Protobuf {
           }
           if (recurrenceInfo_ != null) {
             size += 2 + pb::CodedOutputStream.ComputeMessageSize(RecurrenceInfo);
+          }
+          if (HasFreeToKeepEnds) {
+            size += 2 + pb::CodedOutputStream.ComputeUInt32Size(FreeToKeepEnds);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -10355,9 +10436,6 @@ namespace OpenSteamworks.Protobuf {
           if (other.HasOriginalPriceInCents) {
             OriginalPriceInCents = other.OriginalPriceInCents;
           }
-          if (other.HasUserFinalPriceInCents) {
-            UserFinalPriceInCents = other.UserFinalPriceInCents;
-          }
           if (other.HasFormattedFinalPrice) {
             FormattedFinalPrice = other.FormattedFinalPrice;
           }
@@ -10367,18 +10445,19 @@ namespace OpenSteamworks.Protobuf {
           if (other.HasDiscountPct) {
             DiscountPct = other.DiscountPct;
           }
-          if (other.HasUserDiscountPct) {
-            UserDiscountPct = other.UserDiscountPct;
-          }
           if (other.HasBundleDiscountPct) {
             BundleDiscountPct = other.BundleDiscountPct;
           }
-          activeDiscounts_.Add(other.activeDiscounts_);
-          userActiveDiscounts_.Add(other.userActiveDiscounts_);
-          inactiveDiscounts_.Add(other.inactiveDiscounts_);
-          if (other.HasUserCanPurchase) {
-            UserCanPurchase = other.UserCanPurchase;
+          if (other.HasIsFreeToKeep) {
+            IsFreeToKeep = other.IsFreeToKeep;
           }
+          if (other.HasPriceBeforeBundleDiscount) {
+            PriceBeforeBundleDiscount = other.PriceBeforeBundleDiscount;
+          }
+          if (other.HasFormattedPriceBeforeBundleDiscount) {
+            FormattedPriceBeforeBundleDiscount = other.FormattedPriceBeforeBundleDiscount;
+          }
+          activeDiscounts_.Add(other.activeDiscounts_);
           if (other.HasUserCanPurchaseAsGift) {
             UserCanPurchaseAsGift = other.UserCanPurchaseAsGift;
           }
@@ -10405,6 +10484,9 @@ namespace OpenSteamworks.Protobuf {
               RecurrenceInfo = new global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.RecurrenceInfo();
             }
             RecurrenceInfo.MergeFrom(other.RecurrenceInfo);
+          }
+          if (other.HasFreeToKeepEnds) {
+            FreeToKeepEnds = other.FreeToKeepEnds;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -10445,10 +10527,6 @@ namespace OpenSteamworks.Protobuf {
                 OriginalPriceInCents = input.ReadInt64();
                 break;
               }
-              case 56: {
-                UserFinalPriceInCents = input.ReadInt64();
-                break;
-              }
               case 66: {
                 FormattedFinalPrice = input.ReadString();
                 break;
@@ -10461,28 +10539,24 @@ namespace OpenSteamworks.Protobuf {
                 DiscountPct = input.ReadInt32();
                 break;
               }
-              case 88: {
-                UserDiscountPct = input.ReadInt32();
-                break;
-              }
               case 96: {
                 BundleDiscountPct = input.ReadInt32();
                 break;
               }
+              case 104: {
+                IsFreeToKeep = input.ReadBool();
+                break;
+              }
+              case 112: {
+                PriceBeforeBundleDiscount = input.ReadInt64();
+                break;
+              }
+              case 122: {
+                FormattedPriceBeforeBundleDiscount = input.ReadString();
+                break;
+              }
               case 162: {
                 activeDiscounts_.AddEntriesFrom(input, _repeated_activeDiscounts_codec);
-                break;
-              }
-              case 170: {
-                userActiveDiscounts_.AddEntriesFrom(input, _repeated_userActiveDiscounts_codec);
-                break;
-              }
-              case 178: {
-                inactiveDiscounts_.AddEntriesFrom(input, _repeated_inactiveDiscounts_codec);
-                break;
-              }
-              case 240: {
-                UserCanPurchase = input.ReadBool();
                 break;
               }
               case 248: {
@@ -10518,6 +10592,10 @@ namespace OpenSteamworks.Protobuf {
                   RecurrenceInfo = new global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.RecurrenceInfo();
                 }
                 input.ReadMessage(RecurrenceInfo);
+                break;
+              }
+              case 376: {
+                FreeToKeepEnds = input.ReadUInt32();
                 break;
               }
             }
@@ -10559,10 +10637,6 @@ namespace OpenSteamworks.Protobuf {
                 OriginalPriceInCents = input.ReadInt64();
                 break;
               }
-              case 56: {
-                UserFinalPriceInCents = input.ReadInt64();
-                break;
-              }
               case 66: {
                 FormattedFinalPrice = input.ReadString();
                 break;
@@ -10575,28 +10649,24 @@ namespace OpenSteamworks.Protobuf {
                 DiscountPct = input.ReadInt32();
                 break;
               }
-              case 88: {
-                UserDiscountPct = input.ReadInt32();
-                break;
-              }
               case 96: {
                 BundleDiscountPct = input.ReadInt32();
                 break;
               }
+              case 104: {
+                IsFreeToKeep = input.ReadBool();
+                break;
+              }
+              case 112: {
+                PriceBeforeBundleDiscount = input.ReadInt64();
+                break;
+              }
+              case 122: {
+                FormattedPriceBeforeBundleDiscount = input.ReadString();
+                break;
+              }
               case 162: {
                 activeDiscounts_.AddEntriesFrom(ref input, _repeated_activeDiscounts_codec);
-                break;
-              }
-              case 170: {
-                userActiveDiscounts_.AddEntriesFrom(ref input, _repeated_userActiveDiscounts_codec);
-                break;
-              }
-              case 178: {
-                inactiveDiscounts_.AddEntriesFrom(ref input, _repeated_inactiveDiscounts_codec);
-                break;
-              }
-              case 240: {
-                UserCanPurchase = input.ReadBool();
                 break;
               }
               case 248: {
@@ -10632,6 +10702,10 @@ namespace OpenSteamworks.Protobuf {
                   RecurrenceInfo = new global::OpenSteamworks.Protobuf.StoreItem.Types.PurchaseOption.Types.RecurrenceInfo();
                 }
                 input.ReadMessage(RecurrenceInfo);
+                break;
+              }
+              case 376: {
+                FreeToKeepEnds = input.ReadUInt32();
                 break;
               }
             }
@@ -12446,6 +12520,7 @@ namespace OpenSteamworks.Protobuf {
               _hasBits0 = other._hasBits0;
               trailerName_ = other.trailerName_;
               trailerUrlFormat_ = other.trailerUrlFormat_;
+              trailerCategory_ = other.trailerCategory_;
               trailer480P_ = other.trailer480P_.Clone();
               trailerMax_ = other.trailerMax_.Clone();
               microtrailer_ = other.microtrailer_.Clone();
@@ -12511,6 +12586,33 @@ namespace OpenSteamworks.Protobuf {
             [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public void ClearTrailerUrlFormat() {
               trailerUrlFormat_ = null;
+            }
+
+            /// <summary>Field number for the "trailer_category" field.</summary>
+            public const int TrailerCategoryFieldNumber = 13;
+            private readonly static global::OpenSteamworks.Protobuf.ETrailerCategory TrailerCategoryDefaultValue = global::OpenSteamworks.Protobuf.ETrailerCategory.Invalid;
+
+            private global::OpenSteamworks.Protobuf.ETrailerCategory trailerCategory_;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::OpenSteamworks.Protobuf.ETrailerCategory TrailerCategory {
+              get { if ((_hasBits0 & 2) != 0) { return trailerCategory_; } else { return TrailerCategoryDefaultValue; } }
+              set {
+                _hasBits0 |= 2;
+                trailerCategory_ = value;
+              }
+            }
+            /// <summary>Gets whether the "trailer_category" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool HasTrailerCategory {
+              get { return (_hasBits0 & 2) != 0; }
+            }
+            /// <summary>Clears the value of the "trailer_category" field</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void ClearTrailerCategory() {
+              _hasBits0 &= ~2;
             }
 
             /// <summary>Field number for the "trailer_480p" field.</summary>
@@ -12642,6 +12744,7 @@ namespace OpenSteamworks.Protobuf {
               }
               if (TrailerName != other.TrailerName) return false;
               if (TrailerUrlFormat != other.TrailerUrlFormat) return false;
+              if (TrailerCategory != other.TrailerCategory) return false;
               if(!trailer480P_.Equals(other.trailer480P_)) return false;
               if(!trailerMax_.Equals(other.trailerMax_)) return false;
               if(!microtrailer_.Equals(other.microtrailer_)) return false;
@@ -12657,6 +12760,7 @@ namespace OpenSteamworks.Protobuf {
               int hash = 1;
               if (HasTrailerName) hash ^= TrailerName.GetHashCode();
               if (HasTrailerUrlFormat) hash ^= TrailerUrlFormat.GetHashCode();
+              if (HasTrailerCategory) hash ^= TrailerCategory.GetHashCode();
               hash ^= trailer480P_.GetHashCode();
               hash ^= trailerMax_.GetHashCode();
               hash ^= microtrailer_.GetHashCode();
@@ -12704,6 +12808,10 @@ namespace OpenSteamworks.Protobuf {
                 output.WriteRawTag(96);
                 output.WriteInt32(TrailerBaseId);
               }
+              if (HasTrailerCategory) {
+                output.WriteRawTag(104);
+                output.WriteEnum((int) TrailerCategory);
+              }
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(output);
               }
@@ -12737,6 +12845,10 @@ namespace OpenSteamworks.Protobuf {
                 output.WriteRawTag(96);
                 output.WriteInt32(TrailerBaseId);
               }
+              if (HasTrailerCategory) {
+                output.WriteRawTag(104);
+                output.WriteEnum((int) TrailerCategory);
+              }
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(ref output);
               }
@@ -12752,6 +12864,9 @@ namespace OpenSteamworks.Protobuf {
               }
               if (HasTrailerUrlFormat) {
                 size += 1 + pb::CodedOutputStream.ComputeStringSize(TrailerUrlFormat);
+              }
+              if (HasTrailerCategory) {
+                size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TrailerCategory);
               }
               size += trailer480P_.CalculateSize(_repeated_trailer480P_codec);
               size += trailerMax_.CalculateSize(_repeated_trailerMax_codec);
@@ -12782,6 +12897,9 @@ namespace OpenSteamworks.Protobuf {
               }
               if (other.HasTrailerUrlFormat) {
                 TrailerUrlFormat = other.TrailerUrlFormat;
+              }
+              if (other.HasTrailerCategory) {
+                TrailerCategory = other.TrailerCategory;
               }
               trailer480P_.Add(other.trailer480P_);
               trailerMax_.Add(other.trailerMax_);
@@ -12846,6 +12964,10 @@ namespace OpenSteamworks.Protobuf {
                     TrailerBaseId = input.ReadInt32();
                     break;
                   }
+                  case 104: {
+                    TrailerCategory = (global::OpenSteamworks.Protobuf.ETrailerCategory) input.ReadEnum();
+                    break;
+                  }
                 }
               }
             #endif
@@ -12895,6 +13017,10 @@ namespace OpenSteamworks.Protobuf {
                   }
                   case 96: {
                     TrailerBaseId = input.ReadInt32();
+                    break;
+                  }
+                  case 104: {
+                    TrailerCategory = (global::OpenSteamworks.Protobuf.ETrailerCategory) input.ReadEnum();
                     break;
                   }
                 }
@@ -15894,6 +16020,8 @@ namespace OpenSteamworks.Protobuf {
           imageUrl_ = other.imageUrl_;
           showInSearch_ = other.showInSearch_;
           computed_ = other.computed_;
+          editUrl_ = other.editUrl_;
+          editSortOrder_ = other.editSortOrder_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -16089,6 +16217,59 @@ namespace OpenSteamworks.Protobuf {
           _hasBits0 &= ~8;
         }
 
+        /// <summary>Field number for the "edit_url" field.</summary>
+        public const int EditUrlFieldNumber = 8;
+        private readonly static string EditUrlDefaultValue = "";
+
+        private string editUrl_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public string EditUrl {
+          get { return editUrl_ ?? EditUrlDefaultValue; }
+          set {
+            editUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "edit_url" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasEditUrl {
+          get { return editUrl_ != null; }
+        }
+        /// <summary>Clears the value of the "edit_url" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearEditUrl() {
+          editUrl_ = null;
+        }
+
+        /// <summary>Field number for the "edit_sort_order" field.</summary>
+        public const int EditSortOrderFieldNumber = 9;
+        private readonly static uint EditSortOrderDefaultValue = 0;
+
+        private uint editSortOrder_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public uint EditSortOrder {
+          get { if ((_hasBits0 & 16) != 0) { return editSortOrder_; } else { return EditSortOrderDefaultValue; } }
+          set {
+            _hasBits0 |= 16;
+            editSortOrder_ = value;
+          }
+        }
+        /// <summary>Gets whether the "edit_sort_order" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasEditSortOrder {
+          get { return (_hasBits0 & 16) != 0; }
+        }
+        /// <summary>Clears the value of the "edit_sort_order" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearEditSortOrder() {
+          _hasBits0 &= ~16;
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
@@ -16111,6 +16292,8 @@ namespace OpenSteamworks.Protobuf {
           if (ImageUrl != other.ImageUrl) return false;
           if (ShowInSearch != other.ShowInSearch) return false;
           if (Computed != other.Computed) return false;
+          if (EditUrl != other.EditUrl) return false;
+          if (EditSortOrder != other.EditSortOrder) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -16125,6 +16308,8 @@ namespace OpenSteamworks.Protobuf {
           if (HasImageUrl) hash ^= ImageUrl.GetHashCode();
           if (HasShowInSearch) hash ^= ShowInSearch.GetHashCode();
           if (HasComputed) hash ^= Computed.GetHashCode();
+          if (HasEditUrl) hash ^= EditUrl.GetHashCode();
+          if (HasEditSortOrder) hash ^= EditSortOrder.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -16171,6 +16356,14 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(56);
             output.WriteBool(Computed);
           }
+          if (HasEditUrl) {
+            output.WriteRawTag(66);
+            output.WriteString(EditUrl);
+          }
+          if (HasEditSortOrder) {
+            output.WriteRawTag(72);
+            output.WriteUInt32(EditSortOrder);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -16209,6 +16402,14 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(56);
             output.WriteBool(Computed);
           }
+          if (HasEditUrl) {
+            output.WriteRawTag(66);
+            output.WriteString(EditUrl);
+          }
+          if (HasEditSortOrder) {
+            output.WriteRawTag(72);
+            output.WriteUInt32(EditSortOrder);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -16239,6 +16440,12 @@ namespace OpenSteamworks.Protobuf {
           }
           if (HasComputed) {
             size += 1 + 1;
+          }
+          if (HasEditUrl) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(EditUrl);
+          }
+          if (HasEditSortOrder) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EditSortOrder);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -16272,6 +16479,12 @@ namespace OpenSteamworks.Protobuf {
           }
           if (other.HasComputed) {
             Computed = other.Computed;
+          }
+          if (other.HasEditUrl) {
+            EditUrl = other.EditUrl;
+          }
+          if (other.HasEditSortOrder) {
+            EditSortOrder = other.EditSortOrder;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -16320,6 +16533,14 @@ namespace OpenSteamworks.Protobuf {
                 Computed = input.ReadBool();
                 break;
               }
+              case 66: {
+                EditUrl = input.ReadString();
+                break;
+              }
+              case 72: {
+                EditSortOrder = input.ReadUInt32();
+                break;
+              }
             }
           }
         #endif
@@ -16365,6 +16586,14 @@ namespace OpenSteamworks.Protobuf {
               }
               case 56: {
                 Computed = input.ReadBool();
+                break;
+              }
+              case 66: {
+                EditUrl = input.ReadString();
+                break;
+              }
+              case 72: {
+                EditSortOrder = input.ReadUInt32();
                 break;
               }
             }

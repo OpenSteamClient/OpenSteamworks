@@ -1,77 +1,75 @@
 {
-    "name": "IClientGameNotificationsMap",
-    "functions": [ 
-        {
-            "name": "EnumerateNotifications",
-            "argc": "2",
-            "interfaceid": "37",
-            "functionid": "1374609735",
-            "fencepost": "1457517494",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetNotificationCount",
-            "argc": "2",
-            "interfaceid": "37",
-            "functionid": "2971932816",
-            "fencepost": "3054856704",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetNotification",
-            "argc": "4",
-            "interfaceid": "37",
-            "functionid": "2154782020",
-            "fencepost": "2237786553",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes4124"
-            ]
-        },
-        {
-            "name": "RemoveSession",
-            "argc": "4",
-            "interfaceid": "37",
-            "functionid": "1416988269",
-            "fencepost": "1500041189",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "UpdateSession",
-            "argc": "4",
-            "interfaceid": "37",
-            "functionid": "138145521",
-            "fencepost": "221214570",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8"
-            ],
-            "serializedreturns": [
-            ]
-        }
-    ]
+  "name": "IClientGameNotifications",
+  "functions": [
+    {
+      "name": "EnumerateNotifications",
+      "argc": "-1",
+      "interfaceid": "37",
+      "functionid": "1374609739",
+      "fencepost": "1457582014",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetNotificationCount",
+      "argc": "-1",
+      "interfaceid": "37",
+      "functionid": "2971932828",
+      "fencepost": "3054921232",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetNotification",
+      "argc": "-1",
+      "interfaceid": "37",
+      "functionid": "2154782024",
+      "fencepost": "2237851073",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "RemoveSession",
+      "argc": "-1",
+      "interfaceid": "37",
+      "functionid": "1416988241",
+      "fencepost": "1500105677",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "UpdateSession",
+      "argc": "-1",
+      "interfaceid": "37",
+      "functionid": "138145485",
+      "fencepost": "221279050",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8"
+      ],
+      "serializedreturns": []
+    }
+  ]
 }

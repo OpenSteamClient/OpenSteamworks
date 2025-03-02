@@ -27,54 +27,55 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "ChlzZXJ2aWNlX3N0ZWFtYXdhcmRzLnByb3RvGiBnb29nbGUvcHJvdG9idWYv",
             "ZGVzY3JpcHRvci5wcm90bxoRY29tbW9uX2Jhc2UucHJvdG8iSAoxQ1N0ZWFt",
             "QXdhcmRzX0dldE5vbWluYXRpb25SZWNvbW1lbmRhdGlvbnNfUmVxdWVzdBIT",
-            "CgtjYXRlZ29yeV9pZBgBIAEoDSLAAgoyQ1N0ZWFtQXdhcmRzX0dldE5vbWlu",
+            "CgtjYXRlZ29yeV9pZBgBIAEoDSLVAgoyQ1N0ZWFtQXdhcmRzX0dldE5vbWlu",
             "YXRpb25SZWNvbW1lbmRhdGlvbnNfUmVzcG9uc2USUgoKcGxheWVkX2FwcBgB",
             "IAMoCzI+LkNTdGVhbUF3YXJkc19HZXROb21pbmF0aW9uUmVjb21tZW5kYXRp",
             "b25zX1Jlc3BvbnNlX1BsYXllZEFwcHMSXAoQc3VnZ2VzdGVkX2V2ZW50cxgC",
             "IAMoCzJCLkNTdGVhbUF3YXJkc19HZXROb21pbmF0aW9uUmVjb21tZW5kYXRp",
             "b25zX1Jlc3BvbnNlX1N1Z2dlc3RlZEV2ZW50ElgKDnN1Z2dlc3RlZF9hcHBz",
             "GAMgAygLMkAuQ1N0ZWFtQXdhcmRzX0dldE5vbWluYXRpb25SZWNvbW1lbmRh",
-            "dGlvbnNfUmVzcG9uc2VfU3VnZ2VzdGVkQXBwImAKPUNTdGVhbUF3YXJkc19H",
-            "ZXROb21pbmF0aW9uUmVjb21tZW5kYXRpb25zX1Jlc3BvbnNlX1BsYXllZEFw",
-            "cHMSDQoFYXBwaWQYASABKA0SEAoIcGxheXRpbWUYAiABKAUiUAo/Q1N0ZWFt",
-            "QXdhcmRzX0dldE5vbWluYXRpb25SZWNvbW1lbmRhdGlvbnNfUmVzcG9uc2Vf",
-            "U3VnZ2VzdGVkQXBwEg0KBWFwcGlkGAEgASgNInUKQUNTdGVhbUF3YXJkc19H",
-            "ZXROb21pbmF0aW9uUmVjb21tZW5kYXRpb25zX1Jlc3BvbnNlX1N1Z2dlc3Rl",
-            "ZEV2ZW50Eg4KBmNsYW5pZBgBIAEoDRIRCglldmVudF9naWQYAiABKAQSDQoF",
-            "YXBwaWQYAyABKA0iQQopQ1N0ZWFtQXdhcmRzX0dldE5vbWluYXRpb25TaGFy",
-            "ZUxpblJlcXVlc3QSFAoMZ2VuZXJhdGVfbmV3GAEgASgIIjoKKkNTdGVhbUF3",
-            "YXJkc19HZXROb21pbmF0aW9uU2hhcmVMaW5SZXNwb25zZRIMCgRjb2RlGAEg",
-            "ASgGIk0KLENTdGVhbUF3YXJkc19HZXRPdGhlclVzZXJOb21pbmF0aW9uc19S",
-            "ZXF1ZXN0Eg8KB3N0ZWFtaWQYASABKAYSDAoEY29kZRgCIAEoBiIpCidDU3Rl",
-            "YW1Bd2FyZHNfR2V0VXNlck5vbWluYXRpb25zX1JlcXVlc3QiWAooQ1N0ZWFt",
-            "QXdhcmRzX0dldFVzZXJOb21pbmF0aW9uc19SZXNwb25zZRIsCgtub21pbmF0",
-            "aW9ucxgBIAMoCzIXLkNTdGVhbUF3YXJkc05vbWluYXRpb24iZAodQ1N0ZWFt",
-            "QXdhcmRzX05vbWluYXRlX1JlcXVlc3QSEwoLY2F0ZWdvcnlfaWQYASABKA0S",
-            "FAoMbm9taW5hdGVkX2lkGAIgASgNEhgKBnNvdXJjZRgDIAEoBUIIgrUYBGVu",
-            "dW0iTgoeQ1N0ZWFtQXdhcmRzX05vbWluYXRlX1Jlc3BvbnNlEiwKC25vbWlu",
-            "YXRpb25zGAEgAygLMhcuQ1N0ZWFtQXdhcmRzTm9taW5hdGlvbiKeAQoWQ1N0",
-            "ZWFtQXdhcmRzTm9taW5hdGlvbhITCgtjYXRlZ29yeV9pZBgBIAEoDRIVCg1j",
-            "YXRlZ29yeV9uYW1lGAIgASgJEhYKDmFwcGlkX19maWVsZF8zGAMgASgNEhUK",
-            "DXdyaXRlX2luX25hbWUYBCABKAkSEwoLc3RvcmVfYXBwaWQYBSABKA0SFAoM",
-            "ZGV2ZWxvcGVyX2lkGAYgASgNMrcECgtTdGVhbUF3YXJkcxKHAQocR2V0Tm9t",
-            "aW5hdGlvblJlY29tbWVuZGF0aW9ucxIyLkNTdGVhbUF3YXJkc19HZXROb21p",
-            "bmF0aW9uUmVjb21tZW5kYXRpb25zX1JlcXVlc3QaMy5DU3RlYW1Bd2FyZHNf",
-            "R2V0Tm9taW5hdGlvblJlY29tbWVuZGF0aW9uc19SZXNwb25zZRJxChZHZXRO",
-            "b21pbmF0aW9uU2hhcmVMaW5rEiouQ1N0ZWFtQXdhcmRzX0dldE5vbWluYXRp",
-            "b25TaGFyZUxpblJlcXVlc3QaKy5DU3RlYW1Bd2FyZHNfR2V0Tm9taW5hdGlv",
-            "blNoYXJlTGluUmVzcG9uc2UScwoXR2V0T3RoZXJVc2VyTm9taW5hdGlvbnMS",
-            "LS5DU3RlYW1Bd2FyZHNfR2V0T3RoZXJVc2VyTm9taW5hdGlvbnNfUmVxdWVz",
-            "dBopLkNTdGVhbUF3YXJkc19HZXRVc2VyTm9taW5hdGlvbnNfUmVzcG9uc2US",
-            "aQoSR2V0VXNlck5vbWluYXRpb25zEiguQ1N0ZWFtQXdhcmRzX0dldFVzZXJO",
-            "b21pbmF0aW9uc19SZXF1ZXN0GikuQ1N0ZWFtQXdhcmRzX0dldFVzZXJOb21p",
-            "bmF0aW9uc19SZXNwb25zZRJLCghOb21pbmF0ZRIeLkNTdGVhbUF3YXJkc19O",
-            "b21pbmF0ZV9SZXF1ZXN0Gh8uQ1N0ZWFtQXdhcmRzX05vbWluYXRlX1Jlc3Bv",
-            "bnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJVSQ=="));
+            "dGlvbnNfUmVzcG9uc2VfU3VnZ2VzdGVkQXBwEhMKC2RlYnVnX3F1ZXJ5GAQg",
+            "ASgJImAKPUNTdGVhbUF3YXJkc19HZXROb21pbmF0aW9uUmVjb21tZW5kYXRp",
+            "b25zX1Jlc3BvbnNlX1BsYXllZEFwcHMSDQoFYXBwaWQYASABKA0SEAoIcGxh",
+            "eXRpbWUYAiABKAUiUAo/Q1N0ZWFtQXdhcmRzX0dldE5vbWluYXRpb25SZWNv",
+            "bW1lbmRhdGlvbnNfUmVzcG9uc2VfU3VnZ2VzdGVkQXBwEg0KBWFwcGlkGAEg",
+            "ASgNInUKQUNTdGVhbUF3YXJkc19HZXROb21pbmF0aW9uUmVjb21tZW5kYXRp",
+            "b25zX1Jlc3BvbnNlX1N1Z2dlc3RlZEV2ZW50Eg4KBmNsYW5pZBgBIAEoDRIR",
+            "CglldmVudF9naWQYAiABKAQSDQoFYXBwaWQYAyABKA0iQQopQ1N0ZWFtQXdh",
+            "cmRzX0dldE5vbWluYXRpb25TaGFyZUxpblJlcXVlc3QSFAoMZ2VuZXJhdGVf",
+            "bmV3GAEgASgIIjoKKkNTdGVhbUF3YXJkc19HZXROb21pbmF0aW9uU2hhcmVM",
+            "aW5SZXNwb25zZRIMCgRjb2RlGAEgASgGIk0KLENTdGVhbUF3YXJkc19HZXRP",
+            "dGhlclVzZXJOb21pbmF0aW9uc19SZXF1ZXN0Eg8KB3N0ZWFtaWQYASABKAYS",
+            "DAoEY29kZRgCIAEoBiIpCidDU3RlYW1Bd2FyZHNfR2V0VXNlck5vbWluYXRp",
+            "b25zX1JlcXVlc3QiWAooQ1N0ZWFtQXdhcmRzX0dldFVzZXJOb21pbmF0aW9u",
+            "c19SZXNwb25zZRIsCgtub21pbmF0aW9ucxgBIAMoCzIXLkNTdGVhbUF3YXJk",
+            "c05vbWluYXRpb24iZAodQ1N0ZWFtQXdhcmRzX05vbWluYXRlX1JlcXVlc3QS",
+            "EwoLY2F0ZWdvcnlfaWQYASABKA0SFAoMbm9taW5hdGVkX2lkGAIgASgNEhgK",
+            "BnNvdXJjZRgDIAEoBUIIgrUYBGVudW0iTgoeQ1N0ZWFtQXdhcmRzX05vbWlu",
+            "YXRlX1Jlc3BvbnNlEiwKC25vbWluYXRpb25zGAEgAygLMhcuQ1N0ZWFtQXdh",
+            "cmRzTm9taW5hdGlvbiKeAQoWQ1N0ZWFtQXdhcmRzTm9taW5hdGlvbhITCgtj",
+            "YXRlZ29yeV9pZBgBIAEoDRIVCg1jYXRlZ29yeV9uYW1lGAIgASgJEhYKDmFw",
+            "cGlkX19maWVsZF8zGAMgASgNEhUKDXdyaXRlX2luX25hbWUYBCABKAkSEwoL",
+            "c3RvcmVfYXBwaWQYBSABKA0SFAoMZGV2ZWxvcGVyX2lkGAYgASgNMrcECgtT",
+            "dGVhbUF3YXJkcxKHAQocR2V0Tm9taW5hdGlvblJlY29tbWVuZGF0aW9ucxIy",
+            "LkNTdGVhbUF3YXJkc19HZXROb21pbmF0aW9uUmVjb21tZW5kYXRpb25zX1Jl",
+            "cXVlc3QaMy5DU3RlYW1Bd2FyZHNfR2V0Tm9taW5hdGlvblJlY29tbWVuZGF0",
+            "aW9uc19SZXNwb25zZRJxChZHZXROb21pbmF0aW9uU2hhcmVMaW5rEiouQ1N0",
+            "ZWFtQXdhcmRzX0dldE5vbWluYXRpb25TaGFyZUxpblJlcXVlc3QaKy5DU3Rl",
+            "YW1Bd2FyZHNfR2V0Tm9taW5hdGlvblNoYXJlTGluUmVzcG9uc2UScwoXR2V0",
+            "T3RoZXJVc2VyTm9taW5hdGlvbnMSLS5DU3RlYW1Bd2FyZHNfR2V0T3RoZXJV",
+            "c2VyTm9taW5hdGlvbnNfUmVxdWVzdBopLkNTdGVhbUF3YXJkc19HZXRVc2Vy",
+            "Tm9taW5hdGlvbnNfUmVzcG9uc2USaQoSR2V0VXNlck5vbWluYXRpb25zEigu",
+            "Q1N0ZWFtQXdhcmRzX0dldFVzZXJOb21pbmF0aW9uc19SZXF1ZXN0GikuQ1N0",
+            "ZWFtQXdhcmRzX0dldFVzZXJOb21pbmF0aW9uc19SZXNwb25zZRJLCghOb21p",
+            "bmF0ZRIeLkNTdGVhbUF3YXJkc19Ob21pbmF0ZV9SZXF1ZXN0Gh8uQ1N0ZWFt",
+            "QXdhcmRzX05vbWluYXRlX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Q",
+            "cm90b2J1Zi5XZWJVSQ=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Request), global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Request.Parser, new[]{ "CategoryId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response.Parser, new[]{ "PlayedApp", "SuggestedEvents", "SuggestedApps" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response.Parser, new[]{ "PlayedApp", "SuggestedEvents", "SuggestedApps", "DebugQuery" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response_PlayedApps), global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response_PlayedApps.Parser, new[]{ "Appid", "Playtime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response_SuggestedApp), global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response_SuggestedApp.Parser, new[]{ "Appid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response_SuggestedEvent), global::OpenSteamworks.Protobuf.WebUI.CSteamAwards_GetNominationRecommendations_Response_SuggestedEvent.Parser, new[]{ "Clanid", "EventGid", "Appid" }, null, null, null, null),
@@ -345,6 +346,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       playedApp_ = other.playedApp_.Clone();
       suggestedEvents_ = other.suggestedEvents_.Clone();
       suggestedApps_ = other.suggestedApps_.Clone();
+      debugQuery_ = other.debugQuery_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -387,6 +389,32 @@ namespace OpenSteamworks.Protobuf.WebUI {
       get { return suggestedApps_; }
     }
 
+    /// <summary>Field number for the "debug_query" field.</summary>
+    public const int DebugQueryFieldNumber = 4;
+    private readonly static string DebugQueryDefaultValue = "";
+
+    private string debugQuery_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DebugQuery {
+      get { return debugQuery_ ?? DebugQueryDefaultValue; }
+      set {
+        debugQuery_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "debug_query" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDebugQuery {
+      get { return debugQuery_ != null; }
+    }
+    /// <summary>Clears the value of the "debug_query" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDebugQuery() {
+      debugQuery_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -405,6 +433,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if(!playedApp_.Equals(other.playedApp_)) return false;
       if(!suggestedEvents_.Equals(other.suggestedEvents_)) return false;
       if(!suggestedApps_.Equals(other.suggestedApps_)) return false;
+      if (DebugQuery != other.DebugQuery) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -415,6 +444,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       hash ^= playedApp_.GetHashCode();
       hash ^= suggestedEvents_.GetHashCode();
       hash ^= suggestedApps_.GetHashCode();
+      if (HasDebugQuery) hash ^= DebugQuery.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -436,6 +466,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
       playedApp_.WriteTo(output, _repeated_playedApp_codec);
       suggestedEvents_.WriteTo(output, _repeated_suggestedEvents_codec);
       suggestedApps_.WriteTo(output, _repeated_suggestedApps_codec);
+      if (HasDebugQuery) {
+        output.WriteRawTag(34);
+        output.WriteString(DebugQuery);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -449,6 +483,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
       playedApp_.WriteTo(ref output, _repeated_playedApp_codec);
       suggestedEvents_.WriteTo(ref output, _repeated_suggestedEvents_codec);
       suggestedApps_.WriteTo(ref output, _repeated_suggestedApps_codec);
+      if (HasDebugQuery) {
+        output.WriteRawTag(34);
+        output.WriteString(DebugQuery);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -462,6 +500,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       size += playedApp_.CalculateSize(_repeated_playedApp_codec);
       size += suggestedEvents_.CalculateSize(_repeated_suggestedEvents_codec);
       size += suggestedApps_.CalculateSize(_repeated_suggestedApps_codec);
+      if (HasDebugQuery) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DebugQuery);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -477,6 +518,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       playedApp_.Add(other.playedApp_);
       suggestedEvents_.Add(other.suggestedEvents_);
       suggestedApps_.Add(other.suggestedApps_);
+      if (other.HasDebugQuery) {
+        DebugQuery = other.DebugQuery;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -508,6 +552,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             suggestedApps_.AddEntriesFrom(input, _repeated_suggestedApps_codec);
             break;
           }
+          case 34: {
+            DebugQuery = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -537,6 +585,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 26: {
             suggestedApps_.AddEntriesFrom(ref input, _repeated_suggestedApps_codec);
+            break;
+          }
+          case 34: {
+            DebugQuery = input.ReadString();
             break;
           }
         }

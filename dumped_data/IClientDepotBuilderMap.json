@@ -1,102 +1,111 @@
 {
-    "name": "IClientDepotBuilderMap",
-    "functions": [ 
-        {
-            "name": "BGetDepotBuildStatus",
-            "argc": "6",
-            "interfaceid": "16",
-            "functionid": "4119064763",
-            "fencepost": "4160534454",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "boolean",
-                "bytes4",
-                "bytes8",
-                "bytes8"
-            ]
-        },
-        {
-            "name": "VerifyChunkStore",
-            "argc": "4",
-            "interfaceid": "16",
-            "functionid": "3857174048",
-            "fencepost": "3898724384",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "Unknown_2",
-            "argc": "0",
-            "interfaceid": "0",
-            "functionid": "0",
-            "fencepost": "0",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "DownloadChunk",
-            "argc": "4",
-            "interfaceid": "16",
-            "functionid": "4125622592",
-            "fencepost": "4167205186",
-            "cannotcallincrossprocess": "1",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "StartDepotBuild",
-            "argc": "5",
-            "interfaceid": "16",
-            "functionid": "3870246548",
-            "fencepost": "3911925916",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "CommitAppBuild",
-            "argc": "7",
-            "interfaceid": "16",
-            "functionid": "297107514",
-            "fencepost": "338932043",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes_length_from_reg",
-                "bytes_length_from_reg",
-                "string",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        }
-    ]
+  "name": "IClientDepotBuilder",
+  "functions": [
+    {
+      "name": "BGetDepotBuildStatus",
+      "argc": "-1",
+      "interfaceid": "16",
+      "functionid": "4119065423",
+      "fencepost": "4160341566",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "boolean",
+        "bytes4",
+        "bytes8",
+        "bytes8"
+      ]
+    },
+    {
+      "name": "VerifyChunkStore",
+      "argc": "-1",
+      "interfaceid": "16",
+      "functionid": "3857174068",
+      "fencepost": "3898530856",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "DownloadDepot",
+      "argc": "-1",
+      "interfaceid": "16",
+      "functionid": "664435210",
+      "fencepost": "705808127",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes8",
+        "bytes8",
+        "bytes8",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "DownloadChunk",
+      "argc": "-1",
+      "interfaceid": "16",
+      "functionid": "4125622612",
+      "fencepost": "4167011658",
+      "cannotcallincrossprocess": "1",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "StartDepotBuild",
+      "argc": "-1",
+      "interfaceid": "16",
+      "functionid": "3870246528",
+      "fencepost": "3911732348",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "CommitAppBuild",
+      "argc": "-1",
+      "interfaceid": "16",
+      "functionid": "3881056542",
+      "fencepost": "3922703652",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes_external_length",
+        "bytes_external_length",
+        "bytes1",
+        "string",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    }
+  ]
 }

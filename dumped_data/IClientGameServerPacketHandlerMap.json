@@ -1,39 +1,39 @@
 {
-    "name": "IClientGameServerPacketHandlerMap",
-    "functions": [ 
-        {
-            "name": "HandleIncomingPacket",
-            "argc": "5",
-            "interfaceid": "53",
-            "functionid": "1084551791",
-            "fencepost": "1101800423",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes_length_from_mem",
-                "bytes4",
-                "bytes2"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetNextOutgoingPacket",
-            "argc": "5",
-            "interfaceid": "53",
-            "functionid": "4015585523",
-            "fencepost": "4032979316",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg",
-                "bytes4",
-                "bytes2"
-            ]
-        }
-    ]
+  "name": "IClientGameServerPacketHandler",
+  "functions": [
+    {
+      "name": "HandleIncomingPacket",
+      "argc": "-1",
+      "interfaceid": "53",
+      "functionid": "1084551781",
+      "fencepost": "1101703639",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes_external_length",
+        "bytes4",
+        "bytes2"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetNextOutgoingPacket",
+      "argc": "-1",
+      "interfaceid": "53",
+      "functionid": "4015585525",
+      "fencepost": "4032882544",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length",
+        "bytes4",
+        "bytes2"
+      ]
+    }
+  ]
 }

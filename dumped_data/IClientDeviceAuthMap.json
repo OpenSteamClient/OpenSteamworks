@@ -1,166 +1,165 @@
 {
-    "name": "IClientDeviceAuthMap",
-    "functions": [ 
-        {
-            "name": "AuthorizeLocalDevice",
-            "argc": "3",
-            "interfaceid": "28",
-            "functionid": "737164169",
-            "fencepost": "805086944",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "DeauthorizeDevice",
-            "argc": "3",
-            "interfaceid": "28",
-            "functionid": "2368639546",
-            "fencepost": "2436578450",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "RequestAuthorizationInfos",
-            "argc": "1",
-            "interfaceid": "28",
-            "functionid": "1856541877",
-            "fencepost": "1925319489",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetDeviceAuthorizations",
-            "argc": "4",
-            "interfaceid": "28",
-            "functionid": "4064381196",
-            "fencepost": "4132400745",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "GetDeviceAuthorizationInfo",
-            "argc": "14",
-            "interfaceid": "28",
-            "functionid": "3706533828",
-            "fencepost": "3774811441",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes1",
-                "bytes_length_from_mem",
-                "bytes_length_from_mem",
-                "bytes_length_from_mem",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetAuthorizedBorrowers",
-            "argc": "3",
-            "interfaceid": "28",
-            "functionid": "913742131",
-            "fencepost": "982229421",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "GetLocalUsers",
-            "argc": "3",
-            "interfaceid": "28",
-            "functionid": "1356910720",
-            "fencepost": "1425494784",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        },
-        {
-            "name": "GetBorrowerInfo",
-            "argc": "5",
-            "interfaceid": "28",
-            "functionid": "1571807578",
-            "fencepost": "1640520674",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes_length_from_mem",
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdateAuthorizedBorrowers",
-            "argc": "4",
-            "interfaceid": "28",
-            "functionid": "3677155845",
-            "fencepost": "3746030231",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes_length_from_reg",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetSharedLibraryOwners",
-            "argc": "3",
-            "interfaceid": "28",
-            "functionid": "4175163293",
-            "fencepost": "4244134453",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_reg"
-            ]
-        }
-    ]
+  "name": "IClientDeviceAuth",
+  "functions": [
+    {
+      "name": "AuthorizeLocalDevice",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "737164205",
+      "fencepost": "804635368",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "DeauthorizeDevice",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "2368639510",
+      "fencepost": "2436126802",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "RequestAuthorizationInfos",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "1856541841",
+      "fencepost": "1924867841",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetDeviceAuthorizations",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "4064381216",
+      "fencepost": "4131949153",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "GetDeviceAuthorizationInfo",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "3706533848",
+      "fencepost": "3774359849",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes1",
+        "bytes_external_length",
+        "bytes_external_length",
+        "bytes_external_length",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetAuthorizedBorrowers",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "913742295",
+      "fencepost": "981777973",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "GetLocalUsers",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "1356910692",
+      "fencepost": "1425043144",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "GetBorrowerInfo",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "1571807558",
+      "fencepost": "1640069042",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes_external_length",
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdateAuthorizedBorrowers",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "3677155873",
+      "fencepost": "3745578647",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes_external_length",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetSharedLibraryOwners",
+      "argc": "-1",
+      "interfaceid": "28",
+      "functionid": "4175163321",
+      "fencepost": "4243682869",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    }
+  ]
 }

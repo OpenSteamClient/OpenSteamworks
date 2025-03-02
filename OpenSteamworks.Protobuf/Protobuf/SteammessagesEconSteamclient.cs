@@ -40,69 +40,70 @@ namespace OpenSteamworks.Protobuf {
             "Cgljb250ZXh0aWQYAiABKAQSDwoHYXNzZXRpZBgDIAEoBBIPCgdjbGFzc2lk",
             "GAQgASgEEhIKCmluc3RhbmNlaWQYBSABKAQSEgoKY3VycmVuY3lpZBgGIAEo",
             "DRIOCgZhbW91bnQYByABKAMSDwoHbWlzc2luZxgIIAEoCBIPCgdlc3RfdXNk",
-            "GAkgASgDIlYKGUNFY29uSXRlbV9EZXNjcmlwdGlvbkxpbmUSDAoEdHlwZRgB",
+            "GAkgASgDImQKGUNFY29uSXRlbV9EZXNjcmlwdGlvbkxpbmUSDAoEdHlwZRgB",
             "IAEoCRINCgV2YWx1ZRgCIAEoCRINCgVjb2xvchgDIAEoCRINCgVsYWJlbBgE",
-            "IAEoCSIuChBDRWNvbkl0ZW1fQWN0aW9uEgwKBGxpbmsYASABKAkSDAoEbmFt",
-            "ZRgCIAEoCSLjBgoVQ0Vjb25JdGVtX0Rlc2NyaXB0aW9uEg0KBWFwcGlkGAEg",
-            "ASgFEg8KB2NsYXNzaWQYAiABKAQSEgoKaW5zdGFuY2VpZBgDIAEoBBIQCghj",
-            "dXJyZW5jeRgEIAEoCBIYChBiYWNrZ3JvdW5kX2NvbG9yGAUgASgJEhAKCGlj",
-            "b25fdXJsGAYgASgJEhYKDmljb25fdXJsX2xhcmdlGAcgASgJEjAKDGRlc2Ny",
-            "aXB0aW9ucxgIIAMoCzIaLkNFY29uSXRlbV9EZXNjcmlwdGlvbkxpbmUSEAoI",
-            "dHJhZGFibGUYCSABKAgSIgoHYWN0aW9ucxgKIAMoCzIRLkNFY29uSXRlbV9B",
-            "Y3Rpb24SNgoSb3duZXJfZGVzY3JpcHRpb25zGAsgAygLMhouQ0Vjb25JdGVt",
-            "X0Rlc2NyaXB0aW9uTGluZRIoCg1vd25lcl9hY3Rpb25zGAwgAygLMhEuQ0Vj",
-            "b25JdGVtX0FjdGlvbhIVCg1mcmF1ZHdhcm5pbmdzGA0gAygJEgwKBG5hbWUY",
-            "DiABKAkSEgoKbmFtZV9jb2xvchgPIAEoCRIMCgR0eXBlGBAgASgJEhMKC21h",
-            "cmtldF9uYW1lGBEgASgJEhgKEG1hcmtldF9oYXNoX25hbWUYEiABKAkSEgoK",
-            "bWFya2V0X2ZlZRgTIAEoCRIWCg5tYXJrZXRfZmVlX2FwcBgcIAEoBRIuCg5j",
-            "b250YWluZWRfaXRlbRgUIAEoCzIWLkNFY29uSXRlbV9EZXNjcmlwdGlvbhIp",
-            "Cg5tYXJrZXRfYWN0aW9ucxgVIAMoCzIRLkNFY29uSXRlbV9BY3Rpb24SEQoJ",
-            "Y29tbW9kaXR5GBYgASgIEiMKG21hcmtldF90cmFkYWJsZV9yZXN0cmljdGlv",
-            "bhgXIAEoBRIlCh1tYXJrZXRfbWFya2V0YWJsZV9yZXN0cmljdGlvbhgYIAEo",
-            "BRISCgptYXJrZXRhYmxlGBkgASgIEhwKBHRhZ3MYGiADKAsyDi5DRWNvbkl0",
-            "ZW1fVGFnEhcKD2l0ZW1fZXhwaXJhdGlvbhgbIAEoCRImCh5tYXJrZXRfYnV5",
-            "X2NvdW50cnlfcmVzdHJpY3Rpb24YHiABKAkSJwofbWFya2V0X3NlbGxfY291",
-            "bnRyeV9yZXN0cmljdGlvbhgfIAEoCSKTAQoNQ0Vjb25JdGVtX1RhZxINCgVh",
-            "cHBpZBgBIAEoDRIQCghjYXRlZ29yeRgCIAEoCRIVCg1pbnRlcm5hbF9uYW1l",
-            "GAMgASgJEh8KF2xvY2FsaXplZF9jYXRlZ29yeV9uYW1lGAQgASgJEhoKEmxv",
-            "Y2FsaXplZF90YWdfbmFtZRgFIAEoCRINCgVjb2xvchgGIAEoCSLtAQowQ0Vj",
-            "b25fR2V0SW52ZW50b3J5SXRlbXNXaXRoRGVzY3JpcHRpb25zX1Jlc3BvbnNl",
-            "EhwKBmFzc2V0cxgBIAMoCzIMLkNFY29uX0Fzc2V0EiwKDGRlc2NyaXB0aW9u",
-            "cxgCIAMoCzIWLkNFY29uSXRlbV9EZXNjcmlwdGlvbhIkCg5taXNzaW5nX2Fz",
-            "c2V0cxgDIAMoCzIMLkNFY29uX0Fzc2V0EhIKCm1vcmVfaXRlbXMYBCABKAgS",
-            "FAoMbGFzdF9hc3NldGlkGAUgASgEEh0KFXRvdGFsX2ludmVudG9yeV9jb3Vu",
-            "dBgGIAEoDSJECiZDRWNvbl9HZXRUcmFkZU9mZmVyQWNjZXNzVG9rZW5fUmVx",
-            "dWVzdBIaChJnZW5lcmF0ZV9uZXdfdG9rZW4YASABKAgiSwonQ0Vjb25fR2V0",
-            "VHJhZGVPZmZlckFjY2Vzc1Rva2VuX1Jlc3BvbnNlEiAKGHRyYWRlX29mZmVy",
-            "X2FjY2Vzc190b2tlbhgBIAEoCSJDCi1DRWNvbl9DbGllbnRHZXRJdGVtU2hv",
-            "cE92ZXJsYXlBdXRoVVJMX1JlcXVlc3QSEgoKcmV0dXJuX3VybBgBIAEoCSI9",
-            "Ci5DRWNvbl9DbGllbnRHZXRJdGVtU2hvcE92ZXJsYXlBdXRoVVJMX1Jlc3Bv",
-            "bnNlEgsKA3VybBgBIAEoCSK7AQofQ0Vjb25fR2V0QXNzZXRDbGFzc0luZm9f",
-            "UmVxdWVzdBIQCghsYW5ndWFnZRgBIAEoCRINCgVhcHBpZBgCIAEoDRI3Cgdj",
-            "bGFzc2VzGAMgAygLMiYuQ0Vjb25fR2V0QXNzZXRDbGFzc0luZm9fUmVxdWVz",
-            "dC5DbGFzcxIQCghoaWdoX3ByaRgEIAEoCBosCgVDbGFzcxIPCgdjbGFzc2lk",
-            "GAEgASgEEhIKCmluc3RhbmNlaWQYAiABKAQiUAogQ0Vjb25fR2V0QXNzZXRD",
-            "bGFzc0luZm9fUmVzcG9uc2USLAoMZGVzY3JpcHRpb25zGAEgAygLMhYuQ0Vj",
-            "b25JdGVtX0Rlc2NyaXB0aW9uMt8DCgRFY29uEogBCiFHZXRJbnZlbnRvcnlJ",
-            "dGVtc1dpdGhEZXNjcmlwdGlvbnMSMC5DRWNvbl9HZXRJbnZlbnRvcnlJdGVt",
-            "c1dpdGhEZXNjcmlwdGlvbnNfUmVxdWVzdBoxLkNFY29uX0dldEludmVudG9y",
-            "eUl0ZW1zV2l0aERlc2NyaXB0aW9uc19SZXNwb25zZRJtChhHZXRUcmFkZU9m",
-            "ZmVyQWNjZXNzVG9rZW4SJy5DRWNvbl9HZXRUcmFkZU9mZmVyQWNjZXNzVG9r",
-            "ZW5fUmVxdWVzdBooLkNFY29uX0dldFRyYWRlT2ZmZXJBY2Nlc3NUb2tlbl9S",
-            "ZXNwb25zZRKCAQofQ2xpZW50R2V0SXRlbVNob3BPdmVybGF5QXV0aFVSTBIu",
-            "LkNFY29uX0NsaWVudEdldEl0ZW1TaG9wT3ZlcmxheUF1dGhVUkxfUmVxdWVz",
-            "dBovLkNFY29uX0NsaWVudEdldEl0ZW1TaG9wT3ZlcmxheUF1dGhVUkxfUmVz",
-            "cG9uc2USWAoRR2V0QXNzZXRDbGFzc0luZm8SIC5DRWNvbl9HZXRBc3NldENs",
-            "YXNzSW5mb19SZXF1ZXN0GiEuQ0Vjb25fR2V0QXNzZXRDbGFzc0luZm9fUmVz",
-            "cG9uc2VCHYABAaoCF09wZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
+            "IAEoCRIMCgRuYW1lGAUgASgJIi4KEENFY29uSXRlbV9BY3Rpb24SDAoEbGlu",
+            "axgBIAEoCRIMCgRuYW1lGAIgASgJIvMGChVDRWNvbkl0ZW1fRGVzY3JpcHRp",
+            "b24SDQoFYXBwaWQYASABKAUSDwoHY2xhc3NpZBgCIAEoBBISCgppbnN0YW5j",
+            "ZWlkGAMgASgEEhAKCGN1cnJlbmN5GAQgASgIEhgKEGJhY2tncm91bmRfY29s",
+            "b3IYBSABKAkSEAoIaWNvbl91cmwYBiABKAkSFgoOaWNvbl91cmxfbGFyZ2UY",
+            "ByABKAkSMAoMZGVzY3JpcHRpb25zGAggAygLMhouQ0Vjb25JdGVtX0Rlc2Ny",
+            "aXB0aW9uTGluZRIQCgh0cmFkYWJsZRgJIAEoCBIiCgdhY3Rpb25zGAogAygL",
+            "MhEuQ0Vjb25JdGVtX0FjdGlvbhI2ChJvd25lcl9kZXNjcmlwdGlvbnMYCyAD",
+            "KAsyGi5DRWNvbkl0ZW1fRGVzY3JpcHRpb25MaW5lEigKDW93bmVyX2FjdGlv",
+            "bnMYDCADKAsyES5DRWNvbkl0ZW1fQWN0aW9uEhUKDWZyYXVkd2FybmluZ3MY",
+            "DSADKAkSDAoEbmFtZRgOIAEoCRISCgpuYW1lX2NvbG9yGA8gASgJEgwKBHR5",
+            "cGUYECABKAkSEwoLbWFya2V0X25hbWUYESABKAkSGAoQbWFya2V0X2hhc2hf",
+            "bmFtZRgSIAEoCRISCgptYXJrZXRfZmVlGBMgASgJEhYKDm1hcmtldF9mZWVf",
+            "YXBwGBwgASgFEi4KDmNvbnRhaW5lZF9pdGVtGBQgASgLMhYuQ0Vjb25JdGVt",
+            "X0Rlc2NyaXB0aW9uEikKDm1hcmtldF9hY3Rpb25zGBUgAygLMhEuQ0Vjb25J",
+            "dGVtX0FjdGlvbhIRCgljb21tb2RpdHkYFiABKAgSIwobbWFya2V0X3RyYWRh",
+            "YmxlX3Jlc3RyaWN0aW9uGBcgASgFEiUKHW1hcmtldF9tYXJrZXRhYmxlX3Jl",
+            "c3RyaWN0aW9uGBggASgFEhIKCm1hcmtldGFibGUYGSABKAgSHAoEdGFncxga",
+            "IAMoCzIOLkNFY29uSXRlbV9UYWcSFwoPaXRlbV9leHBpcmF0aW9uGBsgASgJ",
+            "EiYKHm1hcmtldF9idXlfY291bnRyeV9yZXN0cmljdGlvbhgeIAEoCRInCh9t",
+            "YXJrZXRfc2VsbF9jb3VudHJ5X3Jlc3RyaWN0aW9uGB8gASgJEg4KBnNlYWxl",
+            "ZBggIAEoCCKTAQoNQ0Vjb25JdGVtX1RhZxINCgVhcHBpZBgBIAEoDRIQCghj",
+            "YXRlZ29yeRgCIAEoCRIVCg1pbnRlcm5hbF9uYW1lGAMgASgJEh8KF2xvY2Fs",
+            "aXplZF9jYXRlZ29yeV9uYW1lGAQgASgJEhoKEmxvY2FsaXplZF90YWdfbmFt",
+            "ZRgFIAEoCRINCgVjb2xvchgGIAEoCSLtAQowQ0Vjb25fR2V0SW52ZW50b3J5",
+            "SXRlbXNXaXRoRGVzY3JpcHRpb25zX1Jlc3BvbnNlEhwKBmFzc2V0cxgBIAMo",
+            "CzIMLkNFY29uX0Fzc2V0EiwKDGRlc2NyaXB0aW9ucxgCIAMoCzIWLkNFY29u",
+            "SXRlbV9EZXNjcmlwdGlvbhIkCg5taXNzaW5nX2Fzc2V0cxgDIAMoCzIMLkNF",
+            "Y29uX0Fzc2V0EhIKCm1vcmVfaXRlbXMYBCABKAgSFAoMbGFzdF9hc3NldGlk",
+            "GAUgASgEEh0KFXRvdGFsX2ludmVudG9yeV9jb3VudBgGIAEoDSJECiZDRWNv",
+            "bl9HZXRUcmFkZU9mZmVyQWNjZXNzVG9rZW5fUmVxdWVzdBIaChJnZW5lcmF0",
+            "ZV9uZXdfdG9rZW4YASABKAgiSwonQ0Vjb25fR2V0VHJhZGVPZmZlckFjY2Vz",
+            "c1Rva2VuX1Jlc3BvbnNlEiAKGHRyYWRlX29mZmVyX2FjY2Vzc190b2tlbhgB",
+            "IAEoCSJDCi1DRWNvbl9DbGllbnRHZXRJdGVtU2hvcE92ZXJsYXlBdXRoVVJM",
+            "X1JlcXVlc3QSEgoKcmV0dXJuX3VybBgBIAEoCSI9Ci5DRWNvbl9DbGllbnRH",
+            "ZXRJdGVtU2hvcE92ZXJsYXlBdXRoVVJMX1Jlc3BvbnNlEgsKA3VybBgBIAEo",
+            "CSK7AQofQ0Vjb25fR2V0QXNzZXRDbGFzc0luZm9fUmVxdWVzdBIQCghsYW5n",
+            "dWFnZRgBIAEoCRINCgVhcHBpZBgCIAEoDRI3CgdjbGFzc2VzGAMgAygLMiYu",
+            "Q0Vjb25fR2V0QXNzZXRDbGFzc0luZm9fUmVxdWVzdC5DbGFzcxIQCghoaWdo",
+            "X3ByaRgEIAEoCBosCgVDbGFzcxIPCgdjbGFzc2lkGAEgASgEEhIKCmluc3Rh",
+            "bmNlaWQYAiABKAQiUAogQ0Vjb25fR2V0QXNzZXRDbGFzc0luZm9fUmVzcG9u",
+            "c2USLAoMZGVzY3JpcHRpb25zGAEgAygLMhYuQ0Vjb25JdGVtX0Rlc2NyaXB0",
+            "aW9uMt8DCgRFY29uEogBCiFHZXRJbnZlbnRvcnlJdGVtc1dpdGhEZXNjcmlw",
+            "dGlvbnMSMC5DRWNvbl9HZXRJbnZlbnRvcnlJdGVtc1dpdGhEZXNjcmlwdGlv",
+            "bnNfUmVxdWVzdBoxLkNFY29uX0dldEludmVudG9yeUl0ZW1zV2l0aERlc2Ny",
+            "aXB0aW9uc19SZXNwb25zZRJtChhHZXRUcmFkZU9mZmVyQWNjZXNzVG9rZW4S",
+            "Jy5DRWNvbl9HZXRUcmFkZU9mZmVyQWNjZXNzVG9rZW5fUmVxdWVzdBooLkNF",
+            "Y29uX0dldFRyYWRlT2ZmZXJBY2Nlc3NUb2tlbl9SZXNwb25zZRKCAQofQ2xp",
+            "ZW50R2V0SXRlbVNob3BPdmVybGF5QXV0aFVSTBIuLkNFY29uX0NsaWVudEdl",
+            "dEl0ZW1TaG9wT3ZlcmxheUF1dGhVUkxfUmVxdWVzdBovLkNFY29uX0NsaWVu",
+            "dEdldEl0ZW1TaG9wT3ZlcmxheUF1dGhVUkxfUmVzcG9uc2USWAoRR2V0QXNz",
+            "ZXRDbGFzc0luZm8SIC5DRWNvbl9HZXRBc3NldENsYXNzSW5mb19SZXF1ZXN0",
+            "GiEuQ0Vjb25fR2V0QXNzZXRDbGFzc0luZm9fUmVzcG9uc2VCHYABAaoCF09w",
+            "ZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesUnifiedBaseSteamclientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEcon_GetInventoryItemsWithDescriptions_Request), global::OpenSteamworks.Protobuf.CEcon_GetInventoryItemsWithDescriptions_Request.Parser, new[]{ "Steamid", "Appid", "Contextid", "GetDescriptions", "ForTradeOfferVerification", "Language", "Filters", "StartAssetid", "Count" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEcon_GetInventoryItemsWithDescriptions_Request.Types.FilterOptions), global::OpenSteamworks.Protobuf.CEcon_GetInventoryItemsWithDescriptions_Request.Types.FilterOptions.Parser, new[]{ "Assetids", "Currencyids", "TradableOnly", "MarketableOnly" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEcon_Asset), global::OpenSteamworks.Protobuf.CEcon_Asset.Parser, new[]{ "Appid", "Contextid", "Assetid", "Classid", "Instanceid", "Currencyid", "Amount", "Missing", "EstUsd" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEconItem_DescriptionLine), global::OpenSteamworks.Protobuf.CEconItem_DescriptionLine.Parser, new[]{ "Type", "Value", "Color", "Label" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEconItem_DescriptionLine), global::OpenSteamworks.Protobuf.CEconItem_DescriptionLine.Parser, new[]{ "Type", "Value", "Color", "Label", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEconItem_Action), global::OpenSteamworks.Protobuf.CEconItem_Action.Parser, new[]{ "Link", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEconItem_Description), global::OpenSteamworks.Protobuf.CEconItem_Description.Parser, new[]{ "Appid", "Classid", "Instanceid", "Currency", "BackgroundColor", "IconUrl", "IconUrlLarge", "Descriptions", "Tradable", "Actions", "OwnerDescriptions", "OwnerActions", "Fraudwarnings", "Name", "NameColor", "Type", "MarketName", "MarketHashName", "MarketFee", "MarketFeeApp", "ContainedItem", "MarketActions", "Commodity", "MarketTradableRestriction", "MarketMarketableRestriction", "Marketable", "Tags", "ItemExpiration", "MarketBuyCountryRestriction", "MarketSellCountryRestriction" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEconItem_Description), global::OpenSteamworks.Protobuf.CEconItem_Description.Parser, new[]{ "Appid", "Classid", "Instanceid", "Currency", "BackgroundColor", "IconUrl", "IconUrlLarge", "Descriptions", "Tradable", "Actions", "OwnerDescriptions", "OwnerActions", "Fraudwarnings", "Name", "NameColor", "Type", "MarketName", "MarketHashName", "MarketFee", "MarketFeeApp", "ContainedItem", "MarketActions", "Commodity", "MarketTradableRestriction", "MarketMarketableRestriction", "Marketable", "Tags", "ItemExpiration", "MarketBuyCountryRestriction", "MarketSellCountryRestriction", "Sealed" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEconItem_Tag), global::OpenSteamworks.Protobuf.CEconItem_Tag.Parser, new[]{ "Appid", "Category", "InternalName", "LocalizedCategoryName", "LocalizedTagName", "Color" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEcon_GetInventoryItemsWithDescriptions_Response), global::OpenSteamworks.Protobuf.CEcon_GetInventoryItemsWithDescriptions_Response.Parser, new[]{ "Assets", "Descriptions", "MissingAssets", "MoreItems", "LastAssetid", "TotalInventoryCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CEcon_GetTradeOfferAccessToken_Request), global::OpenSteamworks.Protobuf.CEcon_GetTradeOfferAccessToken_Request.Parser, new[]{ "GenerateNewToken" }, null, null, null, null),
@@ -1742,6 +1743,7 @@ namespace OpenSteamworks.Protobuf {
       value_ = other.value_;
       color_ = other.color_;
       label_ = other.label_;
+      name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1855,6 +1857,32 @@ namespace OpenSteamworks.Protobuf {
       label_ = null;
     }
 
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 5;
+    private readonly static string NameDefaultValue = "";
+
+    private string name_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_ ?? NameDefaultValue; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasName {
+      get { return name_ != null; }
+    }
+    /// <summary>Clears the value of the "name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearName() {
+      name_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1874,6 +1902,7 @@ namespace OpenSteamworks.Protobuf {
       if (Value != other.Value) return false;
       if (Color != other.Color) return false;
       if (Label != other.Label) return false;
+      if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1885,6 +1914,7 @@ namespace OpenSteamworks.Protobuf {
       if (HasValue) hash ^= Value.GetHashCode();
       if (HasColor) hash ^= Color.GetHashCode();
       if (HasLabel) hash ^= Label.GetHashCode();
+      if (HasName) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1919,6 +1949,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(34);
         output.WriteString(Label);
       }
+      if (HasName) {
+        output.WriteRawTag(42);
+        output.WriteString(Name);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1945,6 +1979,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(34);
         output.WriteString(Label);
       }
+      if (HasName) {
+        output.WriteRawTag(42);
+        output.WriteString(Name);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1966,6 +2004,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasLabel) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Label);
+      }
+      if (HasName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1990,6 +2031,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasLabel) {
         Label = other.Label;
+      }
+      if (other.HasName) {
+        Name = other.Name;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2026,6 +2070,10 @@ namespace OpenSteamworks.Protobuf {
             Label = input.ReadString();
             break;
           }
+          case 42: {
+            Name = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -2059,6 +2107,10 @@ namespace OpenSteamworks.Protobuf {
           }
           case 34: {
             Label = input.ReadString();
+            break;
+          }
+          case 42: {
+            Name = input.ReadString();
             break;
           }
         }
@@ -2398,6 +2450,7 @@ namespace OpenSteamworks.Protobuf {
       itemExpiration_ = other.itemExpiration_;
       marketBuyCountryRestriction_ = other.marketBuyCountryRestriction_;
       marketSellCountryRestriction_ = other.marketSellCountryRestriction_;
+      sealed_ = other.sealed_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3078,6 +3131,33 @@ namespace OpenSteamworks.Protobuf {
       marketSellCountryRestriction_ = null;
     }
 
+    /// <summary>Field number for the "sealed" field.</summary>
+    public const int SealedFieldNumber = 32;
+    private readonly static bool SealedDefaultValue = false;
+
+    private bool sealed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Sealed {
+      get { if ((_hasBits0 & 1024) != 0) { return sealed_; } else { return SealedDefaultValue; } }
+      set {
+        _hasBits0 |= 1024;
+        sealed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "sealed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSealed {
+      get { return (_hasBits0 & 1024) != 0; }
+    }
+    /// <summary>Clears the value of the "sealed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSealed() {
+      _hasBits0 &= ~1024;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3123,6 +3203,7 @@ namespace OpenSteamworks.Protobuf {
       if (ItemExpiration != other.ItemExpiration) return false;
       if (MarketBuyCountryRestriction != other.MarketBuyCountryRestriction) return false;
       if (MarketSellCountryRestriction != other.MarketSellCountryRestriction) return false;
+      if (Sealed != other.Sealed) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3160,6 +3241,7 @@ namespace OpenSteamworks.Protobuf {
       if (HasItemExpiration) hash ^= ItemExpiration.GetHashCode();
       if (HasMarketBuyCountryRestriction) hash ^= MarketBuyCountryRestriction.GetHashCode();
       if (HasMarketSellCountryRestriction) hash ^= MarketSellCountryRestriction.GetHashCode();
+      if (HasSealed) hash ^= Sealed.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3277,6 +3359,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(250, 1);
         output.WriteString(MarketSellCountryRestriction);
       }
+      if (HasSealed) {
+        output.WriteRawTag(128, 2);
+        output.WriteBool(Sealed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3386,6 +3472,10 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(250, 1);
         output.WriteString(MarketSellCountryRestriction);
       }
+      if (HasSealed) {
+        output.WriteRawTag(128, 2);
+        output.WriteBool(Sealed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3471,6 +3561,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasMarketSellCountryRestriction) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(MarketSellCountryRestriction);
+      }
+      if (HasSealed) {
+        size += 2 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3562,6 +3655,9 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasMarketSellCountryRestriction) {
         MarketSellCountryRestriction = other.MarketSellCountryRestriction;
+      }
+      if (other.HasSealed) {
+        Sealed = other.Sealed;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3705,6 +3801,10 @@ namespace OpenSteamworks.Protobuf {
             MarketSellCountryRestriction = input.ReadString();
             break;
           }
+          case 256: {
+            Sealed = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -3845,6 +3945,10 @@ namespace OpenSteamworks.Protobuf {
           }
           case 250: {
             MarketSellCountryRestriction = input.ReadString();
+            break;
+          }
+          case 256: {
+            Sealed = input.ReadBool();
             break;
           }
         }

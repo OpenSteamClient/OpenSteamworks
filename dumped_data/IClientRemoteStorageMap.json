@@ -1,1548 +1,1526 @@
 {
-    "name": "IClientRemoteStorageMap",
-    "functions": [ 
-        {
-            "name": "FileWrite",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "2700541402",
-            "fencepost": "2753623592",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetFileSize",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "929989621",
-            "fencepost": "983458907",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "FileWriteAsync",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "659251151",
-            "fencepost": "712575276",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "unknown"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "FileReadAsync",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "3827258840",
-            "fencepost": "3880615223",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "FileReadAsyncComplete",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "3218415694",
-            "fencepost": "3271852722",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes_length_from_mem"
-            ]
-        },
-        {
-            "name": "FileRead",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "3953858504",
-            "fencepost": "4007053597",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_mem"
-            ]
-        },
-        {
-            "name": "FileForget",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "904109748",
-            "fencepost": "958240323",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "FileDelete",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2134857647",
-            "fencepost": "2189004351",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "FileShare",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "1495076193",
-            "fencepost": "1549239026",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "FileExists",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "1344823210",
-            "fencepost": "1398357012",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "FilePersisted",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "605666010",
-            "fencepost": "659215941",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetFileTimestamp",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "3895187424",
-            "fencepost": "3948672839",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "SetSyncPlatforms",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "2672076120",
-            "fencepost": "2727448628",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetSyncPlatforms",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "4248611273",
-            "fencepost": "9032614",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "FileWriteStreamOpen",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2221485650",
-            "fencepost": "2276922674",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "FileWriteStreamClose",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "3500488023",
-            "fencepost": "3555941176",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "FileWriteStreamCancel",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "404870064",
-            "fencepost": "460339346",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "FileWriteStreamWriteChunk",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "2266160502",
-            "fencepost": "2321710429",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetFileCount",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "3332007842",
-            "fencepost": "3385573902",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetFileNameAndSize",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "1572106932",
-            "fencepost": "1625785895",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "string",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetQuota",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "3269932138",
-            "fencepost": "3323740133",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes8",
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetUGCQuotaUsage",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "79209424",
-            "fencepost": "133178709",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes8",
-                "bytes4",
-                "bytes8",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "InitializeUGCQuotaUsage",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3720482820",
-            "fencepost": "3774548879",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "IsCloudEnabledForAccount",
-            "argc": "1",
-            "interfaceid": "13",
-            "functionid": "2257906091",
-            "fencepost": "2312230214",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "IsCloudEnabledForApp",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "2292656060",
-            "fencepost": "2347012441",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "SetCloudEnabledForApp",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "782948974",
-            "fencepost": "837918257",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "IsCloudSyncOnSuspendAvailableForApp",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3163778953",
-            "fencepost": "3218151463",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "IsCloudSyncOnSuspendEnabledForApp",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "2453336768",
-            "fencepost": "2507725407",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "SetCloudSyncOnSuspendEnabledForApp",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "940591373",
-            "fencepost": "994996141",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "UGCDownload",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "944243104",
-            "fencepost": "998664001",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes1",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "UGCDownloadToLocation",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "1241125866",
-            "fencepost": "1295562892",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetUGCDownloadProgress",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "2468205095",
-            "fencepost": "2522722766",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetUGCDetails",
-            "argc": "7",
-            "interfaceid": "13",
-            "functionid": "2373018389",
-            "fencepost": "2427697350",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes4",
-                "unknown",
-                "bytes4",
-                "uint64"
-            ]
-        },
-        {
-            "name": "UGCRead",
-            "argc": "7",
-            "interfaceid": "13",
-            "functionid": "264918955",
-            "fencepost": "319791464",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4",
-                "bytes_length_from_mem"
-            ]
-        },
-        {
-            "name": "GetCachedUGCCount",
-            "argc": "1",
-            "interfaceid": "13",
-            "functionid": "962819732",
-            "fencepost": "1017740628",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetCachedUGCHandle",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "1440107394",
-            "fencepost": "1495044419",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "PublishFile",
-            "argc": "11",
-            "interfaceid": "13",
-            "functionid": "3938173201",
-            "fencepost": "3993948934",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "string",
-                "bytes4",
-                "string",
-                "string",
-                "bytes4",
-                "utlvector",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "PublishVideo",
-            "argc": "12",
-            "interfaceid": "13",
-            "functionid": "3237332968",
-            "fencepost": "3293560313",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "string",
-                "bytes4",
-                "string",
-                "bytes4",
-                "string",
-                "string",
-                "bytes4",
-                "utlvector"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "PublishVideoFromURL",
-            "argc": "10",
-            "interfaceid": "13",
-            "functionid": "3585284565",
-            "fencepost": "3641269975",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "string",
-                "bytes4",
-                "string",
-                "string",
-                "bytes4",
-                "utlvector"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "CreatePublishedFileUpdateRequest",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2602621245",
-            "fencepost": "2658896977",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFileFile",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2724019193",
-            "fencepost": "2780311054",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFilePreviewFile",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2199189532",
-            "fencepost": "2255497522",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFileTitle",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "298776191",
-            "fencepost": "355100310",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFileDescription",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "1889033042",
-            "fencepost": "1945373290",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFileSetChangeDescription",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2441620961",
-            "fencepost": "2498106370",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFileVisibility",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "139469980",
-            "fencepost": "195826357",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFileTags",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "3676573930",
-            "fencepost": "3733010952",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "utlvector"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "UpdatePublishedFileURL",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "183023571",
-            "fencepost": "239525109",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "CommitPublishedFileUpdate",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "1123480663",
-            "fencepost": "1179998330",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetPublishedFileDetails",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "2422896562",
-            "fencepost": "2479430358",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes1",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "DeletePublishedFile",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "2547507649",
-            "fencepost": "2604057574",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EnumerateUserPublishedFiles",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2480137869",
-            "fencepost": "2536703923",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "SubscribePublishedFile",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2771620077",
-            "fencepost": "2828202260",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EnumerateUserSubscribedFiles",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "2356712153",
-            "fencepost": "2413310465",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes1",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "UnsubscribePublishedFile",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2217145274",
-            "fencepost": "2273759715",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "SetUserPublishedFileAction",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "921031395",
-            "fencepost": "977887771",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes8",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EnumeratePublishedFilesByUserAction",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "334559655",
-            "fencepost": "391432160",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EnumerateUserSubscribedFilesWithUpdates",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "3417870748",
-            "fencepost": "3474969059",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetCREItemVoteSummary",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "1973024260",
-            "fencepost": "2029654830",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "UpdateUserPublishedItemVote",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "3401381817",
-            "fencepost": "3458028516",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetUserPublishedItemVoteDetails",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "2119609245",
-            "fencepost": "2176272073",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EnumerateUserSharedWorkshopFiles",
-            "argc": "7",
-            "interfaceid": "13",
-            "functionid": "1244284281",
-            "fencepost": "1301076141",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "uint64",
-                "bytes4",
-                "utlvector",
-                "utlvector"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EnumeratePublishedWorkshopFiles",
-            "argc": "9",
-            "interfaceid": "13",
-            "functionid": "3834643941",
-            "fencepost": "3891693865",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "bytes4",
-                "utlvector",
-                "utlvector"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "EGetFileSyncState",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "3704668785",
-            "fencepost": "3758170329",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BIsFileSyncing",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2268063816",
-            "fencepost": "2321581489",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "FilePersist",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "406332978",
-            "fencepost": "460415166",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "FileFetch",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "3170103032",
-            "fencepost": "3224217478",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "ResolvePath",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "2425933532",
-            "fencepost": "2480209268",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes_length_from_mem"
-            ]
-        },
-        {
-            "name": "FileTouch",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "3440726888",
-            "fencepost": "3494825205",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "string",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "SetCloudEnabledForAccount",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "4119076406",
-            "fencepost": "4173416658",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "LoadLocalFileInfoCache",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3479012164",
-            "fencepost": "3533997576",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "EvaluateRemoteStorageSyncState",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "1491205576",
-            "fencepost": "1546207117",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetLastKnownSyncState",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "2456948904",
-            "fencepost": "2512289154",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetRemoteStorageSyncState",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "167981207",
-            "fencepost": "223337586",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "HaveLatestFilesLocally",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "247100225",
-            "fencepost": "302182411",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetConflictingFileTimestamps",
-            "argc": "4",
-            "interfaceid": "13",
-            "functionid": "2818229831",
-            "fencepost": "2873392662",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetPendingRemoteOperationInfo",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "830589094",
-            "fencepost": "885864828",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "unknown"
-            ]
-        },
-        {
-            "name": "ResolveSyncConflict",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "1305994754",
-            "fencepost": "1361012424",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SynchronizeApp",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "2065888849",
-            "fencepost": "2120922648",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "IsAppSyncInProgress",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3554676470",
-            "fencepost": "3610000591",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "RunAutoCloudOnAppLaunch",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3089248649",
-            "fencepost": "3144298577",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "RunAutoCloudOnAppExit",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "2117638181",
-            "fencepost": "2172704238",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "ResetFileRequestState",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "847978952",
-            "fencepost": "903383718",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "ClearPublishFileUpdateRequests",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3586349777",
-            "fencepost": "3643190024",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetSubscribedFileDownloadCount",
-            "argc": "1",
-            "interfaceid": "13",
-            "functionid": "2522406273",
-            "fencepost": "2579536842",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BGetSubscribedFileDownloadInfo",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "26159792",
-            "fencepost": "83419393",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "boolean",
-                "bytes8",
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BGetSubscribedFileDownloadInfo",
-            "argc": "6",
-            "interfaceid": "13",
-            "functionid": "1527689540",
-            "fencepost": "1585142689",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "boolean",
-                "bytes4",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "PauseSubscribedFileDownloadsForApp",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "2474993832",
-            "fencepost": "2532527626",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "ResumeSubscribedFileDownloadsForApp",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3246838258",
-            "fencepost": "3304388181",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "PauseAllSubscribedFileDownloads",
-            "argc": "1",
-            "interfaceid": "13",
-            "functionid": "3701411634",
-            "fencepost": "3758977686",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "ResumeAllSubscribedFileDownloads",
-            "argc": "1",
-            "interfaceid": "13",
-            "functionid": "978120356",
-            "fencepost": "1035702537",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "CancelCurrentAndPendingOperations",
-            "argc": "1",
-            "interfaceid": "13",
-            "functionid": "360336119",
-            "fencepost": "417934429",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetLocalFileChangeCount",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "2496721534",
-            "fencepost": "2554335973",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetLocalFileChange",
-            "argc": "5",
-            "interfaceid": "13",
-            "functionid": "1242871054",
-            "fencepost": "1300582267",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "string",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BeginFileWriteBatch",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "1300059924",
-            "fencepost": "1357835653",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "EndFileWriteBatch",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "781866353",
-            "fencepost": "839658211",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "GetCloudEnabledForAppMap",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "552952244",
-            "fencepost": "610760231",
-            "cannotcallincrossprocess": "1",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "GetLastKnownSyncStateMap",
-            "argc": "3",
-            "interfaceid": "13",
-            "functionid": "3256526501",
-            "fencepost": "3314399004",
-            "cannotcallincrossprocess": "1",
-            "serializedargs": [
-                "bytes4",
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "PerformAppPlatformChangeFileBackup",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "3842196053",
-            "fencepost": "3900100814",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "PerformAppPlatformChangeFileRestore",
-            "argc": "2",
-            "interfaceid": "13",
-            "functionid": "1234734384",
-            "fencepost": "1292655274",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-            ]
-        }
-    ]
+  "name": "IClientRemoteStorage",
+  "functions": [
+    {
+      "name": "FileWrite",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2700541361",
+      "fencepost": "2753252584",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetFileSize",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "929989594",
+      "fencepost": "983087913",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "FileWriteAsync",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "659251174",
+      "fencepost": "712204332",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "utlbuf"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "FileReadAsync",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3827258849",
+      "fencepost": "3880244265",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "FileReadAsyncComplete",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3218415733",
+      "fencepost": "3271481794",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "FileRead",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3953858515",
+      "fencepost": "4006682641",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "FileForget",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "904109741",
+      "fencepost": "957869349",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "FileDelete",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2134857652",
+      "fencepost": "2188633389",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "FileShare",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1495076216",
+      "fencepost": "1548868082",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "FileExists",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1344823229",
+      "fencepost": "1397986064",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "FilePersisted",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "605665987",
+      "fencepost": "658844951",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetFileTimestamp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3895187401",
+      "fencepost": "3948301849",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "SetSyncPlatforms",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2672076131",
+      "fencepost": "2727077672",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetSyncPlatforms",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "4248611312",
+      "fencepost": "0",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "FileWriteStreamOpen",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2221485673",
+      "fencepost": "2276551730",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "FileWriteStreamClose",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3500488046",
+      "fencepost": "3555570232",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "FileWriteStreamCancel",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "404870023",
+      "fencepost": "459968338",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "FileWriteStreamWriteChunk",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2266160479",
+      "fencepost": "2321339439",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetFileCount",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3332007865",
+      "fencepost": "3385202958",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetFileNameAndSize",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1572106925",
+      "fencepost": "1625414921",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "string",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetQuota",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3269932419",
+      "fencepost": "3323369447",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes8",
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetUGCQuotaUsage",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "79209001",
+      "fencepost": "132807319",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes8",
+        "bytes4",
+        "bytes8",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "InitializeUGCQuotaUsage",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3720482845",
+      "fencepost": "3774177937",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "IsCloudEnabledForAccount",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2257906066",
+      "fencepost": "2311859222",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "IsCloudEnabledForApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2292656005",
+      "fencepost": "2346641419",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "SetCloudEnabledForApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "782948871",
+      "fencepost": "837547187",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "IsCloudSyncOnSuspendAvailableForApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3163778998",
+      "fencepost": "3217780541",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "IsCloudSyncOnSuspendEnabledForApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2453336825",
+      "fencepost": "2507354497",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "SetCloudSyncOnSuspendEnabledForApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "940591414",
+      "fencepost": "994625215",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "UGCDownload",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "944243097",
+      "fencepost": "998293027",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes1",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "UGCDownloadToLocation",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1241125853",
+      "fencepost": "1295191912",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetUGCDownloadProgress",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2468205070",
+      "fencepost": "2522351774",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetUGCDetails",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2373018380",
+      "fencepost": "2427326374",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes4",
+        "unknown(0x15E0960)",
+        "bytes4",
+        "uint64"
+      ]
+    },
+    {
+      "name": "UGCRead",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "264918978",
+      "fencepost": "319420520",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "GetCachedUGCCount",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "962819823",
+      "fencepost": "1017369752",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetCachedUGCHandle",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1440107515",
+      "fencepost": "1494673573",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "PublishFile",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3938173190",
+      "fencepost": "3993577956",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "string",
+        "bytes4",
+        "string",
+        "string",
+        "bytes4",
+        "paramstringarray",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "PublishVideo",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3237332737",
+      "fencepost": "3293189115",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "string",
+        "bytes4",
+        "string",
+        "bytes4",
+        "string",
+        "string",
+        "bytes4",
+        "paramstringarray"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "PublishVideoFromURL",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3585284414",
+      "fencepost": "3640898857",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "string",
+        "bytes4",
+        "string",
+        "string",
+        "bytes4",
+        "paramstringarray"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "CreatePublishedFileUpdateRequest",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2602621206",
+      "fencepost": "2658525971",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFileFile",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2724019152",
+      "fencepost": "2779940046",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFilePreviewFile",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2199189555",
+      "fencepost": "2255126578",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFileTitle",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "298776150",
+      "fencepost": "354729302",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFileDescription",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1889033081",
+      "fencepost": "1945002362",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFileSetChangeDescription",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2441620952",
+      "fencepost": "2497735394",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFileVisibility",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "139470005",
+      "fencepost": "195455415",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFileTags",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3676573907",
+      "fencepost": "3732639962",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "paramstringarray"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "UpdatePublishedFileURL",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "183023588",
+      "fencepost": "239154159",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "CommitPublishedFileUpdate",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1123480702",
+      "fencepost": "1179627402",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetPublishedFileDetails",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2422896537",
+      "fencepost": "2479059366",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes1",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "DeletePublishedFile",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2547507688",
+      "fencepost": "2603686646",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EnumerateUserPublishedFiles",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2480137890",
+      "fencepost": "2536332977",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "SubscribePublishedFile",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2771620036",
+      "fencepost": "2827831252",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EnumerateUserSubscribedFiles",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2356712178",
+      "fencepost": "2412939523",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes1",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "UnsubscribePublishedFile",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2217145235",
+      "fencepost": "2273388709",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "SetUserPublishedFileAction",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "921031304",
+      "fencepost": "977516713",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes8",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EnumeratePublishedFilesByUserAction",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "334559694",
+      "fencepost": "391061232",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EnumerateUserSubscribedFilesWithUpdates",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3417870837",
+      "fencepost": "3474598181",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetCREItemVoteSummary",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1973024275",
+      "fencepost": "2029283878",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "UpdateUserPublishedItemVote",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3401381792",
+      "fencepost": "3457657524",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetUserPublishedItemVoteDetails",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2119609222",
+      "fencepost": "2175901083",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EnumerateUserSharedWorkshopFiles",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1244284262",
+      "fencepost": "1300705155",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "uint64",
+        "bytes4",
+        "paramstringarray",
+        "paramstringarray"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EnumeratePublishedWorkshopFiles",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3834643868",
+      "fencepost": "3891322825",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "paramstringarray",
+        "paramstringarray"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "EGetFileSyncState",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3704668762",
+      "fencepost": "3757799339",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BIsFileSyncing",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2268063841",
+      "fencepost": "2321210547",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "FilePersist",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "406332969",
+      "fencepost": "460044190",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "FileFetch",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3170103015",
+      "fencepost": "3223846494",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "ResolvePath",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2425933515",
+      "fencepost": "2479838284",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "FileTouch",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3440726897",
+      "fencepost": "3494454247",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "string",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "SetCloudEnabledForAccount",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "4119076365",
+      "fencepost": "4173045650",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "LoadLocalFileInfoCache",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3479012143",
+      "fencepost": "3533626588",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "EvaluateRemoteStorageSyncState",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1491205537",
+      "fencepost": "1545836111",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetLastKnownSyncState",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2456948895",
+      "fencepost": "2511918178",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetRemoteStorageSyncState",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "167981230",
+      "fencepost": "222966642",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "HaveLatestFilesLocally",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "247100246",
+      "fencepost": "301811465",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetConflictingFileTimestamps",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2818229854",
+      "fencepost": "2873021718",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetPendingRemoteOperationInfo",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "830589071",
+      "fencepost": "885493838",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "protobuf"
+      ]
+    },
+    {
+      "name": "ResolveSyncConflict",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1305994861",
+      "fencepost": "1360641564",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SynchronizeApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2065888824",
+      "fencepost": "2120551656",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "IsAppSyncInProgress",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3554676447",
+      "fencepost": "3609629601",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "RunAutoCloudOnAppLaunch",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3089248738",
+      "fencepost": "3143927699",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "RunAutoCloudOnAppExit",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2117638220",
+      "fencepost": "2172333310",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "ResetFileRequestState",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "847978999",
+      "fencepost": "903012798",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "ClearPublishFileUpdateRequests",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3586349752",
+      "fencepost": "3642819032",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetSubscribedFileDownloadCount",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2522406376",
+      "fencepost": "2579165978",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BGetSubscribedFileDownloadInfo",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "26159783",
+      "fencepost": "83048417",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean",
+        "bytes8",
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BGetSubscribedFileDownloadInfo",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1527689581",
+      "fencepost": "1584771763",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "boolean",
+        "bytes4",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "PauseSubscribedFileDownloadsForApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2474993823",
+      "fencepost": "2532156650",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "ResumeSubscribedFileDownloadsForApp",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3246838235",
+      "fencepost": "3304017191",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "PauseAllSubscribedFileDownloads",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3701411609",
+      "fencepost": "3758606694",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "ResumeAllSubscribedFileDownloads",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "978120333",
+      "fencepost": "1035331547",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "CancelCurrentAndPendingOperations",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "360336088",
+      "fencepost": "417563431",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetLocalFileChangeCount",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "2496721495",
+      "fencepost": "2553964967",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetLocalFileChange",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1242871077",
+      "fencepost": "1300211323",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "string",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BeginFileWriteBatch",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1300059917",
+      "fencepost": "1357464679",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "EndFileWriteBatch",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "781866342",
+      "fencepost": "839287233",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "GetCloudEnabledForAppMap",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "552952413",
+      "fencepost": "610389433",
+      "cannotcallincrossprocess": "1",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "GetLastKnownSyncStateMap",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3256526158",
+      "fencepost": "3314027694",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "PerformAppPlatformChangeFileBackup",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "3842195900",
+      "fencepost": "3899729694",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    },
+    {
+      "name": "PerformAppPlatformChangeFileRestore",
+      "argc": "-1",
+      "interfaceid": "13",
+      "functionid": "1234734791",
+      "fencepost": "1292284714",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": []
+    }
+  ]
 }

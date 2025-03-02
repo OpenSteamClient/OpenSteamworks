@@ -118,7 +118,7 @@ namespace OpenSteamworks.Protobuf {
             "bVBlcmZEaWFnbm9zdGljSW5mbxIvCgdlbnRyaWVzGAEgAygLMh4uQ01zZ1N5",
             "c3RlbVBlcmZEaWFnbm9zdGljRW50cnkSMwoKaW50ZXJmYWNlcxgCIAMoCzIf",
             "LkNNc2dTeXN0ZW1QZXJmTmV0d29ya0ludGVyZmFjZRIWCg5iYXR0ZXJ5X3Rl",
-            "bXBfYxgDIAEoAiL1CAoUQ01zZ1N5c3RlbVBlcmZMaW1pdHMSIwobY3B1X2dv",
+            "bXBfYxgDIAEoAiKxCAoUQ01zZ1N5c3RlbVBlcmZMaW1pdHMSIwobY3B1X2dv",
             "dmVybm9yX21hbnVhbF9taW5fbWh6GAEgASgFEiMKG2NwdV9nb3Zlcm5vcl9t",
             "YW51YWxfbWF4X21oehgCIAEoBRIZChFmc3Jfc2hhcnBuZXNzX21pbhgDIAEo",
             "BRIZChFmc3Jfc2hhcnBuZXNzX21heBgEIAEoBRImCh5ncHVfcGVyZm9ybWFu",
@@ -141,30 +141,25 @@ namespace OpenSteamworks.Protobuf {
             "aW5nX3N1cHBvcnRlZBgZIAEoCBI9Ch9zcGxpdF9zY2FsaW5nX2ZpbHRlcnNf",
             "YXZhaWxhYmxlGBogAygOMhQuRVNwbGl0U2NhbGluZ0ZpbHRlchI9Ch9zcGxp",
             "dF9zY2FsaW5nX3NjYWxlcnNfYXZhaWxhYmxlGBsgAygOMhQuRVNwbGl0U2Nh",
-            "bGluZ1NjYWxlchIYChBpc19oZHJfc3VwcG9ydGVkGBwgASgIEigKIGRpc3Bs",
-            "YXlfcmVmcmVzaF9tYW51YWxfaHpfb2NfbWF4GB0gASgFEicKH2Rpc2FibGVf",
-            "cmVmcmVzaF9yYXRlX21hbmFnZW1lbnQYHiABKAgiwgcKHENNc2dTeXN0ZW1Q",
-            "ZXJmU2V0dGluZ3NHbG9iYWwSHgoWZGlhZ25vc3RpY191cGRhdGVfcmF0ZRgB",
-            "IAEoAhJZChpzeXN0ZW1fdHJhY2Vfc2VydmljZV9zdGF0ZRgCIAEoDjIULkVT",
-            "eXN0ZW1TZXJ2aWNlU3RhdGU6H0VTeXN0ZW1TZXJ2aWNlU3RhdGVfVW5hdmFp",
-            "bGFibGUSXwogZ3JhcGhpY3NfcHJvZmlsaW5nX3NlcnZpY2Vfc3RhdGUYAyAB",
-            "KA4yFC5FU3lzdGVtU2VydmljZVN0YXRlOh9FU3lzdGVtU2VydmljZVN0YXRl",
-            "X1VuYXZhaWxhYmxlElkKGnBlcmZfb3ZlcmxheV9zZXJ2aWNlX3N0YXRlGAQg",
-            "ASgOMhQuRVN5c3RlbVNlcnZpY2VTdGF0ZTofRVN5c3RlbVNlcnZpY2VTdGF0",
-            "ZV9VbmF2YWlsYWJsZRJYChJwZXJmX292ZXJsYXlfbGV2ZWwYBSABKA4yGi5F",
-            "R3JhcGhpY3NQZXJmT3ZlcmxheUxldmVsOiBFR3JhcGhpY3NQZXJmT3Zlcmxh",
-            "eUxldmVsX0hpZGRlbhIvCidpc19zaG93X3BlcmZfb3ZlcmxheV9vdmVyX3N0",
-            "ZWFtX2VuYWJsZWQYBiABKAgSJAocaXNfYWR2YW5jZWRfc2V0dGluZ3NfZW5h",
-            "YmxlZBgHIAEoCBIuCiZhbGxvd19leHRlcm5hbF9kaXNwbGF5X3JlZnJlc2hf",
-            "Y29udHJvbBgIIAEoCBIWCg5pc19oZHJfZW5hYmxlZBgJIAEoCBJWChtoZHJf",
-            "b25fc2RyX3RvbmVtYXBfb3BlcmF0b3IYDCABKA4yFC5FSERSVG9uZU1hcE9w",
-            "ZXJhdG9yOhtFSERSVG9uZU1hcE9wZXJhdG9yX0ludmFsaWQSJAocaXNfaGRy",
-            "X2RlYnVnX2hlYXRtYXBfZW5hYmxlZBgNIAEoCBIrCh1mb3JjZV9oZHJfd2lk",
-            "ZV9nYW1tdXRfZm9yX3NkchgPIAEoCDoEdHJ1ZRIeChZhbGxvd19leHBlcmlt",
-            "ZW50YWxfaGRyGBAgASgIEh0KFXNkcl90b19oZHJfYnJpZ2h0bmVzcxgWIAEo",
-            "AhIfChdkZWJ1Z19mb3JjZV9oZHJfc3VwcG9ydBgSIAEoCBIjChtmb3JjZV9o",
-            "ZHJfMTBwcV9vdXRwdXRfZGVidWcYEyABKAgSHQoVaXNfZGlzcGxheV9vY19l",
-            "bmFibGVkGBQgASgIEiMKG2lzX2NvbG9yX21hbmFnZW1lbnRfZW5hYmxlZBgV",
+            "bGluZ1NjYWxlchInCh9kaXNhYmxlX3JlZnJlc2hfcmF0ZV9tYW5hZ2VtZW50",
+            "GB4gASgIIqUGChxDTXNnU3lzdGVtUGVyZlNldHRpbmdzR2xvYmFsEh4KFmRp",
+            "YWdub3N0aWNfdXBkYXRlX3JhdGUYASABKAISWQoac3lzdGVtX3RyYWNlX3Nl",
+            "cnZpY2Vfc3RhdGUYAiABKA4yFC5FU3lzdGVtU2VydmljZVN0YXRlOh9FU3lz",
+            "dGVtU2VydmljZVN0YXRlX1VuYXZhaWxhYmxlEl8KIGdyYXBoaWNzX3Byb2Zp",
+            "bGluZ19zZXJ2aWNlX3N0YXRlGAMgASgOMhQuRVN5c3RlbVNlcnZpY2VTdGF0",
+            "ZTofRVN5c3RlbVNlcnZpY2VTdGF0ZV9VbmF2YWlsYWJsZRJZChpwZXJmX292",
+            "ZXJsYXlfc2VydmljZV9zdGF0ZRgEIAEoDjIULkVTeXN0ZW1TZXJ2aWNlU3Rh",
+            "dGU6H0VTeXN0ZW1TZXJ2aWNlU3RhdGVfVW5hdmFpbGFibGUSWAoScGVyZl9v",
+            "dmVybGF5X2xldmVsGAUgASgOMhouRUdyYXBoaWNzUGVyZk92ZXJsYXlMZXZl",
+            "bDogRUdyYXBoaWNzUGVyZk92ZXJsYXlMZXZlbF9IaWRkZW4SLwonaXNfc2hv",
+            "d19wZXJmX292ZXJsYXlfb3Zlcl9zdGVhbV9lbmFibGVkGAYgASgIEiQKHGlz",
+            "X2FkdmFuY2VkX3NldHRpbmdzX2VuYWJsZWQYByABKAgSLgomYWxsb3dfZXh0",
+            "ZXJuYWxfZGlzcGxheV9yZWZyZXNoX2NvbnRyb2wYCCABKAgSVgobaGRyX29u",
+            "X3Nkcl90b25lbWFwX29wZXJhdG9yGAwgASgOMhQuRUhEUlRvbmVNYXBPcGVy",
+            "YXRvcjobRUhEUlRvbmVNYXBPcGVyYXRvcl9JbnZhbGlkEiQKHGlzX2hkcl9k",
+            "ZWJ1Z19oZWF0bWFwX2VuYWJsZWQYDSABKAgSKwodZm9yY2VfaGRyX3dpZGVf",
+            "Z2FtbXV0X2Zvcl9zZHIYDyABKAg6BHRydWUSHQoVc2RyX3RvX2hkcl9icmln",
+            "aHRuZXNzGBYgASgCEiMKG2lzX2NvbG9yX21hbmFnZW1lbnRfZW5hYmxlZBgV",
             "IAEoCCKiBwocQ01zZ1N5c3RlbVBlcmZTZXR0aW5nc1BlckFwcBIiChpncHVf",
             "cGVyZm9ybWFuY2VfbWFudWFsX21oehgBIAEoBRIRCglmcHNfbGltaXQYAiAB",
             "KAUSJgoeaXNfdmFyaWFibGVfcmVzb2x1dGlvbl9lbmFibGVkGAMgASgIEicK",
@@ -269,141 +264,141 @@ namespace OpenSteamworks.Protobuf {
             "YW5hZ2VyU3RhdGVIVyI4CiVDTXNnU3lzdGVtQXVkaW9NYW5hZ2VyVXBkYXRl",
             "U29tZXRoaW5nEg8KB2NvdW50ZXIYASABKAUiVgoVQ01zZ1N5c3RlbURpc3Bs",
             "YXlNb2RlEgoKAmlkGAEgASgFEg0KBXdpZHRoGAIgASgFEg4KBmhlaWdodBgD",
-            "IAEoBRISCgpyZWZyZXNoX2h6GAQgASgFIrQDChFDTXNnU3lzdGVtRGlzcGxh",
+            "IAEoBRISCgpyZWZyZXNoX2h6GAQgASgFIsADChFDTXNnU3lzdGVtRGlzcGxh",
             "eRIKCgJpZBgBIAEoBRIMCgRuYW1lGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMg",
             "ASgJEhIKCmlzX3ByaW1hcnkYBCABKAgSEgoKaXNfZW5hYmxlZBgFIAEoCBIT",
             "Cgtpc19pbnRlcm5hbBgGIAEoCBIZChFoYXNfbW9kZV9vdmVycmlkZRgHIAEo",
             "CBIQCgh3aWR0aF9tbRgIIAEoBRIRCgloZWlnaHRfbW0YCSABKAUSFwoPY3Vy",
             "cmVudF9tb2RlX2lkGAogASgFEiUKBW1vZGVzGAsgAygLMhYuQ01zZ1N5c3Rl",
             "bURpc3BsYXlNb2RlEhgKEHJlZnJlc2hfcmF0ZV9taW4YDCABKAUSGAoQcmVm",
-            "cmVzaF9yYXRlX21heBgNIAEoBRIWCg5pc192cnJfY2FwYWJsZRgOIAEoCBIW",
-            "Cg5pc192cnJfZW5hYmxlZBgPIAEoCBIWCg5pc19oZHJfY2FwYWJsZRgQIAEo",
-            "CBIWCg5pc19oZHJfZW5hYmxlZBgRIAEoCBIfChdzdXBwb3J0ZWRfcmVmcmVz",
-            "aF9yYXRlcxgSIAMoBSLRAQodQ01zZ1N5c3RlbURpc3BsYXlNYW5hZ2VyU3Rh",
-            "dGUSJAoIZGlzcGxheXMYASADKAsyEi5DTXNnU3lzdGVtRGlzcGxheRIjChtp",
-            "c19tb2RlX3N3aXRjaGluZ19zdXBwb3J0ZWQYAiABKAgSZQoSY29tcGF0aWJp",
-            "bGl0eV9tb2RlGAMgASgOMiAuRVN5c3RlbURpc3BsYXlDb21wYXRpYmlsaXR5",
-            "TW9kZTonRVN5c3RlbURpc3BsYXlDb21wYXRpYmlsaXR5TW9kZV9JbnZhbGlk",
-            "IkYKH0NNc2dTeXN0ZW1EaXNwbGF5TWFuYWdlclNldE1vZGUSEgoKZGlzcGxh",
-            "eV9pZBgBIAEoBRIPCgdtb2RlX2lkGAIgASgFIpwLChlDTXNnU3lzdGVtTWFu",
-            "YWdlclNldHRpbmdzEioKImlkbGVfYmFja2xpZ2h0X2RpbV9iYXR0ZXJ5X3Nl",
-            "Y29uZHMYASABKAISJQodaWRsZV9iYWNrbGlnaHRfZGltX2FjX3NlY29uZHMY",
-            "AiABKAISJAocaWRsZV9zdXNwZW5kX2JhdHRlcnlfc2Vjb25kcxgDIAEoAhIf",
-            "ChdpZGxlX3N1c3BlbmRfYWNfc2Vjb25kcxgEIAEoAhIeChZpZGxlX3N1c3Bl",
-            "bmRfc3VwcmVzc2VkGAUgASgIEigKIGlzX2FkYXB0aXZlX2JyaWdodG5lc3Nf",
-            "YXZhaWxhYmxlGAYgASgIEisKI2Rpc3BsYXlfYWRhcHRpdmVfYnJpZ2h0bmVz",
-            "c19lbmFibGVkGAcgASgIEiEKGWRpc3BsYXlfbmlnaHRtb2RlX2VuYWJsZWQY",
-            "CiABKAgSJgoeZGlzcGxheV9uaWdodG1vZGVfdGludHN0cmVuZ3RoGAsgASgC",
-            "EiAKGGRpc3BsYXlfbmlnaHRtb2RlX21heGh1ZRgMIAEoAhIgChhkaXNwbGF5",
-            "X25pZ2h0bW9kZV9tYXhzYXQYDSABKAISHwoXZGlzcGxheV9uaWdodG1vZGVf",
-            "dWlleHAYDiABKAISHwoXZGlzcGxheV9uaWdodG1vZGVfYmxlbmQYDyABKAIS",
-            "HwoXZGlzcGxheV9uaWdodG1vZGVfcmVzZXQYECABKAgSKgoiZGlzcGxheV9u",
-            "aWdodG1vZGVfc2NoZWR1bGVfZW5hYmxlZBgRIAEoCBIsCiRkaXNwbGF5X25p",
-            "Z2h0bW9kZV9zY2hlZHVsZV9zdGFydHRpbWUYEiABKAISKgoiZGlzcGxheV9u",
-            "aWdodG1vZGVfc2NoZWR1bGVfZW5kdGltZRgTIAEoAhIjChtkaXNwbGF5X2Rp",
-            "YWdub3N0aWNzX2VuYWJsZWQYFCABKAgSFwoPYWxzX2x1eF9wcmltYXJ5GBUg",
-            "ASgCEhYKDmFsc19sdXhfbWVkaWFuGBYgASgCEh0KFWRpc3BsYXlfYmFja2xp",
-            "Z2h0X3JhdxgXIAEoAhImCh5kaXNwbGF5X2JyaWdodG5lc3NfYWRhcHRpdmVt",
-            "aW4YGCABKAISJgoeZGlzcGxheV9icmlnaHRuZXNzX2FkYXB0aXZlbWF4GBkg",
-            "ASgCEiEKGWlzX3dpZmlfcG93ZXJzYXZlX2VuYWJsZWQYGiABKAgSIAoYaXNf",
-            "ZmFuX2NvbnRyb2xfYXZhaWxhYmxlGBsgASgIEk4KEGZhbl9jb250cm9sX21v",
-            "ZGUYHCABKA4yFi5FU3lzdGVtRmFuQ29udHJvbE1vZGU6HFN5c3RlbUZhbkNv",
-            "bnRyb2xNb2RlX0ludmFsaWQSJwofaXNfZGlzcGxheV9icmlnaHRuZXNzX2F2",
-            "YWlsYWJsZRgdIAEoCBIsCiRpc19kaXNwbGF5X2NvbG9ybWFuYWdlbWVudF9h",
-            "dmFpbGFibGUYHyABKAgSGgoSZGlzcGxheV9jb2xvcmdhbXV0GCAgASgCEhkK",
-            "EWFsc19sdXhfYWx0ZXJuYXRlGCEgASgCEiYKHmlzX2Rpc3BsYXlfY29sb3J0",
-            "ZW1wX2F2YWlsYWJsZRgiIAEoCBIZChFkaXNwbGF5X2NvbG9ydGVtcBgjIAEo",
-            "AhIhChlkaXNwbGF5X2NvbG9ydGVtcF9kZWZhdWx0GCQgASgCEiEKGWRpc3Bs",
-            "YXlfY29sb3J0ZW1wX2VuYWJsZWQYJSABKAgSVQobZGlzcGxheV9jb2xvcmdh",
-            "bXV0X2xhYmVsc2V0GCYgASgOMhQuRUNvbG9yR2FtdXRMYWJlbFNldDoaQ29s",
-            "b3JHYW11dExhYmVsU2V0X0RlZmF1bHQSLgomZGlzcGxheV9icmlnaHRuZXNz",
-            "X292ZXJkcml2ZV9oZHJfc3BsaXQYJyABKAIiYAoYQ01zZ1NlbGVjdE9TQnJh",
-            "bmNoUGFyYW1zEi0KBmJyYW5jaBgBIAEoDjIKLkVPU0JyYW5jaDoRRU9TQnJh",
-            "bmNoX1Vua25vd24SFQoNY3VzdG9tX2JyYW5jaBgCIAEoCSJwChhDTXNnU3lz",
-            "dGVtVXBkYXRlUHJvZ3Jlc3MSFgoOc3RhZ2VfcHJvZ3Jlc3MYASABKAISGAoQ",
-            "c3RhZ2Vfc2l6ZV9ieXRlcxgCIAEoAxIiChpydGltZV9lc3RpbWF0ZWRfY29t",
-            "cGxldGlvbhgDIAEoByLVAQobQ01zZ1N5c3RlbVVwZGF0ZUNoZWNrUmVzdWx0",
-            "EjEKBHR5cGUYASABKA4yDS5FVXBkYXRlclR5cGU6FEVVcGRhdGVyVHlwZV9J",
-            "bnZhbGlkEhIKB2VyZXN1bHQYAiABKA06ATISFQoNcnRpbWVfY2hlY2tlZBgD",
-            "IAEoBxIRCglhdmFpbGFibGUYBCABKAgSDwoHdmVyc2lvbhgFIAEoCRIUCgxh",
-            "dXRvX21lc3NhZ2UYBiABKAkSHgoWc3lzdGVtX3Jlc3RhcnRfcGVuZGluZxgH",
-            "IAEoCCJBChtDTXNnU3lzdGVtVXBkYXRlQXBwbHlQYXJhbXMSIgoLYXBwbHlf",
-            "dHlwZXMYASADKA4yDS5FVXBkYXRlclR5cGUitAEKG0NNc2dTeXN0ZW1VcGRh",
-            "dGVBcHBseVJlc3VsdBIxCgR0eXBlGAEgASgOMg0uRVVwZGF0ZXJUeXBlOhRF",
-            "VXBkYXRlclR5cGVfSW52YWxpZBISCgdlcmVzdWx0GAIgASgNOgEyEiYKF3Jl",
-            "cXVpcmVzX2NsaWVudF9yZXN0YXJ0GAMgASgIOgVmYWxzZRImChdyZXF1aXJl",
-            "c19zeXN0ZW1fcmVzdGFydBgEIAEoCDoFZmFsc2UijQIKFUNNc2dTeXN0ZW1V",
-            "cGRhdGVTdGF0ZRI0CgVzdGF0ZRgBIAEoDjIOLkVVcGRhdGVyU3RhdGU6FUVV",
-            "cGRhdGVyU3RhdGVfSW52YWxpZBIrCghwcm9ncmVzcxgCIAEoCzIZLkNNc2dT",
-            "eXN0ZW1VcGRhdGVQcm9ncmVzcxI4ChJ1cGRhdGVfY2hlY3Jlc3VsdHMYAyAD",
-            "KAsyHC5DTXNnU3lzdGVtVXBkYXRlQ2hlY2tSZXN1bHQSOgoUdXBkYXRlX2Fw",
-            "cGx5X3Jlc3VsdHMYBCADKAsyHC5DTXNnU3lzdGVtVXBkYXRlQXBwbHlSZXN1",
-            "bHQSGwoTc3VwcG9ydHNfb3NfdXBkYXRlcxgFIAEoCCImChVDTXNnQWNoaWV2",
-            "ZW1lbnRDaGFuZ2USDQoFYXBwaWQYASABKA0iXAoMQ01zZ0NlbGxMaXN0EiEK",
-            "BWNlbGxzGAEgAygLMhIuQ01zZ0NlbGxMaXN0LkNlbGwaKQoEQ2VsbBIPCgdj",
-            "ZWxsX2lkGAEgASgNEhAKCGxvY19uYW1lGAIgASgJIowDChBDTXNnU2hvcnRj",
-            "dXRJbmZvEg0KBWFwcGlkGAEgASgNEgsKA2V4ZRgCIAEoCRIRCglzdGFydF9k",
-            "aXIYAyABKAkSDAoEaWNvbhgEIAEoCRIMCgRwYXRoGAUgASgJEgwKBGFyZ3MY",
-            "BiABKAkSEAoIYXBwX25hbWUYByABKAkSFgoOb3ZlcnJpZGVfYXBwaWQYCCAB",
-            "KA0SEwoLZmxhdHBhYXBwaWQYCSABKAkSDAoEdGFncxgKIAMoCRIRCglpc19y",
-            "ZW1vdGUYCyABKAgSEQoJaXNfaGlkZGVuGAwgASgIEhQKDGlzX3RlbXBvcmFy",
-            "eRgNIAEoCBIRCglpc19vcGVudnIYDiABKAgSHAoUYWxsb3dfZGVza3RvcF9j",
-            "b25maWcYDyABKAgSFQoNYWxsb3dfb3ZlcmxheRgQIAEoCBIbChNydF9sYXN0",
-            "X3BsYXllZF90aW1lGBEgASgNEhoKEmlzX2RldmtpdF9zaG9ydGN1dBgSIAEo",
-            "CBIVCg1kZXZraXRfZ2FtZWlkGBMgASgJIiQKEkNNc2dTaG9ydGN1dEFwcElk",
-            "cxIOCgZhcHBpZHMYASADKA0iqgEKD0NNc2dNb25pdG9ySW5mbxIdChVzZWxl",
-            "Y3RlZF9kaXNwbGF5X25hbWUYASACKAkSLgoIbW9uaXRvcnMYAiADKAsyHC5D",
-            "TXNnTW9uaXRvckluZm8uTW9uaXRvckluZm8aSAoLTW9uaXRvckluZm8SGwoT",
-            "bW9uaXRvcl9kZXZpY2VfbmFtZRgBIAIoCRIcChRtb25pdG9yX2Rpc3BsYXlf",
-            "bmFtZRgCIAIoCSIyCh1DTXNnR2VuZXJhdGVTeXN0ZW1SZXBvcnRSZXBseRIR",
-            "CglyZXBvcnRfaWQYASABKAkiOAoWQ01zZ1dlYlVJVHJhbnNwb3J0SW5mbxIM",
-            "CgRwb3J0GAEgASgNEhAKCGF1dGhfa2V5GAIgASgJIjIKGUNNc2dXZWJVSVRy",
-            "YW5zcG9ydEZhaWx1cmUSFQoNY29ubmVjdF9jb3VudBgBIAEoDSJeCh1DTXNn",
-            "Q2xpZW50U2hhZGVySGl0Q2FjaGVFbnRyeRIPCgdrZXlfc2hhGAEgASgMEhAK",
-            "CGNvZGVfc2hhGAIgASgMEhoKEnRpbWVfbGFzdF9yZXBvcnRlZBgDIAEoBCJL",
-            "ChhDTXNnQ2xpZW50U2hhZGVySGl0Q2FjaGUSLwoHZW50cmllcxgBIAMoCzIe",
-            "LkNNc2dDbGllbnRTaGFkZXJIaXRDYWNoZUVudHJ5KowCChxFQ2xvdWRQZW5k",
-            "aW5nUmVtb3RlT3BlcmF0aW9uEiQKIEVDbG91ZFBlbmRpbmdSZW1vdGVPcGVy",
-            "YXRpb25Ob25lEAASMAosRUNsb3VkUGVuZGluZ1JlbW90ZU9wZXJhdGlvbkFw",
-            "cFNlc3Npb25BY3RpdmUQARIwCixFQ2xvdWRQZW5kaW5nUmVtb3RlT3BlcmF0",
-            "aW9uVXBsb2FkSW5Qcm9ncmVzcxACEi0KKUVDbG91ZFBlbmRpbmdSZW1vdGVP",
-            "cGVyYXRpb25VcGxvYWRQZW5kaW5nEAMSMwovRUNsb3VkUGVuZGluZ1JlbW90",
-            "ZU9wZXJhdGlvbkFwcFNlc3Npb25TdXNwZW5kZWQQBCqCDAoYRVN0ZWFtRGVj",
-            "a0tleWJvYXJkTGF5b3V0EiMKH0VTdGVhbURlY2tLZXlib2FyZExheW91dF9R",
-            "V0VSVFkQABImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfQnVsZ2FyaWFu",
-            "EAESLworRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0NoaW5lc2VfU2ltcGxp",
-            "ZmllZBACEjAKLEVTdGVhbURlY2tLZXlib2FyZExheW91dF9DaGluZXNlX1Ry",
-            "YWRpdGlvbmFsEAMSIgoeRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0N6ZWNo",
-            "EAQSIwofRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0RhbmlzaBAFEiQKIEVT",
-            "dGVhbURlY2tLZXlib2FyZExheW91dF9GaW5uaXNoEAYSIwofRVN0ZWFtRGVj",
-            "a0tleWJvYXJkTGF5b3V0X0ZyZW5jaBAHEiMKH0VTdGVhbURlY2tLZXlib2Fy",
-            "ZExheW91dF9HZXJtYW4QCBIiCh5FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRf",
-            "R3JlZWsQCRImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSHVuZ2FyaWFu",
-            "EAoSJAogRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0l0YWxpYW4QCxIlCiFF",
-            "U3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSmFwYW5lc2UQDBIjCh9FU3RlYW1E",
-            "ZWNrS2V5Ym9hcmRMYXlvdXRfS29yZWFuEA0SJgoiRVN0ZWFtRGVja0tleWJv",
-            "YXJkTGF5b3V0X05vcndlZ2lhbhAOEiMKH0VTdGVhbURlY2tLZXlib2FyZExh",
-            "eW91dF9Qb2xpc2gQDxInCiNFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfUG9y",
-            "dHVndWVzZRAQEiUKIUVTdGVhbURlY2tLZXlib2FyZExheW91dF9Sb21hbmlh",
-            "bhAREiQKIEVTdGVhbURlY2tLZXlib2FyZExheW91dF9SdXNzaWFuEBISJAog",
-            "RVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1NwYW5pc2gQExIkCiBFU3RlYW1E",
-            "ZWNrS2V5Ym9hcmRMYXlvdXRfU3dlZGlzaBAUEiEKHUVTdGVhbURlY2tLZXli",
-            "b2FyZExheW91dF9UaGFpEBUSJgoiRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0",
-            "X1R1cmtpc2hfRhAWEiYKIkVTdGVhbURlY2tLZXlib2FyZExheW91dF9UdXJr",
-            "aXNoX1EQFxImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfVWtyYWluaWFu",
-            "EBgSJwojRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1ZpZXRuYW1lc2UQGRIx",
-            "Ci1FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfUVdFUlRZX0ludGVybmF0aW9u",
-            "YWwQGhIjCh9FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfRHZvcmFrEBsSJAog",
-            "RVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0NvbGVtYWsQHBI7CjdFU3RlYW1E",
-            "ZWNrS2V5Ym9hcmRMYXlvdXRfQnVsZ2FyaWFuX1Bob25ldGljX1RyYWRpdGlv",
-            "bmFsEB0SLworRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0J1bGdhcmlhbl9Q",
-            "aG9uZXRpYxAeEjkKNUVTdGVhbURlY2tLZXlib2FyZExheW91dF9DaGluZXNl",
-            "X1RyYWRpdGlvbmFsX0JvcG9tb2ZvEB8SOAo0RVN0ZWFtRGVja0tleWJvYXJk",
-            "TGF5b3V0X0NoaW5lc2VfVHJhZGl0aW9uYWxfQ2FuZ2ppZRAgEioKJkVTdGVh",
-            "bURlY2tLZXlib2FyZExheW91dF9KYXBhbmVzZV9LYW5hECESNgoyRVN0ZWFt",
-            "RGVja0tleWJvYXJkTGF5b3V0X0NoaW5lc2VfVHJhZGl0aW9uYWxfUXVpY2sQ",
-            "IhInCiNFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSW5kb25lc2lhbhAjQh9I",
-            "AYABAKoCF09wZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
+            "cmVzaF9yYXRlX21heBgNIAEoBRIWCg5pc192cnJfY2FwYWJsZRgOIAEoCBIc",
+            "ChRpc192cnJfb3V0cHV0X2FjdGl2ZRgPIAEoCBIWCg5pc19oZHJfY2FwYWJs",
+            "ZRgQIAEoCBIcChRpc19oZHJfb3V0cHV0X2FjdGl2ZRgRIAEoCBIfChdzdXBw",
+            "b3J0ZWRfcmVmcmVzaF9yYXRlcxgSIAMoBSLRAQodQ01zZ1N5c3RlbURpc3Bs",
+            "YXlNYW5hZ2VyU3RhdGUSJAoIZGlzcGxheXMYASADKAsyEi5DTXNnU3lzdGVt",
+            "RGlzcGxheRIjChtpc19tb2RlX3N3aXRjaGluZ19zdXBwb3J0ZWQYAiABKAgS",
+            "ZQoSY29tcGF0aWJpbGl0eV9tb2RlGAMgASgOMiAuRVN5c3RlbURpc3BsYXlD",
+            "b21wYXRpYmlsaXR5TW9kZTonRVN5c3RlbURpc3BsYXlDb21wYXRpYmlsaXR5",
+            "TW9kZV9JbnZhbGlkIkYKH0NNc2dTeXN0ZW1EaXNwbGF5TWFuYWdlclNldE1v",
+            "ZGUSEgoKZGlzcGxheV9pZBgBIAEoBRIPCgdtb2RlX2lkGAIgASgFIpwLChlD",
+            "TXNnU3lzdGVtTWFuYWdlclNldHRpbmdzEioKImlkbGVfYmFja2xpZ2h0X2Rp",
+            "bV9iYXR0ZXJ5X3NlY29uZHMYASABKAISJQodaWRsZV9iYWNrbGlnaHRfZGlt",
+            "X2FjX3NlY29uZHMYAiABKAISJAocaWRsZV9zdXNwZW5kX2JhdHRlcnlfc2Vj",
+            "b25kcxgDIAEoAhIfChdpZGxlX3N1c3BlbmRfYWNfc2Vjb25kcxgEIAEoAhIe",
+            "ChZpZGxlX3N1c3BlbmRfc3VwcmVzc2VkGAUgASgIEigKIGlzX2FkYXB0aXZl",
+            "X2JyaWdodG5lc3NfYXZhaWxhYmxlGAYgASgIEisKI2Rpc3BsYXlfYWRhcHRp",
+            "dmVfYnJpZ2h0bmVzc19lbmFibGVkGAcgASgIEiEKGWRpc3BsYXlfbmlnaHRt",
+            "b2RlX2VuYWJsZWQYCiABKAgSJgoeZGlzcGxheV9uaWdodG1vZGVfdGludHN0",
+            "cmVuZ3RoGAsgASgCEiAKGGRpc3BsYXlfbmlnaHRtb2RlX21heGh1ZRgMIAEo",
+            "AhIgChhkaXNwbGF5X25pZ2h0bW9kZV9tYXhzYXQYDSABKAISHwoXZGlzcGxh",
+            "eV9uaWdodG1vZGVfdWlleHAYDiABKAISHwoXZGlzcGxheV9uaWdodG1vZGVf",
+            "YmxlbmQYDyABKAISHwoXZGlzcGxheV9uaWdodG1vZGVfcmVzZXQYECABKAgS",
+            "KgoiZGlzcGxheV9uaWdodG1vZGVfc2NoZWR1bGVfZW5hYmxlZBgRIAEoCBIs",
+            "CiRkaXNwbGF5X25pZ2h0bW9kZV9zY2hlZHVsZV9zdGFydHRpbWUYEiABKAIS",
+            "KgoiZGlzcGxheV9uaWdodG1vZGVfc2NoZWR1bGVfZW5kdGltZRgTIAEoAhIj",
+            "ChtkaXNwbGF5X2RpYWdub3N0aWNzX2VuYWJsZWQYFCABKAgSFwoPYWxzX2x1",
+            "eF9wcmltYXJ5GBUgASgCEhYKDmFsc19sdXhfbWVkaWFuGBYgASgCEh0KFWRp",
+            "c3BsYXlfYmFja2xpZ2h0X3JhdxgXIAEoAhImCh5kaXNwbGF5X2JyaWdodG5l",
+            "c3NfYWRhcHRpdmVtaW4YGCABKAISJgoeZGlzcGxheV9icmlnaHRuZXNzX2Fk",
+            "YXB0aXZlbWF4GBkgASgCEiEKGWlzX3dpZmlfcG93ZXJzYXZlX2VuYWJsZWQY",
+            "GiABKAgSIAoYaXNfZmFuX2NvbnRyb2xfYXZhaWxhYmxlGBsgASgIEk4KEGZh",
+            "bl9jb250cm9sX21vZGUYHCABKA4yFi5FU3lzdGVtRmFuQ29udHJvbE1vZGU6",
+            "HFN5c3RlbUZhbkNvbnRyb2xNb2RlX0ludmFsaWQSJwofaXNfZGlzcGxheV9i",
+            "cmlnaHRuZXNzX2F2YWlsYWJsZRgdIAEoCBIsCiRpc19kaXNwbGF5X2NvbG9y",
+            "bWFuYWdlbWVudF9hdmFpbGFibGUYHyABKAgSGgoSZGlzcGxheV9jb2xvcmdh",
+            "bXV0GCAgASgCEhkKEWFsc19sdXhfYWx0ZXJuYXRlGCEgASgCEiYKHmlzX2Rp",
+            "c3BsYXlfY29sb3J0ZW1wX2F2YWlsYWJsZRgiIAEoCBIZChFkaXNwbGF5X2Nv",
+            "bG9ydGVtcBgjIAEoAhIhChlkaXNwbGF5X2NvbG9ydGVtcF9kZWZhdWx0GCQg",
+            "ASgCEiEKGWRpc3BsYXlfY29sb3J0ZW1wX2VuYWJsZWQYJSABKAgSVQobZGlz",
+            "cGxheV9jb2xvcmdhbXV0X2xhYmVsc2V0GCYgASgOMhQuRUNvbG9yR2FtdXRM",
+            "YWJlbFNldDoaQ29sb3JHYW11dExhYmVsU2V0X0RlZmF1bHQSLgomZGlzcGxh",
+            "eV9icmlnaHRuZXNzX292ZXJkcml2ZV9oZHJfc3BsaXQYJyABKAIiYAoYQ01z",
+            "Z1NlbGVjdE9TQnJhbmNoUGFyYW1zEi0KBmJyYW5jaBgBIAEoDjIKLkVPU0Jy",
+            "YW5jaDoRRU9TQnJhbmNoX1Vua25vd24SFQoNY3VzdG9tX2JyYW5jaBgCIAEo",
+            "CSJwChhDTXNnU3lzdGVtVXBkYXRlUHJvZ3Jlc3MSFgoOc3RhZ2VfcHJvZ3Jl",
+            "c3MYASABKAISGAoQc3RhZ2Vfc2l6ZV9ieXRlcxgCIAEoAxIiChpydGltZV9l",
+            "c3RpbWF0ZWRfY29tcGxldGlvbhgDIAEoByLVAQobQ01zZ1N5c3RlbVVwZGF0",
+            "ZUNoZWNrUmVzdWx0EjEKBHR5cGUYASABKA4yDS5FVXBkYXRlclR5cGU6FEVV",
+            "cGRhdGVyVHlwZV9JbnZhbGlkEhIKB2VyZXN1bHQYAiABKA06ATISFQoNcnRp",
+            "bWVfY2hlY2tlZBgDIAEoBxIRCglhdmFpbGFibGUYBCABKAgSDwoHdmVyc2lv",
+            "bhgFIAEoCRIUCgxhdXRvX21lc3NhZ2UYBiABKAkSHgoWc3lzdGVtX3Jlc3Rh",
+            "cnRfcGVuZGluZxgHIAEoCCJBChtDTXNnU3lzdGVtVXBkYXRlQXBwbHlQYXJh",
+            "bXMSIgoLYXBwbHlfdHlwZXMYASADKA4yDS5FVXBkYXRlclR5cGUitAEKG0NN",
+            "c2dTeXN0ZW1VcGRhdGVBcHBseVJlc3VsdBIxCgR0eXBlGAEgASgOMg0uRVVw",
+            "ZGF0ZXJUeXBlOhRFVXBkYXRlclR5cGVfSW52YWxpZBISCgdlcmVzdWx0GAIg",
+            "ASgNOgEyEiYKF3JlcXVpcmVzX2NsaWVudF9yZXN0YXJ0GAMgASgIOgVmYWxz",
+            "ZRImChdyZXF1aXJlc19zeXN0ZW1fcmVzdGFydBgEIAEoCDoFZmFsc2UijQIK",
+            "FUNNc2dTeXN0ZW1VcGRhdGVTdGF0ZRI0CgVzdGF0ZRgBIAEoDjIOLkVVcGRh",
+            "dGVyU3RhdGU6FUVVcGRhdGVyU3RhdGVfSW52YWxpZBIrCghwcm9ncmVzcxgC",
+            "IAEoCzIZLkNNc2dTeXN0ZW1VcGRhdGVQcm9ncmVzcxI4ChJ1cGRhdGVfY2hl",
+            "Y3Jlc3VsdHMYAyADKAsyHC5DTXNnU3lzdGVtVXBkYXRlQ2hlY2tSZXN1bHQS",
+            "OgoUdXBkYXRlX2FwcGx5X3Jlc3VsdHMYBCADKAsyHC5DTXNnU3lzdGVtVXBk",
+            "YXRlQXBwbHlSZXN1bHQSGwoTc3VwcG9ydHNfb3NfdXBkYXRlcxgFIAEoCCIm",
+            "ChVDTXNnQWNoaWV2ZW1lbnRDaGFuZ2USDQoFYXBwaWQYASABKA0iXAoMQ01z",
+            "Z0NlbGxMaXN0EiEKBWNlbGxzGAEgAygLMhIuQ01zZ0NlbGxMaXN0LkNlbGwa",
+            "KQoEQ2VsbBIPCgdjZWxsX2lkGAEgASgNEhAKCGxvY19uYW1lGAIgASgJIowD",
+            "ChBDTXNnU2hvcnRjdXRJbmZvEg0KBWFwcGlkGAEgASgNEgsKA2V4ZRgCIAEo",
+            "CRIRCglzdGFydF9kaXIYAyABKAkSDAoEaWNvbhgEIAEoCRIMCgRwYXRoGAUg",
+            "ASgJEgwKBGFyZ3MYBiABKAkSEAoIYXBwX25hbWUYByABKAkSFgoOb3ZlcnJp",
+            "ZGVfYXBwaWQYCCABKA0SEwoLZmxhdHBhYXBwaWQYCSABKAkSDAoEdGFncxgK",
+            "IAMoCRIRCglpc19yZW1vdGUYCyABKAgSEQoJaXNfaGlkZGVuGAwgASgIEhQK",
+            "DGlzX3RlbXBvcmFyeRgNIAEoCBIRCglpc19vcGVudnIYDiABKAgSHAoUYWxs",
+            "b3dfZGVza3RvcF9jb25maWcYDyABKAgSFQoNYWxsb3dfb3ZlcmxheRgQIAEo",
+            "CBIbChNydF9sYXN0X3BsYXllZF90aW1lGBEgASgNEhoKEmlzX2RldmtpdF9z",
+            "aG9ydGN1dBgSIAEoCBIVCg1kZXZraXRfZ2FtZWlkGBMgASgJIiQKEkNNc2dT",
+            "aG9ydGN1dEFwcElkcxIOCgZhcHBpZHMYASADKA0iqgEKD0NNc2dNb25pdG9y",
+            "SW5mbxIdChVzZWxlY3RlZF9kaXNwbGF5X25hbWUYASACKAkSLgoIbW9uaXRv",
+            "cnMYAiADKAsyHC5DTXNnTW9uaXRvckluZm8uTW9uaXRvckluZm8aSAoLTW9u",
+            "aXRvckluZm8SGwoTbW9uaXRvcl9kZXZpY2VfbmFtZRgBIAIoCRIcChRtb25p",
+            "dG9yX2Rpc3BsYXlfbmFtZRgCIAIoCSIyCh1DTXNnR2VuZXJhdGVTeXN0ZW1S",
+            "ZXBvcnRSZXBseRIRCglyZXBvcnRfaWQYASABKAkiOAoWQ01zZ1dlYlVJVHJh",
+            "bnNwb3J0SW5mbxIMCgRwb3J0GAEgASgNEhAKCGF1dGhfa2V5GAIgASgJIjIK",
+            "GUNNc2dXZWJVSVRyYW5zcG9ydEZhaWx1cmUSFQoNY29ubmVjdF9jb3VudBgB",
+            "IAEoDSJeCh1DTXNnQ2xpZW50U2hhZGVySGl0Q2FjaGVFbnRyeRIPCgdrZXlf",
+            "c2hhGAEgASgMEhAKCGNvZGVfc2hhGAIgASgMEhoKEnRpbWVfbGFzdF9yZXBv",
+            "cnRlZBgDIAEoBCJLChhDTXNnQ2xpZW50U2hhZGVySGl0Q2FjaGUSLwoHZW50",
+            "cmllcxgBIAMoCzIeLkNNc2dDbGllbnRTaGFkZXJIaXRDYWNoZUVudHJ5KowC",
+            "ChxFQ2xvdWRQZW5kaW5nUmVtb3RlT3BlcmF0aW9uEiQKIEVDbG91ZFBlbmRp",
+            "bmdSZW1vdGVPcGVyYXRpb25Ob25lEAASMAosRUNsb3VkUGVuZGluZ1JlbW90",
+            "ZU9wZXJhdGlvbkFwcFNlc3Npb25BY3RpdmUQARIwCixFQ2xvdWRQZW5kaW5n",
+            "UmVtb3RlT3BlcmF0aW9uVXBsb2FkSW5Qcm9ncmVzcxACEi0KKUVDbG91ZFBl",
+            "bmRpbmdSZW1vdGVPcGVyYXRpb25VcGxvYWRQZW5kaW5nEAMSMwovRUNsb3Vk",
+            "UGVuZGluZ1JlbW90ZU9wZXJhdGlvbkFwcFNlc3Npb25TdXNwZW5kZWQQBCqC",
+            "DAoYRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0EiMKH0VTdGVhbURlY2tLZXli",
+            "b2FyZExheW91dF9RV0VSVFkQABImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlv",
+            "dXRfQnVsZ2FyaWFuEAESLworRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0No",
+            "aW5lc2VfU2ltcGxpZmllZBACEjAKLEVTdGVhbURlY2tLZXlib2FyZExheW91",
+            "dF9DaGluZXNlX1RyYWRpdGlvbmFsEAMSIgoeRVN0ZWFtRGVja0tleWJvYXJk",
+            "TGF5b3V0X0N6ZWNoEAQSIwofRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0Rh",
+            "bmlzaBAFEiQKIEVTdGVhbURlY2tLZXlib2FyZExheW91dF9GaW5uaXNoEAYS",
+            "IwofRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0ZyZW5jaBAHEiMKH0VTdGVh",
+            "bURlY2tLZXlib2FyZExheW91dF9HZXJtYW4QCBIiCh5FU3RlYW1EZWNrS2V5",
+            "Ym9hcmRMYXlvdXRfR3JlZWsQCRImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlv",
+            "dXRfSHVuZ2FyaWFuEAoSJAogRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0l0",
+            "YWxpYW4QCxIlCiFFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSmFwYW5lc2UQ",
+            "DBIjCh9FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfS29yZWFuEA0SJgoiRVN0",
+            "ZWFtRGVja0tleWJvYXJkTGF5b3V0X05vcndlZ2lhbhAOEiMKH0VTdGVhbURl",
+            "Y2tLZXlib2FyZExheW91dF9Qb2xpc2gQDxInCiNFU3RlYW1EZWNrS2V5Ym9h",
+            "cmRMYXlvdXRfUG9ydHVndWVzZRAQEiUKIUVTdGVhbURlY2tLZXlib2FyZExh",
+            "eW91dF9Sb21hbmlhbhAREiQKIEVTdGVhbURlY2tLZXlib2FyZExheW91dF9S",
+            "dXNzaWFuEBISJAogRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1NwYW5pc2gQ",
+            "ExIkCiBFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfU3dlZGlzaBAUEiEKHUVT",
+            "dGVhbURlY2tLZXlib2FyZExheW91dF9UaGFpEBUSJgoiRVN0ZWFtRGVja0tl",
+            "eWJvYXJkTGF5b3V0X1R1cmtpc2hfRhAWEiYKIkVTdGVhbURlY2tLZXlib2Fy",
+            "ZExheW91dF9UdXJraXNoX1EQFxImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlv",
+            "dXRfVWtyYWluaWFuEBgSJwojRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1Zp",
+            "ZXRuYW1lc2UQGRIxCi1FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfUVdFUlRZ",
+            "X0ludGVybmF0aW9uYWwQGhIjCh9FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRf",
+            "RHZvcmFrEBsSJAogRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0NvbGVtYWsQ",
+            "HBI7CjdFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfQnVsZ2FyaWFuX1Bob25l",
+            "dGljX1RyYWRpdGlvbmFsEB0SLworRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0",
+            "X0J1bGdhcmlhbl9QaG9uZXRpYxAeEjkKNUVTdGVhbURlY2tLZXlib2FyZExh",
+            "eW91dF9DaGluZXNlX1RyYWRpdGlvbmFsX0JvcG9tb2ZvEB8SOAo0RVN0ZWFt",
+            "RGVja0tleWJvYXJkTGF5b3V0X0NoaW5lc2VfVHJhZGl0aW9uYWxfQ2FuZ2pp",
+            "ZRAgEioKJkVTdGVhbURlY2tLZXlib2FyZExheW91dF9KYXBhbmVzZV9LYW5h",
+            "ECESNgoyRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0NoaW5lc2VfVHJhZGl0",
+            "aW9uYWxfUXVpY2sQIhInCiNFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSW5k",
+            "b25lc2lhbhAjQh9IAYABAKoCF09wZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.EnumsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OpenSteamworks.Protobuf.ECloudPendingRemoteOperation), typeof(global::OpenSteamworks.Protobuf.ESteamDeckKeyboardLayout), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -427,8 +422,8 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticEntry), global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticEntry.Parser, new[]{ "Name", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfNetworkInterface), global::OpenSteamworks.Protobuf.CMsgSystemPerfNetworkInterface.Parser, new[]{ "Name", "Timestamp", "TxBytesTotal", "RxBytesTotal", "TxBytesPerSec", "RxBytesPerSec" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticInfo), global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticInfo.Parser, new[]{ "Entries", "Interfaces", "BatteryTempC" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits), global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits.Parser, new[]{ "CpuGovernorManualMinMhz", "CpuGovernorManualMaxMhz", "FsrSharpnessMin", "FsrSharpnessMax", "GpuPerformanceManualMinMhz", "GpuPerformanceManualMaxMhz", "PerfOverlayIsStandalone", "IsDynamicVrsAvailable", "IsManualDisplayRefreshRateAvailable", "GpuPerformanceLevelsAvailable", "DisplayRefreshManualHzMin", "DisplayRefreshManualHzMax", "FpsLimitOptions", "TdpLimitMin", "TdpLimitMax", "IsNisSupported", "NisSharpnessMin", "NisSharpnessMax", "DisplayExternalRefreshManualHzMin", "DisplayExternalRefreshManualHzMax", "FpsLimitOptionsExternal", "IsVrrSupported", "IsDynamicRefreshRateInSteamSupported", "IsSplitScalingAndFilteringSupported", "SplitScalingFiltersAvailable", "SplitScalingScalersAvailable", "IsHdrSupported", "DisplayRefreshManualHzOcMax", "DisableRefreshRateManagement" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsGlobal), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsGlobal.Parser, new[]{ "DiagnosticUpdateRate", "SystemTraceServiceState", "GraphicsProfilingServiceState", "PerfOverlayServiceState", "PerfOverlayLevel", "IsShowPerfOverlayOverSteamEnabled", "IsAdvancedSettingsEnabled", "AllowExternalDisplayRefreshControl", "IsHdrEnabled", "HdrOnSdrTonemapOperator", "IsHdrDebugHeatmapEnabled", "ForceHdrWideGammutForSdr", "AllowExperimentalHdr", "SdrToHdrBrightness", "DebugForceHdrSupport", "ForceHdr10PqOutputDebug", "IsDisplayOcEnabled", "IsColorManagementEnabled" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits), global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits.Parser, new[]{ "CpuGovernorManualMinMhz", "CpuGovernorManualMaxMhz", "FsrSharpnessMin", "FsrSharpnessMax", "GpuPerformanceManualMinMhz", "GpuPerformanceManualMaxMhz", "PerfOverlayIsStandalone", "IsDynamicVrsAvailable", "IsManualDisplayRefreshRateAvailable", "GpuPerformanceLevelsAvailable", "DisplayRefreshManualHzMin", "DisplayRefreshManualHzMax", "FpsLimitOptions", "TdpLimitMin", "TdpLimitMax", "IsNisSupported", "NisSharpnessMin", "NisSharpnessMax", "DisplayExternalRefreshManualHzMin", "DisplayExternalRefreshManualHzMax", "FpsLimitOptionsExternal", "IsVrrSupported", "IsDynamicRefreshRateInSteamSupported", "IsSplitScalingAndFilteringSupported", "SplitScalingFiltersAvailable", "SplitScalingScalersAvailable", "DisableRefreshRateManagement" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsGlobal), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsGlobal.Parser, new[]{ "DiagnosticUpdateRate", "SystemTraceServiceState", "GraphicsProfilingServiceState", "PerfOverlayServiceState", "PerfOverlayLevel", "IsShowPerfOverlayOverSteamEnabled", "IsAdvancedSettingsEnabled", "AllowExternalDisplayRefreshControl", "HdrOnSdrTonemapOperator", "IsHdrDebugHeatmapEnabled", "ForceHdrWideGammutForSdr", "SdrToHdrBrightness", "IsColorManagementEnabled" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsPerApp), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsPerApp.Parser, new[]{ "GpuPerformanceManualMhz", "FpsLimit", "IsVariableResolutionEnabled", "IsDynamicRefreshRateEnabled", "TdpLimit", "CpuGovernor", "CpuGovernorManualMhz", "ScalingFilter", "FsrSharpness", "IsFpsLimitEnabled", "IsTdpLimitEnabled", "IsLowLatencyModeEnabled", "DisplayRefreshManualHz", "IsGamePerfProfileEnabled", "GpuPerformanceLevel", "NisSharpness", "DisplayExternalRefreshManualHz", "FpsLimitExternal", "IsTearingEnabled", "IsVrrEnabled", "UseDynamicRefreshRateInSteam", "SplitScalingFilter", "SplitScalingScaler" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettings), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettings.Parser, new[]{ "Global", "PerApp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsV1), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsV1.Parser, new[]{ "DiagnosticUpdateRate", "SystemTraceServiceState", "GraphicsProfilingServiceState", "PerfOverlayServiceState", "PerfOverlayLevel", "GpuPerformanceLevel", "GpuPerformanceManualMhz", "FpsLimit", "IsVariableResolutionEnabled", "IsDynamicRefreshRateEnabled", "TdpLimit", "CpuGovernor", "CpuGovernorManualMhz", "ScalingFilter", "FsrSharpness", "IsFpsLimitEnabled", "IsTdpLimitEnabled", "IsShowPerfOverlayOverSteamEnabled", "IsLowLatencyModeEnabled", "DisplayRefreshManualHz", "IsGamePerfProfileEnabled" }, null, null, null, null),
@@ -449,7 +444,7 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemAudioManagerState), global::OpenSteamworks.Protobuf.CMsgSystemAudioManagerState.Parser, new[]{ "RtimeFilter", "Counter", "Hw" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemAudioManagerUpdateSomething), global::OpenSteamworks.Protobuf.CMsgSystemAudioManagerUpdateSomething.Parser, new[]{ "Counter" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemDisplayMode), global::OpenSteamworks.Protobuf.CMsgSystemDisplayMode.Parser, new[]{ "Id", "Width", "Height", "RefreshHz" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemDisplay), global::OpenSteamworks.Protobuf.CMsgSystemDisplay.Parser, new[]{ "Id", "Name", "Description", "IsPrimary", "IsEnabled", "IsInternal", "HasModeOverride", "WidthMm", "HeightMm", "CurrentModeId", "Modes", "RefreshRateMin", "RefreshRateMax", "IsVrrCapable", "IsVrrEnabled", "IsHdrCapable", "IsHdrEnabled", "SupportedRefreshRates" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemDisplay), global::OpenSteamworks.Protobuf.CMsgSystemDisplay.Parser, new[]{ "Id", "Name", "Description", "IsPrimary", "IsEnabled", "IsInternal", "HasModeOverride", "WidthMm", "HeightMm", "CurrentModeId", "Modes", "RefreshRateMin", "RefreshRateMax", "IsVrrCapable", "IsVrrOutputActive", "IsHdrCapable", "IsHdrOutputActive", "SupportedRefreshRates" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemDisplayManagerState), global::OpenSteamworks.Protobuf.CMsgSystemDisplayManagerState.Parser, new[]{ "Displays", "IsModeSwitchingSupported", "CompatibilityMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemDisplayManagerSetMode), global::OpenSteamworks.Protobuf.CMsgSystemDisplayManagerSetMode.Parser, new[]{ "DisplayId", "ModeId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemManagerSettings), global::OpenSteamworks.Protobuf.CMsgSystemManagerSettings.Parser, new[]{ "IdleBacklightDimBatterySeconds", "IdleBacklightDimAcSeconds", "IdleSuspendBatterySeconds", "IdleSuspendAcSeconds", "IdleSuspendSupressed", "IsAdaptiveBrightnessAvailable", "DisplayAdaptiveBrightnessEnabled", "DisplayNightmodeEnabled", "DisplayNightmodeTintstrength", "DisplayNightmodeMaxhue", "DisplayNightmodeMaxsat", "DisplayNightmodeUiexp", "DisplayNightmodeBlend", "DisplayNightmodeReset", "DisplayNightmodeScheduleEnabled", "DisplayNightmodeScheduleStarttime", "DisplayNightmodeScheduleEndtime", "DisplayDiagnosticsEnabled", "AlsLuxPrimary", "AlsLuxMedian", "DisplayBacklightRaw", "DisplayBrightnessAdaptivemin", "DisplayBrightnessAdaptivemax", "IsWifiPowersaveEnabled", "IsFanControlAvailable", "FanControlMode", "IsDisplayBrightnessAvailable", "IsDisplayColormanagementAvailable", "DisplayColorgamut", "AlsLuxAlternate", "IsDisplayColortempAvailable", "DisplayColortemp", "DisplayColortempDefault", "DisplayColortempEnabled", "DisplayColorgamutLabelset", "DisplayBrightnessOverdriveHdrSplit" }, null, null, null, null),
@@ -10670,8 +10665,6 @@ namespace OpenSteamworks.Protobuf {
       isSplitScalingAndFilteringSupported_ = other.isSplitScalingAndFilteringSupported_;
       splitScalingFiltersAvailable_ = other.splitScalingFiltersAvailable_.Clone();
       splitScalingScalersAvailable_ = other.splitScalingScalersAvailable_.Clone();
-      isHdrSupported_ = other.isHdrSupported_;
-      displayRefreshManualHzOcMax_ = other.displayRefreshManualHzOcMax_;
       disableRefreshRateManagement_ = other.disableRefreshRateManagement_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -11304,60 +11297,6 @@ namespace OpenSteamworks.Protobuf {
       get { return splitScalingScalersAvailable_; }
     }
 
-    /// <summary>Field number for the "is_hdr_supported" field.</summary>
-    public const int IsHdrSupportedFieldNumber = 28;
-    private readonly static bool IsHdrSupportedDefaultValue = false;
-
-    private bool isHdrSupported_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsHdrSupported {
-      get { if ((_hasBits0 & 2097152) != 0) { return isHdrSupported_; } else { return IsHdrSupportedDefaultValue; } }
-      set {
-        _hasBits0 |= 2097152;
-        isHdrSupported_ = value;
-      }
-    }
-    /// <summary>Gets whether the "is_hdr_supported" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasIsHdrSupported {
-      get { return (_hasBits0 & 2097152) != 0; }
-    }
-    /// <summary>Clears the value of the "is_hdr_supported" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearIsHdrSupported() {
-      _hasBits0 &= ~2097152;
-    }
-
-    /// <summary>Field number for the "display_refresh_manual_hz_oc_max" field.</summary>
-    public const int DisplayRefreshManualHzOcMaxFieldNumber = 29;
-    private readonly static int DisplayRefreshManualHzOcMaxDefaultValue = 0;
-
-    private int displayRefreshManualHzOcMax_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int DisplayRefreshManualHzOcMax {
-      get { if ((_hasBits0 & 4194304) != 0) { return displayRefreshManualHzOcMax_; } else { return DisplayRefreshManualHzOcMaxDefaultValue; } }
-      set {
-        _hasBits0 |= 4194304;
-        displayRefreshManualHzOcMax_ = value;
-      }
-    }
-    /// <summary>Gets whether the "display_refresh_manual_hz_oc_max" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasDisplayRefreshManualHzOcMax {
-      get { return (_hasBits0 & 4194304) != 0; }
-    }
-    /// <summary>Clears the value of the "display_refresh_manual_hz_oc_max" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearDisplayRefreshManualHzOcMax() {
-      _hasBits0 &= ~4194304;
-    }
-
     /// <summary>Field number for the "disable_refresh_rate_management" field.</summary>
     public const int DisableRefreshRateManagementFieldNumber = 30;
     private readonly static bool DisableRefreshRateManagementDefaultValue = false;
@@ -11366,9 +11305,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool DisableRefreshRateManagement {
-      get { if ((_hasBits0 & 8388608) != 0) { return disableRefreshRateManagement_; } else { return DisableRefreshRateManagementDefaultValue; } }
+      get { if ((_hasBits0 & 2097152) != 0) { return disableRefreshRateManagement_; } else { return DisableRefreshRateManagementDefaultValue; } }
       set {
-        _hasBits0 |= 8388608;
+        _hasBits0 |= 2097152;
         disableRefreshRateManagement_ = value;
       }
     }
@@ -11376,13 +11315,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDisableRefreshRateManagement {
-      get { return (_hasBits0 & 8388608) != 0; }
+      get { return (_hasBits0 & 2097152) != 0; }
     }
     /// <summary>Clears the value of the "disable_refresh_rate_management" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDisableRefreshRateManagement() {
-      _hasBits0 &= ~8388608;
+      _hasBits0 &= ~2097152;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11426,8 +11365,6 @@ namespace OpenSteamworks.Protobuf {
       if (IsSplitScalingAndFilteringSupported != other.IsSplitScalingAndFilteringSupported) return false;
       if(!splitScalingFiltersAvailable_.Equals(other.splitScalingFiltersAvailable_)) return false;
       if(!splitScalingScalersAvailable_.Equals(other.splitScalingScalersAvailable_)) return false;
-      if (IsHdrSupported != other.IsHdrSupported) return false;
-      if (DisplayRefreshManualHzOcMax != other.DisplayRefreshManualHzOcMax) return false;
       if (DisableRefreshRateManagement != other.DisableRefreshRateManagement) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -11462,8 +11399,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasIsSplitScalingAndFilteringSupported) hash ^= IsSplitScalingAndFilteringSupported.GetHashCode();
       hash ^= splitScalingFiltersAvailable_.GetHashCode();
       hash ^= splitScalingScalersAvailable_.GetHashCode();
-      if (HasIsHdrSupported) hash ^= IsHdrSupported.GetHashCode();
-      if (HasDisplayRefreshManualHzOcMax) hash ^= DisplayRefreshManualHzOcMax.GetHashCode();
       if (HasDisableRefreshRateManagement) hash ^= DisableRefreshRateManagement.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -11572,14 +11507,6 @@ namespace OpenSteamworks.Protobuf {
       }
       splitScalingFiltersAvailable_.WriteTo(output, _repeated_splitScalingFiltersAvailable_codec);
       splitScalingScalersAvailable_.WriteTo(output, _repeated_splitScalingScalersAvailable_codec);
-      if (HasIsHdrSupported) {
-        output.WriteRawTag(224, 1);
-        output.WriteBool(IsHdrSupported);
-      }
-      if (HasDisplayRefreshManualHzOcMax) {
-        output.WriteRawTag(232, 1);
-        output.WriteInt32(DisplayRefreshManualHzOcMax);
-      }
       if (HasDisableRefreshRateManagement) {
         output.WriteRawTag(240, 1);
         output.WriteBool(DisableRefreshRateManagement);
@@ -11683,14 +11610,6 @@ namespace OpenSteamworks.Protobuf {
       }
       splitScalingFiltersAvailable_.WriteTo(ref output, _repeated_splitScalingFiltersAvailable_codec);
       splitScalingScalersAvailable_.WriteTo(ref output, _repeated_splitScalingScalersAvailable_codec);
-      if (HasIsHdrSupported) {
-        output.WriteRawTag(224, 1);
-        output.WriteBool(IsHdrSupported);
-      }
-      if (HasDisplayRefreshManualHzOcMax) {
-        output.WriteRawTag(232, 1);
-        output.WriteInt32(DisplayRefreshManualHzOcMax);
-      }
       if (HasDisableRefreshRateManagement) {
         output.WriteRawTag(240, 1);
         output.WriteBool(DisableRefreshRateManagement);
@@ -11773,12 +11692,6 @@ namespace OpenSteamworks.Protobuf {
       }
       size += splitScalingFiltersAvailable_.CalculateSize(_repeated_splitScalingFiltersAvailable_codec);
       size += splitScalingScalersAvailable_.CalculateSize(_repeated_splitScalingScalersAvailable_codec);
-      if (HasIsHdrSupported) {
-        size += 2 + 1;
-      }
-      if (HasDisplayRefreshManualHzOcMax) {
-        size += 2 + pb::CodedOutputStream.ComputeInt32Size(DisplayRefreshManualHzOcMax);
-      }
       if (HasDisableRefreshRateManagement) {
         size += 2 + 1;
       }
@@ -11862,12 +11775,6 @@ namespace OpenSteamworks.Protobuf {
       }
       splitScalingFiltersAvailable_.Add(other.splitScalingFiltersAvailable_);
       splitScalingScalersAvailable_.Add(other.splitScalingScalersAvailable_);
-      if (other.HasIsHdrSupported) {
-        IsHdrSupported = other.IsHdrSupported;
-      }
-      if (other.HasDisplayRefreshManualHzOcMax) {
-        DisplayRefreshManualHzOcMax = other.DisplayRefreshManualHzOcMax;
-      }
       if (other.HasDisableRefreshRateManagement) {
         DisableRefreshRateManagement = other.DisableRefreshRateManagement;
       }
@@ -11997,14 +11904,6 @@ namespace OpenSteamworks.Protobuf {
           case 218:
           case 216: {
             splitScalingScalersAvailable_.AddEntriesFrom(input, _repeated_splitScalingScalersAvailable_codec);
-            break;
-          }
-          case 224: {
-            IsHdrSupported = input.ReadBool();
-            break;
-          }
-          case 232: {
-            DisplayRefreshManualHzOcMax = input.ReadInt32();
             break;
           }
           case 240: {
@@ -12139,14 +12038,6 @@ namespace OpenSteamworks.Protobuf {
             splitScalingScalersAvailable_.AddEntriesFrom(ref input, _repeated_splitScalingScalersAvailable_codec);
             break;
           }
-          case 224: {
-            IsHdrSupported = input.ReadBool();
-            break;
-          }
-          case 232: {
-            DisplayRefreshManualHzOcMax = input.ReadInt32();
-            break;
-          }
           case 240: {
             DisableRefreshRateManagement = input.ReadBool();
             break;
@@ -12203,15 +12094,10 @@ namespace OpenSteamworks.Protobuf {
       isShowPerfOverlayOverSteamEnabled_ = other.isShowPerfOverlayOverSteamEnabled_;
       isAdvancedSettingsEnabled_ = other.isAdvancedSettingsEnabled_;
       allowExternalDisplayRefreshControl_ = other.allowExternalDisplayRefreshControl_;
-      isHdrEnabled_ = other.isHdrEnabled_;
       hdrOnSdrTonemapOperator_ = other.hdrOnSdrTonemapOperator_;
       isHdrDebugHeatmapEnabled_ = other.isHdrDebugHeatmapEnabled_;
       forceHdrWideGammutForSdr_ = other.forceHdrWideGammutForSdr_;
-      allowExperimentalHdr_ = other.allowExperimentalHdr_;
       sdrToHdrBrightness_ = other.sdrToHdrBrightness_;
-      debugForceHdrSupport_ = other.debugForceHdrSupport_;
-      forceHdr10PqOutputDebug_ = other.forceHdr10PqOutputDebug_;
-      isDisplayOcEnabled_ = other.isDisplayOcEnabled_;
       isColorManagementEnabled_ = other.isColorManagementEnabled_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -12438,33 +12324,6 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~128;
     }
 
-    /// <summary>Field number for the "is_hdr_enabled" field.</summary>
-    public const int IsHdrEnabledFieldNumber = 9;
-    private readonly static bool IsHdrEnabledDefaultValue = false;
-
-    private bool isHdrEnabled_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsHdrEnabled {
-      get { if ((_hasBits0 & 256) != 0) { return isHdrEnabled_; } else { return IsHdrEnabledDefaultValue; } }
-      set {
-        _hasBits0 |= 256;
-        isHdrEnabled_ = value;
-      }
-    }
-    /// <summary>Gets whether the "is_hdr_enabled" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasIsHdrEnabled {
-      get { return (_hasBits0 & 256) != 0; }
-    }
-    /// <summary>Clears the value of the "is_hdr_enabled" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearIsHdrEnabled() {
-      _hasBits0 &= ~256;
-    }
-
     /// <summary>Field number for the "hdr_on_sdr_tonemap_operator" field.</summary>
     public const int HdrOnSdrTonemapOperatorFieldNumber = 12;
     private readonly static global::OpenSteamworks.Protobuf.EHDRToneMapOperator HdrOnSdrTonemapOperatorDefaultValue = global::OpenSteamworks.Protobuf.EHDRToneMapOperator.Invalid;
@@ -12473,9 +12332,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::OpenSteamworks.Protobuf.EHDRToneMapOperator HdrOnSdrTonemapOperator {
-      get { if ((_hasBits0 & 512) != 0) { return hdrOnSdrTonemapOperator_; } else { return HdrOnSdrTonemapOperatorDefaultValue; } }
+      get { if ((_hasBits0 & 256) != 0) { return hdrOnSdrTonemapOperator_; } else { return HdrOnSdrTonemapOperatorDefaultValue; } }
       set {
-        _hasBits0 |= 512;
+        _hasBits0 |= 256;
         hdrOnSdrTonemapOperator_ = value;
       }
     }
@@ -12483,13 +12342,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasHdrOnSdrTonemapOperator {
-      get { return (_hasBits0 & 512) != 0; }
+      get { return (_hasBits0 & 256) != 0; }
     }
     /// <summary>Clears the value of the "hdr_on_sdr_tonemap_operator" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearHdrOnSdrTonemapOperator() {
-      _hasBits0 &= ~512;
+      _hasBits0 &= ~256;
     }
 
     /// <summary>Field number for the "is_hdr_debug_heatmap_enabled" field.</summary>
@@ -12500,9 +12359,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsHdrDebugHeatmapEnabled {
-      get { if ((_hasBits0 & 1024) != 0) { return isHdrDebugHeatmapEnabled_; } else { return IsHdrDebugHeatmapEnabledDefaultValue; } }
+      get { if ((_hasBits0 & 512) != 0) { return isHdrDebugHeatmapEnabled_; } else { return IsHdrDebugHeatmapEnabledDefaultValue; } }
       set {
-        _hasBits0 |= 1024;
+        _hasBits0 |= 512;
         isHdrDebugHeatmapEnabled_ = value;
       }
     }
@@ -12510,13 +12369,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsHdrDebugHeatmapEnabled {
-      get { return (_hasBits0 & 1024) != 0; }
+      get { return (_hasBits0 & 512) != 0; }
     }
     /// <summary>Clears the value of the "is_hdr_debug_heatmap_enabled" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsHdrDebugHeatmapEnabled() {
-      _hasBits0 &= ~1024;
+      _hasBits0 &= ~512;
     }
 
     /// <summary>Field number for the "force_hdr_wide_gammut_for_sdr" field.</summary>
@@ -12527,9 +12386,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ForceHdrWideGammutForSdr {
-      get { if ((_hasBits0 & 2048) != 0) { return forceHdrWideGammutForSdr_; } else { return ForceHdrWideGammutForSdrDefaultValue; } }
+      get { if ((_hasBits0 & 1024) != 0) { return forceHdrWideGammutForSdr_; } else { return ForceHdrWideGammutForSdrDefaultValue; } }
       set {
-        _hasBits0 |= 2048;
+        _hasBits0 |= 1024;
         forceHdrWideGammutForSdr_ = value;
       }
     }
@@ -12537,40 +12396,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasForceHdrWideGammutForSdr {
-      get { return (_hasBits0 & 2048) != 0; }
+      get { return (_hasBits0 & 1024) != 0; }
     }
     /// <summary>Clears the value of the "force_hdr_wide_gammut_for_sdr" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearForceHdrWideGammutForSdr() {
-      _hasBits0 &= ~2048;
-    }
-
-    /// <summary>Field number for the "allow_experimental_hdr" field.</summary>
-    public const int AllowExperimentalHdrFieldNumber = 16;
-    private readonly static bool AllowExperimentalHdrDefaultValue = false;
-
-    private bool allowExperimentalHdr_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool AllowExperimentalHdr {
-      get { if ((_hasBits0 & 4096) != 0) { return allowExperimentalHdr_; } else { return AllowExperimentalHdrDefaultValue; } }
-      set {
-        _hasBits0 |= 4096;
-        allowExperimentalHdr_ = value;
-      }
-    }
-    /// <summary>Gets whether the "allow_experimental_hdr" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasAllowExperimentalHdr {
-      get { return (_hasBits0 & 4096) != 0; }
-    }
-    /// <summary>Clears the value of the "allow_experimental_hdr" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearAllowExperimentalHdr() {
-      _hasBits0 &= ~4096;
+      _hasBits0 &= ~1024;
     }
 
     /// <summary>Field number for the "sdr_to_hdr_brightness" field.</summary>
@@ -12581,9 +12413,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float SdrToHdrBrightness {
-      get { if ((_hasBits0 & 131072) != 0) { return sdrToHdrBrightness_; } else { return SdrToHdrBrightnessDefaultValue; } }
+      get { if ((_hasBits0 & 4096) != 0) { return sdrToHdrBrightness_; } else { return SdrToHdrBrightnessDefaultValue; } }
       set {
-        _hasBits0 |= 131072;
+        _hasBits0 |= 4096;
         sdrToHdrBrightness_ = value;
       }
     }
@@ -12591,94 +12423,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSdrToHdrBrightness {
-      get { return (_hasBits0 & 131072) != 0; }
+      get { return (_hasBits0 & 4096) != 0; }
     }
     /// <summary>Clears the value of the "sdr_to_hdr_brightness" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSdrToHdrBrightness() {
-      _hasBits0 &= ~131072;
-    }
-
-    /// <summary>Field number for the "debug_force_hdr_support" field.</summary>
-    public const int DebugForceHdrSupportFieldNumber = 18;
-    private readonly static bool DebugForceHdrSupportDefaultValue = false;
-
-    private bool debugForceHdrSupport_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool DebugForceHdrSupport {
-      get { if ((_hasBits0 & 8192) != 0) { return debugForceHdrSupport_; } else { return DebugForceHdrSupportDefaultValue; } }
-      set {
-        _hasBits0 |= 8192;
-        debugForceHdrSupport_ = value;
-      }
-    }
-    /// <summary>Gets whether the "debug_force_hdr_support" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasDebugForceHdrSupport {
-      get { return (_hasBits0 & 8192) != 0; }
-    }
-    /// <summary>Clears the value of the "debug_force_hdr_support" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearDebugForceHdrSupport() {
-      _hasBits0 &= ~8192;
-    }
-
-    /// <summary>Field number for the "force_hdr_10pq_output_debug" field.</summary>
-    public const int ForceHdr10PqOutputDebugFieldNumber = 19;
-    private readonly static bool ForceHdr10PqOutputDebugDefaultValue = false;
-
-    private bool forceHdr10PqOutputDebug_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool ForceHdr10PqOutputDebug {
-      get { if ((_hasBits0 & 16384) != 0) { return forceHdr10PqOutputDebug_; } else { return ForceHdr10PqOutputDebugDefaultValue; } }
-      set {
-        _hasBits0 |= 16384;
-        forceHdr10PqOutputDebug_ = value;
-      }
-    }
-    /// <summary>Gets whether the "force_hdr_10pq_output_debug" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasForceHdr10PqOutputDebug {
-      get { return (_hasBits0 & 16384) != 0; }
-    }
-    /// <summary>Clears the value of the "force_hdr_10pq_output_debug" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearForceHdr10PqOutputDebug() {
-      _hasBits0 &= ~16384;
-    }
-
-    /// <summary>Field number for the "is_display_oc_enabled" field.</summary>
-    public const int IsDisplayOcEnabledFieldNumber = 20;
-    private readonly static bool IsDisplayOcEnabledDefaultValue = false;
-
-    private bool isDisplayOcEnabled_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsDisplayOcEnabled {
-      get { if ((_hasBits0 & 32768) != 0) { return isDisplayOcEnabled_; } else { return IsDisplayOcEnabledDefaultValue; } }
-      set {
-        _hasBits0 |= 32768;
-        isDisplayOcEnabled_ = value;
-      }
-    }
-    /// <summary>Gets whether the "is_display_oc_enabled" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasIsDisplayOcEnabled {
-      get { return (_hasBits0 & 32768) != 0; }
-    }
-    /// <summary>Clears the value of the "is_display_oc_enabled" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearIsDisplayOcEnabled() {
-      _hasBits0 &= ~32768;
+      _hasBits0 &= ~4096;
     }
 
     /// <summary>Field number for the "is_color_management_enabled" field.</summary>
@@ -12689,9 +12440,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsColorManagementEnabled {
-      get { if ((_hasBits0 & 65536) != 0) { return isColorManagementEnabled_; } else { return IsColorManagementEnabledDefaultValue; } }
+      get { if ((_hasBits0 & 2048) != 0) { return isColorManagementEnabled_; } else { return IsColorManagementEnabledDefaultValue; } }
       set {
-        _hasBits0 |= 65536;
+        _hasBits0 |= 2048;
         isColorManagementEnabled_ = value;
       }
     }
@@ -12699,13 +12450,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsColorManagementEnabled {
-      get { return (_hasBits0 & 65536) != 0; }
+      get { return (_hasBits0 & 2048) != 0; }
     }
     /// <summary>Clears the value of the "is_color_management_enabled" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsColorManagementEnabled() {
-      _hasBits0 &= ~65536;
+      _hasBits0 &= ~2048;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12731,15 +12482,10 @@ namespace OpenSteamworks.Protobuf {
       if (IsShowPerfOverlayOverSteamEnabled != other.IsShowPerfOverlayOverSteamEnabled) return false;
       if (IsAdvancedSettingsEnabled != other.IsAdvancedSettingsEnabled) return false;
       if (AllowExternalDisplayRefreshControl != other.AllowExternalDisplayRefreshControl) return false;
-      if (IsHdrEnabled != other.IsHdrEnabled) return false;
       if (HdrOnSdrTonemapOperator != other.HdrOnSdrTonemapOperator) return false;
       if (IsHdrDebugHeatmapEnabled != other.IsHdrDebugHeatmapEnabled) return false;
       if (ForceHdrWideGammutForSdr != other.ForceHdrWideGammutForSdr) return false;
-      if (AllowExperimentalHdr != other.AllowExperimentalHdr) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SdrToHdrBrightness, other.SdrToHdrBrightness)) return false;
-      if (DebugForceHdrSupport != other.DebugForceHdrSupport) return false;
-      if (ForceHdr10PqOutputDebug != other.ForceHdr10PqOutputDebug) return false;
-      if (IsDisplayOcEnabled != other.IsDisplayOcEnabled) return false;
       if (IsColorManagementEnabled != other.IsColorManagementEnabled) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -12756,15 +12502,10 @@ namespace OpenSteamworks.Protobuf {
       if (HasIsShowPerfOverlayOverSteamEnabled) hash ^= IsShowPerfOverlayOverSteamEnabled.GetHashCode();
       if (HasIsAdvancedSettingsEnabled) hash ^= IsAdvancedSettingsEnabled.GetHashCode();
       if (HasAllowExternalDisplayRefreshControl) hash ^= AllowExternalDisplayRefreshControl.GetHashCode();
-      if (HasIsHdrEnabled) hash ^= IsHdrEnabled.GetHashCode();
       if (HasHdrOnSdrTonemapOperator) hash ^= HdrOnSdrTonemapOperator.GetHashCode();
       if (HasIsHdrDebugHeatmapEnabled) hash ^= IsHdrDebugHeatmapEnabled.GetHashCode();
       if (HasForceHdrWideGammutForSdr) hash ^= ForceHdrWideGammutForSdr.GetHashCode();
-      if (HasAllowExperimentalHdr) hash ^= AllowExperimentalHdr.GetHashCode();
       if (HasSdrToHdrBrightness) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SdrToHdrBrightness);
-      if (HasDebugForceHdrSupport) hash ^= DebugForceHdrSupport.GetHashCode();
-      if (HasForceHdr10PqOutputDebug) hash ^= ForceHdr10PqOutputDebug.GetHashCode();
-      if (HasIsDisplayOcEnabled) hash ^= IsDisplayOcEnabled.GetHashCode();
       if (HasIsColorManagementEnabled) hash ^= IsColorManagementEnabled.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -12816,10 +12557,6 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(64);
         output.WriteBool(AllowExternalDisplayRefreshControl);
       }
-      if (HasIsHdrEnabled) {
-        output.WriteRawTag(72);
-        output.WriteBool(IsHdrEnabled);
-      }
       if (HasHdrOnSdrTonemapOperator) {
         output.WriteRawTag(96);
         output.WriteEnum((int) HdrOnSdrTonemapOperator);
@@ -12831,22 +12568,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasForceHdrWideGammutForSdr) {
         output.WriteRawTag(120);
         output.WriteBool(ForceHdrWideGammutForSdr);
-      }
-      if (HasAllowExperimentalHdr) {
-        output.WriteRawTag(128, 1);
-        output.WriteBool(AllowExperimentalHdr);
-      }
-      if (HasDebugForceHdrSupport) {
-        output.WriteRawTag(144, 1);
-        output.WriteBool(DebugForceHdrSupport);
-      }
-      if (HasForceHdr10PqOutputDebug) {
-        output.WriteRawTag(152, 1);
-        output.WriteBool(ForceHdr10PqOutputDebug);
-      }
-      if (HasIsDisplayOcEnabled) {
-        output.WriteRawTag(160, 1);
-        output.WriteBool(IsDisplayOcEnabled);
       }
       if (HasIsColorManagementEnabled) {
         output.WriteRawTag(168, 1);
@@ -12898,10 +12619,6 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(64);
         output.WriteBool(AllowExternalDisplayRefreshControl);
       }
-      if (HasIsHdrEnabled) {
-        output.WriteRawTag(72);
-        output.WriteBool(IsHdrEnabled);
-      }
       if (HasHdrOnSdrTonemapOperator) {
         output.WriteRawTag(96);
         output.WriteEnum((int) HdrOnSdrTonemapOperator);
@@ -12913,22 +12630,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasForceHdrWideGammutForSdr) {
         output.WriteRawTag(120);
         output.WriteBool(ForceHdrWideGammutForSdr);
-      }
-      if (HasAllowExperimentalHdr) {
-        output.WriteRawTag(128, 1);
-        output.WriteBool(AllowExperimentalHdr);
-      }
-      if (HasDebugForceHdrSupport) {
-        output.WriteRawTag(144, 1);
-        output.WriteBool(DebugForceHdrSupport);
-      }
-      if (HasForceHdr10PqOutputDebug) {
-        output.WriteRawTag(152, 1);
-        output.WriteBool(ForceHdr10PqOutputDebug);
-      }
-      if (HasIsDisplayOcEnabled) {
-        output.WriteRawTag(160, 1);
-        output.WriteBool(IsDisplayOcEnabled);
       }
       if (HasIsColorManagementEnabled) {
         output.WriteRawTag(168, 1);
@@ -12972,9 +12673,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasAllowExternalDisplayRefreshControl) {
         size += 1 + 1;
       }
-      if (HasIsHdrEnabled) {
-        size += 1 + 1;
-      }
       if (HasHdrOnSdrTonemapOperator) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HdrOnSdrTonemapOperator);
       }
@@ -12984,20 +12682,8 @@ namespace OpenSteamworks.Protobuf {
       if (HasForceHdrWideGammutForSdr) {
         size += 1 + 1;
       }
-      if (HasAllowExperimentalHdr) {
-        size += 2 + 1;
-      }
       if (HasSdrToHdrBrightness) {
         size += 2 + 4;
-      }
-      if (HasDebugForceHdrSupport) {
-        size += 2 + 1;
-      }
-      if (HasForceHdr10PqOutputDebug) {
-        size += 2 + 1;
-      }
-      if (HasIsDisplayOcEnabled) {
-        size += 2 + 1;
       }
       if (HasIsColorManagementEnabled) {
         size += 2 + 1;
@@ -13038,9 +12724,6 @@ namespace OpenSteamworks.Protobuf {
       if (other.HasAllowExternalDisplayRefreshControl) {
         AllowExternalDisplayRefreshControl = other.AllowExternalDisplayRefreshControl;
       }
-      if (other.HasIsHdrEnabled) {
-        IsHdrEnabled = other.IsHdrEnabled;
-      }
       if (other.HasHdrOnSdrTonemapOperator) {
         HdrOnSdrTonemapOperator = other.HdrOnSdrTonemapOperator;
       }
@@ -13050,20 +12733,8 @@ namespace OpenSteamworks.Protobuf {
       if (other.HasForceHdrWideGammutForSdr) {
         ForceHdrWideGammutForSdr = other.ForceHdrWideGammutForSdr;
       }
-      if (other.HasAllowExperimentalHdr) {
-        AllowExperimentalHdr = other.AllowExperimentalHdr;
-      }
       if (other.HasSdrToHdrBrightness) {
         SdrToHdrBrightness = other.SdrToHdrBrightness;
-      }
-      if (other.HasDebugForceHdrSupport) {
-        DebugForceHdrSupport = other.DebugForceHdrSupport;
-      }
-      if (other.HasForceHdr10PqOutputDebug) {
-        ForceHdr10PqOutputDebug = other.ForceHdr10PqOutputDebug;
-      }
-      if (other.HasIsDisplayOcEnabled) {
-        IsDisplayOcEnabled = other.IsDisplayOcEnabled;
       }
       if (other.HasIsColorManagementEnabled) {
         IsColorManagementEnabled = other.IsColorManagementEnabled;
@@ -13119,10 +12790,6 @@ namespace OpenSteamworks.Protobuf {
             AllowExternalDisplayRefreshControl = input.ReadBool();
             break;
           }
-          case 72: {
-            IsHdrEnabled = input.ReadBool();
-            break;
-          }
           case 96: {
             HdrOnSdrTonemapOperator = (global::OpenSteamworks.Protobuf.EHDRToneMapOperator) input.ReadEnum();
             break;
@@ -13133,22 +12800,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 120: {
             ForceHdrWideGammutForSdr = input.ReadBool();
-            break;
-          }
-          case 128: {
-            AllowExperimentalHdr = input.ReadBool();
-            break;
-          }
-          case 144: {
-            DebugForceHdrSupport = input.ReadBool();
-            break;
-          }
-          case 152: {
-            ForceHdr10PqOutputDebug = input.ReadBool();
-            break;
-          }
-          case 160: {
-            IsDisplayOcEnabled = input.ReadBool();
             break;
           }
           case 168: {
@@ -13210,10 +12861,6 @@ namespace OpenSteamworks.Protobuf {
             AllowExternalDisplayRefreshControl = input.ReadBool();
             break;
           }
-          case 72: {
-            IsHdrEnabled = input.ReadBool();
-            break;
-          }
           case 96: {
             HdrOnSdrTonemapOperator = (global::OpenSteamworks.Protobuf.EHDRToneMapOperator) input.ReadEnum();
             break;
@@ -13224,22 +12871,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 120: {
             ForceHdrWideGammutForSdr = input.ReadBool();
-            break;
-          }
-          case 128: {
-            AllowExperimentalHdr = input.ReadBool();
-            break;
-          }
-          case 144: {
-            DebugForceHdrSupport = input.ReadBool();
-            break;
-          }
-          case 152: {
-            ForceHdr10PqOutputDebug = input.ReadBool();
-            break;
-          }
-          case 160: {
-            IsDisplayOcEnabled = input.ReadBool();
             break;
           }
           case 168: {
@@ -22338,9 +21969,9 @@ namespace OpenSteamworks.Protobuf {
       refreshRateMin_ = other.refreshRateMin_;
       refreshRateMax_ = other.refreshRateMax_;
       isVrrCapable_ = other.isVrrCapable_;
-      isVrrEnabled_ = other.isVrrEnabled_;
+      isVrrOutputActive_ = other.isVrrOutputActive_;
       isHdrCapable_ = other.isHdrCapable_;
-      isHdrEnabled_ = other.isHdrEnabled_;
+      isHdrOutputActive_ = other.isHdrOutputActive_;
       supportedRefreshRates_ = other.supportedRefreshRates_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -22711,30 +22342,30 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~1024;
     }
 
-    /// <summary>Field number for the "is_vrr_enabled" field.</summary>
-    public const int IsVrrEnabledFieldNumber = 15;
-    private readonly static bool IsVrrEnabledDefaultValue = false;
+    /// <summary>Field number for the "is_vrr_output_active" field.</summary>
+    public const int IsVrrOutputActiveFieldNumber = 15;
+    private readonly static bool IsVrrOutputActiveDefaultValue = false;
 
-    private bool isVrrEnabled_;
+    private bool isVrrOutputActive_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsVrrEnabled {
-      get { if ((_hasBits0 & 2048) != 0) { return isVrrEnabled_; } else { return IsVrrEnabledDefaultValue; } }
+    public bool IsVrrOutputActive {
+      get { if ((_hasBits0 & 2048) != 0) { return isVrrOutputActive_; } else { return IsVrrOutputActiveDefaultValue; } }
       set {
         _hasBits0 |= 2048;
-        isVrrEnabled_ = value;
+        isVrrOutputActive_ = value;
       }
     }
-    /// <summary>Gets whether the "is_vrr_enabled" field is set</summary>
+    /// <summary>Gets whether the "is_vrr_output_active" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasIsVrrEnabled {
+    public bool HasIsVrrOutputActive {
       get { return (_hasBits0 & 2048) != 0; }
     }
-    /// <summary>Clears the value of the "is_vrr_enabled" field</summary>
+    /// <summary>Clears the value of the "is_vrr_output_active" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearIsVrrEnabled() {
+    public void ClearIsVrrOutputActive() {
       _hasBits0 &= ~2048;
     }
 
@@ -22765,30 +22396,30 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~4096;
     }
 
-    /// <summary>Field number for the "is_hdr_enabled" field.</summary>
-    public const int IsHdrEnabledFieldNumber = 17;
-    private readonly static bool IsHdrEnabledDefaultValue = false;
+    /// <summary>Field number for the "is_hdr_output_active" field.</summary>
+    public const int IsHdrOutputActiveFieldNumber = 17;
+    private readonly static bool IsHdrOutputActiveDefaultValue = false;
 
-    private bool isHdrEnabled_;
+    private bool isHdrOutputActive_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsHdrEnabled {
-      get { if ((_hasBits0 & 8192) != 0) { return isHdrEnabled_; } else { return IsHdrEnabledDefaultValue; } }
+    public bool IsHdrOutputActive {
+      get { if ((_hasBits0 & 8192) != 0) { return isHdrOutputActive_; } else { return IsHdrOutputActiveDefaultValue; } }
       set {
         _hasBits0 |= 8192;
-        isHdrEnabled_ = value;
+        isHdrOutputActive_ = value;
       }
     }
-    /// <summary>Gets whether the "is_hdr_enabled" field is set</summary>
+    /// <summary>Gets whether the "is_hdr_output_active" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasIsHdrEnabled {
+    public bool HasIsHdrOutputActive {
       get { return (_hasBits0 & 8192) != 0; }
     }
-    /// <summary>Clears the value of the "is_hdr_enabled" field</summary>
+    /// <summary>Clears the value of the "is_hdr_output_active" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearIsHdrEnabled() {
+    public void ClearIsHdrOutputActive() {
       _hasBits0 &= ~8192;
     }
 
@@ -22832,9 +22463,9 @@ namespace OpenSteamworks.Protobuf {
       if (RefreshRateMin != other.RefreshRateMin) return false;
       if (RefreshRateMax != other.RefreshRateMax) return false;
       if (IsVrrCapable != other.IsVrrCapable) return false;
-      if (IsVrrEnabled != other.IsVrrEnabled) return false;
+      if (IsVrrOutputActive != other.IsVrrOutputActive) return false;
       if (IsHdrCapable != other.IsHdrCapable) return false;
-      if (IsHdrEnabled != other.IsHdrEnabled) return false;
+      if (IsHdrOutputActive != other.IsHdrOutputActive) return false;
       if(!supportedRefreshRates_.Equals(other.supportedRefreshRates_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -22857,9 +22488,9 @@ namespace OpenSteamworks.Protobuf {
       if (HasRefreshRateMin) hash ^= RefreshRateMin.GetHashCode();
       if (HasRefreshRateMax) hash ^= RefreshRateMax.GetHashCode();
       if (HasIsVrrCapable) hash ^= IsVrrCapable.GetHashCode();
-      if (HasIsVrrEnabled) hash ^= IsVrrEnabled.GetHashCode();
+      if (HasIsVrrOutputActive) hash ^= IsVrrOutputActive.GetHashCode();
       if (HasIsHdrCapable) hash ^= IsHdrCapable.GetHashCode();
-      if (HasIsHdrEnabled) hash ^= IsHdrEnabled.GetHashCode();
+      if (HasIsHdrOutputActive) hash ^= IsHdrOutputActive.GetHashCode();
       hash ^= supportedRefreshRates_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -22932,17 +22563,17 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(112);
         output.WriteBool(IsVrrCapable);
       }
-      if (HasIsVrrEnabled) {
+      if (HasIsVrrOutputActive) {
         output.WriteRawTag(120);
-        output.WriteBool(IsVrrEnabled);
+        output.WriteBool(IsVrrOutputActive);
       }
       if (HasIsHdrCapable) {
         output.WriteRawTag(128, 1);
         output.WriteBool(IsHdrCapable);
       }
-      if (HasIsHdrEnabled) {
+      if (HasIsHdrOutputActive) {
         output.WriteRawTag(136, 1);
-        output.WriteBool(IsHdrEnabled);
+        output.WriteBool(IsHdrOutputActive);
       }
       supportedRefreshRates_.WriteTo(output, _repeated_supportedRefreshRates_codec);
       if (_unknownFields != null) {
@@ -23008,17 +22639,17 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(112);
         output.WriteBool(IsVrrCapable);
       }
-      if (HasIsVrrEnabled) {
+      if (HasIsVrrOutputActive) {
         output.WriteRawTag(120);
-        output.WriteBool(IsVrrEnabled);
+        output.WriteBool(IsVrrOutputActive);
       }
       if (HasIsHdrCapable) {
         output.WriteRawTag(128, 1);
         output.WriteBool(IsHdrCapable);
       }
-      if (HasIsHdrEnabled) {
+      if (HasIsHdrOutputActive) {
         output.WriteRawTag(136, 1);
-        output.WriteBool(IsHdrEnabled);
+        output.WriteBool(IsHdrOutputActive);
       }
       supportedRefreshRates_.WriteTo(ref output, _repeated_supportedRefreshRates_codec);
       if (_unknownFields != null) {
@@ -23071,13 +22702,13 @@ namespace OpenSteamworks.Protobuf {
       if (HasIsVrrCapable) {
         size += 1 + 1;
       }
-      if (HasIsVrrEnabled) {
+      if (HasIsVrrOutputActive) {
         size += 1 + 1;
       }
       if (HasIsHdrCapable) {
         size += 2 + 1;
       }
-      if (HasIsHdrEnabled) {
+      if (HasIsHdrOutputActive) {
         size += 2 + 1;
       }
       size += supportedRefreshRates_.CalculateSize(_repeated_supportedRefreshRates_codec);
@@ -23133,14 +22764,14 @@ namespace OpenSteamworks.Protobuf {
       if (other.HasIsVrrCapable) {
         IsVrrCapable = other.IsVrrCapable;
       }
-      if (other.HasIsVrrEnabled) {
-        IsVrrEnabled = other.IsVrrEnabled;
+      if (other.HasIsVrrOutputActive) {
+        IsVrrOutputActive = other.IsVrrOutputActive;
       }
       if (other.HasIsHdrCapable) {
         IsHdrCapable = other.IsHdrCapable;
       }
-      if (other.HasIsHdrEnabled) {
-        IsHdrEnabled = other.IsHdrEnabled;
+      if (other.HasIsHdrOutputActive) {
+        IsHdrOutputActive = other.IsHdrOutputActive;
       }
       supportedRefreshRates_.Add(other.supportedRefreshRates_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -23219,7 +22850,7 @@ namespace OpenSteamworks.Protobuf {
             break;
           }
           case 120: {
-            IsVrrEnabled = input.ReadBool();
+            IsVrrOutputActive = input.ReadBool();
             break;
           }
           case 128: {
@@ -23227,7 +22858,7 @@ namespace OpenSteamworks.Protobuf {
             break;
           }
           case 136: {
-            IsHdrEnabled = input.ReadBool();
+            IsHdrOutputActive = input.ReadBool();
             break;
           }
           case 146:
@@ -23311,7 +22942,7 @@ namespace OpenSteamworks.Protobuf {
             break;
           }
           case 120: {
-            IsVrrEnabled = input.ReadBool();
+            IsVrrOutputActive = input.ReadBool();
             break;
           }
           case 128: {
@@ -23319,7 +22950,7 @@ namespace OpenSteamworks.Protobuf {
             break;
           }
           case 136: {
-            IsHdrEnabled = input.ReadBool();
+            IsHdrOutputActive = input.ReadBool();
             break;
           }
           case 146:

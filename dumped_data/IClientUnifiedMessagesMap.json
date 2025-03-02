@@ -1,85 +1,85 @@
 {
-    "name": "IClientUnifiedMessagesMap",
-    "functions": [ 
-        {
-            "name": "SendMethod",
-            "argc": "6",
-            "interfaceid": "25",
-            "functionid": "981623717",
-            "fencepost": "1048352565",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "string",
-                "bytes4",
-                "bytes_length_from_mem",
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes8"
-            ]
-        },
-        {
-            "name": "GetMethodResponseInfo",
-            "argc": "5",
-            "interfaceid": "25",
-            "functionid": "772621454",
-            "fencepost": "839463205",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetMethodResponseData",
-            "argc": "6",
-            "interfaceid": "25",
-            "functionid": "278951773",
-            "fencepost": "345954814",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8",
-                "bytes4",
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "bytes1",
-                "bytes_length_from_mem"
-            ]
-        },
-        {
-            "name": "ReleaseMethod",
-            "argc": "3",
-            "interfaceid": "25",
-            "functionid": "2788112723",
-            "fencepost": "2855180280",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes8"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        },
-        {
-            "name": "SendNotification",
-            "argc": "4",
-            "interfaceid": "25",
-            "functionid": "72229397",
-            "fencepost": "139393728",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "string",
-                "bytes4",
-                "bytes_length_from_mem"
-            ],
-            "serializedreturns": [
-                "bytes1"
-            ]
-        }
-    ]
+  "name": "IClientUnifiedMessages",
+  "functions": [
+    {
+      "name": "SendMethod",
+      "argc": "-1",
+      "interfaceid": "25",
+      "functionid": "981623689",
+      "fencepost": "1047900925",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "string",
+        "bytes4",
+        "bytes_external_length",
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes8"
+      ]
+    },
+    {
+      "name": "GetMethodResponseInfo",
+      "argc": "-1",
+      "interfaceid": "25",
+      "functionid": "772621490",
+      "fencepost": "839011629",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetMethodResponseData",
+      "argc": "-1",
+      "interfaceid": "25",
+      "functionid": "278951793",
+      "fencepost": "345503222",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8",
+        "bytes4",
+        "bytes1"
+      ],
+      "serializedreturns": [
+        "bytes1",
+        "bytes_external_length"
+      ]
+    },
+    {
+      "name": "ReleaseMethod",
+      "argc": "-1",
+      "interfaceid": "25",
+      "functionid": "2788112719",
+      "fencepost": "2854728664",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes8"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "SendNotification",
+      "argc": "-1",
+      "interfaceid": "25",
+      "functionid": "72229489",
+      "fencepost": "138942208",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "string",
+        "bytes4",
+        "bytes_external_length"
+      ],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    }
+  ]
 }

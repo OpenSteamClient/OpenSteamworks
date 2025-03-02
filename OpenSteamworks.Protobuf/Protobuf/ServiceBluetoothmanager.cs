@@ -51,49 +51,54 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "DSIhCh9DQmx1ZXRvb3RoTWFuYWdlcl9QYWlyX1Jlc3BvbnNlIjsKKENCbHVl",
             "dG9vdGhNYW5hZ2VyX1NldERpc2NvdmVyaW5nX1JlcXVlc3QSDwoHZW5hYmxl",
             "ZBgBIAEoCCIrCilDQmx1ZXRvb3RoTWFuYWdlcl9TZXREaXNjb3ZlcmluZ19S",
-            "ZXNwb25zZSJLCihDQmx1ZXRvb3RoTWFuYWdlcl9TZXRXYWtlQWxsb3dlZF9S",
-            "ZXF1ZXN0Eg4KBmRldmljZRgBIAEoDRIPCgdhbGxvd2VkGAIgASgIIisKKUNC",
-            "bHVldG9vdGhNYW5hZ2VyX1NldFdha2VBbGxvd2VkX1Jlc3BvbnNlIi0KK0NC",
-            "bHVldG9vdGhNYW5hZ2VyX1N0YXRlQ2hhbmdlZF9Ob3RpZmljYXRpb24iegoi",
-            "Q01zZ0JsdWV0b290aE1hbmFnZXJBZGFwdGVyRGV0YWlscxINCgJpZBgBIAEo",
-            "DToBMBILCgNtYWMYAiABKAkSDAoEbmFtZRgDIAEoCRISCgppc19lbmFibGVk",
-            "GAQgASgIEhYKDmlzX2Rpc2NvdmVyaW5nGAUgASgIIi0KH0NNc2dCbHVldG9v",
-            "dGhNYW5hZ2VyQWRhcHRlckluZm8SCgoCaWQYASABKA0iqAIKIUNNc2dCbHVl",
-            "dG9vdGhNYW5hZ2VyRGV2aWNlRGV0YWlscxINCgJpZBgBIAEoDToBMBIVCgph",
-            "ZGFwdGVyX2lkGAIgASgNOgEwEhcKBWV0eXBlGAMgASgFQgiCtRgEZW51bRIL",
-            "CgNtYWMYBCABKAkSDAoEbmFtZRgFIAEoCRIUCgxpc19jb25uZWN0ZWQYBiAB",
-            "KAgSEQoJaXNfcGFpcmVkGAcgASgIEhIKCmlzX3BhaXJpbmcYCCABKAgSFAoM",
-            "d2FrZV9hbGxvd2VkGAkgASgIEh4KFndha2VfYWxsb3dlZF9zdXBwb3J0ZWQY",
-            "CiABKAgSFwoPYmF0dGVyeV9wZXJjZW50GAsgASgFEh0KFW9wZXJhdGlvbl9p",
-            "bl9wcm9ncmVzcxgMIAEoCCKeAQoeQ01zZ0JsdWV0b290aE1hbmFnZXJEZXZp",
-            "Y2VJbmZvEgoKAmlkGAEgASgNEhgKEHNob3VsZF9oaWRlX2hpbnQYAiABKAgS",
-            "FwoFZXR5cGUYAyABKAVCCIK1GARlbnVtEhQKDGlzX2Nvbm5lY3RlZBgEIAEo",
-            "CBIRCglpc19wYWlyZWQYBSABKAgSFAoMc3RyZW5ndGhfcmF3GAYgASgFMpcI",
-            "ChBCbHVldG9vdGhNYW5hZ2VyElsKCkNhbmNlbFBhaXISJS5DQmx1ZXRvb3Ro",
-            "TWFuYWdlcl9DYW5jZWxQYWlyX1JlcXVlc3QaJi5DQmx1ZXRvb3RoTWFuYWdl",
-            "cl9DYW5jZWxQYWlyX1Jlc3BvbnNlElIKB0Nvbm5lY3QSIi5DQmx1ZXRvb3Ro",
-            "TWFuYWdlcl9Db25uZWN0X1JlcXVlc3QaIy5DQmx1ZXRvb3RoTWFuYWdlcl9D",
-            "b25uZWN0X1Jlc3BvbnNlElsKCkRpc2Nvbm5lY3QSJS5DQmx1ZXRvb3RoTWFu",
-            "YWdlcl9EaXNjb25uZWN0X1JlcXVlc3QaJi5DQmx1ZXRvb3RoTWFuYWdlcl9E",
-            "aXNjb25uZWN0X1Jlc3BvbnNlEk8KBkZvcmdldBIhLkNCbHVldG9vdGhNYW5h",
-            "Z2VyX0ZvcmdldF9SZXF1ZXN0GiIuQ0JsdWV0b290aE1hbmFnZXJfRm9yZ2V0",
-            "X1Jlc3BvbnNlEnAKEUdldEFkYXB0ZXJEZXRhaWxzEiwuQ0JsdWV0b290aE1h",
-            "bmFnZXJfR2V0QWRhcHRlckRldGFpbHNfUmVxdWVzdBotLkNCbHVldG9vdGhN",
-            "YW5hZ2VyX0dldEFkYXB0ZXJEZXRhaWxzX1Jlc3BvbnNlEm0KEEdldERldmlj",
-            "ZURldGFpbHMSKy5DQmx1ZXRvb3RoTWFuYWdlcl9HZXREZXZpY2VEZXRhaWxz",
-            "X1JlcXVlc3QaLC5DQmx1ZXRvb3RoTWFuYWdlcl9HZXREZXZpY2VEZXRhaWxz",
-            "X1Jlc3BvbnNlElUKCEdldFN0YXRlEiMuQ0JsdWV0b290aE1hbmFnZXJfR2V0",
-            "U3RhdGVfUmVxdWVzdBokLkNCbHVldG9vdGhNYW5hZ2VyX0dldFN0YXRlX1Jl",
-            "c3BvbnNlEk8KEk5vdGlmeVN0YXRlQ2hhbmdlZBIsLkNCbHVldG9vdGhNYW5h",
-            "Z2VyX1N0YXRlQ2hhbmdlZF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlEkkK",
-            "BFBhaXISHy5DQmx1ZXRvb3RoTWFuYWdlcl9QYWlyX1JlcXVlc3QaIC5DQmx1",
-            "ZXRvb3RoTWFuYWdlcl9QYWlyX1Jlc3BvbnNlEmcKDlNldERpc2NvdmVyaW5n",
-            "EikuQ0JsdWV0b290aE1hbmFnZXJfU2V0RGlzY292ZXJpbmdfUmVxdWVzdBoq",
-            "LkNCbHVldG9vdGhNYW5hZ2VyX1NldERpc2NvdmVyaW5nX1Jlc3BvbnNlEmcK",
-            "DlNldFdha2VBbGxvd2VkEikuQ0JsdWV0b290aE1hbmFnZXJfU2V0V2FrZUFs",
-            "bG93ZWRfUmVxdWVzdBoqLkNCbHVldG9vdGhNYW5hZ2VyX1NldFdha2VBbGxv",
-            "d2VkX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJV",
-            "SQ=="));
+            "ZXNwb25zZSJHCiRDQmx1ZXRvb3RoTWFuYWdlcl9TZXRUcnVzdGVkX1JlcXVl",
+            "c3QSDgoGZGV2aWNlGAEgASgNEg8KB3RydXN0ZWQYAiABKAgiJwolQ0JsdWV0",
+            "b290aE1hbmFnZXJfU2V0VHJ1c3RlZF9SZXNwb25zZSJLCihDQmx1ZXRvb3Ro",
+            "TWFuYWdlcl9TZXRXYWtlQWxsb3dlZF9SZXF1ZXN0Eg4KBmRldmljZRgBIAEo",
+            "DRIPCgdhbGxvd2VkGAIgASgIIisKKUNCbHVldG9vdGhNYW5hZ2VyX1NldFdh",
+            "a2VBbGxvd2VkX1Jlc3BvbnNlIi0KK0NCbHVldG9vdGhNYW5hZ2VyX1N0YXRl",
+            "Q2hhbmdlZF9Ob3RpZmljYXRpb24iegoiQ01zZ0JsdWV0b290aE1hbmFnZXJB",
+            "ZGFwdGVyRGV0YWlscxINCgJpZBgBIAEoDToBMBILCgNtYWMYAiABKAkSDAoE",
+            "bmFtZRgDIAEoCRISCgppc19lbmFibGVkGAQgASgIEhYKDmlzX2Rpc2NvdmVy",
+            "aW5nGAUgASgIIi0KH0NNc2dCbHVldG9vdGhNYW5hZ2VyQWRhcHRlckluZm8S",
+            "CgoCaWQYASABKA0ivAIKIUNNc2dCbHVldG9vdGhNYW5hZ2VyRGV2aWNlRGV0",
+            "YWlscxINCgJpZBgBIAEoDToBMBIVCgphZGFwdGVyX2lkGAIgASgNOgEwEhcK",
+            "BWV0eXBlGAMgASgFQgiCtRgEZW51bRILCgNtYWMYBCABKAkSDAoEbmFtZRgF",
+            "IAEoCRIUCgxpc19jb25uZWN0ZWQYBiABKAgSEQoJaXNfcGFpcmVkGAcgASgI",
+            "EhIKCmlzX3BhaXJpbmcYCCABKAgSFAoMd2FrZV9hbGxvd2VkGAkgASgIEh4K",
+            "Fndha2VfYWxsb3dlZF9zdXBwb3J0ZWQYCiABKAgSFwoPYmF0dGVyeV9wZXJj",
+            "ZW50GAsgASgFEh0KFW9wZXJhdGlvbl9pbl9wcm9ncmVzcxgMIAEoCBISCgpp",
+            "c190cnVzdGVkGA0gASgIIp4BCh5DTXNnQmx1ZXRvb3RoTWFuYWdlckRldmlj",
+            "ZUluZm8SCgoCaWQYASABKA0SGAoQc2hvdWxkX2hpZGVfaGludBgCIAEoCBIX",
+            "CgVldHlwZRgDIAEoBUIIgrUYBGVudW0SFAoMaXNfY29ubmVjdGVkGAQgASgI",
+            "EhEKCWlzX3BhaXJlZBgFIAEoCBIUCgxzdHJlbmd0aF9yYXcYBiABKAUy9AgK",
+            "EEJsdWV0b290aE1hbmFnZXISWwoKQ2FuY2VsUGFpchIlLkNCbHVldG9vdGhN",
+            "YW5hZ2VyX0NhbmNlbFBhaXJfUmVxdWVzdBomLkNCbHVldG9vdGhNYW5hZ2Vy",
+            "X0NhbmNlbFBhaXJfUmVzcG9uc2USUgoHQ29ubmVjdBIiLkNCbHVldG9vdGhN",
+            "YW5hZ2VyX0Nvbm5lY3RfUmVxdWVzdBojLkNCbHVldG9vdGhNYW5hZ2VyX0Nv",
+            "bm5lY3RfUmVzcG9uc2USWwoKRGlzY29ubmVjdBIlLkNCbHVldG9vdGhNYW5h",
+            "Z2VyX0Rpc2Nvbm5lY3RfUmVxdWVzdBomLkNCbHVldG9vdGhNYW5hZ2VyX0Rp",
+            "c2Nvbm5lY3RfUmVzcG9uc2USTwoGRm9yZ2V0EiEuQ0JsdWV0b290aE1hbmFn",
+            "ZXJfRm9yZ2V0X1JlcXVlc3QaIi5DQmx1ZXRvb3RoTWFuYWdlcl9Gb3JnZXRf",
+            "UmVzcG9uc2UScAoRR2V0QWRhcHRlckRldGFpbHMSLC5DQmx1ZXRvb3RoTWFu",
+            "YWdlcl9HZXRBZGFwdGVyRGV0YWlsc19SZXF1ZXN0Gi0uQ0JsdWV0b290aE1h",
+            "bmFnZXJfR2V0QWRhcHRlckRldGFpbHNfUmVzcG9uc2USbQoQR2V0RGV2aWNl",
+            "RGV0YWlscxIrLkNCbHVldG9vdGhNYW5hZ2VyX0dldERldmljZURldGFpbHNf",
+            "UmVxdWVzdBosLkNCbHVldG9vdGhNYW5hZ2VyX0dldERldmljZURldGFpbHNf",
+            "UmVzcG9uc2USVQoIR2V0U3RhdGUSIy5DQmx1ZXRvb3RoTWFuYWdlcl9HZXRT",
+            "dGF0ZV9SZXF1ZXN0GiQuQ0JsdWV0b290aE1hbmFnZXJfR2V0U3RhdGVfUmVz",
+            "cG9uc2USTwoSTm90aWZ5U3RhdGVDaGFuZ2VkEiwuQ0JsdWV0b290aE1hbmFn",
+            "ZXJfU3RhdGVDaGFuZ2VkX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USSQoE",
+            "UGFpchIfLkNCbHVldG9vdGhNYW5hZ2VyX1BhaXJfUmVxdWVzdBogLkNCbHVl",
+            "dG9vdGhNYW5hZ2VyX1BhaXJfUmVzcG9uc2USZwoOU2V0RGlzY292ZXJpbmcS",
+            "KS5DQmx1ZXRvb3RoTWFuYWdlcl9TZXREaXNjb3ZlcmluZ19SZXF1ZXN0Giou",
+            "Q0JsdWV0b290aE1hbmFnZXJfU2V0RGlzY292ZXJpbmdfUmVzcG9uc2USWwoK",
+            "U2V0VHJ1c3RlZBIlLkNCbHVldG9vdGhNYW5hZ2VyX1NldFRydXN0ZWRfUmVx",
+            "dWVzdBomLkNCbHVldG9vdGhNYW5hZ2VyX1NldFRydXN0ZWRfUmVzcG9uc2US",
+            "ZwoOU2V0V2FrZUFsbG93ZWQSKS5DQmx1ZXRvb3RoTWFuYWdlcl9TZXRXYWtl",
+            "QWxsb3dlZF9SZXF1ZXN0GiouQ0JsdWV0b290aE1hbmFnZXJfU2V0V2FrZUFs",
+            "bG93ZWRfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtzLlByb3RvYnVmLldl",
+            "YlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -115,12 +120,14 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_Pair_Response), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_Pair_Response.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetDiscovering_Request), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetDiscovering_Request.Parser, new[]{ "Enabled" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetDiscovering_Response), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetDiscovering_Response.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetTrusted_Request), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetTrusted_Request.Parser, new[]{ "Device", "Trusted" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetTrusted_Response), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetTrusted_Response.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetWakeAllowed_Request), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetWakeAllowed_Request.Parser, new[]{ "Device", "Allowed" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetWakeAllowed_Response), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_SetWakeAllowed_Response.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_StateChanged_Notification), global::OpenSteamworks.Protobuf.WebUI.CBluetoothManager_StateChanged_Notification.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerAdapterDetails), global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerAdapterDetails.Parser, new[]{ "Id", "Mac", "Name", "IsEnabled", "IsDiscovering" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerAdapterInfo), global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerAdapterInfo.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerDeviceDetails), global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerDeviceDetails.Parser, new[]{ "Id", "AdapterId", "Etype", "Mac", "Name", "IsConnected", "IsPaired", "IsPairing", "WakeAllowed", "WakeAllowedSupported", "BatteryPercent", "OperationInProgress" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerDeviceDetails), global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerDeviceDetails.Parser, new[]{ "Id", "AdapterId", "Etype", "Mac", "Name", "IsConnected", "IsPaired", "IsPairing", "WakeAllowed", "WakeAllowedSupported", "BatteryPercent", "OperationInProgress", "IsTrusted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerDeviceInfo), global::OpenSteamworks.Protobuf.WebUI.CMsgBluetoothManagerDeviceInfo.Parser, new[]{ "Id", "ShouldHideHint", "Etype", "IsConnected", "IsPaired", "StrengthRaw" }, null, null, null, null)
           }));
     }
@@ -3761,6 +3768,434 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CBluetoothManager_SetTrusted_Request : pb::IMessage<CBluetoothManager_SetTrusted_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CBluetoothManager_SetTrusted_Request> _parser = new pb::MessageParser<CBluetoothManager_SetTrusted_Request>(() => new CBluetoothManager_SetTrusted_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CBluetoothManager_SetTrusted_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBluetoothManager_SetTrusted_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBluetoothManager_SetTrusted_Request(CBluetoothManager_SetTrusted_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      device_ = other.device_;
+      trusted_ = other.trusted_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBluetoothManager_SetTrusted_Request Clone() {
+      return new CBluetoothManager_SetTrusted_Request(this);
+    }
+
+    /// <summary>Field number for the "device" field.</summary>
+    public const int DeviceFieldNumber = 1;
+    private readonly static uint DeviceDefaultValue = 0;
+
+    private uint device_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Device {
+      get { if ((_hasBits0 & 1) != 0) { return device_; } else { return DeviceDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        device_ = value;
+      }
+    }
+    /// <summary>Gets whether the "device" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDevice {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "device" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDevice() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "trusted" field.</summary>
+    public const int TrustedFieldNumber = 2;
+    private readonly static bool TrustedDefaultValue = false;
+
+    private bool trusted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Trusted {
+      get { if ((_hasBits0 & 2) != 0) { return trusted_; } else { return TrustedDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        trusted_ = value;
+      }
+    }
+    /// <summary>Gets whether the "trusted" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTrusted {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "trusted" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTrusted() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CBluetoothManager_SetTrusted_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CBluetoothManager_SetTrusted_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Device != other.Device) return false;
+      if (Trusted != other.Trusted) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasDevice) hash ^= Device.GetHashCode();
+      if (HasTrusted) hash ^= Trusted.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasDevice) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Device);
+      }
+      if (HasTrusted) {
+        output.WriteRawTag(16);
+        output.WriteBool(Trusted);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasDevice) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Device);
+      }
+      if (HasTrusted) {
+        output.WriteRawTag(16);
+        output.WriteBool(Trusted);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasDevice) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Device);
+      }
+      if (HasTrusted) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CBluetoothManager_SetTrusted_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasDevice) {
+        Device = other.Device;
+      }
+      if (other.HasTrusted) {
+        Trusted = other.Trusted;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Device = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Trusted = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Device = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            Trusted = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CBluetoothManager_SetTrusted_Response : pb::IMessage<CBluetoothManager_SetTrusted_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CBluetoothManager_SetTrusted_Response> _parser = new pb::MessageParser<CBluetoothManager_SetTrusted_Response>(() => new CBluetoothManager_SetTrusted_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CBluetoothManager_SetTrusted_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBluetoothManager_SetTrusted_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBluetoothManager_SetTrusted_Response(CBluetoothManager_SetTrusted_Response other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CBluetoothManager_SetTrusted_Response Clone() {
+      return new CBluetoothManager_SetTrusted_Response(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CBluetoothManager_SetTrusted_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CBluetoothManager_SetTrusted_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CBluetoothManager_SetTrusted_Response other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CBluetoothManager_SetWakeAllowed_Request : pb::IMessage<CBluetoothManager_SetWakeAllowed_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3776,7 +4211,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[18]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4042,7 +4477,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[19]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4203,7 +4638,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[20]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4365,7 +4800,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[21]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4786,7 +5221,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[22]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5001,7 +5436,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[23]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5034,6 +5469,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       wakeAllowedSupported_ = other.wakeAllowedSupported_;
       batteryPercent_ = other.batteryPercent_;
       operationInProgress_ = other.operationInProgress_;
+      isTrusted_ = other.isTrusted_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5365,6 +5801,33 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~512;
     }
 
+    /// <summary>Field number for the "is_trusted" field.</summary>
+    public const int IsTrustedFieldNumber = 13;
+    private readonly static bool IsTrustedDefaultValue = false;
+
+    private bool isTrusted_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsTrusted {
+      get { if ((_hasBits0 & 1024) != 0) { return isTrusted_; } else { return IsTrustedDefaultValue; } }
+      set {
+        _hasBits0 |= 1024;
+        isTrusted_ = value;
+      }
+    }
+    /// <summary>Gets whether the "is_trusted" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIsTrusted {
+      get { return (_hasBits0 & 1024) != 0; }
+    }
+    /// <summary>Clears the value of the "is_trusted" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIsTrusted() {
+      _hasBits0 &= ~1024;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5392,6 +5855,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (WakeAllowedSupported != other.WakeAllowedSupported) return false;
       if (BatteryPercent != other.BatteryPercent) return false;
       if (OperationInProgress != other.OperationInProgress) return false;
+      if (IsTrusted != other.IsTrusted) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5411,6 +5875,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasWakeAllowedSupported) hash ^= WakeAllowedSupported.GetHashCode();
       if (HasBatteryPercent) hash ^= BatteryPercent.GetHashCode();
       if (HasOperationInProgress) hash ^= OperationInProgress.GetHashCode();
+      if (HasIsTrusted) hash ^= IsTrusted.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5477,6 +5942,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(96);
         output.WriteBool(OperationInProgress);
       }
+      if (HasIsTrusted) {
+        output.WriteRawTag(104);
+        output.WriteBool(IsTrusted);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5535,6 +6004,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(96);
         output.WriteBool(OperationInProgress);
       }
+      if (HasIsTrusted) {
+        output.WriteRawTag(104);
+        output.WriteBool(IsTrusted);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5579,6 +6052,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BatteryPercent);
       }
       if (HasOperationInProgress) {
+        size += 1 + 1;
+      }
+      if (HasIsTrusted) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -5628,6 +6104,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasOperationInProgress) {
         OperationInProgress = other.OperationInProgress;
+      }
+      if (other.HasIsTrusted) {
+        IsTrusted = other.IsTrusted;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5694,6 +6173,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 96: {
             OperationInProgress = input.ReadBool();
+            break;
+          }
+          case 104: {
+            IsTrusted = input.ReadBool();
             break;
           }
         }
@@ -5763,6 +6246,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             OperationInProgress = input.ReadBool();
             break;
           }
+          case 104: {
+            IsTrusted = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -5786,7 +6273,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[24]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceBluetoothmanagerReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

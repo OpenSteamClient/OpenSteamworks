@@ -25,32 +25,736 @@ namespace OpenSteamworks.Protobuf.WebUI {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChtzZXJ2aWNlX2NsaWVudG1ldHJpY3MucHJvdG8aIGdvb2dsZS9wcm90b2J1",
-            "Zi9kZXNjcmlwdG9yLnByb3RvGhFjb21tb25fYmFzZS5wcm90byKXAQotQ0Ns",
-            "aWVudE1ldHJpY3NfUmVwb3J0Q2xpZW50RXJyb3JfTm90aWZpY2F0aW9uEg8K",
-            "B3Byb2R1Y3QYASABKAkSDwoHdmVyc2lvbhgCIAEoCRJECgZlcnJvcnMYAyAD",
-            "KAsyNC5DQ2xpZW50TWV0cmljc19SZXBvcnRDbGllbnRFcnJvcl9Ob3RpZmlj",
-            "YXRpb25fRXJyb3IiaQozQ0NsaWVudE1ldHJpY3NfUmVwb3J0Q2xpZW50RXJy",
-            "b3JfTm90aWZpY2F0aW9uX0Vycm9yEhIKCmlkZW50aWZpZXIYASABKAkSDwoH",
-            "bWVzc2FnZRgCIAEoCRINCgVjb3VudBgDIAEoDTLPAgoNQ2xpZW50TWV0cmlj",
-            "cxI9Ch1DbGllbnRBcHBJbnRlcmZhY2VTdGF0c1JlcG9ydBIPLk5vdEltcGxl",
-            "bWVudGVkGgsuTm9SZXNwb25zZRI1ChVDbGllbnRCb290c3RyYXBSZXBvcnQS",
-            "Dy5Ob3RJbXBsZW1lbnRlZBoLLk5vUmVzcG9uc2USPAocQ2xpZW50SVB2NkNv",
-            "bm5lY3Rpdml0eVJlcG9ydBIPLk5vdEltcGxlbWVudGVkGgsuTm9SZXNwb25z",
-            "ZRJQChFSZXBvcnRDbGllbnRFcnJvchIuLkNDbGllbnRNZXRyaWNzX1JlcG9y",
-            "dENsaWVudEVycm9yX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USOAoYU3Rl",
-            "YW1QaXBlV29ya1N0YXRzUmVwb3J0Eg8uTm90SW1wbGVtZW50ZWQaCy5Ob1Jl",
-            "c3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJVSQ=="));
+            "Zi9kZXNjcmlwdG9yLnByb3RvGhFjb21tb25fYmFzZS5wcm90byLoAgosQ0Ns",
+            "aWVudE1ldHJpY3NfUmVwb3J0Q2xpZW50QXJnc19Ob3RpZmljYXRpb24SEwoL",
+            "Y2xpZW50X2FyZ3MYASADKAkSIwobZ3B1X3dlYnZpZXdfcmVna2V5X2Rpc2Fi",
+            "bGVkGAIgASgIEhsKE3N1cHByZXNzX2dwdV9jaHJvbWUYAyABKAgSHQoVYnJv",
+            "d3Nlcl9ub3Rfc3VwcG9ydGVkGAQgASgIEiYKHmh3X2FjY2VsX3ZpZGVvX3Jl",
+            "Z2tleV9kaXNhYmxlZBgFIAEoCBIZChFtaW5pX21vZGVfZW5hYmxlZBgGIAEo",
+            "CBIbChNmcHNfY291bnRlcl9lbmFibGVkGAcgASgIEioKImxpYnJhcnlfbG93",
+            "X2JhbmR3aWR0aF9tb2RlX2VuYWJsZWQYCCABKAgSJQodbGlicmFyeV9sb3df",
+            "cGVyZl9tb2RlX2VuYWJsZWQYCSABKAgSDwoHZ3JfbW9kZRgKIAEoBSKXAQot",
+            "Q0NsaWVudE1ldHJpY3NfUmVwb3J0Q2xpZW50RXJyb3JfTm90aWZpY2F0aW9u",
+            "Eg8KB3Byb2R1Y3QYASABKAkSDwoHdmVyc2lvbhgCIAEoCRJECgZlcnJvcnMY",
+            "AyADKAsyNC5DQ2xpZW50TWV0cmljc19SZXBvcnRDbGllbnRFcnJvcl9Ob3Rp",
+            "ZmljYXRpb25fRXJyb3IiegozQ0NsaWVudE1ldHJpY3NfUmVwb3J0Q2xpZW50",
+            "RXJyb3JfTm90aWZpY2F0aW9uX0Vycm9yEhIKCmlkZW50aWZpZXIYASABKAkS",
+            "DwoHbWVzc2FnZRgCIAEoCRINCgVjb3VudBgDIAEoDRIPCgdjb250ZXh0GAQg",
+            "ASgJIsYBCixDQ2xpZW50TWV0cmljc19SZXBvcnRMaW51eFN0YXRzX05vdGlm",
+            "aWNhdGlvbhIbChNnbGliY192ZXJzaW9uX21ham9yGAEgASgFEhsKE2dsaWJj",
+            "X3ZlcnNpb25fbWlub3IYAiABKAUSFAoMYWNjb3VudF90eXBlGAMgASgFEhUK",
+            "DWxhdW5jaGVyX3R5cGUYBCABKAUSGQoRZ2FtZV9zZXJ2ZXJfYXBwaWQYBSAB",
+            "KAUSFAoMcHJvY2Vzc19uYW1lGAYgASgJIrUCCixDQ2xpZW50TWV0cmljc19S",
+            "ZXBvcnRSZWFjdFVzYWdlX05vdGlmaWNhdGlvbhIPCgdwcm9kdWN0GAEgASgJ",
+            "Eg8KB3ZlcnNpb24YAiABKAkSRwoGcm91dGVzGAMgAygLMjcuQ0NsaWVudE1l",
+            "dHJpY3NfUmVwb3J0UmVhY3RVc2FnZV9Ob3RpZmljYXRpb25fUm91dGVEYXRh",
+            "Ek8KCmNvbXBvbmVudHMYBCADKAsyOy5DQ2xpZW50TWV0cmljc19SZXBvcnRS",
+            "ZWFjdFVzYWdlX05vdGlmaWNhdGlvbl9Db21wb25lbnREYXRhEkkKB2FjdGlv",
+            "bnMYBSADKAsyOC5DQ2xpZW50TWV0cmljc19SZXBvcnRSZWFjdFVzYWdlX05v",
+            "dGlmaWNhdGlvbl9BY3Rpb25EYXRhIlgKN0NDbGllbnRNZXRyaWNzX1JlcG9y",
+            "dFJlYWN0VXNhZ2VfTm90aWZpY2F0aW9uX0FjdGlvbkRhdGESDgoGYWN0aW9u",
+            "GAEgASgJEg0KBWNvdW50GAIgASgNIl4KOkNDbGllbnRNZXRyaWNzX1JlcG9y",
+            "dFJlYWN0VXNhZ2VfTm90aWZpY2F0aW9uX0NvbXBvbmVudERhdGESEQoJY29t",
+            "cG9uZW50GAEgASgJEg0KBWNvdW50GAIgASgNIlYKNkNDbGllbnRNZXRyaWNz",
+            "X1JlcG9ydFJlYWN0VXNhZ2VfTm90aWZpY2F0aW9uX1JvdXRlRGF0YRINCgVy",
+            "b3V0ZRgBIAEoCRINCgVjb3VudBgCIAEoDTLOBwoNQ2xpZW50TWV0cmljcxI9",
+            "Ch1DbGllbnRBcHBJbnRlcmZhY2VTdGF0c1JlcG9ydBIPLk5vdEltcGxlbWVu",
+            "dGVkGgsuTm9SZXNwb25zZRI1ChVDbGllbnRCb290c3RyYXBSZXBvcnQSDy5O",
+            "b3RJbXBsZW1lbnRlZBoLLk5vUmVzcG9uc2USNwoXQ2xpZW50Q2xvdWRBcHBT",
+            "eW5jU3RhdHMSDy5Ob3RJbXBsZW1lbnRlZBoLLk5vUmVzcG9uc2USPQodQ2xp",
+            "ZW50Q29udGVudFZhbGlkYXRpb25SZXBvcnQSDy5Ob3RJbXBsZW1lbnRlZBoL",
+            "Lk5vUmVzcG9uc2USOQoZQ2xpZW50RG93bmxvYWRSYXRlc1JlcG9ydBIPLk5v",
+            "dEltcGxlbWVudGVkGgsuTm9SZXNwb25zZRJACiBDbGllbnREb3dubG9hZFJl",
+            "c3BvbnNlQ29kZUNvdW50cxIPLk5vdEltcGxlbWVudGVkGgsuTm9SZXNwb25z",
+            "ZRI8ChxDbGllbnRJUHY2Q29ubmVjdGl2aXR5UmVwb3J0Eg8uTm90SW1wbGVt",
+            "ZW50ZWQaCy5Ob1Jlc3BvbnNlEk4KEFJlcG9ydENsaWVudEFyZ3MSLS5DQ2xp",
+            "ZW50TWV0cmljc19SZXBvcnRDbGllbnRBcmdzX05vdGlmaWNhdGlvbhoLLk5v",
+            "UmVzcG9uc2USUAoRUmVwb3J0Q2xpZW50RXJyb3ISLi5DQ2xpZW50TWV0cmlj",
+            "c19SZXBvcnRDbGllbnRFcnJvcl9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNl",
+            "Ei8KD1JlcG9ydENsaXBSYW5nZRIPLk5vdEltcGxlbWVudGVkGgsuTm9SZXNw",
+            "b25zZRIvCg9SZXBvcnRDbGlwU2hhcmUSDy5Ob3RJbXBsZW1lbnRlZBoLLk5v",
+            "UmVzcG9uc2USNgoWUmVwb3J0RW5kR2FtZVJlY29yZGluZxIPLk5vdEltcGxl",
+            "bWVudGVkGgsuTm9SZXNwb25zZRJOChBSZXBvcnRMaW51eFN0YXRzEi0uQ0Ns",
+            "aWVudE1ldHJpY3NfUmVwb3J0TGludXhTdGF0c19Ob3RpZmljYXRpb24aCy5O",
+            "b1Jlc3BvbnNlEk4KEFJlcG9ydFJlYWN0VXNhZ2USLS5DQ2xpZW50TWV0cmlj",
+            "c19SZXBvcnRSZWFjdFVzYWdlX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2US",
+            "OAoYU3RlYW1QaXBlV29ya1N0YXRzUmVwb3J0Eg8uTm90SW1wbGVtZW50ZWQa",
+            "Cy5Ob1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJV",
+            "SQ=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientArgs_Notification), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientArgs_Notification.Parser, new[]{ "ClientArgs", "GpuWebviewRegkeyDisabled", "SuppressGpuChrome", "BrowserNotSupported", "HwAccelVideoRegkeyDisabled", "MiniModeEnabled", "FpsCounterEnabled", "LibraryLowBandwidthModeEnabled", "LibraryLowPerfModeEnabled", "GrMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientError_Notification), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientError_Notification.Parser, new[]{ "Product", "Version", "Errors" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientError_Notification_Error), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientError_Notification_Error.Parser, new[]{ "Identifier", "Message", "Count" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientError_Notification_Error), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportClientError_Notification_Error.Parser, new[]{ "Identifier", "Message", "Count", "Context" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportLinuxStats_Notification), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportLinuxStats_Notification.Parser, new[]{ "GlibcVersionMajor", "GlibcVersionMinor", "AccountType", "LauncherType", "GameServerAppid", "ProcessName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification.Parser, new[]{ "Product", "Version", "Routes", "Components", "Actions" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ActionData), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ActionData.Parser, new[]{ "Action", "Count" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ComponentData), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ComponentData.Parser, new[]{ "Component", "Count" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_RouteData), global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_RouteData.Parser, new[]{ "Route", "Count" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CClientMetrics_ReportClientArgs_Notification : pb::IMessage<CClientMetrics_ReportClientArgs_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CClientMetrics_ReportClientArgs_Notification> _parser = new pb::MessageParser<CClientMetrics_ReportClientArgs_Notification>(() => new CClientMetrics_ReportClientArgs_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CClientMetrics_ReportClientArgs_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportClientArgs_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportClientArgs_Notification(CClientMetrics_ReportClientArgs_Notification other) : this() {
+      _hasBits0 = other._hasBits0;
+      clientArgs_ = other.clientArgs_.Clone();
+      gpuWebviewRegkeyDisabled_ = other.gpuWebviewRegkeyDisabled_;
+      suppressGpuChrome_ = other.suppressGpuChrome_;
+      browserNotSupported_ = other.browserNotSupported_;
+      hwAccelVideoRegkeyDisabled_ = other.hwAccelVideoRegkeyDisabled_;
+      miniModeEnabled_ = other.miniModeEnabled_;
+      fpsCounterEnabled_ = other.fpsCounterEnabled_;
+      libraryLowBandwidthModeEnabled_ = other.libraryLowBandwidthModeEnabled_;
+      libraryLowPerfModeEnabled_ = other.libraryLowPerfModeEnabled_;
+      grMode_ = other.grMode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportClientArgs_Notification Clone() {
+      return new CClientMetrics_ReportClientArgs_Notification(this);
+    }
+
+    /// <summary>Field number for the "client_args" field.</summary>
+    public const int ClientArgsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_clientArgs_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> clientArgs_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> ClientArgs {
+      get { return clientArgs_; }
+    }
+
+    /// <summary>Field number for the "gpu_webview_regkey_disabled" field.</summary>
+    public const int GpuWebviewRegkeyDisabledFieldNumber = 2;
+    private readonly static bool GpuWebviewRegkeyDisabledDefaultValue = false;
+
+    private bool gpuWebviewRegkeyDisabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool GpuWebviewRegkeyDisabled {
+      get { if ((_hasBits0 & 1) != 0) { return gpuWebviewRegkeyDisabled_; } else { return GpuWebviewRegkeyDisabledDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        gpuWebviewRegkeyDisabled_ = value;
+      }
+    }
+    /// <summary>Gets whether the "gpu_webview_regkey_disabled" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGpuWebviewRegkeyDisabled {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "gpu_webview_regkey_disabled" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGpuWebviewRegkeyDisabled() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "suppress_gpu_chrome" field.</summary>
+    public const int SuppressGpuChromeFieldNumber = 3;
+    private readonly static bool SuppressGpuChromeDefaultValue = false;
+
+    private bool suppressGpuChrome_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool SuppressGpuChrome {
+      get { if ((_hasBits0 & 2) != 0) { return suppressGpuChrome_; } else { return SuppressGpuChromeDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        suppressGpuChrome_ = value;
+      }
+    }
+    /// <summary>Gets whether the "suppress_gpu_chrome" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSuppressGpuChrome {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "suppress_gpu_chrome" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSuppressGpuChrome() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "browser_not_supported" field.</summary>
+    public const int BrowserNotSupportedFieldNumber = 4;
+    private readonly static bool BrowserNotSupportedDefaultValue = false;
+
+    private bool browserNotSupported_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool BrowserNotSupported {
+      get { if ((_hasBits0 & 4) != 0) { return browserNotSupported_; } else { return BrowserNotSupportedDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        browserNotSupported_ = value;
+      }
+    }
+    /// <summary>Gets whether the "browser_not_supported" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrowserNotSupported {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "browser_not_supported" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrowserNotSupported() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "hw_accel_video_regkey_disabled" field.</summary>
+    public const int HwAccelVideoRegkeyDisabledFieldNumber = 5;
+    private readonly static bool HwAccelVideoRegkeyDisabledDefaultValue = false;
+
+    private bool hwAccelVideoRegkeyDisabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HwAccelVideoRegkeyDisabled {
+      get { if ((_hasBits0 & 8) != 0) { return hwAccelVideoRegkeyDisabled_; } else { return HwAccelVideoRegkeyDisabledDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        hwAccelVideoRegkeyDisabled_ = value;
+      }
+    }
+    /// <summary>Gets whether the "hw_accel_video_regkey_disabled" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasHwAccelVideoRegkeyDisabled {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "hw_accel_video_regkey_disabled" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearHwAccelVideoRegkeyDisabled() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "mini_mode_enabled" field.</summary>
+    public const int MiniModeEnabledFieldNumber = 6;
+    private readonly static bool MiniModeEnabledDefaultValue = false;
+
+    private bool miniModeEnabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool MiniModeEnabled {
+      get { if ((_hasBits0 & 16) != 0) { return miniModeEnabled_; } else { return MiniModeEnabledDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        miniModeEnabled_ = value;
+      }
+    }
+    /// <summary>Gets whether the "mini_mode_enabled" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMiniModeEnabled {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "mini_mode_enabled" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMiniModeEnabled() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "fps_counter_enabled" field.</summary>
+    public const int FpsCounterEnabledFieldNumber = 7;
+    private readonly static bool FpsCounterEnabledDefaultValue = false;
+
+    private bool fpsCounterEnabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool FpsCounterEnabled {
+      get { if ((_hasBits0 & 32) != 0) { return fpsCounterEnabled_; } else { return FpsCounterEnabledDefaultValue; } }
+      set {
+        _hasBits0 |= 32;
+        fpsCounterEnabled_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fps_counter_enabled" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFpsCounterEnabled {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "fps_counter_enabled" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFpsCounterEnabled() {
+      _hasBits0 &= ~32;
+    }
+
+    /// <summary>Field number for the "library_low_bandwidth_mode_enabled" field.</summary>
+    public const int LibraryLowBandwidthModeEnabledFieldNumber = 8;
+    private readonly static bool LibraryLowBandwidthModeEnabledDefaultValue = false;
+
+    private bool libraryLowBandwidthModeEnabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool LibraryLowBandwidthModeEnabled {
+      get { if ((_hasBits0 & 64) != 0) { return libraryLowBandwidthModeEnabled_; } else { return LibraryLowBandwidthModeEnabledDefaultValue; } }
+      set {
+        _hasBits0 |= 64;
+        libraryLowBandwidthModeEnabled_ = value;
+      }
+    }
+    /// <summary>Gets whether the "library_low_bandwidth_mode_enabled" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasLibraryLowBandwidthModeEnabled {
+      get { return (_hasBits0 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "library_low_bandwidth_mode_enabled" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearLibraryLowBandwidthModeEnabled() {
+      _hasBits0 &= ~64;
+    }
+
+    /// <summary>Field number for the "library_low_perf_mode_enabled" field.</summary>
+    public const int LibraryLowPerfModeEnabledFieldNumber = 9;
+    private readonly static bool LibraryLowPerfModeEnabledDefaultValue = false;
+
+    private bool libraryLowPerfModeEnabled_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool LibraryLowPerfModeEnabled {
+      get { if ((_hasBits0 & 128) != 0) { return libraryLowPerfModeEnabled_; } else { return LibraryLowPerfModeEnabledDefaultValue; } }
+      set {
+        _hasBits0 |= 128;
+        libraryLowPerfModeEnabled_ = value;
+      }
+    }
+    /// <summary>Gets whether the "library_low_perf_mode_enabled" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasLibraryLowPerfModeEnabled {
+      get { return (_hasBits0 & 128) != 0; }
+    }
+    /// <summary>Clears the value of the "library_low_perf_mode_enabled" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearLibraryLowPerfModeEnabled() {
+      _hasBits0 &= ~128;
+    }
+
+    /// <summary>Field number for the "gr_mode" field.</summary>
+    public const int GrModeFieldNumber = 10;
+    private readonly static int GrModeDefaultValue = 0;
+
+    private int grMode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GrMode {
+      get { if ((_hasBits0 & 256) != 0) { return grMode_; } else { return GrModeDefaultValue; } }
+      set {
+        _hasBits0 |= 256;
+        grMode_ = value;
+      }
+    }
+    /// <summary>Gets whether the "gr_mode" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGrMode {
+      get { return (_hasBits0 & 256) != 0; }
+    }
+    /// <summary>Clears the value of the "gr_mode" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGrMode() {
+      _hasBits0 &= ~256;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CClientMetrics_ReportClientArgs_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CClientMetrics_ReportClientArgs_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!clientArgs_.Equals(other.clientArgs_)) return false;
+      if (GpuWebviewRegkeyDisabled != other.GpuWebviewRegkeyDisabled) return false;
+      if (SuppressGpuChrome != other.SuppressGpuChrome) return false;
+      if (BrowserNotSupported != other.BrowserNotSupported) return false;
+      if (HwAccelVideoRegkeyDisabled != other.HwAccelVideoRegkeyDisabled) return false;
+      if (MiniModeEnabled != other.MiniModeEnabled) return false;
+      if (FpsCounterEnabled != other.FpsCounterEnabled) return false;
+      if (LibraryLowBandwidthModeEnabled != other.LibraryLowBandwidthModeEnabled) return false;
+      if (LibraryLowPerfModeEnabled != other.LibraryLowPerfModeEnabled) return false;
+      if (GrMode != other.GrMode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= clientArgs_.GetHashCode();
+      if (HasGpuWebviewRegkeyDisabled) hash ^= GpuWebviewRegkeyDisabled.GetHashCode();
+      if (HasSuppressGpuChrome) hash ^= SuppressGpuChrome.GetHashCode();
+      if (HasBrowserNotSupported) hash ^= BrowserNotSupported.GetHashCode();
+      if (HasHwAccelVideoRegkeyDisabled) hash ^= HwAccelVideoRegkeyDisabled.GetHashCode();
+      if (HasMiniModeEnabled) hash ^= MiniModeEnabled.GetHashCode();
+      if (HasFpsCounterEnabled) hash ^= FpsCounterEnabled.GetHashCode();
+      if (HasLibraryLowBandwidthModeEnabled) hash ^= LibraryLowBandwidthModeEnabled.GetHashCode();
+      if (HasLibraryLowPerfModeEnabled) hash ^= LibraryLowPerfModeEnabled.GetHashCode();
+      if (HasGrMode) hash ^= GrMode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      clientArgs_.WriteTo(output, _repeated_clientArgs_codec);
+      if (HasGpuWebviewRegkeyDisabled) {
+        output.WriteRawTag(16);
+        output.WriteBool(GpuWebviewRegkeyDisabled);
+      }
+      if (HasSuppressGpuChrome) {
+        output.WriteRawTag(24);
+        output.WriteBool(SuppressGpuChrome);
+      }
+      if (HasBrowserNotSupported) {
+        output.WriteRawTag(32);
+        output.WriteBool(BrowserNotSupported);
+      }
+      if (HasHwAccelVideoRegkeyDisabled) {
+        output.WriteRawTag(40);
+        output.WriteBool(HwAccelVideoRegkeyDisabled);
+      }
+      if (HasMiniModeEnabled) {
+        output.WriteRawTag(48);
+        output.WriteBool(MiniModeEnabled);
+      }
+      if (HasFpsCounterEnabled) {
+        output.WriteRawTag(56);
+        output.WriteBool(FpsCounterEnabled);
+      }
+      if (HasLibraryLowBandwidthModeEnabled) {
+        output.WriteRawTag(64);
+        output.WriteBool(LibraryLowBandwidthModeEnabled);
+      }
+      if (HasLibraryLowPerfModeEnabled) {
+        output.WriteRawTag(72);
+        output.WriteBool(LibraryLowPerfModeEnabled);
+      }
+      if (HasGrMode) {
+        output.WriteRawTag(80);
+        output.WriteInt32(GrMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      clientArgs_.WriteTo(ref output, _repeated_clientArgs_codec);
+      if (HasGpuWebviewRegkeyDisabled) {
+        output.WriteRawTag(16);
+        output.WriteBool(GpuWebviewRegkeyDisabled);
+      }
+      if (HasSuppressGpuChrome) {
+        output.WriteRawTag(24);
+        output.WriteBool(SuppressGpuChrome);
+      }
+      if (HasBrowserNotSupported) {
+        output.WriteRawTag(32);
+        output.WriteBool(BrowserNotSupported);
+      }
+      if (HasHwAccelVideoRegkeyDisabled) {
+        output.WriteRawTag(40);
+        output.WriteBool(HwAccelVideoRegkeyDisabled);
+      }
+      if (HasMiniModeEnabled) {
+        output.WriteRawTag(48);
+        output.WriteBool(MiniModeEnabled);
+      }
+      if (HasFpsCounterEnabled) {
+        output.WriteRawTag(56);
+        output.WriteBool(FpsCounterEnabled);
+      }
+      if (HasLibraryLowBandwidthModeEnabled) {
+        output.WriteRawTag(64);
+        output.WriteBool(LibraryLowBandwidthModeEnabled);
+      }
+      if (HasLibraryLowPerfModeEnabled) {
+        output.WriteRawTag(72);
+        output.WriteBool(LibraryLowPerfModeEnabled);
+      }
+      if (HasGrMode) {
+        output.WriteRawTag(80);
+        output.WriteInt32(GrMode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += clientArgs_.CalculateSize(_repeated_clientArgs_codec);
+      if (HasGpuWebviewRegkeyDisabled) {
+        size += 1 + 1;
+      }
+      if (HasSuppressGpuChrome) {
+        size += 1 + 1;
+      }
+      if (HasBrowserNotSupported) {
+        size += 1 + 1;
+      }
+      if (HasHwAccelVideoRegkeyDisabled) {
+        size += 1 + 1;
+      }
+      if (HasMiniModeEnabled) {
+        size += 1 + 1;
+      }
+      if (HasFpsCounterEnabled) {
+        size += 1 + 1;
+      }
+      if (HasLibraryLowBandwidthModeEnabled) {
+        size += 1 + 1;
+      }
+      if (HasLibraryLowPerfModeEnabled) {
+        size += 1 + 1;
+      }
+      if (HasGrMode) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GrMode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CClientMetrics_ReportClientArgs_Notification other) {
+      if (other == null) {
+        return;
+      }
+      clientArgs_.Add(other.clientArgs_);
+      if (other.HasGpuWebviewRegkeyDisabled) {
+        GpuWebviewRegkeyDisabled = other.GpuWebviewRegkeyDisabled;
+      }
+      if (other.HasSuppressGpuChrome) {
+        SuppressGpuChrome = other.SuppressGpuChrome;
+      }
+      if (other.HasBrowserNotSupported) {
+        BrowserNotSupported = other.BrowserNotSupported;
+      }
+      if (other.HasHwAccelVideoRegkeyDisabled) {
+        HwAccelVideoRegkeyDisabled = other.HwAccelVideoRegkeyDisabled;
+      }
+      if (other.HasMiniModeEnabled) {
+        MiniModeEnabled = other.MiniModeEnabled;
+      }
+      if (other.HasFpsCounterEnabled) {
+        FpsCounterEnabled = other.FpsCounterEnabled;
+      }
+      if (other.HasLibraryLowBandwidthModeEnabled) {
+        LibraryLowBandwidthModeEnabled = other.LibraryLowBandwidthModeEnabled;
+      }
+      if (other.HasLibraryLowPerfModeEnabled) {
+        LibraryLowPerfModeEnabled = other.LibraryLowPerfModeEnabled;
+      }
+      if (other.HasGrMode) {
+        GrMode = other.GrMode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            clientArgs_.AddEntriesFrom(input, _repeated_clientArgs_codec);
+            break;
+          }
+          case 16: {
+            GpuWebviewRegkeyDisabled = input.ReadBool();
+            break;
+          }
+          case 24: {
+            SuppressGpuChrome = input.ReadBool();
+            break;
+          }
+          case 32: {
+            BrowserNotSupported = input.ReadBool();
+            break;
+          }
+          case 40: {
+            HwAccelVideoRegkeyDisabled = input.ReadBool();
+            break;
+          }
+          case 48: {
+            MiniModeEnabled = input.ReadBool();
+            break;
+          }
+          case 56: {
+            FpsCounterEnabled = input.ReadBool();
+            break;
+          }
+          case 64: {
+            LibraryLowBandwidthModeEnabled = input.ReadBool();
+            break;
+          }
+          case 72: {
+            LibraryLowPerfModeEnabled = input.ReadBool();
+            break;
+          }
+          case 80: {
+            GrMode = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            clientArgs_.AddEntriesFrom(ref input, _repeated_clientArgs_codec);
+            break;
+          }
+          case 16: {
+            GpuWebviewRegkeyDisabled = input.ReadBool();
+            break;
+          }
+          case 24: {
+            SuppressGpuChrome = input.ReadBool();
+            break;
+          }
+          case 32: {
+            BrowserNotSupported = input.ReadBool();
+            break;
+          }
+          case 40: {
+            HwAccelVideoRegkeyDisabled = input.ReadBool();
+            break;
+          }
+          case 48: {
+            MiniModeEnabled = input.ReadBool();
+            break;
+          }
+          case 56: {
+            FpsCounterEnabled = input.ReadBool();
+            break;
+          }
+          case 64: {
+            LibraryLowBandwidthModeEnabled = input.ReadBool();
+            break;
+          }
+          case 72: {
+            LibraryLowPerfModeEnabled = input.ReadBool();
+            break;
+          }
+          case 80: {
+            GrMode = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CClientMetrics_ReportClientError_Notification : pb::IMessage<CClientMetrics_ReportClientError_Notification>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -66,7 +770,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[0]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -356,7 +1060,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -380,6 +1084,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       identifier_ = other.identifier_;
       message_ = other.message_;
       count_ = other.count_;
+      context_ = other.context_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -468,6 +1173,32 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~1;
     }
 
+    /// <summary>Field number for the "context" field.</summary>
+    public const int ContextFieldNumber = 4;
+    private readonly static string ContextDefaultValue = "";
+
+    private string context_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Context {
+      get { return context_ ?? ContextDefaultValue; }
+      set {
+        context_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "context" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasContext {
+      get { return context_ != null; }
+    }
+    /// <summary>Clears the value of the "context" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearContext() {
+      context_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -486,6 +1217,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (Identifier != other.Identifier) return false;
       if (Message != other.Message) return false;
       if (Count != other.Count) return false;
+      if (Context != other.Context) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -496,6 +1228,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasIdentifier) hash ^= Identifier.GetHashCode();
       if (HasMessage) hash ^= Message.GetHashCode();
       if (HasCount) hash ^= Count.GetHashCode();
+      if (HasContext) hash ^= Context.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -526,6 +1259,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(24);
         output.WriteUInt32(Count);
       }
+      if (HasContext) {
+        output.WriteRawTag(34);
+        output.WriteString(Context);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -548,6 +1285,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(24);
         output.WriteUInt32(Count);
       }
+      if (HasContext) {
+        output.WriteRawTag(34);
+        output.WriteString(Context);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -566,6 +1307,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasCount) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Count);
+      }
+      if (HasContext) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Context);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -587,6 +1331,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasCount) {
         Count = other.Count;
+      }
+      if (other.HasContext) {
+        Context = other.Context;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -619,6 +1366,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             Count = input.ReadUInt32();
             break;
           }
+          case 34: {
+            Context = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -647,6 +1398,1623 @@ namespace OpenSteamworks.Protobuf.WebUI {
             break;
           }
           case 24: {
+            Count = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            Context = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CClientMetrics_ReportLinuxStats_Notification : pb::IMessage<CClientMetrics_ReportLinuxStats_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CClientMetrics_ReportLinuxStats_Notification> _parser = new pb::MessageParser<CClientMetrics_ReportLinuxStats_Notification>(() => new CClientMetrics_ReportLinuxStats_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CClientMetrics_ReportLinuxStats_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportLinuxStats_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportLinuxStats_Notification(CClientMetrics_ReportLinuxStats_Notification other) : this() {
+      _hasBits0 = other._hasBits0;
+      glibcVersionMajor_ = other.glibcVersionMajor_;
+      glibcVersionMinor_ = other.glibcVersionMinor_;
+      accountType_ = other.accountType_;
+      launcherType_ = other.launcherType_;
+      gameServerAppid_ = other.gameServerAppid_;
+      processName_ = other.processName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportLinuxStats_Notification Clone() {
+      return new CClientMetrics_ReportLinuxStats_Notification(this);
+    }
+
+    /// <summary>Field number for the "glibc_version_major" field.</summary>
+    public const int GlibcVersionMajorFieldNumber = 1;
+    private readonly static int GlibcVersionMajorDefaultValue = 0;
+
+    private int glibcVersionMajor_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GlibcVersionMajor {
+      get { if ((_hasBits0 & 1) != 0) { return glibcVersionMajor_; } else { return GlibcVersionMajorDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        glibcVersionMajor_ = value;
+      }
+    }
+    /// <summary>Gets whether the "glibc_version_major" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGlibcVersionMajor {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "glibc_version_major" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGlibcVersionMajor() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "glibc_version_minor" field.</summary>
+    public const int GlibcVersionMinorFieldNumber = 2;
+    private readonly static int GlibcVersionMinorDefaultValue = 0;
+
+    private int glibcVersionMinor_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GlibcVersionMinor {
+      get { if ((_hasBits0 & 2) != 0) { return glibcVersionMinor_; } else { return GlibcVersionMinorDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        glibcVersionMinor_ = value;
+      }
+    }
+    /// <summary>Gets whether the "glibc_version_minor" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGlibcVersionMinor {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "glibc_version_minor" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGlibcVersionMinor() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "account_type" field.</summary>
+    public const int AccountTypeFieldNumber = 3;
+    private readonly static int AccountTypeDefaultValue = 0;
+
+    private int accountType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int AccountType {
+      get { if ((_hasBits0 & 4) != 0) { return accountType_; } else { return AccountTypeDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        accountType_ = value;
+      }
+    }
+    /// <summary>Gets whether the "account_type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAccountType {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "account_type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAccountType() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "launcher_type" field.</summary>
+    public const int LauncherTypeFieldNumber = 4;
+    private readonly static int LauncherTypeDefaultValue = 0;
+
+    private int launcherType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int LauncherType {
+      get { if ((_hasBits0 & 8) != 0) { return launcherType_; } else { return LauncherTypeDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        launcherType_ = value;
+      }
+    }
+    /// <summary>Gets whether the "launcher_type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasLauncherType {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "launcher_type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearLauncherType() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "game_server_appid" field.</summary>
+    public const int GameServerAppidFieldNumber = 5;
+    private readonly static int GameServerAppidDefaultValue = 0;
+
+    private int gameServerAppid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int GameServerAppid {
+      get { if ((_hasBits0 & 16) != 0) { return gameServerAppid_; } else { return GameServerAppidDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        gameServerAppid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "game_server_appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGameServerAppid {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "game_server_appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGameServerAppid() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "process_name" field.</summary>
+    public const int ProcessNameFieldNumber = 6;
+    private readonly static string ProcessNameDefaultValue = "";
+
+    private string processName_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ProcessName {
+      get { return processName_ ?? ProcessNameDefaultValue; }
+      set {
+        processName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "process_name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasProcessName {
+      get { return processName_ != null; }
+    }
+    /// <summary>Clears the value of the "process_name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearProcessName() {
+      processName_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CClientMetrics_ReportLinuxStats_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CClientMetrics_ReportLinuxStats_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GlibcVersionMajor != other.GlibcVersionMajor) return false;
+      if (GlibcVersionMinor != other.GlibcVersionMinor) return false;
+      if (AccountType != other.AccountType) return false;
+      if (LauncherType != other.LauncherType) return false;
+      if (GameServerAppid != other.GameServerAppid) return false;
+      if (ProcessName != other.ProcessName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasGlibcVersionMajor) hash ^= GlibcVersionMajor.GetHashCode();
+      if (HasGlibcVersionMinor) hash ^= GlibcVersionMinor.GetHashCode();
+      if (HasAccountType) hash ^= AccountType.GetHashCode();
+      if (HasLauncherType) hash ^= LauncherType.GetHashCode();
+      if (HasGameServerAppid) hash ^= GameServerAppid.GetHashCode();
+      if (HasProcessName) hash ^= ProcessName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasGlibcVersionMajor) {
+        output.WriteRawTag(8);
+        output.WriteInt32(GlibcVersionMajor);
+      }
+      if (HasGlibcVersionMinor) {
+        output.WriteRawTag(16);
+        output.WriteInt32(GlibcVersionMinor);
+      }
+      if (HasAccountType) {
+        output.WriteRawTag(24);
+        output.WriteInt32(AccountType);
+      }
+      if (HasLauncherType) {
+        output.WriteRawTag(32);
+        output.WriteInt32(LauncherType);
+      }
+      if (HasGameServerAppid) {
+        output.WriteRawTag(40);
+        output.WriteInt32(GameServerAppid);
+      }
+      if (HasProcessName) {
+        output.WriteRawTag(50);
+        output.WriteString(ProcessName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasGlibcVersionMajor) {
+        output.WriteRawTag(8);
+        output.WriteInt32(GlibcVersionMajor);
+      }
+      if (HasGlibcVersionMinor) {
+        output.WriteRawTag(16);
+        output.WriteInt32(GlibcVersionMinor);
+      }
+      if (HasAccountType) {
+        output.WriteRawTag(24);
+        output.WriteInt32(AccountType);
+      }
+      if (HasLauncherType) {
+        output.WriteRawTag(32);
+        output.WriteInt32(LauncherType);
+      }
+      if (HasGameServerAppid) {
+        output.WriteRawTag(40);
+        output.WriteInt32(GameServerAppid);
+      }
+      if (HasProcessName) {
+        output.WriteRawTag(50);
+        output.WriteString(ProcessName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasGlibcVersionMajor) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GlibcVersionMajor);
+      }
+      if (HasGlibcVersionMinor) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GlibcVersionMinor);
+      }
+      if (HasAccountType) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AccountType);
+      }
+      if (HasLauncherType) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LauncherType);
+      }
+      if (HasGameServerAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameServerAppid);
+      }
+      if (HasProcessName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ProcessName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CClientMetrics_ReportLinuxStats_Notification other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasGlibcVersionMajor) {
+        GlibcVersionMajor = other.GlibcVersionMajor;
+      }
+      if (other.HasGlibcVersionMinor) {
+        GlibcVersionMinor = other.GlibcVersionMinor;
+      }
+      if (other.HasAccountType) {
+        AccountType = other.AccountType;
+      }
+      if (other.HasLauncherType) {
+        LauncherType = other.LauncherType;
+      }
+      if (other.HasGameServerAppid) {
+        GameServerAppid = other.GameServerAppid;
+      }
+      if (other.HasProcessName) {
+        ProcessName = other.ProcessName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GlibcVersionMajor = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            GlibcVersionMinor = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            AccountType = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            LauncherType = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            GameServerAppid = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            ProcessName = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            GlibcVersionMajor = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            GlibcVersionMinor = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            AccountType = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            LauncherType = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            GameServerAppid = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            ProcessName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CClientMetrics_ReportReactUsage_Notification : pb::IMessage<CClientMetrics_ReportReactUsage_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CClientMetrics_ReportReactUsage_Notification> _parser = new pb::MessageParser<CClientMetrics_ReportReactUsage_Notification>(() => new CClientMetrics_ReportReactUsage_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CClientMetrics_ReportReactUsage_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification(CClientMetrics_ReportReactUsage_Notification other) : this() {
+      product_ = other.product_;
+      version_ = other.version_;
+      routes_ = other.routes_.Clone();
+      components_ = other.components_.Clone();
+      actions_ = other.actions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification Clone() {
+      return new CClientMetrics_ReportReactUsage_Notification(this);
+    }
+
+    /// <summary>Field number for the "product" field.</summary>
+    public const int ProductFieldNumber = 1;
+    private readonly static string ProductDefaultValue = "";
+
+    private string product_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Product {
+      get { return product_ ?? ProductDefaultValue; }
+      set {
+        product_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "product" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasProduct {
+      get { return product_ != null; }
+    }
+    /// <summary>Clears the value of the "product" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearProduct() {
+      product_ = null;
+    }
+
+    /// <summary>Field number for the "version" field.</summary>
+    public const int VersionFieldNumber = 2;
+    private readonly static string VersionDefaultValue = "";
+
+    private string version_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Version {
+      get { return version_ ?? VersionDefaultValue; }
+      set {
+        version_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "version" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasVersion {
+      get { return version_ != null; }
+    }
+    /// <summary>Clears the value of the "version" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearVersion() {
+      version_ = null;
+    }
+
+    /// <summary>Field number for the "routes" field.</summary>
+    public const int RoutesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_RouteData> _repeated_routes_codec
+        = pb::FieldCodec.ForMessage(26, global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_RouteData.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_RouteData> routes_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_RouteData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_RouteData> Routes {
+      get { return routes_; }
+    }
+
+    /// <summary>Field number for the "components" field.</summary>
+    public const int ComponentsFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ComponentData> _repeated_components_codec
+        = pb::FieldCodec.ForMessage(34, global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ComponentData.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ComponentData> components_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ComponentData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ComponentData> Components {
+      get { return components_; }
+    }
+
+    /// <summary>Field number for the "actions" field.</summary>
+    public const int ActionsFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ActionData> _repeated_actions_codec
+        = pb::FieldCodec.ForMessage(42, global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ActionData.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ActionData> actions_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ActionData>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CClientMetrics_ReportReactUsage_Notification_ActionData> Actions {
+      get { return actions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CClientMetrics_ReportReactUsage_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CClientMetrics_ReportReactUsage_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Product != other.Product) return false;
+      if (Version != other.Version) return false;
+      if(!routes_.Equals(other.routes_)) return false;
+      if(!components_.Equals(other.components_)) return false;
+      if(!actions_.Equals(other.actions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasProduct) hash ^= Product.GetHashCode();
+      if (HasVersion) hash ^= Version.GetHashCode();
+      hash ^= routes_.GetHashCode();
+      hash ^= components_.GetHashCode();
+      hash ^= actions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasProduct) {
+        output.WriteRawTag(10);
+        output.WriteString(Product);
+      }
+      if (HasVersion) {
+        output.WriteRawTag(18);
+        output.WriteString(Version);
+      }
+      routes_.WriteTo(output, _repeated_routes_codec);
+      components_.WriteTo(output, _repeated_components_codec);
+      actions_.WriteTo(output, _repeated_actions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasProduct) {
+        output.WriteRawTag(10);
+        output.WriteString(Product);
+      }
+      if (HasVersion) {
+        output.WriteRawTag(18);
+        output.WriteString(Version);
+      }
+      routes_.WriteTo(ref output, _repeated_routes_codec);
+      components_.WriteTo(ref output, _repeated_components_codec);
+      actions_.WriteTo(ref output, _repeated_actions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasProduct) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Product);
+      }
+      if (HasVersion) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Version);
+      }
+      size += routes_.CalculateSize(_repeated_routes_codec);
+      size += components_.CalculateSize(_repeated_components_codec);
+      size += actions_.CalculateSize(_repeated_actions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CClientMetrics_ReportReactUsage_Notification other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasProduct) {
+        Product = other.Product;
+      }
+      if (other.HasVersion) {
+        Version = other.Version;
+      }
+      routes_.Add(other.routes_);
+      components_.Add(other.components_);
+      actions_.Add(other.actions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Product = input.ReadString();
+            break;
+          }
+          case 18: {
+            Version = input.ReadString();
+            break;
+          }
+          case 26: {
+            routes_.AddEntriesFrom(input, _repeated_routes_codec);
+            break;
+          }
+          case 34: {
+            components_.AddEntriesFrom(input, _repeated_components_codec);
+            break;
+          }
+          case 42: {
+            actions_.AddEntriesFrom(input, _repeated_actions_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Product = input.ReadString();
+            break;
+          }
+          case 18: {
+            Version = input.ReadString();
+            break;
+          }
+          case 26: {
+            routes_.AddEntriesFrom(ref input, _repeated_routes_codec);
+            break;
+          }
+          case 34: {
+            components_.AddEntriesFrom(ref input, _repeated_components_codec);
+            break;
+          }
+          case 42: {
+            actions_.AddEntriesFrom(ref input, _repeated_actions_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CClientMetrics_ReportReactUsage_Notification_ActionData : pb::IMessage<CClientMetrics_ReportReactUsage_Notification_ActionData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_ActionData> _parser = new pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_ActionData>(() => new CClientMetrics_ReportReactUsage_Notification_ActionData());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_ActionData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_ActionData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_ActionData(CClientMetrics_ReportReactUsage_Notification_ActionData other) : this() {
+      _hasBits0 = other._hasBits0;
+      action_ = other.action_;
+      count_ = other.count_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_ActionData Clone() {
+      return new CClientMetrics_ReportReactUsage_Notification_ActionData(this);
+    }
+
+    /// <summary>Field number for the "action" field.</summary>
+    public const int ActionFieldNumber = 1;
+    private readonly static string ActionDefaultValue = "";
+
+    private string action_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Action {
+      get { return action_ ?? ActionDefaultValue; }
+      set {
+        action_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "action" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAction {
+      get { return action_ != null; }
+    }
+    /// <summary>Clears the value of the "action" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAction() {
+      action_ = null;
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 2;
+    private readonly static uint CountDefaultValue = 0;
+
+    private uint count_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Count {
+      get { if ((_hasBits0 & 1) != 0) { return count_; } else { return CountDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        count_ = value;
+      }
+    }
+    /// <summary>Gets whether the "count" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCount {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "count" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCount() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CClientMetrics_ReportReactUsage_Notification_ActionData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CClientMetrics_ReportReactUsage_Notification_ActionData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Action != other.Action) return false;
+      if (Count != other.Count) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAction) hash ^= Action.GetHashCode();
+      if (HasCount) hash ^= Count.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAction) {
+        output.WriteRawTag(10);
+        output.WriteString(Action);
+      }
+      if (HasCount) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAction) {
+        output.WriteRawTag(10);
+        output.WriteString(Action);
+      }
+      if (HasCount) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAction) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Action);
+      }
+      if (HasCount) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Count);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CClientMetrics_ReportReactUsage_Notification_ActionData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAction) {
+        Action = other.Action;
+      }
+      if (other.HasCount) {
+        Count = other.Count;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Action = input.ReadString();
+            break;
+          }
+          case 16: {
+            Count = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Action = input.ReadString();
+            break;
+          }
+          case 16: {
+            Count = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CClientMetrics_ReportReactUsage_Notification_ComponentData : pb::IMessage<CClientMetrics_ReportReactUsage_Notification_ComponentData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_ComponentData> _parser = new pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_ComponentData>(() => new CClientMetrics_ReportReactUsage_Notification_ComponentData());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_ComponentData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_ComponentData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_ComponentData(CClientMetrics_ReportReactUsage_Notification_ComponentData other) : this() {
+      _hasBits0 = other._hasBits0;
+      component_ = other.component_;
+      count_ = other.count_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_ComponentData Clone() {
+      return new CClientMetrics_ReportReactUsage_Notification_ComponentData(this);
+    }
+
+    /// <summary>Field number for the "component" field.</summary>
+    public const int ComponentFieldNumber = 1;
+    private readonly static string ComponentDefaultValue = "";
+
+    private string component_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Component {
+      get { return component_ ?? ComponentDefaultValue; }
+      set {
+        component_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "component" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasComponent {
+      get { return component_ != null; }
+    }
+    /// <summary>Clears the value of the "component" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearComponent() {
+      component_ = null;
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 2;
+    private readonly static uint CountDefaultValue = 0;
+
+    private uint count_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Count {
+      get { if ((_hasBits0 & 1) != 0) { return count_; } else { return CountDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        count_ = value;
+      }
+    }
+    /// <summary>Gets whether the "count" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCount {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "count" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCount() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CClientMetrics_ReportReactUsage_Notification_ComponentData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CClientMetrics_ReportReactUsage_Notification_ComponentData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Component != other.Component) return false;
+      if (Count != other.Count) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasComponent) hash ^= Component.GetHashCode();
+      if (HasCount) hash ^= Count.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasComponent) {
+        output.WriteRawTag(10);
+        output.WriteString(Component);
+      }
+      if (HasCount) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasComponent) {
+        output.WriteRawTag(10);
+        output.WriteString(Component);
+      }
+      if (HasCount) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasComponent) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Component);
+      }
+      if (HasCount) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Count);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CClientMetrics_ReportReactUsage_Notification_ComponentData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasComponent) {
+        Component = other.Component;
+      }
+      if (other.HasCount) {
+        Count = other.Count;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Component = input.ReadString();
+            break;
+          }
+          case 16: {
+            Count = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Component = input.ReadString();
+            break;
+          }
+          case 16: {
+            Count = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CClientMetrics_ReportReactUsage_Notification_RouteData : pb::IMessage<CClientMetrics_ReportReactUsage_Notification_RouteData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_RouteData> _parser = new pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_RouteData>(() => new CClientMetrics_ReportReactUsage_Notification_RouteData());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CClientMetrics_ReportReactUsage_Notification_RouteData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceClientmetricsReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_RouteData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_RouteData(CClientMetrics_ReportReactUsage_Notification_RouteData other) : this() {
+      _hasBits0 = other._hasBits0;
+      route_ = other.route_;
+      count_ = other.count_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_ReportReactUsage_Notification_RouteData Clone() {
+      return new CClientMetrics_ReportReactUsage_Notification_RouteData(this);
+    }
+
+    /// <summary>Field number for the "route" field.</summary>
+    public const int RouteFieldNumber = 1;
+    private readonly static string RouteDefaultValue = "";
+
+    private string route_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Route {
+      get { return route_ ?? RouteDefaultValue; }
+      set {
+        route_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "route" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRoute {
+      get { return route_ != null; }
+    }
+    /// <summary>Clears the value of the "route" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRoute() {
+      route_ = null;
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 2;
+    private readonly static uint CountDefaultValue = 0;
+
+    private uint count_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Count {
+      get { if ((_hasBits0 & 1) != 0) { return count_; } else { return CountDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        count_ = value;
+      }
+    }
+    /// <summary>Gets whether the "count" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCount {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "count" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCount() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CClientMetrics_ReportReactUsage_Notification_RouteData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CClientMetrics_ReportReactUsage_Notification_RouteData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Route != other.Route) return false;
+      if (Count != other.Count) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasRoute) hash ^= Route.GetHashCode();
+      if (HasCount) hash ^= Count.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasRoute) {
+        output.WriteRawTag(10);
+        output.WriteString(Route);
+      }
+      if (HasCount) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasRoute) {
+        output.WriteRawTag(10);
+        output.WriteString(Route);
+      }
+      if (HasCount) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasRoute) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Route);
+      }
+      if (HasCount) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Count);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CClientMetrics_ReportReactUsage_Notification_RouteData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasRoute) {
+        Route = other.Route;
+      }
+      if (other.HasCount) {
+        Count = other.Count;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Route = input.ReadString();
+            break;
+          }
+          case 16: {
+            Count = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Route = input.ReadString();
+            break;
+          }
+          case 16: {
             Count = input.ReadUInt32();
             break;
           }

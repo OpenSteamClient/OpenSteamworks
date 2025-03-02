@@ -1,118 +1,155 @@
 {
-    "name": "IClientRemotePlayMap",
-    "functions": [ 
-        {
-            "name": "GetSessionCount",
-            "argc": "1",
-            "interfaceid": "52",
-            "functionid": "2794248375",
-            "fencepost": "2887351567",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetSessionID",
-            "argc": "2",
-            "interfaceid": "52",
-            "functionid": "1973244224",
-            "fencepost": "2066363545",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "GetSessionSteamID",
-            "argc": "3",
-            "interfaceid": "52",
-            "functionid": "2908162268",
-            "fencepost": "3001297718",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "uint64"
-            ]
-        },
-        {
-            "name": "GetSessionClientName",
-            "argc": "2",
-            "interfaceid": "52",
-            "functionid": "787084487",
-            "fencepost": "880236066",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "string"
-            ]
-        },
-        {
-            "name": "GetSessionClientFormFactor",
-            "argc": "2",
-            "interfaceid": "52",
-            "functionid": "4060455235",
-            "fencepost": "4153622943",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BGetSessionClientResolution",
-            "argc": "4",
-            "interfaceid": "52",
-            "functionid": "2408321709",
-            "fencepost": "2501570062",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes4"
-            ],
-            "serializedreturns": [
-                "boolean",
-                "bytes4",
-                "bytes4"
-            ]
-        },
-        {
-            "name": "BStartRemotePlayTogether",
-            "argc": "2",
-            "interfaceid": "52",
-            "functionid": "1922132690",
-            "fencepost": "2015445559",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "bytes1"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "BSendRemotePlayTogetherInvite",
-            "argc": "3",
-            "interfaceid": "52",
-            "functionid": "1483307112",
-            "fencepost": "1576636110",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-                "uint64"
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        }
-    ]
+  "name": "IClientRemotePlay",
+  "functions": [
+    {
+      "name": "GetSessionCount",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "2794248361",
+      "fencepost": "2887448327",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetSessionID",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "1973244254",
+      "fencepost": "2066460349",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "GetSessionSteamID",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "2908162246",
+      "fencepost": "3001394470",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "uint64"
+      ]
+    },
+    {
+      "name": "GetSessionClientName",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "787084509",
+      "fencepost": "880332862",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "string"
+      ]
+    },
+    {
+      "name": "GetSessionClientFormFactor",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "4060455237",
+      "fencepost": "4153719719",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    },
+    {
+      "name": "BGetSessionClientResolution",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "2408321707",
+      "fencepost": "2501666834",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4"
+      ],
+      "serializedreturns": [
+        "boolean",
+        "bytes4",
+        "bytes4"
+      ]
+    },
+    {
+      "name": "ShowRemotePlayTogetherUI",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "2522686191",
+      "fencepost": "2616095834",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "bytes1"
+      ]
+    },
+    {
+      "name": "BSendRemotePlayTogetherInvite",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "1483307090",
+      "fencepost": "1576732862",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "uint64"
+      ],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "BEnableRemotePlayTogetherInputEvents",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "4104183074",
+      "fencepost": "4197624975",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "DisableRemotePlayTogetherInputEvents",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "3740921306",
+      "fencepost": "3834379336",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "CreateRemotePlayTogetherMouseCursor",
+      "argc": "-1",
+      "interfaceid": "52",
+      "functionid": "2658792799",
+      "fencepost": "2752379861",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "bytes4",
+        "utlbuf"
+      ],
+      "serializedreturns": [
+        "bytes4"
+      ]
+    }
+  ]
 }

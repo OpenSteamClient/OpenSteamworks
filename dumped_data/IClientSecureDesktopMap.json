@@ -1,42 +1,37 @@
 {
-    "name": "IClientSecureDesktopMap",
-    "functions": [ 
-        {
-            "name": "BStartStreaming",
-            "argc": "1",
-            "interfaceid": "5",
-            "functionid": "4144364299",
-            "fencepost": "4147897185",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-                "boolean"
-            ]
-        },
-        {
-            "name": "StopStreaming",
-            "argc": "1",
-            "interfaceid": "5",
-            "functionid": "2311537903",
-            "fencepost": "2315086918",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        },
-        {
-            "name": "SendSAS",
-            "argc": "1",
-            "interfaceid": "5",
-            "functionid": "4154536306",
-            "fencepost": "4158101450",
-            "cannotcallincrossprocess": "0",
-            "serializedargs": [
-            ],
-            "serializedreturns": [
-            ]
-        }
-    ]
+  "name": "IClientSecureDesktop",
+  "functions": [
+    {
+      "name": "BStartStreaming",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "4144364299",
+      "fencepost": "4147897185",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": [
+        "boolean"
+      ]
+    },
+    {
+      "name": "StopStreaming",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "2311537903",
+      "fencepost": "2315086918",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    },
+    {
+      "name": "SendSAS",
+      "argc": "-1",
+      "interfaceid": "5",
+      "functionid": "4154536306",
+      "fencepost": "4158101450",
+      "cannotcallincrossprocess": "0",
+      "serializedargs": [],
+      "serializedreturns": []
+    }
+  ]
 }

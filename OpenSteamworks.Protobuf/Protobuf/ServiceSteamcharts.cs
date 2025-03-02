@@ -43,50 +43,63 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "ZWFtQ2hhcnRzX0dldEdhbWVzQnlDb25jdXJyZW50UGxheWVyc19SZXNwb25z",
             "ZV9Nb3N0UGxheWVkUmFuaxIMCgRyYW5rGAEgASgFEg0KBWFwcGlkGAIgASgN",
             "EhgKBGl0ZW0YAyABKAsyCi5TdG9yZUl0ZW0SGgoSY29uY3VycmVudF9pbl9n",
-            "YW1lGAQgASgNEhIKCnBlYWluX2dhbWUYBSABKA0iggEKJ0NTdGVhbUNoYXJ0",
-            "c19HZXRNb3N0UGxheWVkR2FtZXNfUmVxdWVzdBIkCgdjb250ZXh0GAEgASgL",
-            "MhMuU3RvcmVCcm93c2VDb250ZXh0EjEKDGRhdGFfcmVxdWVzdBgCIAEoCzIb",
-            "LlN0b3JlQnJvd3NlSXRlbURhdGFSZXF1ZXN0IogBCihDU3RlYW1DaGFydHNf",
-            "R2V0TW9zdFBsYXllZEdhbWVzX1Jlc3BvbnNlEhMKC3JvbGx1cF9kYXRlGAEg",
-            "ASgNEkcKBXJhbmtzGAIgAygLMjguQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5",
-            "ZWRHYW1lc19SZXNwb25zZV9Nb3N0UGxheWVkUmFuayK4AQo3Q1N0ZWFtQ2hh",
-            "cnRzX0dldE1vc3RQbGF5ZWRHYW1lc19SZXNwb25zZV9Nb3N0UGxheWVkUmFu",
-            "axIMCgRyYW5rGAEgASgFEg0KBWFwcGlkGAIgASgNEhgKBGl0ZW0YAyABKAsy",
-            "Ci5TdG9yZUl0ZW0SFAoMbGFzdF93ZWVyYW5rGAQgASgFEhIKCnBlYWluX2dh",
-            "bWUYBSABKA0SHAoUZGFpbHlfYWN0aXZlX3BsYXllcnMYBiABKA0ivwEKMENT",
-            "dGVhbUNoYXJ0c19HZXRNb3N0UGxheWVkU3RlYW1EZWNrR2FtZXNfUmVxdWVz",
-            "dBIkCgdjb250ZXh0GAEgASgLMhMuU3RvcmVCcm93c2VDb250ZXh0EjEKDGRh",
-            "dGFfcmVxdWVzdBgCIAEoCzIbLlN0b3JlQnJvd3NlSXRlbURhdGFSZXF1ZXN0",
-            "EiMKEXRvcF9wbGF5ZWRfcGVyaW9kGAMgASgFQgiCtRgEZW51bRINCgVjb3Vu",
-            "dBgEIAEoBSKqAQoxQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRTdGVhbURl",
-            "Y2tHYW1lc19SZXNwb25zZRJQCgVyYW5rcxgBIAMoCzJBLkNTdGVhbUNoYXJ0",
-            "c19HZXRNb3N0UGxheWVkU3RlYW1EZWNrR2FtZXNfUmVzcG9uc2VfTW9zdFBs",
-            "YXllZFJhbmsSIwoRdG9wX3BsYXllZF9wZXJpb2QYAiABKAVCCIK1GARlbnVt",
-            "IpMBCkBDU3RlYW1DaGFydHNfR2V0TW9zdFBsYXllZFN0ZWFtRGVja0dhbWVz",
-            "X1Jlc3BvbnNlX01vc3RQbGF5ZWRSYW5rEgwKBHJhbmsYASABKAUSDQoFYXBw",
-            "aWQYAiABKA0SGAoEaXRlbRgDIAEoCzIKLlN0b3JlSXRlbRIYChBsYXN0X3Bl",
-            "cmlvZF9yYW5rGAQgASgFIioKKENTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNl",
-            "c1BhZ2VzX1JlcXVlc3QidgopQ1N0ZWFtQ2hhcnRzX0dldFRvcFJlbGVhc2Vz",
-            "UGFnZXNfUmVzcG9uc2USSQoFcGFnZXMYASADKAsyOi5DU3RlYW1DaGFydHNf",
-            "R2V0VG9wUmVsZWFzZXNQYWdlc19SZXNwb25zZV9Ub3BSZWxlYXNlc1BhZ2Ui",
-            "kwEKOUNTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1BhZ2VzX1Jlc3BvbnNl",
-            "X1RvcFJlbGVhc2VzUGFnZRIMCgRuYW1lGAEgASgJEhYKDnN0YXJ0X29mX21v",
-            "bnRoGAIgASgNEhAKCHVybF9wYXRoGAMgASgJEh4KCGl0ZW1faWRzGAQgAygL",
-            "MgwuU3RvcmVJdGVtSUQy3wQKC1N0ZWFtQ2hhcnRzEmkKEkdldEJlc3RPZlll",
-            "YXJQYWdlcxIoLkNTdGVhbUNoYXJ0c19HZXRCZXN0T2ZZZWFyUGFnZXNfUmVx",
-            "dWVzdBopLkNTdGVhbUNoYXJ0c19HZXRCZXN0T2ZZZWFyUGFnZXNfUmVzcG9u",
-            "c2UShAEKG0dldEdhbWVzQnlDb25jdXJyZW50UGxheWVycxIxLkNTdGVhbUNo",
-            "YXJ0c19HZXRHYW1lc0J5Q29uY3VycmVudFBsYXllcnNfUmVxdWVzdBoyLkNT",
-            "dGVhbUNoYXJ0c19HZXRHYW1lc0J5Q29uY3VycmVudFBsYXllcnNfUmVzcG9u",
-            "c2USaQoSR2V0TW9zdFBsYXllZEdhbWVzEiguQ1N0ZWFtQ2hhcnRzX0dldE1v",
-            "c3RQbGF5ZWRHYW1lc19SZXF1ZXN0GikuQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQ",
-            "bGF5ZWRHYW1lc19SZXNwb25zZRKEAQobR2V0TW9zdFBsYXllZFN0ZWFtRGVj",
-            "a0dhbWVzEjEuQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRTdGVhbURlY2tH",
-            "YW1lc19SZXF1ZXN0GjIuQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRTdGVh",
-            "bURlY2tHYW1lc19SZXNwb25zZRJsChNHZXRUb3BSZWxlYXNlc1BhZ2VzEiku",
-            "Q1N0ZWFtQ2hhcnRzX0dldFRvcFJlbGVhc2VzUGFnZXNfUmVxdWVzdBoqLkNT",
-            "dGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1BhZ2VzX1Jlc3BvbnNlQiCqAh1P",
-            "cGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJVSQ=="));
+            "YW1lGAQgASgNEhIKCnBlYWluX2dhbWUYBSABKA0icgorQ1N0ZWFtQ2hhcnRz",
+            "X0dldE1vbnRoVG9wQXBwUmVsZWFzZXNfUmVxdWVzdBITCgtydGltZV9tb250",
+            "aBgBIAEoDRITCgtpbmNsdWRlX2RsYxgCIAEoCBIZChF0b3BfcmVzdWx0c19s",
+            "aW1pdBgDIAEoDSLcAQosQ1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9wQXBwUmVs",
+            "ZWFzZXNfUmVzcG9uc2USVQoQdG9wX2FwcF9yZWxlYXNlcxgBIAMoCzI7LkNT",
+            "dGVhbUNoYXJ0c19HZXRNb250aFRvcEFwcFJlbGVhc2VzX1Jlc3BvbnNlX0Fw",
+            "cE5ld1JlbGVhc2USVQoQdG9wX2RsY19yZWxlYXNlcxgCIAMoCzI7LkNTdGVh",
+            "bUNoYXJ0c19HZXRNb250aFRvcEFwcFJlbGVhc2VzX1Jlc3BvbnNlX0FwcE5l",
+            "d1JlbGVhc2UiYgo6Q1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9wQXBwUmVsZWFz",
+            "ZXNfUmVzcG9uc2VfQXBwTmV3UmVsZWFzZRINCgVhcHBpZBgBIAEoDRIVCg1y",
+            "dGltZV9yZWxlYXNlGAIgASgNIoIBCidDU3RlYW1DaGFydHNfR2V0TW9zdFBs",
+            "YXllZEdhbWVzX1JlcXVlc3QSJAoHY29udGV4dBgBIAEoCzITLlN0b3JlQnJv",
+            "d3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QYAiABKAsyGy5TdG9yZUJyb3dz",
+            "ZUl0ZW1EYXRhUmVxdWVzdCKIAQooQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5",
+            "ZWRHYW1lc19SZXNwb25zZRITCgtyb2xsdXBfZGF0ZRgBIAEoDRJHCgVyYW5r",
+            "cxgCIAMoCzI4LkNTdGVhbUNoYXJ0c19HZXRNb3N0UGxheWVkR2FtZXNfUmVz",
+            "cG9uc2VfTW9zdFBsYXllZFJhbmsiuAEKN0NTdGVhbUNoYXJ0c19HZXRNb3N0",
+            "UGxheWVkR2FtZXNfUmVzcG9uc2VfTW9zdFBsYXllZFJhbmsSDAoEcmFuaxgB",
+            "IAEoBRINCgVhcHBpZBgCIAEoDRIYCgRpdGVtGAMgASgLMgouU3RvcmVJdGVt",
+            "EhQKDGxhc3Rfd2VlcmFuaxgEIAEoBRISCgpwZWFpbl9nYW1lGAUgASgNEhwK",
+            "FGRhaWx5X2FjdGl2ZV9wbGF5ZXJzGAYgASgNIr8BCjBDU3RlYW1DaGFydHNf",
+            "R2V0TW9zdFBsYXllZFN0ZWFtRGVja0dhbWVzX1JlcXVlc3QSJAoHY29udGV4",
+            "dBgBIAEoCzITLlN0b3JlQnJvd3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QY",
+            "AiABKAsyGy5TdG9yZUJyb3dzZUl0ZW1EYXRhUmVxdWVzdBIjChF0b3BfcGxh",
+            "eWVkX3BlcmlvZBgDIAEoBUIIgrUYBGVudW0SDQoFY291bnQYBCABKAUiqgEK",
+            "MUNTdGVhbUNoYXJ0c19HZXRNb3N0UGxheWVkU3RlYW1EZWNrR2FtZXNfUmVz",
+            "cG9uc2USUAoFcmFua3MYASADKAsyQS5DU3RlYW1DaGFydHNfR2V0TW9zdFBs",
+            "YXllZFN0ZWFtRGVja0dhbWVzX1Jlc3BvbnNlX01vc3RQbGF5ZWRSYW5rEiMK",
+            "EXRvcF9wbGF5ZWRfcGVyaW9kGAIgASgFQgiCtRgEZW51bSKTAQpAQ1N0ZWFt",
+            "Q2hhcnRzX0dldE1vc3RQbGF5ZWRTdGVhbURlY2tHYW1lc19SZXNwb25zZV9N",
+            "b3N0UGxheWVkUmFuaxIMCgRyYW5rGAEgASgFEg0KBWFwcGlkGAIgASgNEhgK",
+            "BGl0ZW0YAyABKAsyCi5TdG9yZUl0ZW0SGAoQbGFzdF9wZXJpb2RfcmFuaxgE",
+            "IAEoBSIqCihDU3RlYW1DaGFydHNfR2V0VG9wUmVsZWFzZXNQYWdlc19SZXF1",
+            "ZXN0InYKKUNTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1BhZ2VzX1Jlc3Bv",
+            "bnNlEkkKBXBhZ2VzGAEgAygLMjouQ1N0ZWFtQ2hhcnRzX0dldFRvcFJlbGVh",
+            "c2VzUGFnZXNfUmVzcG9uc2VfVG9wUmVsZWFzZXNQYWdlIpMBCjlDU3RlYW1D",
+            "aGFydHNfR2V0VG9wUmVsZWFzZXNQYWdlc19SZXNwb25zZV9Ub3BSZWxlYXNl",
+            "c1BhZ2USDAoEbmFtZRgBIAEoCRIWCg5zdGFydF9vZl9tb250aBgCIAEoDRIQ",
+            "Cgh1cmxfcGF0aBgDIAEoCRIeCghpdGVtX2lkcxgEIAMoCzIMLlN0b3JlSXRl",
+            "bUlEMtYFCgtTdGVhbUNoYXJ0cxJpChJHZXRCZXN0T2ZZZWFyUGFnZXMSKC5D",
+            "U3RlYW1DaGFydHNfR2V0QmVzdE9mWWVhclBhZ2VzX1JlcXVlc3QaKS5DU3Rl",
+            "YW1DaGFydHNfR2V0QmVzdE9mWWVhclBhZ2VzX1Jlc3BvbnNlEoQBChtHZXRH",
+            "YW1lc0J5Q29uY3VycmVudFBsYXllcnMSMS5DU3RlYW1DaGFydHNfR2V0R2Ft",
+            "ZXNCeUNvbmN1cnJlbnRQbGF5ZXJzX1JlcXVlc3QaMi5DU3RlYW1DaGFydHNf",
+            "R2V0R2FtZXNCeUNvbmN1cnJlbnRQbGF5ZXJzX1Jlc3BvbnNlEnUKFkdldE1v",
+            "bnRoVG9wQXBwUmVsZWFzZXMSLC5DU3RlYW1DaGFydHNfR2V0TW9udGhUb3BB",
+            "cHBSZWxlYXNlc19SZXF1ZXN0Gi0uQ1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9w",
+            "QXBwUmVsZWFzZXNfUmVzcG9uc2USaQoSR2V0TW9zdFBsYXllZEdhbWVzEigu",
+            "Q1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRHYW1lc19SZXF1ZXN0GikuQ1N0",
+            "ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRHYW1lc19SZXNwb25zZRKEAQobR2V0",
+            "TW9zdFBsYXllZFN0ZWFtRGVja0dhbWVzEjEuQ1N0ZWFtQ2hhcnRzX0dldE1v",
+            "c3RQbGF5ZWRTdGVhbURlY2tHYW1lc19SZXF1ZXN0GjIuQ1N0ZWFtQ2hhcnRz",
+            "X0dldE1vc3RQbGF5ZWRTdGVhbURlY2tHYW1lc19SZXNwb25zZRJsChNHZXRU",
+            "b3BSZWxlYXNlc1BhZ2VzEikuQ1N0ZWFtQ2hhcnRzX0dldFRvcFJlbGVhc2Vz",
+            "UGFnZXNfUmVxdWVzdBoqLkNTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1Bh",
+            "Z2VzX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJV",
+            "SQ=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -96,6 +109,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Request), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Request.Parser, new[]{ "Context", "DataRequest" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response.Parser, new[]{ "LastUpdate", "Ranks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response_MostPlayedRank), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response_MostPlayedRank.Parser, new[]{ "Rank", "Appid", "Item", "ConcurrentInGame", "PeainGame" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Request), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Request.Parser, new[]{ "RtimeMonth", "IncludeDlc", "TopResultsLimit" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response.Parser, new[]{ "TopAppReleases", "TopDlcReleases" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease.Parser, new[]{ "Appid", "RtimeRelease" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Request), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Request.Parser, new[]{ "Context", "DataRequest" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response.Parser, new[]{ "RollupDate", "Ranks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response_MostPlayedRank), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response_MostPlayedRank.Parser, new[]{ "Rank", "Appid", "Item", "LastWeerank", "PeainGame", "DailyActivePlayers" }, null, null, null, null),
@@ -1740,6 +1756,805 @@ namespace OpenSteamworks.Protobuf.WebUI {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CSteamCharts_GetMonthTopAppReleases_Request : pb::IMessage<CSteamCharts_GetMonthTopAppReleases_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Request> _parser = new pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Request>(() => new CSteamCharts_GetMonthTopAppReleases_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Request(CSteamCharts_GetMonthTopAppReleases_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      rtimeMonth_ = other.rtimeMonth_;
+      includeDlc_ = other.includeDlc_;
+      topResultsLimit_ = other.topResultsLimit_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Request Clone() {
+      return new CSteamCharts_GetMonthTopAppReleases_Request(this);
+    }
+
+    /// <summary>Field number for the "rtime_month" field.</summary>
+    public const int RtimeMonthFieldNumber = 1;
+    private readonly static uint RtimeMonthDefaultValue = 0;
+
+    private uint rtimeMonth_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint RtimeMonth {
+      get { if ((_hasBits0 & 1) != 0) { return rtimeMonth_; } else { return RtimeMonthDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        rtimeMonth_ = value;
+      }
+    }
+    /// <summary>Gets whether the "rtime_month" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRtimeMonth {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "rtime_month" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRtimeMonth() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "include_dlc" field.</summary>
+    public const int IncludeDlcFieldNumber = 2;
+    private readonly static bool IncludeDlcDefaultValue = false;
+
+    private bool includeDlc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IncludeDlc {
+      get { if ((_hasBits0 & 2) != 0) { return includeDlc_; } else { return IncludeDlcDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        includeDlc_ = value;
+      }
+    }
+    /// <summary>Gets whether the "include_dlc" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncludeDlc {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "include_dlc" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncludeDlc() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "top_results_limit" field.</summary>
+    public const int TopResultsLimitFieldNumber = 3;
+    private readonly static uint TopResultsLimitDefaultValue = 0;
+
+    private uint topResultsLimit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint TopResultsLimit {
+      get { if ((_hasBits0 & 4) != 0) { return topResultsLimit_; } else { return TopResultsLimitDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        topResultsLimit_ = value;
+      }
+    }
+    /// <summary>Gets whether the "top_results_limit" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTopResultsLimit {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "top_results_limit" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTopResultsLimit() {
+      _hasBits0 &= ~4;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CSteamCharts_GetMonthTopAppReleases_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CSteamCharts_GetMonthTopAppReleases_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RtimeMonth != other.RtimeMonth) return false;
+      if (IncludeDlc != other.IncludeDlc) return false;
+      if (TopResultsLimit != other.TopResultsLimit) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasRtimeMonth) hash ^= RtimeMonth.GetHashCode();
+      if (HasIncludeDlc) hash ^= IncludeDlc.GetHashCode();
+      if (HasTopResultsLimit) hash ^= TopResultsLimit.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasRtimeMonth) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(RtimeMonth);
+      }
+      if (HasIncludeDlc) {
+        output.WriteRawTag(16);
+        output.WriteBool(IncludeDlc);
+      }
+      if (HasTopResultsLimit) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(TopResultsLimit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasRtimeMonth) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(RtimeMonth);
+      }
+      if (HasIncludeDlc) {
+        output.WriteRawTag(16);
+        output.WriteBool(IncludeDlc);
+      }
+      if (HasTopResultsLimit) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(TopResultsLimit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasRtimeMonth) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RtimeMonth);
+      }
+      if (HasIncludeDlc) {
+        size += 1 + 1;
+      }
+      if (HasTopResultsLimit) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(TopResultsLimit);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CSteamCharts_GetMonthTopAppReleases_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasRtimeMonth) {
+        RtimeMonth = other.RtimeMonth;
+      }
+      if (other.HasIncludeDlc) {
+        IncludeDlc = other.IncludeDlc;
+      }
+      if (other.HasTopResultsLimit) {
+        TopResultsLimit = other.TopResultsLimit;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            RtimeMonth = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            IncludeDlc = input.ReadBool();
+            break;
+          }
+          case 24: {
+            TopResultsLimit = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            RtimeMonth = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            IncludeDlc = input.ReadBool();
+            break;
+          }
+          case 24: {
+            TopResultsLimit = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CSteamCharts_GetMonthTopAppReleases_Response : pb::IMessage<CSteamCharts_GetMonthTopAppReleases_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Response> _parser = new pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Response>(() => new CSteamCharts_GetMonthTopAppReleases_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Response(CSteamCharts_GetMonthTopAppReleases_Response other) : this() {
+      topAppReleases_ = other.topAppReleases_.Clone();
+      topDlcReleases_ = other.topDlcReleases_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Response Clone() {
+      return new CSteamCharts_GetMonthTopAppReleases_Response(this);
+    }
+
+    /// <summary>Field number for the "top_app_releases" field.</summary>
+    public const int TopAppReleasesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> _repeated_topAppReleases_codec
+        = pb::FieldCodec.ForMessage(10, global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> topAppReleases_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> TopAppReleases {
+      get { return topAppReleases_; }
+    }
+
+    /// <summary>Field number for the "top_dlc_releases" field.</summary>
+    public const int TopDlcReleasesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> _repeated_topDlcReleases_codec
+        = pb::FieldCodec.ForMessage(18, global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> topDlcReleases_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> TopDlcReleases {
+      get { return topDlcReleases_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CSteamCharts_GetMonthTopAppReleases_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CSteamCharts_GetMonthTopAppReleases_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!topAppReleases_.Equals(other.topAppReleases_)) return false;
+      if(!topDlcReleases_.Equals(other.topDlcReleases_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= topAppReleases_.GetHashCode();
+      hash ^= topDlcReleases_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      topAppReleases_.WriteTo(output, _repeated_topAppReleases_codec);
+      topDlcReleases_.WriteTo(output, _repeated_topDlcReleases_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      topAppReleases_.WriteTo(ref output, _repeated_topAppReleases_codec);
+      topDlcReleases_.WriteTo(ref output, _repeated_topDlcReleases_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += topAppReleases_.CalculateSize(_repeated_topAppReleases_codec);
+      size += topDlcReleases_.CalculateSize(_repeated_topDlcReleases_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CSteamCharts_GetMonthTopAppReleases_Response other) {
+      if (other == null) {
+        return;
+      }
+      topAppReleases_.Add(other.topAppReleases_);
+      topDlcReleases_.Add(other.topDlcReleases_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            topAppReleases_.AddEntriesFrom(input, _repeated_topAppReleases_codec);
+            break;
+          }
+          case 18: {
+            topDlcReleases_.AddEntriesFrom(input, _repeated_topDlcReleases_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            topAppReleases_.AddEntriesFrom(ref input, _repeated_topAppReleases_codec);
+            break;
+          }
+          case 18: {
+            topDlcReleases_.AddEntriesFrom(ref input, _repeated_topDlcReleases_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease : pb::IMessage<CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> _parser = new pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease>(() => new CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease(CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease other) : this() {
+      _hasBits0 = other._hasBits0;
+      appid_ = other.appid_;
+      rtimeRelease_ = other.rtimeRelease_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease Clone() {
+      return new CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease(this);
+    }
+
+    /// <summary>Field number for the "appid" field.</summary>
+    public const int AppidFieldNumber = 1;
+    private readonly static uint AppidDefaultValue = 0;
+
+    private uint appid_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Appid {
+      get { if ((_hasBits0 & 1) != 0) { return appid_; } else { return AppidDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        appid_ = value;
+      }
+    }
+    /// <summary>Gets whether the "appid" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppid {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "appid" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppid() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "rtime_release" field.</summary>
+    public const int RtimeReleaseFieldNumber = 2;
+    private readonly static uint RtimeReleaseDefaultValue = 0;
+
+    private uint rtimeRelease_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint RtimeRelease {
+      get { if ((_hasBits0 & 2) != 0) { return rtimeRelease_; } else { return RtimeReleaseDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        rtimeRelease_ = value;
+      }
+    }
+    /// <summary>Gets whether the "rtime_release" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRtimeRelease {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "rtime_release" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRtimeRelease() {
+      _hasBits0 &= ~2;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Appid != other.Appid) return false;
+      if (RtimeRelease != other.RtimeRelease) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAppid) hash ^= Appid.GetHashCode();
+      if (HasRtimeRelease) hash ^= RtimeRelease.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasRtimeRelease) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(RtimeRelease);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAppid) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Appid);
+      }
+      if (HasRtimeRelease) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(RtimeRelease);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAppid) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Appid);
+      }
+      if (HasRtimeRelease) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RtimeRelease);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAppid) {
+        Appid = other.Appid;
+      }
+      if (other.HasRtimeRelease) {
+        RtimeRelease = other.RtimeRelease;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            RtimeRelease = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Appid = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            RtimeRelease = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CSteamCharts_GetMostPlayedGames_Request : pb::IMessage<CSteamCharts_GetMostPlayedGames_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1754,7 +2569,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2008,7 +2823,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2249,7 +3064,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2718,7 +3533,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3077,7 +3892,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3318,7 +4133,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3682,7 +4497,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3843,7 +4658,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[13]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4031,7 +4846,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[14]; }
+      get { return global::OpenSteamworks.Protobuf.WebUI.ServiceSteamchartsReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

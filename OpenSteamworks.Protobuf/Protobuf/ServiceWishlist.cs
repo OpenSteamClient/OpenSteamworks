@@ -60,33 +60,34 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "BCABKAsyCi5TdG9yZUl0ZW0iNQokQ1dpc2hsaXN0X1JlbW92ZUZyb21XaXNo",
             "bGlzdF9SZXF1ZXN0Eg0KBWFwcGlkGAEgASgNIj8KJUNXaXNobGlzdF9SZW1v",
             "dmVGcm9tV2lzaGxpc3RfUmVzcG9uc2USFgoOd2lzaGxpc3RfY291bnQYASAB",
-            "KA0ixwIKEENXaXNobGlzdEZpbHRlcnMSEgoKbWFjb3Nfb25seRgBIAEoCBIa",
+            "KA0i4gIKEENXaXNobGlzdEZpbHRlcnMSEgoKbWFjb3Nfb25seRgBIAEoCBIa",
             "ChJzdGVhbW9zX2xpbnV4X29ubHkYAiABKAgSEgoKb25seV9nYW1lcxgKIAEo",
             "CBIVCg1vbmx5X3NvZnR3YXJlGAsgASgIEhAKCG9ubHlfZGxjGAwgASgIEhEK",
             "CW9ubHlfZnJlZRgNIAEoCBIaChJtYXhfcHJpY2VfaW5fY2VudHMYFCABKAMS",
             "HAoUbWluX2Rpc2NvdW50X3BlcmNlbnQYFSABKAUSOwoNZXhjbHVkZV90eXBl",
             "cxgWIAEoCzIkLkNXaXNobGlzdEZpbHRlcnNfRXhjbHVkZVR5cGVGaWx0ZXJz",
             "EjwKEHN0ZWFtX2RlY2ZpbHRlcnMYFyABKAsyIi5DV2lzaGxpc3RGaWx0ZXJz",
-            "X1N0ZWFtRGVja0ZpbHRlcnMieQojQ1dpc2hsaXN0RmlsdGVyc19FeGNsdWRl",
-            "VHlwZUZpbHRlcnMSHAoUZXhjbHVkZV9lYXJseV9hY2Nlc3MYASABKAgSGwoT",
-            "ZXhjbHVkZV9jb21pbmdfc29vbhgCIAEoCBIXCg9leGNsdWRlX3ZyX29ubHkY",
-            "AyABKAgiVwohQ1dpc2hsaXN0RmlsdGVyc19TdGVhbURlY2tGaWx0ZXJzEhgK",
-            "EGluY2x1ZGVfdmVyaWZpZWQYASABKAgSGAoQaW5jbHVkZV9wbGF5YWJsZRgC",
-            "IAEoCDLrBAoIV2lzaGxpc3QSVAoNQWRkVG9XaXNobGlzdBIgLkNXaXNobGlz",
-            "dF9BZGRUb1dpc2hsaXN0X1JlcXVlc3QaIS5DV2lzaGxpc3RfQWRkVG9XaXNo",
-            "bGlzdF9SZXNwb25zZRJOCgtHZXRXaXNobGlzdBIeLkNXaXNobGlzdF9HZXRX",
-            "aXNobGlzdF9SZXF1ZXN0Gh8uQ1dpc2hsaXN0X0dldFdpc2hsaXN0X1Jlc3Bv",
-            "bnNlEmkKFEdldFdpc2hsaXN0SXRlbUNvdW50EicuQ1dpc2hsaXN0X0dldFdp",
-            "c2hsaXN0SXRlbUNvdW50X1JlcXVlc3QaKC5DV2lzaGxpc3RfR2V0V2lzaGxp",
-            "c3RJdGVtQ291bnRfUmVzcG9uc2USbwoWR2V0V2lzaGxpc3RJdGVtc09uU2Fs",
-            "ZRIpLkNXaXNobGlzdF9HZXRXaXNobGlzdEl0ZW1zT25TYWxlX1JlcXVlc3Qa",
-            "Ki5DV2lzaGxpc3RfR2V0V2lzaGxpc3RJdGVtc09uU2FsZV9SZXNwb25zZRJ4",
-            "ChlHZXRXaXNobGlzdFNvcnRlZEZpbHRlcmVkEiwuQ1dpc2hsaXN0X0dldFdp",
-            "c2hsaXN0U29ydGVkRmlsdGVyZWRfUmVxdWVzdBotLkNXaXNobGlzdF9HZXRX",
-            "aXNobGlzdFNvcnRlZEZpbHRlcmVkX1Jlc3BvbnNlEmMKElJlbW92ZUZyb21X",
-            "aXNobGlzdBIlLkNXaXNobGlzdF9SZW1vdmVGcm9tV2lzaGxpc3RfUmVxdWVz",
-            "dBomLkNXaXNobGlzdF9SZW1vdmVGcm9tV2lzaGxpc3RfUmVzcG9uc2VCIKoC",
-            "HU9wZW5TdGVhbXdvcmtzLlByb3RvYnVmLldlYlVJ"));
+            "X1N0ZWFtRGVja0ZpbHRlcnMSGQoRdGFnaWRzX211c3RfbWF0Y2gYGCADKAUi",
+            "eQojQ1dpc2hsaXN0RmlsdGVyc19FeGNsdWRlVHlwZUZpbHRlcnMSHAoUZXhj",
+            "bHVkZV9lYXJseV9hY2Nlc3MYASABKAgSGwoTZXhjbHVkZV9jb21pbmdfc29v",
+            "bhgCIAEoCBIXCg9leGNsdWRlX3ZyX29ubHkYAyABKAgiVwohQ1dpc2hsaXN0",
+            "RmlsdGVyc19TdGVhbURlY2tGaWx0ZXJzEhgKEGluY2x1ZGVfdmVyaWZpZWQY",
+            "ASABKAgSGAoQaW5jbHVkZV9wbGF5YWJsZRgCIAEoCDLrBAoIV2lzaGxpc3QS",
+            "VAoNQWRkVG9XaXNobGlzdBIgLkNXaXNobGlzdF9BZGRUb1dpc2hsaXN0X1Jl",
+            "cXVlc3QaIS5DV2lzaGxpc3RfQWRkVG9XaXNobGlzdF9SZXNwb25zZRJOCgtH",
+            "ZXRXaXNobGlzdBIeLkNXaXNobGlzdF9HZXRXaXNobGlzdF9SZXF1ZXN0Gh8u",
+            "Q1dpc2hsaXN0X0dldFdpc2hsaXN0X1Jlc3BvbnNlEmkKFEdldFdpc2hsaXN0",
+            "SXRlbUNvdW50EicuQ1dpc2hsaXN0X0dldFdpc2hsaXN0SXRlbUNvdW50X1Jl",
+            "cXVlc3QaKC5DV2lzaGxpc3RfR2V0V2lzaGxpc3RJdGVtQ291bnRfUmVzcG9u",
+            "c2USbwoWR2V0V2lzaGxpc3RJdGVtc09uU2FsZRIpLkNXaXNobGlzdF9HZXRX",
+            "aXNobGlzdEl0ZW1zT25TYWxlX1JlcXVlc3QaKi5DV2lzaGxpc3RfR2V0V2lz",
+            "aGxpc3RJdGVtc09uU2FsZV9SZXNwb25zZRJ4ChlHZXRXaXNobGlzdFNvcnRl",
+            "ZEZpbHRlcmVkEiwuQ1dpc2hsaXN0X0dldFdpc2hsaXN0U29ydGVkRmlsdGVy",
+            "ZWRfUmVxdWVzdBotLkNXaXNobGlzdF9HZXRXaXNobGlzdFNvcnRlZEZpbHRl",
+            "cmVkX1Jlc3BvbnNlEmMKElJlbW92ZUZyb21XaXNobGlzdBIlLkNXaXNobGlz",
+            "dF9SZW1vdmVGcm9tV2lzaGxpc3RfUmVxdWVzdBomLkNXaXNobGlzdF9SZW1v",
+            "dmVGcm9tV2lzaGxpc3RfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtzLlBy",
+            "b3RvYnVmLldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -105,7 +106,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem), global::OpenSteamworks.Protobuf.WebUI.CWishlist_GetWishlistSortedFiltered_Response_WishlistItem.Parser, new[]{ "Appid", "Priority", "DateAdded", "StoreItem" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Request), global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Request.Parser, new[]{ "Appid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Response), global::OpenSteamworks.Protobuf.WebUI.CWishlist_RemoveFromWishlist_Response.Parser, new[]{ "WishlistCount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters), global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters.Parser, new[]{ "MacosOnly", "SteamosLinuxOnly", "OnlyGames", "OnlySoftware", "OnlyDlc", "OnlyFree", "MaxPriceInCents", "MinDiscountPercent", "ExcludeTypes", "SteamDecfilters" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters), global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters.Parser, new[]{ "MacosOnly", "SteamosLinuxOnly", "OnlyGames", "OnlySoftware", "OnlyDlc", "OnlyFree", "MaxPriceInCents", "MinDiscountPercent", "ExcludeTypes", "SteamDecfilters", "TagidsMustMatch" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters), global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_ExcludeTypeFilters.Parser, new[]{ "ExcludeEarlyAccess", "ExcludeComingSoon", "ExcludeVrOnly" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters), global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters.Parser, new[]{ "IncludeVerified", "IncludePlayable" }, null, null, null, null)
           }));
@@ -3980,6 +3981,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       minDiscountPercent_ = other.minDiscountPercent_;
       excludeTypes_ = other.excludeTypes_ != null ? other.excludeTypes_.Clone() : null;
       steamDecfilters_ = other.steamDecfilters_ != null ? other.steamDecfilters_.Clone() : null;
+      tagidsMustMatch_ = other.tagidsMustMatch_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4229,6 +4231,17 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
     }
 
+    /// <summary>Field number for the "tagids_must_match" field.</summary>
+    public const int TagidsMustMatchFieldNumber = 24;
+    private static readonly pb::FieldCodec<int> _repeated_tagidsMustMatch_codec
+        = pb::FieldCodec.ForInt32(192);
+    private readonly pbc::RepeatedField<int> tagidsMustMatch_ = new pbc::RepeatedField<int>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> TagidsMustMatch {
+      get { return tagidsMustMatch_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4254,6 +4267,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (MinDiscountPercent != other.MinDiscountPercent) return false;
       if (!object.Equals(ExcludeTypes, other.ExcludeTypes)) return false;
       if (!object.Equals(SteamDecfilters, other.SteamDecfilters)) return false;
+      if(!tagidsMustMatch_.Equals(other.tagidsMustMatch_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4271,6 +4285,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasMinDiscountPercent) hash ^= MinDiscountPercent.GetHashCode();
       if (excludeTypes_ != null) hash ^= ExcludeTypes.GetHashCode();
       if (steamDecfilters_ != null) hash ^= SteamDecfilters.GetHashCode();
+      hash ^= tagidsMustMatch_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4329,6 +4344,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(186, 1);
         output.WriteMessage(SteamDecfilters);
       }
+      tagidsMustMatch_.WriteTo(output, _repeated_tagidsMustMatch_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4379,6 +4395,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(186, 1);
         output.WriteMessage(SteamDecfilters);
       }
+      tagidsMustMatch_.WriteTo(ref output, _repeated_tagidsMustMatch_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4419,6 +4436,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (steamDecfilters_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(SteamDecfilters);
       }
+      size += tagidsMustMatch_.CalculateSize(_repeated_tagidsMustMatch_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4467,6 +4485,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
         }
         SteamDecfilters.MergeFrom(other.SteamDecfilters);
       }
+      tagidsMustMatch_.Add(other.tagidsMustMatch_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -4532,6 +4551,11 @@ namespace OpenSteamworks.Protobuf.WebUI {
             input.ReadMessage(SteamDecfilters);
             break;
           }
+          case 194:
+          case 192: {
+            tagidsMustMatch_.AddEntriesFrom(input, _repeated_tagidsMustMatch_codec);
+            break;
+          }
         }
       }
     #endif
@@ -4595,6 +4619,11 @@ namespace OpenSteamworks.Protobuf.WebUI {
               SteamDecfilters = new global::OpenSteamworks.Protobuf.WebUI.CWishlistFilters_SteamDeckFilters();
             }
             input.ReadMessage(SteamDecfilters);
+            break;
+          }
+          case 194:
+          case 192: {
+            tagidsMustMatch_.AddEntriesFrom(ref input, _repeated_tagidsMustMatch_codec);
             break;
           }
         }

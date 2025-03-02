@@ -30,52 +30,52 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "U3RvcmVfR2V0VXNlclZvdGVzX1Jlc3BvbnNlEigKCnVzZXJfdm90ZXMYASAD",
             "KAsyFC5TdGVhbUF3YXJkc1VzZXJWb3RlIkkKIUNTdG9yZV9HZXRWb3RlRGVm",
             "aW5pdGlvbnNfUmVxdWVzdBIQCghsYW5ndWFnZRgBIAEoCRISCgpzYWxlX2Fw",
-            "cGlkGAIgASgNIksKIkNTdG9yZV9HZXRWb3RlRGVmaW5pdGlvbnNfUmVzcG9u",
-            "c2USJQoFdm90ZXMYASADKAsyFi5DU3RvcmVfVm90ZURlZmluaXRpb24ifwor",
-            "Q1N0b3JlX0dldFZvdGVEZWZpbml0aW9uc0ZvckV2ZW50c19SZXNwb25zZRJQ",
-            "CgtkZWZpbml0aW9ucxgBIAMoCzI7LkNTdG9yZV9HZXRWb3RlRGVmaW5pdGlv",
-            "bnNGb3JFdmVudHNfUmVzcG9uc2VfVm90ZV9EZWZpbnRpb24iWwo6Q1N0b3Jl",
-            "X0dldFZvdGVEZWZpbml0aW9uc0ZvckV2ZW50c19SZXNwb25zZV9Wb3RlX0Rl",
-            "ZmludGlvbhIOCgZ2b3RlaWQYASABKAUSDQoFYXBwaWQYAiABKA0iSwoWQ1N0",
-            "b3JlX1NldFZvdGVfUmVxdWVzdBIOCgZ2b3RlaWQYASABKAUSDQoFYXBwaWQY",
-            "AiABKA0SEgoKc2FsZV9hcHBpZBgDIAEoDSJDChdDU3RvcmVfU2V0Vm90ZV9S",
-            "ZXNwb25zZRIoCgp1c2VyX3ZvdGVzGAEgAygLMhQuU3RlYW1Bd2FyZHNVc2Vy",
-            "Vm90ZSLMAwoVQ1N0b3JlX1ZvdGVEZWZpbml0aW9uEg4KBnZvdGVpZBgBIAEo",
-            "BRIOCgZhY3RpdmUYAiABKAgSEgoKc3RhcnRfdGltZRgDIAEoDRIQCghlbmRf",
-            "dGltZRgEIAEoDRI7Cg1hcHBfZGlzY291bnRzGAUgAygLMiQuQ1N0b3JlX1Zv",
-            "dGVEZWZpbml0aW9uX0FwcERlZmluaXRpb24SHAoUZ3JvdXBlZF92b3RlX29w",
-            "dGlvbnMYBiABKA0SNgoGZ3JvdXBzGAcgAygLMiYuQ1N0b3JlX1ZvdGVEZWZp",
-            "bml0aW9uX0dyb3VwRGVmaW5pdGlvbhIVCg1pbnRlcm5hbF9uYW1lGAggASgJ",
-            "EjkKDGxvY2FsaXphdGlvbhgJIAEoCzIjLkNTdG9yZV9Wb3RlRGVmaW5pdGlv",
-            "bl9Mb2NhbGl6YXRpb24SEwoLcmV2ZWFsX3RpbWUYCiABKA0SGAoQcmVsZWFz",
-            "ZV9kYXRlX21pbhgLIAEoDRIUCgx3aW5uZXJfYXBwaWQYDCABKA0SFgoEZmxh",
-            "ZxgNIAEoBUIIgrUYBGVudW0SGAoQcmVsZWFzZV9kYXRlX21heBgOIAEoDRIR",
-            "CglpdGVtX3R5cGUYDyABKA0iRgojQ1N0b3JlX1ZvdGVEZWZpbml0aW9uX0Fw",
-            "cERlZmluaXRpb24SDQoFYXBwaWQYASABKA0SEAoIZGlzY291bnQYAiABKA0i",
-            "iQEKJUNTdG9yZV9Wb3RlRGVmaW5pdGlvbl9Hcm91cERlZmluaXRpb24SDwoH",
-            "Z3JvdXBpZBgBIAEoDRISCgpncm91cF9uYW1lGAIgASgJEjsKDWFwcF9kaXNj",
-            "b3VudHMYAyADKAsyJC5DU3RvcmVfVm90ZURlZmluaXRpb25fQXBwRGVmaW5p",
-            "dGlvbiJ8CiJDU3RvcmVfVm90ZURlZmluaXRpb25fTG9jYWxpemF0aW9uEg0K",
-            "BXRpdGxlGAEgASgJEhcKD3RpdGxlX2xpbmVicmVhaxgCIAEoCRITCgt0aXRs",
-            "ZV9hd2FyZBgDIAEoCRIZChFhd2FyZF9kZXNjcmlwdGlvbhgEIAEoCSJNChNT",
-            "dGVhbUF3YXJkc1VzZXJWb3RlEg4KBnZvdGVpZBgBIAEoDRINCgVhcHBpZBgC",
-            "IAEoDRIXCg9jb21tdW5pdHlpdGVtaWQYAyABKAQy1AIKClN0b3JlU2FsZXMS",
-            "SwoMR2V0VXNlclZvdGVzEhwuQ1N0b3JlX0dldFVzZXJWb3Rlc19SZXF1ZXN0",
-            "Gh0uQ1N0b3JlX0dldFVzZXJWb3Rlc19SZXNwb25zZRJdChJHZXRWb3RlRGVm",
-            "aW5pdGlvbnMSIi5DU3RvcmVfR2V0Vm90ZURlZmluaXRpb25zX1JlcXVlc3Qa",
-            "Iy5DU3RvcmVfR2V0Vm90ZURlZmluaXRpb25zX1Jlc3BvbnNlElwKG0dldFZv",
-            "dGVEZWZpbml0aW9uc0ZvckV2ZW50cxIPLk5vdEltcGxlbWVudGVkGiwuQ1N0",
-            "b3JlX0dldFZvdGVEZWZpbml0aW9uc0ZvckV2ZW50c19SZXNwb25zZRI8CgdT",
-            "ZXRWb3RlEhcuQ1N0b3JlX1NldFZvdGVfUmVxdWVzdBoYLkNTdG9yZV9TZXRW",
-            "b3RlX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJV",
-            "SQ=="));
+            "cGlkGAIgASgNImoKIkNTdG9yZV9HZXRWb3RlRGVmaW5pdGlvbnNfUmVzcG9u",
+            "c2USJQoFdm90ZXMYASADKAsyFi5DU3RvcmVfVm90ZURlZmluaXRpb24SHQoV",
+            "bGFib3Jfb2ZfbG92ZV93aW5uZXJzGAIgAygNIn8KK0NTdG9yZV9HZXRWb3Rl",
+            "RGVmaW5pdGlvbnNGb3JFdmVudHNfUmVzcG9uc2USUAoLZGVmaW5pdGlvbnMY",
+            "ASADKAsyOy5DU3RvcmVfR2V0Vm90ZURlZmluaXRpb25zRm9yRXZlbnRzX1Jl",
+            "c3BvbnNlX1ZvdGVfRGVmaW50aW9uIlsKOkNTdG9yZV9HZXRWb3RlRGVmaW5p",
+            "dGlvbnNGb3JFdmVudHNfUmVzcG9uc2VfVm90ZV9EZWZpbnRpb24SDgoGdm90",
+            "ZWlkGAEgASgFEg0KBWFwcGlkGAIgASgNIksKFkNTdG9yZV9TZXRWb3RlX1Jl",
+            "cXVlc3QSDgoGdm90ZWlkGAEgASgFEg0KBWFwcGlkGAIgASgNEhIKCnNhbGVf",
+            "YXBwaWQYAyABKA0iQwoXQ1N0b3JlX1NldFZvdGVfUmVzcG9uc2USKAoKdXNl",
+            "cl92b3RlcxgBIAMoCzIULlN0ZWFtQXdhcmRzVXNlclZvdGUizAMKFUNTdG9y",
+            "ZV9Wb3RlRGVmaW5pdGlvbhIOCgZ2b3RlaWQYASABKAUSDgoGYWN0aXZlGAIg",
+            "ASgIEhIKCnN0YXJ0X3RpbWUYAyABKA0SEAoIZW5kX3RpbWUYBCABKA0SOwoN",
+            "YXBwX2Rpc2NvdW50cxgFIAMoCzIkLkNTdG9yZV9Wb3RlRGVmaW5pdGlvbl9B",
+            "cHBEZWZpbml0aW9uEhwKFGdyb3VwZWRfdm90ZV9vcHRpb25zGAYgASgNEjYK",
+            "Bmdyb3VwcxgHIAMoCzImLkNTdG9yZV9Wb3RlRGVmaW5pdGlvbl9Hcm91cERl",
+            "ZmluaXRpb24SFQoNaW50ZXJuYWxfbmFtZRgIIAEoCRI5Cgxsb2NhbGl6YXRp",
+            "b24YCSABKAsyIy5DU3RvcmVfVm90ZURlZmluaXRpb25fTG9jYWxpemF0aW9u",
+            "EhMKC3JldmVhbF90aW1lGAogASgNEhgKEHJlbGVhc2VfZGF0ZV9taW4YCyAB",
+            "KA0SFAoMd2lubmVyX2FwcGlkGAwgASgNEhYKBGZsYWcYDSABKAVCCIK1GARl",
+            "bnVtEhgKEHJlbGVhc2VfZGF0ZV9tYXgYDiABKA0SEQoJaXRlbV90eXBlGA8g",
+            "ASgNIkYKI0NTdG9yZV9Wb3RlRGVmaW5pdGlvbl9BcHBEZWZpbml0aW9uEg0K",
+            "BWFwcGlkGAEgASgNEhAKCGRpc2NvdW50GAIgASgNIokBCiVDU3RvcmVfVm90",
+            "ZURlZmluaXRpb25fR3JvdXBEZWZpbml0aW9uEg8KB2dyb3VwaWQYASABKA0S",
+            "EgoKZ3JvdXBfbmFtZRgCIAEoCRI7Cg1hcHBfZGlzY291bnRzGAMgAygLMiQu",
+            "Q1N0b3JlX1ZvdGVEZWZpbml0aW9uX0FwcERlZmluaXRpb24ifAoiQ1N0b3Jl",
+            "X1ZvdGVEZWZpbml0aW9uX0xvY2FsaXphdGlvbhINCgV0aXRsZRgBIAEoCRIX",
+            "Cg90aXRsZV9saW5lYnJlYWsYAiABKAkSEwoLdGl0bGVfYXdhcmQYAyABKAkS",
+            "GQoRYXdhcmRfZGVzY3JpcHRpb24YBCABKAkiTQoTU3RlYW1Bd2FyZHNVc2Vy",
+            "Vm90ZRIOCgZ2b3RlaWQYASABKA0SDQoFYXBwaWQYAiABKA0SFwoPY29tbXVu",
+            "aXR5aXRlbWlkGAMgASgEMtQCCgpTdG9yZVNhbGVzEksKDEdldFVzZXJWb3Rl",
+            "cxIcLkNTdG9yZV9HZXRVc2VyVm90ZXNfUmVxdWVzdBodLkNTdG9yZV9HZXRV",
+            "c2VyVm90ZXNfUmVzcG9uc2USXQoSR2V0Vm90ZURlZmluaXRpb25zEiIuQ1N0",
+            "b3JlX0dldFZvdGVEZWZpbml0aW9uc19SZXF1ZXN0GiMuQ1N0b3JlX0dldFZv",
+            "dGVEZWZpbml0aW9uc19SZXNwb25zZRJcChtHZXRWb3RlRGVmaW5pdGlvbnNG",
+            "b3JFdmVudHMSDy5Ob3RJbXBsZW1lbnRlZBosLkNTdG9yZV9HZXRWb3RlRGVm",
+            "aW5pdGlvbnNGb3JFdmVudHNfUmVzcG9uc2USPAoHU2V0Vm90ZRIXLkNTdG9y",
+            "ZV9TZXRWb3RlX1JlcXVlc3QaGC5DU3RvcmVfU2V0Vm90ZV9SZXNwb25zZUIg",
+            "qgIdT3BlblN0ZWFtd29ya3MuUHJvdG9idWYuV2ViVUk="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_GetUserVotes_Request), global::OpenSteamworks.Protobuf.WebUI.CStore_GetUserVotes_Request.Parser, new[]{ "SaleAppid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_GetUserVotes_Response), global::OpenSteamworks.Protobuf.WebUI.CStore_GetUserVotes_Response.Parser, new[]{ "UserVotes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitions_Request), global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitions_Request.Parser, new[]{ "Language", "SaleAppid" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitions_Response), global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitions_Response.Parser, new[]{ "Votes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitions_Response), global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitions_Response.Parser, new[]{ "Votes", "LaborOfLoveWinners" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitionsForEvents_Response), global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitionsForEvents_Response.Parser, new[]{ "Definitions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitionsForEvents_Response_Vote_Defintion), global::OpenSteamworks.Protobuf.WebUI.CStore_GetVoteDefinitionsForEvents_Response_Vote_Defintion.Parser, new[]{ "Voteid", "Appid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CStore_SetVote_Request), global::OpenSteamworks.Protobuf.WebUI.CStore_SetVote_Request.Parser, new[]{ "Voteid", "Appid", "SaleAppid" }, null, null, null, null),
@@ -795,6 +795,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CStore_GetVoteDefinitions_Response(CStore_GetVoteDefinitions_Response other) : this() {
       votes_ = other.votes_.Clone();
+      laborOfLoveWinners_ = other.laborOfLoveWinners_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -815,6 +816,17 @@ namespace OpenSteamworks.Protobuf.WebUI {
       get { return votes_; }
     }
 
+    /// <summary>Field number for the "labor_of_love_winners" field.</summary>
+    public const int LaborOfLoveWinnersFieldNumber = 2;
+    private static readonly pb::FieldCodec<uint> _repeated_laborOfLoveWinners_codec
+        = pb::FieldCodec.ForUInt32(16);
+    private readonly pbc::RepeatedField<uint> laborOfLoveWinners_ = new pbc::RepeatedField<uint>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<uint> LaborOfLoveWinners {
+      get { return laborOfLoveWinners_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -831,6 +843,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
         return true;
       }
       if(!votes_.Equals(other.votes_)) return false;
+      if(!laborOfLoveWinners_.Equals(other.laborOfLoveWinners_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -839,6 +852,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= votes_.GetHashCode();
+      hash ^= laborOfLoveWinners_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -858,6 +872,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       output.WriteRawMessage(this);
     #else
       votes_.WriteTo(output, _repeated_votes_codec);
+      laborOfLoveWinners_.WriteTo(output, _repeated_laborOfLoveWinners_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -869,6 +884,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       votes_.WriteTo(ref output, _repeated_votes_codec);
+      laborOfLoveWinners_.WriteTo(ref output, _repeated_laborOfLoveWinners_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -880,6 +896,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     public int CalculateSize() {
       int size = 0;
       size += votes_.CalculateSize(_repeated_votes_codec);
+      size += laborOfLoveWinners_.CalculateSize(_repeated_laborOfLoveWinners_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -893,6 +910,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
         return;
       }
       votes_.Add(other.votes_);
+      laborOfLoveWinners_.Add(other.laborOfLoveWinners_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -916,6 +934,11 @@ namespace OpenSteamworks.Protobuf.WebUI {
             votes_.AddEntriesFrom(input, _repeated_votes_codec);
             break;
           }
+          case 18:
+          case 16: {
+            laborOfLoveWinners_.AddEntriesFrom(input, _repeated_laborOfLoveWinners_codec);
+            break;
+          }
         }
       }
     #endif
@@ -937,6 +960,11 @@ namespace OpenSteamworks.Protobuf.WebUI {
             break;
           case 10: {
             votes_.AddEntriesFrom(ref input, _repeated_votes_codec);
+            break;
+          }
+          case 18:
+          case 16: {
+            laborOfLoveWinners_.AddEntriesFrom(ref input, _repeated_laborOfLoveWinners_codec);
             break;
           }
         }

@@ -58,7 +58,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "X1JlcXVlc3QSGgoSZ2VuZXJhdGVfbmV3X3Rva2VuGAEgASgIIksKJ0NFY29u",
             "X0dldFRyYWRlT2ZmZXJBY2Nlc3NUb2tlbl9SZXNwb25zZRIgChh0cmFkZV9v",
             "ZmZlcl9hY2Nlc3NfdG9rZW4YASABKAkiLgoQQ0Vjb25JdGVtX0FjdGlvbhIM",
-            "CgRsaW5rGAEgASgJEgwKBG5hbWUYAiABKAki4wYKFUNFY29uSXRlbV9EZXNj",
+            "CgRsaW5rGAEgASgJEgwKBG5hbWUYAiABKAki8wYKFUNFY29uSXRlbV9EZXNj",
             "cmlwdGlvbhINCgVhcHBpZBgBIAEoBRIPCgdjbGFzc2lkGAIgASgEEhIKCmlu",
             "c3RhbmNlaWQYAyABKAQSEAoIY3VycmVuY3kYBCABKAgSGAoQYmFja2dyb3Vu",
             "ZF9jb2xvchgFIAEoCRIQCghpY29uX3VybBgGIAEoCRIWCg5pY29uX3VybF9s",
@@ -77,24 +77,25 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "bWFya2V0YWJsZRgZIAEoCBIcCgR0YWdzGBogAygLMg4uQ0Vjb25JdGVtX1Rh",
             "ZxIXCg9pdGVtX2V4cGlyYXRpb24YGyABKAkSFgoObWFya2V0X2ZlZV9hcHAY",
             "HCABKAUSJgoebWFya2V0X2J1eV9jb3VudHJ5X3Jlc3RyaWN0aW9uGB4gASgJ",
-            "EicKH21hcmtldF9zZWxsX2NvdW50cnlfcmVzdHJpY3Rpb24YHyABKAkiVgoZ",
-            "Q0Vjb25JdGVtX0Rlc2NyaXB0aW9uTGluZRIMCgR0eXBlGAEgASgJEg0KBXZh",
-            "bHVlGAIgASgJEg0KBWNvbG9yGAMgASgJEg0KBWxhYmVsGAQgASgJIpMBCg1D",
-            "RWNvbkl0ZW1fVGFnEg0KBWFwcGlkGAEgASgNEhAKCGNhdGVnb3J5GAIgASgJ",
-            "EhUKDWludGVybmFsX25hbWUYAyABKAkSHwoXbG9jYWxpemVkX2NhdGVnb3J5",
-            "X25hbWUYBCABKAkSGgoSbG9jYWxpemVkX3RhZ19uYW1lGAUgASgJEg0KBWNv",
-            "bG9yGAYgASgJMt8DCgRFY29uEoIBCh9DbGllbnRHZXRJdGVtU2hvcE92ZXJs",
-            "YXlBdXRoVVJMEi4uQ0Vjb25fQ2xpZW50R2V0SXRlbVNob3BPdmVybGF5QXV0",
-            "aFVSTF9SZXF1ZXN0Gi8uQ0Vjb25fQ2xpZW50R2V0SXRlbVNob3BPdmVybGF5",
-            "QXV0aFVSTF9SZXNwb25zZRJYChFHZXRBc3NldENsYXNzSW5mbxIgLkNFY29u",
-            "X0dldEFzc2V0Q2xhc3NJbmZvX1JlcXVlc3QaIS5DRWNvbl9HZXRBc3NldENs",
-            "YXNzSW5mb19SZXNwb25zZRKIAQohR2V0SW52ZW50b3J5SXRlbXNXaXRoRGVz",
-            "Y3JpcHRpb25zEjAuQ0Vjb25fR2V0SW52ZW50b3J5SXRlbXNXaXRoRGVzY3Jp",
-            "cHRpb25zX1JlcXVlc3QaMS5DRWNvbl9HZXRJbnZlbnRvcnlJdGVtc1dpdGhE",
-            "ZXNjcmlwdGlvbnNfUmVzcG9uc2USbQoYR2V0VHJhZGVPZmZlckFjY2Vzc1Rv",
-            "a2VuEicuQ0Vjb25fR2V0VHJhZGVPZmZlckFjY2Vzc1Rva2VuX1JlcXVlc3Qa",
-            "KC5DRWNvbl9HZXRUcmFkZU9mZmVyQWNjZXNzVG9rZW5fUmVzcG9uc2VCIKoC",
-            "HU9wZW5TdGVhbXdvcmtzLlByb3RvYnVmLldlYlVJ"));
+            "EicKH21hcmtldF9zZWxsX2NvdW50cnlfcmVzdHJpY3Rpb24YHyABKAkSDgoG",
+            "c2VhbGVkGCAgASgIImQKGUNFY29uSXRlbV9EZXNjcmlwdGlvbkxpbmUSDAoE",
+            "dHlwZRgBIAEoCRINCgV2YWx1ZRgCIAEoCRINCgVjb2xvchgDIAEoCRINCgVs",
+            "YWJlbBgEIAEoCRIMCgRuYW1lGAUgASgJIpMBCg1DRWNvbkl0ZW1fVGFnEg0K",
+            "BWFwcGlkGAEgASgNEhAKCGNhdGVnb3J5GAIgASgJEhUKDWludGVybmFsX25h",
+            "bWUYAyABKAkSHwoXbG9jYWxpemVkX2NhdGVnb3J5X25hbWUYBCABKAkSGgoS",
+            "bG9jYWxpemVkX3RhZ19uYW1lGAUgASgJEg0KBWNvbG9yGAYgASgJMt8DCgRF",
+            "Y29uEoIBCh9DbGllbnRHZXRJdGVtU2hvcE92ZXJsYXlBdXRoVVJMEi4uQ0Vj",
+            "b25fQ2xpZW50R2V0SXRlbVNob3BPdmVybGF5QXV0aFVSTF9SZXF1ZXN0Gi8u",
+            "Q0Vjb25fQ2xpZW50R2V0SXRlbVNob3BPdmVybGF5QXV0aFVSTF9SZXNwb25z",
+            "ZRJYChFHZXRBc3NldENsYXNzSW5mbxIgLkNFY29uX0dldEFzc2V0Q2xhc3NJ",
+            "bmZvX1JlcXVlc3QaIS5DRWNvbl9HZXRBc3NldENsYXNzSW5mb19SZXNwb25z",
+            "ZRKIAQohR2V0SW52ZW50b3J5SXRlbXNXaXRoRGVzY3JpcHRpb25zEjAuQ0Vj",
+            "b25fR2V0SW52ZW50b3J5SXRlbXNXaXRoRGVzY3JpcHRpb25zX1JlcXVlc3Qa",
+            "MS5DRWNvbl9HZXRJbnZlbnRvcnlJdGVtc1dpdGhEZXNjcmlwdGlvbnNfUmVz",
+            "cG9uc2USbQoYR2V0VHJhZGVPZmZlckFjY2Vzc1Rva2VuEicuQ0Vjb25fR2V0",
+            "VHJhZGVPZmZlckFjY2Vzc1Rva2VuX1JlcXVlc3QaKC5DRWNvbl9HZXRUcmFk",
+            "ZU9mZmVyQWNjZXNzVG9rZW5fUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtz",
+            "LlByb3RvYnVmLldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -110,8 +111,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEcon_GetTradeOfferAccessToken_Request), global::OpenSteamworks.Protobuf.WebUI.CEcon_GetTradeOfferAccessToken_Request.Parser, new[]{ "GenerateNewToken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEcon_GetTradeOfferAccessToken_Response), global::OpenSteamworks.Protobuf.WebUI.CEcon_GetTradeOfferAccessToken_Response.Parser, new[]{ "TradeOfferAccessToken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEconItem_Action), global::OpenSteamworks.Protobuf.WebUI.CEconItem_Action.Parser, new[]{ "Link", "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEconItem_Description), global::OpenSteamworks.Protobuf.WebUI.CEconItem_Description.Parser, new[]{ "Appid", "Classid", "Instanceid", "Currency", "BackgroundColor", "IconUrl", "IconUrlLarge", "Descriptions", "Tradable", "Actions", "OwnerDescriptions", "OwnerActions", "Fraudwarnings", "Name", "NameColor", "Type", "MarketName", "MarketHashName", "MarketFee", "ContainedItem", "MarketActions", "Commodity", "MarketTradableRestriction", "MarketMarketableRestriction", "Marketable", "Tags", "ItemExpiration", "MarketFeeApp", "MarketBuyCountryRestriction", "MarketSellCountryRestriction" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEconItem_DescriptionLine), global::OpenSteamworks.Protobuf.WebUI.CEconItem_DescriptionLine.Parser, new[]{ "Type", "Value", "Color", "Label" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEconItem_Description), global::OpenSteamworks.Protobuf.WebUI.CEconItem_Description.Parser, new[]{ "Appid", "Classid", "Instanceid", "Currency", "BackgroundColor", "IconUrl", "IconUrlLarge", "Descriptions", "Tradable", "Actions", "OwnerDescriptions", "OwnerActions", "Fraudwarnings", "Name", "NameColor", "Type", "MarketName", "MarketHashName", "MarketFee", "ContainedItem", "MarketActions", "Commodity", "MarketTradableRestriction", "MarketMarketableRestriction", "Marketable", "Tags", "ItemExpiration", "MarketFeeApp", "MarketBuyCountryRestriction", "MarketSellCountryRestriction", "Sealed" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEconItem_DescriptionLine), global::OpenSteamworks.Protobuf.WebUI.CEconItem_DescriptionLine.Parser, new[]{ "Type", "Value", "Color", "Label", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CEconItem_Tag), global::OpenSteamworks.Protobuf.WebUI.CEconItem_Tag.Parser, new[]{ "Appid", "Category", "InternalName", "LocalizedCategoryName", "LocalizedTagName", "Color" }, null, null, null, null)
           }));
     }
@@ -4073,6 +4074,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       marketFeeApp_ = other.marketFeeApp_;
       marketBuyCountryRestriction_ = other.marketBuyCountryRestriction_;
       marketSellCountryRestriction_ = other.marketSellCountryRestriction_;
+      sealed_ = other.sealed_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4753,6 +4755,33 @@ namespace OpenSteamworks.Protobuf.WebUI {
       marketSellCountryRestriction_ = null;
     }
 
+    /// <summary>Field number for the "sealed" field.</summary>
+    public const int SealedFieldNumber = 32;
+    private readonly static bool SealedDefaultValue = false;
+
+    private bool sealed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Sealed {
+      get { if ((_hasBits0 & 1024) != 0) { return sealed_; } else { return SealedDefaultValue; } }
+      set {
+        _hasBits0 |= 1024;
+        sealed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "sealed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSealed {
+      get { return (_hasBits0 & 1024) != 0; }
+    }
+    /// <summary>Clears the value of the "sealed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSealed() {
+      _hasBits0 &= ~1024;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4798,6 +4827,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (MarketFeeApp != other.MarketFeeApp) return false;
       if (MarketBuyCountryRestriction != other.MarketBuyCountryRestriction) return false;
       if (MarketSellCountryRestriction != other.MarketSellCountryRestriction) return false;
+      if (Sealed != other.Sealed) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4835,6 +4865,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasMarketFeeApp) hash ^= MarketFeeApp.GetHashCode();
       if (HasMarketBuyCountryRestriction) hash ^= MarketBuyCountryRestriction.GetHashCode();
       if (HasMarketSellCountryRestriction) hash ^= MarketSellCountryRestriction.GetHashCode();
+      if (HasSealed) hash ^= Sealed.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4952,6 +4983,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(250, 1);
         output.WriteString(MarketSellCountryRestriction);
       }
+      if (HasSealed) {
+        output.WriteRawTag(128, 2);
+        output.WriteBool(Sealed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5061,6 +5096,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(250, 1);
         output.WriteString(MarketSellCountryRestriction);
       }
+      if (HasSealed) {
+        output.WriteRawTag(128, 2);
+        output.WriteBool(Sealed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5146,6 +5185,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasMarketSellCountryRestriction) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(MarketSellCountryRestriction);
+      }
+      if (HasSealed) {
+        size += 2 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5237,6 +5279,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasMarketSellCountryRestriction) {
         MarketSellCountryRestriction = other.MarketSellCountryRestriction;
+      }
+      if (other.HasSealed) {
+        Sealed = other.Sealed;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5378,6 +5423,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 250: {
             MarketSellCountryRestriction = input.ReadString();
+            break;
+          }
+          case 256: {
+            Sealed = input.ReadBool();
             break;
           }
         }
@@ -5522,6 +5571,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             MarketSellCountryRestriction = input.ReadString();
             break;
           }
+          case 256: {
+            Sealed = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -5568,6 +5621,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       value_ = other.value_;
       color_ = other.color_;
       label_ = other.label_;
+      name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5681,6 +5735,32 @@ namespace OpenSteamworks.Protobuf.WebUI {
       label_ = null;
     }
 
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 5;
+    private readonly static string NameDefaultValue = "";
+
+    private string name_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_ ?? NameDefaultValue; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasName {
+      get { return name_ != null; }
+    }
+    /// <summary>Clears the value of the "name" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearName() {
+      name_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5700,6 +5780,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (Value != other.Value) return false;
       if (Color != other.Color) return false;
       if (Label != other.Label) return false;
+      if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5711,6 +5792,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasValue) hash ^= Value.GetHashCode();
       if (HasColor) hash ^= Color.GetHashCode();
       if (HasLabel) hash ^= Label.GetHashCode();
+      if (HasName) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5745,6 +5827,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(34);
         output.WriteString(Label);
       }
+      if (HasName) {
+        output.WriteRawTag(42);
+        output.WriteString(Name);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5771,6 +5857,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(34);
         output.WriteString(Label);
       }
+      if (HasName) {
+        output.WriteRawTag(42);
+        output.WriteString(Name);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5792,6 +5882,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasLabel) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Label);
+      }
+      if (HasName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5816,6 +5909,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasLabel) {
         Label = other.Label;
+      }
+      if (other.HasName) {
+        Name = other.Name;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5852,6 +5948,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             Label = input.ReadString();
             break;
           }
+          case 42: {
+            Name = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -5885,6 +5985,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 34: {
             Label = input.ReadString();
+            break;
+          }
+          case 42: {
+            Name = input.ReadString();
             break;
           }
         }
