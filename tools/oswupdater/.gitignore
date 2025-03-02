@@ -2,3 +2,5 @@ dist
 node_modules
 steamworks_dumper
 work
+SteamworksDumper.Standalone
+log.txt

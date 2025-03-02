@@ -149,6 +149,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
         var oldDumpedDataPath: string = `${projectDir}/dumped_data/`;
         oldDump = await ClientDump.ReadFromDirectory(oldDumpedDataPath);
         
+        //TODO: Callback dumping not implemented in new SteamworksDumper, so this will always fail
         if (fs.existsSync(`${versionedWorkDir}/dumped_data/callbacks.json`)) {
             console.info("Not dumping new steamclient, files already exist.")
         } else {

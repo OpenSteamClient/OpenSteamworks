@@ -73,10 +73,9 @@ export class ClientDump {
                 iface.name = iface.name.substring(0, iface.name.indexOf("Map"));
                 for (var funcAsJson of asJson.functions) {
                     // There's some functions with 0 args. These are unknown, but let's keep them since the headers fuck up without them. 
-                    funcAsJson.argc = funcAsJson.argc - 1;
-                    if (funcAsJson.argc < 0) {
-                        funcAsJson.name += "_DONTUSE"
-                    }
+                    //TODO: argc counting
+                    //funcAsJson.argc = funcAsJson.argc - 1;
+
 
                     iface.functions.push({
                         name: funcAsJson.name,

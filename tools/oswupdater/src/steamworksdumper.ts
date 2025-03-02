@@ -22,7 +22,7 @@ export class SteamworksDumper {
 
         mkdir(clientpath, true);
         try {
-            await execWrap(`SteamworksDumper.Standalone "${clientpath}" "${outpath}"`, {});
+            await execWrap(`./SteamworksDumper.Standalone "${clientpath}" "${outpath}"`, {});
         } catch (error) {
             throw "Failed to execute binary: " + error;
         } finally {
@@ -36,7 +36,8 @@ export class SteamworksDumper {
         
         console.info("Downloading SteamworksDumper.Standalone")
         try {
-            await downloadAndSaveAsync("https://github.com/OpenSteamClient/SteamworksDumper/releases/latest/download/SteamworksDumper.Standalone", "SteamworksDumper.Standalone");
+            // Sadly the download script does not support redirects, so this does not work with it.
+            await execWrap("wget https://github.com/OpenSteamClient/SteamworksDumper/releases/latest/download/SteamworksDumper.Standalone", {});
             await execWrap("chmod +x SteamworksDumper.Standalone", {});
         } catch (e) {
             throw "Failed to download SteamworksDumper.Standalone " + e;

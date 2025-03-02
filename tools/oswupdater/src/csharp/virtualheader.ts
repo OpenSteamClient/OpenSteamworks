@@ -226,7 +226,7 @@ export class VirtualHeader {
                     
                     // Clear the args array just in case
                     // Func has 0 argc so it should have no args
-                    funcToAdd.args = [];
+                    //funcToAdd.args = [];
                 }
 
                 if ((Number(dumpfunc.argc) != 0) && !funcToAdd.precedingLines.includes(argcCountNotMatchWarning)) {
