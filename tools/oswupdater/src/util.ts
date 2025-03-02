@@ -3,6 +3,7 @@ import fs from "fs";
 import pathlib from "path";
 import util from "util";
 import { spawn } from "child_process";
+import https from "https";
 
 export function mkdir(path: string, recursive: boolean = false): void {
     if (!fs.existsSync(path)){
@@ -16,6 +17,23 @@ export function rm(path: string): void {
     }
 }
 
+export function downloadAndSaveAsync(source: string, destination: string): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+        try {
+            const file = fs.createWriteStream(destination);
+            https.get(source, (response) => {
+                response.pipe(file);
+
+                file.on("finish", () => {
+                    file.close();
+                    resolve();
+                });
+            });
+        } catch (e) {
+            reject(e);
+        }
+    })
+}
 
 export function execWrap(command: string, options: SpawnOptionsWithoutStdio): Promise<string> {
     return new Promise<string>((resolve, reject) => {

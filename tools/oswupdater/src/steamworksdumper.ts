@@ -1,12 +1,12 @@
 import fs from "fs"
-import { execWrap, mkdir } from "./util";
+import { downloadAndSaveAsync, execWrap, mkdir } from "./util";
 
 export class SteamworksDumper {
     constructor() {
        
     }
     isSetup(): boolean {
-        return fs.existsSync("steamworks_dumper") && fs.existsSync("steamworks_dumper/build/steamworks_dumper");
+        return fs.existsSync("SteamworksDumper.Standalone");
     }
     async dump(clientpath: string, outpath: string): Promise<void> {
         if (!this.isSetup()) {
@@ -22,49 +22,26 @@ export class SteamworksDumper {
 
         mkdir(clientpath, true);
         try {
-            await execWrap(`steamworks_dumper/build/steamworks_dumper "${clientpath}" "${outpath}"`, {});
+            await execWrap(`SteamworksDumper.Standalone "${clientpath}" "${outpath}"`, {});
         } catch (error) {
-            throw "Failed to execute compiled binary: " + error;
+            throw "Failed to execute binary: " + error;
         } finally {
             return;
         }
     }
     async setup(): Promise<void> {
-        if (fs.existsSync("steamworks_dumper")) {
-            fs.rmSync("steamworks_dumper/", { recursive: true, force: true})
+        if (fs.existsSync("SteamworksDumper.Standalone")) {
+            fs.rmSync("SteamworksDumper.Standalone")
         }
         
-        console.info("Downloading Rosentti/steamworks_dumper git repo")
+        console.info("Downloading SteamworksDumper.Standalone")
         try {
-            await execWrap("git clone https://github.com/Rosentti/steamworks_dumper.git", {});
+            await downloadAndSaveAsync("https://github.com/OpenSteamClient/SteamworksDumper/releases/latest/download/SteamworksDumper.Standalone", "SteamworksDumper.Standalone");
+            await execWrap("chmod +x SteamworksDumper.Standalone", {});
         } catch (e) {
-            throw "Failed to download Rosentti/steamworks_dumper " + e;
+            throw "Failed to download SteamworksDumper.Standalone " + e;
         } finally {
-            console.log("Downloaded Rosentti/steamworks_dumper successfully");
-        }
-
-        console.info("Compiling steamworks_dumper")
-
-        try {
-            fs.mkdirSync("steamworks_dumper/build")
-        } catch (e) {}
-        
-        try {
-            await execWrap('cmake ..', {
-                cwd: 'steamworks_dumper/build',
-            });
-        } catch (error) {
-            throw "Failed to run cmake for build file generation: " + error;
-        } finally {
-            try {
-                await execWrap('cmake --build . --config MinSizeRel --parallel 24', {
-                    cwd: 'steamworks_dumper/build',
-                });
-            } catch (error) {
-                throw "Failed to run cmake for compilation: " + error;
-            } finally {
-                console.info("Compilation finished")
-            }
+            console.log("Downloaded SteamworksDumper.Standalone successfully");
         }
     }
 }

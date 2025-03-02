@@ -1,6 +1,7 @@
 import https from 'https';
 import fs from 'fs';
 import * as VDF from '@node-steam/vdf';
+import { downloadAndSaveAsync } from './util';
 
 // A zip as defined in the downloadable manifest
 interface C2SClientZip {
@@ -31,21 +32,7 @@ export class ClientZip implements C2SClientZip {
     }
 
     DownloadThis(destination: string): Promise<void> {
-        return new Promise<void>((resolve, reject) => {
-            try {
-                const file = fs.createWriteStream(destination);
-                https.get(this.fullURL, (response) => {
-                    response.pipe(file);
-
-                    file.on("finish", () => {
-                        file.close();
-                        resolve();
-                    });
-                });
-            } catch (e) {
-                reject(e);
-            }
-        })
+        return downloadAndSaveAsync(this.fullURL, destination);
     }
     
     get fullURL(): string {
