@@ -1,5 +1,7 @@
 #!/bin/sh
 set -e
+cd "$(dirname "$0")"
+
 source ./nuget.sh
 
 OSWVersion="$(dotnet msbuild -getproperty:CommonVersion Directory.Build.props)"
