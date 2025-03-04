@@ -3,6 +3,14 @@ set -e
 
 mkdir -p artifacts/package/pkgsrc
 PKGSRC_DIRECTORY="$(realpath artifacts/package/pkgsrc)"
+
+if ! [ -x "$(command -v nuget)" ]; then
+  echo "No nuget! Downloading..."
+  sudo curl -o /tmp/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  alias nuget="mono /tmp/nuget.exe"
+else
+  alias nuget="nuget"
+fi
   
 nuget_add ()
 {
