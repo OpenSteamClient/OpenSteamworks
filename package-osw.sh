@@ -1,20 +1,6 @@
 #!/bin/sh
 set -e
-
-mkdir -p artifacts/package/pkgsrc
-PKGSRC_DIRECTORY="$(realpath artifacts/package/pkgsrc)"
-NUGET_CMD="nuget"
-
-if ! [ -x "$(command -v nuget)" ]; then
-  echo "No nuget! Downloading..."
-  sudo curl -o /tmp/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-  NUGET_CMD="mono /tmp/nuget.exe"
-fi
-  
-nuget_add ()
-{
-  $NUGET_CMD add "$1" -Source "$PKGSRC_DIRECTORY"
-}
+source ./nuget.sh
 
 OSWVersion="$(dotnet msbuild -getproperty:CommonVersion Directory.Build.props)"
 
