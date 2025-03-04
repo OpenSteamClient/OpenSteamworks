@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ../nuget.sh
+. ../nuget.sh
 
 dotnet publish -c Release --runtime win-x64
 dotnet publish -c Release --runtime linux-x64
