@@ -2,6 +2,12 @@
 set -e
 
 mkdir -p artifacts/package/pkgsrc
+PKGSRC_DIRECTORY="$(realpath artifacts/package/pkgsrc)"
+  
+nuget_add ()
+{
+  nuget add "$1" -Source "$PKGSRC_DIRECTORY"
+}
 
 OSWVersion="$(dotnet msbuild -getproperty:CommonVersion Directory.Build.props)"
 
@@ -19,26 +25,26 @@ cd OpenSteamworks.Data
 dotnet pack -c Release /p:IsPacking=true
 cd ..
 
-cd artifacts/package
-nuget add ./release/OpenSteamworks.Data."$OSWVersion".nupkg -Source ./pkgsrc/
-nuget add ./release/OpenSteamworks.Protobuf."$OSWVersion".nupkg -Source ./pkgsrc/
-cd ../..
+cd artifacts/package/release
+nuget_add ./OpenSteamworks.Data."$OSWVersion".nupkg
+nuget_add ./OpenSteamworks.Protobuf."$OSWVersion".nupkg
+cd ../../..
 
 cd OpenSteamworks
 ./package.sh
 cd ..
 
-cd artifacts/package
-nuget add ./release/OpenSteamworks."$OSWVersion".nupkg -Source ./pkgsrc/
-cd ../..
+cd artifacts/package/release
+nuget_add ./OpenSteamworks."$OSWVersion".nupkg
+cd ../../..
 
 cd OpenSteamworks.Messaging
 dotnet pack -c Release /p:IsPacking=true
 cd ..
 
-cd artifacts/package
-nuget add ./release/OpenSteamworks.Messaging."$OSWVersion".nupkg -Source ./pkgsrc/
-cd ../..
+cd artifacts/package/release
+nuget_add ./OpenSteamworks.Messaging."$OSWVersion".nupkg
+cd ../../..
 
 cd OpenSteamworks.Messaging.SharedConnection
 dotnet pack -c Release /p:IsPacking=true

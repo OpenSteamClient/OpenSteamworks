@@ -14,7 +14,7 @@
 				<dependency id="OpenSteamworks.Data" version="${OSW_VERSION}" exclude="Build,Analyzers" />
 				<dependency id="OpenSteamClient.Logging" version="1.0.3" exclude="Build,Analyzers" />
 				<dependency id="OpenSteamworks.Protobuf" version="${OSW_VERSION}" exclude="Build,Analyzers" />
-				<dependency id="OpenSteamworks.Native" version="1.1.5" exclude="Build,Analyzers" />
+				<dependency id="OpenSteamworks.Native" version="1.1.8" exclude="Build,Analyzers" />
 				<dependency id="OpenSteamworks.KeyValue" version="1.0.7" exclude="Build,Analyzers" />
 				<dependency id="OpenSteamworks.Utils" version="1.0.3" exclude="Build,Analyzers" />
 				<dependency id="System.IO.Hashing" version="8.0.0" exclude="Build,Analyzers" />

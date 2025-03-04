@@ -45,7 +45,7 @@
 
     <!-- When you change any of these, you MUST also update the .nuspec file manually. Blame .NET -->
     <PackageReference Include="OpenSteamClient.Logging" Version="1.0.3"/>
-    <PackageReference Include="OpenSteamworks.Native" Version="1.1.5"/>
+    <PackageReference Include="OpenSteamworks.Native" Version="1.1.8"/>
     <PackageReference Include="OpenSteamworks.KeyValue" Version="1.0.7"/>
     <PackageReference Include="OpenSteamworks.Utils" Version="1.0.3"/>
     <PackageReference Include="System.IO.Hashing" Version="8.0.0" />
