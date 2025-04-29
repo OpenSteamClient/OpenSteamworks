@@ -12,7 +12,7 @@ import { InterfaceConsts } from './csharp/interfaceconsts';
 import { ShimVersionInfo } from './cpp/shimversion';
 import { CppVirtualHeader } from './cpp/virtualheader';
 import { InterfaceConstsCpp } from './cpp/interfaceconsts';
-    
+
 export async function Main(protobufonly: boolean = false): Promise<number> {
     console.info("Starting OSWUpdater");
 
@@ -37,7 +37,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
         console.error("Failed to create work folders, aborting");
         console.error(e);
         return 1;
-    } 
+    }
 
     if (!protobufonly) {
         console.info("Reading current manifest..")
@@ -48,7 +48,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
         var oldManifestFilePathOSX: string = `${projectDir}/Manifests/steam_client_osx.vdf`
         var oldManifestFilePath: string = `${projectDir}/Manifests/steam_client_ubuntu12.vdf`
         var oldManifest: ClientManifest = ClientManifest.LoadFromFile(oldManifestFilePath);
-        
+
         console.info("Downloading latest client manifests..")
         var newManifestWin32: ClientManifest = await ClientManifest.UseNewest("win32");
         var newManifestOSX: ClientManifest = await ClientManifest.UseNewest("osx");
@@ -61,14 +61,14 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
         mkdir(`${versionedWorkDir}/extracted`)
         mkdir(`${versionedWorkDir}/dumped_data`)
 
-        // Save the manifest on disk 
-        
+        // Save the manifest on disk
+
         var newManifestFilePathWin32: string = `${versionedWorkDir}/steam_client_win32.vdf`;
         {
             if (!fs.existsSync(newManifestFilePathWin32)) {
                 console.info(`Saving Win32 manifest to ${newManifestFilePathWin32}`)
                 newManifestWin32.SaveManifestToFile(newManifestFilePathWin32);
-            } 
+            }
         }
 
         var newManifestFilePathOSX: string = `${versionedWorkDir}/steam_client_osx.vdf`;
@@ -76,7 +76,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
             if (!fs.existsSync(newManifestFilePathOSX)) {
                 console.info(`Saving OSX manifest to ${newManifestFilePathOSX}`)
                 newManifestOSX.SaveManifestToFile(newManifestFilePathOSX);
-            } 
+            }
         }
 
         var newManifestFilePath: string = `${versionedWorkDir}/steam_client_ubuntu12.vdf`;
@@ -84,9 +84,9 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
             if (!fs.existsSync(newManifestFilePath)) {
                 console.info(`Saving manifest to ${newManifestFilePath}`)
                 newManifest.SaveManifestToFile(newManifestFilePath);
-            } 
+            }
         }
-        
+
         if (oldManifest.version != newManifest.version) {
             console.info(`Version changed ${oldManifest.version} -> ${newManifest.version}`)
         } else {
@@ -110,7 +110,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
             }
         }
 
-        
+
         console.info(`Extracting ${binsDownloadTarget} to ${binsExtractedTarget}`)
 
         mkdir(binsExtractedTarget);
@@ -148,30 +148,28 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
         var oldDump: ClientDump;
         var oldDumpedDataPath: string = `${projectDir}/dumped_data/`;
         oldDump = await ClientDump.ReadFromDirectory(oldDumpedDataPath);
-        
+
         //TODO: Callback dumping not implemented in new SteamworksDumper, so this will always fail
         if (fs.existsSync(`${versionedWorkDir}/dumped_data/callbacks.json`)) {
             console.info("Not dumping new steamclient, files already exist.")
         } else {
             console.info("Dumping new steamclient...");
             let dumper = new SteamworksDumper();
-            await dumper.dump(steamclientLocation, `${versionedWorkDir}/dumped_data/`); 
+            await dumper.dump(steamclientLocation, `${versionedWorkDir}/dumped_data/`);
         }
 
         console.info("Reading new dumped_data...");
         var newDump: ClientDump;
         var newDumpedDataPath: string = `${versionedWorkDir}/dumped_data/`;
         newDump = await ClientDump.ReadFromDirectory(newDumpedDataPath);
-        
+
         console.info("Calculating differences (1/2)...")
         var diff: ClientDifference = oldDump.CompareTo(newDump)
 
         console.info("Differences: ")
         printDifference(diff.interfaces, "interfaces", "name", "functions have changed");
         printDifference(diff.methods, "methods", "name", "arg count, other changes are undetectable");
-        printDifference(diff.callbacks, "callbacks", "name", "size");
-        printDifference(diff.eMsgs, "EMsgs", "name", "name");
-        
+
         console.info("Generating new headers...")
         for (const iface of newDump.interfaces) {
             const index = newDump.interfaces.indexOf(iface);
@@ -210,7 +208,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
                 await cheader.OverwriteOldFile();
             }
         }
-        
+
         console.info("Updating installed manifests...")
         rm(oldManifestFilePath);
         fs.cpSync(newManifestFilePath, oldManifestFilePath)
@@ -221,11 +219,11 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
         rm(oldManifestFilePathOSX);
         fs.cpSync(newManifestFilePathOSX, oldManifestFilePathOSX)
 
-        
+
         console.info("Copying new dumped_data to project dir...")
         fs.rmSync(oldDumpedDataPath, {recursive: true, force: true});
         fs.cpSync(`${versionedWorkDir}/dumped_data`, oldDumpedDataPath, { recursive: true });
-        
+
         console.info("Generating new VersionInfo.cs")
         var versionFilePath = `${projectDir}/OpenSteamworks/Generated/VersionInfo.cs`;
         if (fs.existsSync(versionFilePath)) {
@@ -262,7 +260,7 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
     } else {
         console.info("Skipping most operations due to protobufonly")
     }
-    
+
     console.info("Updating protobufs...");
 
     var protocdircsharp = `${projectDir}/OpenSteamworks.Protobuf/Protobuf`;
@@ -272,13 +270,13 @@ export async function Main(protobufonly: boolean = false): Promise<number> {
     var protocdircpp = `${projectDir}/OpenSteamworks.Native/protobufhack/generated`;
     fs.rmSync(protocdircpp, { recursive: true, force: true });
     mkdir(protocdircpp);
-    fs.rmSync(`${workDir}/Protobufs`, { recursive: true, force: true }); 
+    fs.rmSync(`${workDir}/Protobufs`, { recursive: true, force: true });
 
     await ProcessProtobuf(projectDir, `${workDir}/Protobufs`, protocdircsharp, protocdircpp);
     await execWrap("node generatemaincpp.js", { cwd: `${projectDir}/OpenSteamworks.Native/protobufhack` });
 
     console.info("Done")
-    
+
     return 0;
 }
 
@@ -287,7 +285,7 @@ function printDifference<T>(diff: Difference<T>, name: string, property: string,
     if (diff.additions.length > 0) {
         console.info(diff.additions.map(val => (val as any)[property]).join(", "))
     }
-    
+
     console.info(`${diff.removals.length} removed ${name}`)
     if (diff.removals.length > 0) {
         console.info(diff.removals.map(val => (val as any)[property]).join(", "))

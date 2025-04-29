@@ -15,7 +15,7 @@ public sealed partial class CallbackManager : IDisposable {
 	private readonly ISteamClientImpl steamClient;
 	private readonly IClientUtils clientUtils;
 	private readonly IClientController clientController;
-	
+
 	private readonly ILogger callbackLogger;
 	private readonly ILogger callbackContentLogger;
 
@@ -30,16 +30,16 @@ public sealed partial class CallbackManager : IDisposable {
 	/// </summary>
 	public double DeltaTime
 		=> timeBetweenFrames.Elapsed.TotalSeconds;
-	
+
 	public bool IsManualPump { get; }
-	
+
 	internal CallbackManager(ISteamClientImpl steamClientImpl, ISteamClient steamClient, ILoggerFactory loggerFactory, bool logIncomingCallbacks, bool logCallbackContents, bool isManualPump)
 	{
 		this.IsManualPump = isManualPump;
 		this.steamClient = steamClientImpl;
 		this.clientUtils = steamClient.IClientUtils;
 		this.clientController = steamClient.IClientController;
-		
+
 		this.callbackLogger = loggerFactory.CreateLogger("Callbacks");
 		this.callbackContentLogger = loggerFactory.CreateLogger("CallbackContent");
 
@@ -51,7 +51,8 @@ public sealed partial class CallbackManager : IDisposable {
 			callbackLogger.Info("CallbackThread in automatic mode!");
 			callbackThread = new(CallbackThreadMain)
 			{
-				Name = "CallbackThread"
+				Name = "CallbackThread",
+                IsBackground = true
 			};
 		}
 		else
@@ -94,6 +95,7 @@ public sealed partial class CallbackManager : IDisposable {
 	private const int MAX_PAUSE_LOCKS = 10;
 
 	// Make sure multiple threads calling don't collide and resume the thread by refcounting.
+    //TODO: This could be refactored to use RefCount
 	private readonly SemaphoreSlim threadsPausedSemaphore = new(MAX_PAUSE_LOCKS, MAX_PAUSE_LOCKS);
 
 	// CPU-light pause system with Monitor.Wait and Monitor.Pulse.
@@ -147,37 +149,39 @@ public sealed partial class CallbackManager : IDisposable {
 			if (!isDisposing) throw;
 		}
 	}
-	private void LogCallback(CallbackMsg_t callbackMsg) 
-	{
+	private void LogCallback(CallbackMsg_t callbackMsg)
+    {
+        // Don't log this callback, it is extremely spewy
+        if (callbackMsg.CallbackID == CallbackMetadata.HTML_NeedsPaint_t_ID)
+            return;
+
 		if (!logIncomingCallbacks)
 		{
 			return;
 		}
-			
-		CallbackNameMap.CallbackNames.TryGetValue(callbackMsg.CallbackID, out var callbackName);
 
 		if (!logCallbackContents)
 		{
-			callbackLogger.Debug($"Received callback [ID: {callbackMsg.CallbackID}, name: {callbackName ?? "Unknown"}, param length: {callbackMsg.CallbackData.Length}");
+			callbackLogger.Debug($"Received callback [ID: {callbackMsg.CallbackID}, param length: {callbackMsg.CallbackData.Length}");
 			return;
 		}
-			
+
 		// Data copy happens here
 		byte[] copied = callbackMsg.CallbackData.ToArray();
-			
-		callbackLogger.Debug($"Received callback [ID: {callbackMsg.CallbackID}, name: {callbackName ?? "Unknown"}, param length: {copied.Length}, data: {string.Join(" ", copied)}]");
-			
+
+		callbackLogger.Debug($"Received callback [ID: {callbackMsg.CallbackID}, param length: {copied.Length}, data: {string.Join(" ", copied)}]");
+
 		string callbackString = CallbackMetadata.CallbackToString(callbackMsg.CallbackID, copied);
-		if (!string.IsNullOrEmpty(callbackString)) 
+		if (!string.IsNullOrEmpty(callbackString))
 		{
 			callbackContentLogger.Debug(callbackString);
 		}
-		else 
+		else
 		{
 			callbackContentLogger.Debug("(no information available)");
 		}
 	}
-	
+
 	private Stopwatch timeBetweenFrames = new();
 	private bool BRunFrame()
 	{
@@ -187,7 +191,7 @@ public sealed partial class CallbackManager : IDisposable {
 			timeBetweenFrames.Reset();
 			timeBetweenFrames.Start();
 		}
-		
+
 		steamClient.IClientEngine.RunFrame();
 		clientController.RunFrame();
 
@@ -198,11 +202,11 @@ public sealed partial class CallbackManager : IDisposable {
 			hadCallbacks = true;
 			if (!shouldThreadRun) { StopAndReportDeltaTime(); return false; }
 		}
-		
+
 		using (new UsingSemaphore(frameTasksSem))
 		{
 			isFrameTasksLocked = true;
-			
+
 			foreach (var item in frameTasks)
 			{
 				item.Invoke();
@@ -215,17 +219,17 @@ public sealed partial class CallbackManager : IDisposable {
 
 			isFrameTasksLocked = false;
 		}
-		
+
 		StopAndReportDeltaTime();
 		return hadCallbacks;
 	}
 
 	// Tries to get and process a callback.
 	// If there's no callbacks, does nothing.
-	private bool BProcessCallback() 
+	private bool BProcessCallback()
 	{
 		var hadCallback = steamClient.BGetCallback(out CallbackMsg_t callbackMsg);
-		if (hadCallback) 
+		if (hadCallback)
 		{
 			// If we have a callback, process it.
 			LogCallback(callbackMsg);
@@ -235,7 +239,7 @@ public sealed partial class CallbackManager : IDisposable {
 
 		return hadCallback;
 	}
-	
+
 	/// <summary>
 	/// Pumps the CallbackManager manually. This function may pause for an undefined amount of time.
 	/// </summary>
@@ -247,7 +251,7 @@ public sealed partial class CallbackManager : IDisposable {
 
 		if (!shouldThreadRun)
 			return;
-		
+
 		// If the loop is requested to stop, freeze here in the pump function
 		if (pauseTcs is not null) {
 
@@ -267,12 +271,12 @@ public sealed partial class CallbackManager : IDisposable {
 			if (!shouldThreadRun) { return; }
 		}
 	}
-	
-	private void CallbackThreadMain() 
+
+	private void CallbackThreadMain()
 	{
 		breakLoop:
 		while (shouldThreadRun)
-		{			
+		{
 			// If the loop is requested to stop, stop it
 			if (pauseTcs is not null) {
 
@@ -291,14 +295,14 @@ public sealed partial class CallbackManager : IDisposable {
 			{
 				if (!shouldThreadRun) { goto breakLoop; }
 
-				Thread.Sleep(15); // Roughly 66 "FPS". Should keep chrome stuff responsive enough. 
+				Thread.Sleep(15); // Roughly 66 "FPS". Should keep chrome stuff responsive enough.
 			}
 
 			// Run a frame.
 			// - Process all the callbacks we get during that frame, and start the next frame.
-			
+
 			// Process all the callbacks of the current frame with 0 delay
-			while (BRunFrame()) { 
+			while (BRunFrame()) {
 				if (!shouldThreadRun) { goto breakLoop; }
 			}
 		}
@@ -316,7 +320,7 @@ public sealed partial class CallbackManager : IDisposable {
 	{
 		private readonly Action? action;
 		private readonly CallbackManager callbackManager;
-		
+
 		public FrameTaskDisposable(CallbackManager callbackManager, Action? action)
 		{
 			this.action = action;
@@ -340,13 +344,13 @@ public sealed partial class CallbackManager : IDisposable {
 		{
 			if (isFrameTasksLocked)
 				throw new InvalidOperationException("Attempted to modify frame tasks list from frame task!");
-			
+
 			if (oneShot)
 			{
 				oneShotFrameTasks.Add(action);
 				return new FrameTaskDisposable(this, null);
 			}
-			
+
 			frameTasks.Add(action);
 			return new FrameTaskDisposable(this, action);
 		}
@@ -361,7 +365,7 @@ public sealed partial class CallbackManager : IDisposable {
 		{
 			if (isFrameTasksLocked)
 				throw new InvalidOperationException("Attempted to modify frame tasks list from frame task!");
-			
+
 			frameTasks.Remove(action);
 		}
 	}
@@ -404,7 +408,7 @@ public sealed partial class CallbackManager : IDisposable {
 				if (taskCompletionSource.Task.IsCompleted) {
 					return;
 				}
-				
+
 				handler.Dispose();
 				taskCompletionSource.SetCanceled(cancellationToken);
 			}

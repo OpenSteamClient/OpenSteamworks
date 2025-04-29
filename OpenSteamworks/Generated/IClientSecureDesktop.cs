@@ -16,7 +16,7 @@ namespace OpenSteamworks.Generated;
 [CppClass]
 public unsafe interface IClientSecureDesktop
 {
-    public bool BStartStreaming();  // argc: 0, index: 1, ipc args: [], ipc returns: [boolean]
-    public void StopStreaming();  // argc: 0, index: 2, ipc args: [], ipc returns: []
-    public void SendSAS();  // argc: 0, index: 3, ipc args: [], ipc returns: []
+    public bool BStartStreaming();  // argc: -1, index: 1, ipc args: [], ipc returns: [boolean]
+    public void StopStreaming();  // argc: -1, index: 2, ipc args: [], ipc returns: []
+    public void SendSAS();  // argc: -1, index: 3, ipc args: [], ipc returns: []
 }

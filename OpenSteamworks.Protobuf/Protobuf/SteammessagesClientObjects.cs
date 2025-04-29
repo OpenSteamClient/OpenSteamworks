@@ -118,7 +118,7 @@ namespace OpenSteamworks.Protobuf {
             "bVBlcmZEaWFnbm9zdGljSW5mbxIvCgdlbnRyaWVzGAEgAygLMh4uQ01zZ1N5",
             "c3RlbVBlcmZEaWFnbm9zdGljRW50cnkSMwoKaW50ZXJmYWNlcxgCIAMoCzIf",
             "LkNNc2dTeXN0ZW1QZXJmTmV0d29ya0ludGVyZmFjZRIWCg5iYXR0ZXJ5X3Rl",
-            "bXBfYxgDIAEoAiKxCAoUQ01zZ1N5c3RlbVBlcmZMaW1pdHMSIwobY3B1X2dv",
+            "bXBfYxgDIAEoAiKvBwoUQ01zZ1N5c3RlbVBlcmZMaW1pdHMSIwobY3B1X2dv",
             "dmVybm9yX21hbnVhbF9taW5fbWh6GAEgASgFEiMKG2NwdV9nb3Zlcm5vcl9t",
             "YW51YWxfbWF4X21oehgCIAEoBRIZChFmc3Jfc2hhcnBuZXNzX21pbhgDIAEo",
             "BRIZChFmc3Jfc2hhcnBuZXNzX21heBgEIAEoBRImCh5ncHVfcGVyZm9ybWFu",
@@ -130,275 +130,272 @@ namespace OpenSteamworks.Protobuf {
             "MhUuRUdQVVBlcmZvcm1hbmNlTGV2ZWwSJQodZGlzcGxheV9yZWZyZXNoX21h",
             "bnVhbF9oel9taW4YCyABKAUSJQodZGlzcGxheV9yZWZyZXNoX21hbnVhbF9o",
             "el9tYXgYDCABKAUSGQoRZnBzX2xpbWl0X29wdGlvbnMYDSADKAUSFQoNdGRw",
-            "X2xpbWl0X21pbhgOIAEoBRIVCg10ZHBfbGltaXRfbWF4GA8gASgFEhgKEGlz",
-            "X25pc19zdXBwb3J0ZWQYECABKAgSGQoRbmlzX3NoYXJwbmVzc19taW4YESAB",
-            "KAUSGQoRbmlzX3NoYXJwbmVzc19tYXgYEiABKAUSLgomZGlzcGxheV9leHRl",
-            "cm5hbF9yZWZyZXNoX21hbnVhbF9oel9taW4YEyABKAUSLgomZGlzcGxheV9l",
-            "eHRlcm5hbF9yZWZyZXNoX21hbnVhbF9oel9tYXgYFCABKAUSIgoaZnBzX2xp",
-            "bWl0X29wdGlvbnNfZXh0ZXJuYWwYFSADKAUSGAoQaXNfdnJyX3N1cHBvcnRl",
-            "ZBgXIAEoCBIyCippc19keW5hbWljX3JlZnJlc2hfcmF0ZV9pbl9zdGVhbV9z",
-            "dXBwb3J0ZWQYGCABKAgSMAooaXNfc3BsaXRfc2NhbGluZ19hbmRfZmlsdGVy",
-            "aW5nX3N1cHBvcnRlZBgZIAEoCBI9Ch9zcGxpdF9zY2FsaW5nX2ZpbHRlcnNf",
-            "YXZhaWxhYmxlGBogAygOMhQuRVNwbGl0U2NhbGluZ0ZpbHRlchI9Ch9zcGxp",
-            "dF9zY2FsaW5nX3NjYWxlcnNfYXZhaWxhYmxlGBsgAygOMhQuRVNwbGl0U2Nh",
-            "bGluZ1NjYWxlchInCh9kaXNhYmxlX3JlZnJlc2hfcmF0ZV9tYW5hZ2VtZW50",
-            "GB4gASgIIqUGChxDTXNnU3lzdGVtUGVyZlNldHRpbmdzR2xvYmFsEh4KFmRp",
-            "YWdub3N0aWNfdXBkYXRlX3JhdGUYASABKAISWQoac3lzdGVtX3RyYWNlX3Nl",
-            "cnZpY2Vfc3RhdGUYAiABKA4yFC5FU3lzdGVtU2VydmljZVN0YXRlOh9FU3lz",
-            "dGVtU2VydmljZVN0YXRlX1VuYXZhaWxhYmxlEl8KIGdyYXBoaWNzX3Byb2Zp",
-            "bGluZ19zZXJ2aWNlX3N0YXRlGAMgASgOMhQuRVN5c3RlbVNlcnZpY2VTdGF0",
-            "ZTofRVN5c3RlbVNlcnZpY2VTdGF0ZV9VbmF2YWlsYWJsZRJZChpwZXJmX292",
-            "ZXJsYXlfc2VydmljZV9zdGF0ZRgEIAEoDjIULkVTeXN0ZW1TZXJ2aWNlU3Rh",
-            "dGU6H0VTeXN0ZW1TZXJ2aWNlU3RhdGVfVW5hdmFpbGFibGUSWAoScGVyZl9v",
-            "dmVybGF5X2xldmVsGAUgASgOMhouRUdyYXBoaWNzUGVyZk92ZXJsYXlMZXZl",
-            "bDogRUdyYXBoaWNzUGVyZk92ZXJsYXlMZXZlbF9IaWRkZW4SLwonaXNfc2hv",
-            "d19wZXJmX292ZXJsYXlfb3Zlcl9zdGVhbV9lbmFibGVkGAYgASgIEiQKHGlz",
-            "X2FkdmFuY2VkX3NldHRpbmdzX2VuYWJsZWQYByABKAgSLgomYWxsb3dfZXh0",
-            "ZXJuYWxfZGlzcGxheV9yZWZyZXNoX2NvbnRyb2wYCCABKAgSVgobaGRyX29u",
-            "X3Nkcl90b25lbWFwX29wZXJhdG9yGAwgASgOMhQuRUhEUlRvbmVNYXBPcGVy",
-            "YXRvcjobRUhEUlRvbmVNYXBPcGVyYXRvcl9JbnZhbGlkEiQKHGlzX2hkcl9k",
-            "ZWJ1Z19oZWF0bWFwX2VuYWJsZWQYDSABKAgSKwodZm9yY2VfaGRyX3dpZGVf",
-            "Z2FtbXV0X2Zvcl9zZHIYDyABKAg6BHRydWUSHQoVc2RyX3RvX2hkcl9icmln",
-            "aHRuZXNzGBYgASgCEiMKG2lzX2NvbG9yX21hbmFnZW1lbnRfZW5hYmxlZBgV",
-            "IAEoCCKiBwocQ01zZ1N5c3RlbVBlcmZTZXR0aW5nc1BlckFwcBIiChpncHVf",
-            "cGVyZm9ybWFuY2VfbWFudWFsX21oehgBIAEoBRIRCglmcHNfbGltaXQYAiAB",
-            "KAUSJgoeaXNfdmFyaWFibGVfcmVzb2x1dGlvbl9lbmFibGVkGAMgASgIEicK",
-            "H2lzX2R5bmFtaWNfcmVmcmVzaF9yYXRlX2VuYWJsZWQYBCABKAgSEQoJdGRw",
-            "X2xpbWl0GAUgASgFEjkKDGNwdV9nb3Zlcm5vchgGIAEoDjINLkVDUFVHb3Zl",
-            "cm5vcjoURUNQVUdvdmVybm9yX0ludmFsaWQSHwoXY3B1X2dvdmVybm9yX21h",
-            "bnVhbF9taHoYByABKAUSFgoOc2NhbGluZ19maWx0ZXIYCCABKAUSFQoNZnNy",
-            "X3NoYXJwbmVzcxgJIAEoBRIcChRpc19mcHNfbGltaXRfZW5hYmxlZBgKIAEo",
-            "CBIcChRpc190ZHBfbGltaXRfZW5hYmxlZBgLIAEoCBIjChtpc19sb3dfbGF0",
-            "ZW5jeV9tb2RlX2VuYWJsZWQYDCABKAgSIQoZZGlzcGxheV9yZWZyZXNoX21h",
-            "bnVhbF9oehgNIAEoBRIkChxpc19nYW1lX3BlcmZfcHJvZmlsZV9lbmFibGVk",
-            "GA4gASgIElIKFWdwdV9wZXJmb3JtYW5jZV9sZXZlbBgPIAEoDjIVLkVHUFVQ",
-            "ZXJmb3JtYW5jZUxldmVsOhxFR1BVUGVyZm9ybWFuY2VMZXZlbF9JbnZhbGlk",
-            "EhUKDW5pc19zaGFycG5lc3MYECABKAUSKgoiZGlzcGxheV9leHRlcm5hbF9y",
-            "ZWZyZXNoX21hbnVhbF9oehgRIAEoBRIaChJmcHNfbGltaXRfZXh0ZXJuYWwY",
-            "EiABKAUSGgoSaXNfdGVhcmluZ19lbmFibGVkGBMgASgIEhYKDmlzX3Zycl9l",
-            "bmFibGVkGBQgASgIEikKIXVzZV9keW5hbWljX3JlZnJlc2hfcmF0ZV9pbl9z",
-            "dGVhbRgXIAEoCBJPChRzcGxpdF9zY2FsaW5nX2ZpbHRlchgYIAEoDjIULkVT",
-            "cGxpdFNjYWxpbmdGaWx0ZXI6G0VTcGxpdFNjYWxpbmdGaWx0ZXJfSW52YWxp",
-            "ZBJPChRzcGxpdF9zY2FsaW5nX3NjYWxlchgZIAEoDjIULkVTcGxpdFNjYWxp",
-            "bmdTY2FsZXI6G0VTcGxpdFNjYWxpbmdTY2FsZXJfSW52YWxpZCJ3ChZDTXNn",
-            "U3lzdGVtUGVyZlNldHRpbmdzEi0KBmdsb2JhbBgBIAEoCzIdLkNNc2dTeXN0",
-            "ZW1QZXJmU2V0dGluZ3NHbG9iYWwSLgoHcGVyX2FwcBgCIAEoCzIdLkNNc2dT",
-            "eXN0ZW1QZXJmU2V0dGluZ3NQZXJBcHAigAgKGENNc2dTeXN0ZW1QZXJmU2V0",
-            "dGluZ3NWMRIeChZkaWFnbm9zdGljX3VwZGF0ZV9yYXRlGAEgASgCElkKGnN5",
-            "c3RlbV90cmFjZV9zZXJ2aWNlX3N0YXRlGAIgASgOMhQuRVN5c3RlbVNlcnZp",
-            "Y2VTdGF0ZTofRVN5c3RlbVNlcnZpY2VTdGF0ZV9VbmF2YWlsYWJsZRJfCiBn",
-            "cmFwaGljc19wcm9maWxpbmdfc2VydmljZV9zdGF0ZRgDIAEoDjIULkVTeXN0",
-            "ZW1TZXJ2aWNlU3RhdGU6H0VTeXN0ZW1TZXJ2aWNlU3RhdGVfVW5hdmFpbGFi",
-            "bGUSWQoacGVyZl9vdmVybGF5X3NlcnZpY2Vfc3RhdGUYBCABKA4yFC5FU3lz",
-            "dGVtU2VydmljZVN0YXRlOh9FU3lzdGVtU2VydmljZVN0YXRlX1VuYXZhaWxh",
-            "YmxlElgKEnBlcmZfb3ZlcmxheV9sZXZlbBgFIAEoDjIaLkVHcmFwaGljc1Bl",
-            "cmZPdmVybGF5TGV2ZWw6IEVHcmFwaGljc1BlcmZPdmVybGF5TGV2ZWxfSGlk",
-            "ZGVuElIKFWdwdV9wZXJmb3JtYW5jZV9sZXZlbBgGIAEoDjIVLkVHUFVQZXJm",
-            "b3JtYW5jZUxldmVsOhxFR1BVUGVyZm9ybWFuY2VMZXZlbF9JbnZhbGlkEiIK",
-            "GmdwdV9wZXJmb3JtYW5jZV9tYW51YWxfbWh6GAcgASgFEhEKCWZwc19saW1p",
-            "dBgIIAEoBRImCh5pc192YXJpYWJsZV9yZXNvbHV0aW9uX2VuYWJsZWQYCSAB",
-            "KAgSJwofaXNfZHluYW1pY19yZWZyZXNoX3JhdGVfZW5hYmxlZBgKIAEoCBIR",
-            "Cgl0ZHBfbGltaXQYCyABKAUSOQoMY3B1X2dvdmVybm9yGAwgASgOMg0uRUNQ",
+            "X2xpbWl0X21pbhgOIAEoBRIVCg10ZHBfbGltaXRfbWF4GA8gASgFEi4KJmRp",
+            "c3BsYXlfZXh0ZXJuYWxfcmVmcmVzaF9tYW51YWxfaHpfbWluGBMgASgFEi4K",
+            "JmRpc3BsYXlfZXh0ZXJuYWxfcmVmcmVzaF9tYW51YWxfaHpfbWF4GBQgASgF",
+            "EiIKGmZwc19saW1pdF9vcHRpb25zX2V4dGVybmFsGBUgAygFEhgKEGlzX3Zy",
+            "cl9zdXBwb3J0ZWQYFyABKAgSMgoqaXNfZHluYW1pY19yZWZyZXNoX3JhdGVf",
+            "aW5fc3RlYW1fc3VwcG9ydGVkGBggASgIEj0KH3NwbGl0X3NjYWxpbmdfZmls",
+            "dGVyc19hdmFpbGFibGUYGiADKA4yFC5FU3BsaXRTY2FsaW5nRmlsdGVyEj0K",
+            "H3NwbGl0X3NjYWxpbmdfc2NhbGVyc19hdmFpbGFibGUYGyADKA4yFC5FU3Bs",
+            "aXRTY2FsaW5nU2NhbGVyEicKH2Rpc2FibGVfcmVmcmVzaF9yYXRlX21hbmFn",
+            "ZW1lbnQYHiABKAgipQYKHENNc2dTeXN0ZW1QZXJmU2V0dGluZ3NHbG9iYWwS",
+            "HgoWZGlhZ25vc3RpY191cGRhdGVfcmF0ZRgBIAEoAhJZChpzeXN0ZW1fdHJh",
+            "Y2Vfc2VydmljZV9zdGF0ZRgCIAEoDjIULkVTeXN0ZW1TZXJ2aWNlU3RhdGU6",
+            "H0VTeXN0ZW1TZXJ2aWNlU3RhdGVfVW5hdmFpbGFibGUSXwogZ3JhcGhpY3Nf",
+            "cHJvZmlsaW5nX3NlcnZpY2Vfc3RhdGUYAyABKA4yFC5FU3lzdGVtU2Vydmlj",
+            "ZVN0YXRlOh9FU3lzdGVtU2VydmljZVN0YXRlX1VuYXZhaWxhYmxlElkKGnBl",
+            "cmZfb3ZlcmxheV9zZXJ2aWNlX3N0YXRlGAQgASgOMhQuRVN5c3RlbVNlcnZp",
+            "Y2VTdGF0ZTofRVN5c3RlbVNlcnZpY2VTdGF0ZV9VbmF2YWlsYWJsZRJYChJw",
+            "ZXJmX292ZXJsYXlfbGV2ZWwYBSABKA4yGi5FR3JhcGhpY3NQZXJmT3Zlcmxh",
+            "eUxldmVsOiBFR3JhcGhpY3NQZXJmT3ZlcmxheUxldmVsX0hpZGRlbhIvCidp",
+            "c19zaG93X3BlcmZfb3ZlcmxheV9vdmVyX3N0ZWFtX2VuYWJsZWQYBiABKAgS",
+            "JAocaXNfYWR2YW5jZWRfc2V0dGluZ3NfZW5hYmxlZBgHIAEoCBIuCiZhbGxv",
+            "d19leHRlcm5hbF9kaXNwbGF5X3JlZnJlc2hfY29udHJvbBgIIAEoCBJWChto",
+            "ZHJfb25fc2RyX3RvbmVtYXBfb3BlcmF0b3IYDCABKA4yFC5FSERSVG9uZU1h",
+            "cE9wZXJhdG9yOhtFSERSVG9uZU1hcE9wZXJhdG9yX0ludmFsaWQSJAocaXNf",
+            "aGRyX2RlYnVnX2hlYXRtYXBfZW5hYmxlZBgNIAEoCBIrCh1mb3JjZV9oZHJf",
+            "d2lkZV9nYW1tdXRfZm9yX3NkchgPIAEoCDoEdHJ1ZRIdChVzZHJfdG9faGRy",
+            "X2JyaWdodG5lc3MYFiABKAISIwobaXNfY29sb3JfbWFuYWdlbWVudF9lbmFi",
+            "bGVkGBUgASgIIosHChxDTXNnU3lzdGVtUGVyZlNldHRpbmdzUGVyQXBwEiIK",
+            "GmdwdV9wZXJmb3JtYW5jZV9tYW51YWxfbWh6GAEgASgFEhEKCWZwc19saW1p",
+            "dBgCIAEoBRImCh5pc192YXJpYWJsZV9yZXNvbHV0aW9uX2VuYWJsZWQYAyAB",
+            "KAgSJwofaXNfZHluYW1pY19yZWZyZXNoX3JhdGVfZW5hYmxlZBgEIAEoCBIR",
+            "Cgl0ZHBfbGltaXQYBSABKAUSOQoMY3B1X2dvdmVybm9yGAYgASgOMg0uRUNQ",
             "VUdvdmVybm9yOhRFQ1BVR292ZXJub3JfSW52YWxpZBIfChdjcHVfZ292ZXJu",
-            "b3JfbWFudWFsX21oehgNIAEoBRIWCg5zY2FsaW5nX2ZpbHRlchgOIAEoBRIV",
-            "Cg1mc3Jfc2hhcnBuZXNzGA8gASgFEhwKFGlzX2Zwc19saW1pdF9lbmFibGVk",
-            "GBAgASgIEhwKFGlzX3RkcF9saW1pdF9lbmFibGVkGBEgASgIEi8KJ2lzX3No",
-            "b3dfcGVyZl9vdmVybGF5X292ZXJfc3RlYW1fZW5hYmxlZBgSIAEoCBIjChtp",
-            "c19sb3dfbGF0ZW5jeV9tb2RlX2VuYWJsZWQYEyABKAgSIQoZZGlzcGxheV9y",
-            "ZWZyZXNoX21hbnVhbF9oehgUIAEoBRIkChxpc19nYW1lX3BlcmZfcHJvZmls",
-            "ZV9lbmFibGVkGBUgASgIIqABChNDTXNnU3lzdGVtUGVyZlN0YXRlEiUKBmxp",
-            "bWl0cxgBIAEoCzIVLkNNc2dTeXN0ZW1QZXJmTGltaXRzEikKCHNldHRpbmdz",
-            "GAIgASgLMhcuQ01zZ1N5c3RlbVBlcmZTZXR0aW5ncxIXCg9jdXJyZW50X2dh",
-            "bWVfaWQYAyABKAQSHgoWYWN0aXZlX3Byb2ZpbGVfZ2FtZV9pZBgEIAEoBCKk",
-            "AQocQ01zZ1N5c3RlbVBlcmZVcGRhdGVTZXR0aW5ncxIOCgZnYW1laWQYASAB",
-            "KAQSGwoTc2tpcF9zdG9yYWdlX3VwZGF0ZRgEIAEoCBIaChByZXNldF90b19k",
-            "ZWZhdWx0GAIgASgISAASMQoOc2V0dGluZ3NfZGVsdGEYAyABKAsyFy5DTXNn",
-            "U3lzdGVtUGVyZlNldHRpbmdzSABCCAoGdXBkYXRlImwKIENNc2dTeXN0ZW1Q",
-            "ZXJmTGVnYWN5U2V0dGluZ0VudHJ5EhcKD3Byb2ZpbGVfZ2FtZV9pZBgBIAEo",
-            "BBIvCghzZXR0aW5ncxgCIAEoCzIdLkNNc2dTeXN0ZW1QZXJmU2V0dGluZ3NQ",
-            "ZXJBcHAiigEKHENNc2dTeXN0ZW1QZXJmTGVnYWN5U2V0dGluZ3MSLQoGZ2xv",
-            "YmFsGAEgASgLMh0uQ01zZ1N5c3RlbVBlcmZTZXR0aW5nc0dsb2JhbBI7ChBw",
-            "ZXJfYXBwX3NldHRpbmdzGAIgAygLMiEuQ01zZ1N5c3RlbVBlcmZMZWdhY3lT",
-            "ZXR0aW5nRW50cnki+AEKGUNNc2dTeXN0ZW1Eb2NrVXBkYXRlU3RhdGUSNAoF",
-            "c3RhdGUYASABKA4yDi5FVXBkYXRlclN0YXRlOhVFVXBkYXRlclN0YXRlX0lu",
-            "dmFsaWQSGgoScnRpbWVfbGFzdF9jaGVja2VkGAIgASgHEhcKD3ZlcnNpb25f",
-            "Y3VycmVudBgDIAEoCRIZChF2ZXJzaW9uX2F2YWlsYWJsZRgEIAEoCRIWCg5z",
-            "dGFnZV9wcm9ncmVzcxgFIAEoAhIiChpydGltZV9lc3RpbWF0ZWRfY29tcGxl",
-            "dGlvbhgGIAEoBxIZChFvbGRfZndfd29ya2Fyb3VuZBgHIAEoBSJHChNDTXNn",
-            "U3lzdGVtRG9ja1N0YXRlEjAKDHVwZGF0ZV9zdGF0ZRgBIAEoCzIaLkNNc2dT",
-            "eXN0ZW1Eb2NrVXBkYXRlU3RhdGUiMAocQ01zZ1N5c3RlbURvY2tVcGRhdGVG",
-            "aXJtd2FyZRIQCghjaGVjb25seRgBIAEoCCLDAQoVQ01zZ1N5c3RlbUF1ZGlv",
-            "Vm9sdW1lEjQKB2VudHJpZXMYASADKAsyIy5DTXNnU3lzdGVtQXVkaW9Wb2x1",
-            "bWUuQ2hhbm5lbEVudHJ5EhAKCGlzX211dGVkGAIgASgIGmIKDENoYW5uZWxF",
-            "bnRyeRJCCghlY2hhbm5lbBgBIAEoDjIULkVTeXN0ZW1BdWRpb0NoYW5uZWw6",
-            "GlN5c3RlbUF1ZGlvQ2hhbm5lbF9JbnZhbGlkEg4KBnZvbHVtZRgCIAEoAiJF",
-            "ChxDTXNnU3lzdGVtQXVkaW9NYW5hZ2VyT2JqZWN0EgoKAmlkGAEgASgNEhkK",
-            "EXJ0aW1lX2xhc3RfdXBkYXRlGAIgASgHIokBChxDTXNnU3lzdGVtQXVkaW9N",
-            "YW5hZ2VyRGV2aWNlEisKBGJhc2UYASABKAsyHS5DTXNnU3lzdGVtQXVkaW9N",
-            "YW5hZ2VyT2JqZWN0EgwKBG5hbWUYAiABKAkSDAoEbmljaxgDIAEoCRITCgtk",
-            "ZXNjcmlwdGlvbhgEIAEoCRILCgNhcGkYBSABKAki/wEKGkNNc2dTeXN0ZW1B",
-            "dWRpb01hbmFnZXJOb2RlEisKBGJhc2UYASABKAsyHS5DTXNnU3lzdGVtQXVk",
-            "aW9NYW5hZ2VyT2JqZWN0EhEKCWRldmljZV9pZBgCIAEoDRIMCgRuYW1lGAMg",
-            "ASgJEgwKBG5pY2sYBCABKAkSEwoLZGVzY3JpcHRpb24YBSABKAkSSAoKZWRp",
-            "cmVjdGlvbhgGIAEoDjIWLkVTeXN0ZW1BdWRpb0RpcmVjdGlvbjocU3lzdGVt",
-            "QXVkaW9EaXJlY3Rpb25fSW52YWxpZBImCgZ2b2x1bWUYByABKAsyFi5DTXNn",
-            "U3lzdGVtQXVkaW9Wb2x1bWUi3gIKGkNNc2dTeXN0ZW1BdWRpb01hbmFnZXJQ",
-            "b3J0EisKBGJhc2UYASABKAsyHS5DTXNnU3lzdGVtQXVkaW9NYW5hZ2VyT2Jq",
-            "ZWN0Eg8KB25vZGVfaWQYAyABKA0SDAoEbmFtZRgEIAEoCRINCgVhbGlhcxgF",
-            "IAEoCRJBCgVldHlwZRgGIAEoDjIVLkVTeXN0ZW1BdWRpb1BvcnRUeXBlOhtT",
-            "eXN0ZW1BdWRpb1BvcnRUeXBlX0ludmFsaWQSUAoKZWRpcmVjdGlvbhgHIAEo",
-            "DjIaLkVTeXN0ZW1BdWRpb1BvcnREaXJlY3Rpb246IFN5c3RlbUF1ZGlvUG9y",
-            "dERpcmVjdGlvbl9JbnZhbGlkEhMKC2lzX3BoeXNpY2FsGAggASgIEhMKC2lz",
-            "X3Rlcm1pbmFsGAkgASgIEhIKCmlzX2NvbnRyb2wYCiABKAgSEgoKaXNfbW9u",
-            "aXRvchgLIAEoCCKnAQoaQ01zZ1N5c3RlbUF1ZGlvTWFuYWdlckxpbmsSKwoE",
-            "YmFzZRgBIAEoCzIdLkNNc2dTeXN0ZW1BdWRpb01hbmFnZXJPYmplY3QSFgoO",
-            "b3V0cHV0X25vZGVfaWQYAiABKA0SFgoOb3V0cHV0X3BvcnRfaWQYAyABKA0S",
-            "FQoNaW5wdXRfbm9kZV9pZBgEIAEoDRIVCg1pbnB1dF9wb3J0X2lkGAUgASgN",
-            "ItMBCh1DTXNnU3lzdGVtQXVkaW9NYW5hZ2VyU3RhdGVIVxIuCgdkZXZpY2Vz",
-            "GAEgAygLMh0uQ01zZ1N5c3RlbUF1ZGlvTWFuYWdlckRldmljZRIqCgVub2Rl",
-            "cxgCIAMoCzIbLkNNc2dTeXN0ZW1BdWRpb01hbmFnZXJOb2RlEioKBXBvcnRz",
-            "GAMgAygLMhsuQ01zZ1N5c3RlbUF1ZGlvTWFuYWdlclBvcnQSKgoFbGlua3MY",
-            "BCADKAsyGy5DTXNnU3lzdGVtQXVkaW9NYW5hZ2VyTGluayJwChtDTXNnU3lz",
-            "dGVtQXVkaW9NYW5hZ2VyU3RhdGUSFAoMcnRpbWVfZmlsdGVyGAEgASgHEg8K",
-            "B2NvdW50ZXIYAiABKAUSKgoCaHcYAyABKAsyHi5DTXNnU3lzdGVtQXVkaW9N",
-            "YW5hZ2VyU3RhdGVIVyI4CiVDTXNnU3lzdGVtQXVkaW9NYW5hZ2VyVXBkYXRl",
-            "U29tZXRoaW5nEg8KB2NvdW50ZXIYASABKAUiVgoVQ01zZ1N5c3RlbURpc3Bs",
-            "YXlNb2RlEgoKAmlkGAEgASgFEg0KBXdpZHRoGAIgASgFEg4KBmhlaWdodBgD",
-            "IAEoBRISCgpyZWZyZXNoX2h6GAQgASgFIsADChFDTXNnU3lzdGVtRGlzcGxh",
-            "eRIKCgJpZBgBIAEoBRIMCgRuYW1lGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMg",
-            "ASgJEhIKCmlzX3ByaW1hcnkYBCABKAgSEgoKaXNfZW5hYmxlZBgFIAEoCBIT",
-            "Cgtpc19pbnRlcm5hbBgGIAEoCBIZChFoYXNfbW9kZV9vdmVycmlkZRgHIAEo",
-            "CBIQCgh3aWR0aF9tbRgIIAEoBRIRCgloZWlnaHRfbW0YCSABKAUSFwoPY3Vy",
-            "cmVudF9tb2RlX2lkGAogASgFEiUKBW1vZGVzGAsgAygLMhYuQ01zZ1N5c3Rl",
-            "bURpc3BsYXlNb2RlEhgKEHJlZnJlc2hfcmF0ZV9taW4YDCABKAUSGAoQcmVm",
-            "cmVzaF9yYXRlX21heBgNIAEoBRIWCg5pc192cnJfY2FwYWJsZRgOIAEoCBIc",
-            "ChRpc192cnJfb3V0cHV0X2FjdGl2ZRgPIAEoCBIWCg5pc19oZHJfY2FwYWJs",
-            "ZRgQIAEoCBIcChRpc19oZHJfb3V0cHV0X2FjdGl2ZRgRIAEoCBIfChdzdXBw",
-            "b3J0ZWRfcmVmcmVzaF9yYXRlcxgSIAMoBSLRAQodQ01zZ1N5c3RlbURpc3Bs",
-            "YXlNYW5hZ2VyU3RhdGUSJAoIZGlzcGxheXMYASADKAsyEi5DTXNnU3lzdGVt",
-            "RGlzcGxheRIjChtpc19tb2RlX3N3aXRjaGluZ19zdXBwb3J0ZWQYAiABKAgS",
-            "ZQoSY29tcGF0aWJpbGl0eV9tb2RlGAMgASgOMiAuRVN5c3RlbURpc3BsYXlD",
-            "b21wYXRpYmlsaXR5TW9kZTonRVN5c3RlbURpc3BsYXlDb21wYXRpYmlsaXR5",
-            "TW9kZV9JbnZhbGlkIkYKH0NNc2dTeXN0ZW1EaXNwbGF5TWFuYWdlclNldE1v",
-            "ZGUSEgoKZGlzcGxheV9pZBgBIAEoBRIPCgdtb2RlX2lkGAIgASgFIpwLChlD",
-            "TXNnU3lzdGVtTWFuYWdlclNldHRpbmdzEioKImlkbGVfYmFja2xpZ2h0X2Rp",
-            "bV9iYXR0ZXJ5X3NlY29uZHMYASABKAISJQodaWRsZV9iYWNrbGlnaHRfZGlt",
-            "X2FjX3NlY29uZHMYAiABKAISJAocaWRsZV9zdXNwZW5kX2JhdHRlcnlfc2Vj",
-            "b25kcxgDIAEoAhIfChdpZGxlX3N1c3BlbmRfYWNfc2Vjb25kcxgEIAEoAhIe",
-            "ChZpZGxlX3N1c3BlbmRfc3VwcmVzc2VkGAUgASgIEigKIGlzX2FkYXB0aXZl",
-            "X2JyaWdodG5lc3NfYXZhaWxhYmxlGAYgASgIEisKI2Rpc3BsYXlfYWRhcHRp",
-            "dmVfYnJpZ2h0bmVzc19lbmFibGVkGAcgASgIEiEKGWRpc3BsYXlfbmlnaHRt",
-            "b2RlX2VuYWJsZWQYCiABKAgSJgoeZGlzcGxheV9uaWdodG1vZGVfdGludHN0",
-            "cmVuZ3RoGAsgASgCEiAKGGRpc3BsYXlfbmlnaHRtb2RlX21heGh1ZRgMIAEo",
-            "AhIgChhkaXNwbGF5X25pZ2h0bW9kZV9tYXhzYXQYDSABKAISHwoXZGlzcGxh",
-            "eV9uaWdodG1vZGVfdWlleHAYDiABKAISHwoXZGlzcGxheV9uaWdodG1vZGVf",
-            "YmxlbmQYDyABKAISHwoXZGlzcGxheV9uaWdodG1vZGVfcmVzZXQYECABKAgS",
-            "KgoiZGlzcGxheV9uaWdodG1vZGVfc2NoZWR1bGVfZW5hYmxlZBgRIAEoCBIs",
-            "CiRkaXNwbGF5X25pZ2h0bW9kZV9zY2hlZHVsZV9zdGFydHRpbWUYEiABKAIS",
-            "KgoiZGlzcGxheV9uaWdodG1vZGVfc2NoZWR1bGVfZW5kdGltZRgTIAEoAhIj",
-            "ChtkaXNwbGF5X2RpYWdub3N0aWNzX2VuYWJsZWQYFCABKAgSFwoPYWxzX2x1",
-            "eF9wcmltYXJ5GBUgASgCEhYKDmFsc19sdXhfbWVkaWFuGBYgASgCEh0KFWRp",
-            "c3BsYXlfYmFja2xpZ2h0X3JhdxgXIAEoAhImCh5kaXNwbGF5X2JyaWdodG5l",
-            "c3NfYWRhcHRpdmVtaW4YGCABKAISJgoeZGlzcGxheV9icmlnaHRuZXNzX2Fk",
-            "YXB0aXZlbWF4GBkgASgCEiEKGWlzX3dpZmlfcG93ZXJzYXZlX2VuYWJsZWQY",
-            "GiABKAgSIAoYaXNfZmFuX2NvbnRyb2xfYXZhaWxhYmxlGBsgASgIEk4KEGZh",
-            "bl9jb250cm9sX21vZGUYHCABKA4yFi5FU3lzdGVtRmFuQ29udHJvbE1vZGU6",
-            "HFN5c3RlbUZhbkNvbnRyb2xNb2RlX0ludmFsaWQSJwofaXNfZGlzcGxheV9i",
-            "cmlnaHRuZXNzX2F2YWlsYWJsZRgdIAEoCBIsCiRpc19kaXNwbGF5X2NvbG9y",
-            "bWFuYWdlbWVudF9hdmFpbGFibGUYHyABKAgSGgoSZGlzcGxheV9jb2xvcmdh",
-            "bXV0GCAgASgCEhkKEWFsc19sdXhfYWx0ZXJuYXRlGCEgASgCEiYKHmlzX2Rp",
-            "c3BsYXlfY29sb3J0ZW1wX2F2YWlsYWJsZRgiIAEoCBIZChFkaXNwbGF5X2Nv",
-            "bG9ydGVtcBgjIAEoAhIhChlkaXNwbGF5X2NvbG9ydGVtcF9kZWZhdWx0GCQg",
-            "ASgCEiEKGWRpc3BsYXlfY29sb3J0ZW1wX2VuYWJsZWQYJSABKAgSVQobZGlz",
-            "cGxheV9jb2xvcmdhbXV0X2xhYmVsc2V0GCYgASgOMhQuRUNvbG9yR2FtdXRM",
-            "YWJlbFNldDoaQ29sb3JHYW11dExhYmVsU2V0X0RlZmF1bHQSLgomZGlzcGxh",
-            "eV9icmlnaHRuZXNzX292ZXJkcml2ZV9oZHJfc3BsaXQYJyABKAIiYAoYQ01z",
-            "Z1NlbGVjdE9TQnJhbmNoUGFyYW1zEi0KBmJyYW5jaBgBIAEoDjIKLkVPU0Jy",
-            "YW5jaDoRRU9TQnJhbmNoX1Vua25vd24SFQoNY3VzdG9tX2JyYW5jaBgCIAEo",
-            "CSJwChhDTXNnU3lzdGVtVXBkYXRlUHJvZ3Jlc3MSFgoOc3RhZ2VfcHJvZ3Jl",
-            "c3MYASABKAISGAoQc3RhZ2Vfc2l6ZV9ieXRlcxgCIAEoAxIiChpydGltZV9l",
-            "c3RpbWF0ZWRfY29tcGxldGlvbhgDIAEoByLVAQobQ01zZ1N5c3RlbVVwZGF0",
-            "ZUNoZWNrUmVzdWx0EjEKBHR5cGUYASABKA4yDS5FVXBkYXRlclR5cGU6FEVV",
-            "cGRhdGVyVHlwZV9JbnZhbGlkEhIKB2VyZXN1bHQYAiABKA06ATISFQoNcnRp",
-            "bWVfY2hlY2tlZBgDIAEoBxIRCglhdmFpbGFibGUYBCABKAgSDwoHdmVyc2lv",
-            "bhgFIAEoCRIUCgxhdXRvX21lc3NhZ2UYBiABKAkSHgoWc3lzdGVtX3Jlc3Rh",
-            "cnRfcGVuZGluZxgHIAEoCCJBChtDTXNnU3lzdGVtVXBkYXRlQXBwbHlQYXJh",
-            "bXMSIgoLYXBwbHlfdHlwZXMYASADKA4yDS5FVXBkYXRlclR5cGUitAEKG0NN",
-            "c2dTeXN0ZW1VcGRhdGVBcHBseVJlc3VsdBIxCgR0eXBlGAEgASgOMg0uRVVw",
-            "ZGF0ZXJUeXBlOhRFVXBkYXRlclR5cGVfSW52YWxpZBISCgdlcmVzdWx0GAIg",
-            "ASgNOgEyEiYKF3JlcXVpcmVzX2NsaWVudF9yZXN0YXJ0GAMgASgIOgVmYWxz",
-            "ZRImChdyZXF1aXJlc19zeXN0ZW1fcmVzdGFydBgEIAEoCDoFZmFsc2UijQIK",
-            "FUNNc2dTeXN0ZW1VcGRhdGVTdGF0ZRI0CgVzdGF0ZRgBIAEoDjIOLkVVcGRh",
-            "dGVyU3RhdGU6FUVVcGRhdGVyU3RhdGVfSW52YWxpZBIrCghwcm9ncmVzcxgC",
-            "IAEoCzIZLkNNc2dTeXN0ZW1VcGRhdGVQcm9ncmVzcxI4ChJ1cGRhdGVfY2hl",
-            "Y3Jlc3VsdHMYAyADKAsyHC5DTXNnU3lzdGVtVXBkYXRlQ2hlY2tSZXN1bHQS",
-            "OgoUdXBkYXRlX2FwcGx5X3Jlc3VsdHMYBCADKAsyHC5DTXNnU3lzdGVtVXBk",
-            "YXRlQXBwbHlSZXN1bHQSGwoTc3VwcG9ydHNfb3NfdXBkYXRlcxgFIAEoCCIm",
-            "ChVDTXNnQWNoaWV2ZW1lbnRDaGFuZ2USDQoFYXBwaWQYASABKA0iXAoMQ01z",
-            "Z0NlbGxMaXN0EiEKBWNlbGxzGAEgAygLMhIuQ01zZ0NlbGxMaXN0LkNlbGwa",
-            "KQoEQ2VsbBIPCgdjZWxsX2lkGAEgASgNEhAKCGxvY19uYW1lGAIgASgJIowD",
-            "ChBDTXNnU2hvcnRjdXRJbmZvEg0KBWFwcGlkGAEgASgNEgsKA2V4ZRgCIAEo",
-            "CRIRCglzdGFydF9kaXIYAyABKAkSDAoEaWNvbhgEIAEoCRIMCgRwYXRoGAUg",
-            "ASgJEgwKBGFyZ3MYBiABKAkSEAoIYXBwX25hbWUYByABKAkSFgoOb3ZlcnJp",
-            "ZGVfYXBwaWQYCCABKA0SEwoLZmxhdHBhYXBwaWQYCSABKAkSDAoEdGFncxgK",
-            "IAMoCRIRCglpc19yZW1vdGUYCyABKAgSEQoJaXNfaGlkZGVuGAwgASgIEhQK",
-            "DGlzX3RlbXBvcmFyeRgNIAEoCBIRCglpc19vcGVudnIYDiABKAgSHAoUYWxs",
-            "b3dfZGVza3RvcF9jb25maWcYDyABKAgSFQoNYWxsb3dfb3ZlcmxheRgQIAEo",
-            "CBIbChNydF9sYXN0X3BsYXllZF90aW1lGBEgASgNEhoKEmlzX2RldmtpdF9z",
-            "aG9ydGN1dBgSIAEoCBIVCg1kZXZraXRfZ2FtZWlkGBMgASgJIiQKEkNNc2dT",
-            "aG9ydGN1dEFwcElkcxIOCgZhcHBpZHMYASADKA0iqgEKD0NNc2dNb25pdG9y",
-            "SW5mbxIdChVzZWxlY3RlZF9kaXNwbGF5X25hbWUYASACKAkSLgoIbW9uaXRv",
-            "cnMYAiADKAsyHC5DTXNnTW9uaXRvckluZm8uTW9uaXRvckluZm8aSAoLTW9u",
-            "aXRvckluZm8SGwoTbW9uaXRvcl9kZXZpY2VfbmFtZRgBIAIoCRIcChRtb25p",
-            "dG9yX2Rpc3BsYXlfbmFtZRgCIAIoCSIyCh1DTXNnR2VuZXJhdGVTeXN0ZW1S",
-            "ZXBvcnRSZXBseRIRCglyZXBvcnRfaWQYASABKAkiOAoWQ01zZ1dlYlVJVHJh",
-            "bnNwb3J0SW5mbxIMCgRwb3J0GAEgASgNEhAKCGF1dGhfa2V5GAIgASgJIjIK",
-            "GUNNc2dXZWJVSVRyYW5zcG9ydEZhaWx1cmUSFQoNY29ubmVjdF9jb3VudBgB",
-            "IAEoDSJeCh1DTXNnQ2xpZW50U2hhZGVySGl0Q2FjaGVFbnRyeRIPCgdrZXlf",
-            "c2hhGAEgASgMEhAKCGNvZGVfc2hhGAIgASgMEhoKEnRpbWVfbGFzdF9yZXBv",
-            "cnRlZBgDIAEoBCJLChhDTXNnQ2xpZW50U2hhZGVySGl0Q2FjaGUSLwoHZW50",
-            "cmllcxgBIAMoCzIeLkNNc2dDbGllbnRTaGFkZXJIaXRDYWNoZUVudHJ5KowC",
-            "ChxFQ2xvdWRQZW5kaW5nUmVtb3RlT3BlcmF0aW9uEiQKIEVDbG91ZFBlbmRp",
-            "bmdSZW1vdGVPcGVyYXRpb25Ob25lEAASMAosRUNsb3VkUGVuZGluZ1JlbW90",
-            "ZU9wZXJhdGlvbkFwcFNlc3Npb25BY3RpdmUQARIwCixFQ2xvdWRQZW5kaW5n",
-            "UmVtb3RlT3BlcmF0aW9uVXBsb2FkSW5Qcm9ncmVzcxACEi0KKUVDbG91ZFBl",
-            "bmRpbmdSZW1vdGVPcGVyYXRpb25VcGxvYWRQZW5kaW5nEAMSMwovRUNsb3Vk",
-            "UGVuZGluZ1JlbW90ZU9wZXJhdGlvbkFwcFNlc3Npb25TdXNwZW5kZWQQBCqC",
-            "DAoYRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0EiMKH0VTdGVhbURlY2tLZXli",
-            "b2FyZExheW91dF9RV0VSVFkQABImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlv",
-            "dXRfQnVsZ2FyaWFuEAESLworRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0No",
-            "aW5lc2VfU2ltcGxpZmllZBACEjAKLEVTdGVhbURlY2tLZXlib2FyZExheW91",
-            "dF9DaGluZXNlX1RyYWRpdGlvbmFsEAMSIgoeRVN0ZWFtRGVja0tleWJvYXJk",
-            "TGF5b3V0X0N6ZWNoEAQSIwofRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0Rh",
-            "bmlzaBAFEiQKIEVTdGVhbURlY2tLZXlib2FyZExheW91dF9GaW5uaXNoEAYS",
-            "IwofRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0ZyZW5jaBAHEiMKH0VTdGVh",
-            "bURlY2tLZXlib2FyZExheW91dF9HZXJtYW4QCBIiCh5FU3RlYW1EZWNrS2V5",
-            "Ym9hcmRMYXlvdXRfR3JlZWsQCRImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlv",
-            "dXRfSHVuZ2FyaWFuEAoSJAogRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0l0",
-            "YWxpYW4QCxIlCiFFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSmFwYW5lc2UQ",
-            "DBIjCh9FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfS29yZWFuEA0SJgoiRVN0",
-            "ZWFtRGVja0tleWJvYXJkTGF5b3V0X05vcndlZ2lhbhAOEiMKH0VTdGVhbURl",
-            "Y2tLZXlib2FyZExheW91dF9Qb2xpc2gQDxInCiNFU3RlYW1EZWNrS2V5Ym9h",
-            "cmRMYXlvdXRfUG9ydHVndWVzZRAQEiUKIUVTdGVhbURlY2tLZXlib2FyZExh",
-            "eW91dF9Sb21hbmlhbhAREiQKIEVTdGVhbURlY2tLZXlib2FyZExheW91dF9S",
-            "dXNzaWFuEBISJAogRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1NwYW5pc2gQ",
-            "ExIkCiBFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfU3dlZGlzaBAUEiEKHUVT",
-            "dGVhbURlY2tLZXlib2FyZExheW91dF9UaGFpEBUSJgoiRVN0ZWFtRGVja0tl",
-            "eWJvYXJkTGF5b3V0X1R1cmtpc2hfRhAWEiYKIkVTdGVhbURlY2tLZXlib2Fy",
-            "ZExheW91dF9UdXJraXNoX1EQFxImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlv",
-            "dXRfVWtyYWluaWFuEBgSJwojRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1Zp",
-            "ZXRuYW1lc2UQGRIxCi1FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfUVdFUlRZ",
-            "X0ludGVybmF0aW9uYWwQGhIjCh9FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRf",
-            "RHZvcmFrEBsSJAogRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0NvbGVtYWsQ",
-            "HBI7CjdFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfQnVsZ2FyaWFuX1Bob25l",
-            "dGljX1RyYWRpdGlvbmFsEB0SLworRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0",
-            "X0J1bGdhcmlhbl9QaG9uZXRpYxAeEjkKNUVTdGVhbURlY2tLZXlib2FyZExh",
-            "eW91dF9DaGluZXNlX1RyYWRpdGlvbmFsX0JvcG9tb2ZvEB8SOAo0RVN0ZWFt",
-            "RGVja0tleWJvYXJkTGF5b3V0X0NoaW5lc2VfVHJhZGl0aW9uYWxfQ2FuZ2pp",
-            "ZRAgEioKJkVTdGVhbURlY2tLZXlib2FyZExheW91dF9KYXBhbmVzZV9LYW5h",
-            "ECESNgoyRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0NoaW5lc2VfVHJhZGl0",
-            "aW9uYWxfUXVpY2sQIhInCiNFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSW5k",
-            "b25lc2lhbhAjQh9IAYABAKoCF09wZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
+            "b3JfbWFudWFsX21oehgHIAEoBRIWCg5zY2FsaW5nX2ZpbHRlchgIIAEoBRIV",
+            "Cg1mc3Jfc2hhcnBuZXNzGAkgASgFEhwKFGlzX2Zwc19saW1pdF9lbmFibGVk",
+            "GAogASgIEhwKFGlzX3RkcF9saW1pdF9lbmFibGVkGAsgASgIEiMKG2lzX2xv",
+            "d19sYXRlbmN5X21vZGVfZW5hYmxlZBgMIAEoCBIhChlkaXNwbGF5X3JlZnJl",
+            "c2hfbWFudWFsX2h6GA0gASgFEiQKHGlzX2dhbWVfcGVyZl9wcm9maWxlX2Vu",
+            "YWJsZWQYDiABKAgSUgoVZ3B1X3BlcmZvcm1hbmNlX2xldmVsGA8gASgOMhUu",
+            "RUdQVVBlcmZvcm1hbmNlTGV2ZWw6HEVHUFVQZXJmb3JtYW5jZUxldmVsX0lu",
+            "dmFsaWQSKgoiZGlzcGxheV9leHRlcm5hbF9yZWZyZXNoX21hbnVhbF9oehgR",
+            "IAEoBRIaChJmcHNfbGltaXRfZXh0ZXJuYWwYEiABKAUSGgoSaXNfdGVhcmlu",
+            "Z19lbmFibGVkGBMgASgIEhYKDmlzX3Zycl9lbmFibGVkGBQgASgIEikKIXVz",
+            "ZV9keW5hbWljX3JlZnJlc2hfcmF0ZV9pbl9zdGVhbRgXIAEoCBJPChRzcGxp",
+            "dF9zY2FsaW5nX2ZpbHRlchgYIAEoDjIULkVTcGxpdFNjYWxpbmdGaWx0ZXI6",
+            "G0VTcGxpdFNjYWxpbmdGaWx0ZXJfSW52YWxpZBJPChRzcGxpdF9zY2FsaW5n",
+            "X3NjYWxlchgZIAEoDjIULkVTcGxpdFNjYWxpbmdTY2FsZXI6G0VTcGxpdFNj",
+            "YWxpbmdTY2FsZXJfSW52YWxpZCJ3ChZDTXNnU3lzdGVtUGVyZlNldHRpbmdz",
+            "Ei0KBmdsb2JhbBgBIAEoCzIdLkNNc2dTeXN0ZW1QZXJmU2V0dGluZ3NHbG9i",
+            "YWwSLgoHcGVyX2FwcBgCIAEoCzIdLkNNc2dTeXN0ZW1QZXJmU2V0dGluZ3NQ",
+            "ZXJBcHAigAgKGENNc2dTeXN0ZW1QZXJmU2V0dGluZ3NWMRIeChZkaWFnbm9z",
+            "dGljX3VwZGF0ZV9yYXRlGAEgASgCElkKGnN5c3RlbV90cmFjZV9zZXJ2aWNl",
+            "X3N0YXRlGAIgASgOMhQuRVN5c3RlbVNlcnZpY2VTdGF0ZTofRVN5c3RlbVNl",
+            "cnZpY2VTdGF0ZV9VbmF2YWlsYWJsZRJfCiBncmFwaGljc19wcm9maWxpbmdf",
+            "c2VydmljZV9zdGF0ZRgDIAEoDjIULkVTeXN0ZW1TZXJ2aWNlU3RhdGU6H0VT",
+            "eXN0ZW1TZXJ2aWNlU3RhdGVfVW5hdmFpbGFibGUSWQoacGVyZl9vdmVybGF5",
+            "X3NlcnZpY2Vfc3RhdGUYBCABKA4yFC5FU3lzdGVtU2VydmljZVN0YXRlOh9F",
+            "U3lzdGVtU2VydmljZVN0YXRlX1VuYXZhaWxhYmxlElgKEnBlcmZfb3Zlcmxh",
+            "eV9sZXZlbBgFIAEoDjIaLkVHcmFwaGljc1BlcmZPdmVybGF5TGV2ZWw6IEVH",
+            "cmFwaGljc1BlcmZPdmVybGF5TGV2ZWxfSGlkZGVuElIKFWdwdV9wZXJmb3Jt",
+            "YW5jZV9sZXZlbBgGIAEoDjIVLkVHUFVQZXJmb3JtYW5jZUxldmVsOhxFR1BV",
+            "UGVyZm9ybWFuY2VMZXZlbF9JbnZhbGlkEiIKGmdwdV9wZXJmb3JtYW5jZV9t",
+            "YW51YWxfbWh6GAcgASgFEhEKCWZwc19saW1pdBgIIAEoBRImCh5pc192YXJp",
+            "YWJsZV9yZXNvbHV0aW9uX2VuYWJsZWQYCSABKAgSJwofaXNfZHluYW1pY19y",
+            "ZWZyZXNoX3JhdGVfZW5hYmxlZBgKIAEoCBIRCgl0ZHBfbGltaXQYCyABKAUS",
+            "OQoMY3B1X2dvdmVybm9yGAwgASgOMg0uRUNQVUdvdmVybm9yOhRFQ1BVR292",
+            "ZXJub3JfSW52YWxpZBIfChdjcHVfZ292ZXJub3JfbWFudWFsX21oehgNIAEo",
+            "BRIWCg5zY2FsaW5nX2ZpbHRlchgOIAEoBRIVCg1mc3Jfc2hhcnBuZXNzGA8g",
+            "ASgFEhwKFGlzX2Zwc19saW1pdF9lbmFibGVkGBAgASgIEhwKFGlzX3RkcF9s",
+            "aW1pdF9lbmFibGVkGBEgASgIEi8KJ2lzX3Nob3dfcGVyZl9vdmVybGF5X292",
+            "ZXJfc3RlYW1fZW5hYmxlZBgSIAEoCBIjChtpc19sb3dfbGF0ZW5jeV9tb2Rl",
+            "X2VuYWJsZWQYEyABKAgSIQoZZGlzcGxheV9yZWZyZXNoX21hbnVhbF9oehgU",
+            "IAEoBRIkChxpc19nYW1lX3BlcmZfcHJvZmlsZV9lbmFibGVkGBUgASgIIqAB",
+            "ChNDTXNnU3lzdGVtUGVyZlN0YXRlEiUKBmxpbWl0cxgBIAEoCzIVLkNNc2dT",
+            "eXN0ZW1QZXJmTGltaXRzEikKCHNldHRpbmdzGAIgASgLMhcuQ01zZ1N5c3Rl",
+            "bVBlcmZTZXR0aW5ncxIXCg9jdXJyZW50X2dhbWVfaWQYAyABKAQSHgoWYWN0",
+            "aXZlX3Byb2ZpbGVfZ2FtZV9pZBgEIAEoBCKkAQocQ01zZ1N5c3RlbVBlcmZV",
+            "cGRhdGVTZXR0aW5ncxIOCgZnYW1laWQYASABKAQSGwoTc2tpcF9zdG9yYWdl",
+            "X3VwZGF0ZRgEIAEoCBIaChByZXNldF90b19kZWZhdWx0GAIgASgISAASMQoO",
+            "c2V0dGluZ3NfZGVsdGEYAyABKAsyFy5DTXNnU3lzdGVtUGVyZlNldHRpbmdz",
+            "SABCCAoGdXBkYXRlImwKIENNc2dTeXN0ZW1QZXJmTGVnYWN5U2V0dGluZ0Vu",
+            "dHJ5EhcKD3Byb2ZpbGVfZ2FtZV9pZBgBIAEoBBIvCghzZXR0aW5ncxgCIAEo",
+            "CzIdLkNNc2dTeXN0ZW1QZXJmU2V0dGluZ3NQZXJBcHAiigEKHENNc2dTeXN0",
+            "ZW1QZXJmTGVnYWN5U2V0dGluZ3MSLQoGZ2xvYmFsGAEgASgLMh0uQ01zZ1N5",
+            "c3RlbVBlcmZTZXR0aW5nc0dsb2JhbBI7ChBwZXJfYXBwX3NldHRpbmdzGAIg",
+            "AygLMiEuQ01zZ1N5c3RlbVBlcmZMZWdhY3lTZXR0aW5nRW50cnki+AEKGUNN",
+            "c2dTeXN0ZW1Eb2NrVXBkYXRlU3RhdGUSNAoFc3RhdGUYASABKA4yDi5FVXBk",
+            "YXRlclN0YXRlOhVFVXBkYXRlclN0YXRlX0ludmFsaWQSGgoScnRpbWVfbGFz",
+            "dF9jaGVja2VkGAIgASgHEhcKD3ZlcnNpb25fY3VycmVudBgDIAEoCRIZChF2",
+            "ZXJzaW9uX2F2YWlsYWJsZRgEIAEoCRIWCg5zdGFnZV9wcm9ncmVzcxgFIAEo",
+            "AhIiChpydGltZV9lc3RpbWF0ZWRfY29tcGxldGlvbhgGIAEoBxIZChFvbGRf",
+            "Zndfd29ya2Fyb3VuZBgHIAEoBSJHChNDTXNnU3lzdGVtRG9ja1N0YXRlEjAK",
+            "DHVwZGF0ZV9zdGF0ZRgBIAEoCzIaLkNNc2dTeXN0ZW1Eb2NrVXBkYXRlU3Rh",
+            "dGUiMAocQ01zZ1N5c3RlbURvY2tVcGRhdGVGaXJtd2FyZRIQCghjaGVjb25s",
+            "eRgBIAEoCCLDAQoVQ01zZ1N5c3RlbUF1ZGlvVm9sdW1lEjQKB2VudHJpZXMY",
+            "ASADKAsyIy5DTXNnU3lzdGVtQXVkaW9Wb2x1bWUuQ2hhbm5lbEVudHJ5EhAK",
+            "CGlzX211dGVkGAIgASgIGmIKDENoYW5uZWxFbnRyeRJCCghlY2hhbm5lbBgB",
+            "IAEoDjIULkVTeXN0ZW1BdWRpb0NoYW5uZWw6GlN5c3RlbUF1ZGlvQ2hhbm5l",
+            "bF9JbnZhbGlkEg4KBnZvbHVtZRgCIAEoAiJFChxDTXNnU3lzdGVtQXVkaW9N",
+            "YW5hZ2VyT2JqZWN0EgoKAmlkGAEgASgNEhkKEXJ0aW1lX2xhc3RfdXBkYXRl",
+            "GAIgASgHIokBChxDTXNnU3lzdGVtQXVkaW9NYW5hZ2VyRGV2aWNlEisKBGJh",
+            "c2UYASABKAsyHS5DTXNnU3lzdGVtQXVkaW9NYW5hZ2VyT2JqZWN0EgwKBG5h",
+            "bWUYAiABKAkSDAoEbmljaxgDIAEoCRITCgtkZXNjcmlwdGlvbhgEIAEoCRIL",
+            "CgNhcGkYBSABKAki/wEKGkNNc2dTeXN0ZW1BdWRpb01hbmFnZXJOb2RlEisK",
+            "BGJhc2UYASABKAsyHS5DTXNnU3lzdGVtQXVkaW9NYW5hZ2VyT2JqZWN0EhEK",
+            "CWRldmljZV9pZBgCIAEoDRIMCgRuYW1lGAMgASgJEgwKBG5pY2sYBCABKAkS",
+            "EwoLZGVzY3JpcHRpb24YBSABKAkSSAoKZWRpcmVjdGlvbhgGIAEoDjIWLkVT",
+            "eXN0ZW1BdWRpb0RpcmVjdGlvbjocU3lzdGVtQXVkaW9EaXJlY3Rpb25fSW52",
+            "YWxpZBImCgZ2b2x1bWUYByABKAsyFi5DTXNnU3lzdGVtQXVkaW9Wb2x1bWUi",
+            "3gIKGkNNc2dTeXN0ZW1BdWRpb01hbmFnZXJQb3J0EisKBGJhc2UYASABKAsy",
+            "HS5DTXNnU3lzdGVtQXVkaW9NYW5hZ2VyT2JqZWN0Eg8KB25vZGVfaWQYAyAB",
+            "KA0SDAoEbmFtZRgEIAEoCRINCgVhbGlhcxgFIAEoCRJBCgVldHlwZRgGIAEo",
+            "DjIVLkVTeXN0ZW1BdWRpb1BvcnRUeXBlOhtTeXN0ZW1BdWRpb1BvcnRUeXBl",
+            "X0ludmFsaWQSUAoKZWRpcmVjdGlvbhgHIAEoDjIaLkVTeXN0ZW1BdWRpb1Bv",
+            "cnREaXJlY3Rpb246IFN5c3RlbUF1ZGlvUG9ydERpcmVjdGlvbl9JbnZhbGlk",
+            "EhMKC2lzX3BoeXNpY2FsGAggASgIEhMKC2lzX3Rlcm1pbmFsGAkgASgIEhIK",
+            "CmlzX2NvbnRyb2wYCiABKAgSEgoKaXNfbW9uaXRvchgLIAEoCCKnAQoaQ01z",
+            "Z1N5c3RlbUF1ZGlvTWFuYWdlckxpbmsSKwoEYmFzZRgBIAEoCzIdLkNNc2dT",
+            "eXN0ZW1BdWRpb01hbmFnZXJPYmplY3QSFgoOb3V0cHV0X25vZGVfaWQYAiAB",
+            "KA0SFgoOb3V0cHV0X3BvcnRfaWQYAyABKA0SFQoNaW5wdXRfbm9kZV9pZBgE",
+            "IAEoDRIVCg1pbnB1dF9wb3J0X2lkGAUgASgNItMBCh1DTXNnU3lzdGVtQXVk",
+            "aW9NYW5hZ2VyU3RhdGVIVxIuCgdkZXZpY2VzGAEgAygLMh0uQ01zZ1N5c3Rl",
+            "bUF1ZGlvTWFuYWdlckRldmljZRIqCgVub2RlcxgCIAMoCzIbLkNNc2dTeXN0",
+            "ZW1BdWRpb01hbmFnZXJOb2RlEioKBXBvcnRzGAMgAygLMhsuQ01zZ1N5c3Rl",
+            "bUF1ZGlvTWFuYWdlclBvcnQSKgoFbGlua3MYBCADKAsyGy5DTXNnU3lzdGVt",
+            "QXVkaW9NYW5hZ2VyTGluayJwChtDTXNnU3lzdGVtQXVkaW9NYW5hZ2VyU3Rh",
+            "dGUSFAoMcnRpbWVfZmlsdGVyGAEgASgHEg8KB2NvdW50ZXIYAiABKAUSKgoC",
+            "aHcYAyABKAsyHi5DTXNnU3lzdGVtQXVkaW9NYW5hZ2VyU3RhdGVIVyI4CiVD",
+            "TXNnU3lzdGVtQXVkaW9NYW5hZ2VyVXBkYXRlU29tZXRoaW5nEg8KB2NvdW50",
+            "ZXIYASABKAUiVgoVQ01zZ1N5c3RlbURpc3BsYXlNb2RlEgoKAmlkGAEgASgF",
+            "Eg0KBXdpZHRoGAIgASgFEg4KBmhlaWdodBgDIAEoBRISCgpyZWZyZXNoX2h6",
+            "GAQgASgFIsADChFDTXNnU3lzdGVtRGlzcGxheRIKCgJpZBgBIAEoBRIMCgRu",
+            "YW1lGAIgASgJEhMKC2Rlc2NyaXB0aW9uGAMgASgJEhIKCmlzX3ByaW1hcnkY",
+            "BCABKAgSEgoKaXNfZW5hYmxlZBgFIAEoCBITCgtpc19pbnRlcm5hbBgGIAEo",
+            "CBIZChFoYXNfbW9kZV9vdmVycmlkZRgHIAEoCBIQCgh3aWR0aF9tbRgIIAEo",
+            "BRIRCgloZWlnaHRfbW0YCSABKAUSFwoPY3VycmVudF9tb2RlX2lkGAogASgF",
+            "EiUKBW1vZGVzGAsgAygLMhYuQ01zZ1N5c3RlbURpc3BsYXlNb2RlEhgKEHJl",
+            "ZnJlc2hfcmF0ZV9taW4YDCABKAUSGAoQcmVmcmVzaF9yYXRlX21heBgNIAEo",
+            "BRIWCg5pc192cnJfY2FwYWJsZRgOIAEoCBIcChRpc192cnJfb3V0cHV0X2Fj",
+            "dGl2ZRgPIAEoCBIWCg5pc19oZHJfY2FwYWJsZRgQIAEoCBIcChRpc19oZHJf",
+            "b3V0cHV0X2FjdGl2ZRgRIAEoCBIfChdzdXBwb3J0ZWRfcmVmcmVzaF9yYXRl",
+            "cxgSIAMoBSLRAQodQ01zZ1N5c3RlbURpc3BsYXlNYW5hZ2VyU3RhdGUSJAoI",
+            "ZGlzcGxheXMYASADKAsyEi5DTXNnU3lzdGVtRGlzcGxheRIjChtpc19tb2Rl",
+            "X3N3aXRjaGluZ19zdXBwb3J0ZWQYAiABKAgSZQoSY29tcGF0aWJpbGl0eV9t",
+            "b2RlGAMgASgOMiAuRVN5c3RlbURpc3BsYXlDb21wYXRpYmlsaXR5TW9kZTon",
+            "RVN5c3RlbURpc3BsYXlDb21wYXRpYmlsaXR5TW9kZV9JbnZhbGlkIkYKH0NN",
+            "c2dTeXN0ZW1EaXNwbGF5TWFuYWdlclNldE1vZGUSEgoKZGlzcGxheV9pZBgB",
+            "IAEoBRIPCgdtb2RlX2lkGAIgASgFIpwLChlDTXNnU3lzdGVtTWFuYWdlclNl",
+            "dHRpbmdzEioKImlkbGVfYmFja2xpZ2h0X2RpbV9iYXR0ZXJ5X3NlY29uZHMY",
+            "ASABKAISJQodaWRsZV9iYWNrbGlnaHRfZGltX2FjX3NlY29uZHMYAiABKAIS",
+            "JAocaWRsZV9zdXNwZW5kX2JhdHRlcnlfc2Vjb25kcxgDIAEoAhIfChdpZGxl",
+            "X3N1c3BlbmRfYWNfc2Vjb25kcxgEIAEoAhIeChZpZGxlX3N1c3BlbmRfc3Vw",
+            "cmVzc2VkGAUgASgIEigKIGlzX2FkYXB0aXZlX2JyaWdodG5lc3NfYXZhaWxh",
+            "YmxlGAYgASgIEisKI2Rpc3BsYXlfYWRhcHRpdmVfYnJpZ2h0bmVzc19lbmFi",
+            "bGVkGAcgASgIEiEKGWRpc3BsYXlfbmlnaHRtb2RlX2VuYWJsZWQYCiABKAgS",
+            "JgoeZGlzcGxheV9uaWdodG1vZGVfdGludHN0cmVuZ3RoGAsgASgCEiAKGGRp",
+            "c3BsYXlfbmlnaHRtb2RlX21heGh1ZRgMIAEoAhIgChhkaXNwbGF5X25pZ2h0",
+            "bW9kZV9tYXhzYXQYDSABKAISHwoXZGlzcGxheV9uaWdodG1vZGVfdWlleHAY",
+            "DiABKAISHwoXZGlzcGxheV9uaWdodG1vZGVfYmxlbmQYDyABKAISHwoXZGlz",
+            "cGxheV9uaWdodG1vZGVfcmVzZXQYECABKAgSKgoiZGlzcGxheV9uaWdodG1v",
+            "ZGVfc2NoZWR1bGVfZW5hYmxlZBgRIAEoCBIsCiRkaXNwbGF5X25pZ2h0bW9k",
+            "ZV9zY2hlZHVsZV9zdGFydHRpbWUYEiABKAISKgoiZGlzcGxheV9uaWdodG1v",
+            "ZGVfc2NoZWR1bGVfZW5kdGltZRgTIAEoAhIjChtkaXNwbGF5X2RpYWdub3N0",
+            "aWNzX2VuYWJsZWQYFCABKAgSFwoPYWxzX2x1eF9wcmltYXJ5GBUgASgCEhYK",
+            "DmFsc19sdXhfbWVkaWFuGBYgASgCEh0KFWRpc3BsYXlfYmFja2xpZ2h0X3Jh",
+            "dxgXIAEoAhImCh5kaXNwbGF5X2JyaWdodG5lc3NfYWRhcHRpdmVtaW4YGCAB",
+            "KAISJgoeZGlzcGxheV9icmlnaHRuZXNzX2FkYXB0aXZlbWF4GBkgASgCEiEK",
+            "GWlzX3dpZmlfcG93ZXJzYXZlX2VuYWJsZWQYGiABKAgSIAoYaXNfZmFuX2Nv",
+            "bnRyb2xfYXZhaWxhYmxlGBsgASgIEk4KEGZhbl9jb250cm9sX21vZGUYHCAB",
+            "KA4yFi5FU3lzdGVtRmFuQ29udHJvbE1vZGU6HFN5c3RlbUZhbkNvbnRyb2xN",
+            "b2RlX0ludmFsaWQSJwofaXNfZGlzcGxheV9icmlnaHRuZXNzX2F2YWlsYWJs",
+            "ZRgdIAEoCBIsCiRpc19kaXNwbGF5X2NvbG9ybWFuYWdlbWVudF9hdmFpbGFi",
+            "bGUYHyABKAgSGgoSZGlzcGxheV9jb2xvcmdhbXV0GCAgASgCEhkKEWFsc19s",
+            "dXhfYWx0ZXJuYXRlGCEgASgCEiYKHmlzX2Rpc3BsYXlfY29sb3J0ZW1wX2F2",
+            "YWlsYWJsZRgiIAEoCBIZChFkaXNwbGF5X2NvbG9ydGVtcBgjIAEoAhIhChlk",
+            "aXNwbGF5X2NvbG9ydGVtcF9kZWZhdWx0GCQgASgCEiEKGWRpc3BsYXlfY29s",
+            "b3J0ZW1wX2VuYWJsZWQYJSABKAgSVQobZGlzcGxheV9jb2xvcmdhbXV0X2xh",
+            "YmVsc2V0GCYgASgOMhQuRUNvbG9yR2FtdXRMYWJlbFNldDoaQ29sb3JHYW11",
+            "dExhYmVsU2V0X0RlZmF1bHQSLgomZGlzcGxheV9icmlnaHRuZXNzX292ZXJk",
+            "cml2ZV9oZHJfc3BsaXQYJyABKAIiYAoYQ01zZ1NlbGVjdE9TQnJhbmNoUGFy",
+            "YW1zEi0KBmJyYW5jaBgBIAEoDjIKLkVPU0JyYW5jaDoRRU9TQnJhbmNoX1Vu",
+            "a25vd24SFQoNY3VzdG9tX2JyYW5jaBgCIAEoCSJwChhDTXNnU3lzdGVtVXBk",
+            "YXRlUHJvZ3Jlc3MSFgoOc3RhZ2VfcHJvZ3Jlc3MYASABKAISGAoQc3RhZ2Vf",
+            "c2l6ZV9ieXRlcxgCIAEoAxIiChpydGltZV9lc3RpbWF0ZWRfY29tcGxldGlv",
+            "bhgDIAEoByLVAQobQ01zZ1N5c3RlbVVwZGF0ZUNoZWNrUmVzdWx0EjEKBHR5",
+            "cGUYASABKA4yDS5FVXBkYXRlclR5cGU6FEVVcGRhdGVyVHlwZV9JbnZhbGlk",
+            "EhIKB2VyZXN1bHQYAiABKA06ATISFQoNcnRpbWVfY2hlY2tlZBgDIAEoBxIR",
+            "CglhdmFpbGFibGUYBCABKAgSDwoHdmVyc2lvbhgFIAEoCRIUCgxhdXRvX21l",
+            "c3NhZ2UYBiABKAkSHgoWc3lzdGVtX3Jlc3RhcnRfcGVuZGluZxgHIAEoCCJB",
+            "ChtDTXNnU3lzdGVtVXBkYXRlQXBwbHlQYXJhbXMSIgoLYXBwbHlfdHlwZXMY",
+            "ASADKA4yDS5FVXBkYXRlclR5cGUitAEKG0NNc2dTeXN0ZW1VcGRhdGVBcHBs",
+            "eVJlc3VsdBIxCgR0eXBlGAEgASgOMg0uRVVwZGF0ZXJUeXBlOhRFVXBkYXRl",
+            "clR5cGVfSW52YWxpZBISCgdlcmVzdWx0GAIgASgNOgEyEiYKF3JlcXVpcmVz",
+            "X2NsaWVudF9yZXN0YXJ0GAMgASgIOgVmYWxzZRImChdyZXF1aXJlc19zeXN0",
+            "ZW1fcmVzdGFydBgEIAEoCDoFZmFsc2UijQIKFUNNc2dTeXN0ZW1VcGRhdGVT",
+            "dGF0ZRI0CgVzdGF0ZRgBIAEoDjIOLkVVcGRhdGVyU3RhdGU6FUVVcGRhdGVy",
+            "U3RhdGVfSW52YWxpZBIrCghwcm9ncmVzcxgCIAEoCzIZLkNNc2dTeXN0ZW1V",
+            "cGRhdGVQcm9ncmVzcxI4ChJ1cGRhdGVfY2hlY3Jlc3VsdHMYAyADKAsyHC5D",
+            "TXNnU3lzdGVtVXBkYXRlQ2hlY2tSZXN1bHQSOgoUdXBkYXRlX2FwcGx5X3Jl",
+            "c3VsdHMYBCADKAsyHC5DTXNnU3lzdGVtVXBkYXRlQXBwbHlSZXN1bHQSGwoT",
+            "c3VwcG9ydHNfb3NfdXBkYXRlcxgFIAEoCCImChVDTXNnQWNoaWV2ZW1lbnRD",
+            "aGFuZ2USDQoFYXBwaWQYASABKA0iXAoMQ01zZ0NlbGxMaXN0EiEKBWNlbGxz",
+            "GAEgAygLMhIuQ01zZ0NlbGxMaXN0LkNlbGwaKQoEQ2VsbBIPCgdjZWxsX2lk",
+            "GAEgASgNEhAKCGxvY19uYW1lGAIgASgJIowDChBDTXNnU2hvcnRjdXRJbmZv",
+            "Eg0KBWFwcGlkGAEgASgNEgsKA2V4ZRgCIAEoCRIRCglzdGFydF9kaXIYAyAB",
+            "KAkSDAoEaWNvbhgEIAEoCRIMCgRwYXRoGAUgASgJEgwKBGFyZ3MYBiABKAkS",
+            "EAoIYXBwX25hbWUYByABKAkSFgoOb3ZlcnJpZGVfYXBwaWQYCCABKA0SEwoL",
+            "ZmxhdHBhYXBwaWQYCSABKAkSDAoEdGFncxgKIAMoCRIRCglpc19yZW1vdGUY",
+            "CyABKAgSEQoJaXNfaGlkZGVuGAwgASgIEhQKDGlzX3RlbXBvcmFyeRgNIAEo",
+            "CBIRCglpc19vcGVudnIYDiABKAgSHAoUYWxsb3dfZGVza3RvcF9jb25maWcY",
+            "DyABKAgSFQoNYWxsb3dfb3ZlcmxheRgQIAEoCBIbChNydF9sYXN0X3BsYXll",
+            "ZF90aW1lGBEgASgNEhoKEmlzX2RldmtpdF9zaG9ydGN1dBgSIAEoCBIVCg1k",
+            "ZXZraXRfZ2FtZWlkGBMgASgJIiQKEkNNc2dTaG9ydGN1dEFwcElkcxIOCgZh",
+            "cHBpZHMYASADKA0iqgEKD0NNc2dNb25pdG9ySW5mbxIdChVzZWxlY3RlZF9k",
+            "aXNwbGF5X25hbWUYASACKAkSLgoIbW9uaXRvcnMYAiADKAsyHC5DTXNnTW9u",
+            "aXRvckluZm8uTW9uaXRvckluZm8aSAoLTW9uaXRvckluZm8SGwoTbW9uaXRv",
+            "cl9kZXZpY2VfbmFtZRgBIAIoCRIcChRtb25pdG9yX2Rpc3BsYXlfbmFtZRgC",
+            "IAIoCSIyCh1DTXNnR2VuZXJhdGVTeXN0ZW1SZXBvcnRSZXBseRIRCglyZXBv",
+            "cnRfaWQYASABKAkiOAoWQ01zZ1dlYlVJVHJhbnNwb3J0SW5mbxIMCgRwb3J0",
+            "GAEgASgNEhAKCGF1dGhfa2V5GAIgASgJIjIKGUNNc2dXZWJVSVRyYW5zcG9y",
+            "dEZhaWx1cmUSFQoNY29ubmVjdF9jb3VudBgBIAEoDSJeCh1DTXNnQ2xpZW50",
+            "U2hhZGVySGl0Q2FjaGVFbnRyeRIPCgdrZXlfc2hhGAEgASgMEhAKCGNvZGVf",
+            "c2hhGAIgASgMEhoKEnRpbWVfbGFzdF9yZXBvcnRlZBgDIAEoBCJLChhDTXNn",
+            "Q2xpZW50U2hhZGVySGl0Q2FjaGUSLwoHZW50cmllcxgBIAMoCzIeLkNNc2dD",
+            "bGllbnRTaGFkZXJIaXRDYWNoZUVudHJ5KowCChxFQ2xvdWRQZW5kaW5nUmVt",
+            "b3RlT3BlcmF0aW9uEiQKIEVDbG91ZFBlbmRpbmdSZW1vdGVPcGVyYXRpb25O",
+            "b25lEAASMAosRUNsb3VkUGVuZGluZ1JlbW90ZU9wZXJhdGlvbkFwcFNlc3Np",
+            "b25BY3RpdmUQARIwCixFQ2xvdWRQZW5kaW5nUmVtb3RlT3BlcmF0aW9uVXBs",
+            "b2FkSW5Qcm9ncmVzcxACEi0KKUVDbG91ZFBlbmRpbmdSZW1vdGVPcGVyYXRp",
+            "b25VcGxvYWRQZW5kaW5nEAMSMwovRUNsb3VkUGVuZGluZ1JlbW90ZU9wZXJh",
+            "dGlvbkFwcFNlc3Npb25TdXNwZW5kZWQQBCqCDAoYRVN0ZWFtRGVja0tleWJv",
+            "YXJkTGF5b3V0EiMKH0VTdGVhbURlY2tLZXlib2FyZExheW91dF9RV0VSVFkQ",
+            "ABImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfQnVsZ2FyaWFuEAESLwor",
+            "RVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0NoaW5lc2VfU2ltcGxpZmllZBAC",
+            "EjAKLEVTdGVhbURlY2tLZXlib2FyZExheW91dF9DaGluZXNlX1RyYWRpdGlv",
+            "bmFsEAMSIgoeRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0N6ZWNoEAQSIwof",
+            "RVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0RhbmlzaBAFEiQKIEVTdGVhbURl",
+            "Y2tLZXlib2FyZExheW91dF9GaW5uaXNoEAYSIwofRVN0ZWFtRGVja0tleWJv",
+            "YXJkTGF5b3V0X0ZyZW5jaBAHEiMKH0VTdGVhbURlY2tLZXlib2FyZExheW91",
+            "dF9HZXJtYW4QCBIiCh5FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfR3JlZWsQ",
+            "CRImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSHVuZ2FyaWFuEAoSJAog",
+            "RVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0l0YWxpYW4QCxIlCiFFU3RlYW1E",
+            "ZWNrS2V5Ym9hcmRMYXlvdXRfSmFwYW5lc2UQDBIjCh9FU3RlYW1EZWNrS2V5",
+            "Ym9hcmRMYXlvdXRfS29yZWFuEA0SJgoiRVN0ZWFtRGVja0tleWJvYXJkTGF5",
+            "b3V0X05vcndlZ2lhbhAOEiMKH0VTdGVhbURlY2tLZXlib2FyZExheW91dF9Q",
+            "b2xpc2gQDxInCiNFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfUG9ydHVndWVz",
+            "ZRAQEiUKIUVTdGVhbURlY2tLZXlib2FyZExheW91dF9Sb21hbmlhbhAREiQK",
+            "IEVTdGVhbURlY2tLZXlib2FyZExheW91dF9SdXNzaWFuEBISJAogRVN0ZWFt",
+            "RGVja0tleWJvYXJkTGF5b3V0X1NwYW5pc2gQExIkCiBFU3RlYW1EZWNrS2V5",
+            "Ym9hcmRMYXlvdXRfU3dlZGlzaBAUEiEKHUVTdGVhbURlY2tLZXlib2FyZExh",
+            "eW91dF9UaGFpEBUSJgoiRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1R1cmtp",
+            "c2hfRhAWEiYKIkVTdGVhbURlY2tLZXlib2FyZExheW91dF9UdXJraXNoX1EQ",
+            "FxImCiJFU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfVWtyYWluaWFuEBgSJwoj",
+            "RVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X1ZpZXRuYW1lc2UQGRIxCi1FU3Rl",
+            "YW1EZWNrS2V5Ym9hcmRMYXlvdXRfUVdFUlRZX0ludGVybmF0aW9uYWwQGhIj",
+            "Ch9FU3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfRHZvcmFrEBsSJAogRVN0ZWFt",
+            "RGVja0tleWJvYXJkTGF5b3V0X0NvbGVtYWsQHBI7CjdFU3RlYW1EZWNrS2V5",
+            "Ym9hcmRMYXlvdXRfQnVsZ2FyaWFuX1Bob25ldGljX1RyYWRpdGlvbmFsEB0S",
+            "LworRVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0X0J1bGdhcmlhbl9QaG9uZXRp",
+            "YxAeEjkKNUVTdGVhbURlY2tLZXlib2FyZExheW91dF9DaGluZXNlX1RyYWRp",
+            "dGlvbmFsX0JvcG9tb2ZvEB8SOAo0RVN0ZWFtRGVja0tleWJvYXJkTGF5b3V0",
+            "X0NoaW5lc2VfVHJhZGl0aW9uYWxfQ2FuZ2ppZRAgEioKJkVTdGVhbURlY2tL",
+            "ZXlib2FyZExheW91dF9KYXBhbmVzZV9LYW5hECESNgoyRVN0ZWFtRGVja0tl",
+            "eWJvYXJkTGF5b3V0X0NoaW5lc2VfVHJhZGl0aW9uYWxfUXVpY2sQIhInCiNF",
+            "U3RlYW1EZWNrS2V5Ym9hcmRMYXlvdXRfSW5kb25lc2lhbhAjQh9IAYABAKoC",
+            "F09wZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.EnumsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OpenSteamworks.Protobuf.ECloudPendingRemoteOperation), typeof(global::OpenSteamworks.Protobuf.ESteamDeckKeyboardLayout), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -422,9 +419,9 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticEntry), global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticEntry.Parser, new[]{ "Name", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfNetworkInterface), global::OpenSteamworks.Protobuf.CMsgSystemPerfNetworkInterface.Parser, new[]{ "Name", "Timestamp", "TxBytesTotal", "RxBytesTotal", "TxBytesPerSec", "RxBytesPerSec" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticInfo), global::OpenSteamworks.Protobuf.CMsgSystemPerfDiagnosticInfo.Parser, new[]{ "Entries", "Interfaces", "BatteryTempC" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits), global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits.Parser, new[]{ "CpuGovernorManualMinMhz", "CpuGovernorManualMaxMhz", "FsrSharpnessMin", "FsrSharpnessMax", "GpuPerformanceManualMinMhz", "GpuPerformanceManualMaxMhz", "PerfOverlayIsStandalone", "IsDynamicVrsAvailable", "IsManualDisplayRefreshRateAvailable", "GpuPerformanceLevelsAvailable", "DisplayRefreshManualHzMin", "DisplayRefreshManualHzMax", "FpsLimitOptions", "TdpLimitMin", "TdpLimitMax", "IsNisSupported", "NisSharpnessMin", "NisSharpnessMax", "DisplayExternalRefreshManualHzMin", "DisplayExternalRefreshManualHzMax", "FpsLimitOptionsExternal", "IsVrrSupported", "IsDynamicRefreshRateInSteamSupported", "IsSplitScalingAndFilteringSupported", "SplitScalingFiltersAvailable", "SplitScalingScalersAvailable", "DisableRefreshRateManagement" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits), global::OpenSteamworks.Protobuf.CMsgSystemPerfLimits.Parser, new[]{ "CpuGovernorManualMinMhz", "CpuGovernorManualMaxMhz", "FsrSharpnessMin", "FsrSharpnessMax", "GpuPerformanceManualMinMhz", "GpuPerformanceManualMaxMhz", "PerfOverlayIsStandalone", "IsDynamicVrsAvailable", "IsManualDisplayRefreshRateAvailable", "GpuPerformanceLevelsAvailable", "DisplayRefreshManualHzMin", "DisplayRefreshManualHzMax", "FpsLimitOptions", "TdpLimitMin", "TdpLimitMax", "DisplayExternalRefreshManualHzMin", "DisplayExternalRefreshManualHzMax", "FpsLimitOptionsExternal", "IsVrrSupported", "IsDynamicRefreshRateInSteamSupported", "SplitScalingFiltersAvailable", "SplitScalingScalersAvailable", "DisableRefreshRateManagement" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsGlobal), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsGlobal.Parser, new[]{ "DiagnosticUpdateRate", "SystemTraceServiceState", "GraphicsProfilingServiceState", "PerfOverlayServiceState", "PerfOverlayLevel", "IsShowPerfOverlayOverSteamEnabled", "IsAdvancedSettingsEnabled", "AllowExternalDisplayRefreshControl", "HdrOnSdrTonemapOperator", "IsHdrDebugHeatmapEnabled", "ForceHdrWideGammutForSdr", "SdrToHdrBrightness", "IsColorManagementEnabled" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsPerApp), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsPerApp.Parser, new[]{ "GpuPerformanceManualMhz", "FpsLimit", "IsVariableResolutionEnabled", "IsDynamicRefreshRateEnabled", "TdpLimit", "CpuGovernor", "CpuGovernorManualMhz", "ScalingFilter", "FsrSharpness", "IsFpsLimitEnabled", "IsTdpLimitEnabled", "IsLowLatencyModeEnabled", "DisplayRefreshManualHz", "IsGamePerfProfileEnabled", "GpuPerformanceLevel", "NisSharpness", "DisplayExternalRefreshManualHz", "FpsLimitExternal", "IsTearingEnabled", "IsVrrEnabled", "UseDynamicRefreshRateInSteam", "SplitScalingFilter", "SplitScalingScaler" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsPerApp), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsPerApp.Parser, new[]{ "GpuPerformanceManualMhz", "FpsLimit", "IsVariableResolutionEnabled", "IsDynamicRefreshRateEnabled", "TdpLimit", "CpuGovernor", "CpuGovernorManualMhz", "ScalingFilter", "FsrSharpness", "IsFpsLimitEnabled", "IsTdpLimitEnabled", "IsLowLatencyModeEnabled", "DisplayRefreshManualHz", "IsGamePerfProfileEnabled", "GpuPerformanceLevel", "DisplayExternalRefreshManualHz", "FpsLimitExternal", "IsTearingEnabled", "IsVrrEnabled", "UseDynamicRefreshRateInSteam", "SplitScalingFilter", "SplitScalingScaler" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettings), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettings.Parser, new[]{ "Global", "PerApp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsV1), global::OpenSteamworks.Protobuf.CMsgSystemPerfSettingsV1.Parser, new[]{ "DiagnosticUpdateRate", "SystemTraceServiceState", "GraphicsProfilingServiceState", "PerfOverlayServiceState", "PerfOverlayLevel", "GpuPerformanceLevel", "GpuPerformanceManualMhz", "FpsLimit", "IsVariableResolutionEnabled", "IsDynamicRefreshRateEnabled", "TdpLimit", "CpuGovernor", "CpuGovernorManualMhz", "ScalingFilter", "FsrSharpness", "IsFpsLimitEnabled", "IsTdpLimitEnabled", "IsShowPerfOverlayOverSteamEnabled", "IsLowLatencyModeEnabled", "DisplayRefreshManualHz", "IsGamePerfProfileEnabled" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgSystemPerfState), global::OpenSteamworks.Protobuf.CMsgSystemPerfState.Parser, new[]{ "Limits", "Settings", "CurrentGameId", "ActiveProfileGameId" }, null, null, null, null),
@@ -10654,15 +10651,11 @@ namespace OpenSteamworks.Protobuf {
       fpsLimitOptions_ = other.fpsLimitOptions_.Clone();
       tdpLimitMin_ = other.tdpLimitMin_;
       tdpLimitMax_ = other.tdpLimitMax_;
-      isNisSupported_ = other.isNisSupported_;
-      nisSharpnessMin_ = other.nisSharpnessMin_;
-      nisSharpnessMax_ = other.nisSharpnessMax_;
       displayExternalRefreshManualHzMin_ = other.displayExternalRefreshManualHzMin_;
       displayExternalRefreshManualHzMax_ = other.displayExternalRefreshManualHzMax_;
       fpsLimitOptionsExternal_ = other.fpsLimitOptionsExternal_.Clone();
       isVrrSupported_ = other.isVrrSupported_;
       isDynamicRefreshRateInSteamSupported_ = other.isDynamicRefreshRateInSteamSupported_;
-      isSplitScalingAndFilteringSupported_ = other.isSplitScalingAndFilteringSupported_;
       splitScalingFiltersAvailable_ = other.splitScalingFiltersAvailable_.Clone();
       splitScalingScalersAvailable_ = other.splitScalingScalersAvailable_.Clone();
       disableRefreshRateManagement_ = other.disableRefreshRateManagement_;
@@ -11048,87 +11041,6 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~4096;
     }
 
-    /// <summary>Field number for the "is_nis_supported" field.</summary>
-    public const int IsNisSupportedFieldNumber = 16;
-    private readonly static bool IsNisSupportedDefaultValue = false;
-
-    private bool isNisSupported_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsNisSupported {
-      get { if ((_hasBits0 & 8192) != 0) { return isNisSupported_; } else { return IsNisSupportedDefaultValue; } }
-      set {
-        _hasBits0 |= 8192;
-        isNisSupported_ = value;
-      }
-    }
-    /// <summary>Gets whether the "is_nis_supported" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasIsNisSupported {
-      get { return (_hasBits0 & 8192) != 0; }
-    }
-    /// <summary>Clears the value of the "is_nis_supported" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearIsNisSupported() {
-      _hasBits0 &= ~8192;
-    }
-
-    /// <summary>Field number for the "nis_sharpness_min" field.</summary>
-    public const int NisSharpnessMinFieldNumber = 17;
-    private readonly static int NisSharpnessMinDefaultValue = 0;
-
-    private int nisSharpnessMin_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int NisSharpnessMin {
-      get { if ((_hasBits0 & 16384) != 0) { return nisSharpnessMin_; } else { return NisSharpnessMinDefaultValue; } }
-      set {
-        _hasBits0 |= 16384;
-        nisSharpnessMin_ = value;
-      }
-    }
-    /// <summary>Gets whether the "nis_sharpness_min" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasNisSharpnessMin {
-      get { return (_hasBits0 & 16384) != 0; }
-    }
-    /// <summary>Clears the value of the "nis_sharpness_min" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearNisSharpnessMin() {
-      _hasBits0 &= ~16384;
-    }
-
-    /// <summary>Field number for the "nis_sharpness_max" field.</summary>
-    public const int NisSharpnessMaxFieldNumber = 18;
-    private readonly static int NisSharpnessMaxDefaultValue = 0;
-
-    private int nisSharpnessMax_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int NisSharpnessMax {
-      get { if ((_hasBits0 & 32768) != 0) { return nisSharpnessMax_; } else { return NisSharpnessMaxDefaultValue; } }
-      set {
-        _hasBits0 |= 32768;
-        nisSharpnessMax_ = value;
-      }
-    }
-    /// <summary>Gets whether the "nis_sharpness_max" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasNisSharpnessMax {
-      get { return (_hasBits0 & 32768) != 0; }
-    }
-    /// <summary>Clears the value of the "nis_sharpness_max" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearNisSharpnessMax() {
-      _hasBits0 &= ~32768;
-    }
-
     /// <summary>Field number for the "display_external_refresh_manual_hz_min" field.</summary>
     public const int DisplayExternalRefreshManualHzMinFieldNumber = 19;
     private readonly static int DisplayExternalRefreshManualHzMinDefaultValue = 0;
@@ -11137,9 +11049,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DisplayExternalRefreshManualHzMin {
-      get { if ((_hasBits0 & 65536) != 0) { return displayExternalRefreshManualHzMin_; } else { return DisplayExternalRefreshManualHzMinDefaultValue; } }
+      get { if ((_hasBits0 & 8192) != 0) { return displayExternalRefreshManualHzMin_; } else { return DisplayExternalRefreshManualHzMinDefaultValue; } }
       set {
-        _hasBits0 |= 65536;
+        _hasBits0 |= 8192;
         displayExternalRefreshManualHzMin_ = value;
       }
     }
@@ -11147,13 +11059,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDisplayExternalRefreshManualHzMin {
-      get { return (_hasBits0 & 65536) != 0; }
+      get { return (_hasBits0 & 8192) != 0; }
     }
     /// <summary>Clears the value of the "display_external_refresh_manual_hz_min" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDisplayExternalRefreshManualHzMin() {
-      _hasBits0 &= ~65536;
+      _hasBits0 &= ~8192;
     }
 
     /// <summary>Field number for the "display_external_refresh_manual_hz_max" field.</summary>
@@ -11164,9 +11076,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DisplayExternalRefreshManualHzMax {
-      get { if ((_hasBits0 & 131072) != 0) { return displayExternalRefreshManualHzMax_; } else { return DisplayExternalRefreshManualHzMaxDefaultValue; } }
+      get { if ((_hasBits0 & 16384) != 0) { return displayExternalRefreshManualHzMax_; } else { return DisplayExternalRefreshManualHzMaxDefaultValue; } }
       set {
-        _hasBits0 |= 131072;
+        _hasBits0 |= 16384;
         displayExternalRefreshManualHzMax_ = value;
       }
     }
@@ -11174,13 +11086,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDisplayExternalRefreshManualHzMax {
-      get { return (_hasBits0 & 131072) != 0; }
+      get { return (_hasBits0 & 16384) != 0; }
     }
     /// <summary>Clears the value of the "display_external_refresh_manual_hz_max" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDisplayExternalRefreshManualHzMax() {
-      _hasBits0 &= ~131072;
+      _hasBits0 &= ~16384;
     }
 
     /// <summary>Field number for the "fps_limit_options_external" field.</summary>
@@ -11202,9 +11114,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsVrrSupported {
-      get { if ((_hasBits0 & 262144) != 0) { return isVrrSupported_; } else { return IsVrrSupportedDefaultValue; } }
+      get { if ((_hasBits0 & 32768) != 0) { return isVrrSupported_; } else { return IsVrrSupportedDefaultValue; } }
       set {
-        _hasBits0 |= 262144;
+        _hasBits0 |= 32768;
         isVrrSupported_ = value;
       }
     }
@@ -11212,13 +11124,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsVrrSupported {
-      get { return (_hasBits0 & 262144) != 0; }
+      get { return (_hasBits0 & 32768) != 0; }
     }
     /// <summary>Clears the value of the "is_vrr_supported" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsVrrSupported() {
-      _hasBits0 &= ~262144;
+      _hasBits0 &= ~32768;
     }
 
     /// <summary>Field number for the "is_dynamic_refresh_rate_in_steam_supported" field.</summary>
@@ -11229,9 +11141,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsDynamicRefreshRateInSteamSupported {
-      get { if ((_hasBits0 & 524288) != 0) { return isDynamicRefreshRateInSteamSupported_; } else { return IsDynamicRefreshRateInSteamSupportedDefaultValue; } }
+      get { if ((_hasBits0 & 65536) != 0) { return isDynamicRefreshRateInSteamSupported_; } else { return IsDynamicRefreshRateInSteamSupportedDefaultValue; } }
       set {
-        _hasBits0 |= 524288;
+        _hasBits0 |= 65536;
         isDynamicRefreshRateInSteamSupported_ = value;
       }
     }
@@ -11239,40 +11151,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsDynamicRefreshRateInSteamSupported {
-      get { return (_hasBits0 & 524288) != 0; }
+      get { return (_hasBits0 & 65536) != 0; }
     }
     /// <summary>Clears the value of the "is_dynamic_refresh_rate_in_steam_supported" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsDynamicRefreshRateInSteamSupported() {
-      _hasBits0 &= ~524288;
-    }
-
-    /// <summary>Field number for the "is_split_scaling_and_filtering_supported" field.</summary>
-    public const int IsSplitScalingAndFilteringSupportedFieldNumber = 25;
-    private readonly static bool IsSplitScalingAndFilteringSupportedDefaultValue = false;
-
-    private bool isSplitScalingAndFilteringSupported_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsSplitScalingAndFilteringSupported {
-      get { if ((_hasBits0 & 1048576) != 0) { return isSplitScalingAndFilteringSupported_; } else { return IsSplitScalingAndFilteringSupportedDefaultValue; } }
-      set {
-        _hasBits0 |= 1048576;
-        isSplitScalingAndFilteringSupported_ = value;
-      }
-    }
-    /// <summary>Gets whether the "is_split_scaling_and_filtering_supported" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasIsSplitScalingAndFilteringSupported {
-      get { return (_hasBits0 & 1048576) != 0; }
-    }
-    /// <summary>Clears the value of the "is_split_scaling_and_filtering_supported" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearIsSplitScalingAndFilteringSupported() {
-      _hasBits0 &= ~1048576;
+      _hasBits0 &= ~65536;
     }
 
     /// <summary>Field number for the "split_scaling_filters_available" field.</summary>
@@ -11305,9 +11190,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool DisableRefreshRateManagement {
-      get { if ((_hasBits0 & 2097152) != 0) { return disableRefreshRateManagement_; } else { return DisableRefreshRateManagementDefaultValue; } }
+      get { if ((_hasBits0 & 131072) != 0) { return disableRefreshRateManagement_; } else { return DisableRefreshRateManagementDefaultValue; } }
       set {
-        _hasBits0 |= 2097152;
+        _hasBits0 |= 131072;
         disableRefreshRateManagement_ = value;
       }
     }
@@ -11315,13 +11200,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDisableRefreshRateManagement {
-      get { return (_hasBits0 & 2097152) != 0; }
+      get { return (_hasBits0 & 131072) != 0; }
     }
     /// <summary>Clears the value of the "disable_refresh_rate_management" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDisableRefreshRateManagement() {
-      _hasBits0 &= ~2097152;
+      _hasBits0 &= ~131072;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11354,15 +11239,11 @@ namespace OpenSteamworks.Protobuf {
       if(!fpsLimitOptions_.Equals(other.fpsLimitOptions_)) return false;
       if (TdpLimitMin != other.TdpLimitMin) return false;
       if (TdpLimitMax != other.TdpLimitMax) return false;
-      if (IsNisSupported != other.IsNisSupported) return false;
-      if (NisSharpnessMin != other.NisSharpnessMin) return false;
-      if (NisSharpnessMax != other.NisSharpnessMax) return false;
       if (DisplayExternalRefreshManualHzMin != other.DisplayExternalRefreshManualHzMin) return false;
       if (DisplayExternalRefreshManualHzMax != other.DisplayExternalRefreshManualHzMax) return false;
       if(!fpsLimitOptionsExternal_.Equals(other.fpsLimitOptionsExternal_)) return false;
       if (IsVrrSupported != other.IsVrrSupported) return false;
       if (IsDynamicRefreshRateInSteamSupported != other.IsDynamicRefreshRateInSteamSupported) return false;
-      if (IsSplitScalingAndFilteringSupported != other.IsSplitScalingAndFilteringSupported) return false;
       if(!splitScalingFiltersAvailable_.Equals(other.splitScalingFiltersAvailable_)) return false;
       if(!splitScalingScalersAvailable_.Equals(other.splitScalingScalersAvailable_)) return false;
       if (DisableRefreshRateManagement != other.DisableRefreshRateManagement) return false;
@@ -11388,15 +11269,11 @@ namespace OpenSteamworks.Protobuf {
       hash ^= fpsLimitOptions_.GetHashCode();
       if (HasTdpLimitMin) hash ^= TdpLimitMin.GetHashCode();
       if (HasTdpLimitMax) hash ^= TdpLimitMax.GetHashCode();
-      if (HasIsNisSupported) hash ^= IsNisSupported.GetHashCode();
-      if (HasNisSharpnessMin) hash ^= NisSharpnessMin.GetHashCode();
-      if (HasNisSharpnessMax) hash ^= NisSharpnessMax.GetHashCode();
       if (HasDisplayExternalRefreshManualHzMin) hash ^= DisplayExternalRefreshManualHzMin.GetHashCode();
       if (HasDisplayExternalRefreshManualHzMax) hash ^= DisplayExternalRefreshManualHzMax.GetHashCode();
       hash ^= fpsLimitOptionsExternal_.GetHashCode();
       if (HasIsVrrSupported) hash ^= IsVrrSupported.GetHashCode();
       if (HasIsDynamicRefreshRateInSteamSupported) hash ^= IsDynamicRefreshRateInSteamSupported.GetHashCode();
-      if (HasIsSplitScalingAndFilteringSupported) hash ^= IsSplitScalingAndFilteringSupported.GetHashCode();
       hash ^= splitScalingFiltersAvailable_.GetHashCode();
       hash ^= splitScalingScalersAvailable_.GetHashCode();
       if (HasDisableRefreshRateManagement) hash ^= DisableRefreshRateManagement.GetHashCode();
@@ -11472,18 +11349,6 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(120);
         output.WriteInt32(TdpLimitMax);
       }
-      if (HasIsNisSupported) {
-        output.WriteRawTag(128, 1);
-        output.WriteBool(IsNisSupported);
-      }
-      if (HasNisSharpnessMin) {
-        output.WriteRawTag(136, 1);
-        output.WriteInt32(NisSharpnessMin);
-      }
-      if (HasNisSharpnessMax) {
-        output.WriteRawTag(144, 1);
-        output.WriteInt32(NisSharpnessMax);
-      }
       if (HasDisplayExternalRefreshManualHzMin) {
         output.WriteRawTag(152, 1);
         output.WriteInt32(DisplayExternalRefreshManualHzMin);
@@ -11500,10 +11365,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasIsDynamicRefreshRateInSteamSupported) {
         output.WriteRawTag(192, 1);
         output.WriteBool(IsDynamicRefreshRateInSteamSupported);
-      }
-      if (HasIsSplitScalingAndFilteringSupported) {
-        output.WriteRawTag(200, 1);
-        output.WriteBool(IsSplitScalingAndFilteringSupported);
       }
       splitScalingFiltersAvailable_.WriteTo(output, _repeated_splitScalingFiltersAvailable_codec);
       splitScalingScalersAvailable_.WriteTo(output, _repeated_splitScalingScalersAvailable_codec);
@@ -11575,18 +11436,6 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(120);
         output.WriteInt32(TdpLimitMax);
       }
-      if (HasIsNisSupported) {
-        output.WriteRawTag(128, 1);
-        output.WriteBool(IsNisSupported);
-      }
-      if (HasNisSharpnessMin) {
-        output.WriteRawTag(136, 1);
-        output.WriteInt32(NisSharpnessMin);
-      }
-      if (HasNisSharpnessMax) {
-        output.WriteRawTag(144, 1);
-        output.WriteInt32(NisSharpnessMax);
-      }
       if (HasDisplayExternalRefreshManualHzMin) {
         output.WriteRawTag(152, 1);
         output.WriteInt32(DisplayExternalRefreshManualHzMin);
@@ -11603,10 +11452,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasIsDynamicRefreshRateInSteamSupported) {
         output.WriteRawTag(192, 1);
         output.WriteBool(IsDynamicRefreshRateInSteamSupported);
-      }
-      if (HasIsSplitScalingAndFilteringSupported) {
-        output.WriteRawTag(200, 1);
-        output.WriteBool(IsSplitScalingAndFilteringSupported);
       }
       splitScalingFiltersAvailable_.WriteTo(ref output, _repeated_splitScalingFiltersAvailable_codec);
       splitScalingScalersAvailable_.WriteTo(ref output, _repeated_splitScalingScalersAvailable_codec);
@@ -11665,15 +11510,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasTdpLimitMax) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TdpLimitMax);
       }
-      if (HasIsNisSupported) {
-        size += 2 + 1;
-      }
-      if (HasNisSharpnessMin) {
-        size += 2 + pb::CodedOutputStream.ComputeInt32Size(NisSharpnessMin);
-      }
-      if (HasNisSharpnessMax) {
-        size += 2 + pb::CodedOutputStream.ComputeInt32Size(NisSharpnessMax);
-      }
       if (HasDisplayExternalRefreshManualHzMin) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(DisplayExternalRefreshManualHzMin);
       }
@@ -11685,9 +11521,6 @@ namespace OpenSteamworks.Protobuf {
         size += 2 + 1;
       }
       if (HasIsDynamicRefreshRateInSteamSupported) {
-        size += 2 + 1;
-      }
-      if (HasIsSplitScalingAndFilteringSupported) {
         size += 2 + 1;
       }
       size += splitScalingFiltersAvailable_.CalculateSize(_repeated_splitScalingFiltersAvailable_codec);
@@ -11748,15 +11581,6 @@ namespace OpenSteamworks.Protobuf {
       if (other.HasTdpLimitMax) {
         TdpLimitMax = other.TdpLimitMax;
       }
-      if (other.HasIsNisSupported) {
-        IsNisSupported = other.IsNisSupported;
-      }
-      if (other.HasNisSharpnessMin) {
-        NisSharpnessMin = other.NisSharpnessMin;
-      }
-      if (other.HasNisSharpnessMax) {
-        NisSharpnessMax = other.NisSharpnessMax;
-      }
       if (other.HasDisplayExternalRefreshManualHzMin) {
         DisplayExternalRefreshManualHzMin = other.DisplayExternalRefreshManualHzMin;
       }
@@ -11769,9 +11593,6 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasIsDynamicRefreshRateInSteamSupported) {
         IsDynamicRefreshRateInSteamSupported = other.IsDynamicRefreshRateInSteamSupported;
-      }
-      if (other.HasIsSplitScalingAndFilteringSupported) {
-        IsSplitScalingAndFilteringSupported = other.IsSplitScalingAndFilteringSupported;
       }
       splitScalingFiltersAvailable_.Add(other.splitScalingFiltersAvailable_);
       splitScalingScalersAvailable_.Add(other.splitScalingScalersAvailable_);
@@ -11859,18 +11680,6 @@ namespace OpenSteamworks.Protobuf {
             TdpLimitMax = input.ReadInt32();
             break;
           }
-          case 128: {
-            IsNisSupported = input.ReadBool();
-            break;
-          }
-          case 136: {
-            NisSharpnessMin = input.ReadInt32();
-            break;
-          }
-          case 144: {
-            NisSharpnessMax = input.ReadInt32();
-            break;
-          }
           case 152: {
             DisplayExternalRefreshManualHzMin = input.ReadInt32();
             break;
@@ -11890,10 +11699,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 192: {
             IsDynamicRefreshRateInSteamSupported = input.ReadBool();
-            break;
-          }
-          case 200: {
-            IsSplitScalingAndFilteringSupported = input.ReadBool();
             break;
           }
           case 210:
@@ -11991,18 +11796,6 @@ namespace OpenSteamworks.Protobuf {
             TdpLimitMax = input.ReadInt32();
             break;
           }
-          case 128: {
-            IsNisSupported = input.ReadBool();
-            break;
-          }
-          case 136: {
-            NisSharpnessMin = input.ReadInt32();
-            break;
-          }
-          case 144: {
-            NisSharpnessMax = input.ReadInt32();
-            break;
-          }
           case 152: {
             DisplayExternalRefreshManualHzMin = input.ReadInt32();
             break;
@@ -12022,10 +11815,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 192: {
             IsDynamicRefreshRateInSteamSupported = input.ReadBool();
-            break;
-          }
-          case 200: {
-            IsSplitScalingAndFilteringSupported = input.ReadBool();
             break;
           }
           case 210:
@@ -12940,7 +12729,6 @@ namespace OpenSteamworks.Protobuf {
       displayRefreshManualHz_ = other.displayRefreshManualHz_;
       isGamePerfProfileEnabled_ = other.isGamePerfProfileEnabled_;
       gpuPerformanceLevel_ = other.gpuPerformanceLevel_;
-      nisSharpness_ = other.nisSharpness_;
       displayExternalRefreshManualHz_ = other.displayExternalRefreshManualHz_;
       fpsLimitExternal_ = other.fpsLimitExternal_;
       isTearingEnabled_ = other.isTearingEnabled_;
@@ -13362,33 +13150,6 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~16384;
     }
 
-    /// <summary>Field number for the "nis_sharpness" field.</summary>
-    public const int NisSharpnessFieldNumber = 16;
-    private readonly static int NisSharpnessDefaultValue = 0;
-
-    private int nisSharpness_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int NisSharpness {
-      get { if ((_hasBits0 & 32768) != 0) { return nisSharpness_; } else { return NisSharpnessDefaultValue; } }
-      set {
-        _hasBits0 |= 32768;
-        nisSharpness_ = value;
-      }
-    }
-    /// <summary>Gets whether the "nis_sharpness" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasNisSharpness {
-      get { return (_hasBits0 & 32768) != 0; }
-    }
-    /// <summary>Clears the value of the "nis_sharpness" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearNisSharpness() {
-      _hasBits0 &= ~32768;
-    }
-
     /// <summary>Field number for the "display_external_refresh_manual_hz" field.</summary>
     public const int DisplayExternalRefreshManualHzFieldNumber = 17;
     private readonly static int DisplayExternalRefreshManualHzDefaultValue = 0;
@@ -13397,9 +13158,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DisplayExternalRefreshManualHz {
-      get { if ((_hasBits0 & 65536) != 0) { return displayExternalRefreshManualHz_; } else { return DisplayExternalRefreshManualHzDefaultValue; } }
+      get { if ((_hasBits0 & 32768) != 0) { return displayExternalRefreshManualHz_; } else { return DisplayExternalRefreshManualHzDefaultValue; } }
       set {
-        _hasBits0 |= 65536;
+        _hasBits0 |= 32768;
         displayExternalRefreshManualHz_ = value;
       }
     }
@@ -13407,13 +13168,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDisplayExternalRefreshManualHz {
-      get { return (_hasBits0 & 65536) != 0; }
+      get { return (_hasBits0 & 32768) != 0; }
     }
     /// <summary>Clears the value of the "display_external_refresh_manual_hz" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDisplayExternalRefreshManualHz() {
-      _hasBits0 &= ~65536;
+      _hasBits0 &= ~32768;
     }
 
     /// <summary>Field number for the "fps_limit_external" field.</summary>
@@ -13424,9 +13185,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int FpsLimitExternal {
-      get { if ((_hasBits0 & 131072) != 0) { return fpsLimitExternal_; } else { return FpsLimitExternalDefaultValue; } }
+      get { if ((_hasBits0 & 65536) != 0) { return fpsLimitExternal_; } else { return FpsLimitExternalDefaultValue; } }
       set {
-        _hasBits0 |= 131072;
+        _hasBits0 |= 65536;
         fpsLimitExternal_ = value;
       }
     }
@@ -13434,13 +13195,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasFpsLimitExternal {
-      get { return (_hasBits0 & 131072) != 0; }
+      get { return (_hasBits0 & 65536) != 0; }
     }
     /// <summary>Clears the value of the "fps_limit_external" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearFpsLimitExternal() {
-      _hasBits0 &= ~131072;
+      _hasBits0 &= ~65536;
     }
 
     /// <summary>Field number for the "is_tearing_enabled" field.</summary>
@@ -13451,9 +13212,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsTearingEnabled {
-      get { if ((_hasBits0 & 262144) != 0) { return isTearingEnabled_; } else { return IsTearingEnabledDefaultValue; } }
+      get { if ((_hasBits0 & 131072) != 0) { return isTearingEnabled_; } else { return IsTearingEnabledDefaultValue; } }
       set {
-        _hasBits0 |= 262144;
+        _hasBits0 |= 131072;
         isTearingEnabled_ = value;
       }
     }
@@ -13461,13 +13222,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsTearingEnabled {
-      get { return (_hasBits0 & 262144) != 0; }
+      get { return (_hasBits0 & 131072) != 0; }
     }
     /// <summary>Clears the value of the "is_tearing_enabled" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsTearingEnabled() {
-      _hasBits0 &= ~262144;
+      _hasBits0 &= ~131072;
     }
 
     /// <summary>Field number for the "is_vrr_enabled" field.</summary>
@@ -13478,9 +13239,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsVrrEnabled {
-      get { if ((_hasBits0 & 524288) != 0) { return isVrrEnabled_; } else { return IsVrrEnabledDefaultValue; } }
+      get { if ((_hasBits0 & 262144) != 0) { return isVrrEnabled_; } else { return IsVrrEnabledDefaultValue; } }
       set {
-        _hasBits0 |= 524288;
+        _hasBits0 |= 262144;
         isVrrEnabled_ = value;
       }
     }
@@ -13488,13 +13249,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsVrrEnabled {
-      get { return (_hasBits0 & 524288) != 0; }
+      get { return (_hasBits0 & 262144) != 0; }
     }
     /// <summary>Clears the value of the "is_vrr_enabled" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsVrrEnabled() {
-      _hasBits0 &= ~524288;
+      _hasBits0 &= ~262144;
     }
 
     /// <summary>Field number for the "use_dynamic_refresh_rate_in_steam" field.</summary>
@@ -13505,9 +13266,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool UseDynamicRefreshRateInSteam {
-      get { if ((_hasBits0 & 1048576) != 0) { return useDynamicRefreshRateInSteam_; } else { return UseDynamicRefreshRateInSteamDefaultValue; } }
+      get { if ((_hasBits0 & 524288) != 0) { return useDynamicRefreshRateInSteam_; } else { return UseDynamicRefreshRateInSteamDefaultValue; } }
       set {
-        _hasBits0 |= 1048576;
+        _hasBits0 |= 524288;
         useDynamicRefreshRateInSteam_ = value;
       }
     }
@@ -13515,13 +13276,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUseDynamicRefreshRateInSteam {
-      get { return (_hasBits0 & 1048576) != 0; }
+      get { return (_hasBits0 & 524288) != 0; }
     }
     /// <summary>Clears the value of the "use_dynamic_refresh_rate_in_steam" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUseDynamicRefreshRateInSteam() {
-      _hasBits0 &= ~1048576;
+      _hasBits0 &= ~524288;
     }
 
     /// <summary>Field number for the "split_scaling_filter" field.</summary>
@@ -13532,9 +13293,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::OpenSteamworks.Protobuf.ESplitScalingFilter SplitScalingFilter {
-      get { if ((_hasBits0 & 2097152) != 0) { return splitScalingFilter_; } else { return SplitScalingFilterDefaultValue; } }
+      get { if ((_hasBits0 & 1048576) != 0) { return splitScalingFilter_; } else { return SplitScalingFilterDefaultValue; } }
       set {
-        _hasBits0 |= 2097152;
+        _hasBits0 |= 1048576;
         splitScalingFilter_ = value;
       }
     }
@@ -13542,13 +13303,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSplitScalingFilter {
-      get { return (_hasBits0 & 2097152) != 0; }
+      get { return (_hasBits0 & 1048576) != 0; }
     }
     /// <summary>Clears the value of the "split_scaling_filter" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSplitScalingFilter() {
-      _hasBits0 &= ~2097152;
+      _hasBits0 &= ~1048576;
     }
 
     /// <summary>Field number for the "split_scaling_scaler" field.</summary>
@@ -13559,9 +13320,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::OpenSteamworks.Protobuf.ESplitScalingScaler SplitScalingScaler {
-      get { if ((_hasBits0 & 4194304) != 0) { return splitScalingScaler_; } else { return SplitScalingScalerDefaultValue; } }
+      get { if ((_hasBits0 & 2097152) != 0) { return splitScalingScaler_; } else { return SplitScalingScalerDefaultValue; } }
       set {
-        _hasBits0 |= 4194304;
+        _hasBits0 |= 2097152;
         splitScalingScaler_ = value;
       }
     }
@@ -13569,13 +13330,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSplitScalingScaler {
-      get { return (_hasBits0 & 4194304) != 0; }
+      get { return (_hasBits0 & 2097152) != 0; }
     }
     /// <summary>Clears the value of the "split_scaling_scaler" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSplitScalingScaler() {
-      _hasBits0 &= ~4194304;
+      _hasBits0 &= ~2097152;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13608,7 +13369,6 @@ namespace OpenSteamworks.Protobuf {
       if (DisplayRefreshManualHz != other.DisplayRefreshManualHz) return false;
       if (IsGamePerfProfileEnabled != other.IsGamePerfProfileEnabled) return false;
       if (GpuPerformanceLevel != other.GpuPerformanceLevel) return false;
-      if (NisSharpness != other.NisSharpness) return false;
       if (DisplayExternalRefreshManualHz != other.DisplayExternalRefreshManualHz) return false;
       if (FpsLimitExternal != other.FpsLimitExternal) return false;
       if (IsTearingEnabled != other.IsTearingEnabled) return false;
@@ -13638,7 +13398,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasDisplayRefreshManualHz) hash ^= DisplayRefreshManualHz.GetHashCode();
       if (HasIsGamePerfProfileEnabled) hash ^= IsGamePerfProfileEnabled.GetHashCode();
       if (HasGpuPerformanceLevel) hash ^= GpuPerformanceLevel.GetHashCode();
-      if (HasNisSharpness) hash ^= NisSharpness.GetHashCode();
       if (HasDisplayExternalRefreshManualHz) hash ^= DisplayExternalRefreshManualHz.GetHashCode();
       if (HasFpsLimitExternal) hash ^= FpsLimitExternal.GetHashCode();
       if (HasIsTearingEnabled) hash ^= IsTearingEnabled.GetHashCode();
@@ -13723,10 +13482,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasGpuPerformanceLevel) {
         output.WriteRawTag(120);
         output.WriteEnum((int) GpuPerformanceLevel);
-      }
-      if (HasNisSharpness) {
-        output.WriteRawTag(128, 1);
-        output.WriteInt32(NisSharpness);
       }
       if (HasDisplayExternalRefreshManualHz) {
         output.WriteRawTag(136, 1);
@@ -13826,10 +13581,6 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(120);
         output.WriteEnum((int) GpuPerformanceLevel);
       }
-      if (HasNisSharpness) {
-        output.WriteRawTag(128, 1);
-        output.WriteInt32(NisSharpness);
-      }
       if (HasDisplayExternalRefreshManualHz) {
         output.WriteRawTag(136, 1);
         output.WriteInt32(DisplayExternalRefreshManualHz);
@@ -13913,9 +13664,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasGpuPerformanceLevel) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) GpuPerformanceLevel);
       }
-      if (HasNisSharpness) {
-        size += 2 + pb::CodedOutputStream.ComputeInt32Size(NisSharpness);
-      }
       if (HasDisplayExternalRefreshManualHz) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(DisplayExternalRefreshManualHz);
       }
@@ -13993,9 +13741,6 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasGpuPerformanceLevel) {
         GpuPerformanceLevel = other.GpuPerformanceLevel;
-      }
-      if (other.HasNisSharpness) {
-        NisSharpness = other.NisSharpness;
       }
       if (other.HasDisplayExternalRefreshManualHz) {
         DisplayExternalRefreshManualHz = other.DisplayExternalRefreshManualHz;
@@ -14095,10 +13840,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 120: {
             GpuPerformanceLevel = (global::OpenSteamworks.Protobuf.EGPUPerformanceLevel) input.ReadEnum();
-            break;
-          }
-          case 128: {
-            NisSharpness = input.ReadInt32();
             break;
           }
           case 136: {
@@ -14206,10 +13947,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 120: {
             GpuPerformanceLevel = (global::OpenSteamworks.Protobuf.EGPUPerformanceLevel) input.ReadEnum();
-            break;
-          }
-          case 128: {
-            NisSharpness = input.ReadInt32();
             break;
           }
           case 136: {

@@ -17,13 +17,13 @@ namespace OpenSteamworks.Generated;
 public unsafe interface IClientProcessMonitor
 {
     // WARNING: Arguments are unknown!
-    public unknown RegisterProcess();  // argc: 1, index: 1, ipc args: [bytes4], ipc returns: []
+    public unknown RegisterProcess();  // argc: -1, index: 1, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown UnregisterProcess();  // argc: 1, index: 2, ipc args: [bytes4], ipc returns: []
+    public unknown UnregisterProcess();  // argc: -1, index: 2, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown TerminateProcess();  // argc: 2, index: 3, ipc args: [bytes4, bytes4], ipc returns: []
+    public unknown TerminateProcess();  // argc: -1, index: 3, ipc args: [bytes4, bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown SuspendProcess();  // argc: 1, index: 4, ipc args: [bytes4], ipc returns: []
+    public unknown SuspendProcess();  // argc: -1, index: 4, ipc args: [bytes4], ipc returns: []
     // WARNING: Arguments are unknown!
-    public unknown ResumeProcess();  // argc: 1, index: 5, ipc args: [bytes4], ipc returns: []
+    public unknown ResumeProcess();  // argc: -1, index: 5, ipc args: [bytes4], ipc returns: []
 }

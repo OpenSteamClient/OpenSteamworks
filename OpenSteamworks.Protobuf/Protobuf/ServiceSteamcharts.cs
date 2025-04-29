@@ -46,60 +46,62 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "YW1lGAQgASgNEhIKCnBlYWluX2dhbWUYBSABKA0icgorQ1N0ZWFtQ2hhcnRz",
             "X0dldE1vbnRoVG9wQXBwUmVsZWFzZXNfUmVxdWVzdBITCgtydGltZV9tb250",
             "aBgBIAEoDRITCgtpbmNsdWRlX2RsYxgCIAEoCBIZChF0b3BfcmVzdWx0c19s",
-            "aW1pdBgDIAEoDSLcAQosQ1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9wQXBwUmVs",
+            "aW1pdBgDIAEoDSLEAgosQ1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9wQXBwUmVs",
             "ZWFzZXNfUmVzcG9uc2USVQoQdG9wX2FwcF9yZWxlYXNlcxgBIAMoCzI7LkNT",
             "dGVhbUNoYXJ0c19HZXRNb250aFRvcEFwcFJlbGVhc2VzX1Jlc3BvbnNlX0Fw",
             "cE5ld1JlbGVhc2USVQoQdG9wX2RsY19yZWxlYXNlcxgCIAMoCzI7LkNTdGVh",
             "bUNoYXJ0c19HZXRNb250aFRvcEFwcFJlbGVhc2VzX1Jlc3BvbnNlX0FwcE5l",
-            "d1JlbGVhc2UiYgo6Q1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9wQXBwUmVsZWFz",
-            "ZXNfUmVzcG9uc2VfQXBwTmV3UmVsZWFzZRINCgVhcHBpZBgBIAEoDRIVCg1y",
-            "dGltZV9yZWxlYXNlGAIgASgNIoIBCidDU3RlYW1DaGFydHNfR2V0TW9zdFBs",
-            "YXllZEdhbWVzX1JlcXVlc3QSJAoHY29udGV4dBgBIAEoCzITLlN0b3JlQnJv",
-            "d3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QYAiABKAsyGy5TdG9yZUJyb3dz",
-            "ZUl0ZW1EYXRhUmVxdWVzdCKIAQooQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5",
-            "ZWRHYW1lc19SZXNwb25zZRITCgtyb2xsdXBfZGF0ZRgBIAEoDRJHCgVyYW5r",
-            "cxgCIAMoCzI4LkNTdGVhbUNoYXJ0c19HZXRNb3N0UGxheWVkR2FtZXNfUmVz",
-            "cG9uc2VfTW9zdFBsYXllZFJhbmsiuAEKN0NTdGVhbUNoYXJ0c19HZXRNb3N0",
-            "UGxheWVkR2FtZXNfUmVzcG9uc2VfTW9zdFBsYXllZFJhbmsSDAoEcmFuaxgB",
-            "IAEoBRINCgVhcHBpZBgCIAEoDRIYCgRpdGVtGAMgASgLMgouU3RvcmVJdGVt",
-            "EhQKDGxhc3Rfd2VlcmFuaxgEIAEoBRISCgpwZWFpbl9nYW1lGAUgASgNEhwK",
-            "FGRhaWx5X2FjdGl2ZV9wbGF5ZXJzGAYgASgNIr8BCjBDU3RlYW1DaGFydHNf",
-            "R2V0TW9zdFBsYXllZFN0ZWFtRGVja0dhbWVzX1JlcXVlc3QSJAoHY29udGV4",
-            "dBgBIAEoCzITLlN0b3JlQnJvd3NlQ29udGV4dBIxCgxkYXRhX3JlcXVlc3QY",
-            "AiABKAsyGy5TdG9yZUJyb3dzZUl0ZW1EYXRhUmVxdWVzdBIjChF0b3BfcGxh",
-            "eWVkX3BlcmlvZBgDIAEoBUIIgrUYBGVudW0SDQoFY291bnQYBCABKAUiqgEK",
-            "MUNTdGVhbUNoYXJ0c19HZXRNb3N0UGxheWVkU3RlYW1EZWNrR2FtZXNfUmVz",
-            "cG9uc2USUAoFcmFua3MYASADKAsyQS5DU3RlYW1DaGFydHNfR2V0TW9zdFBs",
-            "YXllZFN0ZWFtRGVja0dhbWVzX1Jlc3BvbnNlX01vc3RQbGF5ZWRSYW5rEiMK",
-            "EXRvcF9wbGF5ZWRfcGVyaW9kGAIgASgFQgiCtRgEZW51bSKTAQpAQ1N0ZWFt",
-            "Q2hhcnRzX0dldE1vc3RQbGF5ZWRTdGVhbURlY2tHYW1lc19SZXNwb25zZV9N",
-            "b3N0UGxheWVkUmFuaxIMCgRyYW5rGAEgASgFEg0KBWFwcGlkGAIgASgNEhgK",
-            "BGl0ZW0YAyABKAsyCi5TdG9yZUl0ZW0SGAoQbGFzdF9wZXJpb2RfcmFuaxgE",
-            "IAEoBSIqCihDU3RlYW1DaGFydHNfR2V0VG9wUmVsZWFzZXNQYWdlc19SZXF1",
-            "ZXN0InYKKUNTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1BhZ2VzX1Jlc3Bv",
-            "bnNlEkkKBXBhZ2VzGAEgAygLMjouQ1N0ZWFtQ2hhcnRzX0dldFRvcFJlbGVh",
-            "c2VzUGFnZXNfUmVzcG9uc2VfVG9wUmVsZWFzZXNQYWdlIpMBCjlDU3RlYW1D",
-            "aGFydHNfR2V0VG9wUmVsZWFzZXNQYWdlc19SZXNwb25zZV9Ub3BSZWxlYXNl",
-            "c1BhZ2USDAoEbmFtZRgBIAEoCRIWCg5zdGFydF9vZl9tb250aBgCIAEoDRIQ",
-            "Cgh1cmxfcGF0aBgDIAEoCRIeCghpdGVtX2lkcxgEIAMoCzIMLlN0b3JlSXRl",
-            "bUlEMtYFCgtTdGVhbUNoYXJ0cxJpChJHZXRCZXN0T2ZZZWFyUGFnZXMSKC5D",
-            "U3RlYW1DaGFydHNfR2V0QmVzdE9mWWVhclBhZ2VzX1JlcXVlc3QaKS5DU3Rl",
-            "YW1DaGFydHNfR2V0QmVzdE9mWWVhclBhZ2VzX1Jlc3BvbnNlEoQBChtHZXRH",
-            "YW1lc0J5Q29uY3VycmVudFBsYXllcnMSMS5DU3RlYW1DaGFydHNfR2V0R2Ft",
-            "ZXNCeUNvbmN1cnJlbnRQbGF5ZXJzX1JlcXVlc3QaMi5DU3RlYW1DaGFydHNf",
-            "R2V0R2FtZXNCeUNvbmN1cnJlbnRQbGF5ZXJzX1Jlc3BvbnNlEnUKFkdldE1v",
-            "bnRoVG9wQXBwUmVsZWFzZXMSLC5DU3RlYW1DaGFydHNfR2V0TW9udGhUb3BB",
-            "cHBSZWxlYXNlc19SZXF1ZXN0Gi0uQ1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9w",
-            "QXBwUmVsZWFzZXNfUmVzcG9uc2USaQoSR2V0TW9zdFBsYXllZEdhbWVzEigu",
-            "Q1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRHYW1lc19SZXF1ZXN0GikuQ1N0",
-            "ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRHYW1lc19SZXNwb25zZRKEAQobR2V0",
-            "TW9zdFBsYXllZFN0ZWFtRGVja0dhbWVzEjEuQ1N0ZWFtQ2hhcnRzX0dldE1v",
-            "c3RQbGF5ZWRTdGVhbURlY2tHYW1lc19SZXF1ZXN0GjIuQ1N0ZWFtQ2hhcnRz",
-            "X0dldE1vc3RQbGF5ZWRTdGVhbURlY2tHYW1lc19SZXNwb25zZRJsChNHZXRU",
-            "b3BSZWxlYXNlc1BhZ2VzEikuQ1N0ZWFtQ2hhcnRzX0dldFRvcFJlbGVhc2Vz",
-            "UGFnZXNfUmVxdWVzdBoqLkNTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1Bh",
-            "Z2VzX1Jlc3BvbnNlQiCqAh1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJV",
-            "SQ=="));
+            "d1JlbGVhc2USZgohdG9wX2NvbWJpbmVkX2FwcF9hbmRfZGxjX3JlbGVhc2Vz",
+            "GAMgAygLMjsuQ1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9wQXBwUmVsZWFzZXNf",
+            "UmVzcG9uc2VfQXBwTmV3UmVsZWFzZSJ8CjpDU3RlYW1DaGFydHNfR2V0TW9u",
+            "dGhUb3BBcHBSZWxlYXNlc19SZXNwb25zZV9BcHBOZXdSZWxlYXNlEg0KBWFw",
+            "cGlkGAEgASgNEhUKDXJ0aW1lX3JlbGVhc2UYAiABKA0SGAoQYXBwX3JlbGVh",
+            "c2VfcmFuaxgDIAEoDSKCAQonQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRH",
+            "YW1lc19SZXF1ZXN0EiQKB2NvbnRleHQYASABKAsyEy5TdG9yZUJyb3dzZUNv",
+            "bnRleHQSMQoMZGF0YV9yZXF1ZXN0GAIgASgLMhsuU3RvcmVCcm93c2VJdGVt",
+            "RGF0YVJlcXVlc3QiiAEKKENTdGVhbUNoYXJ0c19HZXRNb3N0UGxheWVkR2Ft",
+            "ZXNfUmVzcG9uc2USEwoLcm9sbHVwX2RhdGUYASABKA0SRwoFcmFua3MYAiAD",
+            "KAsyOC5DU3RlYW1DaGFydHNfR2V0TW9zdFBsYXllZEdhbWVzX1Jlc3BvbnNl",
+            "X01vc3RQbGF5ZWRSYW5rIrgBCjdDU3RlYW1DaGFydHNfR2V0TW9zdFBsYXll",
+            "ZEdhbWVzX1Jlc3BvbnNlX01vc3RQbGF5ZWRSYW5rEgwKBHJhbmsYASABKAUS",
+            "DQoFYXBwaWQYAiABKA0SGAoEaXRlbRgDIAEoCzIKLlN0b3JlSXRlbRIUCgxs",
+            "YXN0X3dlZXJhbmsYBCABKAUSEgoKcGVhaW5fZ2FtZRgFIAEoDRIcChRkYWls",
+            "eV9hY3RpdmVfcGxheWVycxgGIAEoDSK/AQowQ1N0ZWFtQ2hhcnRzX0dldE1v",
+            "c3RQbGF5ZWRTdGVhbURlY2tHYW1lc19SZXF1ZXN0EiQKB2NvbnRleHQYASAB",
+            "KAsyEy5TdG9yZUJyb3dzZUNvbnRleHQSMQoMZGF0YV9yZXF1ZXN0GAIgASgL",
+            "MhsuU3RvcmVCcm93c2VJdGVtRGF0YVJlcXVlc3QSIwoRdG9wX3BsYXllZF9w",
+            "ZXJpb2QYAyABKAVCCIK1GARlbnVtEg0KBWNvdW50GAQgASgFIqoBCjFDU3Rl",
+            "YW1DaGFydHNfR2V0TW9zdFBsYXllZFN0ZWFtRGVja0dhbWVzX1Jlc3BvbnNl",
+            "ElAKBXJhbmtzGAEgAygLMkEuQ1N0ZWFtQ2hhcnRzX0dldE1vc3RQbGF5ZWRT",
+            "dGVhbURlY2tHYW1lc19SZXNwb25zZV9Nb3N0UGxheWVkUmFuaxIjChF0b3Bf",
+            "cGxheWVkX3BlcmlvZBgCIAEoBUIIgrUYBGVudW0ikwEKQENTdGVhbUNoYXJ0",
+            "c19HZXRNb3N0UGxheWVkU3RlYW1EZWNrR2FtZXNfUmVzcG9uc2VfTW9zdFBs",
+            "YXllZFJhbmsSDAoEcmFuaxgBIAEoBRINCgVhcHBpZBgCIAEoDRIYCgRpdGVt",
+            "GAMgASgLMgouU3RvcmVJdGVtEhgKEGxhc3RfcGVyaW9kX3JhbmsYBCABKAUi",
+            "KgooQ1N0ZWFtQ2hhcnRzX0dldFRvcFJlbGVhc2VzUGFnZXNfUmVxdWVzdCJ2",
+            "CilDU3RlYW1DaGFydHNfR2V0VG9wUmVsZWFzZXNQYWdlc19SZXNwb25zZRJJ",
+            "CgVwYWdlcxgBIAMoCzI6LkNTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1Bh",
+            "Z2VzX1Jlc3BvbnNlX1RvcFJlbGVhc2VzUGFnZSKTAQo5Q1N0ZWFtQ2hhcnRz",
+            "X0dldFRvcFJlbGVhc2VzUGFnZXNfUmVzcG9uc2VfVG9wUmVsZWFzZXNQYWdl",
+            "EgwKBG5hbWUYASABKAkSFgoOc3RhcnRfb2ZfbW9udGgYAiABKA0SEAoIdXJs",
+            "X3BhdGgYAyABKAkSHgoIaXRlbV9pZHMYBCADKAsyDC5TdG9yZUl0ZW1JRDLW",
+            "BQoLU3RlYW1DaGFydHMSaQoSR2V0QmVzdE9mWWVhclBhZ2VzEiguQ1N0ZWFt",
+            "Q2hhcnRzX0dldEJlc3RPZlllYXJQYWdlc19SZXF1ZXN0GikuQ1N0ZWFtQ2hh",
+            "cnRzX0dldEJlc3RPZlllYXJQYWdlc19SZXNwb25zZRKEAQobR2V0R2FtZXNC",
+            "eUNvbmN1cnJlbnRQbGF5ZXJzEjEuQ1N0ZWFtQ2hhcnRzX0dldEdhbWVzQnlD",
+            "b25jdXJyZW50UGxheWVyc19SZXF1ZXN0GjIuQ1N0ZWFtQ2hhcnRzX0dldEdh",
+            "bWVzQnlDb25jdXJyZW50UGxheWVyc19SZXNwb25zZRJ1ChZHZXRNb250aFRv",
+            "cEFwcFJlbGVhc2VzEiwuQ1N0ZWFtQ2hhcnRzX0dldE1vbnRoVG9wQXBwUmVs",
+            "ZWFzZXNfUmVxdWVzdBotLkNTdGVhbUNoYXJ0c19HZXRNb250aFRvcEFwcFJl",
+            "bGVhc2VzX1Jlc3BvbnNlEmkKEkdldE1vc3RQbGF5ZWRHYW1lcxIoLkNTdGVh",
+            "bUNoYXJ0c19HZXRNb3N0UGxheWVkR2FtZXNfUmVxdWVzdBopLkNTdGVhbUNo",
+            "YXJ0c19HZXRNb3N0UGxheWVkR2FtZXNfUmVzcG9uc2UShAEKG0dldE1vc3RQ",
+            "bGF5ZWRTdGVhbURlY2tHYW1lcxIxLkNTdGVhbUNoYXJ0c19HZXRNb3N0UGxh",
+            "eWVkU3RlYW1EZWNrR2FtZXNfUmVxdWVzdBoyLkNTdGVhbUNoYXJ0c19HZXRN",
+            "b3N0UGxheWVkU3RlYW1EZWNrR2FtZXNfUmVzcG9uc2USbAoTR2V0VG9wUmVs",
+            "ZWFzZXNQYWdlcxIpLkNTdGVhbUNoYXJ0c19HZXRUb3BSZWxlYXNlc1BhZ2Vz",
+            "X1JlcXVlc3QaKi5DU3RlYW1DaGFydHNfR2V0VG9wUmVsZWFzZXNQYWdlc19S",
+            "ZXNwb25zZUIgqgIdT3BlblN0ZWFtd29ya3MuUHJvdG9idWYuV2ViVUk="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -110,8 +112,8 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response.Parser, new[]{ "LastUpdate", "Ranks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response_MostPlayedRank), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetGamesByConcurrentPlayers_Response_MostPlayedRank.Parser, new[]{ "Rank", "Appid", "Item", "ConcurrentInGame", "PeainGame" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Request), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Request.Parser, new[]{ "RtimeMonth", "IncludeDlc", "TopResultsLimit" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response.Parser, new[]{ "TopAppReleases", "TopDlcReleases" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease.Parser, new[]{ "Appid", "RtimeRelease" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response.Parser, new[]{ "TopAppReleases", "TopDlcReleases", "TopCombinedAppAndDlcReleases" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease.Parser, new[]{ "Appid", "RtimeRelease", "AppReleaseRank" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Request), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Request.Parser, new[]{ "Context", "DataRequest" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response.Parser, new[]{ "RollupDate", "Ranks" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response_MostPlayedRank), global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMostPlayedGames_Response_MostPlayedRank.Parser, new[]{ "Rank", "Appid", "Item", "LastWeerank", "PeainGame", "DailyActivePlayers" }, null, null, null, null),
@@ -2111,6 +2113,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     public CSteamCharts_GetMonthTopAppReleases_Response(CSteamCharts_GetMonthTopAppReleases_Response other) : this() {
       topAppReleases_ = other.topAppReleases_.Clone();
       topDlcReleases_ = other.topDlcReleases_.Clone();
+      topCombinedAppAndDlcReleases_ = other.topCombinedAppAndDlcReleases_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2142,6 +2145,17 @@ namespace OpenSteamworks.Protobuf.WebUI {
       get { return topDlcReleases_; }
     }
 
+    /// <summary>Field number for the "top_combined_app_and_dlc_releases" field.</summary>
+    public const int TopCombinedAppAndDlcReleasesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> _repeated_topCombinedAppAndDlcReleases_codec
+        = pb::FieldCodec.ForMessage(26, global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> topCombinedAppAndDlcReleases_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.WebUI.CSteamCharts_GetMonthTopAppReleases_Response_AppNewRelease> TopCombinedAppAndDlcReleases {
+      get { return topCombinedAppAndDlcReleases_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2159,6 +2173,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if(!topAppReleases_.Equals(other.topAppReleases_)) return false;
       if(!topDlcReleases_.Equals(other.topDlcReleases_)) return false;
+      if(!topCombinedAppAndDlcReleases_.Equals(other.topCombinedAppAndDlcReleases_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2168,6 +2183,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       int hash = 1;
       hash ^= topAppReleases_.GetHashCode();
       hash ^= topDlcReleases_.GetHashCode();
+      hash ^= topCombinedAppAndDlcReleases_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2188,6 +2204,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     #else
       topAppReleases_.WriteTo(output, _repeated_topAppReleases_codec);
       topDlcReleases_.WriteTo(output, _repeated_topDlcReleases_codec);
+      topCombinedAppAndDlcReleases_.WriteTo(output, _repeated_topCombinedAppAndDlcReleases_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2200,6 +2217,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       topAppReleases_.WriteTo(ref output, _repeated_topAppReleases_codec);
       topDlcReleases_.WriteTo(ref output, _repeated_topDlcReleases_codec);
+      topCombinedAppAndDlcReleases_.WriteTo(ref output, _repeated_topCombinedAppAndDlcReleases_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2212,6 +2230,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       int size = 0;
       size += topAppReleases_.CalculateSize(_repeated_topAppReleases_codec);
       size += topDlcReleases_.CalculateSize(_repeated_topDlcReleases_codec);
+      size += topCombinedAppAndDlcReleases_.CalculateSize(_repeated_topCombinedAppAndDlcReleases_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2226,6 +2245,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       topAppReleases_.Add(other.topAppReleases_);
       topDlcReleases_.Add(other.topDlcReleases_);
+      topCombinedAppAndDlcReleases_.Add(other.topCombinedAppAndDlcReleases_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2253,6 +2273,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             topDlcReleases_.AddEntriesFrom(input, _repeated_topDlcReleases_codec);
             break;
           }
+          case 26: {
+            topCombinedAppAndDlcReleases_.AddEntriesFrom(input, _repeated_topCombinedAppAndDlcReleases_codec);
+            break;
+          }
         }
       }
     #endif
@@ -2278,6 +2302,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 18: {
             topDlcReleases_.AddEntriesFrom(ref input, _repeated_topDlcReleases_codec);
+            break;
+          }
+          case 26: {
+            topCombinedAppAndDlcReleases_.AddEntriesFrom(ref input, _repeated_topCombinedAppAndDlcReleases_codec);
             break;
           }
         }
@@ -2326,6 +2354,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 = other._hasBits0;
       appid_ = other.appid_;
       rtimeRelease_ = other.rtimeRelease_;
+      appReleaseRank_ = other.appReleaseRank_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2389,6 +2418,33 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~2;
     }
 
+    /// <summary>Field number for the "app_release_rank" field.</summary>
+    public const int AppReleaseRankFieldNumber = 3;
+    private readonly static uint AppReleaseRankDefaultValue = 0;
+
+    private uint appReleaseRank_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint AppReleaseRank {
+      get { if ((_hasBits0 & 4) != 0) { return appReleaseRank_; } else { return AppReleaseRankDefaultValue; } }
+      set {
+        _hasBits0 |= 4;
+        appReleaseRank_ = value;
+      }
+    }
+    /// <summary>Gets whether the "app_release_rank" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAppReleaseRank {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "app_release_rank" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAppReleaseRank() {
+      _hasBits0 &= ~4;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2406,6 +2462,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (Appid != other.Appid) return false;
       if (RtimeRelease != other.RtimeRelease) return false;
+      if (AppReleaseRank != other.AppReleaseRank) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2415,6 +2472,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       int hash = 1;
       if (HasAppid) hash ^= Appid.GetHashCode();
       if (HasRtimeRelease) hash ^= RtimeRelease.GetHashCode();
+      if (HasAppReleaseRank) hash ^= AppReleaseRank.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2441,6 +2499,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(16);
         output.WriteUInt32(RtimeRelease);
       }
+      if (HasAppReleaseRank) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(AppReleaseRank);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2459,6 +2521,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(16);
         output.WriteUInt32(RtimeRelease);
       }
+      if (HasAppReleaseRank) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(AppReleaseRank);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2474,6 +2540,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasRtimeRelease) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(RtimeRelease);
+      }
+      if (HasAppReleaseRank) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(AppReleaseRank);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2492,6 +2561,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasRtimeRelease) {
         RtimeRelease = other.RtimeRelease;
+      }
+      if (other.HasAppReleaseRank) {
+        AppReleaseRank = other.AppReleaseRank;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2520,6 +2592,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             RtimeRelease = input.ReadUInt32();
             break;
           }
+          case 24: {
+            AppReleaseRank = input.ReadUInt32();
+            break;
+          }
         }
       }
     #endif
@@ -2545,6 +2621,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 16: {
             RtimeRelease = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            AppReleaseRank = input.ReadUInt32();
             break;
           }
         }

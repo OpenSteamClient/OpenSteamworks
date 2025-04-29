@@ -1,5 +1,6 @@
 using OpenSteamworks.Protobuf;
 using OpenSteamworks.Data;
+using OpenSteamworks.Data.Structs;
 
 namespace OpenSteamworks.Messaging;
 

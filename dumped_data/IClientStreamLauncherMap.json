@@ -5,8 +5,8 @@
       "name": "StartStreaming",
       "argc": "-1",
       "interfaceid": "26",
-      "functionid": "953502588",
-      "fencepost": "1020828336",
+      "functionid": "953502495",
+      "fencepost": "1020295986",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -19,8 +19,8 @@
       "name": "StopStreaming",
       "argc": "-1",
       "interfaceid": "26",
-      "functionid": "2311541920",
-      "fencepost": "2378883797",
+      "functionid": "2311541953",
+      "fencepost": "2378351573",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []

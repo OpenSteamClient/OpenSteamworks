@@ -1,5 +1,6 @@
 import fs from "fs"
 import { CreateDifferenceObject, Difference, compareArrays } from "./util";
+const { createHash } = require('crypto');
 
 export interface ClientFunction {
     name: string;
@@ -15,7 +16,7 @@ export interface ClientFunction {
 
 export interface ClientInterface {
     name: string;
-    functions: ClientFunction[]; 
+    functions: ClientFunction[];
     found_at?: string;
 }
 
@@ -51,31 +52,35 @@ export class ClientDump {
         {
             return clientDump;
         }
-        
+
 
         //clientDump.eMsgList = JSON.parse(fs.readFileSync(dir + "/emsg_list.json").toString())
-        
+
         if (fs.existsSync(dir + "/callbacks.json"))
         {
             clientDump.callbacks = JSON.parse(fs.readFileSync(dir + "/callbacks.json").toString())
         }
-        
+
         for (var file of fs.readdirSync(dir)) {
-            if (file.endsWith("Map.json") && file.startsWith("IClient") || file.startsWith("IRegistry")) {
+            if (file.endsWith("Map.json") && (file.startsWith("IClient") || file.startsWith("IRegistry"))) {
                 var asJson = JSON.parse(fs.readFileSync(dir+file).toString());
 
                 var iface: ClientInterface = {
                     name: asJson.name,
                     functions: [],
-                    found_at: asJson.found_at,    
+                    found_at: asJson.found_at,
                 }
-                
-                iface.name = iface.name.substring(0, iface.name.indexOf("Map"));
+
                 for (var funcAsJson of asJson.functions) {
-                    // There's some functions with 0 args. These are unknown, but let's keep them since the headers fuck up without them. 
+                    // There's some functions with 0 args. These are unknown, but let's keep them since the headers fuck up without them.
                     //TODO: argc counting
                     //funcAsJson.argc = funcAsJson.argc - 1;
 
+                    var name = funcAsJson.name;
+
+                    // Some non-ipc functions get dumped and have invalid names. Do this to combat this becoming a problem in code
+                    if (name.indexOf(' ') >= 0)
+                        name = "INVLD_" + createHash('sha256').update(name).digest('hex');
 
                     iface.functions.push({
                         name: funcAsJson.name,
@@ -125,12 +130,12 @@ export class ClientDump {
                 return false;
             });
         }
-    
+
         // Compare functions
         {
             var thisfuncs: ClientFunction[] = [];
             var otherfuncs: ClientFunction[] = [];
-            
+
             for (const iface of this.interfaces) {
                 for (const func of iface.functions) {
                     thisfuncs.push({ ...func, name: `${iface.name}::${func.name}` });
@@ -147,7 +152,7 @@ export class ClientDump {
                 return !(oldFunc.argc == newFunc.argc);
             });
         }
-        
+
         // Compare callbacks
         {
             diff.callbacks = compareArrays(this.callbacks, other.callbacks, (searchItem, currentItem) => {
@@ -162,7 +167,7 @@ export class ClientDump {
                 return false;
             });
         }
-        
+
         // Compare eMsgs
         {
             diff.eMsgs = compareArrays(this.eMsgList, other.eMsgList, (searchItem, currentItem) => {
@@ -174,7 +179,7 @@ export class ClientDump {
                 return false;
             });
         }
-        
+
 
         return diff;
     }

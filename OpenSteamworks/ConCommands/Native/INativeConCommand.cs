@@ -1,6 +1,7 @@
 using System;
 using CppSourceGen.Attributes;
 using OpenSteamworks.Data;
+using OpenSteamworks.Data.Interop;
 
 namespace OpenSteamworks.ConCommands.Native;
 

@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace OpenSteamworks.Data;
+namespace OpenSteamworks.Data.Interop;
 
 [StructLayout(LayoutKind.Sequential)]
 public struct CUtlVector<T> : IDisposable where T : unmanaged {

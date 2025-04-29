@@ -14,38 +14,6 @@
       "serializedreturns": []
     },
     {
-      "name": "AddShortcut",
-      "argc": "-1",
-      "interfaceid": "1",
-      "functionid": "163116249",
-      "fencepost": "163342182",
-      "cannotcallincrossprocess": "0",
-      "serializedargs": [
-        "string",
-        "string",
-        "string",
-        "string",
-        "string"
-      ],
-      "serializedreturns": [
-        "bytes1"
-      ]
-    },
-    {
-      "name": "RemoveShortcut",
-      "argc": "-1",
-      "interfaceid": "1",
-      "functionid": "1613638140",
-      "fencepost": "1613880202",
-      "cannotcallincrossprocess": "0",
-      "serializedargs": [
-        "string"
-      ],
-      "serializedreturns": [
-        "bytes1"
-      ]
-    },
-    {
       "name": "AddUninstallEntry",
       "argc": "-1",
       "interfaceid": "1",

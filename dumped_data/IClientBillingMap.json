@@ -5,8 +5,8 @@
       "name": "PurchaseWithActivationCode",
       "argc": "-1",
       "interfaceid": "5",
-      "functionid": "2421628214",
-      "fencepost": "2447854603",
+      "functionid": "2421628216",
+      "fencepost": "2447757831",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -19,8 +19,8 @@
       "name": "HasActiveLicense",
       "argc": "-1",
       "interfaceid": "5",
-      "functionid": "2284793245",
-      "fencepost": "2310648667",
+      "functionid": "2284793315",
+      "fencepost": "2310551963",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -33,8 +33,8 @@
       "name": "GetLicenseInfo",
       "argc": "-1",
       "interfaceid": "5",
-      "functionid": "1610490814",
-      "fencepost": "1636539784",
+      "functionid": "1610490820",
+      "fencepost": "1636443016",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -55,8 +55,8 @@
       "name": "EnableTestLicense",
       "argc": "-1",
       "interfaceid": "5",
-      "functionid": "3674115753",
-      "fencepost": "3700374400",
+      "functionid": "3674115747",
+      "fencepost": "3700277620",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -67,8 +67,8 @@
       "name": "DisableTestLicense",
       "argc": "-1",
       "interfaceid": "5",
-      "functionid": "3887274751",
-      "fencepost": "3913549527",
+      "functionid": "3887274741",
+      "fencepost": "3913452743",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -79,8 +79,8 @@
       "name": "GetAppsInPackage",
       "argc": "-1",
       "interfaceid": "5",
-      "functionid": "3837911405",
-      "fencepost": "3864315213",
+      "functionid": "3837911383",
+      "fencepost": "3864218417",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -95,8 +95,8 @@
       "name": "RequestFreeLicenseForApps",
       "argc": "-1",
       "interfaceid": "5",
-      "functionid": "3800613876",
-      "fencepost": "3827130587",
+      "functionid": "3800613886",
+      "fencepost": "3827033823",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",

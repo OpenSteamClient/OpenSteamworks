@@ -5,8 +5,8 @@
       "name": "SetTimelineTooltip",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "3894742855",
-      "fencepost": "3978024629",
+      "functionid": "3894741202",
+      "fencepost": "3976264915",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -18,8 +18,8 @@
       "name": "ClearTimelineTooltip",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "2823041176",
-      "fencepost": "2906339079",
+      "functionid": "2823042827",
+      "fencepost": "2904582669",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -30,8 +30,8 @@
       "name": "SetTimelineGameMode",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "3071602713",
-      "fencepost": "3154916745",
+      "functionid": "3071604724",
+      "fencepost": "3153160695",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -42,8 +42,8 @@
       "name": "AddInstantaneousTimelineEvent",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1364212625",
-      "fencepost": "1447542786",
+      "functionid": "1364212862",
+      "fencepost": "1445784962",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -61,8 +61,8 @@
       "name": "AddRangeTimelineEvent",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1041047269",
-      "fencepost": "1124393559",
+      "functionid": "1041045768",
+      "fencepost": "1122633997",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -81,8 +81,8 @@
       "name": "StartRangeTimelineEvent",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "3960764029",
-      "fencepost": "4044126448",
+      "functionid": "3960762766",
+      "fencepost": "4042367124",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -100,8 +100,8 @@
       "name": "UpdateRangeTimelineEvent",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "812006565",
-      "fencepost": "895385113",
+      "functionid": "812006224",
+      "fencepost": "893626711",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -117,8 +117,8 @@
       "name": "EndRangeTimelineEvent",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1845199378",
-      "fencepost": "1928594055",
+      "functionid": "1845200357",
+      "fencepost": "1926836973",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -130,8 +130,8 @@
       "name": "RemoveTimelineEvent",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1477735091",
-      "fencepost": "1561145897",
+      "functionid": "1477735750",
+      "fencepost": "1559388495",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -142,8 +142,8 @@
       "name": "DoesEventRecordingExist",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "3556085817",
-      "fencepost": "3639512752",
+      "functionid": "3556087754",
+      "fencepost": "3637756628",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -156,8 +156,8 @@
       "name": "StartGamePhase",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "2522443091",
-      "fencepost": "2605886155",
+      "functionid": "2522442414",
+      "fencepost": "2604127417",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -166,8 +166,8 @@
       "name": "EndGamePhase",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "163956709",
-      "fencepost": "247415902",
+      "functionid": "163954714",
+      "fencepost": "245655846",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -176,8 +176,8 @@
       "name": "SetGamePhaseID",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "2205259647",
-      "fencepost": "2288734969",
+      "functionid": "2205257858",
+      "fencepost": "2286975119",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -188,8 +188,8 @@
       "name": "DoesGamePhaseRecordingExist",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "850191785",
-      "fencepost": "933683236",
+      "functionid": "850190938",
+      "fencepost": "931924328",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -202,8 +202,8 @@
       "name": "AddGamePhaseTag",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1782279280",
-      "fencepost": "1865786860",
+      "functionid": "1782279045",
+      "fencepost": "1864028564",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -217,8 +217,8 @@
       "name": "SetGamePhaseAttribute",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "2537075771",
-      "fencepost": "2620599480",
+      "functionid": "2537075660",
+      "fencepost": "2618841308",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -231,8 +231,8 @@
       "name": "OpenOverlayToGamePhase",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1697695413",
-      "fencepost": "1781235251",
+      "functionid": "1697694016",
+      "fencepost": "1779475793",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -243,8 +243,8 @@
       "name": "OpenOverlayToTimelineEvent",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1647971401",
-      "fencepost": "1731527368",
+      "functionid": "1647971258",
+      "fencepost": "1729769164",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -255,8 +255,8 @@
       "name": "AddUserMarkerForGame",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1329387320",
-      "fencepost": "1412975545",
+      "functionid": "1329385687",
+      "fencepost": "1411215851",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -267,8 +267,8 @@
       "name": "ToggleVideoRecordingForGame",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "3567465595",
-      "fencepost": "3651069949",
+      "functionid": "3567465366",
+      "fencepost": "3649311659",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -279,8 +279,8 @@
       "name": "TakeInstantClipForGame",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "325161866",
-      "fencepost": "408782349",
+      "functionid": "325162009",
+      "fencepost": "407024431",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -291,8 +291,8 @@
       "name": "GetNextEventID",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "58952406",
-      "fencepost": "142589018",
+      "functionid": "58953027",
+      "fencepost": "140831578",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -303,8 +303,8 @@
       "name": "AnswerDoesGamePhaseRecordingExist",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "1391376027",
-      "fencepost": "1475044897",
+      "functionid": "1391374606",
+      "fencepost": "1473285415",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -319,8 +319,8 @@
       "name": "AnswerDoesEventRecordingExist",
       "argc": "-1",
       "interfaceid": "61",
-      "functionid": "4109244555",
-      "fencepost": "4192929554",
+      "functionid": "4109246232",
+      "fencepost": "4191173170",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",

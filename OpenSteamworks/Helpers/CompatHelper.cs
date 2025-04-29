@@ -51,13 +51,6 @@ public sealed class CompatHelper : ICompatToolProvider
     /// </summary>
     public void SetCompatToolForWindowsTitles(string compatToolName, string compatToolSettings = "")
         => clientCompat.SpecifyCompatTool(0, compatToolName, compatToolSettings, ECompatToolPriority.Wildcard);
-        
-    /// <summary>
-    /// Is there a global compat tool set?
-    /// </summary>
-    /// <returns></returns>
-    // public bool BIsCompatEnabledForWindowsTitles()
-    //     => clientCompat.GetCompatToolName(0) != string.Empty;
 
     public void SetAppCompatTool(AppId_t appid, string compatToolName, string compatToolSettings = "")
         => clientCompat.SpecifyCompatTool(appid, compatToolName, compatToolSettings, ECompatToolPriority.AppForced);
@@ -123,4 +116,7 @@ public sealed class CompatHelper : ICompatToolProvider
 
     public string GetCompatToolDisplayName(string tool)
         => clientCompat.GetCompatToolDisplayName(tool);
+
+    public string? GetAppCompatTool(AppId_t appid)
+        => clientCompat.GetCompatToolName(appid);
 }

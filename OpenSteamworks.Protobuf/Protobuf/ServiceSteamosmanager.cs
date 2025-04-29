@@ -39,7 +39,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "dGUiMgowQ1N0ZWFtT1NNYW5hZ2VyX09wdE91dE9mU2lkZWxvYWRlZENsaWVu",
             "dF9SZXF1ZXN0IjMKMUNTdGVhbU9TTWFuYWdlcl9PcHRPdXRPZlNpZGVsb2Fk",
             "ZWRDbGllbnRfUmVzcG9uc2UiKwopQ1N0ZWFtT1NNYW5hZ2VyX1N0YXRlQ2hh",
-            "bmdlZF9Ob3RpZmljYXRpb24i1QMKFENTdGVhbU9TTWFuYWdlclN0YXRlEhwK",
+            "bmdlZF9Ob3RpZmljYXRpb24isgQKFENTdGVhbU9TTWFuYWdlclN0YXRlEhwK",
             "FGlzX3NlcnZpY2VfYXZhaWxhYmxlGAEgASgIEhIKCm9zX3ZlcnNpb24YAiAB",
             "KAkSJQodaXNfbWFuZGF0b3J5X3VwZGF0ZV9hdmFpbGFibGUYAyABKAgSJwoV",
             "c3RhcnR1cF9tb3ZpZV92YXJpYW50GAQgASgFQgiCtRgEZW51bRInCh9pc19z",
@@ -49,20 +49,22 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "GAggASgFEhUKDXRkcF9saW1pdF9tYXgYCSABKAUSGAoQaXNfY2VjX2F2YWls",
             "YWJsZRgKIAEoCBIfChdpc193aWZpX2RlYnVnX3N1cHBvcnRlZBgLIAEoCBIk",
             "Chxpc193aWZpX2RlYnVnX2ZvcmNlX2Rpc2FibGVkGAwgASgIEi4KJmlzX3dp",
-            "ZmlfZm9yY2Vfd3BhX3N1cHBsaWNhbnRfc3VwcG9ydGVkGA0gASgIMowECg5T",
-            "dGVhbU9TTWFuYWdlchJ1ChRBcHBseU1hbmRhdG9yeVVwZGF0ZRItLkNTdGVh",
-            "bU9TTWFuYWdlcl9BcHBseU1hbmRhdG9yeVVwZGF0ZV9SZXF1ZXN0Gi4uQ1N0",
-            "ZWFtT1NNYW5hZ2VyX0FwcGx5TWFuZGF0b3J5VXBkYXRlX1Jlc3BvbnNlEl0K",
-            "DEZhY3RvcnlSZXNldBIlLkNTdGVhbU9TTWFuYWdlcl9GYWN0b3J5UmVzZXRf",
-            "UmVxdWVzdBomLkNTdGVhbU9TTWFuYWdlcl9GYWN0b3J5UmVzZXRfUmVzcG9u",
-            "c2USUQoIR2V0U3RhdGUSIS5DU3RlYW1PU01hbmFnZXJfR2V0U3RhdGVfUmVx",
-            "dWVzdBoiLkNTdGVhbU9TTWFuYWdlcl9HZXRTdGF0ZV9SZXNwb25zZRJNChJO",
-            "b3RpZnlTdGF0ZUNoYW5nZWQSKi5DU3RlYW1PU01hbmFnZXJfU3RhdGVDaGFu",
-            "Z2VkX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USgQEKGE9wdE91dE9mU2lk",
-            "ZWxvYWRlZENsaWVudBIxLkNTdGVhbU9TTWFuYWdlcl9PcHRPdXRPZlNpZGVs",
-            "b2FkZWRDbGllbnRfUmVxdWVzdBoyLkNTdGVhbU9TTWFuYWdlcl9PcHRPdXRP",
-            "ZlNpZGVsb2FkZWRDbGllbnRfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtz",
-            "LlByb3RvYnVmLldlYlVJ"));
+            "ZmlfZm9yY2Vfd3BhX3N1cHBsaWNhbnRfc3VwcG9ydGVkGA0gASgIEiMKG2lz",
+            "X21hbnVhbF9ncHVfY2xvY2F2YWlsYWJsZRgOIAEoCBIaChJtYW51YWxfZ3B1",
+            "X2Nsb2NtaW4YDyABKAUSGgoSbWFudWFsX2dwdV9jbG9jbWF4GBAgASgFMowE",
+            "Cg5TdGVhbU9TTWFuYWdlchJ1ChRBcHBseU1hbmRhdG9yeVVwZGF0ZRItLkNT",
+            "dGVhbU9TTWFuYWdlcl9BcHBseU1hbmRhdG9yeVVwZGF0ZV9SZXF1ZXN0Gi4u",
+            "Q1N0ZWFtT1NNYW5hZ2VyX0FwcGx5TWFuZGF0b3J5VXBkYXRlX1Jlc3BvbnNl",
+            "El0KDEZhY3RvcnlSZXNldBIlLkNTdGVhbU9TTWFuYWdlcl9GYWN0b3J5UmVz",
+            "ZXRfUmVxdWVzdBomLkNTdGVhbU9TTWFuYWdlcl9GYWN0b3J5UmVzZXRfUmVz",
+            "cG9uc2USUQoIR2V0U3RhdGUSIS5DU3RlYW1PU01hbmFnZXJfR2V0U3RhdGVf",
+            "UmVxdWVzdBoiLkNTdGVhbU9TTWFuYWdlcl9HZXRTdGF0ZV9SZXNwb25zZRJN",
+            "ChJOb3RpZnlTdGF0ZUNoYW5nZWQSKi5DU3RlYW1PU01hbmFnZXJfU3RhdGVD",
+            "aGFuZ2VkX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USgQEKGE9wdE91dE9m",
+            "U2lkZWxvYWRlZENsaWVudBIxLkNTdGVhbU9TTWFuYWdlcl9PcHRPdXRPZlNp",
+            "ZGVsb2FkZWRDbGllbnRfUmVxdWVzdBoyLkNTdGVhbU9TTWFuYWdlcl9PcHRP",
+            "dXRPZlNpZGVsb2FkZWRDbGllbnRfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdv",
+            "cmtzLlByb3RvYnVmLldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -76,7 +78,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamOSManager_OptOutOfSideloadedClient_Request), global::OpenSteamworks.Protobuf.WebUI.CSteamOSManager_OptOutOfSideloadedClient_Request.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamOSManager_OptOutOfSideloadedClient_Response), global::OpenSteamworks.Protobuf.WebUI.CSteamOSManager_OptOutOfSideloadedClient_Response.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamOSManager_StateChanged_Notification), global::OpenSteamworks.Protobuf.WebUI.CSteamOSManager_StateChanged_Notification.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamOSManagerState), global::OpenSteamworks.Protobuf.WebUI.CSteamOSManagerState.Parser, new[]{ "IsServiceAvailable", "OsVersion", "IsMandatoryUpdateAvailable", "StartupMovieVariant", "IsStatusLedControlAvailable", "FactoryResetState", "IsTdpLimitAvailable", "TdpLimitMin", "TdpLimitMax", "IsCecAvailable", "IsWifiDebugSupported", "IsWifiDebugForceDisabled", "IsWifiForceWpaSupplicantSupported" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CSteamOSManagerState), global::OpenSteamworks.Protobuf.WebUI.CSteamOSManagerState.Parser, new[]{ "IsServiceAvailable", "OsVersion", "IsMandatoryUpdateAvailable", "StartupMovieVariant", "IsStatusLedControlAvailable", "FactoryResetState", "IsTdpLimitAvailable", "TdpLimitMin", "TdpLimitMax", "IsCecAvailable", "IsWifiDebugSupported", "IsWifiDebugForceDisabled", "IsWifiForceWpaSupplicantSupported", "IsManualGpuClocavailable", "ManualGpuClocmin", "ManualGpuClocmax" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2105,6 +2107,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       isWifiDebugSupported_ = other.isWifiDebugSupported_;
       isWifiDebugForceDisabled_ = other.isWifiDebugForceDisabled_;
       isWifiForceWpaSupplicantSupported_ = other.isWifiForceWpaSupplicantSupported_;
+      isManualGpuClocavailable_ = other.isManualGpuClocavailable_;
+      manualGpuClocmin_ = other.manualGpuClocmin_;
+      manualGpuClocmax_ = other.manualGpuClocmax_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2449,6 +2454,87 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~1024;
     }
 
+    /// <summary>Field number for the "is_manual_gpu_clocavailable" field.</summary>
+    public const int IsManualGpuClocavailableFieldNumber = 14;
+    private readonly static bool IsManualGpuClocavailableDefaultValue = false;
+
+    private bool isManualGpuClocavailable_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsManualGpuClocavailable {
+      get { if ((_hasBits0 & 2048) != 0) { return isManualGpuClocavailable_; } else { return IsManualGpuClocavailableDefaultValue; } }
+      set {
+        _hasBits0 |= 2048;
+        isManualGpuClocavailable_ = value;
+      }
+    }
+    /// <summary>Gets whether the "is_manual_gpu_clocavailable" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIsManualGpuClocavailable {
+      get { return (_hasBits0 & 2048) != 0; }
+    }
+    /// <summary>Clears the value of the "is_manual_gpu_clocavailable" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIsManualGpuClocavailable() {
+      _hasBits0 &= ~2048;
+    }
+
+    /// <summary>Field number for the "manual_gpu_clocmin" field.</summary>
+    public const int ManualGpuClocminFieldNumber = 15;
+    private readonly static int ManualGpuClocminDefaultValue = 0;
+
+    private int manualGpuClocmin_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ManualGpuClocmin {
+      get { if ((_hasBits0 & 4096) != 0) { return manualGpuClocmin_; } else { return ManualGpuClocminDefaultValue; } }
+      set {
+        _hasBits0 |= 4096;
+        manualGpuClocmin_ = value;
+      }
+    }
+    /// <summary>Gets whether the "manual_gpu_clocmin" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasManualGpuClocmin {
+      get { return (_hasBits0 & 4096) != 0; }
+    }
+    /// <summary>Clears the value of the "manual_gpu_clocmin" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearManualGpuClocmin() {
+      _hasBits0 &= ~4096;
+    }
+
+    /// <summary>Field number for the "manual_gpu_clocmax" field.</summary>
+    public const int ManualGpuClocmaxFieldNumber = 16;
+    private readonly static int ManualGpuClocmaxDefaultValue = 0;
+
+    private int manualGpuClocmax_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ManualGpuClocmax {
+      get { if ((_hasBits0 & 8192) != 0) { return manualGpuClocmax_; } else { return ManualGpuClocmaxDefaultValue; } }
+      set {
+        _hasBits0 |= 8192;
+        manualGpuClocmax_ = value;
+      }
+    }
+    /// <summary>Gets whether the "manual_gpu_clocmax" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasManualGpuClocmax {
+      get { return (_hasBits0 & 8192) != 0; }
+    }
+    /// <summary>Clears the value of the "manual_gpu_clocmax" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearManualGpuClocmax() {
+      _hasBits0 &= ~8192;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2477,6 +2563,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (IsWifiDebugSupported != other.IsWifiDebugSupported) return false;
       if (IsWifiDebugForceDisabled != other.IsWifiDebugForceDisabled) return false;
       if (IsWifiForceWpaSupplicantSupported != other.IsWifiForceWpaSupplicantSupported) return false;
+      if (IsManualGpuClocavailable != other.IsManualGpuClocavailable) return false;
+      if (ManualGpuClocmin != other.ManualGpuClocmin) return false;
+      if (ManualGpuClocmax != other.ManualGpuClocmax) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2497,6 +2586,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasIsWifiDebugSupported) hash ^= IsWifiDebugSupported.GetHashCode();
       if (HasIsWifiDebugForceDisabled) hash ^= IsWifiDebugForceDisabled.GetHashCode();
       if (HasIsWifiForceWpaSupplicantSupported) hash ^= IsWifiForceWpaSupplicantSupported.GetHashCode();
+      if (HasIsManualGpuClocavailable) hash ^= IsManualGpuClocavailable.GetHashCode();
+      if (HasManualGpuClocmin) hash ^= ManualGpuClocmin.GetHashCode();
+      if (HasManualGpuClocmax) hash ^= ManualGpuClocmax.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2567,6 +2659,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(104);
         output.WriteBool(IsWifiForceWpaSupplicantSupported);
       }
+      if (HasIsManualGpuClocavailable) {
+        output.WriteRawTag(112);
+        output.WriteBool(IsManualGpuClocavailable);
+      }
+      if (HasManualGpuClocmin) {
+        output.WriteRawTag(120);
+        output.WriteInt32(ManualGpuClocmin);
+      }
+      if (HasManualGpuClocmax) {
+        output.WriteRawTag(128, 1);
+        output.WriteInt32(ManualGpuClocmax);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2629,6 +2733,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(104);
         output.WriteBool(IsWifiForceWpaSupplicantSupported);
       }
+      if (HasIsManualGpuClocavailable) {
+        output.WriteRawTag(112);
+        output.WriteBool(IsManualGpuClocavailable);
+      }
+      if (HasManualGpuClocmin) {
+        output.WriteRawTag(120);
+        output.WriteInt32(ManualGpuClocmin);
+      }
+      if (HasManualGpuClocmax) {
+        output.WriteRawTag(128, 1);
+        output.WriteInt32(ManualGpuClocmax);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2677,6 +2793,15 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasIsWifiForceWpaSupplicantSupported) {
         size += 1 + 1;
+      }
+      if (HasIsManualGpuClocavailable) {
+        size += 1 + 1;
+      }
+      if (HasManualGpuClocmin) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ManualGpuClocmin);
+      }
+      if (HasManualGpuClocmax) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(ManualGpuClocmax);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2731,6 +2856,15 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasIsWifiForceWpaSupplicantSupported) {
         IsWifiForceWpaSupplicantSupported = other.IsWifiForceWpaSupplicantSupported;
+      }
+      if (other.HasIsManualGpuClocavailable) {
+        IsManualGpuClocavailable = other.IsManualGpuClocavailable;
+      }
+      if (other.HasManualGpuClocmin) {
+        ManualGpuClocmin = other.ManualGpuClocmin;
+      }
+      if (other.HasManualGpuClocmax) {
+        ManualGpuClocmax = other.ManualGpuClocmax;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2806,6 +2940,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
             IsWifiForceWpaSupplicantSupported = input.ReadBool();
             break;
           }
+          case 112: {
+            IsManualGpuClocavailable = input.ReadBool();
+            break;
+          }
+          case 120: {
+            ManualGpuClocmin = input.ReadInt32();
+            break;
+          }
+          case 128: {
+            ManualGpuClocmax = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -2878,6 +3024,18 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 104: {
             IsWifiForceWpaSupplicantSupported = input.ReadBool();
+            break;
+          }
+          case 112: {
+            IsManualGpuClocavailable = input.ReadBool();
+            break;
+          }
+          case 120: {
+            ManualGpuClocmin = input.ReadInt32();
+            break;
+          }
+          case 128: {
+            ManualGpuClocmax = input.ReadInt32();
             break;
           }
         }

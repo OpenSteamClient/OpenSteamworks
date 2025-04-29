@@ -34,7 +34,6 @@ public static class InterfaceMap {
     // 25 = IClientUnifiedMessages
     // 26 = IClientStreamLauncher
     // 27 = IClientParentalSettings
-    // 28 = IClientDeviceAuth
     // 29 = IClientNetworkDeviceManager (!requiresuser)
     // 30 = IClientMusic
     // 31 = IClientRemoteClientManager (!requiresuser)
@@ -53,7 +52,6 @@ public static class InterfaceMap {
     // 44 = IClientSharedConnection
     // 45 = IClientShader
     // 46 = IClientNetworkingSocketsSerialized
-    // 47 = IClientGameSearch
     // 48 = IClientCompat
     // 49 = IClientParties
     // 50 = IClientNetworkingUtilsSerialized (!requiresuser)

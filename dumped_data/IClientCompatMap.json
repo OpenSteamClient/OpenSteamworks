@@ -5,8 +5,8 @@
       "name": "BIsCompatLayerEnabled",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1610897706",
-      "fencepost": "1702661683",
+      "functionid": "1610898143",
+      "fencepost": "1700904059",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -17,8 +17,8 @@
       "name": "GetAvailableCompatTools",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1448857605",
-      "fencepost": "1540637711",
+      "functionid": "1448858610",
+      "fencepost": "1538880655",
       "cannotcallincrossprocess": "1",
       "serializedargs": [
         "bytes4"
@@ -29,8 +29,8 @@
       "name": "GetAvailableCompatToolsFiltered",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "127502555",
-      "fencepost": "219298790",
+      "functionid": "127503150",
+      "fencepost": "217541324",
       "cannotcallincrossprocess": "1",
       "serializedargs": [
         "bytes4",
@@ -43,8 +43,8 @@
       "name": "GetAvailableCompatToolsForApp",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1868669968",
-      "fencepost": "1960482332",
+      "functionid": "1868670947",
+      "fencepost": "1958725250",
       "cannotcallincrossprocess": "1",
       "serializedargs": [
         "bytes4",
@@ -56,8 +56,8 @@
       "name": "SpecifyCompatTool",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1991926649",
-      "fencepost": "2083755142",
+      "functionid": "1991925908",
+      "fencepost": "2081996340",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -71,8 +71,8 @@
       "name": "SpecifyCompatExperiment",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "89852678",
-      "fencepost": "181697300",
+      "functionid": "89852137",
+      "fencepost": "179938698",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -85,8 +85,8 @@
       "name": "BIsCompatibilityToolEnabled",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1600842802",
-      "fencepost": "1692703553",
+      "functionid": "1600843743",
+      "fencepost": "1690946433",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -99,8 +99,8 @@
       "name": "GetCompatToolName",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "284584984",
-      "fencepost": "376461864",
+      "functionid": "284585867",
+      "fencepost": "374704686",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -113,8 +113,8 @@
       "name": "GetCompatToolMappingPriority",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1046176998",
-      "fencepost": "1138070007",
+      "functionid": "1046177651",
+      "fencepost": "1136312599",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -127,8 +127,8 @@
       "name": "GetCompatToolDisplayName",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1822028130",
-      "fencepost": "1913937268",
+      "functionid": "1822028533",
+      "fencepost": "1912179610",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -141,8 +141,8 @@
       "name": "GetCompatExperiment",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "241137941",
-      "fencepost": "333063208",
+      "functionid": "241138304",
+      "fencepost": "331305510",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -155,8 +155,8 @@
       "name": "GetAppCompatCategories",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "3715066269",
-      "fencepost": "3807007665",
+      "functionid": "3715066382",
+      "fencepost": "3805249717",
       "cannotcallincrossprocess": "1",
       "serializedargs": [
         "bytes4",
@@ -168,8 +168,8 @@
       "name": "StartSession",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "4046353129",
-      "fencepost": "4138310654",
+      "functionid": "4046352756",
+      "fencepost": "4136552220",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -182,8 +182,8 @@
       "name": "ReleaseSession",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "2249153003",
-      "fencepost": "2341126657",
+      "functionid": "2249153140",
+      "fencepost": "2339368733",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -195,8 +195,8 @@
       "name": "BIsLauncherServiceEnabled",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "2412905045",
-      "fencepost": "2504894828",
+      "functionid": "2412904904",
+      "fencepost": "2503136626",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -209,8 +209,8 @@
       "name": "DeleteCompatData",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "2758342249",
-      "fencepost": "2850348161",
+      "functionid": "2758342138",
+      "fencepost": "2848589989",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -221,8 +221,8 @@
       "name": "GetCompatibilityDataDiskSize",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1396539841",
-      "fencepost": "1488561882",
+      "functionid": "1396539988",
+      "fencepost": "1486803968",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -235,8 +235,8 @@
       "name": "BNeedsUnlockH264",
       "argc": "-1",
       "interfaceid": "48",
-      "functionid": "1373430131",
-      "fencepost": "1465468301",
+      "functionid": "1373430500",
+      "fencepost": "1463710609",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"

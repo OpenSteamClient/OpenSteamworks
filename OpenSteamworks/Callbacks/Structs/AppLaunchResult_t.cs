@@ -7,7 +7,7 @@ using OpenSteamworks.Data.Structs;
 
 namespace OpenSteamworks.Callbacks.Structs;
 
-[Callback(1280027)]
+[Callback(1270027)]
 [StructLayout(LayoutKind.Sequential, Pack = SteamPlatform.Pack)]
 public struct AppLaunchResult_t
 {

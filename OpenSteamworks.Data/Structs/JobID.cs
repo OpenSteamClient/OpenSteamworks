@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 using System.Globalization;
 using System.Diagnostics;
 
-namespace OpenSteamworks.Data;
+namespace OpenSteamworks.Data.Structs;
 
 [DebuggerDisplay("{Value}")]
 [StructLayout(LayoutKind.Sequential, Pack = 1)]

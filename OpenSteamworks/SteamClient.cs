@@ -1,4 +1,7 @@
 using System;
+using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Diagnostics;
 using OpenSteamClient.Logging;
 using OpenSteamworks.Callbacks;
 using OpenSteamworks.ConCommands;
@@ -13,6 +16,7 @@ namespace OpenSteamworks;
 internal sealed partial class SteamClient : ISteamClient
 {
     private readonly ILogger logger;
+    private readonly ILogger? callLogger;
     private readonly ISteamClientImpl steamClientImpl;
 
     /// <summary>
@@ -25,33 +29,36 @@ internal sealed partial class SteamClient : ISteamClient
         get => steamClientImpl.Pipe;
         set => steamClientImpl.Pipe = value;
     }
-    
+
     public HSteamUser User
     {
         get => steamClientImpl.User;
         set => steamClientImpl.User = value;
     }
-    
+
     public ConnectionType ConnectedWith { get; private set; }
     public bool IsCrossProcess { get; private set; }
-    
+
     public IClientEngine IClientEngine => steamClientImpl.IClientEngine;
-    
-    internal ILoggerFactory LoggerFactory { get; }
-    
+
+    private readonly ILoggerFactory _loggerFactory;
+
     internal static SteamClient Create(SteamClientBuilder.CreateImplFn fnSteamClientImplFactory,
         BaseSteamClientCreateOptions createOptions)
         => new(fnSteamClientImplFactory, createOptions);
-    
-    private bool BTryConnectToGlobalUser()
+
+    private bool BTryConnectToGlobalUser(bool newClientEnabled)
     {
         Pipe = IClientEngine.CreateSteamPipe();
         if (Pipe == 0)
         {
-            logger.Error("Pipe allocation failed.");
+            // Don't warn if we will create pipe on failure
+            if (!newClientEnabled)
+                logger.Error("Pipe allocation failed (ConnectToGlobalUser)");
+
             return false;
         }
-            
+
         User = IClientEngine.ConnectToGlobalUser(Pipe);
         if (User == 0)
         {
@@ -59,11 +66,11 @@ internal sealed partial class SteamClient : ISteamClient
             IClientEngine.BReleaseSteamPipe(Pipe);
             return false;
         }
-        
+
         IsCrossProcess = steamClientImpl.SteamPID != Environment.ProcessId;
-        
+
         ConnectedWith = ConnectionType.ExistingClient;
-        
+
         logger.Info($"Connected to global user {User}");
         return true;
     }
@@ -77,10 +84,10 @@ internal sealed partial class SteamClient : ISteamClient
             logger.Error("Creating global user failed.");
             return false;
         }
-    
+
         Pipe = newPipe;
         User = newUser;
-        
+
         IsCrossProcess = false;
         ConnectedWith = ConnectionType.NewClient;
         return true;
@@ -90,16 +97,16 @@ internal sealed partial class SteamClient : ISteamClient
     {
         bool newClientEnabled = connectionTypes.HasFlag(ConnectionType.NewClient);
         bool existingClientEnabled = connectionTypes.HasFlag(ConnectionType.ExistingClient);
-        
+
         if (existingClientEnabled)
         {
-            if (!BTryConnectToGlobalUser() && !newClientEnabled)
+            if (!BTryConnectToGlobalUser(newClientEnabled) && !newClientEnabled)
             {
                 throw new APICallException("Failed to connect to global user.");
             }
         }
 
-        if (newClientEnabled)
+        if (newClientEnabled && Pipe == 0)
         {
             if (!BTryCreateGlobalUser())
             {
@@ -110,24 +117,31 @@ internal sealed partial class SteamClient : ISteamClient
         if (this.Pipe == 0 || this.User == 0)
             throw new APICallException("Failed to create pipe or user.");
     }
-    
+
     private SteamClient(SteamClientBuilder.CreateImplFn fnSteamClientImplFactory, BaseSteamClientCreateOptions createOptions)
     {
-        this.LoggerFactory = createOptions.LoggingSettings.LoggerFactory;
+        this._loggerFactory = createOptions.LoggingSettings.LoggerFactory;
         this.logger = createOptions.LoggingSettings.LoggerFactory.CreateLogger("SteamClient");
-        
+
+        if (createOptions.LoggingSettings.LogCalledInterfaceFunctions)
+        {
+            this.callLogger = _loggerFactory.CreateLogger("InterfaceCalls");
+        }
+
+        this.debugBreakOnInterfaceFunctions = createOptions.DebugBreakOnInterfaceFunctions.ToImmutableArray();
+
         this.steamClientImpl = fnSteamClientImplFactory(logger, this);
         if (createOptions.TargetPipe != 0 && createOptions.TargetUser != 0)
         {
             ownsHandles = false;
         }
-        
+
         ConnectOrCreate(createOptions.ConnectionTypes);
         InitInterfaces();
 
         CallbackManager = new(steamClientImpl, this, createOptions.LoggingSettings.LoggerFactory, createOptions.LoggingSettings.LogIncomingCallbacks, createOptions.LoggingSettings.LogCallbackContents, !createOptions.AutomaticCallbackPump);
         InitializeHelpers(createOptions);
-        
+
         if (createOptions.EnableSpew)
         {
             for (int i = 0; i < (int)ESpewGroup.k_ESpew_ArraySize; i++)
@@ -137,7 +151,7 @@ internal sealed partial class SteamClient : ISteamClient
                 if (e is ESpewGroup.Svcm or ESpewGroup.Network) {
                     continue;
                 }
-                
+
                 this.IClientUtils.SetSpew(e, 9, 9);
             }
         }
@@ -148,7 +162,7 @@ internal sealed partial class SteamClient : ISteamClient
             this.IClientUtils.SetCurrentUIMode(EUIMode.DesktopUI);
             this.IClientUtils.SetClientUIProcess();
         }
-        
+
         // Start the callbacks.
         // Most helpers should have registered at this point.
         CallbackManager.Start();
@@ -162,35 +176,80 @@ internal sealed partial class SteamClient : ISteamClient
     {
         ObjectDisposedException.ThrowIf(isDisposed, this);
         isDisposed = true;
-        
+
         // Deconstruction of helpers.
         AppsHelper.Dispose();
         DownloadsHelper.Dispose();
-        
+
         UserHelper.Dispose();
         ConsoleHelper.Dispose();
-        
+        ConfigStoreHelper.Dispose();
+
         CallbackManager.Dispose();
 
         if (ownsHandles)
         {
             IClientEngine.ReleaseUser(Pipe, User);
-            
-            if (!IClientEngine.BReleaseSteamPipe(Pipe)) 
+
+            if (!IClientEngine.BReleaseSteamPipe(Pipe))
                 logger.Warning("Failed to release steam pipe!");
         }
 
         steamClientImpl.Dispose();
     }
-    
-    internal static void ThrowIfRemotePipe(ICppClass cppClass)
+
+    private static SteamClient? ExtractInstance(object? obj)
     {
-        if (cppClass.MetadataObject is not SteamClient inst)
+        return obj switch
         {
+            ICppClass { MetadataObject: SteamClient cppInst } => cppInst,
+            SteamClient objInst => objInst,
+            _ => null
+        };
+    }
+
+    /// <summary>
+    /// (For API implementers only)
+    /// Call this when a cross-process blacklisted function is attempted to be called in a cross-process context.
+    /// </summary>
+    /// <param name="obj">A <see cref="SteamClient"/> instance, or an <see cref="ICppClass"/> instance with <see cref="ICppClass.MetadataObject"/> set to an instance of <see cref="SteamClient"/></param>
+    internal static void ThrowIfRemotePipe(object? obj)
+    {
+        var inst = ExtractInstance(obj);
+        if (inst == null)
             return;
-        }
-        
+
         if (inst.IsCrossProcess)
             throw new InvalidOperationException("This function cannot be called in cross-process contexts.");
+    }
+
+    private ImmutableArray<(string iface, string func)> debugBreakOnInterfaceFunctions;
+
+    /// <summary>
+    /// (For API implementers only)
+    /// Call this before executing an interface call.
+    /// </summary>
+    /// <param name="obj">A <see cref="SteamClient"/> instance, or an <see cref="ICppClass"/> instance with <see cref="ICppClass.MetadataObject"/> set to an instance of <see cref="SteamClient"/></param>
+    /// <param name="iface">The name of the interface being called</param>
+    /// <param name="func">The name of the function being called</param>
+    internal static void OnInterfaceCall(object? obj, string iface, string func)
+    {
+        var inst = ExtractInstance(obj);
+        if (inst == null)
+            return;
+
+        switch (func)
+        {
+            case "RunFrame":
+            case "BPopReceivedMessage":
+                break;
+
+            default:
+                inst.callLogger?.Trace($"Called {iface}::{func}");
+                break;
+        }
+
+        if (inst.debugBreakOnInterfaceFunctions.Contains((iface, func)))
+            Debugger.Break();
     }
 }

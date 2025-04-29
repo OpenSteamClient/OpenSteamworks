@@ -3,6 +3,7 @@ using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using OpenSteamworks.Data.Interop;
 
 namespace OpenSteamworks.ConCommands;
 

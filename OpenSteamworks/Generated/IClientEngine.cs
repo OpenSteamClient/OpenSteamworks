@@ -34,9 +34,8 @@ public interface IClientEngine {
 	public IClientMatchmaking GetIClientMatchmaking( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientApps GetIClientApps( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientMatchmakingServers GetIClientMatchmakingServers( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
-	public IClientGameSearch GetIClientGameSearch( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	/// <summary>
-    /// Runs a frame. 
+    /// Runs a frame.
     /// Needed for IClientHTMLSurface to send callbacks properly.
     /// What interval should we call this at? Calling this too quickly results in strange backoff times being logged in connection_log.txt
     /// </summary>
@@ -99,7 +98,6 @@ public interface IClientEngine {
 	public IClientController GetIClientController( HSteamPipe hSteamPipe );
 	public IClientParentalSettings GetIClientParentalSettings( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientStreamLauncher GetIClientStreamLauncher( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
-	public IClientDeviceAuth GetIClientDeviceAuth( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientRemoteClientManager GetIClientRemoteClientManager( HSteamPipe hSteamPipe );
 	public IClientStreamClient GetIClientStreamClient( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientShortcuts GetIClientShortcuts( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
@@ -122,7 +120,7 @@ public interface IClientEngine {
 	public IClientShader GetIClientShader( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientNetworkingSocketsSerialized GetIClientNetworkingSocketsSerialized( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientCompat GetIClientCompat( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
-	public void SetClientCommandLine( Int32 argc, string[] argv ); 
+	public void SetClientCommandLine( Int32 argc, string[] argv );
 	public IClientParties GetIClientParties( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientNetworkingMessages GetIClientNetworkingMessages( HSteamUser hSteamUser, HSteamPipe hSteamPipe );
 	public IClientNetworkingSockets GetIClientNetworkingSockets( HSteamUser hSteamUser, HSteamPipe hSteamPipe );

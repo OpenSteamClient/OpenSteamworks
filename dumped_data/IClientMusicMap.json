@@ -5,8 +5,8 @@
       "name": "BIsEnabled",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2186183782",
-      "fencepost": "2250703592",
+      "functionid": "2186183865",
+      "fencepost": "2250171418",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -17,8 +17,8 @@
       "name": "Enable",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "250512289",
-      "fencepost": "315048228",
+      "functionid": "250512256",
+      "fencepost": "314515938",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -29,8 +29,8 @@
       "name": "BIsPlaying",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4105558917",
-      "fencepost": "4170110985",
+      "functionid": "4105558950",
+      "fencepost": "4169578761",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -41,8 +41,8 @@
       "name": "GetQueueCount",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1894614678",
-      "fencepost": "1959199004",
+      "functionid": "1894614705",
+      "fencepost": "1958666774",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -53,8 +53,8 @@
       "name": "GetCurrentQueueEntry",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3974685536",
-      "fencepost": "4039302120",
+      "functionid": "3974685507",
+      "fencepost": "4038769834",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -65,8 +65,8 @@
       "name": "GetPlaybackStatus",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "129859106",
-      "fencepost": "194507948",
+      "functionid": "129859085",
+      "fencepost": "193975670",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -77,8 +77,8 @@
       "name": "SetPlayingRepeatStatus",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "751159498",
-      "fencepost": "815840598",
+      "functionid": "751159529",
+      "fencepost": "815308372",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -89,8 +89,8 @@
       "name": "GetPlayingRepeatStatus",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "862601405",
-      "fencepost": "927298634",
+      "functionid": "862601372",
+      "fencepost": "926766344",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -101,8 +101,8 @@
       "name": "TogglePlayingRepeatStatus",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3573221780",
-      "fencepost": "3637935138",
+      "functionid": "3573221811",
+      "fencepost": "3637402912",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -113,8 +113,8 @@
       "name": "SetPlayingShuffled",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "409507363",
-      "fencepost": "474236850",
+      "functionid": "409507330",
+      "fencepost": "473704560",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -125,8 +125,8 @@
       "name": "IsPlayingShuffled",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2594390872",
-      "fencepost": "2659136488",
+      "functionid": "2594390907",
+      "fencepost": "2658604266",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -137,8 +137,8 @@
       "name": "Play",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3584307127",
-      "fencepost": "3649085001",
+      "functionid": "3584307080",
+      "fencepost": "3648552697",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -147,8 +147,8 @@
       "name": "Pause",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2599054100",
-      "fencepost": "2663848103",
+      "functionid": "2599054133",
+      "fencepost": "2663315879",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -157,8 +157,8 @@
       "name": "PlayPrevious",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "155728186",
-      "fencepost": "220538318",
+      "functionid": "155728153",
+      "fencepost": "220006028",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -167,8 +167,8 @@
       "name": "PlayNext",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "283058463",
-      "fencepost": "347884724",
+      "functionid": "283058494",
+      "fencepost": "347352498",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -177,8 +177,8 @@
       "name": "PlayEntry",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4155735004",
-      "fencepost": "4220577394",
+      "functionid": "4155735035",
+      "fencepost": "4220045168",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -189,8 +189,8 @@
       "name": "TogglePlayPause",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3459729802",
-      "fencepost": "3524588321",
+      "functionid": "3459729835",
+      "fencepost": "3524056097",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -199,8 +199,8 @@
       "name": "SetVolume",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3684391710",
-      "fencepost": "3749282487",
+      "functionid": "3684391743",
+      "fencepost": "3748750263",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -211,8 +211,8 @@
       "name": "GetVolume",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3905888355",
-      "fencepost": "3970795261",
+      "functionid": "3905888332",
+      "fencepost": "3970262981",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -223,8 +223,8 @@
       "name": "ToggleMuteVolume",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4101435153",
-      "fencepost": "4166358188",
+      "functionid": "4101435184",
+      "fencepost": "4165825962",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -233,8 +233,8 @@
       "name": "IncreaseVolume",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "799125905",
-      "fencepost": "864065069",
+      "functionid": "799125938",
+      "fencepost": "863532845",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -243,8 +243,8 @@
       "name": "DecreaseVolume",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2129459620",
-      "fencepost": "2194414913",
+      "functionid": "2129459589",
+      "fencepost": "2193882625",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -253,8 +253,8 @@
       "name": "SetPlaybackPosition",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4221226606",
-      "fencepost": "4287198026",
+      "functionid": "4221226573",
+      "fencepost": "4286665736",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -265,8 +265,8 @@
       "name": "GetPlaybackPosition",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1144127049",
-      "fencepost": "1210114598",
+      "functionid": "1144127080",
+      "fencepost": "1209582372",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -277,8 +277,8 @@
       "name": "GetPlaybackDuration",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "493044033",
-      "fencepost": "559047711",
+      "functionid": "493044070",
+      "fencepost": "558515491",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -289,8 +289,8 @@
       "name": "ActivateRemotePlayerWithID",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3727482059",
-      "fencepost": "3792485739",
+      "functionid": "3727482088",
+      "fencepost": "3791953511",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -303,8 +303,8 @@
       "name": "GetActiveRemotePlayerID",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1015738683",
-      "fencepost": "1080758492",
+      "functionid": "1015738650",
+      "fencepost": "1080226202",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -315,8 +315,8 @@
       "name": "GetRemotePlayerCount",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1122408640",
-      "fencepost": "1187444578",
+      "functionid": "1122408607",
+      "fencepost": "1186912288",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -327,8 +327,8 @@
       "name": "GetRemotePlayerIDAndName",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "279529817",
-      "fencepost": "344662529",
+      "functionid": "279529784",
+      "fencepost": "344130239",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -344,8 +344,8 @@
       "name": "GetCurrentEntryTextForRemotePlayerWithID",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2577719358",
-      "fencepost": "2642981102",
+      "functionid": "2577719389",
+      "fencepost": "2642448876",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -360,8 +360,8 @@
       "name": "RegisterSteamMusicRemote",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2611562461",
-      "fencepost": "2676904850",
+      "functionid": "2611562428",
+      "fencepost": "2676372560",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -374,8 +374,8 @@
       "name": "DeregisterSteamMusicRemote",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1030561538",
-      "fencepost": "1095920056",
+      "functionid": "1030561637",
+      "fencepost": "1095387898",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -386,8 +386,8 @@
       "name": "BIsCurrentMusicRemote",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3023875124",
-      "fencepost": "3089249771",
+      "functionid": "3023875157",
+      "fencepost": "3088717547",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -398,8 +398,8 @@
       "name": "BActivationSuccess",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4192181886",
-      "fencepost": "4257572662",
+      "functionid": "4192181789",
+      "fencepost": "4257040308",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -412,8 +412,8 @@
       "name": "SetDisplayName",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "501193841",
-      "fencepost": "566616875",
+      "functionid": "501193758",
+      "fencepost": "566084535",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -426,8 +426,8 @@
       "name": "SetPNGIcon_64x64",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4072004390",
-      "fencepost": "4137443553",
+      "functionid": "4072004423",
+      "fencepost": "4136911329",
       "cannotcallincrossprocess": "1",
       "serializedargs": [
         "bytes4",
@@ -441,8 +441,8 @@
       "name": "EnablePlayPrevious",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "562873860",
-      "fencepost": "628345281",
+      "functionid": "562873957",
+      "fencepost": "627813121",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -455,8 +455,8 @@
       "name": "EnablePlayNext",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1438245343",
-      "fencepost": "1503732893",
+      "functionid": "1438245304",
+      "fencepost": "1503200597",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -469,8 +469,8 @@
       "name": "EnableShuffled",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1083954902",
-      "fencepost": "1149458581",
+      "functionid": "1083954871",
+      "fencepost": "1148926293",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -483,8 +483,8 @@
       "name": "EnableLooped",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1936041697",
-      "fencepost": "2001561505",
+      "functionid": "1936041602",
+      "fencepost": "2001029153",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -497,7 +497,7 @@
       "name": "EnableQueue",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4233066724",
+      "functionid": "4233066629",
       "fencepost": "0",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
@@ -512,8 +512,8 @@
       "name": "EnablePlaylists",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "74279091",
-      "fencepost": "139831157",
+      "functionid": "74279148",
+      "fencepost": "139298957",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -526,8 +526,8 @@
       "name": "UpdatePlaybackStatus",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4174988969",
-      "fencepost": "4240573293",
+      "functionid": "4174988938",
+      "fencepost": "4240041005",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -540,8 +540,8 @@
       "name": "UpdateShuffled",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "4048550130",
-      "fencepost": "4114150583",
+      "functionid": "4048550099",
+      "fencepost": "4113618295",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -554,8 +554,8 @@
       "name": "UpdateLooped",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1432587557",
-      "fencepost": "1498204139",
+      "functionid": "1432587522",
+      "fencepost": "1497671847",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -568,8 +568,8 @@
       "name": "UpdateVolume",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1938138157",
-      "fencepost": "2003770868",
+      "functionid": "1938138124",
+      "fencepost": "2003238578",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -582,8 +582,8 @@
       "name": "CurrentEntryWillChange",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1452404121",
-      "fencepost": "1518069090",
+      "functionid": "1452404152",
+      "fencepost": "1517536864",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -594,8 +594,8 @@
       "name": "CurrentEntryIsAvailable",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3033956671",
-      "fencepost": "3099637769",
+      "functionid": "3033956624",
+      "fencepost": "3099105465",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -608,8 +608,8 @@
       "name": "UpdateCurrentEntryText",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1563608432",
-      "fencepost": "1629305659",
+      "functionid": "1563608401",
+      "fencepost": "1628773371",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -622,8 +622,8 @@
       "name": "UpdateCurrentEntryElapsedSeconds",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2952395727",
-      "fencepost": "3018109083",
+      "functionid": "2952395756",
+      "fencepost": "3017576855",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -636,8 +636,8 @@
       "name": "UpdateCurrentEntryCoverArt",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "385273697",
-      "fencepost": "451003182",
+      "functionid": "385273664",
+      "fencepost": "450470892",
       "cannotcallincrossprocess": "1",
       "serializedargs": [
         "bytes4",
@@ -651,8 +651,8 @@
       "name": "CurrentEntryDidChange",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "544035153",
-      "fencepost": "609780767",
+      "functionid": "544035190",
+      "fencepost": "609248547",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -663,8 +663,8 @@
       "name": "QueueWillChange",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3350640314",
-      "fencepost": "3416418186",
+      "functionid": "3350640281",
+      "fencepost": "3415885896",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -675,8 +675,8 @@
       "name": "ResetQueueEntries",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2866583928",
-      "fencepost": "2932377929",
+      "functionid": "2866583897",
+      "fencepost": "2931845641",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -687,8 +687,8 @@
       "name": "SetQueueEntry",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3502901561",
-      "fencepost": "3568711691",
+      "functionid": "3502901510",
+      "fencepost": "3568179383",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -703,8 +703,8 @@
       "name": "SetCurrentQueueEntry",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2653069675",
-      "fencepost": "2718895934",
+      "functionid": "2653069642",
+      "fencepost": "2718363644",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -717,8 +717,8 @@
       "name": "QueueDidChange",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "552199481",
-      "fencepost": "618041869",
+      "functionid": "552199450",
+      "fencepost": "617509581",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -729,8 +729,8 @@
       "name": "PlaylistWillChange",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3283785153",
-      "fencepost": "3349659799",
+      "functionid": "3283785190",
+      "fencepost": "3349127579",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -741,8 +741,8 @@
       "name": "ResetPlaylistEntries",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "2961038259",
-      "fencepost": "3026929034",
+      "functionid": "2961038226",
+      "fencepost": "3026396744",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -753,8 +753,8 @@
       "name": "SetPlaylistEntry",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3305709376",
-      "fencepost": "3371616280",
+      "functionid": "3305709411",
+      "fencepost": "3371084058",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -769,8 +769,8 @@
       "name": "SetCurrentPlaylistEntry",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "445426866",
-      "fencepost": "511349899",
+      "functionid": "445426835",
+      "fencepost": "510817611",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -783,8 +783,8 @@
       "name": "PlaylistDidChange",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "3266845976",
-      "fencepost": "3332785138",
+      "functionid": "3266846007",
+      "fencepost": "3332252912",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -795,8 +795,8 @@
       "name": "ReplacePlaylistWithSoundtrackAlbum",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "627109843",
-      "fencepost": "693145779",
+      "functionid": "627109872",
+      "fencepost": "692613551",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -809,8 +809,8 @@
       "name": "GetQueueSoundtrackAppID",
       "argc": "-1",
       "interfaceid": "30",
-      "functionid": "1418823754",
-      "fencepost": "1484875819",
+      "functionid": "1418823787",
+      "fencepost": "1484343595",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [

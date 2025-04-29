@@ -14,10 +14,10 @@
 class IClientSystemPerfManager
 {
 public:
-    virtual unknown IsInterfaceValid() = 0; //argc: 0, index 1
-    virtual unknown GetDiagnosticInfo() = 0; //argc: 1, index 2
-    virtual unknown GetState() = 0; //argc: 1, index 3
-    virtual unknown UpdateSettings() = 0; //argc: 1, index 4
-    virtual unknown SetRefreshRateExternallyManaged() = 0; //argc: 1, index 5
-    virtual unknown GetLegacySettings() = 0; //argc: 1, index 6
+    virtual unknown IsInterfaceValid() = 0; //argc: -1, index 1
+    virtual unknown GetDiagnosticInfo() = 0; //argc: -1, index 2
+    virtual unknown GetState() = 0; //argc: -1, index 3
+    virtual unknown UpdateSettings() = 0; //argc: -1, index 4
+    virtual unknown SetRefreshRateExternallyManaged() = 0; //argc: -1, index 5
+    virtual unknown GetLegacySettings() = 0; //argc: -1, index 6
 };

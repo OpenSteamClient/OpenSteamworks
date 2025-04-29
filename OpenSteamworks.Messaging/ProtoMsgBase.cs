@@ -4,6 +4,7 @@ using OpenSteamworks.Protobuf;
 using OpenSteamworks.Utils;
 using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
+using OpenSteamworks.Data.Structs;
 
 namespace OpenSteamworks.Messaging;
 

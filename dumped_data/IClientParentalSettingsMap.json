@@ -5,8 +5,8 @@
       "name": "BIsParentalLockEnabled",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "1037289878",
-      "fencepost": "1104164141",
+      "functionid": "1037289909",
+      "fencepost": "1103631915",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -17,8 +17,8 @@
       "name": "BIsParentalLockLocked",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "1743084680",
-      "fencepost": "1809975072",
+      "functionid": "1743084713",
+      "fencepost": "1809442848",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -29,8 +29,8 @@
       "name": "BIsAppBlocked",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "3328855543",
-      "fencepost": "3395762064",
+      "functionid": "3328855504",
+      "fencepost": "3395229768",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -43,8 +43,8 @@
       "name": "BIsAppInBlockList",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "460900190",
-      "fencepost": "527822840",
+      "functionid": "460900223",
+      "fencepost": "527290616",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -57,8 +57,8 @@
       "name": "BIsFeatureBlocked",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "1806474563",
-      "fencepost": "1873413342",
+      "functionid": "1806474592",
+      "fencepost": "1872881114",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -71,8 +71,8 @@
       "name": "BIsFeatureInBlockList",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "2637634194",
-      "fencepost": "2704589102",
+      "functionid": "2637634227",
+      "fencepost": "2704056878",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -85,8 +85,8 @@
       "name": "BGetSerializedParentalSettings",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "3905111675",
-      "fencepost": "3972114970",
+      "functionid": "3905111636",
+      "fencepost": "3971582674",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -98,8 +98,8 @@
       "name": "BGetRecoveryEmail",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "2386796171",
-      "fencepost": "2453912369",
+      "functionid": "2386796200",
+      "fencepost": "2453380141",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -113,8 +113,8 @@
       "name": "BIsLockFromSiteLicense",
       "argc": "-1",
       "interfaceid": "27",
-      "functionid": "1829347825",
-      "fencepost": "1896528539",
+      "functionid": "1829347728",
+      "fencepost": "1895996185",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [

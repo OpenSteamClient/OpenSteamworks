@@ -17,34 +17,34 @@ namespace OpenSteamworks.Generated;
 public unsafe interface IClientSystemManager
 {
     // WARNING: Arguments are unknown!
-    public unknown GetSettings();  // argc: 1, index: 1, ipc args: [], ipc returns: [bytes1, unknown]
+    public unknown GetSettings();  // argc: -1, index: 1, ipc args: [], ipc returns: [bytes1, protobuf]
     // WARNING: Arguments are unknown!
-    public unknown UpdateSettings();  // argc: 1, index: 2, ipc args: [protobuf], ipc returns: [bytes8]
-    public unknown ShutdownSystem();  // argc: 0, index: 3, ipc args: [], ipc returns: []
-    public unknown SuspendSystem();  // argc: 0, index: 4, ipc args: [], ipc returns: []
-    public unknown RestartSystem();  // argc: 0, index: 5, ipc args: [], ipc returns: []
-    public unknown FactoryReset();  // argc: 0, index: 6, ipc args: [], ipc returns: [bytes1]
+    public unknown UpdateSettings();  // argc: -1, index: 2, ipc args: [protobuf], ipc returns: [bytes8]
+    public unknown ShutdownSystem();  // argc: -1, index: 3, ipc args: [], ipc returns: []
+    public unknown SuspendSystem();  // argc: -1, index: 4, ipc args: [], ipc returns: []
+    public unknown RestartSystem();  // argc: -1, index: 5, ipc args: [], ipc returns: []
+    public unknown FactoryReset();  // argc: -1, index: 6, ipc args: [], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown RebootToFactoryTestImage();  // argc: 1, index: 7, ipc args: [bytes1], ipc returns: [bytes8]
+    public unknown RebootToFactoryTestImage();  // argc: -1, index: 7, ipc args: [bytes1], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown GetDisplayBrightness();  // argc: 1, index: 8, ipc args: [], ipc returns: [bytes1, bytes4]
+    public unknown GetDisplayBrightness();  // argc: -1, index: 8, ipc args: [], ipc returns: [bytes1, bytes4]
     // WARNING: Arguments are unknown!
-    public unknown SetDisplayBrightness();  // argc: 1, index: 9, ipc args: [bytes4], ipc returns: [bytes1]
+    public unknown SetDisplayBrightness();  // argc: -1, index: 9, ipc args: [bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown FormatRemovableStorage();  // argc: 1, index: 10, ipc args: [bytes1], ipc returns: [bytes8]
-    public unknown GetOSBranchList();  // argc: 0, index: 11, ipc args: [], ipc returns: [bytes8]
-    public unknown GetCurrentOSBranch();  // argc: 0, index: 12, ipc args: [], ipc returns: [bytes8]
+    public unknown FormatRemovableStorage();  // argc: -1, index: 10, ipc args: [bytes1], ipc returns: [bytes8]
+    public unknown GetOSBranchList();  // argc: -1, index: 11, ipc args: [], ipc returns: [bytes8]
+    public unknown GetCurrentOSBranch();  // argc: -1, index: 12, ipc args: [], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown SelectOSBranch();  // argc: 1, index: 13, ipc args: [protobuf], ipc returns: [bytes8]
+    public unknown SelectOSBranch();  // argc: -1, index: 13, ipc args: [protobuf], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown GetUpdateState();  // argc: 1, index: 14, ipc args: [], ipc returns: [bytes1, unknown]
-    public unknown CheckForUpdate();  // argc: 0, index: 15, ipc args: [], ipc returns: [bytes8]
+    public unknown GetUpdateState();  // argc: -1, index: 14, ipc args: [], ipc returns: [bytes1, protobuf]
+    public unknown CheckForUpdate();  // argc: -1, index: 15, ipc args: [], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown ApplyUpdate();  // argc: 1, index: 16, ipc args: [protobuf], ipc returns: [bytes8]
+    public unknown ApplyUpdate();  // argc: -1, index: 16, ipc args: [protobuf], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown SetBackgroundUpdateCheckInterval();  // argc: 1, index: 17, ipc args: [bytes4], ipc returns: [bytes1]
+    public unknown SetBackgroundUpdateCheckInterval();  // argc: -1, index: 17, ipc args: [bytes4], ipc returns: [bytes1]
     // WARNING: Arguments are unknown!
-    public unknown ClearAudioDefaults();  // argc: 1, index: 18, ipc args: [bytes4], ipc returns: [bytes8]
-    public unknown RunDeckMicEnableHack();  // argc: 0, index: 19, ipc args: [], ipc returns: [bytes8]
-    public unknown RunDeckEchoCancellationHack();  // argc: 0, index: 20, ipc args: [], ipc returns: [bytes8]
+    public unknown ClearAudioDefaults();  // argc: -1, index: 18, ipc args: [bytes4], ipc returns: [bytes8]
+    public unknown RunDeckMicEnableHack();  // argc: -1, index: 19, ipc args: [], ipc returns: [bytes8]
+    public unknown RunDeckEchoCancellationHack();  // argc: -1, index: 20, ipc args: [], ipc returns: [bytes8]
 }

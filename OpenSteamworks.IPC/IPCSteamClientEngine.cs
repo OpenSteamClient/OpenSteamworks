@@ -102,11 +102,6 @@ internal sealed class IPCSteamClientEngine : IClientEngine
         throw new NotImplementedException();
     }
 
-    public IClientGameSearch GetIClientGameSearch(HSteamUser hSteamUser, HSteamPipe hSteamPipe)
-    {
-        throw new NotImplementedException();
-    }
-
     public void RunFrame()
     {
         throw new NotImplementedException();
@@ -289,11 +284,6 @@ internal sealed class IPCSteamClientEngine : IClientEngine
     }
 
     public IClientStreamLauncher GetIClientStreamLauncher(HSteamUser hSteamUser, HSteamPipe hSteamPipe)
-    {
-        throw new NotImplementedException();
-    }
-
-    public IClientDeviceAuth GetIClientDeviceAuth(HSteamUser hSteamUser, HSteamPipe hSteamPipe)
     {
         throw new NotImplementedException();
     }

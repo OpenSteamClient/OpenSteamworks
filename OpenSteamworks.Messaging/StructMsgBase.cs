@@ -2,6 +2,7 @@ using System.Text;
 using OpenSteamworks.Messaging.Header;
 using OpenSteamworks.Utils;
 using OpenSteamworks.Data;
+using OpenSteamworks.Data.Structs;
 
 namespace OpenSteamworks.Messaging;
 

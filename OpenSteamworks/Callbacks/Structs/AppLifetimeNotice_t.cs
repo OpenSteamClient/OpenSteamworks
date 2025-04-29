@@ -19,7 +19,9 @@ public struct AppLifetimeNotice_t
     // These are basically always 0, some legacy thing?
     public UInt16 unk5;
     public UInt16 unk6;
-    
+
 	[MarshalAs(UnmanagedType.I1)]
 	public bool m_bExiting;
+
+    public UInt32 unk7;
 }

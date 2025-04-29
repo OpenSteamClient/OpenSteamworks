@@ -11,8 +11,8 @@ namespace OpenSteamworks.Callbacks;
 public partial class CallbackManager {
 	public delegate void BytesHandlerDelegate(ICallbackHandler handler, ReadOnlySpan<byte> data);
 	public delegate void HandlerDelegate<in T>(ICallbackHandler handler, T cb);
-	
-	
+
+
 	private readonly ConcurrentDictionary<ICallbackHandler, int> callbackHandlers = new();
 
 	private abstract class CallbackHandlerBase : ICallbackHandler
@@ -88,12 +88,12 @@ public partial class CallbackManager {
 	}
 
 	/// <summary>
-	/// Invoke all callback handlers 
+	/// Invoke all callback handlers
 	/// </summary>
 	/// <param name="callbackID"></param>
 	/// <param name="data"></param>
 	private void InvokeAllHandlers(int callbackID, ReadOnlySpan<byte> data) {
-		foreach (var item in callbackHandlers.ToList().Where(e => e.Value == callbackID))
+		foreach (var item in callbackHandlers.ToArray().Where(e => e.Value == callbackID))
 		{
 			item.Key.Invoke(data);
 		}

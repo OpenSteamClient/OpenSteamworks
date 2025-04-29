@@ -1,7 +1,7 @@
 using System.Runtime.InteropServices;
 using OpenSteamClient.Logging;
 
-namespace OpenSteamworks.Data;
+namespace OpenSteamworks.Data.Interop;
 
 [StructLayout(LayoutKind.Sequential)]
 public unsafe struct CUtlMemory<T> : IDisposable where T : unmanaged

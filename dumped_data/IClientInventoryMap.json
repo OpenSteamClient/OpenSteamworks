@@ -5,8 +5,8 @@
       "name": "GetResultStatus",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3432977339",
-      "fencepost": "3510578911",
+      "functionid": "3432977198",
+      "fencepost": "3508820709",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -19,8 +19,8 @@
       "name": "DestroyResult",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1377882547",
-      "fencepost": "1455871215",
+      "functionid": "1377882406",
+      "fencepost": "1454113013",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -31,8 +31,8 @@
       "name": "GetResultItems",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "961557674",
-      "fencepost": "1039288278",
+      "functionid": "961557509",
+      "fencepost": "1037530052",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -48,8 +48,8 @@
       "name": "GetResultItemProperty",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2208352355",
-      "fencepost": "2286260378",
+      "functionid": "2208352478",
+      "fencepost": "2284502440",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -68,8 +68,8 @@
       "name": "GetResultTimestamp",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "961033327",
-      "fencepost": "1038651028",
+      "functionid": "961033468",
+      "fencepost": "1036893108",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -82,8 +82,8 @@
       "name": "CheckResultSteamID",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2482282064",
-      "fencepost": "2559915894",
+      "functionid": "2482282237",
+      "fencepost": "2558158006",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -97,8 +97,8 @@
       "name": "SerializeResult",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3778090868",
-      "fencepost": "3856176310",
+      "functionid": "3778090983",
+      "fencepost": "3854418364",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -114,8 +114,8 @@
       "name": "DeserializeResult",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "22896466",
-      "fencepost": "101127069",
+      "functionid": "22896447",
+      "fencepost": "99368989",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -131,8 +131,8 @@
       "name": "GetAllItems",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2610988003",
-      "fencepost": "2689299251",
+      "functionid": "2610987934",
+      "fencepost": "2687541121",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -144,8 +144,8 @@
       "name": "GetItemsByID",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3716660649",
-      "fencepost": "3795084800",
+      "functionid": "3716660702",
+      "fencepost": "3793326792",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -160,8 +160,8 @@
       "name": "GenerateItems",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1143533335",
-      "fencepost": "1222102647",
+      "functionid": "1143533186",
+      "fencepost": "1220344437",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -178,8 +178,8 @@
       "name": "AddPromoItems",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1970573296",
-      "fencepost": "2049255511",
+      "functionid": "1970572903",
+      "fencepost": "2047497057",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -194,8 +194,8 @@
       "name": "ConsumeItem",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3033308830",
-      "fencepost": "3112103948",
+      "functionid": "3033308971",
+      "fencepost": "3110346028",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -210,8 +210,8 @@
       "name": "ExchangeItems",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3137620423",
-      "fencepost": "3216625218",
+      "functionid": "3137620084",
+      "fencepost": "3214866818",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -232,8 +232,8 @@
       "name": "TransferItemQuantity",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3828749072",
-      "fencepost": "3907882899",
+      "functionid": "3828748941",
+      "fencepost": "3906124707",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -249,8 +249,8 @@
       "name": "SendItemDropHeartbeat",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "4127561622",
-      "fencepost": "4206743836",
+      "functionid": "4127561339",
+      "fencepost": "4204985492",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -259,8 +259,8 @@
       "name": "TriggerItemDrop",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2833949610",
-      "fencepost": "2913196340",
+      "functionid": "2833949253",
+      "fencepost": "2911437922",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -274,8 +274,8 @@
       "name": "TradeItems",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1792012557",
-      "fencepost": "1871485093",
+      "functionid": "1792012542",
+      "fencepost": "1869727017",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -297,8 +297,8 @@
       "name": "LoadItemDefinitions",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3900444322",
-      "fencepost": "3979965245",
+      "functionid": "3900444469",
+      "fencepost": "3978207331",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -309,8 +309,8 @@
       "name": "GetItemDefinitionIDs",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2906021731",
-      "fencepost": "2985623299",
+      "functionid": "2906021622",
+      "fencepost": "2983865129",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -325,8 +325,8 @@
       "name": "GetItemDefinitionProperty",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2315460809",
-      "fencepost": "2395223667",
+      "functionid": "2315460956",
+      "fencepost": "2393465753",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -343,8 +343,8 @@
       "name": "RequestEligiblePromoItemDefinitionsIDs",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1215517042",
-      "fencepost": "1295360545",
+      "functionid": "1215516877",
+      "fencepost": "1293602319",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -357,8 +357,8 @@
       "name": "GetEligiblePromoItemDefinitionIDs",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1069802303",
-      "fencepost": "1149742580",
+      "functionid": "1069802114",
+      "fencepost": "1147984330",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -374,8 +374,8 @@
       "name": "StartPurchase",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2330476832",
-      "fencepost": "2410578399",
+      "functionid": "2330476725",
+      "fencepost": "2408820231",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -391,8 +391,8 @@
       "name": "RequestPrices",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "249417312",
-      "fencepost": "329567266",
+      "functionid": "249417717",
+      "fencepost": "327809610",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -403,8 +403,8 @@
       "name": "GetNumItemsWithPrices",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1651505683",
-      "fencepost": "1731687895",
+      "functionid": "1651506054",
+      "fencepost": "1729930205",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -415,8 +415,8 @@
       "name": "GetItemsWithPrices",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "550876478",
-      "fencepost": "631171593",
+      "functionid": "550876499",
+      "fencepost": "629413553",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -432,8 +432,8 @@
       "name": "GetItemPrice",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "4035302320",
-      "fencepost": "4115758725",
+      "functionid": "4035302339",
+      "fencepost": "4114000683",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -448,8 +448,8 @@
       "name": "StartUpdateProperties",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2789648756",
-      "fencepost": "2870185806",
+      "functionid": "2789648865",
+      "fencepost": "2868427854",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -460,8 +460,8 @@
       "name": "RemoveProperty",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3812605857",
-      "fencepost": "3893159036",
+      "functionid": "3812605750",
+      "fencepost": "3891400868",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -476,8 +476,8 @@
       "name": "SetProperty",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "2498292751",
-      "fencepost": "2578862059",
+      "functionid": "2498292890",
+      "fencepost": "2577104137",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -493,8 +493,8 @@
       "name": "SetProperty",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "1967052709",
-      "fencepost": "2047638146",
+      "functionid": "1967052598",
+      "fencepost": "2045879974",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -510,8 +510,8 @@
       "name": "SetProperty",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "4181781491",
-      "fencepost": "4262383057",
+      "functionid": "4181781358",
+      "fencepost": "4260624863",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -527,8 +527,8 @@
       "name": "SetProperty",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3102948855",
-      "fencepost": "3183566550",
+      "functionid": "3102948712",
+      "fencepost": "3181808346",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -544,8 +544,8 @@
       "name": "SubmitUpdateProperties",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "350101200",
-      "fencepost": "430783411",
+      "functionid": "350101069",
+      "fencepost": "429025219",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -559,8 +559,8 @@
       "name": "InspectItem",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "3009564879",
-      "fencepost": "3090359993",
+      "functionid": "3009564768",
+      "fencepost": "3088601821",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -574,8 +574,8 @@
       "name": "TEST_ClearMsgCache",
       "argc": "-1",
       "interfaceid": "39",
-      "functionid": "405262417",
-      "fencepost": "486122047",
+      "functionid": "405262572",
+      "fencepost": "484364141",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []

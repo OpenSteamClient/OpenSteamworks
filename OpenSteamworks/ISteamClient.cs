@@ -14,7 +14,8 @@ public interface ISteamClient : IDisposable {
     public DownloadsHelper DownloadsHelper { get; }
     public UserHelper UserHelper { get; }
     public ConsoleHelper ConsoleHelper { get; }
-    
+    public ConfigStoreHelper ConfigStoreHelper { get; }
+
     public IClientEngine IClientEngine { get; }
     public IClientAppDisableUpdate IClientAppDisableUpdate { get; }
     public IClientAppManager IClientAppManager { get; }
@@ -26,11 +27,9 @@ public interface ISteamClient : IDisposable {
     public IClientController IClientController { get; }
     public IClientControllerSerialized IClientControllerSerialized { get; }
     public IClientDepotBuilder IClientDepotBuilder { get; }
-    public IClientDeviceAuth IClientDeviceAuth { get; }
     public IClientFriends IClientFriends { get; }
     public IClientGameCoordinator IClientGameCoordinator { get; }
     public IClientGameNotifications IClientGameNotifications { get; }
-    public IClientGameSearch IClientGameSearch { get; }
     //public IClientGameServerInternal IClientGameServerInternal { get; }
     //public IClientGameServerPacketHandler IClientGameServerPacketHandler { get; }
     //public IClientGameServerStats IClientGameServerStats { get; }
@@ -77,9 +76,9 @@ public interface ISteamClient : IDisposable {
     public IClientVideo IClientVideo { get; }
     public IClientVR IClientVR { get; }
     public IClientTimeline IClientTimeline { get; }
-    
+
     public CallbackManager CallbackManager { get; }
-    
+
     /// <summary>
     /// Is the current connection cross-process?
     /// Some APIs may not be used in cross process contexts.

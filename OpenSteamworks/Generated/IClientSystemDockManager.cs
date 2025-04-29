@@ -16,10 +16,10 @@ namespace OpenSteamworks.Generated;
 [CppClass]
 public unsafe interface IClientSystemDockManager
 {
-    public bool IsInterfaceValid();  // argc: 0, index: 1, ipc args: [], ipc returns: [boolean]
+    public bool IsInterfaceValid();  // argc: -1, index: 1, ipc args: [], ipc returns: [boolean]
     // WARNING: Arguments are unknown!
-    public unknown GetState();  // argc: 1, index: 2, ipc args: [], ipc returns: [bytes1, unknown]
+    public unknown GetState();  // argc: -1, index: 2, ipc args: [], ipc returns: [bytes1, protobuf]
     // WARNING: Arguments are unknown!
-    public unknown UpdateFirmware();  // argc: 1, index: 3, ipc args: [protobuf], ipc returns: [bytes8]
-    public bool DisarmSafetyNet();  // argc: 0, index: 4, ipc args: [], ipc returns: [bytes1]
+    public unknown UpdateFirmware();  // argc: -1, index: 3, ipc args: [protobuf], ipc returns: [bytes8]
+    public bool DisarmSafetyNet();  // argc: -1, index: 4, ipc args: [], ipc returns: [bytes1]
 }

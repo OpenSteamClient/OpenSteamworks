@@ -46,42 +46,42 @@ namespace OpenSteamworks.Protobuf {
             "dEFwcExpc3QSDQoFbWVkaWEYASABKAgSDQoFdG9vbHMYAiABKAgSDQoFZ2Ft",
             "ZXMYAyABKAgSFgoOb25seV9pbnN0YWxsZWQYBCABKAgSFQoNb25seV9jaGFu",
             "Z2luZxgFIAEoCBIOCgZjb21pY3MYBiABKAgSGwoTaW5jbHVkZV9jbGllbnRf",
-            "aW5mbxgHIAEoCBIVCg1maWx0ZXJfYXBwaWRzGAggAygNIsUGCiJDTXNnQ2xp",
+            "aW5mbxgHIAEoCBIVCg1maWx0ZXJfYXBwaWRzGAggAygNIswGCiJDTXNnQ2xp",
             "ZW50R2V0Q2xpZW50QXBwTGlzdFJlc3BvbnNlEjUKBGFwcHMYASADKAsyJy5D",
             "TXNnQ2xpZW50R2V0Q2xpZW50QXBwTGlzdFJlc3BvbnNlLkFwcBIXCg9ieXRl",
             "c19hdmFpbGFibGUYAiABKAQSOAoLY2xpZW50X2luZm8YAyABKAsyIy5DTXNn",
-            "Q2xpZW50R2V0Q2xpZW50RGV0YWlsc1Jlc3BvbnNlGpQFCgNBcHASDQoFYXBw",
+            "Q2xpZW50R2V0Q2xpZW50RGV0YWlsc1Jlc3BvbnNlGpsFCgNBcHASDQoFYXBw",
             "aWQYASABKA0SEAoIY2F0ZWdvcnkYAiABKAkSEAoIYXBwX3R5cGUYCiABKAkS",
             "EAoIZmF2b3JpdGUYAyABKAgSEQoJaW5zdGFsbGVkGAQgASgIEhMKC2F1dG9f",
             "dXBkYXRlGAUgASgIEhgKEGJ5dGVzX2Rvd25sb2FkZWQYBiABKAQSGQoRYnl0",
             "ZXNfdG9fZG93bmxvYWQYByABKAQSGwoTYnl0ZXNfZG93bmxvYWRfcmF0ZRgI",
             "IAEoDRI5CgRkbGNzGAkgAygLMisuQ01zZ0NsaWVudEdldENsaWVudEFwcExp",
             "c3RSZXNwb25zZS5BcHAuRExDEhcKD2Rvd25sb2FkX3BhdXNlZBgLIAEoCBIX",
-            "Cg9udW1fZG93bmxvYWRpbmcYDCABKA0SEgoKbnVtX3BhdXNlZBgNIAEoDRIQ",
-            "CghjaGFuZ2luZxgOIAEoCBIdChVhdmFpbGFibGVfb25fcGxhdGZvcm0YDyAB",
-            "KAgSFAoMYnl0ZXNfc3RhZ2VkGBAgASgEEhYKDmJ5dGVzX3RvX3N0YWdlGBEg",
-            "ASgEEhYKDmJ5dGVzX3JlcXVpcmVkGBIgASgEEhYKDnNvdXJjZV9idWlsZGlk",
-            "GBMgASgNEhYKDnRhcmdldF9idWlsZGlkGBQgASgNEiMKG2VzdGltYXRlZF9z",
-            "ZWNvbmRzX3JlbWFpbmluZxgVIAEoDRIWCg5xdWV1ZV9wb3NpdGlvbhgWIAEo",
-            "BRIUCgx1bmluc3RhbGxpbmcYFyABKAgSGQoRcnRfdGltZV9zY2hlZHVsZWQY",
-            "GCABKA0SDwoHcnVubmluZxgZIAEoCBonCgNETEMSDQoFYXBwaWQYASABKA0S",
-            "EQoJaW5zdGFsbGVkGAIgASgIIisKGkNNc2dDbGllbnRJbnN0YWxsQ2xpZW50",
-            "QXBwEg0KBWFwcGlkGAEgASgNIjQKIkNNc2dDbGllbnRJbnN0YWxsQ2xpZW50",
-            "QXBwUmVzcG9uc2USDgoGcmVzdWx0GAEgASgNIi0KHENNc2dDbGllbnRVbmlu",
-            "c3RhbGxDbGllbnRBcHASDQoFYXBwaWQYASABKA0iNgokQ01zZ0NsaWVudFVu",
-            "aW5zdGFsbENsaWVudEFwcFJlc3BvbnNlEg4KBnJlc3VsdBgBIAEoDSJCCiFD",
-            "TXNnQ2xpZW50U2V0Q2xpZW50QXBwVXBkYXRlU3RhdGUSDQoFYXBwaWQYASAB",
-            "KA0SDgoGdXBkYXRlGAIgASgIIjsKKUNNc2dDbGllbnRTZXRDbGllbnRBcHBV",
-            "cGRhdGVTdGF0ZVJlc3BvbnNlEg4KBnJlc3VsdBgBIAEoDSKqAQoZQ01zZ0Ns",
-            "aWVudExhdW5jaENsaWVudEFwcBINCgVhcHBpZBgBIAEoDRIQCghsYW5ndWFn",
-            "ZRgCIAEoDRIaChJsYXVuY2hfb3B0aW9uX3R5cGUYAyABKA0SFQoNbGF1bmNo",
-            "X29wdGlvbhgEIAEoDRIVCg1sYXVuY2hfc291cmNlGAUgASgNEgwKBGFyZ3MY",
-            "BiABKAkSFAoMcXVlcnlfcGFyYW1zGAcgASgJIjMKIUNNc2dDbGllbnRMYXVu",
-            "Y2hDbGllbnRBcHBSZXNwb25zZRIOCgZyZXN1bHQYASABKA0iNAoiQ01zZ0Ns",
-            "aWVudEVuYWJsZU9yRGlzYWJsZURvd25sb2FkcxIOCgZlbmFibGUYASABKAgi",
-            "PAoqQ01zZ0NsaWVudEVuYWJsZU9yRGlzYWJsZURvd25sb2Fkc1Jlc3BvbnNl",
-            "Eg4KBnJlc3VsdBgBIAEoDUIfSAGAAQCqAhdPcGVuU3RlYW13b3Jrcy5Qcm90",
-            "b2J1Zg=="));
+            "Cg9udW1fZG93bmxvYWRpbmcYDCABKA0SEAoIY2hhbmdpbmcYDiABKAgSHQoV",
+            "YXZhaWxhYmxlX29uX3BsYXRmb3JtGA8gASgIEhQKDGJ5dGVzX3N0YWdlZBgQ",
+            "IAEoBBIWCg5ieXRlc190b19zdGFnZRgRIAEoBBIWCg5ieXRlc19yZXF1aXJl",
+            "ZBgSIAEoBBIWCg5zb3VyY2VfYnVpbGRpZBgTIAEoDRIWCg50YXJnZXRfYnVp",
+            "bGRpZBgUIAEoDRIjChtlc3RpbWF0ZWRfc2Vjb25kc19yZW1haW5pbmcYFSAB",
+            "KA0SFgoOcXVldWVfcG9zaXRpb24YFiABKAUSFAoMdW5pbnN0YWxsaW5nGBcg",
+            "ASgIEhkKEXJ0X3RpbWVfc2NoZWR1bGVkGBggASgNEg8KB3J1bm5pbmcYGSAB",
+            "KAgSGQoRdXBkYXRlX3BlcmNlbnRhZ2UYGiABKA0aJwoDRExDEg0KBWFwcGlk",
+            "GAEgASgNEhEKCWluc3RhbGxlZBgCIAEoCCIrChpDTXNnQ2xpZW50SW5zdGFs",
+            "bENsaWVudEFwcBINCgVhcHBpZBgBIAEoDSI0CiJDTXNnQ2xpZW50SW5zdGFs",
+            "bENsaWVudEFwcFJlc3BvbnNlEg4KBnJlc3VsdBgBIAEoDSItChxDTXNnQ2xp",
+            "ZW50VW5pbnN0YWxsQ2xpZW50QXBwEg0KBWFwcGlkGAEgASgNIjYKJENNc2dD",
+            "bGllbnRVbmluc3RhbGxDbGllbnRBcHBSZXNwb25zZRIOCgZyZXN1bHQYASAB",
+            "KA0iQgohQ01zZ0NsaWVudFNldENsaWVudEFwcFVwZGF0ZVN0YXRlEg0KBWFw",
+            "cGlkGAEgASgNEg4KBnVwZGF0ZRgCIAEoCCI7CilDTXNnQ2xpZW50U2V0Q2xp",
+            "ZW50QXBwVXBkYXRlU3RhdGVSZXNwb25zZRIOCgZyZXN1bHQYASABKA0iqgEK",
+            "GUNNc2dDbGllbnRMYXVuY2hDbGllbnRBcHASDQoFYXBwaWQYASABKA0SEAoI",
+            "bGFuZ3VhZ2UYAiABKA0SGgoSbGF1bmNoX29wdGlvbl90eXBlGAMgASgNEhUK",
+            "DWxhdW5jaF9vcHRpb24YBCABKA0SFQoNbGF1bmNoX3NvdXJjZRgFIAEoDRIM",
+            "CgRhcmdzGAYgASgJEhQKDHF1ZXJ5X3BhcmFtcxgHIAEoCSIzCiFDTXNnQ2xp",
+            "ZW50TGF1bmNoQ2xpZW50QXBwUmVzcG9uc2USDgoGcmVzdWx0GAEgASgNIjQK",
+            "IkNNc2dDbGllbnRFbmFibGVPckRpc2FibGVEb3dubG9hZHMSDgoGZW5hYmxl",
+            "GAEgASgIIjwKKkNNc2dDbGllbnRFbmFibGVPckRpc2FibGVEb3dubG9hZHNS",
+            "ZXNwb25zZRIOCgZyZXN1bHQYASABKA1CH0gBgAEAqgIXT3BlblN0ZWFtd29y",
+            "a3MuUHJvdG9idWY="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -90,7 +90,7 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientDetails), global::OpenSteamworks.Protobuf.CMsgClientGetClientDetails.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientDetailsResponse), global::OpenSteamworks.Protobuf.CMsgClientGetClientDetailsResponse.Parser, new[]{ "PackageVersion", "Os", "MachineName", "IpPublic", "IpPrivate", "GamesRunning", "BytesAvailable", "ProtocolVersion", "ClientcommVersion", "LocalUsers" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientDetailsResponse.Types.Game), global::OpenSteamworks.Protobuf.CMsgClientGetClientDetailsResponse.Types.Game.Parser, new[]{ "Appid", "ExtraInfo", "TimeRunningSec" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientAppList), global::OpenSteamworks.Protobuf.CMsgClientGetClientAppList.Parser, new[]{ "Media", "Tools", "Games", "OnlyInstalled", "OnlyChanging", "Comics", "IncludeClientInfo", "FilterAppids" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse), global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Parser, new[]{ "Apps", "BytesAvailable", "ClientInfo" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App), global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App.Parser, new[]{ "Appid", "Category", "AppType", "Favorite", "Installed", "AutoUpdate", "BytesDownloaded", "BytesToDownload", "BytesDownloadRate", "Dlcs", "DownloadPaused", "NumDownloading", "NumPaused", "Changing", "AvailableOnPlatform", "BytesStaged", "BytesToStage", "BytesRequired", "SourceBuildid", "TargetBuildid", "EstimatedSecondsRemaining", "QueuePosition", "Uninstalling", "RtTimeScheduled", "Running" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App.Types.DLC), global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App.Types.DLC.Parser, new[]{ "Appid", "Installed" }, null, null, null, null)})}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse), global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Parser, new[]{ "Apps", "BytesAvailable", "ClientInfo" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App), global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App.Parser, new[]{ "Appid", "Category", "AppType", "Favorite", "Installed", "AutoUpdate", "BytesDownloaded", "BytesToDownload", "BytesDownloadRate", "Dlcs", "DownloadPaused", "NumDownloading", "Changing", "AvailableOnPlatform", "BytesStaged", "BytesToStage", "BytesRequired", "SourceBuildid", "TargetBuildid", "EstimatedSecondsRemaining", "QueuePosition", "Uninstalling", "RtTimeScheduled", "Running", "UpdatePercentage" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App.Types.DLC), global::OpenSteamworks.Protobuf.CMsgClientGetClientAppListResponse.Types.App.Types.DLC.Parser, new[]{ "Appid", "Installed" }, null, null, null, null)})}),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientInstallClientApp), global::OpenSteamworks.Protobuf.CMsgClientInstallClientApp.Parser, new[]{ "Appid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientInstallClientAppResponse), global::OpenSteamworks.Protobuf.CMsgClientInstallClientAppResponse.Parser, new[]{ "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgClientUninstallClientApp), global::OpenSteamworks.Protobuf.CMsgClientUninstallClientApp.Parser, new[]{ "Appid" }, null, null, null, null),
@@ -3067,7 +3067,6 @@ namespace OpenSteamworks.Protobuf {
           dlcs_ = other.dlcs_.Clone();
           downloadPaused_ = other.downloadPaused_;
           numDownloading_ = other.numDownloading_;
-          numPaused_ = other.numPaused_;
           changing_ = other.changing_;
           availableOnPlatform_ = other.availableOnPlatform_;
           bytesStaged_ = other.bytesStaged_;
@@ -3080,6 +3079,7 @@ namespace OpenSteamworks.Protobuf {
           uninstalling_ = other.uninstalling_;
           rtTimeScheduled_ = other.rtTimeScheduled_;
           running_ = other.running_;
+          updatePercentage_ = other.updatePercentage_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -3395,33 +3395,6 @@ namespace OpenSteamworks.Protobuf {
           _hasBits0 &= ~256;
         }
 
-        /// <summary>Field number for the "num_paused" field.</summary>
-        public const int NumPausedFieldNumber = 13;
-        private readonly static uint NumPausedDefaultValue = 0;
-
-        private uint numPaused_;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public uint NumPaused {
-          get { if ((_hasBits0 & 512) != 0) { return numPaused_; } else { return NumPausedDefaultValue; } }
-          set {
-            _hasBits0 |= 512;
-            numPaused_ = value;
-          }
-        }
-        /// <summary>Gets whether the "num_paused" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public bool HasNumPaused {
-          get { return (_hasBits0 & 512) != 0; }
-        }
-        /// <summary>Clears the value of the "num_paused" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public void ClearNumPaused() {
-          _hasBits0 &= ~512;
-        }
-
         /// <summary>Field number for the "changing" field.</summary>
         public const int ChangingFieldNumber = 14;
         private readonly static bool ChangingDefaultValue = false;
@@ -3430,9 +3403,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Changing {
-          get { if ((_hasBits0 & 1024) != 0) { return changing_; } else { return ChangingDefaultValue; } }
+          get { if ((_hasBits0 & 512) != 0) { return changing_; } else { return ChangingDefaultValue; } }
           set {
-            _hasBits0 |= 1024;
+            _hasBits0 |= 512;
             changing_ = value;
           }
         }
@@ -3440,13 +3413,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasChanging {
-          get { return (_hasBits0 & 1024) != 0; }
+          get { return (_hasBits0 & 512) != 0; }
         }
         /// <summary>Clears the value of the "changing" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearChanging() {
-          _hasBits0 &= ~1024;
+          _hasBits0 &= ~512;
         }
 
         /// <summary>Field number for the "available_on_platform" field.</summary>
@@ -3457,9 +3430,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool AvailableOnPlatform {
-          get { if ((_hasBits0 & 2048) != 0) { return availableOnPlatform_; } else { return AvailableOnPlatformDefaultValue; } }
+          get { if ((_hasBits0 & 1024) != 0) { return availableOnPlatform_; } else { return AvailableOnPlatformDefaultValue; } }
           set {
-            _hasBits0 |= 2048;
+            _hasBits0 |= 1024;
             availableOnPlatform_ = value;
           }
         }
@@ -3467,13 +3440,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasAvailableOnPlatform {
-          get { return (_hasBits0 & 2048) != 0; }
+          get { return (_hasBits0 & 1024) != 0; }
         }
         /// <summary>Clears the value of the "available_on_platform" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearAvailableOnPlatform() {
-          _hasBits0 &= ~2048;
+          _hasBits0 &= ~1024;
         }
 
         /// <summary>Field number for the "bytes_staged" field.</summary>
@@ -3484,9 +3457,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ulong BytesStaged {
-          get { if ((_hasBits0 & 4096) != 0) { return bytesStaged_; } else { return BytesStagedDefaultValue; } }
+          get { if ((_hasBits0 & 2048) != 0) { return bytesStaged_; } else { return BytesStagedDefaultValue; } }
           set {
-            _hasBits0 |= 4096;
+            _hasBits0 |= 2048;
             bytesStaged_ = value;
           }
         }
@@ -3494,13 +3467,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasBytesStaged {
-          get { return (_hasBits0 & 4096) != 0; }
+          get { return (_hasBits0 & 2048) != 0; }
         }
         /// <summary>Clears the value of the "bytes_staged" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearBytesStaged() {
-          _hasBits0 &= ~4096;
+          _hasBits0 &= ~2048;
         }
 
         /// <summary>Field number for the "bytes_to_stage" field.</summary>
@@ -3511,9 +3484,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ulong BytesToStage {
-          get { if ((_hasBits0 & 8192) != 0) { return bytesToStage_; } else { return BytesToStageDefaultValue; } }
+          get { if ((_hasBits0 & 4096) != 0) { return bytesToStage_; } else { return BytesToStageDefaultValue; } }
           set {
-            _hasBits0 |= 8192;
+            _hasBits0 |= 4096;
             bytesToStage_ = value;
           }
         }
@@ -3521,13 +3494,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasBytesToStage {
-          get { return (_hasBits0 & 8192) != 0; }
+          get { return (_hasBits0 & 4096) != 0; }
         }
         /// <summary>Clears the value of the "bytes_to_stage" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearBytesToStage() {
-          _hasBits0 &= ~8192;
+          _hasBits0 &= ~4096;
         }
 
         /// <summary>Field number for the "bytes_required" field.</summary>
@@ -3538,9 +3511,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ulong BytesRequired {
-          get { if ((_hasBits0 & 16384) != 0) { return bytesRequired_; } else { return BytesRequiredDefaultValue; } }
+          get { if ((_hasBits0 & 8192) != 0) { return bytesRequired_; } else { return BytesRequiredDefaultValue; } }
           set {
-            _hasBits0 |= 16384;
+            _hasBits0 |= 8192;
             bytesRequired_ = value;
           }
         }
@@ -3548,13 +3521,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasBytesRequired {
-          get { return (_hasBits0 & 16384) != 0; }
+          get { return (_hasBits0 & 8192) != 0; }
         }
         /// <summary>Clears the value of the "bytes_required" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearBytesRequired() {
-          _hasBits0 &= ~16384;
+          _hasBits0 &= ~8192;
         }
 
         /// <summary>Field number for the "source_buildid" field.</summary>
@@ -3565,9 +3538,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public uint SourceBuildid {
-          get { if ((_hasBits0 & 32768) != 0) { return sourceBuildid_; } else { return SourceBuildidDefaultValue; } }
+          get { if ((_hasBits0 & 16384) != 0) { return sourceBuildid_; } else { return SourceBuildidDefaultValue; } }
           set {
-            _hasBits0 |= 32768;
+            _hasBits0 |= 16384;
             sourceBuildid_ = value;
           }
         }
@@ -3575,13 +3548,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasSourceBuildid {
-          get { return (_hasBits0 & 32768) != 0; }
+          get { return (_hasBits0 & 16384) != 0; }
         }
         /// <summary>Clears the value of the "source_buildid" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearSourceBuildid() {
-          _hasBits0 &= ~32768;
+          _hasBits0 &= ~16384;
         }
 
         /// <summary>Field number for the "target_buildid" field.</summary>
@@ -3592,9 +3565,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public uint TargetBuildid {
-          get { if ((_hasBits0 & 65536) != 0) { return targetBuildid_; } else { return TargetBuildidDefaultValue; } }
+          get { if ((_hasBits0 & 32768) != 0) { return targetBuildid_; } else { return TargetBuildidDefaultValue; } }
           set {
-            _hasBits0 |= 65536;
+            _hasBits0 |= 32768;
             targetBuildid_ = value;
           }
         }
@@ -3602,13 +3575,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasTargetBuildid {
-          get { return (_hasBits0 & 65536) != 0; }
+          get { return (_hasBits0 & 32768) != 0; }
         }
         /// <summary>Clears the value of the "target_buildid" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearTargetBuildid() {
-          _hasBits0 &= ~65536;
+          _hasBits0 &= ~32768;
         }
 
         /// <summary>Field number for the "estimated_seconds_remaining" field.</summary>
@@ -3619,9 +3592,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public uint EstimatedSecondsRemaining {
-          get { if ((_hasBits0 & 131072) != 0) { return estimatedSecondsRemaining_; } else { return EstimatedSecondsRemainingDefaultValue; } }
+          get { if ((_hasBits0 & 65536) != 0) { return estimatedSecondsRemaining_; } else { return EstimatedSecondsRemainingDefaultValue; } }
           set {
-            _hasBits0 |= 131072;
+            _hasBits0 |= 65536;
             estimatedSecondsRemaining_ = value;
           }
         }
@@ -3629,13 +3602,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasEstimatedSecondsRemaining {
-          get { return (_hasBits0 & 131072) != 0; }
+          get { return (_hasBits0 & 65536) != 0; }
         }
         /// <summary>Clears the value of the "estimated_seconds_remaining" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearEstimatedSecondsRemaining() {
-          _hasBits0 &= ~131072;
+          _hasBits0 &= ~65536;
         }
 
         /// <summary>Field number for the "queue_position" field.</summary>
@@ -3646,9 +3619,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int QueuePosition {
-          get { if ((_hasBits0 & 262144) != 0) { return queuePosition_; } else { return QueuePositionDefaultValue; } }
+          get { if ((_hasBits0 & 131072) != 0) { return queuePosition_; } else { return QueuePositionDefaultValue; } }
           set {
-            _hasBits0 |= 262144;
+            _hasBits0 |= 131072;
             queuePosition_ = value;
           }
         }
@@ -3656,13 +3629,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasQueuePosition {
-          get { return (_hasBits0 & 262144) != 0; }
+          get { return (_hasBits0 & 131072) != 0; }
         }
         /// <summary>Clears the value of the "queue_position" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearQueuePosition() {
-          _hasBits0 &= ~262144;
+          _hasBits0 &= ~131072;
         }
 
         /// <summary>Field number for the "uninstalling" field.</summary>
@@ -3673,9 +3646,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Uninstalling {
-          get { if ((_hasBits0 & 524288) != 0) { return uninstalling_; } else { return UninstallingDefaultValue; } }
+          get { if ((_hasBits0 & 262144) != 0) { return uninstalling_; } else { return UninstallingDefaultValue; } }
           set {
-            _hasBits0 |= 524288;
+            _hasBits0 |= 262144;
             uninstalling_ = value;
           }
         }
@@ -3683,13 +3656,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasUninstalling {
-          get { return (_hasBits0 & 524288) != 0; }
+          get { return (_hasBits0 & 262144) != 0; }
         }
         /// <summary>Clears the value of the "uninstalling" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearUninstalling() {
-          _hasBits0 &= ~524288;
+          _hasBits0 &= ~262144;
         }
 
         /// <summary>Field number for the "rt_time_scheduled" field.</summary>
@@ -3700,9 +3673,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public uint RtTimeScheduled {
-          get { if ((_hasBits0 & 1048576) != 0) { return rtTimeScheduled_; } else { return RtTimeScheduledDefaultValue; } }
+          get { if ((_hasBits0 & 524288) != 0) { return rtTimeScheduled_; } else { return RtTimeScheduledDefaultValue; } }
           set {
-            _hasBits0 |= 1048576;
+            _hasBits0 |= 524288;
             rtTimeScheduled_ = value;
           }
         }
@@ -3710,13 +3683,13 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasRtTimeScheduled {
-          get { return (_hasBits0 & 1048576) != 0; }
+          get { return (_hasBits0 & 524288) != 0; }
         }
         /// <summary>Clears the value of the "rt_time_scheduled" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearRtTimeScheduled() {
-          _hasBits0 &= ~1048576;
+          _hasBits0 &= ~524288;
         }
 
         /// <summary>Field number for the "running" field.</summary>
@@ -3727,9 +3700,9 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Running {
-          get { if ((_hasBits0 & 2097152) != 0) { return running_; } else { return RunningDefaultValue; } }
+          get { if ((_hasBits0 & 1048576) != 0) { return running_; } else { return RunningDefaultValue; } }
           set {
-            _hasBits0 |= 2097152;
+            _hasBits0 |= 1048576;
             running_ = value;
           }
         }
@@ -3737,12 +3710,39 @@ namespace OpenSteamworks.Protobuf {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasRunning {
-          get { return (_hasBits0 & 2097152) != 0; }
+          get { return (_hasBits0 & 1048576) != 0; }
         }
         /// <summary>Clears the value of the "running" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearRunning() {
+          _hasBits0 &= ~1048576;
+        }
+
+        /// <summary>Field number for the "update_percentage" field.</summary>
+        public const int UpdatePercentageFieldNumber = 26;
+        private readonly static uint UpdatePercentageDefaultValue = 0;
+
+        private uint updatePercentage_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public uint UpdatePercentage {
+          get { if ((_hasBits0 & 2097152) != 0) { return updatePercentage_; } else { return UpdatePercentageDefaultValue; } }
+          set {
+            _hasBits0 |= 2097152;
+            updatePercentage_ = value;
+          }
+        }
+        /// <summary>Gets whether the "update_percentage" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasUpdatePercentage {
+          get { return (_hasBits0 & 2097152) != 0; }
+        }
+        /// <summary>Clears the value of the "update_percentage" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearUpdatePercentage() {
           _hasBits0 &= ~2097152;
         }
 
@@ -3773,7 +3773,6 @@ namespace OpenSteamworks.Protobuf {
           if(!dlcs_.Equals(other.dlcs_)) return false;
           if (DownloadPaused != other.DownloadPaused) return false;
           if (NumDownloading != other.NumDownloading) return false;
-          if (NumPaused != other.NumPaused) return false;
           if (Changing != other.Changing) return false;
           if (AvailableOnPlatform != other.AvailableOnPlatform) return false;
           if (BytesStaged != other.BytesStaged) return false;
@@ -3786,6 +3785,7 @@ namespace OpenSteamworks.Protobuf {
           if (Uninstalling != other.Uninstalling) return false;
           if (RtTimeScheduled != other.RtTimeScheduled) return false;
           if (Running != other.Running) return false;
+          if (UpdatePercentage != other.UpdatePercentage) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -3805,7 +3805,6 @@ namespace OpenSteamworks.Protobuf {
           hash ^= dlcs_.GetHashCode();
           if (HasDownloadPaused) hash ^= DownloadPaused.GetHashCode();
           if (HasNumDownloading) hash ^= NumDownloading.GetHashCode();
-          if (HasNumPaused) hash ^= NumPaused.GetHashCode();
           if (HasChanging) hash ^= Changing.GetHashCode();
           if (HasAvailableOnPlatform) hash ^= AvailableOnPlatform.GetHashCode();
           if (HasBytesStaged) hash ^= BytesStaged.GetHashCode();
@@ -3818,6 +3817,7 @@ namespace OpenSteamworks.Protobuf {
           if (HasUninstalling) hash ^= Uninstalling.GetHashCode();
           if (HasRtTimeScheduled) hash ^= RtTimeScheduled.GetHashCode();
           if (HasRunning) hash ^= Running.GetHashCode();
+          if (HasUpdatePercentage) hash ^= UpdatePercentage.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -3881,10 +3881,6 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(96);
             output.WriteUInt32(NumDownloading);
           }
-          if (HasNumPaused) {
-            output.WriteRawTag(104);
-            output.WriteUInt32(NumPaused);
-          }
           if (HasChanging) {
             output.WriteRawTag(112);
             output.WriteBool(Changing);
@@ -3932,6 +3928,10 @@ namespace OpenSteamworks.Protobuf {
           if (HasRunning) {
             output.WriteRawTag(200, 1);
             output.WriteBool(Running);
+          }
+          if (HasUpdatePercentage) {
+            output.WriteRawTag(208, 1);
+            output.WriteUInt32(UpdatePercentage);
           }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
@@ -3988,10 +3988,6 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(96);
             output.WriteUInt32(NumDownloading);
           }
-          if (HasNumPaused) {
-            output.WriteRawTag(104);
-            output.WriteUInt32(NumPaused);
-          }
           if (HasChanging) {
             output.WriteRawTag(112);
             output.WriteBool(Changing);
@@ -4040,6 +4036,10 @@ namespace OpenSteamworks.Protobuf {
             output.WriteRawTag(200, 1);
             output.WriteBool(Running);
           }
+          if (HasUpdatePercentage) {
+            output.WriteRawTag(208, 1);
+            output.WriteUInt32(UpdatePercentage);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -4084,9 +4084,6 @@ namespace OpenSteamworks.Protobuf {
           if (HasNumDownloading) {
             size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumDownloading);
           }
-          if (HasNumPaused) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumPaused);
-          }
           if (HasChanging) {
             size += 1 + 1;
           }
@@ -4122,6 +4119,9 @@ namespace OpenSteamworks.Protobuf {
           }
           if (HasRunning) {
             size += 2 + 1;
+          }
+          if (HasUpdatePercentage) {
+            size += 2 + pb::CodedOutputStream.ComputeUInt32Size(UpdatePercentage);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -4169,9 +4169,6 @@ namespace OpenSteamworks.Protobuf {
           if (other.HasNumDownloading) {
             NumDownloading = other.NumDownloading;
           }
-          if (other.HasNumPaused) {
-            NumPaused = other.NumPaused;
-          }
           if (other.HasChanging) {
             Changing = other.Changing;
           }
@@ -4207,6 +4204,9 @@ namespace OpenSteamworks.Protobuf {
           }
           if (other.HasRunning) {
             Running = other.Running;
+          }
+          if (other.HasUpdatePercentage) {
+            UpdatePercentage = other.UpdatePercentage;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -4275,10 +4275,6 @@ namespace OpenSteamworks.Protobuf {
                 NumDownloading = input.ReadUInt32();
                 break;
               }
-              case 104: {
-                NumPaused = input.ReadUInt32();
-                break;
-              }
               case 112: {
                 Changing = input.ReadBool();
                 break;
@@ -4325,6 +4321,10 @@ namespace OpenSteamworks.Protobuf {
               }
               case 200: {
                 Running = input.ReadBool();
+                break;
+              }
+              case 208: {
+                UpdatePercentage = input.ReadUInt32();
                 break;
               }
             }
@@ -4394,10 +4394,6 @@ namespace OpenSteamworks.Protobuf {
                 NumDownloading = input.ReadUInt32();
                 break;
               }
-              case 104: {
-                NumPaused = input.ReadUInt32();
-                break;
-              }
               case 112: {
                 Changing = input.ReadBool();
                 break;
@@ -4444,6 +4440,10 @@ namespace OpenSteamworks.Protobuf {
               }
               case 200: {
                 Running = input.ReadBool();
+                break;
+              }
+              case 208: {
+                UpdatePercentage = input.ReadUInt32();
                 break;
               }
             }

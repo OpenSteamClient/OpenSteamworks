@@ -29,7 +29,7 @@ namespace OpenSteamworks.Protobuf {
             "c19iYXNlLnByb3RvGhh3ZWJ1aW1lc3NhZ2VzX2Jhc2UucHJvdG8ifQoVQ01z",
             "Z0ZhY3RvcnlSZXNldFN0YXRlEhIKCmlzX3J1bm5pbmcYASABKAgSEAoIcHJv",
             "Z3Jlc3MYAiABKAUSGgoSaXNfcmVzdGFydF9wZW5kaW5nGAMgASgIEiIKGnJ0",
-            "aW1lX2VzdGltYXRlZF9jb21wbGV0aW9uGAQgASgHIoAEChRDU3RlYW1PU01h",
+            "aW1lX2VzdGltYXRlZF9jb21wbGV0aW9uGAQgASgHIt0EChRDU3RlYW1PU01h",
             "bmFnZXJTdGF0ZRIcChRpc19zZXJ2aWNlX2F2YWlsYWJsZRgBIAEoCBISCgpv",
             "c192ZXJzaW9uGAIgASgJEiUKHWlzX21hbmRhdG9yeV91cGRhdGVfYXZhaWxh",
             "YmxlGAMgASgIElIKFXN0YXJ0dXBfbW92aWVfdmFyaWFudBgEIAEoDjIVLkVT",
@@ -41,60 +41,62 @@ namespace OpenSteamworks.Protobuf {
             "c19jZWNfYXZhaWxhYmxlGAogASgIEh8KF2lzX3dpZmlfZGVidWdfc3VwcG9y",
             "dGVkGAsgASgIEiQKHGlzX3dpZmlfZGVidWdfZm9yY2VfZGlzYWJsZWQYDCAB",
             "KAgSLgomaXNfd2lmaV9mb3JjZV93cGFfc3VwcGxpY2FudF9zdXBwb3J0ZWQY",
-            "DSABKAgiIgogQ1N0ZWFtT1NNYW5hZ2VyX0dldFN0YXRlX1JlcXVlc3QiSQoh",
-            "Q1N0ZWFtT1NNYW5hZ2VyX0dldFN0YXRlX1Jlc3BvbnNlEiQKBXN0YXRlGAEg",
-            "ASgLMhUuQ1N0ZWFtT1NNYW5hZ2VyU3RhdGUiKwopQ1N0ZWFtT1NNYW5hZ2Vy",
-            "X1N0YXRlQ2hhbmdlZF9Ob3RpZmljYXRpb24iZAoyQ1N0ZWFtT1NNYW5hZ2Vy",
-            "X0lzVGVsZW1ldHJ5SGVscGVyQXZhaWxhYmxlX1JlcXVlc3QSLgoFZXR5cGUY",
-            "ASABKA4yCy5FU0xTSGVscGVyOhJFU0xTSGVscGVyX0ludmFsaWQiSAozQ1N0",
-            "ZWFtT1NNYW5hZ2VyX0lzVGVsZW1ldHJ5SGVscGVyQXZhaWxhYmxlX1Jlc3Bv",
-            "bnNlEhEKCWF2YWlsYWJsZRgBIAEoCCIyCjBDU3RlYW1PU01hbmFnZXJfT3B0",
-            "T3V0T2ZTaWRlbG9hZGVkQ2xpZW50X1JlcXVlc3QiMwoxQ1N0ZWFtT1NNYW5h",
-            "Z2VyX09wdE91dE9mU2lkZWxvYWRlZENsaWVudF9SZXNwb25zZSIuCixDU3Rl",
-            "YW1PU01hbmFnZXJfQXBwbHlNYW5kYXRvcnlVcGRhdGVfUmVxdWVzdCIvCi1D",
-            "U3RlYW1PU01hbmFnZXJfQXBwbHlNYW5kYXRvcnlVcGRhdGVfUmVzcG9uc2Ui",
-            "UQokQ1N0ZWFtT1NNYW5hZ2VyX0ZhY3RvcnlSZXNldF9SZXF1ZXN0EhAKCHJl",
-            "c2V0X29zGAEgASgIEhcKD3Jlc2V0X3VzZXJfZGF0YRgCIAEoCCInCiVDU3Rl",
-            "YW1PU01hbmFnZXJfRmFjdG9yeVJlc2V0X1Jlc3BvbnNlIm0KEUNTdGVhbU9T",
-            "U0xTUGx1Z2luEi4KBWV0eXBlGAEgASgOMgsuRVNMU0hlbHBlcjoSRVNMU0hl",
-            "bHBlcl9JbnZhbGlkEhQKDGlzX2F2YWlsYWJsZRgCIAEoCBISCgppc19lbmFi",
-            "bGVkGAMgASgIImEKEENTdGVhbU9TU0xTU3RhdGUSFAoMaXNfYXZhaWxhYmxl",
-            "GAEgASgIEhIKCmlzX2VuYWJsZWQYAiABKAgSIwoHcGx1Z2lucxgDIAMoCzIS",
-            "LkNTdGVhbU9TU0xTUGx1Z2luIh4KHENTdGVhbU9TU0xTX0dldFN0YXRlX1Jl",
-            "cXVlc3QiQQodQ1N0ZWFtT1NTTFNfR2V0U3RhdGVfUmVzcG9uc2USIAoFc3Rh",
-            "dGUYASABKAsyES5DU3RlYW1PU1NMU1N0YXRlIicKJUNTdGVhbU9TU0xTX1N0",
-            "YXRlQ2hhbmdlZF9Ob3RpZmljYXRpb24iMQoeQ1N0ZWFtT1NTTFNfU2V0RW5h",
-            "YmxlZF9SZXF1ZXN0Eg8KB2VuYWJsZWQYASABKAgiIQofQ1N0ZWFtT1NTTFNf",
-            "U2V0RW5hYmxlZF9SZXNwb25zZSJnCiRDU3RlYW1PU1NMU19TZXRQbHVnaW5F",
-            "bmFibGVkX1JlcXVlc3QSLgoFZXR5cGUYASABKA4yCy5FU0xTSGVscGVyOhJF",
-            "U0xTSGVscGVyX0ludmFsaWQSDwoHZW5hYmxlZBgCIAEoCCInCiVDU3RlYW1P",
-            "U1NMU19TZXRQbHVnaW5FbmFibGVkX1Jlc3BvbnNlMpcECg5TdGVhbU9TTWFu",
-            "YWdlchJRCghHZXRTdGF0ZRIhLkNTdGVhbU9TTWFuYWdlcl9HZXRTdGF0ZV9S",
-            "ZXF1ZXN0GiIuQ1N0ZWFtT1NNYW5hZ2VyX0dldFN0YXRlX1Jlc3BvbnNlElIK",
-            "Ek5vdGlmeVN0YXRlQ2hhbmdlZBIqLkNTdGVhbU9TTWFuYWdlcl9TdGF0ZUNo",
-            "YW5nZWRfTm90aWZpY2F0aW9uGhAuV2ViVUlOb1Jlc3BvbnNlEoEBChhPcHRP",
-            "dXRPZlNpZGVsb2FkZWRDbGllbnQSMS5DU3RlYW1PU01hbmFnZXJfT3B0T3V0",
-            "T2ZTaWRlbG9hZGVkQ2xpZW50X1JlcXVlc3QaMi5DU3RlYW1PU01hbmFnZXJf",
-            "T3B0T3V0T2ZTaWRlbG9hZGVkQ2xpZW50X1Jlc3BvbnNlEnUKFEFwcGx5TWFu",
-            "ZGF0b3J5VXBkYXRlEi0uQ1N0ZWFtT1NNYW5hZ2VyX0FwcGx5TWFuZGF0b3J5",
-            "VXBkYXRlX1JlcXVlc3QaLi5DU3RlYW1PU01hbmFnZXJfQXBwbHlNYW5kYXRv",
-            "cnlVcGRhdGVfUmVzcG9uc2USXQoMRmFjdG9yeVJlc2V0EiUuQ1N0ZWFtT1NN",
-            "YW5hZ2VyX0ZhY3RvcnlSZXNldF9SZXF1ZXN0GiYuQ1N0ZWFtT1NNYW5hZ2Vy",
-            "X0ZhY3RvcnlSZXNldF9SZXNwb25zZRoEgJciATLhAgoKU3RlYW1PU1NMUxJJ",
-            "CghHZXRTdGF0ZRIdLkNTdGVhbU9TU0xTX0dldFN0YXRlX1JlcXVlc3QaHi5D",
-            "U3RlYW1PU1NMU19HZXRTdGF0ZV9SZXNwb25zZRJOChJOb3RpZnlTdGF0ZUNo",
-            "YW5nZWQSJi5DU3RlYW1PU1NMU19TdGF0ZUNoYW5nZWRfTm90aWZpY2F0aW9u",
-            "GhAuV2ViVUlOb1Jlc3BvbnNlEk8KClNldEVuYWJsZWQSHy5DU3RlYW1PU1NM",
-            "U19TZXRFbmFibGVkX1JlcXVlc3QaIC5DU3RlYW1PU1NMU19TZXRFbmFibGVk",
-            "X1Jlc3BvbnNlEmEKEFNldFBsdWdpbkVuYWJsZWQSJS5DU3RlYW1PU1NMU19T",
-            "ZXRQbHVnaW5FbmFibGVkX1JlcXVlc3QaJi5DU3RlYW1PU1NMU19TZXRQbHVn",
-            "aW5FbmFibGVkX1Jlc3BvbnNlGgSAlyIBQh9IAYABAaoCF09wZW5TdGVhbXdv",
-            "cmtzLlByb3RvYnVm"));
+            "DSABKAgSIwobaXNfbWFudWFsX2dwdV9jbG9jYXZhaWxhYmxlGA4gASgIEhoK",
+            "Em1hbnVhbF9ncHVfY2xvY21pbhgPIAEoBRIaChJtYW51YWxfZ3B1X2Nsb2Nt",
+            "YXgYECABKAUiIgogQ1N0ZWFtT1NNYW5hZ2VyX0dldFN0YXRlX1JlcXVlc3Qi",
+            "SQohQ1N0ZWFtT1NNYW5hZ2VyX0dldFN0YXRlX1Jlc3BvbnNlEiQKBXN0YXRl",
+            "GAEgASgLMhUuQ1N0ZWFtT1NNYW5hZ2VyU3RhdGUiKwopQ1N0ZWFtT1NNYW5h",
+            "Z2VyX1N0YXRlQ2hhbmdlZF9Ob3RpZmljYXRpb24iZAoyQ1N0ZWFtT1NNYW5h",
+            "Z2VyX0lzVGVsZW1ldHJ5SGVscGVyQXZhaWxhYmxlX1JlcXVlc3QSLgoFZXR5",
+            "cGUYASABKA4yCy5FU0xTSGVscGVyOhJFU0xTSGVscGVyX0ludmFsaWQiSAoz",
+            "Q1N0ZWFtT1NNYW5hZ2VyX0lzVGVsZW1ldHJ5SGVscGVyQXZhaWxhYmxlX1Jl",
+            "c3BvbnNlEhEKCWF2YWlsYWJsZRgBIAEoCCIyCjBDU3RlYW1PU01hbmFnZXJf",
+            "T3B0T3V0T2ZTaWRlbG9hZGVkQ2xpZW50X1JlcXVlc3QiMwoxQ1N0ZWFtT1NN",
+            "YW5hZ2VyX09wdE91dE9mU2lkZWxvYWRlZENsaWVudF9SZXNwb25zZSIuCixD",
+            "U3RlYW1PU01hbmFnZXJfQXBwbHlNYW5kYXRvcnlVcGRhdGVfUmVxdWVzdCIv",
+            "Ci1DU3RlYW1PU01hbmFnZXJfQXBwbHlNYW5kYXRvcnlVcGRhdGVfUmVzcG9u",
+            "c2UiUQokQ1N0ZWFtT1NNYW5hZ2VyX0ZhY3RvcnlSZXNldF9SZXF1ZXN0EhAK",
+            "CHJlc2V0X29zGAEgASgIEhcKD3Jlc2V0X3VzZXJfZGF0YRgCIAEoCCInCiVD",
+            "U3RlYW1PU01hbmFnZXJfRmFjdG9yeVJlc2V0X1Jlc3BvbnNlIm0KEUNTdGVh",
+            "bU9TU0xTUGx1Z2luEi4KBWV0eXBlGAEgASgOMgsuRVNMU0hlbHBlcjoSRVNM",
+            "U0hlbHBlcl9JbnZhbGlkEhQKDGlzX2F2YWlsYWJsZRgCIAEoCBISCgppc19l",
+            "bmFibGVkGAMgASgIImEKEENTdGVhbU9TU0xTU3RhdGUSFAoMaXNfYXZhaWxh",
+            "YmxlGAEgASgIEhIKCmlzX2VuYWJsZWQYAiABKAgSIwoHcGx1Z2lucxgDIAMo",
+            "CzISLkNTdGVhbU9TU0xTUGx1Z2luIh4KHENTdGVhbU9TU0xTX0dldFN0YXRl",
+            "X1JlcXVlc3QiQQodQ1N0ZWFtT1NTTFNfR2V0U3RhdGVfUmVzcG9uc2USIAoF",
+            "c3RhdGUYASABKAsyES5DU3RlYW1PU1NMU1N0YXRlIicKJUNTdGVhbU9TU0xT",
+            "X1N0YXRlQ2hhbmdlZF9Ob3RpZmljYXRpb24iMQoeQ1N0ZWFtT1NTTFNfU2V0",
+            "RW5hYmxlZF9SZXF1ZXN0Eg8KB2VuYWJsZWQYASABKAgiIQofQ1N0ZWFtT1NT",
+            "TFNfU2V0RW5hYmxlZF9SZXNwb25zZSJnCiRDU3RlYW1PU1NMU19TZXRQbHVn",
+            "aW5FbmFibGVkX1JlcXVlc3QSLgoFZXR5cGUYASABKA4yCy5FU0xTSGVscGVy",
+            "OhJFU0xTSGVscGVyX0ludmFsaWQSDwoHZW5hYmxlZBgCIAEoCCInCiVDU3Rl",
+            "YW1PU1NMU19TZXRQbHVnaW5FbmFibGVkX1Jlc3BvbnNlMpcECg5TdGVhbU9T",
+            "TWFuYWdlchJRCghHZXRTdGF0ZRIhLkNTdGVhbU9TTWFuYWdlcl9HZXRTdGF0",
+            "ZV9SZXF1ZXN0GiIuQ1N0ZWFtT1NNYW5hZ2VyX0dldFN0YXRlX1Jlc3BvbnNl",
+            "ElIKEk5vdGlmeVN0YXRlQ2hhbmdlZBIqLkNTdGVhbU9TTWFuYWdlcl9TdGF0",
+            "ZUNoYW5nZWRfTm90aWZpY2F0aW9uGhAuV2ViVUlOb1Jlc3BvbnNlEoEBChhP",
+            "cHRPdXRPZlNpZGVsb2FkZWRDbGllbnQSMS5DU3RlYW1PU01hbmFnZXJfT3B0",
+            "T3V0T2ZTaWRlbG9hZGVkQ2xpZW50X1JlcXVlc3QaMi5DU3RlYW1PU01hbmFn",
+            "ZXJfT3B0T3V0T2ZTaWRlbG9hZGVkQ2xpZW50X1Jlc3BvbnNlEnUKFEFwcGx5",
+            "TWFuZGF0b3J5VXBkYXRlEi0uQ1N0ZWFtT1NNYW5hZ2VyX0FwcGx5TWFuZGF0",
+            "b3J5VXBkYXRlX1JlcXVlc3QaLi5DU3RlYW1PU01hbmFnZXJfQXBwbHlNYW5k",
+            "YXRvcnlVcGRhdGVfUmVzcG9uc2USXQoMRmFjdG9yeVJlc2V0EiUuQ1N0ZWFt",
+            "T1NNYW5hZ2VyX0ZhY3RvcnlSZXNldF9SZXF1ZXN0GiYuQ1N0ZWFtT1NNYW5h",
+            "Z2VyX0ZhY3RvcnlSZXNldF9SZXNwb25zZRoEgJciATLhAgoKU3RlYW1PU1NM",
+            "UxJJCghHZXRTdGF0ZRIdLkNTdGVhbU9TU0xTX0dldFN0YXRlX1JlcXVlc3Qa",
+            "Hi5DU3RlYW1PU1NMU19HZXRTdGF0ZV9SZXNwb25zZRJOChJOb3RpZnlTdGF0",
+            "ZUNoYW5nZWQSJi5DU3RlYW1PU1NMU19TdGF0ZUNoYW5nZWRfTm90aWZpY2F0",
+            "aW9uGhAuV2ViVUlOb1Jlc3BvbnNlEk8KClNldEVuYWJsZWQSHy5DU3RlYW1P",
+            "U1NMU19TZXRFbmFibGVkX1JlcXVlc3QaIC5DU3RlYW1PU1NMU19TZXRFbmFi",
+            "bGVkX1Jlc3BvbnNlEmEKEFNldFBsdWdpbkVuYWJsZWQSJS5DU3RlYW1PU1NM",
+            "U19TZXRQbHVnaW5FbmFibGVkX1JlcXVlc3QaJi5DU3RlYW1PU1NMU19TZXRQ",
+            "bHVnaW5FbmFibGVkX1Jlc3BvbnNlGgSAlyIBQh9IAYABAaoCF09wZW5TdGVh",
+            "bXdvcmtzLlByb3RvYnVm"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.EnumsReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.WebuimessagesBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgFactoryResetState), global::OpenSteamworks.Protobuf.CMsgFactoryResetState.Parser, new[]{ "IsRunning", "Progress", "IsRestartPending", "RtimeEstimatedCompletion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamOSManagerState), global::OpenSteamworks.Protobuf.CSteamOSManagerState.Parser, new[]{ "IsServiceAvailable", "OsVersion", "IsMandatoryUpdateAvailable", "StartupMovieVariant", "IsStatusLedControlAvailable", "FactoryResetState", "IsTdpLimitAvailable", "TdpLimitMin", "TdpLimitMax", "IsCecAvailable", "IsWifiDebugSupported", "IsWifiDebugForceDisabled", "IsWifiForceWpaSupplicantSupported" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamOSManagerState), global::OpenSteamworks.Protobuf.CSteamOSManagerState.Parser, new[]{ "IsServiceAvailable", "OsVersion", "IsMandatoryUpdateAvailable", "StartupMovieVariant", "IsStatusLedControlAvailable", "FactoryResetState", "IsTdpLimitAvailable", "TdpLimitMin", "TdpLimitMax", "IsCecAvailable", "IsWifiDebugSupported", "IsWifiDebugForceDisabled", "IsWifiForceWpaSupplicantSupported", "IsManualGpuClocavailable", "ManualGpuClocmin", "ManualGpuClocmax" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamOSManager_GetState_Request), global::OpenSteamworks.Protobuf.CSteamOSManager_GetState_Request.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamOSManager_GetState_Response), global::OpenSteamworks.Protobuf.CSteamOSManager_GetState_Response.Parser, new[]{ "State" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CSteamOSManager_StateChanged_Notification), global::OpenSteamworks.Protobuf.CSteamOSManager_StateChanged_Notification.Parser, null, null, null, null, null),
@@ -542,6 +544,9 @@ namespace OpenSteamworks.Protobuf {
       isWifiDebugSupported_ = other.isWifiDebugSupported_;
       isWifiDebugForceDisabled_ = other.isWifiDebugForceDisabled_;
       isWifiForceWpaSupplicantSupported_ = other.isWifiForceWpaSupplicantSupported_;
+      isManualGpuClocavailable_ = other.isManualGpuClocavailable_;
+      manualGpuClocmin_ = other.manualGpuClocmin_;
+      manualGpuClocmax_ = other.manualGpuClocmax_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -886,6 +891,87 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~1024;
     }
 
+    /// <summary>Field number for the "is_manual_gpu_clocavailable" field.</summary>
+    public const int IsManualGpuClocavailableFieldNumber = 14;
+    private readonly static bool IsManualGpuClocavailableDefaultValue = false;
+
+    private bool isManualGpuClocavailable_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsManualGpuClocavailable {
+      get { if ((_hasBits0 & 2048) != 0) { return isManualGpuClocavailable_; } else { return IsManualGpuClocavailableDefaultValue; } }
+      set {
+        _hasBits0 |= 2048;
+        isManualGpuClocavailable_ = value;
+      }
+    }
+    /// <summary>Gets whether the "is_manual_gpu_clocavailable" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIsManualGpuClocavailable {
+      get { return (_hasBits0 & 2048) != 0; }
+    }
+    /// <summary>Clears the value of the "is_manual_gpu_clocavailable" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIsManualGpuClocavailable() {
+      _hasBits0 &= ~2048;
+    }
+
+    /// <summary>Field number for the "manual_gpu_clocmin" field.</summary>
+    public const int ManualGpuClocminFieldNumber = 15;
+    private readonly static int ManualGpuClocminDefaultValue = 0;
+
+    private int manualGpuClocmin_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ManualGpuClocmin {
+      get { if ((_hasBits0 & 4096) != 0) { return manualGpuClocmin_; } else { return ManualGpuClocminDefaultValue; } }
+      set {
+        _hasBits0 |= 4096;
+        manualGpuClocmin_ = value;
+      }
+    }
+    /// <summary>Gets whether the "manual_gpu_clocmin" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasManualGpuClocmin {
+      get { return (_hasBits0 & 4096) != 0; }
+    }
+    /// <summary>Clears the value of the "manual_gpu_clocmin" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearManualGpuClocmin() {
+      _hasBits0 &= ~4096;
+    }
+
+    /// <summary>Field number for the "manual_gpu_clocmax" field.</summary>
+    public const int ManualGpuClocmaxFieldNumber = 16;
+    private readonly static int ManualGpuClocmaxDefaultValue = 0;
+
+    private int manualGpuClocmax_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ManualGpuClocmax {
+      get { if ((_hasBits0 & 8192) != 0) { return manualGpuClocmax_; } else { return ManualGpuClocmaxDefaultValue; } }
+      set {
+        _hasBits0 |= 8192;
+        manualGpuClocmax_ = value;
+      }
+    }
+    /// <summary>Gets whether the "manual_gpu_clocmax" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasManualGpuClocmax {
+      get { return (_hasBits0 & 8192) != 0; }
+    }
+    /// <summary>Clears the value of the "manual_gpu_clocmax" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearManualGpuClocmax() {
+      _hasBits0 &= ~8192;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -914,6 +1000,9 @@ namespace OpenSteamworks.Protobuf {
       if (IsWifiDebugSupported != other.IsWifiDebugSupported) return false;
       if (IsWifiDebugForceDisabled != other.IsWifiDebugForceDisabled) return false;
       if (IsWifiForceWpaSupplicantSupported != other.IsWifiForceWpaSupplicantSupported) return false;
+      if (IsManualGpuClocavailable != other.IsManualGpuClocavailable) return false;
+      if (ManualGpuClocmin != other.ManualGpuClocmin) return false;
+      if (ManualGpuClocmax != other.ManualGpuClocmax) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -934,6 +1023,9 @@ namespace OpenSteamworks.Protobuf {
       if (HasIsWifiDebugSupported) hash ^= IsWifiDebugSupported.GetHashCode();
       if (HasIsWifiDebugForceDisabled) hash ^= IsWifiDebugForceDisabled.GetHashCode();
       if (HasIsWifiForceWpaSupplicantSupported) hash ^= IsWifiForceWpaSupplicantSupported.GetHashCode();
+      if (HasIsManualGpuClocavailable) hash ^= IsManualGpuClocavailable.GetHashCode();
+      if (HasManualGpuClocmin) hash ^= ManualGpuClocmin.GetHashCode();
+      if (HasManualGpuClocmax) hash ^= ManualGpuClocmax.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1004,6 +1096,18 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(104);
         output.WriteBool(IsWifiForceWpaSupplicantSupported);
       }
+      if (HasIsManualGpuClocavailable) {
+        output.WriteRawTag(112);
+        output.WriteBool(IsManualGpuClocavailable);
+      }
+      if (HasManualGpuClocmin) {
+        output.WriteRawTag(120);
+        output.WriteInt32(ManualGpuClocmin);
+      }
+      if (HasManualGpuClocmax) {
+        output.WriteRawTag(128, 1);
+        output.WriteInt32(ManualGpuClocmax);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1066,6 +1170,18 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(104);
         output.WriteBool(IsWifiForceWpaSupplicantSupported);
       }
+      if (HasIsManualGpuClocavailable) {
+        output.WriteRawTag(112);
+        output.WriteBool(IsManualGpuClocavailable);
+      }
+      if (HasManualGpuClocmin) {
+        output.WriteRawTag(120);
+        output.WriteInt32(ManualGpuClocmin);
+      }
+      if (HasManualGpuClocmax) {
+        output.WriteRawTag(128, 1);
+        output.WriteInt32(ManualGpuClocmax);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1114,6 +1230,15 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasIsWifiForceWpaSupplicantSupported) {
         size += 1 + 1;
+      }
+      if (HasIsManualGpuClocavailable) {
+        size += 1 + 1;
+      }
+      if (HasManualGpuClocmin) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ManualGpuClocmin);
+      }
+      if (HasManualGpuClocmax) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(ManualGpuClocmax);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1168,6 +1293,15 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasIsWifiForceWpaSupplicantSupported) {
         IsWifiForceWpaSupplicantSupported = other.IsWifiForceWpaSupplicantSupported;
+      }
+      if (other.HasIsManualGpuClocavailable) {
+        IsManualGpuClocavailable = other.IsManualGpuClocavailable;
+      }
+      if (other.HasManualGpuClocmin) {
+        ManualGpuClocmin = other.ManualGpuClocmin;
+      }
+      if (other.HasManualGpuClocmax) {
+        ManualGpuClocmax = other.ManualGpuClocmax;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1243,6 +1377,18 @@ namespace OpenSteamworks.Protobuf {
             IsWifiForceWpaSupplicantSupported = input.ReadBool();
             break;
           }
+          case 112: {
+            IsManualGpuClocavailable = input.ReadBool();
+            break;
+          }
+          case 120: {
+            ManualGpuClocmin = input.ReadInt32();
+            break;
+          }
+          case 128: {
+            ManualGpuClocmax = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1315,6 +1461,18 @@ namespace OpenSteamworks.Protobuf {
           }
           case 104: {
             IsWifiForceWpaSupplicantSupported = input.ReadBool();
+            break;
+          }
+          case 112: {
+            IsManualGpuClocavailable = input.ReadBool();
+            break;
+          }
+          case 120: {
+            ManualGpuClocmin = input.ReadInt32();
+            break;
+          }
+          case 128: {
+            ManualGpuClocmax = input.ReadInt32();
             break;
           }
         }

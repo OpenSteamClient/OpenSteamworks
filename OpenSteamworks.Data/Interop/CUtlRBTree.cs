@@ -1,7 +1,7 @@
 using System.Runtime.InteropServices;
 // ReSharper disable InconsistentNaming
 
-namespace OpenSteamworks.Data;
+namespace OpenSteamworks.Data.Interop;
 
 [StructLayout(LayoutKind.Sequential)]
 public struct UtlRBTreeNode_t<T, I> where I : unmanaged where T : unmanaged

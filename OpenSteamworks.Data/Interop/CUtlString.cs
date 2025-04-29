@@ -1,12 +1,12 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace OpenSteamworks.Data;
+namespace OpenSteamworks.Data.Interop;
 
 [StructLayout(LayoutKind.Sequential)]
 public unsafe struct CUtlString : IDisposable
 {
-    private void* m_pchString;
+    private void* m_pchString = null;
     
     public CUtlString() {}
 
@@ -17,6 +17,12 @@ public unsafe struct CUtlString : IDisposable
     public static CUtlString Empty { get; } = new(string.Empty);
     public static CUtlString Null { get; } = new();
     
+    /// <summary>
+    /// Get the raw allocated pointer.
+    /// Be careful. 
+    /// </summary>
+    public void* Pointer => m_pchString;
+
 
     /// <summary>
     /// Get the current value. If the pointer is null, returns null.

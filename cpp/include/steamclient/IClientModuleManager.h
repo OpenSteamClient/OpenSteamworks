@@ -14,10 +14,10 @@
 class IClientModuleManager
 {
 public:
-    virtual unknown LoadModule() = 0; //argc: 3, index 1
-    virtual unknown UnloadModule() = 0; //argc: 1, index 2
-    virtual unknown CallFunction() = 0; //argc: 8, index 3
-    virtual unknown CallFunctionAsync() = 0; //argc: 9, index 4
-    virtual unknown PollResponseAsync() = 0; //argc: 5, index 5
-    virtual unknown SetProtonEnvironment() = 0; //argc: 2, index 6
+    virtual unknown LoadModule() = 0; //argc: -1, index 1
+    virtual unknown UnloadModule() = 0; //argc: -1, index 2
+    virtual unknown CallFunction() = 0; //argc: -1, index 3
+    virtual unknown CallFunctionAsync() = 0; //argc: -1, index 4
+    virtual unknown PollResponseAsync() = 0; //argc: -1, index 5
+    virtual unknown SetProtonEnvironment() = 0; //argc: -1, index 6
 };

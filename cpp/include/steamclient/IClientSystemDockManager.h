@@ -14,8 +14,8 @@
 class IClientSystemDockManager
 {
 public:
-    virtual unknown IsInterfaceValid() = 0; //argc: 0, index 1
-    virtual unknown GetState() = 0; //argc: 1, index 2
-    virtual unknown UpdateFirmware() = 0; //argc: 1, index 3
-    virtual unknown DisarmSafetyNet() = 0; //argc: 0, index 4
+    virtual unknown IsInterfaceValid() = 0; //argc: -1, index 1
+    virtual unknown GetState() = 0; //argc: -1, index 2
+    virtual unknown UpdateFirmware() = 0; //argc: -1, index 3
+    virtual unknown DisarmSafetyNet() = 0; //argc: -1, index 4
 };

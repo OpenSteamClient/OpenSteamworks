@@ -25,110 +25,109 @@ namespace OpenSteamworks.Protobuf {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9zdGVhbW1lc3NhZ2VzX2FwcG92ZXJ2aWV3LnByb3RvGiBnb29nbGUvcHJv",
-            "dG9idWYvZGVzY3JpcHRvci5wcm90bxoLZW51bXMucHJvdG8irwMKGkNBcHBP",
+            "dG9idWYvZGVzY3JpcHRvci5wcm90bxoLZW51bXMucHJvdG8i9wIKGkNBcHBP",
             "dmVydmlld19QZXJDbGllbnREYXRhEhMKCGNsaWVudGlkGAEgASgEOgEwEhMK",
             "C2NsaWVudF9uYW1lGAIgASgJEj4KDmRpc3BsYXlfc3RhdHVzGAMgASgOMg8u",
-            "RURpc3BsYXlTdGF0dXM6FUVEaXNwbGF5U3RhdHVzSW52YWxpZBIcChFzdGF0",
-            "dXNfcGVyY2VudGFnZRgEIAEoDToBMBITCgthY3RpdmVfYmV0YRgFIAEoCRIR",
-            "CglpbnN0YWxsZWQYBiABKAgSGwoQYnl0ZXNfZG93bmxvYWRlZBgHIAEoBDoB",
-            "MBIWCgtieXRlc190b3RhbBgIIAEoBDoBMBIhChlzdHJlYW1pbmdfdG9fbG9j",
-            "YWxfY2xpZW50GAkgASgIEigKIGlzX2F2YWlsYWJsZV9vbl9jdXJyZW50X3Bs",
-            "YXRmb3JtGAogASgIEhoKEmlzX2ludmFsaWRfb3NfdHlwZRgLIAEoCBIVCg1w",
-            "bGF5dGltZV9sZWZ0GAwgASgNEiwKJHVwZGF0ZV9hdmFpbGFibGVfYnV0X2Rp",
-            "c2FibGVkX2J5X2FwcBgOIAEoCCKBDAoMQ0FwcE92ZXJ2aWV3Eg0KBWFwcGlk",
-            "GAEgASgNEhQKDGRpc3BsYXlfbmFtZRgCIAEoCRIcChR2aXNpYmxlX2luX2dh",
-            "bWVfbGlzdBgEIAEoCBIVCg1zdWJzY3JpYmVkX3RvGAUgASgIEg8KB3NvcnRf",
-            "YXMYBiABKAkSMQoIYXBwX3R5cGUYByABKA4yDi5FUHJvdG9BcHBUeXBlOg9F",
-            "QXBwVHlwZUludmFsaWQSEQoJbXJ1X2luZGV4GA0gASgNEiIKF3J0X3JlY2Vu",
-            "dF9hY3Rpdml0eV90aW1lGA4gASgNOgEwEiMKGG1pbnV0ZXNfcGxheXRpbWVf",
-            "Zm9yZXZlchgQIAEoDToBMBIqCh9taW51dGVzX3BsYXl0aW1lX2xhc3RfdHdv",
-            "X3dlZWtzGBEgASgNOgEwEh4KE3J0X2xhc3RfdGltZV9wbGF5ZWQYEiABKA06",
-            "ATASEQoJc3RvcmVfdGFnGBMgAygNEhYKDnN0b3JlX2NhdGVnb3J5GBcgAygN",
-            "EiMKGHJ0X29yaWdpbmFsX3JlbGVhc2VfZGF0ZRgZIAEoDToBMBIgChVydF9z",
-            "dGVhbV9yZWxlYXNlX2RhdGUYGiABKA06ATASEQoJaWNvbl9oYXNoGBsgASgJ",
-            "ElwKF3hib3hfY29udHJvbGxlcl9zdXBwb3J0GB8gASgOMhsuRUFwcENvbnRy",
-            "b2xsZXJTdXBwb3J0TGV2ZWw6HkVBcHBDb250cm9sbGVyU3VwcG9ydExldmVs",
-            "Tm9uZRIUCgx2cl9zdXBwb3J0ZWQYICABKAgSGAoQbWV0YWNyaXRpY19zY29y",
-            "ZRgkIAEoDRIUCgxzaXplX29uX2Rpc2sYJSABKAQSFwoPdGhpcmRfcGFydHlf",
-            "bW9kGCYgASgIEhEKCWljb25fZGF0YRgnIAEoCRIYChBpY29uX2RhdGFfZm9y",
-            "bWF0GCggASgJEg4KBmdhbWVpZBgpIAEoCRIgChhsaWJyYXJ5X2NhcHN1bGVf",
-            "ZmlsZW5hbWUYKiABKAkSNAoPcGVyX2NsaWVudF9kYXRhGCsgAygLMhsuQ0Fw",
-            "cE92ZXJ2aWV3X1BlckNsaWVudERhdGESIgoXbW9zdF9hdmFpbGFibGVfY2xp",
-            "ZW50aWQYLCABKAQ6ATASHAoRc2VsZWN0ZWRfY2xpZW50aWQYLSABKAQ6ATAS",
-            "HAoUcnRfc3RvcmVfYXNzZXRfbXRpbWUYLiABKA0SHQoVcnRfY3VzdG9tX2lt",
-            "YWdlX210aW1lGC8gASgNEh4KFm9wdGlvbmFsX3BhcmVudF9hcHBfaWQYMCAB",
-            "KA0SGAoQb3duZXJfYWNjb3VudF9pZBgxIAEoDRIiChdyZXZpZXdfc2NvcmVf",
-            "d2l0aF9ib21icxg1IAEoDToBMBInChxyZXZpZXdfcGVyY2VudGFnZV93aXRo",
-            "X2JvbWJzGDYgASgNOgEwEiUKGnJldmlld19zY29yZV93aXRob3V0X2JvbWJz",
-            "GDcgASgNOgEwEioKH3Jldmlld19wZXJjZW50YWdlX3dpdGhvdXRfYm9tYnMY",
-            "OCABKA06ATASEgoKbGlicmFyeV9pZBg5IAEoCRIPCgd2cl9vbmx5GDogASgI",
-            "EhcKD21hc3RlcnN1Yl9hcHBpZBg7IAEoDRIjChttYXN0ZXJzdWJfaW5jbHVk",
-            "ZWR3aXRoX2xvZ28YPCABKAkSHgoWc2l0ZV9saWNlbnNlX3NpdGVfbmFtZRg+",
-            "IAEoCRIfChdzaG9ydGN1dF9vdmVycmlkZV9hcHBpZBg/IAEoDRIjChtydF9s",
-            "YXN0X3RpbWVfbG9jYWxseV9wbGF5ZWQYQSABKA0SGQoRcnRfcHVyY2hhc2Vk",
-            "X3RpbWUYQiABKA0SFwoPaGVhZGVyX2ZpbGVuYW1lGEMgASgJEhsKE2xvY2Fs",
-            "X2NhY2hlX3ZlcnNpb24YRCABKA0SGwoQbnVtYmVyX29mX2NvcGllcxhIIAEo",
-            "DToBMRIqCh9zdGVhbV9od19jb21wYXRfY2F0ZWdvcnlfcGFja2VkGEkgASgN",
-            "OgEwEhgKEGFsYnVtX2NvdmVyX2hhc2gYSiABKAkifwoTQ0FwcE92ZXJ2aWV3",
-            "X0NoYW5nZRIjCgxhcHBfb3ZlcnZpZXcYASADKAsyDS5DQXBwT3ZlcnZpZXcS",
-            "FQoNcmVtb3ZlZF9hcHBpZBgCIAMoDRITCgtmdWxsX3VwZGF0ZRgDIAEoCBIX",
-            "Cg91cGRhdGVfY29tcGxldGUYBCABKAgiRAoRQ0FwcEJvb3RzdHJhcERhdGES",
-            "DQoFYXBwaWQYASABKA0SDgoGaGlkZGVuGAIgASgIEhAKCHVzZXJfdGFnGAMg",
-            "AygJIj0KFUNMaWJyYXJ5Qm9vdHN0cmFwRGF0YRIkCghhcHBfZGF0YRgBIAMo",
-            "CzISLkNBcHBCb290c3RyYXBEYXRhKv4JCg5FRGlzcGxheVN0YXR1cxIZChVF",
-            "RGlzcGxheVN0YXR1c0ludmFsaWQQABIbChdFRGlzcGxheVN0YXR1c0xhdW5j",
-            "aGluZxABEh4KGkVEaXNwbGF5U3RhdHVzVW5pbnN0YWxsaW5nEAISHAoYRURp",
-            "c3BsYXlTdGF0dXNJbnN0YWxsaW5nEAMSGQoVRURpc3BsYXlTdGF0dXNSdW5u",
-            "aW5nEAQSHAoYRURpc3BsYXlTdGF0dXNWYWxpZGF0aW5nEAUSGgoWRURpc3Bs",
-            "YXlTdGF0dXNVcGRhdGluZxAGEh0KGUVEaXNwbGF5U3RhdHVzRG93bmxvYWRp",
-            "bmcQBxIfChtFRGlzcGxheVN0YXR1c1N5bmNocm9uaXppbmcQCBIgChxFRGlz",
-            "cGxheVN0YXR1c1JlYWR5VG9JbnN0YWxsEAkSIAocRURpc3BsYXlTdGF0dXNS",
-            "ZWFkeVRvUHJlbG9hZBAKEh8KG0VEaXNwbGF5U3RhdHVzUmVhZHlUb0xhdW5j",
-            "aBALEiIKHkVEaXNwbGF5U3RhdHVzUmVnaW9uUmVzdHJpY3RlZBAMEh0KGUVE",
-            "aXNwbGF5U3RhdHVzUHJlc2FsZU9ubHkQDRIhCh1FRGlzcGxheVN0YXR1c0lu",
-            "dmFsaWRQbGF0Zm9ybRAOEiEKHUVEaXNwbGF5U3RhdHVzUHJlbG9hZENvbXBs",
-            "ZXRlEBASIAocRURpc3BsYXlTdGF0dXNCb3Jyb3dlckxvY2tlZBAREh4KGkVE",
-            "aXNwbGF5U3RhdHVzVXBkYXRlUGF1c2VkEBISHgoaRURpc3BsYXlTdGF0dXNV",
-            "cGRhdGVRdWV1ZWQQExIgChxFRGlzcGxheVN0YXR1c1VwZGF0ZVJlcXVpcmVk",
-            "EBQSIAocRURpc3BsYXlTdGF0dXNVcGRhdGVEaXNhYmxlZBAVEiAKHEVEaXNw",
-            "bGF5U3RhdHVzRG93bmxvYWRQYXVzZWQQFhIgChxFRGlzcGxheVN0YXR1c0Rv",
-            "d25sb2FkUXVldWVkEBcSIgoeRURpc3BsYXlTdGF0dXNEb3dubG9hZFJlcXVp",
-            "cmVkEBgSIgoeRURpc3BsYXlTdGF0dXNEb3dubG9hZERpc2FibGVkEBkSIAoc",
-            "RURpc3BsYXlTdGF0dXNMaWNlbnNlUGVuZGluZxAaEiAKHEVEaXNwbGF5U3Rh",
-            "dHVzTGljZW5zZUV4cGlyZWQQGxIeChpFRGlzcGxheVN0YXR1c0F2YWlsRm9y",
-            "RnJlZRAcEh8KG0VEaXNwbGF5U3RhdHVzQXZhaWxUb0JvcnJvdxAdEiAKHEVE",
-            "aXNwbGF5U3RhdHVzQXZhaWxHdWVzdFBhc3MQHhIaChZFRGlzcGxheVN0YXR1",
-            "c1B1cmNoYXNlEB8SHQoZRURpc3BsYXlTdGF0dXNVbmF2YWlsYWJsZRAgEh8K",
-            "G0VEaXNwbGF5U3RhdHVzTm90TGF1bmNoYWJsZRAhEhwKGEVEaXNwbGF5U3Rh",
-            "dHVzQ2xvdWRFcnJvchAiEiAKHEVEaXNwbGF5U3RhdHVzQ2xvdWRPdXRPZkRh",
-            "dGUQIxIdChlFRGlzcGxheVN0YXR1c1Rlcm1pbmF0aW5nECQSHQoZRURpc3Bs",
-            "YXlTdGF0dXNPd25lckxvY2tlZBAlEiAKHEVEaXNwbGF5U3RhdHVzRG93bmxv",
-            "YWRGYWlsZWQQJhIeChpFRGlzcGxheVN0YXR1c1VwZGF0ZUZhaWxlZBAnKuEC",
-            "Cg9FQXBwQ2xvdWRTdGF0dXMSGgoWRUFwcENsb3VkU3RhdHVzSW52YWxpZBAA",
-            "EhsKF0VBcHBDbG91ZFN0YXR1c0Rpc2FibGVkEAESGgoWRUFwcENsb3VkU3Rh",
-            "dHVzVW5rbm93bhACEh8KG0VBcHBDbG91ZFN0YXR1c1N5bmNocm9uaXplZBAD",
-            "EhsKF0VBcHBDbG91ZFN0YXR1c0NoZWNraW5nEAQSHAoYRUFwcENsb3VkU3Rh",
-            "dHVzT3V0T2ZTeW5jEAUSHAoYRUFwcENsb3VkU3RhdHVzVXBsb2FkaW5nEAYS",
-            "HgoaRUFwcENsb3VkU3RhdHVzRG93bmxvYWRpbmcQBxIdChlFQXBwQ2xvdWRT",
-            "dGF0dXNTeW5jRmFpbGVkEAgSGwoXRUFwcENsb3VkU3RhdHVzQ29uZmxpY3QQ",
-            "CRIjCh9FQXBwQ2xvdWRTdGF0dXNQZW5kaW5nRWxzZXdoZXJlEAoqiwEKGkVB",
-            "cHBDb250cm9sbGVyU3VwcG9ydExldmVsEiIKHkVBcHBDb250cm9sbGVyU3Vw",
-            "cG9ydExldmVsTm9uZRAAEiUKIUVBcHBDb250cm9sbGVyU3VwcG9ydExldmVs",
-            "UGFydGlhbBABEiIKHkVBcHBDb250cm9sbGVyU3VwcG9ydExldmVsRnVsbBAC",
-            "KvUBCiNFQXBwR2FtZXBhZEd5cm9UcmFja3BhZFN1cHBvcnRMZXZlbBI3CipF",
-            "QXBwR2FtZXBhZEd5cm9UcmFja3BhZFN1cHBvcnRMZXZlbFVua25vd24Q////",
-            "////////ARIwCixFQXBwR2FtZXBhZEd5cm9UcmFja3BhZFN1cHBvcnRMZXZl",
-            "bE5vR2FtZXBhZBAAEi4KKkVBcHBHYW1lcGFkR3lyb1RyYWNrcGFkU3VwcG9y",
-            "dExldmVsR2FtZXBhZBABEjMKL0VBcHBHYW1lcGFkR3lyb1RyYWNrcGFkU3Vw",
-            "cG9ydExldmVsU2ltdWx0YW5lb3VzEAIqlwEKDkVBcHBIRFJTdXBwb3J0EhcK",
-            "E0VIRFJTdXBwb3J0X1Vua25vd24QABITCg9FSERSU3VwcG9ydF9TRFIQARIT",
-            "Cg9FSERSU3VwcG9ydF9IRFIQAhIaChZFSERSU3VwcG9ydF9IRFJfQnJva2Vu",
-            "EAMSJgoiRUhEUlN1cHBvcnRfSERSX1JlcXVpcmVzVXNlckFjdGlvbhAEQh9I",
-            "AYABAaoCF09wZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
+            "RURpc3BsYXlTdGF0dXM6FUVEaXNwbGF5U3RhdHVzSW52YWxpZBIZChFzdGF0",
+            "dXNfcGVyY2VudGFnZRgEIAEoDRITCgthY3RpdmVfYmV0YRgFIAEoCRIRCglp",
+            "bnN0YWxsZWQYBiABKAgSIQoZc3RyZWFtaW5nX3RvX2xvY2FsX2NsaWVudBgJ",
+            "IAEoCBIoCiBpc19hdmFpbGFibGVfb25fY3VycmVudF9wbGF0Zm9ybRgKIAEo",
+            "CBIaChJpc19pbnZhbGlkX29zX3R5cGUYCyABKAgSFQoNcGxheXRpbWVfbGVm",
+            "dBgMIAEoDRIsCiR1cGRhdGVfYXZhaWxhYmxlX2J1dF9kaXNhYmxlZF9ieV9h",
+            "cHAYDiABKAgigQwKDENBcHBPdmVydmlldxINCgVhcHBpZBgBIAEoDRIUCgxk",
+            "aXNwbGF5X25hbWUYAiABKAkSHAoUdmlzaWJsZV9pbl9nYW1lX2xpc3QYBCAB",
+            "KAgSFQoNc3Vic2NyaWJlZF90bxgFIAEoCBIPCgdzb3J0X2FzGAYgASgJEjEK",
+            "CGFwcF90eXBlGAcgASgOMg4uRVByb3RvQXBwVHlwZToPRUFwcFR5cGVJbnZh",
+            "bGlkEhEKCW1ydV9pbmRleBgNIAEoDRIiChdydF9yZWNlbnRfYWN0aXZpdHlf",
+            "dGltZRgOIAEoDToBMBIjChhtaW51dGVzX3BsYXl0aW1lX2ZvcmV2ZXIYECAB",
+            "KA06ATASKgofbWludXRlc19wbGF5dGltZV9sYXN0X3R3b193ZWVrcxgRIAEo",
+            "DToBMBIeChNydF9sYXN0X3RpbWVfcGxheWVkGBIgASgNOgEwEhEKCXN0b3Jl",
+            "X3RhZxgTIAMoDRIWCg5zdG9yZV9jYXRlZ29yeRgXIAMoDRIjChhydF9vcmln",
+            "aW5hbF9yZWxlYXNlX2RhdGUYGSABKA06ATASIAoVcnRfc3RlYW1fcmVsZWFz",
+            "ZV9kYXRlGBogASgNOgEwEhEKCWljb25faGFzaBgbIAEoCRJcChd4Ym94X2Nv",
+            "bnRyb2xsZXJfc3VwcG9ydBgfIAEoDjIbLkVBcHBDb250cm9sbGVyU3VwcG9y",
+            "dExldmVsOh5FQXBwQ29udHJvbGxlclN1cHBvcnRMZXZlbE5vbmUSFAoMdnJf",
+            "c3VwcG9ydGVkGCAgASgIEhgKEG1ldGFjcml0aWNfc2NvcmUYJCABKA0SFAoM",
+            "c2l6ZV9vbl9kaXNrGCUgASgEEhcKD3RoaXJkX3BhcnR5X21vZBgmIAEoCBIR",
+            "CglpY29uX2RhdGEYJyABKAkSGAoQaWNvbl9kYXRhX2Zvcm1hdBgoIAEoCRIO",
+            "CgZnYW1laWQYKSABKAkSIAoYbGlicmFyeV9jYXBzdWxlX2ZpbGVuYW1lGCog",
+            "ASgJEjQKD3Blcl9jbGllbnRfZGF0YRgrIAMoCzIbLkNBcHBPdmVydmlld19Q",
+            "ZXJDbGllbnREYXRhEiIKF21vc3RfYXZhaWxhYmxlX2NsaWVudGlkGCwgASgE",
+            "OgEwEhwKEXNlbGVjdGVkX2NsaWVudGlkGC0gASgEOgEwEhwKFHJ0X3N0b3Jl",
+            "X2Fzc2V0X210aW1lGC4gASgNEh0KFXJ0X2N1c3RvbV9pbWFnZV9tdGltZRgv",
+            "IAEoDRIeChZvcHRpb25hbF9wYXJlbnRfYXBwX2lkGDAgASgNEhgKEG93bmVy",
+            "X2FjY291bnRfaWQYMSABKA0SIgoXcmV2aWV3X3Njb3JlX3dpdGhfYm9tYnMY",
+            "NSABKA06ATASJwoccmV2aWV3X3BlcmNlbnRhZ2Vfd2l0aF9ib21icxg2IAEo",
+            "DToBMBIlChpyZXZpZXdfc2NvcmVfd2l0aG91dF9ib21icxg3IAEoDToBMBIq",
+            "Ch9yZXZpZXdfcGVyY2VudGFnZV93aXRob3V0X2JvbWJzGDggASgNOgEwEhIK",
+            "CmxpYnJhcnlfaWQYOSABKAkSDwoHdnJfb25seRg6IAEoCBIXCg9tYXN0ZXJz",
+            "dWJfYXBwaWQYOyABKA0SIwobbWFzdGVyc3ViX2luY2x1ZGVkd2l0aF9sb2dv",
+            "GDwgASgJEh4KFnNpdGVfbGljZW5zZV9zaXRlX25hbWUYPiABKAkSHwoXc2hv",
+            "cnRjdXRfb3ZlcnJpZGVfYXBwaWQYPyABKA0SIwobcnRfbGFzdF90aW1lX2xv",
+            "Y2FsbHlfcGxheWVkGEEgASgNEhkKEXJ0X3B1cmNoYXNlZF90aW1lGEIgASgN",
+            "EhcKD2hlYWRlcl9maWxlbmFtZRhDIAEoCRIbChNsb2NhbF9jYWNoZV92ZXJz",
+            "aW9uGEQgASgNEhsKEG51bWJlcl9vZl9jb3BpZXMYSCABKA06ATESKgofc3Rl",
+            "YW1faHdfY29tcGF0X2NhdGVnb3J5X3BhY2tlZBhJIAEoDToBMBIYChBhbGJ1",
+            "bV9jb3Zlcl9oYXNoGEogASgJIn8KE0NBcHBPdmVydmlld19DaGFuZ2USIwoM",
+            "YXBwX292ZXJ2aWV3GAEgAygLMg0uQ0FwcE92ZXJ2aWV3EhUKDXJlbW92ZWRf",
+            "YXBwaWQYAiADKA0SEwoLZnVsbF91cGRhdGUYAyABKAgSFwoPdXBkYXRlX2Nv",
+            "bXBsZXRlGAQgASgIIkQKEUNBcHBCb290c3RyYXBEYXRhEg0KBWFwcGlkGAEg",
+            "ASgNEg4KBmhpZGRlbhgCIAEoCBIQCgh1c2VyX3RhZxgDIAMoCSI9ChVDTGli",
+            "cmFyeUJvb3RzdHJhcERhdGESJAoIYXBwX2RhdGEYASADKAsyEi5DQXBwQm9v",
+            "dHN0cmFwRGF0YSr+CQoORURpc3BsYXlTdGF0dXMSGQoVRURpc3BsYXlTdGF0",
+            "dXNJbnZhbGlkEAASGwoXRURpc3BsYXlTdGF0dXNMYXVuY2hpbmcQARIeChpF",
+            "RGlzcGxheVN0YXR1c1VuaW5zdGFsbGluZxACEhwKGEVEaXNwbGF5U3RhdHVz",
+            "SW5zdGFsbGluZxADEhkKFUVEaXNwbGF5U3RhdHVzUnVubmluZxAEEhwKGEVE",
+            "aXNwbGF5U3RhdHVzVmFsaWRhdGluZxAFEhoKFkVEaXNwbGF5U3RhdHVzVXBk",
+            "YXRpbmcQBhIdChlFRGlzcGxheVN0YXR1c0Rvd25sb2FkaW5nEAcSHwobRURp",
+            "c3BsYXlTdGF0dXNTeW5jaHJvbml6aW5nEAgSIAocRURpc3BsYXlTdGF0dXNS",
+            "ZWFkeVRvSW5zdGFsbBAJEiAKHEVEaXNwbGF5U3RhdHVzUmVhZHlUb1ByZWxv",
+            "YWQQChIfChtFRGlzcGxheVN0YXR1c1JlYWR5VG9MYXVuY2gQCxIiCh5FRGlz",
+            "cGxheVN0YXR1c1JlZ2lvblJlc3RyaWN0ZWQQDBIdChlFRGlzcGxheVN0YXR1",
+            "c1ByZXNhbGVPbmx5EA0SIQodRURpc3BsYXlTdGF0dXNJbnZhbGlkUGxhdGZv",
+            "cm0QDhIhCh1FRGlzcGxheVN0YXR1c1ByZWxvYWRDb21wbGV0ZRAQEiAKHEVE",
+            "aXNwbGF5U3RhdHVzQm9ycm93ZXJMb2NrZWQQERIeChpFRGlzcGxheVN0YXR1",
+            "c1VwZGF0ZVBhdXNlZBASEh4KGkVEaXNwbGF5U3RhdHVzVXBkYXRlUXVldWVk",
+            "EBMSIAocRURpc3BsYXlTdGF0dXNVcGRhdGVSZXF1aXJlZBAUEiAKHEVEaXNw",
+            "bGF5U3RhdHVzVXBkYXRlRGlzYWJsZWQQFRIgChxFRGlzcGxheVN0YXR1c0Rv",
+            "d25sb2FkUGF1c2VkEBYSIAocRURpc3BsYXlTdGF0dXNEb3dubG9hZFF1ZXVl",
+            "ZBAXEiIKHkVEaXNwbGF5U3RhdHVzRG93bmxvYWRSZXF1aXJlZBAYEiIKHkVE",
+            "aXNwbGF5U3RhdHVzRG93bmxvYWREaXNhYmxlZBAZEiAKHEVEaXNwbGF5U3Rh",
+            "dHVzTGljZW5zZVBlbmRpbmcQGhIgChxFRGlzcGxheVN0YXR1c0xpY2Vuc2VF",
+            "eHBpcmVkEBsSHgoaRURpc3BsYXlTdGF0dXNBdmFpbEZvckZyZWUQHBIfChtF",
+            "RGlzcGxheVN0YXR1c0F2YWlsVG9Cb3Jyb3cQHRIgChxFRGlzcGxheVN0YXR1",
+            "c0F2YWlsR3Vlc3RQYXNzEB4SGgoWRURpc3BsYXlTdGF0dXNQdXJjaGFzZRAf",
+            "Eh0KGUVEaXNwbGF5U3RhdHVzVW5hdmFpbGFibGUQIBIfChtFRGlzcGxheVN0",
+            "YXR1c05vdExhdW5jaGFibGUQIRIcChhFRGlzcGxheVN0YXR1c0Nsb3VkRXJy",
+            "b3IQIhIgChxFRGlzcGxheVN0YXR1c0Nsb3VkT3V0T2ZEYXRlECMSHQoZRURp",
+            "c3BsYXlTdGF0dXNUZXJtaW5hdGluZxAkEh0KGUVEaXNwbGF5U3RhdHVzT3du",
+            "ZXJMb2NrZWQQJRIgChxFRGlzcGxheVN0YXR1c0Rvd25sb2FkRmFpbGVkECYS",
+            "HgoaRURpc3BsYXlTdGF0dXNVcGRhdGVGYWlsZWQQJyrhAgoPRUFwcENsb3Vk",
+            "U3RhdHVzEhoKFkVBcHBDbG91ZFN0YXR1c0ludmFsaWQQABIbChdFQXBwQ2xv",
+            "dWRTdGF0dXNEaXNhYmxlZBABEhoKFkVBcHBDbG91ZFN0YXR1c1Vua25vd24Q",
+            "AhIfChtFQXBwQ2xvdWRTdGF0dXNTeW5jaHJvbml6ZWQQAxIbChdFQXBwQ2xv",
+            "dWRTdGF0dXNDaGVja2luZxAEEhwKGEVBcHBDbG91ZFN0YXR1c091dE9mU3lu",
+            "YxAFEhwKGEVBcHBDbG91ZFN0YXR1c1VwbG9hZGluZxAGEh4KGkVBcHBDbG91",
+            "ZFN0YXR1c0Rvd25sb2FkaW5nEAcSHQoZRUFwcENsb3VkU3RhdHVzU3luY0Zh",
+            "aWxlZBAIEhsKF0VBcHBDbG91ZFN0YXR1c0NvbmZsaWN0EAkSIwofRUFwcENs",
+            "b3VkU3RhdHVzUGVuZGluZ0Vsc2V3aGVyZRAKKosBChpFQXBwQ29udHJvbGxl",
+            "clN1cHBvcnRMZXZlbBIiCh5FQXBwQ29udHJvbGxlclN1cHBvcnRMZXZlbE5v",
+            "bmUQABIlCiFFQXBwQ29udHJvbGxlclN1cHBvcnRMZXZlbFBhcnRpYWwQARIi",
+            "Ch5FQXBwQ29udHJvbGxlclN1cHBvcnRMZXZlbEZ1bGwQAir1AQojRUFwcEdh",
+            "bWVwYWRHeXJvVHJhY2twYWRTdXBwb3J0TGV2ZWwSNwoqRUFwcEdhbWVwYWRH",
+            "eXJvVHJhY2twYWRTdXBwb3J0TGV2ZWxVbmtub3duEP///////////wESMAos",
+            "RUFwcEdhbWVwYWRHeXJvVHJhY2twYWRTdXBwb3J0TGV2ZWxOb0dhbWVwYWQQ",
+            "ABIuCipFQXBwR2FtZXBhZEd5cm9UcmFja3BhZFN1cHBvcnRMZXZlbEdhbWVw",
+            "YWQQARIzCi9FQXBwR2FtZXBhZEd5cm9UcmFja3BhZFN1cHBvcnRMZXZlbFNp",
+            "bXVsdGFuZW91cxACKpcBCg5FQXBwSERSU3VwcG9ydBIXChNFSERSU3VwcG9y",
+            "dF9Vbmtub3duEAASEwoPRUhEUlN1cHBvcnRfU0RSEAESEwoPRUhEUlN1cHBv",
+            "cnRfSERSEAISGgoWRUhEUlN1cHBvcnRfSERSX0Jyb2tlbhADEiYKIkVIRFJT",
+            "dXBwb3J0X0hEUl9SZXF1aXJlc1VzZXJBY3Rpb24QBEIfSAGAAQGqAhdPcGVu",
+            "U3RlYW13b3Jrcy5Qcm90b2J1Zg=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.EnumsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OpenSteamworks.Protobuf.EDisplayStatus), typeof(global::OpenSteamworks.Protobuf.EAppCloudStatus), typeof(global::OpenSteamworks.Protobuf.EAppControllerSupportLevel), typeof(global::OpenSteamworks.Protobuf.EAppGamepadGyroTrackpadSupportLevel), typeof(global::OpenSteamworks.Protobuf.EAppHDRSupport), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CAppOverview_PerClientData), global::OpenSteamworks.Protobuf.CAppOverview_PerClientData.Parser, new[]{ "Clientid", "ClientName", "DisplayStatus", "StatusPercentage", "ActiveBeta", "Installed", "BytesDownloaded", "BytesTotal", "StreamingToLocalClient", "IsAvailableOnCurrentPlatform", "IsInvalidOsType", "PlaytimeLeft", "UpdateAvailableButDisabledByApp" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CAppOverview_PerClientData), global::OpenSteamworks.Protobuf.CAppOverview_PerClientData.Parser, new[]{ "Clientid", "ClientName", "DisplayStatus", "StatusPercentage", "ActiveBeta", "Installed", "StreamingToLocalClient", "IsAvailableOnCurrentPlatform", "IsInvalidOsType", "PlaytimeLeft", "UpdateAvailableButDisabledByApp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CAppOverview), global::OpenSteamworks.Protobuf.CAppOverview.Parser, new[]{ "Appid", "DisplayName", "VisibleInGameList", "SubscribedTo", "SortAs", "AppType", "MruIndex", "RtRecentActivityTime", "MinutesPlaytimeForever", "MinutesPlaytimeLastTwoWeeks", "RtLastTimePlayed", "StoreTag", "StoreCategory", "RtOriginalReleaseDate", "RtSteamReleaseDate", "IconHash", "XboxControllerSupport", "VrSupported", "MetacriticScore", "SizeOnDisk", "ThirdPartyMod", "IconData", "IconDataFormat", "Gameid", "LibraryCapsuleFilename", "PerClientData", "MostAvailableClientid", "SelectedClientid", "RtStoreAssetMtime", "RtCustomImageMtime", "OptionalParentAppId", "OwnerAccountId", "ReviewScoreWithBombs", "ReviewPercentageWithBombs", "ReviewScoreWithoutBombs", "ReviewPercentageWithoutBombs", "LibraryId", "VrOnly", "MastersubAppid", "MastersubIncludedwithLogo", "SiteLicenseSiteName", "ShortcutOverrideAppid", "RtLastTimeLocallyPlayed", "RtPurchasedTime", "HeaderFilename", "LocalCacheVersion", "NumberOfCopies", "SteamHwCompatCategoryPacked", "AlbumCoverHash" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CAppOverview_Change), global::OpenSteamworks.Protobuf.CAppOverview_Change.Parser, new[]{ "AppOverview", "RemovedAppid", "FullUpdate", "UpdateComplete" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CAppBootstrapData), global::OpenSteamworks.Protobuf.CAppBootstrapData.Parser, new[]{ "Appid", "Hidden", "UserTag" }, null, null, null, null),
@@ -262,8 +261,6 @@ namespace OpenSteamworks.Protobuf {
       statusPercentage_ = other.statusPercentage_;
       activeBeta_ = other.activeBeta_;
       installed_ = other.installed_;
-      bytesDownloaded_ = other.bytesDownloaded_;
-      bytesTotal_ = other.bytesTotal_;
       streamingToLocalClient_ = other.streamingToLocalClient_;
       isAvailableOnCurrentPlatform_ = other.isAvailableOnCurrentPlatform_;
       isInvalidOsType_ = other.isInvalidOsType_;
@@ -438,60 +435,6 @@ namespace OpenSteamworks.Protobuf {
       _hasBits0 &= ~8;
     }
 
-    /// <summary>Field number for the "bytes_downloaded" field.</summary>
-    public const int BytesDownloadedFieldNumber = 7;
-    private readonly static ulong BytesDownloadedDefaultValue = 0UL;
-
-    private ulong bytesDownloaded_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong BytesDownloaded {
-      get { if ((_hasBits0 & 16) != 0) { return bytesDownloaded_; } else { return BytesDownloadedDefaultValue; } }
-      set {
-        _hasBits0 |= 16;
-        bytesDownloaded_ = value;
-      }
-    }
-    /// <summary>Gets whether the "bytes_downloaded" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasBytesDownloaded {
-      get { return (_hasBits0 & 16) != 0; }
-    }
-    /// <summary>Clears the value of the "bytes_downloaded" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearBytesDownloaded() {
-      _hasBits0 &= ~16;
-    }
-
-    /// <summary>Field number for the "bytes_total" field.</summary>
-    public const int BytesTotalFieldNumber = 8;
-    private readonly static ulong BytesTotalDefaultValue = 0UL;
-
-    private ulong bytesTotal_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong BytesTotal {
-      get { if ((_hasBits0 & 32) != 0) { return bytesTotal_; } else { return BytesTotalDefaultValue; } }
-      set {
-        _hasBits0 |= 32;
-        bytesTotal_ = value;
-      }
-    }
-    /// <summary>Gets whether the "bytes_total" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasBytesTotal {
-      get { return (_hasBits0 & 32) != 0; }
-    }
-    /// <summary>Clears the value of the "bytes_total" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearBytesTotal() {
-      _hasBits0 &= ~32;
-    }
-
     /// <summary>Field number for the "streaming_to_local_client" field.</summary>
     public const int StreamingToLocalClientFieldNumber = 9;
     private readonly static bool StreamingToLocalClientDefaultValue = false;
@@ -500,9 +443,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool StreamingToLocalClient {
-      get { if ((_hasBits0 & 64) != 0) { return streamingToLocalClient_; } else { return StreamingToLocalClientDefaultValue; } }
+      get { if ((_hasBits0 & 16) != 0) { return streamingToLocalClient_; } else { return StreamingToLocalClientDefaultValue; } }
       set {
-        _hasBits0 |= 64;
+        _hasBits0 |= 16;
         streamingToLocalClient_ = value;
       }
     }
@@ -510,13 +453,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasStreamingToLocalClient {
-      get { return (_hasBits0 & 64) != 0; }
+      get { return (_hasBits0 & 16) != 0; }
     }
     /// <summary>Clears the value of the "streaming_to_local_client" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearStreamingToLocalClient() {
-      _hasBits0 &= ~64;
+      _hasBits0 &= ~16;
     }
 
     /// <summary>Field number for the "is_available_on_current_platform" field.</summary>
@@ -527,9 +470,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsAvailableOnCurrentPlatform {
-      get { if ((_hasBits0 & 128) != 0) { return isAvailableOnCurrentPlatform_; } else { return IsAvailableOnCurrentPlatformDefaultValue; } }
+      get { if ((_hasBits0 & 32) != 0) { return isAvailableOnCurrentPlatform_; } else { return IsAvailableOnCurrentPlatformDefaultValue; } }
       set {
-        _hasBits0 |= 128;
+        _hasBits0 |= 32;
         isAvailableOnCurrentPlatform_ = value;
       }
     }
@@ -537,13 +480,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsAvailableOnCurrentPlatform {
-      get { return (_hasBits0 & 128) != 0; }
+      get { return (_hasBits0 & 32) != 0; }
     }
     /// <summary>Clears the value of the "is_available_on_current_platform" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsAvailableOnCurrentPlatform() {
-      _hasBits0 &= ~128;
+      _hasBits0 &= ~32;
     }
 
     /// <summary>Field number for the "is_invalid_os_type" field.</summary>
@@ -554,9 +497,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsInvalidOsType {
-      get { if ((_hasBits0 & 256) != 0) { return isInvalidOsType_; } else { return IsInvalidOsTypeDefaultValue; } }
+      get { if ((_hasBits0 & 64) != 0) { return isInvalidOsType_; } else { return IsInvalidOsTypeDefaultValue; } }
       set {
-        _hasBits0 |= 256;
+        _hasBits0 |= 64;
         isInvalidOsType_ = value;
       }
     }
@@ -564,13 +507,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIsInvalidOsType {
-      get { return (_hasBits0 & 256) != 0; }
+      get { return (_hasBits0 & 64) != 0; }
     }
     /// <summary>Clears the value of the "is_invalid_os_type" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIsInvalidOsType() {
-      _hasBits0 &= ~256;
+      _hasBits0 &= ~64;
     }
 
     /// <summary>Field number for the "playtime_left" field.</summary>
@@ -581,9 +524,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint PlaytimeLeft {
-      get { if ((_hasBits0 & 512) != 0) { return playtimeLeft_; } else { return PlaytimeLeftDefaultValue; } }
+      get { if ((_hasBits0 & 128) != 0) { return playtimeLeft_; } else { return PlaytimeLeftDefaultValue; } }
       set {
-        _hasBits0 |= 512;
+        _hasBits0 |= 128;
         playtimeLeft_ = value;
       }
     }
@@ -591,13 +534,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPlaytimeLeft {
-      get { return (_hasBits0 & 512) != 0; }
+      get { return (_hasBits0 & 128) != 0; }
     }
     /// <summary>Clears the value of the "playtime_left" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPlaytimeLeft() {
-      _hasBits0 &= ~512;
+      _hasBits0 &= ~128;
     }
 
     /// <summary>Field number for the "update_available_but_disabled_by_app" field.</summary>
@@ -608,9 +551,9 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool UpdateAvailableButDisabledByApp {
-      get { if ((_hasBits0 & 1024) != 0) { return updateAvailableButDisabledByApp_; } else { return UpdateAvailableButDisabledByAppDefaultValue; } }
+      get { if ((_hasBits0 & 256) != 0) { return updateAvailableButDisabledByApp_; } else { return UpdateAvailableButDisabledByAppDefaultValue; } }
       set {
-        _hasBits0 |= 1024;
+        _hasBits0 |= 256;
         updateAvailableButDisabledByApp_ = value;
       }
     }
@@ -618,13 +561,13 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasUpdateAvailableButDisabledByApp {
-      get { return (_hasBits0 & 1024) != 0; }
+      get { return (_hasBits0 & 256) != 0; }
     }
     /// <summary>Clears the value of the "update_available_but_disabled_by_app" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUpdateAvailableButDisabledByApp() {
-      _hasBits0 &= ~1024;
+      _hasBits0 &= ~256;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -648,8 +591,6 @@ namespace OpenSteamworks.Protobuf {
       if (StatusPercentage != other.StatusPercentage) return false;
       if (ActiveBeta != other.ActiveBeta) return false;
       if (Installed != other.Installed) return false;
-      if (BytesDownloaded != other.BytesDownloaded) return false;
-      if (BytesTotal != other.BytesTotal) return false;
       if (StreamingToLocalClient != other.StreamingToLocalClient) return false;
       if (IsAvailableOnCurrentPlatform != other.IsAvailableOnCurrentPlatform) return false;
       if (IsInvalidOsType != other.IsInvalidOsType) return false;
@@ -668,8 +609,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasStatusPercentage) hash ^= StatusPercentage.GetHashCode();
       if (HasActiveBeta) hash ^= ActiveBeta.GetHashCode();
       if (HasInstalled) hash ^= Installed.GetHashCode();
-      if (HasBytesDownloaded) hash ^= BytesDownloaded.GetHashCode();
-      if (HasBytesTotal) hash ^= BytesTotal.GetHashCode();
       if (HasStreamingToLocalClient) hash ^= StreamingToLocalClient.GetHashCode();
       if (HasIsAvailableOnCurrentPlatform) hash ^= IsAvailableOnCurrentPlatform.GetHashCode();
       if (HasIsInvalidOsType) hash ^= IsInvalidOsType.GetHashCode();
@@ -716,14 +655,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasInstalled) {
         output.WriteRawTag(48);
         output.WriteBool(Installed);
-      }
-      if (HasBytesDownloaded) {
-        output.WriteRawTag(56);
-        output.WriteUInt64(BytesDownloaded);
-      }
-      if (HasBytesTotal) {
-        output.WriteRawTag(64);
-        output.WriteUInt64(BytesTotal);
       }
       if (HasStreamingToLocalClient) {
         output.WriteRawTag(72);
@@ -779,14 +710,6 @@ namespace OpenSteamworks.Protobuf {
         output.WriteRawTag(48);
         output.WriteBool(Installed);
       }
-      if (HasBytesDownloaded) {
-        output.WriteRawTag(56);
-        output.WriteUInt64(BytesDownloaded);
-      }
-      if (HasBytesTotal) {
-        output.WriteRawTag(64);
-        output.WriteUInt64(BytesTotal);
-      }
       if (HasStreamingToLocalClient) {
         output.WriteRawTag(72);
         output.WriteBool(StreamingToLocalClient);
@@ -835,12 +758,6 @@ namespace OpenSteamworks.Protobuf {
       if (HasInstalled) {
         size += 1 + 1;
       }
-      if (HasBytesDownloaded) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(BytesDownloaded);
-      }
-      if (HasBytesTotal) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(BytesTotal);
-      }
       if (HasStreamingToLocalClient) {
         size += 1 + 1;
       }
@@ -885,12 +802,6 @@ namespace OpenSteamworks.Protobuf {
       }
       if (other.HasInstalled) {
         Installed = other.Installed;
-      }
-      if (other.HasBytesDownloaded) {
-        BytesDownloaded = other.BytesDownloaded;
-      }
-      if (other.HasBytesTotal) {
-        BytesTotal = other.BytesTotal;
       }
       if (other.HasStreamingToLocalClient) {
         StreamingToLocalClient = other.StreamingToLocalClient;
@@ -948,14 +859,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 48: {
             Installed = input.ReadBool();
-            break;
-          }
-          case 56: {
-            BytesDownloaded = input.ReadUInt64();
-            break;
-          }
-          case 64: {
-            BytesTotal = input.ReadUInt64();
             break;
           }
           case 72: {
@@ -1019,14 +922,6 @@ namespace OpenSteamworks.Protobuf {
           }
           case 48: {
             Installed = input.ReadBool();
-            break;
-          }
-          case 56: {
-            BytesDownloaded = input.ReadUInt64();
-            break;
-          }
-          case 64: {
-            BytesTotal = input.ReadUInt64();
             break;
           }
           case 72: {

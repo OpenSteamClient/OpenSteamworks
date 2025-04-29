@@ -162,7 +162,10 @@ public struct CGameID : IEquatable<CGameID>, IComparable<CGameID> {
 		}
 	}
 
-	public override string ToString() {
+	public override string ToString()
+		=> GameID.ToString();
+
+	public string Render() {
         char type;
         string value;
         switch (Type)

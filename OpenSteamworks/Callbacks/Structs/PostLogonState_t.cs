@@ -33,7 +33,4 @@ public struct PostLogonState_t
 	public byte hasAppInfo;
 	
 	public byte unk10;
-	public byte unk11;
-	public byte unk12;
-	public uint tokenExpiryTime;
 }

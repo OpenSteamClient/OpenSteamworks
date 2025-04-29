@@ -5,6 +5,7 @@ using OpenSteamworks.ConCommands.Interfaces;
 using OpenSteamworks.ConCommands.Native;
 using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
+using OpenSteamworks.Data.Interop;
 
 namespace OpenSteamworks.ConCommands;
 

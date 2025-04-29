@@ -14,9 +14,9 @@
 class IClientProcessMonitor
 {
 public:
-    virtual unknown RegisterProcess() = 0; //argc: 1, index 1
-    virtual unknown UnregisterProcess() = 0; //argc: 1, index 2
-    virtual unknown TerminateProcess() = 0; //argc: 2, index 3
-    virtual unknown SuspendProcess() = 0; //argc: 1, index 4
-    virtual unknown ResumeProcess() = 0; //argc: 1, index 5
+    virtual unknown RegisterProcess() = 0; //argc: -1, index 1
+    virtual unknown UnregisterProcess() = 0; //argc: -1, index 2
+    virtual unknown TerminateProcess() = 0; //argc: -1, index 3
+    virtual unknown SuspendProcess() = 0; //argc: -1, index 4
+    virtual unknown ResumeProcess() = 0; //argc: -1, index 5
 };

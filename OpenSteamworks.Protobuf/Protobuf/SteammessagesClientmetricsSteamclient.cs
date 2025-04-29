@@ -136,54 +136,64 @@ namespace OpenSteamworks.Protobuf {
             "c19FbmRHYW1lUmVjb3JkaW5nX05vdGlmaWNhdGlvbhJHCg5yZWNvcmRpbmdf",
             "dHlwZRgBIAEoDjITLkVHYW1lUmVjb3JkaW5nVHlwZToaRUdhbWVSZWNvcmRp",
             "bmdUeXBlX1Vua25vd24SDwoHc2Vjb25kcxgCIAEoAhINCgVieXRlcxgDIAEo",
-            "BBIOCgZnYW1laWQYBCABKAYSFAoMaW5zdGFudF9jbGlwGAUgASgIKm0KEkVT",
-            "dGVhbVBpcGVXb3JrVHlwZRIkCiBFU3RlYW1QaXBlQ2xpZW50V29ya1R5cGVf",
-            "SW52YWxpZBAAEjEKLUVTdGVhbVBpcGVDbGllbnRXb3JrVHlwZV9TdGFnZUZy",
-            "b21DaHVua1N0b3JlcxABKrMBChdFU3RlYW1QaXBlT3BlcmF0aW9uVHlwZRIj",
-            "Ch9FU3RlYW1QaXBlT3BlcmF0aW9uVHlwZV9JbnZhbGlkEAASJgoiRVN0ZWFt",
-            "UGlwZU9wZXJhdGlvblR5cGVfRGVjcnlwdENQVRABEiQKIEVTdGVhbVBpcGVP",
-            "cGVyYXRpb25UeXBlX0Rpc2tSZWFkEAISJQohRVN0ZWFtUGlwZU9wZXJhdGlv",
-            "blR5cGVfRGlza1dyaXRlEAMqygEKEEVDbGlwU2hhcmVNZXRob2QSGQoVRUNs",
-            "aXBTaGFyZU1ldGhvZF9DaGF0EAESHgoaRUNsaXBTaGFyZU1ldGhvZF9DbGlw",
-            "Ym9hcmQQAhIZChVFQ2xpcFNoYXJlTWV0aG9kX0ZpbGUQAxIdChlFQ2xpcFNo",
-            "YXJlTWV0aG9kX1NlbmRDbGlwEAQSIAocRUNsaXBTaGFyZU1ldGhvZF9TYXZl",
-            "VG9NZWRpYRAFEh8KG0VDbGlwU2hhcmVNZXRob2RfQ3JlYXRlTGluaxAGKoIC",
-            "ChBFQ2xpcFJhbmdlTWV0aG9kEiUKIUVDbGlwUmFuZ2VNZXRob2RfQ3JlYXRl",
-            "Q2xpcEJ1dHRvbhABEh4KGkVDbGlwUmFuZ2VNZXRob2RfSGlnaGxpZ2h0EAIS",
-            "JAogRUNsaXBSYW5nZU1ldGhvZF9CZWdpbkVuZEJ1dHRvbnMQAxIgChxFQ2xp",
-            "cFJhbmdlTWV0aG9kX0NvbnRleHRNZW51EAQSGQoVRUNsaXBSYW5nZU1ldGhv",
-            "ZF9EcmFnEAUSHwobRUNsaXBSYW5nZU1ldGhvZF9FbnRpcmVDbGlwEAYSIwof",
-            "RUNsaXBSYW5nZU1ldGhvZF9QaGFzZVJlY29yZGluZxAHMpkKCg1DbGllbnRN",
-            "ZXRyaWNzElwKHUNsaWVudEFwcEludGVyZmFjZVN0YXRzUmVwb3J0Ei4uQ0Ns",
-            "aWVudE1ldHJpY3NfQXBwSW50ZXJmYWNlU3RhdHNfTm90aWZpY2F0aW9uGgsu",
-            "Tm9SZXNwb25zZRJaChxDbGllbnRJUHY2Q29ubmVjdGl2aXR5UmVwb3J0Ei0u",
-            "Q0NsaWVudE1ldHJpY3NfSVB2NkNvbm5lY3Rpdml0eV9Ob3RpZmljYXRpb24a",
-            "Cy5Ob1Jlc3BvbnNlElgKGFN0ZWFtUGlwZVdvcmtTdGF0c1JlcG9ydBIvLkND",
-            "bGllbnRNZXRyaWNzX1N0ZWFtUGlwZVdvcmtTdGF0c19Ob3RpZmljYXRpb24a",
-            "Cy5Ob1Jlc3BvbnNlEk4KEFJlcG9ydFJlYWN0VXNhZ2USLS5DQ2xpZW50TWV0",
-            "cmljc19SZXBvcnRSZWFjdFVzYWdlX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9u",
-            "c2USUAoRUmVwb3J0Q2xpZW50RXJyb3ISLi5DQ2xpZW50TWV0cmljc19SZXBv",
-            "cnRDbGllbnRFcnJvcl9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElIKFUNs",
-            "aWVudEJvb3RzdHJhcFJlcG9ydBIsLkNDbGllbnRNZXRyaWNzX0NsaWVudEJv",
-            "b3RzdHJhcF9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElQKGUNsaWVudERv",
-            "d25sb2FkUmF0ZXNSZXBvcnQSKi5DQ2xpZW50TWV0cmljc19Eb3dubG9hZFJh",
-            "dGVzX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USXAodQ2xpZW50Q29udGVu",
-            "dFZhbGlkYXRpb25SZXBvcnQSLi5DQ2xpZW50TWV0cmljc19Db250ZW50VmFs",
-            "aWRhdGlvbl9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElYKF0NsaWVudENs",
-            "b3VkQXBwU3luY1N0YXRzEi4uQ0NsaWVudE1ldHJpY3NfQ2xvdWRBcHBTeW5j",
-            "U3RhdHNfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJsCiBDbGllbnREb3du",
-            "bG9hZFJlc3BvbnNlQ29kZUNvdW50cxI7LkNDbGllbnRNZXRyaWNzX0NvbnRl",
-            "bnREb3dubG9hZFJlc3BvbnNlX0NvdW50c19Ob3RpZmljYXRpb24aCy5Ob1Jl",
-            "c3BvbnNlEk4KEFJlcG9ydENsaWVudEFyZ3MSLS5DQ2xpZW50TWV0cmljc19S",
-            "ZXBvcnRDbGllbnRBcmdzX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USTgoQ",
-            "UmVwb3J0TGludXhTdGF0cxItLkNDbGllbnRNZXRyaWNzX1JlcG9ydExpbnV4",
-            "U3RhdHNfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJGCg9SZXBvcnRDbGlw",
-            "U2hhcmUSJi5DQ2xpZW50TWV0cmljc19DbGlwU2hhcmVfTm90aWZpY2F0aW9u",
-            "GgsuTm9SZXNwb25zZRJGCg9SZXBvcnRDbGlwUmFuZ2USJi5DQ2xpZW50TWV0",
-            "cmljc19DbGlwUmFuZ2VfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJUChZS",
-            "ZXBvcnRFbmRHYW1lUmVjb3JkaW5nEi0uQ0NsaWVudE1ldHJpY3NfRW5kR2Ft",
-            "ZVJlY29yZGluZ19Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlQh2AAQGqAhdP",
-            "cGVuU3RlYW13b3Jrcy5Qcm90b2J1Zg=="));
+            "BBIOCgZnYW1laWQYBCABKAYSFAoMaW5zdGFudF9jbGlwGAUgASgIItgCCitD",
+            "Q2xpZW50TWV0cmljc19HYW1lUGVyZm9ybWFuY2VfTm90aWZpY2F0aW9uEk0K",
+            "B3JlcG9ydHMYASADKAsyPC5DQ2xpZW50TWV0cmljc19HYW1lUGVyZm9ybWFu",
+            "Y2VfTm90aWZpY2F0aW9uLkZyYW1lUmF0ZVJlcG9ydBrZAQoPRnJhbWVSYXRl",
+            "UmVwb3J0Eg4KBmdhbWVpZBgBIAEoBhISCgpmcmFtZV9yYXRlGAIgASgNEhQK",
+            "DG1hbnVmYWN0dXJlchgDIAEoCRINCgVtb2RlbBgEIAEoCRIVCg1keF92aWRl",
+            "b19jYXJkGAUgASgJEhMKC2R4X3ZlbmRvcmlkGAYgASgFEhMKC2R4X2Rldmlj",
+            "ZWlkGAcgASgFEg8KB251bV9ncHUYCCABKA0SEgoKc3lzdGVtX3JhbRgJIAEo",
+            "BBIXCg9zZXNzaW9uX3NlY29uZHMYCiABKAUqbQoSRVN0ZWFtUGlwZVdvcmtU",
+            "eXBlEiQKIEVTdGVhbVBpcGVDbGllbnRXb3JrVHlwZV9JbnZhbGlkEAASMQot",
+            "RVN0ZWFtUGlwZUNsaWVudFdvcmtUeXBlX1N0YWdlRnJvbUNodW5rU3RvcmVz",
+            "EAEqswEKF0VTdGVhbVBpcGVPcGVyYXRpb25UeXBlEiMKH0VTdGVhbVBpcGVP",
+            "cGVyYXRpb25UeXBlX0ludmFsaWQQABImCiJFU3RlYW1QaXBlT3BlcmF0aW9u",
+            "VHlwZV9EZWNyeXB0Q1BVEAESJAogRVN0ZWFtUGlwZU9wZXJhdGlvblR5cGVf",
+            "RGlza1JlYWQQAhIlCiFFU3RlYW1QaXBlT3BlcmF0aW9uVHlwZV9EaXNrV3Jp",
+            "dGUQAyrKAQoQRUNsaXBTaGFyZU1ldGhvZBIZChVFQ2xpcFNoYXJlTWV0aG9k",
+            "X0NoYXQQARIeChpFQ2xpcFNoYXJlTWV0aG9kX0NsaXBib2FyZBACEhkKFUVD",
+            "bGlwU2hhcmVNZXRob2RfRmlsZRADEh0KGUVDbGlwU2hhcmVNZXRob2RfU2Vu",
+            "ZENsaXAQBBIgChxFQ2xpcFNoYXJlTWV0aG9kX1NhdmVUb01lZGlhEAUSHwob",
+            "RUNsaXBTaGFyZU1ldGhvZF9DcmVhdGVMaW5rEAYqggIKEEVDbGlwUmFuZ2VN",
+            "ZXRob2QSJQohRUNsaXBSYW5nZU1ldGhvZF9DcmVhdGVDbGlwQnV0dG9uEAES",
+            "HgoaRUNsaXBSYW5nZU1ldGhvZF9IaWdobGlnaHQQAhIkCiBFQ2xpcFJhbmdl",
+            "TWV0aG9kX0JlZ2luRW5kQnV0dG9ucxADEiAKHEVDbGlwUmFuZ2VNZXRob2Rf",
+            "Q29udGV4dE1lbnUQBBIZChVFQ2xpcFJhbmdlTWV0aG9kX0RyYWcQBRIfChtF",
+            "Q2xpcFJhbmdlTWV0aG9kX0VudGlyZUNsaXAQBhIjCh9FQ2xpcFJhbmdlTWV0",
+            "aG9kX1BoYXNlUmVjb3JkaW5nEAcy7QoKDUNsaWVudE1ldHJpY3MSXAodQ2xp",
+            "ZW50QXBwSW50ZXJmYWNlU3RhdHNSZXBvcnQSLi5DQ2xpZW50TWV0cmljc19B",
+            "cHBJbnRlcmZhY2VTdGF0c19Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlEloK",
+            "HENsaWVudElQdjZDb25uZWN0aXZpdHlSZXBvcnQSLS5DQ2xpZW50TWV0cmlj",
+            "c19JUHY2Q29ubmVjdGl2aXR5X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2US",
+            "WAoYU3RlYW1QaXBlV29ya1N0YXRzUmVwb3J0Ei8uQ0NsaWVudE1ldHJpY3Nf",
+            "U3RlYW1QaXBlV29ya1N0YXRzX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2US",
+            "TgoQUmVwb3J0UmVhY3RVc2FnZRItLkNDbGllbnRNZXRyaWNzX1JlcG9ydFJl",
+            "YWN0VXNhZ2VfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJQChFSZXBvcnRD",
+            "bGllbnRFcnJvchIuLkNDbGllbnRNZXRyaWNzX1JlcG9ydENsaWVudEVycm9y",
+            "X05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USUgoVQ2xpZW50Qm9vdHN0cmFw",
+            "UmVwb3J0EiwuQ0NsaWVudE1ldHJpY3NfQ2xpZW50Qm9vdHN0cmFwX05vdGlm",
+            "aWNhdGlvbhoLLk5vUmVzcG9uc2USVAoZQ2xpZW50RG93bmxvYWRSYXRlc1Jl",
+            "cG9ydBIqLkNDbGllbnRNZXRyaWNzX0Rvd25sb2FkUmF0ZXNfTm90aWZpY2F0",
+            "aW9uGgsuTm9SZXNwb25zZRJcCh1DbGllbnRDb250ZW50VmFsaWRhdGlvblJl",
+            "cG9ydBIuLkNDbGllbnRNZXRyaWNzX0NvbnRlbnRWYWxpZGF0aW9uX05vdGlm",
+            "aWNhdGlvbhoLLk5vUmVzcG9uc2USVgoXQ2xpZW50Q2xvdWRBcHBTeW5jU3Rh",
+            "dHMSLi5DQ2xpZW50TWV0cmljc19DbG91ZEFwcFN5bmNTdGF0c19Ob3RpZmlj",
+            "YXRpb24aCy5Ob1Jlc3BvbnNlEmwKIENsaWVudERvd25sb2FkUmVzcG9uc2VD",
+            "b2RlQ291bnRzEjsuQ0NsaWVudE1ldHJpY3NfQ29udGVudERvd25sb2FkUmVz",
+            "cG9uc2VfQ291bnRzX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USTgoQUmVw",
+            "b3J0Q2xpZW50QXJncxItLkNDbGllbnRNZXRyaWNzX1JlcG9ydENsaWVudEFy",
+            "Z3NfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRJOChBSZXBvcnRMaW51eFN0",
+            "YXRzEi0uQ0NsaWVudE1ldHJpY3NfUmVwb3J0TGludXhTdGF0c19Ob3RpZmlj",
+            "YXRpb24aCy5Ob1Jlc3BvbnNlEkYKD1JlcG9ydENsaXBTaGFyZRImLkNDbGll",
+            "bnRNZXRyaWNzX0NsaXBTaGFyZV9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNl",
+            "EkYKD1JlcG9ydENsaXBSYW5nZRImLkNDbGllbnRNZXRyaWNzX0NsaXBSYW5n",
+            "ZV9Ob3RpZmljYXRpb24aCy5Ob1Jlc3BvbnNlElQKFlJlcG9ydEVuZEdhbWVS",
+            "ZWNvcmRpbmcSLS5DQ2xpZW50TWV0cmljc19FbmRHYW1lUmVjb3JkaW5nX05v",
+            "dGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USUgoVUmVwb3J0R2FtZVBlcmZvcm1h",
+            "bmNlEiwuQ0NsaWVudE1ldHJpY3NfR2FtZVBlcmZvcm1hbmNlX05vdGlmaWNh",
+            "dGlvbhoLLk5vUmVzcG9uc2VCHYABAaoCF09wZW5TdGVhbXdvcmtzLlByb3Rv",
+            "YnVm"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesUnifiedBaseSteamclientReflection.Descriptor, global::OpenSteamworks.Protobuf.ClientmetricsReflection.Descriptor, global::OpenSteamworks.Protobuf.EnumsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OpenSteamworks.Protobuf.ESteamPipeWorkType), typeof(global::OpenSteamworks.Protobuf.ESteamPipeOperationType), typeof(global::OpenSteamworks.Protobuf.EClipShareMethod), typeof(global::OpenSteamworks.Protobuf.EClipRangeMethod), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -207,7 +217,8 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_ReportLinuxStats_Notification), global::OpenSteamworks.Protobuf.CClientMetrics_ReportLinuxStats_Notification.Parser, new[]{ "GlibcVersionMajor", "GlibcVersionMinor", "AccountType", "LauncherType", "GameServerAppid", "ProcessName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_ClipShare_Notification), global::OpenSteamworks.Protobuf.CClientMetrics_ClipShare_Notification.Parser, new[]{ "Eresult", "ShareMethod", "Seconds", "Bytes", "Gameid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_ClipRange_Notification), global::OpenSteamworks.Protobuf.CClientMetrics_ClipRange_Notification.Parser, new[]{ "OriginalRangeMethod", "Start", "End", "Seconds", "Gameid" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_ClipRange_Notification.Types.RelativeRangeEdge), global::OpenSteamworks.Protobuf.CClientMetrics_ClipRange_Notification.Types.RelativeRangeEdge.Parser, new[]{ "OriginalRangeMethod", "LatestRangeMethod", "DeltaMs" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_EndGameRecording_Notification), global::OpenSteamworks.Protobuf.CClientMetrics_EndGameRecording_Notification.Parser, new[]{ "RecordingType", "Seconds", "Bytes", "Gameid", "InstantClip" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_EndGameRecording_Notification), global::OpenSteamworks.Protobuf.CClientMetrics_EndGameRecording_Notification.Parser, new[]{ "RecordingType", "Seconds", "Bytes", "Gameid", "InstantClip" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification), global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Parser, new[]{ "Reports" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Types.FrameRateReport), global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Types.FrameRateReport.Parser, new[]{ "Gameid", "FrameRate", "Manufacturer", "Model", "DxVideoCard", "DxVendorid", "DxDeviceid", "NumGpu", "SystemRam", "SessionSeconds" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -10752,6 +10763,881 @@ namespace OpenSteamworks.Protobuf {
       }
     }
     #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CClientMetrics_GamePerformance_Notification : pb::IMessage<CClientMetrics_GamePerformance_Notification>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CClientMetrics_GamePerformance_Notification> _parser = new pb::MessageParser<CClientMetrics_GamePerformance_Notification>(() => new CClientMetrics_GamePerformance_Notification());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CClientMetrics_GamePerformance_Notification> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesClientmetricsSteamclientReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_GamePerformance_Notification() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_GamePerformance_Notification(CClientMetrics_GamePerformance_Notification other) : this() {
+      reports_ = other.reports_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CClientMetrics_GamePerformance_Notification Clone() {
+      return new CClientMetrics_GamePerformance_Notification(this);
+    }
+
+    /// <summary>Field number for the "reports" field.</summary>
+    public const int ReportsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Types.FrameRateReport> _repeated_reports_codec
+        = pb::FieldCodec.ForMessage(10, global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Types.FrameRateReport.Parser);
+    private readonly pbc::RepeatedField<global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Types.FrameRateReport> reports_ = new pbc::RepeatedField<global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Types.FrameRateReport>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Types.FrameRateReport> Reports {
+      get { return reports_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CClientMetrics_GamePerformance_Notification);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CClientMetrics_GamePerformance_Notification other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!reports_.Equals(other.reports_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= reports_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      reports_.WriteTo(output, _repeated_reports_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      reports_.WriteTo(ref output, _repeated_reports_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += reports_.CalculateSize(_repeated_reports_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CClientMetrics_GamePerformance_Notification other) {
+      if (other == null) {
+        return;
+      }
+      reports_.Add(other.reports_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            reports_.AddEntriesFrom(input, _repeated_reports_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            reports_.AddEntriesFrom(ref input, _repeated_reports_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the CClientMetrics_GamePerformance_Notification message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+      public sealed partial class FrameRateReport : pb::IMessage<FrameRateReport>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<FrameRateReport> _parser = new pb::MessageParser<FrameRateReport>(() => new FrameRateReport());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<FrameRateReport> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::OpenSteamworks.Protobuf.CClientMetrics_GamePerformance_Notification.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public FrameRateReport() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public FrameRateReport(FrameRateReport other) : this() {
+          _hasBits0 = other._hasBits0;
+          gameid_ = other.gameid_;
+          frameRate_ = other.frameRate_;
+          manufacturer_ = other.manufacturer_;
+          model_ = other.model_;
+          dxVideoCard_ = other.dxVideoCard_;
+          dxVendorid_ = other.dxVendorid_;
+          dxDeviceid_ = other.dxDeviceid_;
+          numGpu_ = other.numGpu_;
+          systemRam_ = other.systemRam_;
+          sessionSeconds_ = other.sessionSeconds_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public FrameRateReport Clone() {
+          return new FrameRateReport(this);
+        }
+
+        /// <summary>Field number for the "gameid" field.</summary>
+        public const int GameidFieldNumber = 1;
+        private readonly static ulong GameidDefaultValue = 0UL;
+
+        private ulong gameid_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public ulong Gameid {
+          get { if ((_hasBits0 & 1) != 0) { return gameid_; } else { return GameidDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            gameid_ = value;
+          }
+        }
+        /// <summary>Gets whether the "gameid" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasGameid {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "gameid" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearGameid() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "frame_rate" field.</summary>
+        public const int FrameRateFieldNumber = 2;
+        private readonly static uint FrameRateDefaultValue = 0;
+
+        private uint frameRate_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public uint FrameRate {
+          get { if ((_hasBits0 & 2) != 0) { return frameRate_; } else { return FrameRateDefaultValue; } }
+          set {
+            _hasBits0 |= 2;
+            frameRate_ = value;
+          }
+        }
+        /// <summary>Gets whether the "frame_rate" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasFrameRate {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "frame_rate" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearFrameRate() {
+          _hasBits0 &= ~2;
+        }
+
+        /// <summary>Field number for the "manufacturer" field.</summary>
+        public const int ManufacturerFieldNumber = 3;
+        private readonly static string ManufacturerDefaultValue = "";
+
+        private string manufacturer_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public string Manufacturer {
+          get { return manufacturer_ ?? ManufacturerDefaultValue; }
+          set {
+            manufacturer_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "manufacturer" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasManufacturer {
+          get { return manufacturer_ != null; }
+        }
+        /// <summary>Clears the value of the "manufacturer" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearManufacturer() {
+          manufacturer_ = null;
+        }
+
+        /// <summary>Field number for the "model" field.</summary>
+        public const int ModelFieldNumber = 4;
+        private readonly static string ModelDefaultValue = "";
+
+        private string model_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public string Model {
+          get { return model_ ?? ModelDefaultValue; }
+          set {
+            model_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "model" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasModel {
+          get { return model_ != null; }
+        }
+        /// <summary>Clears the value of the "model" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearModel() {
+          model_ = null;
+        }
+
+        /// <summary>Field number for the "dx_video_card" field.</summary>
+        public const int DxVideoCardFieldNumber = 5;
+        private readonly static string DxVideoCardDefaultValue = "";
+
+        private string dxVideoCard_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public string DxVideoCard {
+          get { return dxVideoCard_ ?? DxVideoCardDefaultValue; }
+          set {
+            dxVideoCard_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "dx_video_card" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasDxVideoCard {
+          get { return dxVideoCard_ != null; }
+        }
+        /// <summary>Clears the value of the "dx_video_card" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearDxVideoCard() {
+          dxVideoCard_ = null;
+        }
+
+        /// <summary>Field number for the "dx_vendorid" field.</summary>
+        public const int DxVendoridFieldNumber = 6;
+        private readonly static int DxVendoridDefaultValue = 0;
+
+        private int dxVendorid_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int DxVendorid {
+          get { if ((_hasBits0 & 4) != 0) { return dxVendorid_; } else { return DxVendoridDefaultValue; } }
+          set {
+            _hasBits0 |= 4;
+            dxVendorid_ = value;
+          }
+        }
+        /// <summary>Gets whether the "dx_vendorid" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasDxVendorid {
+          get { return (_hasBits0 & 4) != 0; }
+        }
+        /// <summary>Clears the value of the "dx_vendorid" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearDxVendorid() {
+          _hasBits0 &= ~4;
+        }
+
+        /// <summary>Field number for the "dx_deviceid" field.</summary>
+        public const int DxDeviceidFieldNumber = 7;
+        private readonly static int DxDeviceidDefaultValue = 0;
+
+        private int dxDeviceid_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int DxDeviceid {
+          get { if ((_hasBits0 & 8) != 0) { return dxDeviceid_; } else { return DxDeviceidDefaultValue; } }
+          set {
+            _hasBits0 |= 8;
+            dxDeviceid_ = value;
+          }
+        }
+        /// <summary>Gets whether the "dx_deviceid" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasDxDeviceid {
+          get { return (_hasBits0 & 8) != 0; }
+        }
+        /// <summary>Clears the value of the "dx_deviceid" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearDxDeviceid() {
+          _hasBits0 &= ~8;
+        }
+
+        /// <summary>Field number for the "num_gpu" field.</summary>
+        public const int NumGpuFieldNumber = 8;
+        private readonly static uint NumGpuDefaultValue = 0;
+
+        private uint numGpu_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public uint NumGpu {
+          get { if ((_hasBits0 & 16) != 0) { return numGpu_; } else { return NumGpuDefaultValue; } }
+          set {
+            _hasBits0 |= 16;
+            numGpu_ = value;
+          }
+        }
+        /// <summary>Gets whether the "num_gpu" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasNumGpu {
+          get { return (_hasBits0 & 16) != 0; }
+        }
+        /// <summary>Clears the value of the "num_gpu" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearNumGpu() {
+          _hasBits0 &= ~16;
+        }
+
+        /// <summary>Field number for the "system_ram" field.</summary>
+        public const int SystemRamFieldNumber = 9;
+        private readonly static ulong SystemRamDefaultValue = 0UL;
+
+        private ulong systemRam_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public ulong SystemRam {
+          get { if ((_hasBits0 & 32) != 0) { return systemRam_; } else { return SystemRamDefaultValue; } }
+          set {
+            _hasBits0 |= 32;
+            systemRam_ = value;
+          }
+        }
+        /// <summary>Gets whether the "system_ram" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasSystemRam {
+          get { return (_hasBits0 & 32) != 0; }
+        }
+        /// <summary>Clears the value of the "system_ram" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearSystemRam() {
+          _hasBits0 &= ~32;
+        }
+
+        /// <summary>Field number for the "session_seconds" field.</summary>
+        public const int SessionSecondsFieldNumber = 10;
+        private readonly static int SessionSecondsDefaultValue = 0;
+
+        private int sessionSeconds_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int SessionSeconds {
+          get { if ((_hasBits0 & 64) != 0) { return sessionSeconds_; } else { return SessionSecondsDefaultValue; } }
+          set {
+            _hasBits0 |= 64;
+            sessionSeconds_ = value;
+          }
+        }
+        /// <summary>Gets whether the "session_seconds" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasSessionSeconds {
+          get { return (_hasBits0 & 64) != 0; }
+        }
+        /// <summary>Clears the value of the "session_seconds" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearSessionSeconds() {
+          _hasBits0 &= ~64;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as FrameRateReport);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(FrameRateReport other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Gameid != other.Gameid) return false;
+          if (FrameRate != other.FrameRate) return false;
+          if (Manufacturer != other.Manufacturer) return false;
+          if (Model != other.Model) return false;
+          if (DxVideoCard != other.DxVideoCard) return false;
+          if (DxVendorid != other.DxVendorid) return false;
+          if (DxDeviceid != other.DxDeviceid) return false;
+          if (NumGpu != other.NumGpu) return false;
+          if (SystemRam != other.SystemRam) return false;
+          if (SessionSeconds != other.SessionSeconds) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasGameid) hash ^= Gameid.GetHashCode();
+          if (HasFrameRate) hash ^= FrameRate.GetHashCode();
+          if (HasManufacturer) hash ^= Manufacturer.GetHashCode();
+          if (HasModel) hash ^= Model.GetHashCode();
+          if (HasDxVideoCard) hash ^= DxVideoCard.GetHashCode();
+          if (HasDxVendorid) hash ^= DxVendorid.GetHashCode();
+          if (HasDxDeviceid) hash ^= DxDeviceid.GetHashCode();
+          if (HasNumGpu) hash ^= NumGpu.GetHashCode();
+          if (HasSystemRam) hash ^= SystemRam.GetHashCode();
+          if (HasSessionSeconds) hash ^= SessionSeconds.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasGameid) {
+            output.WriteRawTag(9);
+            output.WriteFixed64(Gameid);
+          }
+          if (HasFrameRate) {
+            output.WriteRawTag(16);
+            output.WriteUInt32(FrameRate);
+          }
+          if (HasManufacturer) {
+            output.WriteRawTag(26);
+            output.WriteString(Manufacturer);
+          }
+          if (HasModel) {
+            output.WriteRawTag(34);
+            output.WriteString(Model);
+          }
+          if (HasDxVideoCard) {
+            output.WriteRawTag(42);
+            output.WriteString(DxVideoCard);
+          }
+          if (HasDxVendorid) {
+            output.WriteRawTag(48);
+            output.WriteInt32(DxVendorid);
+          }
+          if (HasDxDeviceid) {
+            output.WriteRawTag(56);
+            output.WriteInt32(DxDeviceid);
+          }
+          if (HasNumGpu) {
+            output.WriteRawTag(64);
+            output.WriteUInt32(NumGpu);
+          }
+          if (HasSystemRam) {
+            output.WriteRawTag(72);
+            output.WriteUInt64(SystemRam);
+          }
+          if (HasSessionSeconds) {
+            output.WriteRawTag(80);
+            output.WriteInt32(SessionSeconds);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasGameid) {
+            output.WriteRawTag(9);
+            output.WriteFixed64(Gameid);
+          }
+          if (HasFrameRate) {
+            output.WriteRawTag(16);
+            output.WriteUInt32(FrameRate);
+          }
+          if (HasManufacturer) {
+            output.WriteRawTag(26);
+            output.WriteString(Manufacturer);
+          }
+          if (HasModel) {
+            output.WriteRawTag(34);
+            output.WriteString(Model);
+          }
+          if (HasDxVideoCard) {
+            output.WriteRawTag(42);
+            output.WriteString(DxVideoCard);
+          }
+          if (HasDxVendorid) {
+            output.WriteRawTag(48);
+            output.WriteInt32(DxVendorid);
+          }
+          if (HasDxDeviceid) {
+            output.WriteRawTag(56);
+            output.WriteInt32(DxDeviceid);
+          }
+          if (HasNumGpu) {
+            output.WriteRawTag(64);
+            output.WriteUInt32(NumGpu);
+          }
+          if (HasSystemRam) {
+            output.WriteRawTag(72);
+            output.WriteUInt64(SystemRam);
+          }
+          if (HasSessionSeconds) {
+            output.WriteRawTag(80);
+            output.WriteInt32(SessionSeconds);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasGameid) {
+            size += 1 + 8;
+          }
+          if (HasFrameRate) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameRate);
+          }
+          if (HasManufacturer) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Manufacturer);
+          }
+          if (HasModel) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Model);
+          }
+          if (HasDxVideoCard) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(DxVideoCard);
+          }
+          if (HasDxVendorid) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(DxVendorid);
+          }
+          if (HasDxDeviceid) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(DxDeviceid);
+          }
+          if (HasNumGpu) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumGpu);
+          }
+          if (HasSystemRam) {
+            size += 1 + pb::CodedOutputStream.ComputeUInt64Size(SystemRam);
+          }
+          if (HasSessionSeconds) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(SessionSeconds);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(FrameRateReport other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasGameid) {
+            Gameid = other.Gameid;
+          }
+          if (other.HasFrameRate) {
+            FrameRate = other.FrameRate;
+          }
+          if (other.HasManufacturer) {
+            Manufacturer = other.Manufacturer;
+          }
+          if (other.HasModel) {
+            Model = other.Model;
+          }
+          if (other.HasDxVideoCard) {
+            DxVideoCard = other.DxVideoCard;
+          }
+          if (other.HasDxVendorid) {
+            DxVendorid = other.DxVendorid;
+          }
+          if (other.HasDxDeviceid) {
+            DxDeviceid = other.DxDeviceid;
+          }
+          if (other.HasNumGpu) {
+            NumGpu = other.NumGpu;
+          }
+          if (other.HasSystemRam) {
+            SystemRam = other.SystemRam;
+          }
+          if (other.HasSessionSeconds) {
+            SessionSeconds = other.SessionSeconds;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 9: {
+                Gameid = input.ReadFixed64();
+                break;
+              }
+              case 16: {
+                FrameRate = input.ReadUInt32();
+                break;
+              }
+              case 26: {
+                Manufacturer = input.ReadString();
+                break;
+              }
+              case 34: {
+                Model = input.ReadString();
+                break;
+              }
+              case 42: {
+                DxVideoCard = input.ReadString();
+                break;
+              }
+              case 48: {
+                DxVendorid = input.ReadInt32();
+                break;
+              }
+              case 56: {
+                DxDeviceid = input.ReadInt32();
+                break;
+              }
+              case 64: {
+                NumGpu = input.ReadUInt32();
+                break;
+              }
+              case 72: {
+                SystemRam = input.ReadUInt64();
+                break;
+              }
+              case 80: {
+                SessionSeconds = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 9: {
+                Gameid = input.ReadFixed64();
+                break;
+              }
+              case 16: {
+                FrameRate = input.ReadUInt32();
+                break;
+              }
+              case 26: {
+                Manufacturer = input.ReadString();
+                break;
+              }
+              case 34: {
+                Model = input.ReadString();
+                break;
+              }
+              case 42: {
+                DxVideoCard = input.ReadString();
+                break;
+              }
+              case 48: {
+                DxVendorid = input.ReadInt32();
+                break;
+              }
+              case 56: {
+                DxDeviceid = input.ReadInt32();
+                break;
+              }
+              case 64: {
+                NumGpu = input.ReadUInt32();
+                break;
+              }
+              case 72: {
+                SystemRam = input.ReadUInt64();
+                break;
+              }
+              case 80: {
+                SessionSeconds = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+    }
+    #endregion
 
   }
 

@@ -10,6 +10,7 @@ using OpenSteamworks.Callbacks;
 using OpenSteamworks.Callbacks.Structs;
 using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
+using OpenSteamworks.Data.Interop;
 using OpenSteamworks.Data.Structs;
 using OpenSteamworks.Exceptions;
 using OpenSteamworks.Generated;
@@ -21,30 +22,84 @@ public sealed class UserHelper : IDisposable
     private readonly IClientUser clientUser;
     private readonly IClientUtils clientUtils;
     private readonly ILogger logger;
+    private readonly ISteamClient steamClient;
 
     private readonly IDisposable cbPostLogonState;
     private readonly IDisposable cbConnectFailure;
+    private readonly IDisposable cbServersDisconnected;
     public UserHelper(ISteamClient steamClient, ILoggerFactory loggerFactory)
     {
+        this.steamClient = steamClient;
         this.clientUser = steamClient.IClientUser;
         this.clientUtils = steamClient.IClientUtils;
-        
+
         this.logger = loggerFactory.CreateLogger("UserHelper");
 
         cbPostLogonState = steamClient.CallbackManager.Register<PostLogonState_t>(OnPostLogonState);
         cbConnectFailure = steamClient.CallbackManager.Register<SteamServerConnectFailure_t>(OnConnectFailure);
+        cbServersDisconnected = steamClient.CallbackManager.Register<SteamServersDisconnected_t>(OnSteamServersDisconnected);
+    }
+
+    private void OnSteamServersDisconnected(ICallbackHandler handler, SteamServersDisconnected_t cb)
+    {
+        //TODO: Handle logouts? ValveSteam just restarts to login to a different account, but that seems like a steamui limitation, not a steamclient limitation.
+        //TODO: We could provide logged in/logged out events...
+
+        if (loginTcs != null && !loginTcs.Task.IsCompleted)
+            loginTcs?.SetException(new EResultException(cb.m_EResult));
     }
 
     private void OnConnectFailure(ICallbackHandler handler, SteamServerConnectFailure_t cb)
     {
-        loginTcs?.SetException(new WrappedEResultException(cb.m_EResult));
+        if (loginTcs != null && !loginTcs.Task.IsCompleted)
+            loginTcs?.SetException(new EResultException(cb.m_EResult));
     }
 
     private void OnPostLogonState(ICallbackHandler handler, PostLogonState_t cb)
     {
         if (cb is { hasAppInfo: 1, connectedToCMs: 1 })
         {
-            loginTcs?.SetResult();   
+            OnLoggedOn();
+            loginTcs?.SetResult();
+        }
+    }
+
+    private void OnLoggedOn()
+    {
+        appPlaytimeMap.Clear();
+        appLastPlayedMap.Clear();
+
+        if (steamClient.IsCrossProcess)
+        {
+            foreach (var ownedAppID in GetSubscribedApps())
+            {
+                var lastPlayed = steamClient.IClientUser.GetAppLastPlayedTime(ownedAppID);
+                if (lastPlayed != 0) {
+                    appLastPlayedMap[ownedAppID] = lastPlayed;
+                }
+
+                var playtime = this.steamClient.ConfigStoreHelper.Get(EConfigStore.UserLocal, $"Software\\Valve\\Steam\\Apps\\{ownedAppID}\\Playtime", 0);
+                var playtime2wks = this.steamClient.ConfigStoreHelper.Get(EConfigStore.UserLocal, $"Software\\Valve\\Steam\\Apps\\{ownedAppID}\\Playtime2wks", 0);
+                if (playtime != 0 || playtime2wks != 0) {
+                    appPlaytimeMap[ownedAppID] = new AppPlaytime_t((uint)playtime, (uint)playtime2wks);
+                }
+            }
+        }
+        else
+        {
+            unsafe {
+                using CUtlMap<AppId_t, RTime32> mapn = new(0, 4096);
+                if (steamClient.IClientUser.BGetAppsLastPlayedMap(&mapn)) {
+                    appLastPlayedMap = mapn.ToManaged();
+                }
+            }
+
+            unsafe {
+                using CUtlMap<AppId_t, AppPlaytime_t> mapn = new(0, 4096);
+                if (steamClient.IClientUser.BGetAppPlaytimeMap(&mapn)) {
+                    appPlaytimeMap = mapn.ToManaged();
+                }
+            }
         }
     }
 
@@ -54,16 +109,16 @@ public sealed class UserHelper : IDisposable
         if (!LoggedIn)
             throw new InvalidOperationException("This operation can only be performed when logged in.");
     }
-    
+
     [PublicAPI]
     public IEnumerable<AppId_t> GetSubscribedApps()
     {
         ThrowIfLoggedOut();
-        
+
         int numOwned = clientUser.GetSubscribedApps(null, 0, true);
         AppId_t[] arr = new AppId_t[numOwned];
         int got = clientUser.GetSubscribedApps(arr, arr.Length, true);
-        
+
         //TODO: Could we deal with this better?
         if (numOwned != got)
             throw new APICallException($"GetSubscribedApps return count mismatch; changed from {numOwned} to {got}");
@@ -82,9 +137,9 @@ public sealed class UserHelper : IDisposable
         ThrowIfLoggedOut();
         return clientUser.BIsSubscribedApp(appid);
     }
-    
+
     private TaskCompletionSource? loginTcs;
-    
+
     /// <summary>
     /// Logs in with a JWT refresh token, which you can get from the new credentials or QR flow.
     /// </summary>
@@ -93,29 +148,29 @@ public sealed class UserHelper : IDisposable
     /// <param name="refreshToken">The token to log in with. This must be a REFRESH token and not an AUTH token, even for ephemeral logins.</param>
     /// <returns>A task which will eventually resolve or error.</returns>
     [PublicAPI]
-    public async Task LogOn(string username, string refreshToken)
+    public async Task LogOnWithToken(string username, string refreshToken)
     {
         if (string.IsNullOrEmpty(username))
             throw new ArgumentException("username must not be null.", nameof(username));
-        
+
         if (string.IsNullOrEmpty(refreshToken))
             throw new ArgumentException("refreshToken must not be null.", nameof(refreshToken));
-        
+
         if (loginTcs != null)
             throw new InvalidOperationException("Login is already in progress!");
 
         if (LoggedIn)
             throw new InvalidOperationException("Already logged in");
-        
+
         var userSteamID = ParseTokenAndGetSteamID(refreshToken);
         clientUser.SetLoginToken(refreshToken, username);
-        
+
         await LogOnInternal(userSteamID);
     }
-    
+
     /// <summary>
     /// Logs in with a username/password combo. You must provide a Steam Guard code if SG is enabled.
-    /// This is soft-deprecated in ClientDLL, you should use <see cref="LogOn(string,string)"/> instead.
+    /// This is soft-deprecated in ClientDLL, you should use <see cref="LogOnWithToken(string,string)"/> instead.
     /// May sometimes not remember credentials.
     /// </summary>
     /// <param name="steamID">The SteamID of the account being logged in to.</param>
@@ -126,28 +181,28 @@ public sealed class UserHelper : IDisposable
     /// <remarks>The login APIs are not thread-safe.</remarks>
     /// <returns>A task which will eventually resolve or error.</returns>
     [PublicAPI]
-    public async Task LogOn(CSteamID steamID, string username, string password, string? steamGuardCode, bool remember)
+    public async Task LogOnLegacy(CSteamID steamID, string username, string password, string? steamGuardCode, bool remember)
     {
         if (!steamID.IsValid())
             throw new ArgumentException("Login SteamID is invalid.", nameof(steamID));
-        
+
         if (string.IsNullOrEmpty(username))
             throw new ArgumentException("username must not be null.", nameof(username));
-        
+
         if (loginTcs != null)
             throw new InvalidOperationException("Login is already in progress!");
-        
+
         if (LoggedIn)
             throw new InvalidOperationException("Already logged in");
-        
+
         clientUser.SetLoginInformation(username, password, remember);
         if (!string.IsNullOrEmpty(steamGuardCode)) {
             clientUser.SetTwoFactorCode(steamGuardCode);
         }
-        
+
         await LogOnInternal(steamID);
     }
-    
+
     /// <summary>
     /// Logs in with cached credentials.
     /// </summary>
@@ -156,20 +211,20 @@ public sealed class UserHelper : IDisposable
     /// <remarks>The login APIs are not thread-safe.</remarks>
     /// <returns>A task which will eventually resolve or error.</returns>
     [PublicAPI]
-    public async Task LogOn(CSteamID steamID, string username)
+    public async Task LogOnWithCached(CSteamID steamID, string username)
     {
         if (!steamID.IsValid())
             throw new ArgumentException("Login SteamID is invalid.", nameof(steamID));
 
         if (!clientUser.BHasCachedCredentials(username))
-            throw new WrappedEResultException(EResult.NoMatch);
-        
+            throw new EResultException(EResult.NoMatch);
+
         if (loginTcs != null)
             throw new InvalidOperationException("Login is already in progress!");
-        
+
         if (LoggedIn)
             throw new InvalidOperationException("Already logged in");
-        
+
         clientUser.SetAccountNameForCachedCredentialLogin(username);
         await LogOnInternal(steamID);
     }
@@ -183,8 +238,8 @@ public sealed class UserHelper : IDisposable
     //TODO: What is the AccountID we're meant to use here?
     [PublicAPI]
     public async Task LogOnAnonymous()
-        => await LogOn(new(1, EUniverse.Public, EAccountType.AnonUser), "anonymous", "g", null, false);
-    
+        => await LogOnLegacy(new(1, EUniverse.Public, EAccountType.AnonUser), "anonymous", "g", null, false);
+
     /// <summary>
     /// Check if the given account name has cached credentials.
     /// </summary>
@@ -195,12 +250,12 @@ public sealed class UserHelper : IDisposable
     private async Task LogOnInternal(CSteamID steamid)
     {
         loginTcs = new();
-        
+
         var startLogonResult = clientUser.LogOn(steamid);
         if (startLogonResult != EResult.OK)
         {
             loginTcs = null;
-            throw new WrappedEResultException(startLogonResult);
+            throw new EResultException(startLogonResult);
         }
 
         await loginTcs.Task;
@@ -213,7 +268,7 @@ public sealed class UserHelper : IDisposable
         var splitParts = token.Split('.');
         if (splitParts.Length < 2)
             throw new ArgumentException("Not a valid JWT.", nameof(token));
-        
+
         string payload = splitParts[1];
 
         // The base64 is not padded properly. Add padding if necessary (FromBase64String is standards-enforcing, meaning it doesn't take in anything but perfect strings)
@@ -232,7 +287,7 @@ public sealed class UserHelper : IDisposable
         string? steamidStr = (string?)obj["sub"];
         if (string.IsNullOrEmpty(steamidStr))
             throw new ArgumentException("JWT payload does not contain 'subject' field.", nameof(token));
-        
+
         if (!ulong.TryParse(steamidStr, out ulong result))
             throw new ArgumentException("JWT 'subject' field is not a numeric SteamID", nameof(token));
 
@@ -255,7 +310,7 @@ public sealed class UserHelper : IDisposable
         get => clientUtils.GetOfflineMode();
         set => clientUtils.SetOfflineMode(value);
     }
-    
+
     /// <summary>
     /// Is the current user logged in (potentially in offline mode)
     /// </summary>
@@ -269,14 +324,14 @@ public sealed class UserHelper : IDisposable
     [PublicAPI]
     public bool Anonymous
         => SteamID.AccountType == EAccountType.AnonUser;
-    
+
     /// <summary>
     /// The SteamID of the currently logged-in user.
     /// </summary>
     [PublicAPI]
-    public CSteamID SteamID 
+    public CSteamID SteamID
         => clientUser.GetSteamID();
-    
+
     /// <summary>
     /// The account name of the currently logged-in user.
     /// </summary>
@@ -294,7 +349,33 @@ public sealed class UserHelper : IDisposable
             return name;
         }
     }
-    
+
+    private Dictionary<AppId_t, RTime32> appLastPlayedMap = new();
+    private Dictionary<AppId_t, AppPlaytime_t> appPlaytimeMap = new();
+
+    public IReadOnlyDictionary<AppId_t, RTime32> AppLastPlayedMap => appLastPlayedMap;
+    public IReadOnlyDictionary<AppId_t, AppPlaytime_t> AppPlaytimeMap => appPlaytimeMap;
+
+
+    public HashSet<AppId_t> PlayedApps
+    {
+        get
+        {
+            HashSet<AppId_t> apps = new();
+            //TODO: There's probably a better way
+            foreach (var item in appLastPlayedMap)
+            {
+                if (item.Value == 0) {
+                    continue;
+                }
+
+                apps.Add(item.Key);
+            }
+
+            return apps;
+        }
+    }
+
     /// <summary>
     /// Try to get the account name for a specified SteamID.
     /// Do not confuse with the username, the account name is used for login purposes only and cannot be changed.
@@ -319,5 +400,6 @@ public sealed class UserHelper : IDisposable
 
         cbPostLogonState.Dispose();
         cbConnectFailure.Dispose();
+        cbServersDisconnected.Dispose();
     }
 }

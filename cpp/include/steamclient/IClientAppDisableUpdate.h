@@ -14,5 +14,5 @@
 class IClientAppDisableUpdate
 {
 public:
-    virtual void SetAppUpdateDisabledSecondsRemaining(AppId_t appId, uint32_t disableLength) = 0; //argc: 2, index 1
+    virtual void SetAppUpdateDisabledSecondsRemaining(AppId_t appId, uint32_t disableLength) = 0; //argc: -1, index 1
 };

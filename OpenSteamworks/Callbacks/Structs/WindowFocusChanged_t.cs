@@ -18,4 +18,8 @@ public struct WindowFocusChanged_t
     public byte unk4;
     public byte unk5;
     public byte unk6;
+    public byte unk7;
+    public byte unk8;
+    public byte unk9;
+    public byte unk10;
 }

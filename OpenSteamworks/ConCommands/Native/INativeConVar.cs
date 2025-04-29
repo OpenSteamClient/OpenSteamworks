@@ -3,6 +3,7 @@ using CppSourceGen.Attributes;
 using OpenSteamworks.ConCommands.Interfaces;
 using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
+using OpenSteamworks.Data.Interop;
 
 namespace OpenSteamworks.ConCommands.Native;
 

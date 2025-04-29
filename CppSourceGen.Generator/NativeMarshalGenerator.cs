@@ -10,12 +10,12 @@ namespace CppSourceGen.Generator;
 public class NativeMarshalGenerator
 {
     public const string THROW_ON_REMOTE_PIPE_ATTRIBUTE = "OpenSteamworks.Attributes.BlacklistedInCrossProcessIPCAttribute";
-    
+
     public VarOrArgInfo RefNative { get; }
     public VarOrArgInfo? VTPtr { get; }
     public TypeInfo InterfaceType { get; }
     public TypeInfo TargetType { get; }
-    
+
 
     private readonly SourceProductionContext? context;
 
@@ -46,7 +46,7 @@ public class NativeMarshalGenerator
         StringBuilder preCallBuilder = new();
         StringBuilder postCallBuilder = new();
         StringBuilder finallyBuilder = new();
-        
+
         var fnPtrArgs = new List<VarOrArgInfo>();
         var nativeArgs = new List<VarOrArgInfo>();
 
@@ -69,7 +69,7 @@ public class NativeMarshalGenerator
             returnWrapType = WrapType.ManagedToNative;
             preCallBuilder.AppendLine($"var wrapper = CppClassMarshal.GetManagedForPtr<{TargetType.FullName}>(native);");
         }
-        
+
         foreach (var managedArg in managedFunc.Arguments)
         {
             var marshaller = Marshallers.GetMarshalInfo(managedArg);
@@ -92,23 +92,23 @@ public class NativeMarshalGenerator
             {
                 nativeArgs.Add(marshaller.MarshalledVariable);
             }
-            
+
             marshaller.WrapFunction(preCallBuilder, postCallBuilder, finallyBuilder, definedVariablesBuilder, context, wrapType, true);
         }
 
         var managedReturn = new VarOrArgInfo(managedFunc.ReturnType ?? TypeInfo.VoidType, "ret", refKind: managedFunc.ReturnRefKind);
         var returnMarshal = Marshallers.GetMarshalInfo(managedReturn);
-        
+
         if (managedReturn.Type != TypeInfo.VoidType && managedFunc.ReturnRefKind == RefKind.None)
             definedVariablesBuilder.AppendLine($"{managedReturn.GetVariableDeclaration()};");
-        
+
         returnMarshal.WrapFunction(postCallBuilder, postCallBuilder, finallyBuilder, definedVariablesBuilder, context, returnWrapType, false);
 
         if (nativeArgs.Count == 0)
         {
             nativeArgs.AddRange(orderedArguments.OrderBy(a => a.Key).Select(a => a.Value));
         }
-        
+
         fnPtrArgs.AddRange(nativeArgs);
         fnPtrArgs.Add(returnMarshal.MarshalledVariable);
 
@@ -131,9 +131,9 @@ public class NativeMarshalGenerator
         {
             initializer = $"&{usedName}";
         }
-        
+
         nativeToManagedFuncInfo = new FunctionInfo(usedName, nativeArgs, returnMarshal.MarshalledVariable.Type);
-        
+
         var nativeFuncPtr = new VarOrArgInfo(TypeInfo.MakeUnmanagedDelegateType(fnPtrArgs, SignatureCallingConvention.ThisCall), usedName + "VTPtr", initializer);
         usedNames.Add(usedName);
 
@@ -151,8 +151,8 @@ public class NativeMarshalGenerator
                 nativeRetStr = $"{returnMarshal.MarshalledVariable.Name} = ";
                 managedRetStr = $"{returnMarshal.SourceArgument.Name} = ";
             }
-             
-            
+
+
 
             if (wrapType == WrapType.NativeToManaged)
             {
@@ -174,16 +174,11 @@ public class NativeMarshalGenerator
             {
                 if (string.IsNullOrWhiteSpace(line))
                     continue;
-                
+
                 builder.AppendLine(indent + line);
             }
         }
-        
-        if (managedFunc.TryGetAttribute(THROW_ON_REMOTE_PIPE_ATTRIBUTE, out _))
-        {
-            builder.AppendLine("OpenSteamworks.SteamClient.ThrowIfRemotePipe(wrapper);");
-        }
-        
+
         if (definedVariablesBuilder.Length > 0)
             builder.AppendLine(definedVariablesBuilder.ToString());
 
@@ -191,9 +186,16 @@ public class NativeMarshalGenerator
         {
             builder.AppendLine("try {");
         }
-        
+
         if (preCallBuilder.Length > 0)
             AppendLineIndented(preCallBuilder.ToString());
+
+        AppendLineIndented($"OpenSteamworks.SteamClient.OnInterfaceCall(wrapper, \"{InterfaceType.Name}\", \"{managedFunc.Name}\");");
+
+        if (managedFunc.TryGetAttribute(THROW_ON_REMOTE_PIPE_ATTRIBUTE, out _))
+        {
+            AppendLineIndented("OpenSteamworks.SteamClient.ThrowIfRemotePipe(wrapper);");
+        }
 
         if (wrapType == WrapType.ManagedToNative)
         {
@@ -202,7 +204,7 @@ public class NativeMarshalGenerator
         {
             AppendLineIndented($"{managedRetStr}wrapper.{managedFunc.Name}({string.Join(", ", managedFunc.Arguments.Select(n => n.AsFedParam()))});");
         }
-        
+
         if (postCallBuilder.Length > 0)
             AppendLineIndented(postCallBuilder.ToString());
 
@@ -216,7 +218,7 @@ public class NativeMarshalGenerator
         marshalBody = builder.ToString();
         return nativeFuncPtr;
     }
-    
+
     public string GenerateSetter(VarOrArgInfo nativeVar, TypeInfo managedType)
     {
         StringBuilder definedVariablesBuilder = new();
@@ -225,29 +227,29 @@ public class NativeMarshalGenerator
         StringBuilder finallyBuilder = new();
 
         VarOrArgInfo valueArg = new VarOrArgInfo(managedType, "value");
-        
+
         var marshalInfo = Marshallers.GetMarshalInfo(valueArg);
         marshalInfo.WrapMtoNFunction(preCallBuilder, postCallBuilder, finallyBuilder, definedVariablesBuilder, context);
-        
+
         StringBuilder builder = new();
 
         bool hasFinally = finallyBuilder.Length > 0;
         int indent = 1;
-        
+
         void AppendLineIndented(string lines)
         {
             foreach (var line in lines.Split('\n'))
             {
                 if (string.IsNullOrWhiteSpace(line))
                     continue;
-                
+
                 builder.AppendLine("\t".Repeat(indent) + line);
             }
         }
-        
+
         AppendLineIndented("set {");
         indent++;
-        
+
         if (definedVariablesBuilder.Length > 0)
             AppendLineIndented(definedVariablesBuilder.ToString());
 
@@ -256,12 +258,12 @@ public class NativeMarshalGenerator
             AppendLineIndented("try {");
             indent++;
         }
-        
+
         if (preCallBuilder.Length > 0)
             AppendLineIndented(preCallBuilder.ToString());
 
         AppendLineIndented($"{nativeVar.Name} = {marshalInfo.MarshalledVariable.Name};");
-        
+
         if (postCallBuilder.Length > 0)
             AppendLineIndented(postCallBuilder.ToString());
 
@@ -274,7 +276,7 @@ public class NativeMarshalGenerator
             indent--;
             AppendLineIndented("}");
         }
-        
+
         indent--;
         AppendLineIndented("}");
 
@@ -295,26 +297,26 @@ public class NativeMarshalGenerator
 
         preCallBuilder.AppendLine($"{marshalInfo.MarshalledVariable.Name} = {nativeVar.Name};");
         marshalInfo.WrapMtoNFunction(preCallBuilder, postCallBuilder, finallyBuilder, definedVariablesBuilder, context);
-        
+
         StringBuilder builder = new();
 
         bool hasFinally = finallyBuilder.Length > 0;
         int indent = 1;
-        
+
         void AppendLineIndented(string lines)
         {
             foreach (var line in lines.Split('\n'))
             {
                 if (string.IsNullOrWhiteSpace(line))
                     continue;
-                
+
                 builder.AppendLine("\t".Repeat(indent) + line);
             }
         }
-        
+
         AppendLineIndented("get {");
         indent++;
-        
+
         if (definedVariablesBuilder.Length > 0)
             AppendLineIndented(definedVariablesBuilder.ToString());
 
@@ -323,13 +325,13 @@ public class NativeMarshalGenerator
             AppendLineIndented("try {");
             indent++;
         }
-        
+
         if (preCallBuilder.Length > 0)
             AppendLineIndented(preCallBuilder.ToString());
-        
+
         if (postCallBuilder.Length > 0)
             AppendLineIndented(postCallBuilder.ToString());
-        
+
         AppendLineIndented($"return {retVar.Name};");
 
         if (hasFinally)
@@ -341,7 +343,7 @@ public class NativeMarshalGenerator
             indent--;
             AppendLineIndented("}");
         }
-        
+
         indent--;
         AppendLineIndented("}");
 

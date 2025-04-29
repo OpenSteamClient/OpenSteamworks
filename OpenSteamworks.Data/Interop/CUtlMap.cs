@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using OpenSteamClient.Logging;
 
-namespace OpenSteamworks.Data;
+namespace OpenSteamworks.Data.Interop;
 
 /// <summary>
 /// Creates a LessFunc for an IComparisonOperators value.

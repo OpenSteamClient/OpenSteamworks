@@ -25,8 +25,8 @@
       "name": "SetSDRLogin",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "848240793",
-      "fencepost": "862708760",
+      "functionid": "848240799",
+      "fencepost": "862611992",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "utlbuf"
@@ -47,8 +47,8 @@
       "name": "InitGameServerSerialized",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "252698481",
-      "fencepost": "267069674",
+      "functionid": "252698479",
+      "fencepost": "266972898",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -68,8 +68,8 @@
       "name": "SetProduct",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2681551296",
-      "fencepost": "2696083779",
+      "functionid": "2681551162",
+      "fencepost": "2695986871",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -80,8 +80,8 @@
       "name": "SetGameDescription",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1912037562",
-      "fencepost": "1926586174",
+      "functionid": "1912037564",
+      "fencepost": "1926489402",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -92,8 +92,8 @@
       "name": "SetModDir",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "852289191",
-      "fencepost": "866805545",
+      "functionid": "852289117",
+      "fencepost": "866708697",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -104,8 +104,8 @@
       "name": "SetDedicatedServer",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2029504920",
-      "fencepost": "2044069661",
+      "functionid": "2029504926",
+      "fencepost": "2043972893",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -116,8 +116,8 @@
       "name": "LogOn",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3321939631",
-      "fencepost": "3336520501",
+      "functionid": "3321939621",
+      "fencepost": "3336423717",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -128,8 +128,8 @@
       "name": "LogOnAnonymous",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2948629200",
-      "fencepost": "2963226199",
+      "functionid": "2948629210",
+      "fencepost": "2963129435",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -138,8 +138,8 @@
       "name": "LogOff",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1264943858",
-      "fencepost": "1279556986",
+      "functionid": "1264943868",
+      "fencepost": "1279460222",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -148,8 +148,8 @@
       "name": "GetSteamID",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3606852013",
-      "fencepost": "3621481270",
+      "functionid": "3606852003",
+      "fencepost": "3621384486",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -160,8 +160,8 @@
       "name": "BLoggedOn",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1703215786",
-      "fencepost": "1717861172",
+      "functionid": "1703215776",
+      "fencepost": "1717764388",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -172,8 +172,8 @@
       "name": "BSecure",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2148671133",
-      "fencepost": "2163332648",
+      "functionid": "2148671127",
+      "fencepost": "2163235868",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -184,8 +184,8 @@
       "name": "WasRestartRequested",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2777263381",
-      "fencepost": "2791973283",
+      "functionid": "2777263375",
+      "fencepost": "2791876503",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -196,8 +196,8 @@
       "name": "SetMaxPlayerCount",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1361226901",
-      "fencepost": "1375952932",
+      "functionid": "1361226895",
+      "fencepost": "1375856152",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -208,8 +208,8 @@
       "name": "SetBotPlayerCount",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3618134695",
-      "fencepost": "3632876855",
+      "functionid": "3618134713",
+      "fencepost": "3632780099",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -220,8 +220,8 @@
       "name": "SetServerName",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "199438601",
-      "fencepost": "214196890",
+      "functionid": "199438615",
+      "fencepost": "214100130",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -232,8 +232,8 @@
       "name": "SetMapName",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2438250575",
-      "fencepost": "2453024993",
+      "functionid": "2438250581",
+      "fencepost": "2452928225",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -244,8 +244,8 @@
       "name": "SetPasswordProtected",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1661475519",
-      "fencepost": "1676266066",
+      "functionid": "1661475493",
+      "fencepost": "1676169266",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -256,8 +256,8 @@
       "name": "SetSpectatorPort",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "4247042844",
-      "fencepost": "4261849520",
+      "functionid": "4247042842",
+      "fencepost": "4261752744",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -268,8 +268,8 @@
       "name": "SetSpectatorServerName",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "201896104",
-      "fencepost": "216718909",
+      "functionid": "201896110",
+      "fencepost": "216622141",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -280,8 +280,8 @@
       "name": "ClearAllKeyValues",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "369569504",
-      "fencepost": "384408438",
+      "functionid": "369569514",
+      "fencepost": "384311674",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -290,8 +290,8 @@
       "name": "SetKeyValue",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1234045006",
-      "fencepost": "1248900069",
+      "functionid": "1234044996",
+      "fencepost": "1248803285",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -303,8 +303,8 @@
       "name": "SetGameTags",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3572024701",
-      "fencepost": "3586895893",
+      "functionid": "3572024691",
+      "fencepost": "3586799109",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -315,8 +315,8 @@
       "name": "SetGameData",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1327526539",
-      "fencepost": "1342413860",
+      "functionid": "1327526533",
+      "fencepost": "1342317080",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -327,8 +327,8 @@
       "name": "SetRegion",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1687366798",
-      "fencepost": "1702270248",
+      "functionid": "1687366788",
+      "fencepost": "1702173464",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -339,8 +339,8 @@
       "name": "SendUserConnectAndAuthenticate",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3985372122",
-      "fencepost": "4000372346",
+      "functionid": "3985372112",
+      "fencepost": "4000275562",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -356,8 +356,8 @@
       "name": "CreateUnauthenticatedUserConnection",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2185578489",
-      "fencepost": "2200627100",
+      "functionid": "2185578435",
+      "fencepost": "2200530272",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -368,8 +368,8 @@
       "name": "SendUserDisconnect",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "4151857856",
-      "fencepost": "4166922596",
+      "functionid": "4151857862",
+      "fencepost": "4166825828",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -380,8 +380,8 @@
       "name": "BUpdateUserData",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1794128654",
-      "fencepost": "1809209523",
+      "functionid": "1794128648",
+      "fencepost": "1809112743",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -396,8 +396,8 @@
       "name": "GetAuthSessionTicket",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3383734073",
-      "fencepost": "3398879458",
+      "functionid": "3383734067",
+      "fencepost": "3398782678",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -412,8 +412,8 @@
       "name": "GetAuthSessionTicketV2",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "789781911",
-      "fencepost": "805056328",
+      "functionid": "789781905",
+      "fencepost": "804959548",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -429,8 +429,8 @@
       "name": "BeginAuthSession",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2255415880",
-      "fencepost": "2270819329",
+      "functionid": "2255415886",
+      "fencepost": "2270722561",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -445,8 +445,8 @@
       "name": "EndAuthSession",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2596259189",
-      "fencepost": "2611694896",
+      "functionid": "2596259199",
+      "fencepost": "2611598132",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -457,8 +457,8 @@
       "name": "CancelAuthTicket",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1265213011",
-      "fencepost": "1280664847",
+      "functionid": "1265213013",
+      "fencepost": "1280568075",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -469,8 +469,8 @@
       "name": "IsUserSubscribedAppInTicket",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2470779420",
-      "fencepost": "2486247385",
+      "functionid": "2470779418",
+      "fencepost": "2486150609",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -484,8 +484,8 @@
       "name": "RequestUserGroupStatus",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2524837818",
-      "fencepost": "2540321912",
+      "functionid": "2524837824",
+      "fencepost": "2540225144",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -499,8 +499,8 @@
       "name": "GetGameplayStats",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2514232041",
-      "fencepost": "2529732264",
+      "functionid": "2514231955",
+      "fencepost": "2529635404",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -509,8 +509,8 @@
       "name": "GetServerReputation",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1750005606",
-      "fencepost": "1765521958",
+      "functionid": "1750005528",
+      "fencepost": "1765425106",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -521,8 +521,8 @@
       "name": "GetPublicIP",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "836182098",
-      "fencepost": "851714579",
+      "functionid": "836182060",
+      "fencepost": "851617767",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -533,8 +533,8 @@
       "name": "EnableHeartbeats",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2901081307",
-      "fencepost": "2916629917",
+      "functionid": "2901081249",
+      "fencepost": "2916533085",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -545,8 +545,8 @@
       "name": "SetHeartbeatInterval",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1665608280",
-      "fencepost": "1681173019",
+      "functionid": "1665608226",
+      "fencepost": "1681076191",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -557,8 +557,8 @@
       "name": "ForceHeartbeat",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2769745068",
-      "fencepost": "2785325936",
+      "functionid": "2769745066",
+      "fencepost": "2785229160",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -567,8 +567,8 @@
       "name": "GetLogonState",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3009909644",
-      "fencepost": "3024587288",
+      "functionid": "3009909642",
+      "fencepost": "3024490512",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -579,8 +579,8 @@
       "name": "BConnected",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "416045599",
-      "fencepost": "430739372",
+      "functionid": "416045593",
+      "fencepost": "430642592",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -591,8 +591,8 @@
       "name": "RaiseConnectionPriority",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1783790057",
-      "fencepost": "1799403183",
+      "functionid": "1783790051",
+      "fencepost": "1799306403",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -605,8 +605,8 @@
       "name": "ResetConnectionPriority",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "8074144",
-      "fencepost": "23703399",
+      "functionid": "8074154",
+      "fencepost": "23606635",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -617,8 +617,8 @@
       "name": "SetCellID",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2589721049",
-      "fencepost": "2605382562",
+      "functionid": "2589721047",
+      "fencepost": "2605285786",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -629,8 +629,8 @@
       "name": "TrackSteamUsageEvent",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3722709681",
-      "fencepost": "3738467968",
+      "functionid": "3722709691",
+      "fencepost": "3738371204",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -643,8 +643,8 @@
       "name": "SetCountOfSimultaneousGuestUsersPerSteamAccount",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1175073177",
-      "fencepost": "1190895980",
+      "functionid": "1175073155",
+      "fencepost": "1190799184",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -655,8 +655,8 @@
       "name": "EnumerateConnectedUsers",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3388699937",
-      "fencepost": "3404587256",
+      "functionid": "3388699943",
+      "fencepost": "3404490488",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -670,8 +670,8 @@
       "name": "AssociateWithClan",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2315000056",
-      "fencepost": "2330935762",
+      "functionid": "2315000050",
+      "fencepost": "2330838982",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -684,8 +684,8 @@
       "name": "ComputeNewPlayerCompatibility",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2162986263",
-      "fencepost": "2178938098",
+      "functionid": "2162986269",
+      "fencepost": "2178841330",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -698,8 +698,8 @@
       "name": "_BGetUserAchievementStatus",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3495569143",
-      "fencepost": "3511633881",
+      "functionid": "3495569101",
+      "fencepost": "3511537065",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -713,8 +713,8 @@
       "name": "_GSSetSpawnCount",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3072768277",
-      "fencepost": "3088865273",
+      "functionid": "3072768275",
+      "fencepost": "3088768497",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -725,8 +725,8 @@
       "name": "_GSGetSteam2GetEncryptionKeyToSendToNewClient",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2874681327",
-      "fencepost": "2891149290",
+      "functionid": "2874681313",
+      "fencepost": "2891052502",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -741,8 +741,8 @@
       "name": "_GSSendSteam2UserConnect",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "86838643",
-      "fencepost": "103080800",
+      "functionid": "86838645",
+      "fencepost": "102984028",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -761,8 +761,8 @@
       "name": "_GSSendSteam3UserConnect",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3566358733",
-      "fencepost": "3582729922",
+      "functionid": "3566358739",
+      "fencepost": "3582633154",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -778,8 +778,8 @@
       "name": "_GSSendUserConnect",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3289429438",
-      "fencepost": "3306171594",
+      "functionid": "3289429428",
+      "fencepost": "3306074810",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -796,8 +796,8 @@
       "name": "_GSRemoveUserConnect",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "775705915",
-      "fencepost": "791980330",
+      "functionid": "775705889",
+      "fencepost": "791883530",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -810,8 +810,8 @@
       "name": "_GSUpdateStatus",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1534974729",
-      "fencepost": "1551523337",
+      "functionid": "1534975223",
+      "fencepost": "1551427057",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -829,8 +829,8 @@
       "name": "_GSCreateUnauthenticatedUser",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2109956202",
-      "fencepost": "2126553197",
+      "functionid": "2109958036",
+      "fencepost": "2126458257",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -842,8 +842,8 @@
       "name": "_GSSetServerType",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "1735495879",
-      "fencepost": "1752350938",
+      "functionid": "1735495901",
+      "fencepost": "1752254186",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -864,8 +864,8 @@
       "name": "_SetBasicServerData",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "3201027883",
-      "fencepost": "3217818426",
+      "functionid": "3201027889",
+      "fencepost": "3217721658",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2",
@@ -882,8 +882,8 @@
       "name": "_GSSendUserDisconnect",
       "argc": "-1",
       "interfaceid": "2",
-      "functionid": "2465847919",
-      "fencepost": "2482670720",
+      "functionid": "2465847921",
+      "fencepost": "2482573948",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",

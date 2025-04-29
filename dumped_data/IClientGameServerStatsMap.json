@@ -5,7 +5,7 @@
       "name": "RequestUserStats",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "4286444736",
+      "functionid": "4286444750",
       "fencepost": "0",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
@@ -21,8 +21,8 @@
       "name": "GetUserStat",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "1255083846",
-      "fencepost": "1272666996",
+      "functionid": "1255083852",
+      "fencepost": "1272570228",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -38,8 +38,8 @@
       "name": "GetUserStat",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "2919882735",
-      "fencepost": "2937611046",
+      "functionid": "2919882729",
+      "fencepost": "2937514266",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -55,8 +55,8 @@
       "name": "GetUserAchievement",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "3299260750",
-      "fencepost": "3317150351",
+      "functionid": "3299260744",
+      "fencepost": "3317053571",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -73,8 +73,8 @@
       "name": "SetUserStat",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "3205090887",
-      "fencepost": "3223061133",
+      "functionid": "3205090889",
+      "fencepost": "3222964361",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -90,8 +90,8 @@
       "name": "SetUserStat",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "1792940436",
-      "fencepost": "1810926811",
+      "functionid": "1792940442",
+      "fencepost": "1810830043",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -107,8 +107,8 @@
       "name": "UpdateUserAvgRateStat",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "3675028853",
-      "fencepost": "3693031357",
+      "functionid": "3675028863",
+      "fencepost": "3692934593",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -125,8 +125,8 @@
       "name": "SetUserAchievement",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "4021600239",
-      "fencepost": "4039618872",
+      "functionid": "4021600229",
+      "fencepost": "4039522088",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -141,8 +141,8 @@
       "name": "ClearUserAchievement",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "2754240107",
-      "fencepost": "2772274869",
+      "functionid": "2754240109",
+      "fencepost": "2772178097",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -157,8 +157,8 @@
       "name": "StoreUserStats",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "2660856856",
-      "fencepost": "2678907747",
+      "functionid": "2660856862",
+      "fencepost": "2678810979",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -172,8 +172,8 @@
       "name": "SetMaxStatsLoaded",
       "argc": "-1",
       "interfaceid": "20",
-      "functionid": "2833452857",
-      "fencepost": "2851536006",
+      "functionid": "2833452803",
+      "fencepost": "2851439178",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"

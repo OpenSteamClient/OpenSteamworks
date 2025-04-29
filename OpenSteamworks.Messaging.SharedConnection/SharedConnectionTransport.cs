@@ -1,5 +1,6 @@
 using OpenSteamClient.Logging;
 using OpenSteamworks.Data;
+using OpenSteamworks.Data.Interop;
 using OpenSteamworks.Generated;
 using OpenSteamworks.Protobuf;
 
@@ -16,42 +17,43 @@ public sealed class SharedConnectionTransport : BaseConnectionTransport
     private readonly IClientSharedConnection sharedConnection;
     private readonly ILogger logger;
     private readonly HSharedConnection handle;
-    
+
     private CUtlBuffer msgBuf = new(256);
-    
+
     public SharedConnectionTransport(ISteamClient steamClient, ILoggerFactory loggerFactory)
     {
         this.user = steamClient.IClientUser;
         this.sharedConnection = steamClient.IClientSharedConnection;
-        
+
         this.logger = loggerFactory.CreateLogger($"SharedConnectionTransport-{this.handle}");
-        
+
         this.handle = sharedConnection.AllocateSharedConnection();
-        sharedConnection.InitiateConnection(this.handle);
-        
+
+        // InitiateConnection does not seem to do the same thing as the below, so just do this for now
+        if (!steamClient.IClientUser.BConnected())
+            steamClient.IClientUser.EConnect();
+
         frameTask = steamClient.CallbackManager.AddFrameTask(RunFrame);
     }
-    
+
     private void RunFrame()
     {
         if (IsDisposed)
             return;
-        
-        msgBuf.SeekRead(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
-        msgBuf.SeekWrite(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
+
+        msgBuf.Reset();
         while (sharedConnection.BPopReceivedMessage(handle, in msgBuf, out var hCall))
         {
             msgBuf.SeekRead(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
             // Don't need to seek read afterwards, since this operation will always reset it to zero anyhow.
             OnMsgDataReceived(msgBuf.GetReadSpan(), hCall);
-            msgBuf.SeekWrite(CUtlBuffer.SeekType_t.SEEK_HEAD, 0);
         }
     }
 
     private void OnMsgDataReceived(ReadOnlySpan<byte> msgData, HSharedConnectionMsg hCall)
     {
         logger.Debug($"Got message, handle: {hCall}, size: {msgData.Length}");
-        
+
         var msg = MsgBase.GetMsg(msgData);
         logger.Debug($"Msg data: {msg}");
         lock (waitingHandlersLock)
@@ -65,7 +67,7 @@ public sealed class SharedConnectionTransport : BaseConnectionTransport
         OnMessageReceived(msg);
     }
 
-    
+
     public override void Dispose()
     {
         base.Dispose();
@@ -84,10 +86,10 @@ public sealed class SharedConnectionTransport : BaseConnectionTransport
     public override void Send(IMessage message, EMsg responseEMsg = EMsg.Invalid, ResponseHandler? responseCallback = null)
     {
         base.Send(message, responseEMsg, responseCallback);
-        
+
         using var stream = new MemoryStream();
         message.Serialize(stream);
-        
+
         if (responseEMsg != EMsg.Invalid && responseCallback != null)
         {
             lock (waitingHandlersLock)
@@ -99,7 +101,7 @@ public sealed class SharedConnectionTransport : BaseConnectionTransport
 
             return;
         }
-        
+
         if (!sharedConnection.SendMessage(handle, stream.ToArray(), (uint)stream.Length))
         {
             logger.Error("Failed to SendMessage()!");

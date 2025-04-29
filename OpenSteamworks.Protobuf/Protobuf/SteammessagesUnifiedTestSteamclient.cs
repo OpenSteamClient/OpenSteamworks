@@ -34,20 +34,30 @@ namespace OpenSteamworks.Protobuf {
             "ASABKAkiNQogQ01zZ1Rlc3RfTWVzc2FnZVRvU2VydmVyX1JlcXVlc3QSEQoJ",
             "c29tZV90ZXh0GAEgASgJIjYKIUNNc2dUZXN0X01lc3NhZ2VUb1NlcnZlcl9S",
             "ZXNwb25zZRIRCglzb21lX3RleHQYASABKAkiNwoiQ01zZ1Rlc3RfTm90aWZ5",
-            "U2VydmVyX05vdGlmaWNhdGlvbhIRCglzb21lX3RleHQYASABKAkiGQoXQ01z",
-            "Z1Rlc3RfTm9Cb2R5X1JlcXVlc3QiMQocQ01zZ1Rlc3RfQ2FsbENsaWVudF9S",
-            "ZXNwb25zZRIRCgl0ZXN0dmFsdWUYASABKAUyswEKD1Rlc3RTdGVhbUNsaWVu",
-            "dBJYCg9NZXNzYWdlVG9DbGllbnQSIS5DTXNnVGVzdF9NZXNzYWdlVG9DbGll",
-            "bnRfUmVxdWVzdBoiLkNNc2dUZXN0X01lc3NhZ2VUb0NsaWVudF9SZXNwb25z",
-            "ZRJACgxOb3RpZnlDbGllbnQSIy5DTXNnVGVzdF9Ob3RpZnlDbGllbnRfTm90",
-            "aWZpY2F0aW9uGgsuTm9SZXNwb25zZRoEwLUYAjKyAQoUVGVzdFNlcnZlckZy",
-            "b21DbGllbnQSWAoPTWVzc2FnZVRvU2VydmVyEiEuQ01zZ1Rlc3RfTWVzc2Fn",
-            "ZVRvU2VydmVyX1JlcXVlc3QaIi5DTXNnVGVzdF9NZXNzYWdlVG9TZXJ2ZXJf",
-            "UmVzcG9uc2USQAoMTm90aWZ5U2VydmVyEiMuQ01zZ1Rlc3RfTm90aWZ5U2Vy",
-            "dmVyX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2UyXgoVVGVzdEV4dGVybmFs",
-            "UHJpdmlsZWdlEkUKCkNhbGxDbGllbnQSGC5DTXNnVGVzdF9Ob0JvZHlfUmVx",
-            "dWVzdBodLkNNc2dUZXN0X0NhbGxDbGllbnRfUmVzcG9uc2VCHYABAaoCF09w",
-            "ZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
+            "U2VydmVyX05vdGlmaWNhdGlvbhIRCglzb21lX3RleHQYASABKAkiMAofQ01z",
+            "Z1Rlc3RfVGVzdENsaWVudENhbGxfUmVxdWVzdBINCgVwYXJhbRgBIAEoBSIy",
+            "CiBDTXNnVGVzdF9UZXN0Q2xpZW50Q2FsbF9SZXNwb25zZRIOCgZyZXN1bHQY",
+            "ASABKAUiGQoXQ01zZ1Rlc3RfTm9Cb2R5X1JlcXVlc3QiMQocQ01zZ1Rlc3Rf",
+            "Q2FsbENsaWVudF9SZXNwb25zZRIRCgl0ZXN0dmFsdWUYASABKAUyswEKD1Rl",
+            "c3RTdGVhbUNsaWVudBJYCg9NZXNzYWdlVG9DbGllbnQSIS5DTXNnVGVzdF9N",
+            "ZXNzYWdlVG9DbGllbnRfUmVxdWVzdBoiLkNNc2dUZXN0X01lc3NhZ2VUb0Ns",
+            "aWVudF9SZXNwb25zZRJACgxOb3RpZnlDbGllbnQSIy5DTXNnVGVzdF9Ob3Rp",
+            "ZnlDbGllbnRfTm90aWZpY2F0aW9uGgsuTm9SZXNwb25zZRoEwLUYAjKaBAoU",
+            "VGVzdFNlcnZlckZyb21DbGllbnQSWAoPTWVzc2FnZVRvU2VydmVyEiEuQ01z",
+            "Z1Rlc3RfTWVzc2FnZVRvU2VydmVyX1JlcXVlc3QaIi5DTXNnVGVzdF9NZXNz",
+            "YWdlVG9TZXJ2ZXJfUmVzcG9uc2USQAoMTm90aWZ5U2VydmVyEiMuQ01zZ1Rl",
+            "c3RfTm90aWZ5U2VydmVyX05vdGlmaWNhdGlvbhoLLk5vUmVzcG9uc2USWAoR",
+            "Q2xpZW50Q2FsbEF1dGhlZDESIC5DTXNnVGVzdF9UZXN0Q2xpZW50Q2FsbF9S",
+            "ZXF1ZXN0GiEuQ01zZ1Rlc3RfVGVzdENsaWVudENhbGxfUmVzcG9uc2USWAoR",
+            "Q2xpZW50Q2FsbEF1dGhlZDISIC5DTXNnVGVzdF9UZXN0Q2xpZW50Q2FsbF9S",
+            "ZXF1ZXN0GiEuQ01zZ1Rlc3RfVGVzdENsaWVudENhbGxfUmVzcG9uc2USWAoR",
+            "Q2xpZW50Q2FsbEF1dGhlZDMSIC5DTXNnVGVzdF9UZXN0Q2xpZW50Q2FsbF9S",
+            "ZXF1ZXN0GiEuQ01zZ1Rlc3RfVGVzdENsaWVudENhbGxfUmVzcG9uc2USWAoR",
+            "Q2xpZW50Q2FsbEF1dGhlZDQSIC5DTXNnVGVzdF9UZXN0Q2xpZW50Q2FsbF9S",
+            "ZXF1ZXN0GiEuQ01zZ1Rlc3RfVGVzdENsaWVudENhbGxfUmVzcG9uc2UyXgoV",
+            "VGVzdEV4dGVybmFsUHJpdmlsZWdlEkUKCkNhbGxDbGllbnQSGC5DTXNnVGVz",
+            "dF9Ob0JvZHlfUmVxdWVzdBodLkNNc2dUZXN0X0NhbGxDbGllbnRfUmVzcG9u",
+            "c2VCHYABAaoCF09wZW5TdGVhbXdvcmtzLlByb3RvYnVm"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesBaseReflection.Descriptor, global::OpenSteamworks.Protobuf.SteammessagesUnifiedBaseSteamclientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,6 +67,8 @@ namespace OpenSteamworks.Protobuf {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgTest_MessageToServer_Request), global::OpenSteamworks.Protobuf.CMsgTest_MessageToServer_Request.Parser, new[]{ "SomeText" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgTest_MessageToServer_Response), global::OpenSteamworks.Protobuf.CMsgTest_MessageToServer_Response.Parser, new[]{ "SomeText" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgTest_NotifyServer_Notification), global::OpenSteamworks.Protobuf.CMsgTest_NotifyServer_Notification.Parser, new[]{ "SomeText" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgTest_TestClientCall_Request), global::OpenSteamworks.Protobuf.CMsgTest_TestClientCall_Request.Parser, new[]{ "Param" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgTest_TestClientCall_Response), global::OpenSteamworks.Protobuf.CMsgTest_TestClientCall_Response.Parser, new[]{ "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgTest_NoBody_Request), global::OpenSteamworks.Protobuf.CMsgTest_NoBody_Request.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.CMsgTest_CallClient_Response), global::OpenSteamworks.Protobuf.CMsgTest_CallClient_Response.Parser, new[]{ "Testvalue" }, null, null, null, null)
           }));
@@ -1338,6 +1350,436 @@ namespace OpenSteamworks.Protobuf {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CMsgTest_TestClientCall_Request : pb::IMessage<CMsgTest_TestClientCall_Request>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgTest_TestClientCall_Request> _parser = new pb::MessageParser<CMsgTest_TestClientCall_Request>(() => new CMsgTest_TestClientCall_Request());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CMsgTest_TestClientCall_Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesUnifiedTestSteamclientReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CMsgTest_TestClientCall_Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CMsgTest_TestClientCall_Request(CMsgTest_TestClientCall_Request other) : this() {
+      _hasBits0 = other._hasBits0;
+      param_ = other.param_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CMsgTest_TestClientCall_Request Clone() {
+      return new CMsgTest_TestClientCall_Request(this);
+    }
+
+    /// <summary>Field number for the "param" field.</summary>
+    public const int ParamFieldNumber = 1;
+    private readonly static int ParamDefaultValue = 0;
+
+    private int param_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Param {
+      get { if ((_hasBits0 & 1) != 0) { return param_; } else { return ParamDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        param_ = value;
+      }
+    }
+    /// <summary>Gets whether the "param" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasParam {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "param" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearParam() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgTest_TestClientCall_Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CMsgTest_TestClientCall_Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Param != other.Param) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasParam) hash ^= Param.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasParam) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Param);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasParam) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Param);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasParam) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Param);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CMsgTest_TestClientCall_Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasParam) {
+        Param = other.Param;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Param = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Param = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CMsgTest_TestClientCall_Response : pb::IMessage<CMsgTest_TestClientCall_Response>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CMsgTest_TestClientCall_Response> _parser = new pb::MessageParser<CMsgTest_TestClientCall_Response>(() => new CMsgTest_TestClientCall_Response());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CMsgTest_TestClientCall_Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::OpenSteamworks.Protobuf.SteammessagesUnifiedTestSteamclientReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CMsgTest_TestClientCall_Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CMsgTest_TestClientCall_Response(CMsgTest_TestClientCall_Response other) : this() {
+      _hasBits0 = other._hasBits0;
+      result_ = other.result_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CMsgTest_TestClientCall_Response Clone() {
+      return new CMsgTest_TestClientCall_Response(this);
+    }
+
+    /// <summary>Field number for the "result" field.</summary>
+    public const int ResultFieldNumber = 1;
+    private readonly static int ResultDefaultValue = 0;
+
+    private int result_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Result {
+      get { if ((_hasBits0 & 1) != 0) { return result_; } else { return ResultDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        result_ = value;
+      }
+    }
+    /// <summary>Gets whether the "result" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasResult {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "result" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearResult() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CMsgTest_TestClientCall_Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CMsgTest_TestClientCall_Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Result != other.Result) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasResult) hash ^= Result.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasResult) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasResult) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Result);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasResult) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Result);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CMsgTest_TestClientCall_Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasResult) {
+        Result = other.Result;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Result = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Result = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CMsgTest_NoBody_Request : pb::IMessage<CMsgTest_NoBody_Request>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1352,7 +1794,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesUnifiedTestSteamclientReflection.Descriptor.MessageTypes[6]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesUnifiedTestSteamclientReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1514,7 +1956,7 @@ namespace OpenSteamworks.Protobuf {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::OpenSteamworks.Protobuf.SteammessagesUnifiedTestSteamclientReflection.Descriptor.MessageTypes[7]; }
+      get { return global::OpenSteamworks.Protobuf.SteammessagesUnifiedTestSteamclientReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

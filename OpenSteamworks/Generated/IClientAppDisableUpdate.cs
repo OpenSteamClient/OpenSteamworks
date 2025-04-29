@@ -18,5 +18,5 @@ namespace OpenSteamworks.Generated;
 [CppClass]
 public unsafe interface IClientAppDisableUpdate
 {
-    public void SetAppUpdateDisabledSecondsRemaining(AppId_t appId, uint disableLength);  // argc: 2, index: 1, ipc args: [bytes4, bytes4], ipc returns: []
+    public void SetAppUpdateDisabledSecondsRemaining(AppId_t appId, uint disableLength);  // argc: -1, index: 1, ipc args: [bytes4, bytes4], ipc returns: []
 }

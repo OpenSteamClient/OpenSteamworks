@@ -21,7 +21,7 @@ internal partial class CConCommandAccessor : INativeConCommandBaseAccessor
     {
         this.handler = handler;
     }
-    
+
     public bool RegisterConCommandBase(INativeConCommandBase commandBase)
     {
         return handler(commandBase);
@@ -37,16 +37,16 @@ public sealed class ConsoleHelper : IDisposable
     {
         this.logger = loggerFactory.CreateLogger("ConsoleHelper");
         this.steamClient = steamClient;
-        
+
         RegisterCommand(new LaunchAppCommand(steamClient, logger));
         RegisterCommand(new DownloadDepotCommand(steamClient, logger));
         RegisterCommand(new DownloadItemCommand(steamClient, logger));
         RegisterCommand(new InstallAppCommand(steamClient, logger));
-        
+
         // Only register native concommands if we're the host.
-        if (steamClient.IsCrossProcess) 
+        if (steamClient.IsCrossProcess)
             return;
-        
+
         this.nativeAccessor = new CConCommandAccessor(OnConCommandRegistered);
         steamClient.IClientEngine.ConCommandInit(nativeAccessor);
     }
@@ -84,7 +84,7 @@ public sealed class ConsoleHelper : IDisposable
     /// <exception cref="NotImplementedException"></exception>
     public void ExecuteCommand(string commandText) // Implementation details: Should split by space, unless there's a " character.
         => throw new NotImplementedException("Command tokenization not implemented.");
-    
+
     /// <summary>
     /// Run a command by inputting separate parts of a command, for example ["download_depot", "730", "731"]
     /// </summary>
@@ -126,7 +126,7 @@ public sealed class ConsoleHelper : IDisposable
             {
                 if (enumerable.Count > 2)
                     logger.Warning(">>> ConVar set operation has more than 1 argument. Ignoring.");
-                    
+
                 conVar.StringValue = enumerable[1];
             }
 
@@ -136,6 +136,6 @@ public sealed class ConsoleHelper : IDisposable
 
     public void Dispose()
     {
-        nativeAccessor.Dispose();
+        nativeAccessor?.Dispose();
     }
 }

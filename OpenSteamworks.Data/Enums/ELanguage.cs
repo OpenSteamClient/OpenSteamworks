@@ -78,7 +78,7 @@ public static class ELanguageConversion {
         return APINameToELanguageMap[apiName];
     }
 
-	public static string APINameFromELanguage(ELanguage eLanguage) {
+	public static string ToAPIName(this ELanguage eLanguage) {
         return ELanguageToAPINameMap[eLanguage];
     }
 }

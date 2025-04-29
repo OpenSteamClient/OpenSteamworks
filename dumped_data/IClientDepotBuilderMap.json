@@ -5,8 +5,8 @@
       "name": "BGetDepotBuildStatus",
       "argc": "-1",
       "interfaceid": "16",
-      "functionid": "4119065423",
-      "fencepost": "4160341566",
+      "functionid": "4119065448",
+      "fencepost": "4159809334",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -22,8 +22,8 @@
       "name": "VerifyChunkStore",
       "argc": "-1",
       "interfaceid": "16",
-      "functionid": "3857174068",
-      "fencepost": "3898530856",
+      "functionid": "3857173971",
+      "fencepost": "3897998502",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -38,8 +38,8 @@
       "name": "DownloadDepot",
       "argc": "-1",
       "interfaceid": "16",
-      "functionid": "664435210",
-      "fencepost": "705808127",
+      "functionid": "4175294830",
+      "fencepost": "4216135490",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -47,7 +47,6 @@
         "bytes8",
         "bytes8",
         "bytes8",
-        "bytes4",
         "string"
       ],
       "serializedreturns": [
@@ -58,8 +57,8 @@
       "name": "DownloadChunk",
       "argc": "-1",
       "interfaceid": "16",
-      "functionid": "4125622612",
-      "fencepost": "4167011658",
+      "functionid": "4125622967",
+      "fencepost": "4166479756",
       "cannotcallincrossprocess": "1",
       "serializedargs": [
         "bytes4",
@@ -74,8 +73,8 @@
       "name": "StartDepotBuild",
       "argc": "-1",
       "interfaceid": "16",
-      "functionid": "3870246528",
-      "fencepost": "3911732348",
+      "functionid": "3870246241",
+      "fencepost": "3911199804",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -91,8 +90,8 @@
       "name": "CommitAppBuild",
       "argc": "-1",
       "interfaceid": "16",
-      "functionid": "3881056542",
-      "fencepost": "3922703652",
+      "functionid": "3881057021",
+      "fencepost": "3922171874",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",

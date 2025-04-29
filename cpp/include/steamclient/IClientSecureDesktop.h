@@ -14,7 +14,7 @@
 class IClientSecureDesktop
 {
 public:
-    virtual unknown BStartStreaming() = 0; //argc: 0, index 1
-    virtual unknown StopStreaming() = 0; //argc: 0, index 2
-    virtual unknown SendSAS() = 0; //argc: 0, index 3
+    virtual unknown BStartStreaming() = 0; //argc: -1, index 1
+    virtual unknown StopStreaming() = 0; //argc: -1, index 2
+    virtual unknown SendSAS() = 0; //argc: -1, index 3
 };

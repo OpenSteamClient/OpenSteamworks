@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 
 project(opensteamworks LANGUAGES C CXX)
 
@@ -27,7 +27,7 @@ else()
 set(vstdlib_s_BUILD_TYPE SHARED)
 endif()
 
-add_library(tier1_s ${tier1_s_BUILD_TYPE} 
+add_library(tier1_s ${tier1_s_BUILD_TYPE}
     src/tier1/bitstring.cpp
     src/tier1/cvar.cpp
     src/tier1/generichash.cpp
@@ -38,7 +38,7 @@ add_library(tier1_s ${tier1_s_BUILD_TYPE}
     src/tier1/utlmemory.cpp
     src/tier1/utlstring.cpp)
 
-add_library(tier0_s ${tier0_s_BUILD_TYPE} 
+add_library(tier0_s ${tier0_s_BUILD_TYPE}
     src/tier0/dbg.cpp
     src/tier0/platform.cpp)
 

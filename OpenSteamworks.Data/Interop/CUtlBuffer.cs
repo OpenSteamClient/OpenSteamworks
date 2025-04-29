@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using OpenSteamClient.Logging;
 
-namespace OpenSteamworks.Data;
+namespace OpenSteamworks.Data.Interop;
 
 // ReSharper disable InconsistentNaming
 // ReSharper disable PrivateFieldCanBeConvertedToLocalVariable
@@ -60,6 +60,19 @@ public unsafe struct CUtlBuffer : IDisposable {
         this.m_Flags = 0;
         this.ReadOverflowFunc = &ReadOverflow;
         this.WriteOverflowFunc = &WriteOverflow;
+    }
+
+    /// <summary>
+    /// Reset the positions, flags, error and max written of this buffer.
+    /// Does not zero memory, does not free memory.
+    /// </summary>
+    public void Reset()
+    {
+        MaxWritten = 0;
+        ReadPosition = 0;
+        WritePosition = 0;
+        m_Flags = 0;
+        m_Error = 0;
     }
     
     public CUtlBuffer(int length, int growSize = 0) : this() { 

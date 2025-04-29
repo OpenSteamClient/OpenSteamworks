@@ -6,19 +6,19 @@ using OpenSteamworks.Data;
 
 namespace OpenSteamworks.Data.Structs;
 
-// This struct is 120 long
-[StructLayout(LayoutKind.Sequential, Pack = 1)]
+// This struct is 244 long
+[StructLayout(LayoutKind.Sequential, Pack = 1, Size = 244)]
 public record struct AppUpdateInfo_s {
     /// <summary>
     /// Unix timestamp when the download was started
     /// </summary>
 	public RTime32 m_timeUpdateStart;
-    
+
 	/// <summary>
     /// Update state flags
     /// </summary>
 	public EAppUpdateState m_eAppUpdateState;
-	
+
 	public ulong m_unBytesToDownload;
 	public ulong m_unBytesDownloaded;
 	public ulong m_unBytesToProcess;
@@ -29,12 +29,12 @@ public record struct AppUpdateInfo_s {
 	public int unkInt2;
 	public int unkInt3;
 	public int unkInt4;
-	
+
 	public int unkInt5;
 	public int unkInt6;
 	public int unkInt7;
 	public int unkInt8;
-	
+
 	/// <summary>
 	/// This integer is sometimes -1, usually when continuing or starting a download.
 	/// </summary>
@@ -42,19 +42,19 @@ public record struct AppUpdateInfo_s {
 	public uint averageDiskWriteRate;
 	public byte b1; // Is workshop?
 	public byte b2; // Is shader?
-	public byte b3; 
+	public byte b3;
 	public byte b4; // Is install?
 
     /// <summary>
     /// Buildid that is currently installed
     /// </summary>
     public uint m_currentBuildID;
-    
+
     /// <summary>
     /// Buildid that will be installed
     /// </summary>
     public uint m_targetBuildID;
-    
+
     /// <summary>
     /// If downloading a workshop item, this is the item ID of that item
     /// </summary>
@@ -65,7 +65,10 @@ public record struct AppUpdateInfo_s {
     public byte undefined2_2; // Padding?
     public EAppError m_error;
 	public UInt32 m_uUnk8;
-	public UInt32 m_uUnk9; 
+	public UInt32 m_uUnk9;
 	public UInt32 m_uUnk10;
 	public UInt32 m_uUnk11;
+
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 100)]
+    public byte[] m_newUnk;
 }

@@ -5,8 +5,8 @@
       "name": "GetPersonaName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2403393818",
-      "fencepost": "2421603840",
+      "functionid": "2403393808",
+      "fencepost": "2421507056",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -17,8 +17,8 @@
       "name": "SetPersonaName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1979178256",
-      "fencepost": "1997404407",
+      "functionid": "1979178270",
+      "fencepost": "1997307647",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -31,8 +31,8 @@
       "name": "SetPersonaNameSDK",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1228461001",
-      "fencepost": "1246703281",
+      "functionid": "1228460999",
+      "fencepost": "1246606505",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -45,8 +45,8 @@
       "name": "IsPersonaNameSet",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4145629668",
-      "fencepost": "4166468717",
+      "functionid": "4145629678",
+      "fencepost": "4166371953",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -57,8 +57,8 @@
       "name": "GetPersonaState",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1397473680",
-      "fencepost": "1415732089",
+      "functionid": "1397473690",
+      "fencepost": "1415635325",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -69,8 +69,8 @@
       "name": "SetPersonaState",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3811823491",
-      "fencepost": "3830098029",
+      "functionid": "3811823497",
+      "fencepost": "3830001261",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -81,8 +81,8 @@
       "name": "NotifyUIOfMenuChange",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2571004942",
-      "fencepost": "2589295609",
+      "functionid": "2571004936",
+      "fencepost": "2589198829",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1",
@@ -98,8 +98,8 @@
       "name": "GetFriendCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "509733584",
-      "fencepost": "528895217",
+      "functionid": "509733610",
+      "fencepost": "528798469",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -112,8 +112,8 @@
       "name": "GetFriendArray",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2164065492",
-      "fencepost": "2183404544",
+      "functionid": "2164065498",
+      "fencepost": "2183307776",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -129,8 +129,8 @@
       "name": "GetFriendArrayInGame",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "569707705",
-      "fencepost": "589191918",
+      "functionid": "569707683",
+      "fencepost": "589095122",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -145,8 +145,8 @@
       "name": "GetFriendByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "657322679",
-      "fencepost": "676500441",
+      "functionid": "657322637",
+      "fencepost": "676403625",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -160,8 +160,8 @@
       "name": "GetOnlineFriendCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3256735054",
-      "fencepost": "3275928945",
+      "functionid": "3256735048",
+      "fencepost": "3275832165",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -172,8 +172,8 @@
       "name": "GetFriendRelationship",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3343949255",
-      "fencepost": "3362320567",
+      "functionid": "3343949273",
+      "fencepost": "3362223811",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -186,8 +186,8 @@
       "name": "GetFriendPersonaState",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3147460226",
-      "fencepost": "3165847667",
+      "functionid": "3147460248",
+      "fencepost": "3165750915",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -200,8 +200,8 @@
       "name": "GetFriendPersonaName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "811853952",
-      "fencepost": "830257522",
+      "functionid": "811853978",
+      "fencepost": "830160774",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -214,8 +214,8 @@
       "name": "GetSmallFriendAvatar",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2669898948",
-      "fencepost": "2688318647",
+      "functionid": "2669898946",
+      "fencepost": "2688221871",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -228,8 +228,8 @@
       "name": "GetMediumFriendAvatar",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2937200459",
-      "fencepost": "2955636287",
+      "functionid": "2937200461",
+      "fencepost": "2955539515",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -242,8 +242,8 @@
       "name": "GetLargeFriendAvatar",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4169611990",
-      "fencepost": "4188063947",
+      "functionid": "4169611996",
+      "fencepost": "4187967179",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -256,8 +256,8 @@
       "name": "BGetFriendAvatarURL",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1545111615",
-      "fencepost": "1563692604",
+      "functionid": "1545111601",
+      "fencepost": "1563595816",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -273,8 +273,8 @@
       "name": "GetFriendAvatarHash",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2239551422",
-      "fencepost": "2258261443",
+      "functionid": "2239551300",
+      "fencepost": "2258164547",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -289,8 +289,8 @@
       "name": "SetFriendRegValue",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3214194907",
-      "fencepost": "3233404927",
+      "functionid": "3214194909",
+      "fencepost": "3233308155",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -303,8 +303,8 @@
       "name": "GetFriendRegValue",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "659888422",
-      "fencepost": "679114571",
+      "functionid": "659888428",
+      "fencepost": "679017803",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -318,8 +318,8 @@
       "name": "DeleteFriendRegValue",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2195404960",
-      "fencepost": "2219469809",
+      "functionid": "2195404986",
+      "fencepost": "2219373061",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -333,8 +333,8 @@
       "name": "GetFriendGamePlayed",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3771602980",
-      "fencepost": "3791667837",
+      "functionid": "3771602990",
+      "fencepost": "3791571073",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -348,8 +348,8 @@
       "name": "GetFriendGamePlayedExtraInfo",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2786229137",
-      "fencepost": "2810197212",
+      "functionid": "2786229143",
+      "fencepost": "2810100444",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -362,8 +362,8 @@
       "name": "GetFriendGameServer",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4073668229",
-      "fencepost": "4096684693",
+      "functionid": "4073668251",
+      "fencepost": "4096587941",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -376,8 +376,8 @@
       "name": "GetFriendPersonaStateFlags",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2098027690",
-      "fencepost": "2121060283",
+      "functionid": "2098027696",
+      "fencepost": "2120963515",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -390,8 +390,8 @@
       "name": "GetFriendBroadcastID",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2605746784",
-      "fencepost": "2628795506",
+      "functionid": "2605746810",
+      "fencepost": "2628698758",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -404,8 +404,8 @@
       "name": "GetFriendPersonaNameHistory",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3093078605",
-      "fencepost": "3112643463",
+      "functionid": "3093078599",
+      "fencepost": "3112546683",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -419,8 +419,8 @@
       "name": "RequestPersonaNameHistory",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1050215040",
-      "fencepost": "1069796027",
+      "functionid": "1050215046",
+      "fencepost": "1069699259",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -433,8 +433,8 @@
       "name": "GetFriendPersonaNameHistoryAndDate",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4225135644",
-      "fencepost": "4244797276",
+      "functionid": "4225135642",
+      "fencepost": "4244700500",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -449,8 +449,8 @@
       "name": "AddFriend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4080804538",
-      "fencepost": "4099127463",
+      "functionid": "4080804512",
+      "fencepost": "4099030663",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -463,8 +463,8 @@
       "name": "RemoveFriend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1661758956",
-      "fencepost": "1680098010",
+      "functionid": "1661758966",
+      "fencepost": "1680001246",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -477,8 +477,8 @@
       "name": "HasFriend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3220883832",
-      "fencepost": "3239239015",
+      "functionid": "3220883814",
+      "fencepost": "3239142223",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -492,8 +492,8 @@
       "name": "RequestUserInformation",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3164241057",
-      "fencepost": "3188241390",
+      "functionid": "3164241083",
+      "fencepost": "3188144642",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -507,8 +507,8 @@
       "name": "SetIgnoreFriend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2922051148",
-      "fencepost": "2940519234",
+      "functionid": "2922051142",
+      "fencepost": "2940422454",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -522,8 +522,8 @@
       "name": "ReportChatDeclined",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2847126109",
-      "fencepost": "2866255484",
+      "functionid": "2847126115",
+      "fencepost": "2866158716",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -536,8 +536,8 @@
       "name": "CreateFriendsGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1476651239",
-      "fencepost": "1495441905",
+      "functionid": "1476651245",
+      "fencepost": "1495345137",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -550,8 +550,8 @@
       "name": "DeleteFriendsGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "745205310",
-      "fencepost": "764012105",
+      "functionid": "745205304",
+      "fencepost": "763915325",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -564,8 +564,8 @@
       "name": "RenameFriendsGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1913395665",
-      "fencepost": "1932218589",
+      "functionid": "1913395671",
+      "fencepost": "1932121821",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -579,8 +579,8 @@
       "name": "AddFriendToGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1007544780",
-      "fencepost": "1026383833",
+      "functionid": "1007544790",
+      "fencepost": "1026287069",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -594,8 +594,8 @@
       "name": "RemoveFriendFromGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "642112061",
-      "fencepost": "660967243",
+      "functionid": "642112039",
+      "fencepost": "660870447",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -609,8 +609,8 @@
       "name": "IsFriendMemberOfFriendsGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2040232572",
-      "fencepost": "2059103883",
+      "functionid": "2040232546",
+      "fencepost": "2059007083",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -624,8 +624,8 @@
       "name": "GetFriendsGroupCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2521884739",
-      "fencepost": "2540772179",
+      "functionid": "2521884765",
+      "fencepost": "2540675431",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -636,8 +636,8 @@
       "name": "GetFriendsGroupIDByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "798316402",
-      "fencepost": "817236100",
+      "functionid": "798316392",
+      "fencepost": "817139316",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -650,8 +650,8 @@
       "name": "GetFriendsGroupName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1892733749",
-      "fencepost": "1911637318",
+      "functionid": "1892733743",
+      "fencepost": "1911540538",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -664,8 +664,8 @@
       "name": "GetFriendsGroupMembershipCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "611761336",
-      "fencepost": "630697163",
+      "functionid": "611761342",
+      "fencepost": "630600395",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -678,8 +678,8 @@
       "name": "GetFirstFriendsGroupMember",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2593000938",
-      "fencepost": "2611952894",
+      "functionid": "2593000940",
+      "fencepost": "2611856122",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -692,8 +692,8 @@
       "name": "GetNextFriendsGroupMember",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4002625188",
-      "fencepost": "4021593273",
+      "functionid": "4002625198",
+      "fencepost": "4021496509",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -706,8 +706,8 @@
       "name": "GetGroupFriendsMembershipCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "448147548",
-      "fencepost": "467147891",
+      "functionid": "448147538",
+      "fencepost": "467051107",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -720,8 +720,8 @@
       "name": "GetFirstGroupFriendsMember",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "861663658",
-      "fencepost": "880680130",
+      "functionid": "861663652",
+      "fencepost": "880583350",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -734,8 +734,8 @@
       "name": "GetNextGroupFriendsMember",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "442117592",
-      "fencepost": "461150193",
+      "functionid": "442117586",
+      "fencepost": "461053413",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -748,8 +748,8 @@
       "name": "GetPlayerNickname",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3781799433",
-      "fencepost": "3800896550",
+      "functionid": "3781799475",
+      "fencepost": "3800799818",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -762,8 +762,8 @@
       "name": "SetPlayerNickname",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2768442170",
-      "fencepost": "2787523158",
+      "functionid": "2768442172",
+      "fencepost": "2787426386",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -777,8 +777,8 @@
       "name": "GetFriendSteamLevel",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2958405421",
-      "fencepost": "2983615429",
+      "functionid": "2958405411",
+      "fencepost": "2983518645",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -791,8 +791,8 @@
       "name": "GetChatMessagesCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "79534862",
-      "fencepost": "99261010",
+      "functionid": "79534856",
+      "fencepost": "99164230",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -805,8 +805,8 @@
       "name": "GetChatMessage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3558716661",
-      "fencepost": "3578555712",
+      "functionid": "3558716671",
+      "fencepost": "3578458948",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -825,8 +825,8 @@
       "name": "SendMsgToFriend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2747878788",
-      "fencepost": "2767830742",
+      "functionid": "2747878814",
+      "fencepost": "2767733994",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -841,8 +841,8 @@
       "name": "ClearChatHistory",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3745055",
-      "fencepost": "23729267",
+      "functionid": "3745049",
+      "fencepost": "23632487",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -853,8 +853,8 @@
       "name": "GetKnownClanCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3676994830",
-      "fencepost": "3697124203",
+      "functionid": "3676994868",
+      "fencepost": "3697027467",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -865,8 +865,8 @@
       "name": "GetKnownClanByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2017728485",
-      "fencepost": "2037873987",
+      "functionid": "2017728479",
+      "fencepost": "2037777207",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -879,8 +879,8 @@
       "name": "GetClanCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "645758831",
-      "fencepost": "665920462",
+      "functionid": "645758801",
+      "fencepost": "665823658",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -891,8 +891,8 @@
       "name": "GetClanByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2280359216",
-      "fencepost": "2300536976",
+      "functionid": "2280359182",
+      "fencepost": "2300440168",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -905,8 +905,8 @@
       "name": "GetClanName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3637940671",
-      "fencepost": "3658134560",
+      "functionid": "3637940613",
+      "fencepost": "3658037728",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -919,8 +919,8 @@
       "name": "GetClanTag",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3050723181",
-      "fencepost": "3070933199",
+      "functionid": "3050723159",
+      "fencepost": "3070836403",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -933,8 +933,8 @@
       "name": "GetFriendActivityCounts",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "88945262",
-      "fencepost": "111348824",
+      "functionid": "88945248",
+      "fencepost": "111252036",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -949,8 +949,8 @@
       "name": "GetClanActivityCounts",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4119909609",
-      "fencepost": "4142442203",
+      "functionid": "4119909623",
+      "fencepost": "4142345443",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -966,8 +966,8 @@
       "name": "DownloadClanActivityCounts",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2348628039",
-      "fencepost": "2371305794",
+      "functionid": "2348628041",
+      "fencepost": "2371209022",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -981,8 +981,8 @@
       "name": "GetFriendsGroupActivityCounts",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3839591135",
-      "fencepost": "3862365664",
+      "functionid": "3839590949",
+      "fencepost": "3862268704",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes2"
@@ -997,8 +997,8 @@
       "name": "IsClanPublic",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2454647573",
-      "fencepost": "2477922101",
+      "functionid": "2454647595",
+      "fencepost": "2477825349",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1011,8 +1011,8 @@
       "name": "IsClanOfficialGameGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3983334753",
-      "fencepost": "4006625410",
+      "functionid": "3983334747",
+      "fencepost": "4006528630",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1025,8 +1025,8 @@
       "name": "JoinClanChatRoom",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "264244388",
-      "fencepost": "288809236",
+      "functionid": "264244410",
+      "fencepost": "288712484",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1039,8 +1039,8 @@
       "name": "LeaveClanChatRoom",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3226806005",
-      "fencepost": "3251386982",
+      "functionid": "3226805999",
+      "fencepost": "3251290202",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1053,8 +1053,8 @@
       "name": "GetClanChatMemberCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1810249142",
-      "fencepost": "1834846248",
+      "functionid": "1810249132",
+      "fencepost": "1834749464",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1067,8 +1067,8 @@
       "name": "GetChatMemberByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2044074959",
-      "fencepost": "2068688194",
+      "functionid": "2044074953",
+      "fencepost": "2068591414",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1082,8 +1082,8 @@
       "name": "SendClanChatMessage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4147580364",
-      "fencepost": "4172209728",
+      "functionid": "4147580362",
+      "fencepost": "4172112952",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1097,8 +1097,8 @@
       "name": "GetClanChatMessage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "964149577",
-      "fencepost": "988891844",
+      "functionid": "964149571",
+      "fencepost": "988795064",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1116,8 +1116,8 @@
       "name": "IsClanChatAdmin",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1109991346",
-      "fencepost": "1134830387",
+      "functionid": "1109990472",
+      "fencepost": "1134732739",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1131,8 +1131,8 @@
       "name": "IsClanChatWindowOpenInSteam",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3277200295",
-      "fencepost": "3302055465",
+      "functionid": "3277199453",
+      "fencepost": "3301957849",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1145,8 +1145,8 @@
       "name": "OpenClanChatWindowInSteam",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1288343132",
-      "fencepost": "1313214431",
+      "functionid": "1288343130",
+      "fencepost": "1313117655",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1159,8 +1159,8 @@
       "name": "CloseClanChatWindowInSteam",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "898944267",
-      "fencepost": "923831695",
+      "functionid": "898944269",
+      "fencepost": "923734923",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1173,8 +1173,8 @@
       "name": "SetListenForFriendsMessages",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3334230016",
-      "fencepost": "3359133573",
+      "functionid": "3334230026",
+      "fencepost": "3359036809",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -1187,8 +1187,8 @@
       "name": "ReplyToFriendMessage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3543979293",
-      "fencepost": "3568898979",
+      "functionid": "3543979287",
+      "fencepost": "3568802199",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1202,8 +1202,8 @@
       "name": "GetFriendMessage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1423725004",
-      "fencepost": "1448741464",
+      "functionid": "1423724994",
+      "fencepost": "1448644680",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1220,8 +1220,8 @@
       "name": "InviteFriendToClan",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2554565249",
-      "fencepost": "2574791396",
+      "functionid": "2554565255",
+      "fencepost": "2574694628",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1235,8 +1235,8 @@
       "name": "AcknowledgeInviteToClan",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2518311996",
-      "fencepost": "2538554272",
+      "functionid": "2518311994",
+      "fencepost": "2538457496",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1250,8 +1250,8 @@
       "name": "GetFriendCountFromSource",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3471032506",
-      "fencepost": "3491290911",
+      "functionid": "3471032496",
+      "fencepost": "3491194127",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1264,8 +1264,8 @@
       "name": "GetFriendFromSourceByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4010818835",
-      "fencepost": "4031093369",
+      "functionid": "4010818841",
+      "fencepost": "4030996601",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1279,8 +1279,8 @@
       "name": "IsUserInSource",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "810304365",
-      "fencepost": "830965995",
+      "functionid": "810304151",
+      "fencepost": "830869007",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1294,8 +1294,8 @@
       "name": "GetCoplayFriendCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1131006478",
-      "fencepost": "1153958426",
+      "functionid": "1131006472",
+      "fencepost": "1153861646",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -1306,8 +1306,8 @@
       "name": "GetCoplayFriend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "991181994",
-      "fencepost": "1014150071",
+      "functionid": "991182000",
+      "fencepost": "1014053303",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1320,8 +1320,8 @@
       "name": "GetFriendCoplayTime",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3675519662",
-      "fencepost": "3698503868",
+      "functionid": "3675519668",
+      "fencepost": "3698407100",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1334,8 +1334,8 @@
       "name": "GetFriendCoplayGame",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1867669778",
-      "fencepost": "1890670113",
+      "functionid": "1867669772",
+      "fencepost": "1890573333",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1348,8 +1348,8 @@
       "name": "SetRichPresence",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "684682848",
-      "fencepost": "708989632",
+      "functionid": "684682846",
+      "fencepost": "708892856",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -1364,8 +1364,8 @@
       "name": "ClearRichPresence",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3971835520",
-      "fencepost": "3996158433",
+      "functionid": "3971835578",
+      "fencepost": "3996061717",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1376,8 +1376,8 @@
       "name": "GetFriendRichPresence",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2764016474",
-      "fencepost": "2788355516",
+      "functionid": "2764016480",
+      "fencepost": "2788258748",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -1392,8 +1392,8 @@
       "name": "GetFriendRichPresenceKeyCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "936666488",
-      "fencepost": "961021659",
+      "functionid": "936666494",
+      "fencepost": "960924891",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -1407,8 +1407,8 @@
       "name": "GetFriendRichPresenceKeyByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2931603740",
-      "fencepost": "2955975040",
+      "functionid": "2931603738",
+      "fencepost": "2955878264",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -1423,8 +1423,8 @@
       "name": "RequestFriendRichPresence",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2974302470",
-      "fencepost": "2998689899",
+      "functionid": "2974302476",
+      "fencepost": "2998593131",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -1436,8 +1436,8 @@
       "name": "JoinChatRoom",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "908144021",
-      "fencepost": "928450813",
+      "functionid": "908144027",
+      "fencepost": "928354045",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1450,8 +1450,8 @@
       "name": "LeaveChatRoom",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3840467959",
-      "fencepost": "3860790880",
+      "functionid": "3840467965",
+      "fencepost": "3860694112",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1462,8 +1462,8 @@
       "name": "InviteUserToChatRoom",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3540375132",
-      "fencepost": "3560714182",
+      "functionid": "3540375126",
+      "fencepost": "3560617402",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1477,8 +1477,8 @@
       "name": "SendChatMsg",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2527643743",
-      "fencepost": "2548015051",
+      "functionid": "2527643737",
+      "fencepost": "2547918271",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1493,8 +1493,8 @@
       "name": "GetChatRoomMessagesCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "54795485",
-      "fencepost": "75199051",
+      "functionid": "54795463",
+      "fencepost": "75102255",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1507,8 +1507,8 @@
       "name": "GetChatRoomEntry",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1281026937",
-      "fencepost": "1301543406",
+      "functionid": "1281026919",
+      "fencepost": "1301446614",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1526,8 +1526,8 @@
       "name": "ClearChatRoomHistory",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "430778313",
-      "fencepost": "451391556",
+      "functionid": "430778319",
+      "fencepost": "451294788",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1538,8 +1538,8 @@
       "name": "SerializeChatRoomDlg",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1891683117",
-      "fencepost": "1913554422",
+      "functionid": "1891683111",
+      "fencepost": "1913457642",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1554,8 +1554,8 @@
       "name": "GetSizeOfSerializedChatRoomDlg",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2178381523",
-      "fencepost": "2200301215",
+      "functionid": "2178381525",
+      "fencepost": "2200204443",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1568,8 +1568,8 @@
       "name": "GetSerializedChatRoomDlg",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "896321022",
-      "fencepost": "918369746",
+      "functionid": "896320996",
+      "fencepost": "918272946",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1586,8 +1586,8 @@
       "name": "ClearSerializedChatRoomDlg",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2636954462",
-      "fencepost": "2660535441",
+      "functionid": "2636954456",
+      "fencepost": "2660438661",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1600,8 +1600,8 @@
       "name": "KickChatMember",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3375738553",
-      "fencepost": "3397480826",
+      "functionid": "3375738563",
+      "fencepost": "3397384062",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1615,8 +1615,8 @@
       "name": "BanChatMember",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1529853419",
-      "fencepost": "1551611821",
+      "functionid": "1529853329",
+      "fencepost": "1551514957",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1630,8 +1630,8 @@
       "name": "UnBanChatMember",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4018607643",
-      "fencepost": "4040382174",
+      "functionid": "4018607645",
+      "fencepost": "4040285402",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1645,8 +1645,8 @@
       "name": "SetChatRoomType",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1547792571",
-      "fencepost": "1570696132",
+      "functionid": "1547792561",
+      "fencepost": "1570599348",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1660,8 +1660,8 @@
       "name": "GetChatRoomLockState",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1603352900",
-      "fencepost": "1626724202",
+      "functionid": "1603352898",
+      "fencepost": "1626627426",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1675,8 +1675,8 @@
       "name": "GetChatRoomPermissions",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1730209888",
-      "fencepost": "1753694093",
+      "functionid": "1730209898",
+      "fencepost": "1753597329",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1690,8 +1690,8 @@
       "name": "SetChatRoomModerated",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1079952284",
-      "fencepost": "1100936494",
+      "functionid": "1079952262",
+      "fencepost": "1100839698",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1705,8 +1705,8 @@
       "name": "BChatRoomModerated",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "868926893",
-      "fencepost": "889927232",
+      "functionid": "868926891",
+      "fencepost": "889830456",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1719,8 +1719,8 @@
       "name": "NotifyChatRoomDlgsOfUIChange",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3670947010",
-      "fencepost": "3694495731",
+      "functionid": "3670947032",
+      "fencepost": "3694398979",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1737,8 +1737,8 @@
       "name": "TerminateChatRoom",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2832139924",
-      "fencepost": "2855059614",
+      "functionid": "2832139934",
+      "fencepost": "2854962850",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1751,8 +1751,8 @@
       "name": "GetChatRoomCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "422562021",
-      "fencepost": "443191393",
+      "functionid": "422562019",
+      "fencepost": "443094617",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -1763,8 +1763,8 @@
       "name": "GetChatRoomByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2391893256",
-      "fencepost": "2412538757",
+      "functionid": "2391893234",
+      "fencepost": "2412441961",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1777,8 +1777,8 @@
       "name": "GetChatRoomName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "680504862",
-      "fencepost": "701376169",
+      "functionid": "680504856",
+      "fencepost": "701279389",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -1791,8 +1791,8 @@
       "name": "BGetChatRoomMemberDetails",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1357962033",
-      "fencepost": "1378720437",
+      "functionid": "1357961935",
+      "fencepost": "1378623565",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1808,8 +1808,8 @@
       "name": "CreateChatRoom",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3276741485",
-      "fencepost": "3297645050",
+      "functionid": "3276741495",
+      "fencepost": "3297548286",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -1829,7 +1829,7 @@
       "name": "JoinChatRoomGroup",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4289835281",
+      "functionid": "4289835279",
       "fencepost": "0",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
@@ -1843,8 +1843,8 @@
       "name": "ShowChatRoomGroupInvite",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "24469307",
-      "fencepost": "45421259",
+      "functionid": "24469285",
+      "fencepost": "45324463",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -1855,8 +1855,8 @@
       "name": "VoiceCallNew",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1037995044",
-      "fencepost": "1059043770",
+      "functionid": "1037995054",
+      "fencepost": "1058947006",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1868,8 +1868,8 @@
       "name": "VoiceCall",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3549222283",
-      "fencepost": "3570287138",
+      "functionid": "3549222277",
+      "fencepost": "3570190358",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1881,8 +1881,8 @@
       "name": "VoiceHangUp",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3634972805",
-      "fencepost": "3656053789",
+      "functionid": "3634972811",
+      "fencepost": "3655957021",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1894,8 +1894,8 @@
       "name": "SetVoiceSpeakerVolume",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3907609762",
-      "fencepost": "3928706875",
+      "functionid": "3907609768",
+      "fencepost": "3928610107",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1906,8 +1906,8 @@
       "name": "SetVoiceMicrophoneVolume",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "438444200",
-      "fencepost": "459557442",
+      "functionid": "438444194",
+      "fencepost": "459460662",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1918,8 +1918,8 @@
       "name": "SetAutoAnswer",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4147291890",
-      "fencepost": "4168421261",
+      "functionid": "4147291892",
+      "fencepost": "4168324489",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -1930,8 +1930,8 @@
       "name": "VoiceAnswer",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1521410830",
-      "fencepost": "1542556330",
+      "functionid": "1521410824",
+      "fencepost": "1542459550",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1942,8 +1942,8 @@
       "name": "AcceptVoiceCall",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "886651189",
-      "fencepost": "907812818",
+      "functionid": "886651151",
+      "fencepost": "907716006",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -1955,8 +1955,8 @@
       "name": "VoicePutOnHold",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "991887219",
-      "fencepost": "1013064977",
+      "functionid": "991887177",
+      "fencepost": "1012968161",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -1968,8 +1968,8 @@
       "name": "BVoiceIsLocalOnHold",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "743694376",
-      "fencepost": "764888263",
+      "functionid": "743694358",
+      "fencepost": "764791471",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1982,8 +1982,8 @@
       "name": "BVoiceIsRemoteOnHold",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1644236828",
-      "fencepost": "1665446844",
+      "functionid": "1644236834",
+      "fencepost": "1665350076",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -1996,8 +1996,8 @@
       "name": "SetDoNotDisturb",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3533879412",
-      "fencepost": "3555105557",
+      "functionid": "3533879374",
+      "fencepost": "3555008745",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -2008,8 +2008,8 @@
       "name": "EnableVoiceNotificationSounds",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "611267814",
-      "fencepost": "632510088",
+      "functionid": "611267804",
+      "fencepost": "632413304",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -2020,8 +2020,8 @@
       "name": "SetPushToTalkEnabled",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3571283379",
-      "fencepost": "3592541782",
+      "functionid": "3571283381",
+      "fencepost": "3592445010",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1",
@@ -2033,8 +2033,8 @@
       "name": "IsPushToTalkEnabled",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1730823294",
-      "fencepost": "1752097826",
+      "functionid": "1730823288",
+      "fencepost": "1752001046",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2045,8 +2045,8 @@
       "name": "IsPushToMuteEnabled",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3893741982",
-      "fencepost": "3915032643",
+      "functionid": "3893741972",
+      "fencepost": "3914935859",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2057,8 +2057,8 @@
       "name": "SetPushToTalkKey",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1922315011",
-      "fencepost": "1943621801",
+      "functionid": "1922315017",
+      "fencepost": "1943525033",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2069,8 +2069,8 @@
       "name": "GetPushToTalkKey",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4041408338",
-      "fencepost": "4062731257",
+      "functionid": "4041408348",
+      "fencepost": "4062634493",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2081,8 +2081,8 @@
       "name": "IsPushToTalkKeyDown",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2038416856",
-      "fencepost": "2059755904",
+      "functionid": "2038416854",
+      "fencepost": "2059659128",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2093,8 +2093,8 @@
       "name": "EnableVoiceCalibration",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2394122227",
-      "fencepost": "2415493533",
+      "functionid": "2394122233",
+      "fencepost": "2415396765",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -2105,8 +2105,8 @@
       "name": "IsVoiceCalibrating",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2879240925",
-      "fencepost": "2900628360",
+      "functionid": "2879240923",
+      "fencepost": "2900531584",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2117,8 +2117,8 @@
       "name": "GetVoiceCalibrationSamplePeak",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1891078401",
-      "fencepost": "1912481965",
+      "functionid": "1891078407",
+      "fencepost": "1912385197",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2129,8 +2129,8 @@
       "name": "SetMicBoost",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2119526073",
-      "fencepost": "2140945766",
+      "functionid": "2119526051",
+      "fencepost": "2140848970",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -2141,8 +2141,8 @@
       "name": "GetMicBoost",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3481704994",
-      "fencepost": "3503140816",
+      "functionid": "3481705016",
+      "fencepost": "3503044064",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2153,8 +2153,8 @@
       "name": "HasHardwareMicBoost",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "182083071",
-      "fencepost": "205696308",
+      "functionid": "182083061",
+      "fencepost": "205599524",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2165,8 +2165,8 @@
       "name": "GetMicDeviceName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2537226469",
-      "fencepost": "2560855835",
+      "functionid": "2537226479",
+      "fencepost": "2560759071",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2177,8 +2177,8 @@
       "name": "StartTalking",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2614257947",
-      "fencepost": "2635709898",
+      "functionid": "2614257925",
+      "fencepost": "2635613102",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2189,8 +2189,8 @@
       "name": "EndTalking",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1022963335",
-      "fencepost": "1044431415",
+      "functionid": "1022963353",
+      "fencepost": "1044334659",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2201,8 +2201,8 @@
       "name": "VoiceIsValid",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2941606364",
-      "fencepost": "2963106702",
+      "functionid": "2941606342",
+      "fencepost": "2963009906",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2215,8 +2215,8 @@
       "name": "SetAutoReflectVoice",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3019856097",
-      "fencepost": "3041340306",
+      "functionid": "3019856123",
+      "fencepost": "3041243558",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1"
@@ -2227,8 +2227,8 @@
       "name": "GetCallState",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2515491020",
-      "fencepost": "2537007487",
+      "functionid": "2515491018",
+      "fencepost": "2536910711",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2241,8 +2241,8 @@
       "name": "GetVoiceMicrophoneVolume",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "927049184",
-      "fencepost": "948581780",
+      "functionid": "927049190",
+      "fencepost": "948485012",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2253,8 +2253,8 @@
       "name": "GetVoiceSpeakerVolume",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1723894928",
-      "fencepost": "1745443653",
+      "functionid": "1723894938",
+      "fencepost": "1745346889",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2265,8 +2265,8 @@
       "name": "TimeSinceLastVoiceDataReceived",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2753709874",
-      "fencepost": "2775274728",
+      "functionid": "2753709880",
+      "fencepost": "2775177960",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2279,8 +2279,8 @@
       "name": "TimeSinceLastVoiceDataSend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4215289760",
-      "fencepost": "4236870743",
+      "functionid": "4215289774",
+      "fencepost": "4236773983",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2293,8 +2293,8 @@
       "name": "BCanSend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "117623784",
-      "fencepost": "139220896",
+      "functionid": "117623782",
+      "fencepost": "139124120",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2307,8 +2307,8 @@
       "name": "BCanReceive",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "531461616",
-      "fencepost": "553074857",
+      "functionid": "531461626",
+      "fencepost": "552978093",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2321,8 +2321,8 @@
       "name": "GetEstimatedBitsPerSecond",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "767656731",
-      "fencepost": "789286101",
+      "functionid": "767656721",
+      "fencepost": "789189317",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -2336,8 +2336,8 @@
       "name": "GetPeakSample",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2648998552",
-      "fencepost": "2670644051",
+      "functionid": "2648998558",
+      "fencepost": "2670547283",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -2351,8 +2351,8 @@
       "name": "SendResumeRequest",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2390510720",
-      "fencepost": "2412172348",
+      "functionid": "2390510726",
+      "fencepost": "2412075580",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2363,8 +2363,8 @@
       "name": "OpenFriendsDialog",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2476213704",
-      "fencepost": "2497891461",
+      "functionid": "2476213682",
+      "fencepost": "2497794665",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes1",
@@ -2376,8 +2376,8 @@
       "name": "OpenChatDialog",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1509435340",
-      "fencepost": "1531129226",
+      "functionid": "1509435318",
+      "fencepost": "1531032430",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2388,8 +2388,8 @@
       "name": "OpenInviteToTradeDialog",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "68784833",
-      "fencepost": "90494848",
+      "functionid": "68784831",
+      "fencepost": "90398072",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2400,8 +2400,8 @@
       "name": "StartChatRoomVoiceSpeaking",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3884949246",
-      "fencepost": "3907110873",
+      "functionid": "3884949240",
+      "fencepost": "3907014093",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2413,8 +2413,8 @@
       "name": "EndChatRoomVoiceSpeaking",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "212649398",
-      "fencepost": "234827154",
+      "functionid": "212649392",
+      "fencepost": "234730374",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2426,8 +2426,8 @@
       "name": "GetFriendLastLogonTime",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1904673884",
-      "fencepost": "1926980672",
+      "functionid": "1904673882",
+      "fencepost": "1926883896",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2440,8 +2440,8 @@
       "name": "GetFriendLastLogoffTime",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "957327185",
-      "fencepost": "979650102",
+      "functionid": "957327195",
+      "fencepost": "979553338",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2454,8 +2454,8 @@
       "name": "GetChatRoomVoiceTotalSlotCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4201152312",
-      "fencepost": "4223346197",
+      "functionid": "4201152258",
+      "fencepost": "4223249369",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2468,8 +2468,8 @@
       "name": "GetChatRoomVoiceUsedSlotCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2559433320",
-      "fencepost": "2581643334",
+      "functionid": "2559433298",
+      "fencepost": "2581546538",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2482,8 +2482,8 @@
       "name": "GetChatRoomVoiceUsedSlot",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4074219728",
-      "fencepost": "4096445871",
+      "functionid": "4074219758",
+      "fencepost": "4096349127",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2497,8 +2497,8 @@
       "name": "GetChatRoomVoiceStatus",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2430942767",
-      "fencepost": "2453185039",
+      "functionid": "2430942737",
+      "fencepost": "2453088235",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2512,8 +2512,8 @@
       "name": "BChatRoomHasAvailableVoiceSlots",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1648830566",
-      "fencepost": "1671088967",
+      "functionid": "1648830556",
+      "fencepost": "1670992183",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2526,8 +2526,8 @@
       "name": "BIsChatRoomVoiceSpeaking",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1865578417",
-      "fencepost": "1887852947",
+      "functionid": "1865578379",
+      "fencepost": "1887756135",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2541,8 +2541,8 @@
       "name": "GetChatRoomPeakSample",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3933291715",
-      "fencepost": "3956163018",
+      "functionid": "3933291725",
+      "fencepost": "3956066254",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2557,8 +2557,8 @@
       "name": "ChatRoomVoiceRetryConnections",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1118808689",
-      "fencepost": "1141938056",
+      "functionid": "1118808703",
+      "fencepost": "1141841296",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2569,8 +2569,8 @@
       "name": "SetPortTypes",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2157726015",
-      "fencepost": "2180581189",
+      "functionid": "2157726005",
+      "fencepost": "2180484405",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2581,8 +2581,8 @@
       "name": "ReinitAudio",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "584086077",
-      "fencepost": "607167057",
+      "functionid": "584086075",
+      "fencepost": "607070281",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -2591,8 +2591,8 @@
       "name": "SetInGameVoiceSpeaking",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3107462346",
-      "fencepost": "3130559455",
+      "functionid": "3107462336",
+      "fencepost": "3130462671",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2604,8 +2604,8 @@
       "name": "IsInGameVoiceSpeaking",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2792114009",
-      "fencepost": "2815227247",
+      "functionid": "2792114003",
+      "fencepost": "2815130467",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2616,8 +2616,8 @@
       "name": "ActivateGameOverlay",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1272837580",
-      "fencepost": "1296595978",
+      "functionid": "1272837558",
+      "fencepost": "1296499182",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -2628,8 +2628,8 @@
       "name": "ActivateGameOverlayToUser",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2668643975",
-      "fencepost": "2692418502",
+      "functionid": "2668644089",
+      "fencepost": "2692321842",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -2641,8 +2641,8 @@
       "name": "ActivateGameOverlayToWebPage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1291182477",
-      "fencepost": "1314973133",
+      "functionid": "1291182579",
+      "fencepost": "1314876461",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -2654,8 +2654,8 @@
       "name": "ActivateGameOverlayToStore",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4260011494",
-      "fencepost": "4283818279",
+      "functionid": "4260011420",
+      "fencepost": "4283721431",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -2667,8 +2667,8 @@
       "name": "ActivateGameOverlayInviteDialog",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1796556668",
-      "fencepost": "1820379582",
+      "functionid": "1796556550",
+      "fencepost": "1820282690",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2679,8 +2679,8 @@
       "name": "ActivateGameOverlayRemotePlayTogetherInviteDialog",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3340457933",
-      "fencepost": "3364296976",
+      "functionid": "3340457931",
+      "fencepost": "3364200200",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2691,8 +2691,8 @@
       "name": "ActivateGameOverlayInviteDialogConnectString",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1882257550",
-      "fencepost": "1906112722",
+      "functionid": "1882257544",
+      "fencepost": "1906015942",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -2703,8 +2703,8 @@
       "name": "ProcessActivateGameOverlayInMainUI",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3966091236",
-      "fencepost": "3989962537",
+      "functionid": "3966091246",
+      "fencepost": "3989865773",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -2721,8 +2721,8 @@
       "name": "NotifyGameOverlayStateChanged",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3334901377",
-      "fencepost": "3358788807",
+      "functionid": "3334901387",
+      "fencepost": "3358692043",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -2736,8 +2736,8 @@
       "name": "NotifyGameServerChangeRequested",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3659594225",
-      "fencepost": "3683497784",
+      "functionid": "3659594239",
+      "fencepost": "3683401024",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string",
@@ -2749,8 +2749,8 @@
       "name": "NotifyLobbyJoinRequested",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "242535204",
-      "fencepost": "266454892",
+      "functionid": "242535210",
+      "fencepost": "266358124",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -2765,8 +2765,8 @@
       "name": "NotifyRichPresenceJoinRequested",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1608632517",
-      "fencepost": "1632568334",
+      "functionid": "1608632527",
+      "fencepost": "1632471570",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -2781,8 +2781,8 @@
       "name": "GetClanRelationship",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "362665776",
-      "fencepost": "385827401",
+      "functionid": "362665786",
+      "fencepost": "385730637",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2795,8 +2795,8 @@
       "name": "GetClanInviteCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3745034515",
-      "fencepost": "3768212269",
+      "functionid": "3745034521",
+      "fencepost": "3768115501",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2807,8 +2807,8 @@
       "name": "GetFriendClanRank",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1246883521",
-      "fencepost": "1270609661",
+      "functionid": "1246883527",
+      "fencepost": "1270512893",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2822,8 +2822,8 @@
       "name": "VoiceIsAvailable",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4168856713",
-      "fencepost": "4192550595",
+      "functionid": "4168856707",
+      "fencepost": "4192453815",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -2834,8 +2834,8 @@
       "name": "TestVoiceDisconnect",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1329934509",
-      "fencepost": "1353160650",
+      "functionid": "1329934487",
+      "fencepost": "1353063854",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2846,8 +2846,8 @@
       "name": "TestChatRoomPeerDisconnect",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "122982729",
-      "fencepost": "146224999",
+      "functionid": "122982771",
+      "fencepost": "146128267",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -2859,8 +2859,8 @@
       "name": "TestVoicePacketLoss",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3499905497",
-      "fencepost": "3523567121",
+      "functionid": "3499905495",
+      "fencepost": "3523470345",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -2871,8 +2871,8 @@
       "name": "FindFriendVoiceChatHandle",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3514777226",
-      "fencepost": "3538809817",
+      "functionid": "3514777236",
+      "fencepost": "3538713053",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2885,8 +2885,8 @@
       "name": "RequestFriendsWhoPlayGame",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2367222779",
-      "fencepost": "2391319886",
+      "functionid": "2367222781",
+      "fencepost": "2391223114",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -2897,8 +2897,8 @@
       "name": "GetCountFriendsWhoPlayGame",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "83731177",
-      "fencepost": "107844413",
+      "functionid": "83731183",
+      "fencepost": "107747645",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -2911,8 +2911,8 @@
       "name": "GetFriendWhoPlaysGame",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1844875931",
-      "fencepost": "1869005296",
+      "functionid": "1844875921",
+      "fencepost": "1868908512",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -2926,8 +2926,8 @@
       "name": "GetCountFriendsInGame",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2567965707",
-      "fencepost": "2592127330",
+      "functionid": "2567965701",
+      "fencepost": "2592030550",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8"
@@ -2940,8 +2940,8 @@
       "name": "SetPlayedWith",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "26103848",
-      "fencepost": "50297729",
+      "functionid": "26103842",
+      "fencepost": "50200949",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2952,8 +2952,8 @@
       "name": "RequestClanOfficerList",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "679242997",
-      "fencepost": "703469136",
+      "functionid": "679242995",
+      "fencepost": "703372360",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2966,8 +2966,8 @@
       "name": "GetClanOwner",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3151848173",
-      "fencepost": "3176090441",
+      "functionid": "3151848171",
+      "fencepost": "3175993665",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2980,8 +2980,8 @@
       "name": "GetClanOfficerCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1645225535",
-      "fencepost": "1669483932",
+      "functionid": "1645225477",
+      "fencepost": "1669387100",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -2994,8 +2994,8 @@
       "name": "GetClanOfficerByIndex",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3730568236",
-      "fencepost": "3754842762",
+      "functionid": "3730568214",
+      "fencepost": "3754745966",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -3009,8 +3009,8 @@
       "name": "RequestFriendProfileInfo",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "746213435",
-      "fencepost": "770616993",
+      "functionid": "746213425",
+      "fencepost": "770520209",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3023,8 +3023,8 @@
       "name": "GetFriendProfileInfo",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1299201272",
-      "fencepost": "1323620959",
+      "functionid": "1299201270",
+      "fencepost": "1323524183",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -3038,8 +3038,8 @@
       "name": "InviteUserToGame",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1209992291",
-      "fencepost": "1234428107",
+      "functionid": "1209992301",
+      "fencepost": "1234331343",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -3054,8 +3054,8 @@
       "name": "RequestTrade",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3813488594",
-      "fencepost": "3837956668",
+      "functionid": "3813488600",
+      "fencepost": "3837859900",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3068,8 +3068,8 @@
       "name": "TradeResponse",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3420188921",
-      "fencepost": "3444673124",
+      "functionid": "3420188927",
+      "fencepost": "3444576356",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -3081,8 +3081,8 @@
       "name": "CancelTradeRequest",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3421148131",
-      "fencepost": "3445648463",
+      "functionid": "3421148133",
+      "fencepost": "3445551691",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3093,8 +3093,8 @@
       "name": "HideFriend",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2237934128",
-      "fencepost": "2262466718",
+      "functionid": "2237934122",
+      "fencepost": "2262369938",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -3108,8 +3108,8 @@
       "name": "GetFollowerCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "58209832",
-      "fencepost": "83290808",
+      "functionid": "58209846",
+      "fencepost": "83194048",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3122,8 +3122,8 @@
       "name": "IsFollowing",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3999495843",
-      "fencepost": "4024592948",
+      "functionid": "3999495865",
+      "fencepost": "4024496196",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3136,8 +3136,8 @@
       "name": "EnumerateFollowingList",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "268434207",
-      "fencepost": "293547441",
+      "functionid": "268434181",
+      "fencepost": "293450641",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -3150,8 +3150,8 @@
       "name": "RequestFriendMessageHistory",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1980152183",
-      "fencepost": "2005281546",
+      "functionid": "1980152177",
+      "fencepost": "2005184766",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3162,8 +3162,8 @@
       "name": "RequestFriendMessageHistoryForOfflineMessages",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4101370738",
-      "fencepost": "4126516230",
+      "functionid": "4101370740",
+      "fencepost": "4126419458",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -3172,8 +3172,8 @@
       "name": "GetCountFriendsWithOfflineMessages",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2572973565",
-      "fencepost": "2598135186",
+      "functionid": "2572973559",
+      "fencepost": "2598038406",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -3184,8 +3184,8 @@
       "name": "GetFriendWithOfflineMessage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "790156138",
-      "fencepost": "815333888",
+      "functionid": "790156128",
+      "fencepost": "815237104",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -3198,8 +3198,8 @@
       "name": "ClearFriendHasOfflineMessage",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "779357399",
-      "fencepost": "804551278",
+      "functionid": "779357401",
+      "fencepost": "804454506",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -3210,8 +3210,8 @@
       "name": "RequestEmoticonList",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4114397261",
-      "fencepost": "4139639527",
+      "functionid": "4114397255",
+      "fencepost": "4139542747",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -3220,8 +3220,8 @@
       "name": "GetEmoticonCount",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2059332979",
-      "fencepost": "2084591374",
+      "functionid": "2059332981",
+      "fencepost": "2084494602",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -3232,8 +3232,8 @@
       "name": "GetEmoticonName",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3788192471",
-      "fencepost": "3813466995",
+      "functionid": "3788192465",
+      "fencepost": "3813370215",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -3246,8 +3246,8 @@
       "name": "ClientLinkFilterInit",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4116506997",
-      "fencepost": "4141813779",
+      "functionid": "4116506959",
+      "fencepost": "4141716967",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": []
@@ -3256,8 +3256,8 @@
       "name": "LinkDisposition",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3398633034",
-      "fencepost": "3423955945",
+      "functionid": "3398633076",
+      "fencepost": "3423859213",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -3270,8 +3270,8 @@
       "name": "GetFriendPersonaName_Public",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1421053425",
-      "fencepost": "1446408594",
+      "functionid": "1421053387",
+      "fencepost": "1446311782",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3284,8 +3284,8 @@
       "name": "GetPlayerNickname_Public",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3408389516",
-      "fencepost": "3433760814",
+      "functionid": "3408389558",
+      "fencepost": "3433664082",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3298,8 +3298,8 @@
       "name": "SetFriendsUIActiveClanChatList",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2647161179",
-      "fencepost": "2672613122",
+      "functionid": "2647161181",
+      "fencepost": "2672516350",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -3311,8 +3311,8 @@
       "name": "GetNumChatsWithUnreadPriorityMessages",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "1945120725",
-      "fencepost": "1970621055",
+      "functionid": "1945120735",
+      "fencepost": "1970524291",
       "cannotcallincrossprocess": "0",
       "serializedargs": [],
       "serializedreturns": [
@@ -3323,8 +3323,8 @@
       "name": "SetNumChatsWithUnreadPriorityMessages",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "3954438556",
-      "fencepost": "3979955015",
+      "functionid": "3954438554",
+      "fencepost": "3979858239",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4"
@@ -3335,8 +3335,8 @@
       "name": "RegisterProtocolInOverlayBrowser",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "306414724",
-      "fencepost": "331963441",
+      "functionid": "306414750",
+      "fencepost": "331866693",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "string"
@@ -3349,8 +3349,8 @@
       "name": "HandleProtocolForOverlayBrowser",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "76688581",
-      "fencepost": "102253427",
+      "functionid": "76688607",
+      "fencepost": "102156679",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes4",
@@ -3364,8 +3364,8 @@
       "name": "RequestEquippedProfileItems",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "570698040",
-      "fencepost": "596295144",
+      "functionid": "570698022",
+      "fencepost": "596198352",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64"
@@ -3378,8 +3378,8 @@
       "name": "BHasEquippedProfileItem",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "322047724",
-      "fencepost": "347660957",
+      "functionid": "322047734",
+      "fencepost": "347564193",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -3393,8 +3393,8 @@
       "name": "GetProfileItemPropertyString",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4124440892",
-      "fencepost": "4150070254",
+      "functionid": "4124440870",
+      "fencepost": "4149973458",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -3409,8 +3409,8 @@
       "name": "GetProfileItemPropertyUint",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "4053231746",
-      "fencepost": "4078877237",
+      "functionid": "4053231748",
+      "fencepost": "4078780465",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "uint64",
@@ -3425,8 +3425,8 @@
       "name": "DownloadCommunityItemAsset",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2355224429",
-      "fencepost": "2380886049",
+      "functionid": "2355224427",
+      "fencepost": "2380789273",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
         "bytes8",
@@ -3441,11 +3441,12 @@
       "name": "GetMultiplayerSessionShareURL",
       "argc": "-1",
       "interfaceid": "3",
-      "functionid": "2404103066",
-      "fencepost": "2429796944",
+      "functionid": "2899640240",
+      "fencepost": "2925237344",
       "cannotcallincrossprocess": "0",
       "serializedargs": [
-        "bytes4"
+        "bytes4",
+        "bytes1"
       ],
       "serializedreturns": [
         "string"

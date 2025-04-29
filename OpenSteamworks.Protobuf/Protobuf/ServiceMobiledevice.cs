@@ -27,32 +27,33 @@ namespace OpenSteamworks.Protobuf.WebUI {
             "ChpzZXJ2aWNlX21vYmlsZWRldmljZS5wcm90bxogZ29vZ2xlL3Byb3RvYnVm",
             "L2Rlc2NyaXB0b3IucHJvdG8aEWNvbW1vbl9iYXNlLnByb3RvIkUKMUNNb2Jp",
             "bGVEZXZpY2VfRGVyZWdpc3Rlck1vYmlsZURldmljZV9Ob3RpZmljYXRpb24S",
-            "EAoIZGV2aWNlaWQYASABKAkidwolQ01vYmlsZURldmljZV9IYXNNb2JpbGVE",
-            "ZXZpY2VfUmVxdWVzdBIaCghhcHBfdHlwZRgBIAEoBUIIgrUYBGVudW0SGQoR",
-            "cHVzaF9lbmFibGVkX29ubHkYAiABKAgSFwoPbWluaW11bV92ZXJzaW9uGAMg",
-            "ASgJIlIKJkNNb2JpbGVEZXZpY2VfSGFzTW9iaWxlRGV2aWNlX1Jlc3BvbnNl",
-            "EhQKDGZvdW5kX2RldmljZRgBIAEoCBISCgp1cF90b19kYXRlGAIgASgIIugB",
-            "CipDTW9iaWxlRGV2aWNlX1JlZ2lzdGVyTW9iaWxlRGV2aWNlX1JlcXVlc3QS",
-            "EAoIZGV2aWNlaWQYASABKAkSEAoIbGFuZ3VhZ2UYAiABKAkSFAoMcHVzaF9l",
-            "bmFibGVkGAMgASgIEhMKC2FwcF92ZXJzaW9uGAQgASgJEhIKCm9zX3ZlcnNp",
-            "b24YBSABKAkSFAoMZGV2aWNlX21vZGVsGAYgASgJEiMKG3R3b2ZhY3Rvcl9k",
-            "ZXZpY2VfaWRlbnRpZmllchgHIAEoCRIcCgptb2JpbGVfYXBwGAggASgFQgiC",
-            "tRgEZW51bSJGCitDTW9iaWxlRGV2aWNlX1JlZ2lzdGVyTW9iaWxlRGV2aWNl",
-            "X1Jlc3BvbnNlEhcKD3VuaXF1ZV9kZXZpY2VpZBgCIAEoDTLAAgoMTW9iaWxl",
-            "RGV2aWNlElkKFkRlcmVnaXN0ZXJNb2JpbGVEZXZpY2USMi5DTW9iaWxlRGV2",
-            "aWNlX0RlcmVnaXN0ZXJNb2JpbGVEZXZpY2VfTm90aWZpY2F0aW9uGgsuTm9S",
-            "ZXNwb25zZRJiCg9IYXNNb2JpbGVEZXZpY2USJi5DTW9iaWxlRGV2aWNlX0hh",
-            "c01vYmlsZURldmljZV9SZXF1ZXN0GicuQ01vYmlsZURldmljZV9IYXNNb2Jp",
-            "bGVEZXZpY2VfUmVzcG9uc2UScQoUUmVnaXN0ZXJNb2JpbGVEZXZpY2USKy5D",
-            "TW9iaWxlRGV2aWNlX1JlZ2lzdGVyTW9iaWxlRGV2aWNlX1JlcXVlc3QaLC5D",
-            "TW9iaWxlRGV2aWNlX1JlZ2lzdGVyTW9iaWxlRGV2aWNlX1Jlc3BvbnNlQiCq",
-            "Ah1PcGVuU3RlYW13b3Jrcy5Qcm90b2J1Zi5XZWJVSQ=="));
+            "EAoIZGV2aWNlaWQYASABKAkinAEKJUNNb2JpbGVEZXZpY2VfSGFzTW9iaWxl",
+            "RGV2aWNlX1JlcXVlc3QSGgoIYXBwX3R5cGUYASABKAVCCIK1GARlbnVtEhkK",
+            "EXB1c2hfZW5hYmxlZF9vbmx5GAIgASgIEhcKD21pbmltdW1fdmVyc2lvbhgD",
+            "IAEoCRIjCht0d29mYWN0b3JfZGV2aWNlX2lkZW50aWZpZXIYBCABKAkiZwom",
+            "Q01vYmlsZURldmljZV9IYXNNb2JpbGVEZXZpY2VfUmVzcG9uc2USFAoMZm91",
+            "bmRfZGV2aWNlGAEgASgIEhIKCnVwX3RvX2RhdGUYAiABKAgSEwoLbWF4X3Zl",
+            "cnNpb24YAyABKAki6AEKKkNNb2JpbGVEZXZpY2VfUmVnaXN0ZXJNb2JpbGVE",
+            "ZXZpY2VfUmVxdWVzdBIQCghkZXZpY2VpZBgBIAEoCRIQCghsYW5ndWFnZRgC",
+            "IAEoCRIUCgxwdXNoX2VuYWJsZWQYAyABKAgSEwoLYXBwX3ZlcnNpb24YBCAB",
+            "KAkSEgoKb3NfdmVyc2lvbhgFIAEoCRIUCgxkZXZpY2VfbW9kZWwYBiABKAkS",
+            "IwobdHdvZmFjdG9yX2RldmljZV9pZGVudGlmaWVyGAcgASgJEhwKCm1vYmls",
+            "ZV9hcHAYCCABKAVCCIK1GARlbnVtIkYKK0NNb2JpbGVEZXZpY2VfUmVnaXN0",
+            "ZXJNb2JpbGVEZXZpY2VfUmVzcG9uc2USFwoPdW5pcXVlX2RldmljZWlkGAIg",
+            "ASgNMsACCgxNb2JpbGVEZXZpY2USWQoWRGVyZWdpc3Rlck1vYmlsZURldmlj",
+            "ZRIyLkNNb2JpbGVEZXZpY2VfRGVyZWdpc3Rlck1vYmlsZURldmljZV9Ob3Rp",
+            "ZmljYXRpb24aCy5Ob1Jlc3BvbnNlEmIKD0hhc01vYmlsZURldmljZRImLkNN",
+            "b2JpbGVEZXZpY2VfSGFzTW9iaWxlRGV2aWNlX1JlcXVlc3QaJy5DTW9iaWxl",
+            "RGV2aWNlX0hhc01vYmlsZURldmljZV9SZXNwb25zZRJxChRSZWdpc3Rlck1v",
+            "YmlsZURldmljZRIrLkNNb2JpbGVEZXZpY2VfUmVnaXN0ZXJNb2JpbGVEZXZp",
+            "Y2VfUmVxdWVzdBosLkNNb2JpbGVEZXZpY2VfUmVnaXN0ZXJNb2JpbGVEZXZp",
+            "Y2VfUmVzcG9uc2VCIKoCHU9wZW5TdGVhbXdvcmtzLlByb3RvYnVmLldlYlVJ"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.Reflection.DescriptorReflection.Descriptor, global::OpenSteamworks.Protobuf.WebUI.CommonBaseReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_DeregisterMobileDevice_Notification), global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_DeregisterMobileDevice_Notification.Parser, new[]{ "Deviceid" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Request), global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Request.Parser, new[]{ "AppType", "PushEnabledOnly", "MinimumVersion" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Response), global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Response.Parser, new[]{ "FoundDevice", "UpToDate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Request), global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Request.Parser, new[]{ "AppType", "PushEnabledOnly", "MinimumVersion", "TwofactorDeviceIdentifier" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Response), global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_HasMobileDevice_Response.Parser, new[]{ "FoundDevice", "UpToDate", "MaxVersion" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_RegisterMobileDevice_Request), global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_RegisterMobileDevice_Request.Parser, new[]{ "Deviceid", "Language", "PushEnabled", "AppVersion", "OsVersion", "DeviceModel", "TwofactorDeviceIdentifier", "MobileApp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_RegisterMobileDevice_Response), global::OpenSteamworks.Protobuf.WebUI.CMobileDevice_RegisterMobileDevice_Response.Parser, new[]{ "UniqueDeviceid" }, null, null, null, null)
           }));
@@ -313,6 +314,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       appType_ = other.appType_;
       pushEnabledOnly_ = other.pushEnabledOnly_;
       minimumVersion_ = other.minimumVersion_;
+      twofactorDeviceIdentifier_ = other.twofactorDeviceIdentifier_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -402,6 +404,32 @@ namespace OpenSteamworks.Protobuf.WebUI {
       minimumVersion_ = null;
     }
 
+    /// <summary>Field number for the "twofactor_device_identifier" field.</summary>
+    public const int TwofactorDeviceIdentifierFieldNumber = 4;
+    private readonly static string TwofactorDeviceIdentifierDefaultValue = "";
+
+    private string twofactorDeviceIdentifier_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TwofactorDeviceIdentifier {
+      get { return twofactorDeviceIdentifier_ ?? TwofactorDeviceIdentifierDefaultValue; }
+      set {
+        twofactorDeviceIdentifier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "twofactor_device_identifier" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTwofactorDeviceIdentifier {
+      get { return twofactorDeviceIdentifier_ != null; }
+    }
+    /// <summary>Clears the value of the "twofactor_device_identifier" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTwofactorDeviceIdentifier() {
+      twofactorDeviceIdentifier_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -420,6 +448,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (AppType != other.AppType) return false;
       if (PushEnabledOnly != other.PushEnabledOnly) return false;
       if (MinimumVersion != other.MinimumVersion) return false;
+      if (TwofactorDeviceIdentifier != other.TwofactorDeviceIdentifier) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -430,6 +459,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       if (HasAppType) hash ^= AppType.GetHashCode();
       if (HasPushEnabledOnly) hash ^= PushEnabledOnly.GetHashCode();
       if (HasMinimumVersion) hash ^= MinimumVersion.GetHashCode();
+      if (HasTwofactorDeviceIdentifier) hash ^= TwofactorDeviceIdentifier.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -460,6 +490,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(26);
         output.WriteString(MinimumVersion);
       }
+      if (HasTwofactorDeviceIdentifier) {
+        output.WriteRawTag(34);
+        output.WriteString(TwofactorDeviceIdentifier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -482,6 +516,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(26);
         output.WriteString(MinimumVersion);
       }
+      if (HasTwofactorDeviceIdentifier) {
+        output.WriteRawTag(34);
+        output.WriteString(TwofactorDeviceIdentifier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -500,6 +538,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasMinimumVersion) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(MinimumVersion);
+      }
+      if (HasTwofactorDeviceIdentifier) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TwofactorDeviceIdentifier);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -521,6 +562,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasMinimumVersion) {
         MinimumVersion = other.MinimumVersion;
+      }
+      if (other.HasTwofactorDeviceIdentifier) {
+        TwofactorDeviceIdentifier = other.TwofactorDeviceIdentifier;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -553,6 +597,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             MinimumVersion = input.ReadString();
             break;
           }
+          case 34: {
+            TwofactorDeviceIdentifier = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -582,6 +630,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 26: {
             MinimumVersion = input.ReadString();
+            break;
+          }
+          case 34: {
+            TwofactorDeviceIdentifier = input.ReadString();
             break;
           }
         }
@@ -630,6 +682,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 = other._hasBits0;
       foundDevice_ = other.foundDevice_;
       upToDate_ = other.upToDate_;
+      maxVersion_ = other.maxVersion_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -693,6 +746,32 @@ namespace OpenSteamworks.Protobuf.WebUI {
       _hasBits0 &= ~2;
     }
 
+    /// <summary>Field number for the "max_version" field.</summary>
+    public const int MaxVersionFieldNumber = 3;
+    private readonly static string MaxVersionDefaultValue = "";
+
+    private string maxVersion_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string MaxVersion {
+      get { return maxVersion_ ?? MaxVersionDefaultValue; }
+      set {
+        maxVersion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "max_version" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMaxVersion {
+      get { return maxVersion_ != null; }
+    }
+    /// <summary>Clears the value of the "max_version" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMaxVersion() {
+      maxVersion_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -710,6 +789,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (FoundDevice != other.FoundDevice) return false;
       if (UpToDate != other.UpToDate) return false;
+      if (MaxVersion != other.MaxVersion) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -719,6 +799,7 @@ namespace OpenSteamworks.Protobuf.WebUI {
       int hash = 1;
       if (HasFoundDevice) hash ^= FoundDevice.GetHashCode();
       if (HasUpToDate) hash ^= UpToDate.GetHashCode();
+      if (HasMaxVersion) hash ^= MaxVersion.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -745,6 +826,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(16);
         output.WriteBool(UpToDate);
       }
+      if (HasMaxVersion) {
+        output.WriteRawTag(26);
+        output.WriteString(MaxVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -763,6 +848,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
         output.WriteRawTag(16);
         output.WriteBool(UpToDate);
       }
+      if (HasMaxVersion) {
+        output.WriteRawTag(26);
+        output.WriteString(MaxVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -778,6 +867,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (HasUpToDate) {
         size += 1 + 1;
+      }
+      if (HasMaxVersion) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MaxVersion);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -796,6 +888,9 @@ namespace OpenSteamworks.Protobuf.WebUI {
       }
       if (other.HasUpToDate) {
         UpToDate = other.UpToDate;
+      }
+      if (other.HasMaxVersion) {
+        MaxVersion = other.MaxVersion;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -824,6 +919,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
             UpToDate = input.ReadBool();
             break;
           }
+          case 26: {
+            MaxVersion = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -849,6 +948,10 @@ namespace OpenSteamworks.Protobuf.WebUI {
           }
           case 16: {
             UpToDate = input.ReadBool();
+            break;
+          }
+          case 26: {
+            MaxVersion = input.ReadString();
             break;
           }
         }

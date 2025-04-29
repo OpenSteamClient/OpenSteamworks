@@ -14,6 +14,6 @@
 class IClientStreamLauncher
 {
 public:
-    virtual unknown StartStreaming() = 0; //argc: 1, index 1
-    virtual unknown StopStreaming() = 0; //argc: 0, index 2
+    virtual unknown StartStreaming() = 0; //argc: -1, index 1
+    virtual unknown StopStreaming() = 0; //argc: -1, index 2
 };

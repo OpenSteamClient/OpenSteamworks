@@ -5,6 +5,7 @@ using OpenSteamworks.Callbacks;
 using OpenSteamworks.Callbacks.Structs;
 using OpenSteamworks.Data;
 using OpenSteamworks.Data.Enums;
+using OpenSteamworks.Data.Interop;
 using OpenSteamworks.Generated;
 
 namespace OpenSteamworks.Helpers;

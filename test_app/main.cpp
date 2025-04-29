@@ -10,11 +10,9 @@
 #include <steamclient/IClientConfigStore.h>
 #include <steamclient/IClientControllerSerialized.h>
 #include <steamclient/IClientDepotBuilder.h>
-#include <steamclient/IClientDeviceAuth.h>
 #include <steamclient/IClientFriends.h>
 #include <steamclient/IClientGameCoordinator.h>
 #include <steamclient/IClientGameNotifications.h>
-#include <steamclient/IClientGameSearch.h>
 #include <steamclient/IClientGameServerInternal.h>
 #include <steamclient/IClientGameServerPacketHandler.h>
 #include <steamclient/IClientGameServerStats.h>

@@ -14,7 +14,7 @@
 class IClientProductBuilder
 {
 public:
-    virtual unknown SignInstallScript() = 0; //argc: 3, index 1
-    virtual unknown DRMWrap() = 0; //argc: 6, index 2
-    virtual unknown CEGWrap() = 0; //argc: 4, index 3
+    virtual unknown SignInstallScript() = 0; //argc: -1, index 1
+    virtual unknown DRMWrap() = 0; //argc: -1, index 2
+    virtual unknown CEGWrap() = 0; //argc: -1, index 3
 };

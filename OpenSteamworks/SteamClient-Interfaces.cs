@@ -17,11 +17,9 @@ internal sealed partial class SteamClient
     private Lazy<IClientController> LazyIClientController { get; set; }
     private Lazy<IClientControllerSerialized> LazyIClientControllerSerialized { get; set; }
     private Lazy<IClientDepotBuilder> LazyIClientDepotBuilder { get; set; }
-    private Lazy<IClientDeviceAuth> LazyIClientDeviceAuth { get; set; }
     private Lazy<IClientFriends> LazyIClientFriends { get; set; }
     private Lazy<IClientGameCoordinator> LazyIClientGameCoordinator { get; set; }
     private Lazy<IClientGameNotifications> LazyIClientGameNotifications { get; set; }
-    private Lazy<IClientGameSearch> LazyIClientGameSearch { get; set; }
     //private Lazy<IClientGameServerInternal> LazyIClientGameServerInternal { get; set; }
     //private Lazy<IClientGameServerPacketHandler> LazyIClientGameServerPacketHandler { get; set; }
     //private Lazy<IClientGameServerStats> LazyIClientGameServerStats { get; set; }
@@ -64,14 +62,14 @@ internal sealed partial class SteamClient
     private Lazy<IClientVideo> LazyIClientVideo { get; set; }
     private Lazy<IClientVR> LazyIClientVR { get; set; }
     private Lazy<IClientTimeline> LazyIClientTimeline { get; set; }
-    
+
     // Service interfaces (unimplemented)
     //private Lazy<IClientSecureDesktop> LazyIClientSecureDesktop { get; set; }
     //private Lazy<IClientProcessMonitor> LazyIClientProcessMonitor { get; set; }
     //private Lazy<IClientModuleManager> LazyIClientModuleManager { get; set; }
     //private Lazy<IClientInstallUtils> LazyIClientInstallUtils { get; set; }
     //private Lazy<IRegistryInterface> LazyIRegistryInterface { get; set; }
-    
+
     public IClientAppDisableUpdate IClientAppDisableUpdate => LazyIClientAppDisableUpdate.Value;
     public IClientAppManager IClientAppManager => LazyIClientAppManager.Value;
     public IClientApps IClientApps => LazyIClientApps.Value;
@@ -82,11 +80,9 @@ internal sealed partial class SteamClient
     public IClientController IClientController => LazyIClientController.Value;
     public IClientControllerSerialized IClientControllerSerialized => LazyIClientControllerSerialized.Value;
     public IClientDepotBuilder IClientDepotBuilder => LazyIClientDepotBuilder.Value;
-    public IClientDeviceAuth IClientDeviceAuth => LazyIClientDeviceAuth.Value;
     public IClientFriends IClientFriends => LazyIClientFriends.Value;
     public IClientGameCoordinator IClientGameCoordinator => LazyIClientGameCoordinator.Value;
     public IClientGameNotifications IClientGameNotifications => LazyIClientGameNotifications.Value;
-    public IClientGameSearch IClientGameSearch => LazyIClientGameSearch.Value;
     public IClientGameStats IClientGameStats => LazyIClientGameStats.Value;
     public IClientHTMLSurface IClientHTMLSurface => LazyIClientHTMLSurface.Value;
     public IClientHTTP IClientHTTP => LazyIClientHTTP.Value;
@@ -126,9 +122,9 @@ internal sealed partial class SteamClient
     public IClientVideo IClientVideo => LazyIClientVideo.Value;
     public IClientVR IClientVR => LazyIClientVR.Value;
     public IClientTimeline IClientTimeline => LazyIClientTimeline.Value;
-    
-    
-    
+
+
+
     [MemberNotNull(nameof(LazyIClientAppDisableUpdate))]
     [MemberNotNull(nameof(LazyIClientAppManager))]
     [MemberNotNull(nameof(LazyIClientApps))]
@@ -139,11 +135,9 @@ internal sealed partial class SteamClient
     [MemberNotNull(nameof(LazyIClientController))]
     [MemberNotNull(nameof(LazyIClientControllerSerialized))]
     [MemberNotNull(nameof(LazyIClientDepotBuilder))]
-    [MemberNotNull(nameof(LazyIClientDeviceAuth))]
     [MemberNotNull(nameof(LazyIClientFriends))]
     [MemberNotNull(nameof(LazyIClientGameCoordinator))]
     [MemberNotNull(nameof(LazyIClientGameNotifications))]
-    [MemberNotNull(nameof(LazyIClientGameSearch))]
     //[MemberNotNull(nameof(LazyIClientGameServerInternal))]
     //[MemberNotNull(nameof(LazyIClientGameServerPacketHandler))]
     //[MemberNotNull(nameof(LazyIClientGameServerStats))]
@@ -202,11 +196,9 @@ internal sealed partial class SteamClient
         LazyIClientController = new(() => IClientEngine.GetIClientController(Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         LazyIClientControllerSerialized = new(() => IClientEngine.GetIClientControllerSerialized(Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         LazyIClientDepotBuilder = new(() => IClientEngine.GetIClientDepotBuilder(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
-        LazyIClientDeviceAuth = new(() => IClientEngine.GetIClientDeviceAuth(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         LazyIClientFriends = new(() => IClientEngine.GetIClientFriends(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         LazyIClientGameCoordinator = new(() => IClientEngine.GetIClientGameCoordinator(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         LazyIClientGameNotifications = new(() => IClientEngine.GetIClientGameNotifications(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
-        LazyIClientGameSearch = new(() => IClientEngine.GetIClientGameSearch(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         //IClientGameServerInternal = new(() => IClientEngine.GetIClientGameServerInternal(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         //IClientGameServerPacketHandler = new(() => IClientEngine.GetIClientGameServerPacketHandler(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);
         //IClientGameServerStats = new(() => IClientEngine.GetIClientGameServerStats(User, Pipe), LazyThreadSafetyMode.ExecutionAndPublication);

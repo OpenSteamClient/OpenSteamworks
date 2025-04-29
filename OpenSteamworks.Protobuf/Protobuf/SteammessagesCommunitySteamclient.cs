@@ -118,7 +118,7 @@ namespace OpenSteamworks.Protobuf {
             "ZGluX3Byb2plY3RfaWQYASABKAQSHAoUY3Jvd2Rpbl9kaXJlY3RvcnlfaWQY",
             "AiABKAQSFwoPcHVzaF9ieV9kZWZhdWx0GAMgASgIImMKLkNDb21tdW5pdHlf",
             "RmV0Y2hUcmFuc2xhdGlvbkZyb21Dcm93ZEluX1JlcXVlc3QSDwoHc3RlYW1p",
-            "ZBgBIAEoBhIOCgZpdGVtaWQYAiABKAQSEAoIbGFuZ3VhZ2UYAyABKA0iMQov",
+            "ZBgBIAEoBhIOCgZpdGVtaWQYAiABKAQSEAoIbGFuZ3VhZ2UYAyABKAUiMQov",
             "Q0NvbW11bml0eV9GZXRjaFRyYW5zbGF0aW9uRnJvbUNyb3dkSW5fUmVzcG9u",
             "c2UiLwoMQ0FwcFByaW9yaXR5EhAKCHByaW9yaXR5GAEgASgNEg0KBWFwcGlk",
             "GAIgAygNIroCCipDQ29tbXVuaXR5X0dldFVzZXJQYXJ0bmVyRXZlbnROZXdz",
@@ -11031,12 +11031,12 @@ namespace OpenSteamworks.Protobuf {
 
     /// <summary>Field number for the "language" field.</summary>
     public const int LanguageFieldNumber = 3;
-    private readonly static uint LanguageDefaultValue = 0;
+    private readonly static int LanguageDefaultValue = 0;
 
-    private uint language_;
+    private int language_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint Language {
+    public int Language {
       get { if ((_hasBits0 & 4) != 0) { return language_; } else { return LanguageDefaultValue; } }
       set {
         _hasBits0 |= 4;
@@ -11112,7 +11112,7 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasLanguage) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Language);
+        output.WriteInt32(Language);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -11134,7 +11134,7 @@ namespace OpenSteamworks.Protobuf {
       }
       if (HasLanguage) {
         output.WriteRawTag(24);
-        output.WriteUInt32(Language);
+        output.WriteInt32(Language);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -11153,7 +11153,7 @@ namespace OpenSteamworks.Protobuf {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Itemid);
       }
       if (HasLanguage) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Language);
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Language);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11204,7 +11204,7 @@ namespace OpenSteamworks.Protobuf {
             break;
           }
           case 24: {
-            Language = input.ReadUInt32();
+            Language = input.ReadInt32();
             break;
           }
         }
@@ -11235,7 +11235,7 @@ namespace OpenSteamworks.Protobuf {
             break;
           }
           case 24: {
-            Language = input.ReadUInt32();
+            Language = input.ReadInt32();
             break;
           }
         }

@@ -17,9 +17,9 @@ namespace OpenSteamworks.Generated;
 public unsafe interface IClientProductBuilder
 {
     // WARNING: Arguments are unknown!
-    public unknown SignInstallScript();  // argc: 3, index: 1, ipc args: [bytes4, string, string], ipc returns: [bytes8]
+    public unknown SignInstallScript();  // argc: -1, index: 1, ipc args: [bytes4, string, string], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown DRMWrap();  // argc: 6, index: 2, ipc args: [bytes4, string, string, string, bytes4, bytes4], ipc returns: [bytes8]
+    public unknown DRMWrap();  // argc: -1, index: 2, ipc args: [bytes4, string, string, string, bytes4, bytes4], ipc returns: [bytes8]
     // WARNING: Arguments are unknown!
-    public unknown CEGWrap();  // argc: 4, index: 3, ipc args: [bytes4, string, string, string], ipc returns: [bytes8]
+    public unknown CEGWrap();  // argc: -1, index: 3, ipc args: [bytes4, string, string, string], ipc returns: [bytes8]
 }

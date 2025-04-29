@@ -38,9 +38,11 @@ typedef UInt32 AppId_t {
 }
 
 typedef UInt32 RTime32 {
-	public static explicit operator DateTime(RTime32 me) {
-        return DateTimeOffset.FromUnixTimeSeconds(me.m_value).DateTime;
-    }
+	public static explicit operator DateTime(RTime32 me)
+        => DateTimeOffset.FromUnixTimeSeconds(me.m_value).DateTime;
+    
+    public static RTime32 FromDateTime(DateTime dateTime)
+        => (RTime32)((DateTimeOffset)dateTime).ToUnixTimeSeconds();
 }
 
 typedef UInt32 DepotId_t;
