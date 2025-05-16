@@ -10,7 +10,7 @@ namespace OpenSteamworks.Callbacks;
 
 public partial class CallbackManager {
 	public delegate void BytesHandlerDelegate(ICallbackHandler handler, ReadOnlySpan<byte> data);
-	public delegate void HandlerDelegate<in T>(ICallbackHandler handler, T cb);
+	public delegate void HandlerDelegate<T>(ICallbackHandler handler, in T cb);
 
 
 	private readonly ConcurrentDictionary<ICallbackHandler, int> callbackHandlers = new();
@@ -45,7 +45,7 @@ public partial class CallbackManager {
 				inst = Marshal.PtrToStructure<T>((nint)ptr);
 			}
 
-			handler.Invoke(this, inst);
+			handler.Invoke(this, in inst);
 		}
 
 		public TypedCallbackHandler(CallbackManager mgr, int callbackID, HandlerDelegate<T> handler) : base(mgr, callbackID) {

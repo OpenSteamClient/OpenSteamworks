@@ -24,40 +24,50 @@ public partial class CallbackManager {
 		}
 
 		T inst;
-		fixed (byte* bptr = buf) 
+		fixed (byte* bptr = buf)
 			inst = Marshal.PtrToStructure<T>((nint)bptr);
 
 		return new(failed, clientUtils.GetAPICallFailureReason(handle), inst);
 	}
-	
+
 	private CallResult GetCompletedCall(SteamAPICall_t handle) {
 		if (!clientUtils.IsAPICallCompleted(handle, out bool failed)) {
 			throw new Exception("API call not completed");
 		}
-		
+
 		return new(failed, clientUtils.GetAPICallFailureReason(handle));
 	}
-	
+
 	private async Task<CallResult<T>> WaitCallResultAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(SteamAPICall_t handle, CancellationToken cancellationToken = default) where T: struct
 	{
-		if (!clientUtils.IsAPICallCompleted(handle, out bool failed)) {
-			await WaitAsync<SteamAPICallCompleted_t>(cb => cb.m_hAsyncCall == handle, cancellationToken);
+        if (!clientUtils.IsAPICallCompleted(handle, out bool failed)) {
+			await WaitAsync<SteamAPICallCompleted_t>(CheckHandle, cancellationToken);
 		}
-		
+
 		return GetCompletedCall<T>(handle);
-	}
+
+        bool CheckHandle(in SteamAPICallCompleted_t cb)
+        {
+            return cb.m_hAsyncCall == handle;
+        }
+    }
 
 	private async Task<CallResult> WaitCallResultAsync(SteamAPICall_t handle,
 		CancellationToken cancellationToken = default)
 	{
 		if (!clientUtils.IsAPICallCompleted(handle, out bool failed)) {
-			await WaitAsync<SteamAPICallCompleted_t>(cb => cb.m_hAsyncCall == handle, cancellationToken);
+			await WaitAsync<SteamAPICallCompleted_t>(CheckHandle, cancellationToken);
 		}
-		
+
 		return GetCompletedCall(handle);
+
+        bool CheckHandle(in SteamAPICallCompleted_t cb)
+        {
+            return cb.m_hAsyncCall == handle;
+        }
 	}
-	
-	
+
+
 	/// <summary>
 	/// Run an async call. If a function returns SteamApiCall_t, only ever call it with this function. This takes care of avoiding deadlocks.
 	/// </summary>

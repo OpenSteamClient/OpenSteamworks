@@ -160,7 +160,7 @@ public sealed class DownloadsHelper : IDisposable
 
     private readonly Dictionary<AppId_t, RTime32> scheduledApps = new();
     private readonly HashSet<AppId_t> unscheduledApps = new();
-    private void OnAppEventStateChanged(ICallbackHandler handler, AppEventStateChange_t cb)
+    private void OnAppEventStateChanged(ICallbackHandler handler, in AppEventStateChange_t cb)
     {
         bool hadChange;
 
@@ -193,7 +193,7 @@ public sealed class DownloadsHelper : IDisposable
     private bool hasQueue;
     private bool downloadQueueChangeOngoing;
     private readonly List<AppId_t> downloadQueue = new();
-    private void OnDownloadScheduleChanged(ICallbackHandler handler, DownloadScheduleChanged_t cb)
+    private void OnDownloadScheduleChanged(ICallbackHandler handler, in DownloadScheduleChanged_t cb)
     {
         if (!downloadQueueChangeOngoing)
         {

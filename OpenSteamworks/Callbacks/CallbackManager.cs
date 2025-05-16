@@ -376,13 +376,15 @@ public sealed partial class CallbackManager : IDisposable {
 	public void InvokeNextFrame(Action action)
 		=> AddFrameTask(action, true);
 
-	public Task<T> WaitAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(Func<T, bool>? checkFunction = null, CancellationToken cancellationToken = default) where T: struct {
+    public delegate bool CheckFunction<T>(in T callback) where T : struct;
+
+	public Task<T> WaitAsync<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] T>(CheckFunction<T>? checkFunction = null, CancellationToken cancellationToken = default) where T: struct {
 		TaskCompletionSource<T> taskCompletionSource = new();
 		object lockObj = new();
 
-		var handler = Register((ICallbackHandler handler, T cb) =>
+		var handler = Register((ICallbackHandler handler, in T cb) =>
 		{
-			if (checkFunction != null && !checkFunction.Invoke(cb)) {
+			if (checkFunction != null && !checkFunction.Invoke(in cb)) {
 				// Not the right one, keep waiting.
 				return;
 			}

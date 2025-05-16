@@ -40,22 +40,22 @@ public sealed class UserHelper : IDisposable
         cbServersDisconnected = steamClient.CallbackManager.Register<SteamServersDisconnected_t>(OnSteamServersDisconnected);
     }
 
-    private void OnSteamServersDisconnected(ICallbackHandler handler, SteamServersDisconnected_t cb)
+    private void OnSteamServersDisconnected(ICallbackHandler handler, in SteamServersDisconnected_t cb)
     {
-        //TODO: Handle logouts? ValveSteam just restarts to login to a different account, but that seems like a steamui limitation, not a steamclient limitation.
+        //TODO: Handle logouts? ValveSteam just restarts to login to a different account, but that seems like a steamui limitation, not a clientdll limitation.
         //TODO: We could provide logged in/logged out events...
 
         if (loginTcs != null && !loginTcs.Task.IsCompleted)
             loginTcs?.SetException(new EResultException(cb.m_EResult));
     }
 
-    private void OnConnectFailure(ICallbackHandler handler, SteamServerConnectFailure_t cb)
+    private void OnConnectFailure(ICallbackHandler handler, in SteamServerConnectFailure_t cb)
     {
         if (loginTcs != null && !loginTcs.Task.IsCompleted)
             loginTcs?.SetException(new EResultException(cb.m_EResult));
     }
 
-    private void OnPostLogonState(ICallbackHandler handler, PostLogonState_t cb)
+    private void OnPostLogonState(ICallbackHandler handler, in PostLogonState_t cb)
     {
         if (cb is { hasAppInfo: 1, connectedToCMs: 1 })
         {

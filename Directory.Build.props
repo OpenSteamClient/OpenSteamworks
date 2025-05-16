@@ -7,7 +7,7 @@
         <!-- Due to the added complexity of versioning all the OSW components separately, we have one common version. -->
         <!-- This does NOT apply to OpenSteamworks.Native, which has it's own version -->
         <!-- This also allows for a semi-monolithic design. -->
-        <CommonVersion>1.2.0</CommonVersion>
+        <CommonVersion>1.2.1</CommonVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(OutputType)' == 'Library'">

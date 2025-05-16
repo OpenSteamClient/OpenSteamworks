@@ -43,12 +43,12 @@ public sealed class AppsHelper : IDisposable
         _cbAppInfoUpdateStarted = steamClient.CallbackManager.Register<AppInfoUpdateStarted_t>(OnAppInfoUpdateStarted);
     }
 
-    private void OnAppInfoUpdateStarted(ICallbackHandler handler, AppInfoUpdateStarted_t cb)
+    private void OnAppInfoUpdateStarted(ICallbackHandler handler, in AppInfoUpdateStarted_t cb)
     {
         this._appInfoRequestedStart?.Change(Timeout.InfiniteTimeSpan, Timeout.InfiniteTimeSpan);
     }
 
-    private void OnAppInfoUpdateComplete(ICallbackHandler handler, AppInfoUpdateComplete_t cb)
+    private void OnAppInfoUpdateComplete(ICallbackHandler handler, in AppInfoUpdateComplete_t cb)
         => CancelInflightAppInfoRequestWait();
 
     private void CancelInflightAppInfoRequestWait()
@@ -228,7 +228,7 @@ public sealed class AppsHelper : IDisposable
         CancelInflightAppInfoRequestWait();
     }
 
-    private void OnAppInfoUpdateProgress(ICallbackHandler handler, AppInfoUpdateProgress_t cb)
+    private void OnAppInfoUpdateProgress(ICallbackHandler handler, in AppInfoUpdateProgress_t cb)
     {
         lock (_appInfoRequestsInFlightLock)
         {

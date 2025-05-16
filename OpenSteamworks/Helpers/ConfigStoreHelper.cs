@@ -32,7 +32,7 @@ public sealed class ConfigStoreHelper : IDisposable
 
         public bool IsSet
             => Helper.IsSet(Store, Key);
-        
+
         public event PropertyChangedEventHandler? PropertyChanged;
         protected ConfigKeyBase(ConfigStoreHelper helper, EConfigStore store, string key)
         {
@@ -47,7 +47,7 @@ public sealed class ConfigStoreHelper : IDisposable
         {
             if (e.Key != Key)
                 return;
-            
+
             PropertyChanged?.Invoke(this, new(nameof(Value)));
         }
 
@@ -67,7 +67,7 @@ public sealed class ConfigStoreHelper : IDisposable
         protected override int GetValue()
             => Helper.Get(Store, Key, 0);
     }
-    
+
     private sealed class ConfigKeyUInt64 : ConfigKeyBase<ulong>
     {
         public ConfigKeyUInt64(ConfigStoreHelper helper, EConfigStore store, string key) : base(helper, store, key) { }
@@ -78,7 +78,7 @@ public sealed class ConfigStoreHelper : IDisposable
         protected override ulong GetValue()
             => Helper.Get(Store, Key, 0UL);
     }
-    
+
     private sealed class ConfigKeyBool : ConfigKeyBase<bool>
     {
         public ConfigKeyBool(ConfigStoreHelper helper, EConfigStore store, string key) : base(helper, store, key) { }
@@ -89,7 +89,7 @@ public sealed class ConfigStoreHelper : IDisposable
         protected override bool GetValue()
             => Helper.Get(Store, Key, false);
     }
-    
+
     private sealed class ConfigKeyFloat : ConfigKeyBase<float>
     {
         public ConfigKeyFloat(ConfigStoreHelper helper, EConfigStore store, string key) : base(helper, store, key) { }
@@ -100,7 +100,7 @@ public sealed class ConfigStoreHelper : IDisposable
         protected override float GetValue()
             => Helper.Get(Store, Key, 0f);
     }
-    
+
     private sealed class ConfigKeyString : ConfigKeyBase<string>
     {
         public ConfigKeyString(ConfigStoreHelper helper, EConfigStore store, string key) : base(helper, store, key) { }
@@ -119,7 +119,7 @@ public sealed class ConfigStoreHelper : IDisposable
     }
 
     public event EventHandler<ConfigStoreChangedEventArgs>? ConfigStoreChanged;
-    
+
     private readonly IClientConfigStore configStore;
     private readonly IDisposable cbConfigStoreChanged;
     public ConfigStoreHelper(ISteamClient steamClient, ILoggerFactory loggerFactory)
@@ -128,32 +128,32 @@ public sealed class ConfigStoreHelper : IDisposable
         this.cbConfigStoreChanged = steamClient.CallbackManager.Register<SteamConfigStoreChanged_t>(OnConfigStoreChanged);
     }
 
-    private void OnConfigStoreChanged(ICallbackHandler handler, SteamConfigStoreChanged_t cb)
+    private void OnConfigStoreChanged(ICallbackHandler handler, in SteamConfigStoreChanged_t cb)
     {
         if (cb.ConfigStore == EConfigStore.Invalid)
             return;
 
         if (string.IsNullOrEmpty(cb.PathToChange))
             return;
-        
+
         ConfigStoreChanged?.Invoke(this, new(cb.ConfigStore, cb.PathToChange));
     }
 
     public ConfigKeyBase<int> GetKeyInt(EConfigStore store, string key)
         => new ConfigKeyInt(this, store, key);
-    
+
     public ConfigKeyBase<ulong> GetKeyUInt64(EConfigStore store, string key)
         => new ConfigKeyUInt64(this, store, key);
-    
+
     public ConfigKeyBase<bool> GetKeyBool(EConfigStore store, string key)
         => new ConfigKeyBool(this, store, key);
-    
+
     public ConfigKeyBase<float> GetKeyFloat(EConfigStore store, string key)
         => new ConfigKeyFloat(this, store, key);
-    
+
     public ConfigKeyBase<string> GetKeyString(EConfigStore store, string key)
         => new ConfigKeyString(this, store, key);
-    
+
     public bool IsSet(EConfigStore store, string key)
         => configStore.IsSet(store, key);
 
@@ -162,19 +162,19 @@ public sealed class ConfigStoreHelper : IDisposable
 
     public int Get(EConfigStore store, string key, int defaultValue = 0)
         => configStore.GetInt(store, key, defaultValue);
-    
+
     public ulong Get(EConfigStore store, string key, ulong defaultValue = 0)
         => configStore.GetUint64(store, key, defaultValue);
-    
+
     public bool Get(EConfigStore store, string key, bool defaultValue = false)
         => configStore.GetBool(store, key, defaultValue);
-    
+
     public float Get(EConfigStore store, string key, float defaultValue = 0)
         => configStore.GetFloat(store, key, defaultValue);
-    
+
     public string Get(EConfigStore store, string key, string defaultValue = "")
         => configStore.GetString(store, key, defaultValue);
-    
+
     public unsafe void Get(EConfigStore store, string key, Span<byte> buf)
     {
         fixed (byte* bptr = buf)
@@ -193,25 +193,25 @@ public sealed class ConfigStoreHelper : IDisposable
                 attachedBuf.Dispose();
             }
         }
-        
-        
+
+
     }
-    
+
     public bool Set(EConfigStore store, string key, int value)
         => configStore.SetInt(store, key, value);
-    
+
     public bool Set(EConfigStore store, string key, ulong value)
         => configStore.SetUint64(store, key, value);
-    
+
     public bool Set(EConfigStore store, string key, bool value)
         => configStore.SetBool(store, key, value);
-    
+
     public bool Set(EConfigStore store, string key, float value)
         => configStore.SetFloat(store, key, value);
-    
+
     public bool Set(EConfigStore store, string key, string value)
         => configStore.SetString(store, key, value);
-    
+
     public bool Set(EConfigStore store, string key, ReadOnlySpan<byte> val)
         => configStore.SetBinary(store, key, val, val.Length);
 
