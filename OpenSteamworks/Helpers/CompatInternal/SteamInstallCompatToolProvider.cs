@@ -21,17 +21,17 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
     private sealed class CompatTool
     {
         public AppId_t ToolAppID { get; }
-        
+
         public bool IsSteamTool { get; }
-        
+
         public string Name { get; }
         public string DisplayName { get; }
-        
+
         public ImmutableList<string> Aliases { get; }
-            
+
         public ERemoteStoragePlatform Source { get; }
         public ERemoteStoragePlatform Target { get; }
-    
+
         public CompatTool(KVObject kv)
         {
             Name = kv.Name;
@@ -48,7 +48,7 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
             Aliases = aliasesStr.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToImmutableList();
         }
     }
-    
+
     private static ERemoteStoragePlatform StringToPlat(string plats)
     {
         ERemoteStoragePlatform ePlats = ERemoteStoragePlatform.PlatformNone;
@@ -59,19 +59,20 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
                 case "windows":
                     ePlats |= ERemoteStoragePlatform.PlatformWindows;
                     continue;
-                
+
                 case "linux":
                     ePlats |= ERemoteStoragePlatform.PlatformLinux;
                     continue;
-                
+
+                case "macos":
+                case "osx": // I don't know if "osx" is valid
+                    ePlats |= ERemoteStoragePlatform.PlatformOSX;
+                    continue;
+
                 // Speculation beyond this line...
-                
+
                 case "android":
                     ePlats |= ERemoteStoragePlatform.PlatformAndroid;
-                    continue;
-                
-                case "osx":
-                    ePlats |= ERemoteStoragePlatform.PlatformOSX;
                     continue;
             }
 
@@ -91,12 +92,12 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
         FillCompatTools();
         return compatTools;
     }
-    
+
     private void FillCompatTools()
     {
         if (hasTools)
             return;
-        
+
         if (!appsHelper.TryGetAppInfo(APPID_STEAMPLAY_MANIFESTS, EAppInfoSection.Extended, out var steamplayManifests))
         {
             logger.Warning("Cannot retrieve SteamPlay 2.0 Manifests! Cannot fill compat tool info.");
@@ -104,7 +105,7 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
         }
 
         hasTools = true;
-        
+
         // Get compat tools from SteamPlay 2.0 manifests.
         foreach (var compatToolKV in steamplayManifests.GetChild("compat_tools")?.Children ?? [])
         {
@@ -112,7 +113,7 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
             compatTools.Add(tool);
             logger.Debug($"Added steam compat tool {tool.DisplayName}");
         }
-        
+
         // Get custom compat tools.
         var compatToolsPath = Path.Combine(utils.GetUserBaseFolderInstallImage(), "compatibilitytools.d");
         if (!Path.Exists(compatToolsPath))
@@ -126,13 +127,13 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
         {
             var manifestPath = Path.Combine(dir, "compatibilitytool.vdf");
             logger.Trace($"Considering compat tool {manifestPath}");
-            
+
             if (!File.Exists(manifestPath))
             {
                 logger.Error($"Skipping invalid compat tool, no manifest present at '{manifestPath}'");
                 continue;
             }
-            
+
             try
             {
                 var text = CppCommentRegex().Replace(File.ReadAllText(manifestPath), string.Empty);
@@ -156,17 +157,17 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
             }
         }
     }
-    
+
     public IEnumerable<string> GetCompatTools()
         => GetCompatToolsInternal().Select(t => t.Name);
-    
+
     public IEnumerable<string> GetCompatTools(ERemoteStoragePlatform target)
         => GetCompatToolsInternal().Where(t => t.Target == target).Select(t => t.Name);
-    
+
     public IEnumerable<string> GetCompatToolsForApp(AppId_t appid)
     {
         //TODO: This does not handle shortcuts.
-        
+
         if (!appsHelper.TryGetAppInfo(appid, EAppInfoSection.Common, out var commonSection))
         {
             logger.Warning($"No cached appinfo; cannot get compat tools for app {appid}");
@@ -188,22 +189,22 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
             {
                 return targetPlats.HasFlag(platToCheck) && compatToolPlatform.HasFlag(platToCheck);
             }
-            
+
             if (CheckIndividualFlag(ERemoteStoragePlatform.PlatformWindows))
                 return true;
 
             if (CheckIndividualFlag(ERemoteStoragePlatform.PlatformLinux))
                 return true;
-            
+
             if (CheckIndividualFlag(ERemoteStoragePlatform.PlatformOSX))
                 return true;
-            
+
             if (CheckIndividualFlag(ERemoteStoragePlatform.PlatformAndroid))
                 return true;
 
             return false;
         }
-        
+
         return GetCompatToolsInternal().Where(t => TargetsCorrectPlatform(t.Target)).Select(t => t.Name);
     }
 
@@ -213,7 +214,7 @@ internal sealed partial class SteamInstallCompatToolProvider : ICompatToolProvid
     public SteamInstallCompatToolProvider(ISteamClient steamClient, ILoggerFactory loggerFactory)
     {
         this.logger = loggerFactory.CreateLogger("SteamInstallCompatToolProvider");
-        
+
         this.appsHelper = steamClient.AppsHelper;
         this.utils = steamClient.IClientUtils;
     }

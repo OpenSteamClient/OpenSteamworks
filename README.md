@@ -6,7 +6,7 @@ Read below for specific documentation.
 
 ## Projects
 ### OpenSteamworks
-Interact with Steam's client interfaces. 
+Interact with Steam's client interfaces.
 [See docs](OpenSteamworks/README.md)
 
 ### OpenSteamworks.Data
@@ -18,10 +18,14 @@ Allows you to send, receive, serialize and deserialize messages.
 [See docs](OpenSteamworks.Messaging/README.md)
 
 ### OpenSteamworks.IPC
-An experimental way to interact with the currently running Steam Client, without any of Steam's own binaries.
+An experimental way to interact with the currently running Steam Client, without any of Steam's own binaries. This has not been updated in a while, and does not work.
 
 ### cpp
 C++ source and headers for integrating OpenSteamworks into C++ and CMake based programs
 
 ### OpenSteamworks.SourceGen and OpenSteamworks.DataSourceGen
 Internal source generation infrastructure for OpenSteamworks and OpenSteamworks.Data respectively.
+
+### TODO
+Stop using common versioning wherever we can.
+Roll OSW.Protobuf into OSW.Data
