@@ -62,8 +62,7 @@ public unsafe interface IClientRemoteStorage
     public int GetFileCount(AppId_t nAppId, ERemoteStorageFileRoot eRemoteStorageFileRoot);  // argc: -1, index: 19, ipc args: [bytes4, bytes1], ipc returns: [bytes4]
     // WARNING: Arguments are unknown!
     public string GetFileNameAndSize(AppId_t nAppId, int index, out ERemoteStorageFileRoot eRemoteStorageFileRoot, out int fileSizeBytes, bool unk);  // argc: -1, index: 20, ipc args: [bytes4, bytes4, bytes1], ipc returns: [string, bytes4, bytes4]
-    // WARNING: Arguments are unknown!
-    public unknown GetQuota();  // argc: -1, index: 21, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes8]
+    public bool GetQuota(AppId_t nAppId, out ulong totalBytes, out ulong availableBytes);  // argc: -1, index: 21, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes8]
     // WARNING: Arguments are unknown!
     public unknown GetUGCQuotaUsage();  // argc: -1, index: 22, ipc args: [bytes4], ipc returns: [bytes1, bytes8, bytes4, bytes8, bytes4]
     // WARNING: Arguments are unknown!
